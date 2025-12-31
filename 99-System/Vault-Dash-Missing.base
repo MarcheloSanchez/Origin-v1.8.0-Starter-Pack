@@ -1,0 +1,92 @@
+properties:
+  title:
+    displayName: Title
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  tags:
+    displayName: Tags
+  created:
+    displayName: Created
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: MOCs — All
+    filters:
+      not:
+        - '!type.contains("moc")'
+        - and:
+            - file.folder.startsWith("01-MOCs")
+    order:
+      - file.name
+      - file.mtime
+      - file.ctime
+      - tags
+      - file.backlinks
+    sort:
+      - property: file.basename
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: file.links
+        direction: ASC
+    columnSize:
+      note.title: 242
+  - type: table
+    name: Efforts — All
+    filters:
+      and:
+        - type == "effort"
+    order:
+      - status
+      - title
+  - type: table
+    name: Atomics — All
+    filters:
+      and:
+        - type == "atomic"
+    order:
+      - status
+      - title
+  - type: table
+    name: Sources — All
+    filters:
+      and:
+        - type == "source"
+    order:
+      - status
+      - title
+    columnSize:
+      note.status: 184
+      note.title: 242
+  - type: table
+    name: Prompts — All
+    filters:
+      and:
+        - type == "prompt"
+    order:
+      - status
+      - title
+  - type: table
+    name: System — All
+    filters:
+      and:
+        - type == "system"
+    order:
+      - title
+  - type: table
+    name: Insights — All
+    filters:
+      and:
+        - type == "insight"
+    order:
+      - title
+  - type: table
+    name: Inbox — By status
+    filters:
+      and:
+        - status == "📥inbox"
+    order:
+      - created

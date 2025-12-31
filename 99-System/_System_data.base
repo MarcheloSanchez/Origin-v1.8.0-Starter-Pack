@@ -1,0 +1,21 @@
+filters:
+  and:
+    - 'file.folder.contains("99-System") or type == "system"'
+
+properties:
+  title: { displayName: "System note" }
+  type: { displayName: "Type" }
+  status: { displayName: "Status" }
+  created: { displayName: "Created" }
+  modified: { displayName: "Modified" }
+
+views:
+  - type: table
+    name: "System — Missing metadata"
+    filters:
+      or:
+        - 'not status'
+        - 'not created'
+        - 'not type'
+    order:
+      - 'file.name'

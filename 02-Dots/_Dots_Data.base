@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.folder.contains("02-Dots")
+views:
+  - type: table
+    name: All Dots
+    order:
+      - file.name
+      - status
+      - tags
+      - up
+      - related
+      - in

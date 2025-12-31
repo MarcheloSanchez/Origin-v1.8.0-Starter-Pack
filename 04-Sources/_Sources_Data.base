@@ -1,0 +1,49 @@
+filters:
+  and:
+    - file.folder.contains("Sources")
+views:
+  - type: table
+    name: All sources
+    order:
+      - file.name
+      - status
+      - type
+      - file.tags
+      - related
+      - file.mtime
+    sort:
+      - property: source
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    limit: 20
+  - type: table
+    name: All sources W tags
+    filters:
+      and:
+        - file.tags.contains("📚source")
+    order:
+      - file.name
+      - file.ctime
+      - file.mtime
+      - file.tags
+      - Source
+      - source_type
+      - status
+      - tags
+      - type
+  - type: table
+    name: Sources Recently Edited
+    order:
+      - file.name
+      - file.ctime
+      - file.mtime
+      - file.tags
+      - Source
+      - source_type
+      - status
+      - tags
+      - type
+    sort:
+      - property: file.mtime
+        direction: DESC

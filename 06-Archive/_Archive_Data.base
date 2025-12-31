@@ -1,0 +1,18 @@
+filters:
+  and:
+    - 'file.folder.contains("06-Archive") or status == "📦archived"'
+
+properties:
+  title: { displayName: "Archived" }
+  type: { displayName: "Type" }
+  file.inlinks.length: { displayName: "Inlinks" }
+  file.outlinks.length: { displayName: "Outlinks" }
+
+views:
+  - type: table
+    name: "Archive — Link integrity"
+    filters:
+      and:
+        - 'file.inlinks.length + file.outlinks.length >= 0'   # show all to spot 0/0
+    order:
+      - 'file.inlinks.length'

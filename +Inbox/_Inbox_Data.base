@@ -1,0 +1,29 @@
+filters:
+  and:
+    - file.folder.contains("+Inbox")
+views:
+  - type: table
+    name: All Inbox
+    order:
+      - file.name
+      - file.backlinks
+      - status
+      - tags
+      - related
+      - file.mtime
+      - file.ctime
+      - type
+  - type: table
+    name: All Inbox + Tag
+    filters:
+      or:
+        - file.tags.contains("📥inbox`")
+    order:
+      - file.name
+      - file.backlinks
+      - status
+      - tags
+      - related
+      - file.mtime
+      - file.ctime
+      - type

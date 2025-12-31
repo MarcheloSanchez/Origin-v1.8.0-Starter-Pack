@@ -1,0 +1,43 @@
+views:
+  - type: table
+    name: ALL
+    order:
+      - file.name
+      - status
+      - tags
+      - up
+      - file.tags
+      - type
+      - related
+      - file.folder
+      - file.ctime
+    sort: []
+    limit: 100
+    columnSize:
+      note.status: 123
+      note.tags: 338
+      note.up: 103
+      file.tags: 385
+  - type: table
+    name: Images
+    filters:
+      and:
+        - file.folder == "99-System/Images"
+    order:
+      - file.name
+      - file.size
+      - file.ctime
+    imageFit: contain
+    columnSize:
+      file.name: 398
+  - type: table
+    name: All_Minimal_capture
+    order:
+      - file.name
+      - Created
+      - file.tags
+      - in
+      - modified
+    sort:
+      - property: in
+        direction: ASC

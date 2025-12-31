@@ -1,0 +1,33 @@
+filters:
+  and:
+    - and:
+        - file.folder.contains("02-Dots/100-Atomics")
+        - and:
+            - '!file.name.contains("base")'
+formulas:
+  stage: maturity
+  last_touch: file.mtime.date().toString()
+properties:
+  title:
+    displayName: Atomic
+  stage:
+    displayName: Maturity
+  tags:
+    displayName: Tags
+  related:
+    displayName: Related
+  file.mtime:
+    displayName: Modified
+  formula.last_touch:
+    displayName: Last edited
+views:
+  - type: cards
+    name: Atomics — Cards
+    limit: 100
+  - type: table
+    name: Atomics — Table
+    order:
+      - maturity
+      - file.mtime
+  - type: table
+    name: All Atomics

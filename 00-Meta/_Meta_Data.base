@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.folder.startsWith("00-Meta")
+views:
+  - type: table
+    name: All Meta
+    order:
+      - file.name
+      - status
+      - type
+      - up
+      - tags
+      - file.mtime
+    sort: []
+  - type: table
+    name: All Meta 2xx
+    order:
+      - file.name
+      - status
+      - type
+      - up
+      - tags
+      - file.mtime
+    limit: 10

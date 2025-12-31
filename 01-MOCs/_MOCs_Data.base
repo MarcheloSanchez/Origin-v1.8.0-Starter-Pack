@@ -1,0 +1,15 @@
+filters:
+  and:
+    - file.folder.contains("01-MOCs")
+views:
+  - type: table
+    name: All MOCs
+    order:
+      - file.name
+      - file.tags
+      - completeness
+      - coverage_areas
+      - review_frequency
+      - file.mtime
+      - file.ctime
+      - up

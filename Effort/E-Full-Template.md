@@ -7,60 +7,102 @@ fileClass: effort
 tags:
   - 🎯project
 status: 🔄active
-priority:
-action_required:
-created:
-modified:
+priority: medium
+created: <% tp.date.now("YYYY-MM-DD") %>
+modified: <% tp.date.now("YYYY-MM-DD") %>
 deadline:
 estimated_effort:
-completion_percentage:
+completion_percentage: 0
 next_actions:
+context:
+energy_required: medium
+waiting_for:
+waiting_since:
+blocked_by:
+outcome:
 related:
 recurrence:
 ---
 
-# Project: {{title}}
+# 🚀 Project: <% tp.file.title %>
 
-## 🎯 Objective - Goal
-*What is the desired outcome?*
-**What**: 
-**Why**: 
-**Success looks like**: 
-## 📋 Scope & Requirements
-### Must Have
-- 
-- 
+## 🎯 Outcome (Definition of Done)
+> *Co přesně znamená "hotovo"?*
 
-### Nice to Have
-- 
-- 
-
-## 🗺️ Action Plan
-### Phase 1: Planning
-- [ ] 
-- [ ] 
-
-### Phase 2: Execution  
-- [ ] 
-- [ ] 
-
-### Phase 3: Review
-- [ ] 
-- [ ] 
-
-## 📊 Progress Tracking
-- **Started:** {{date:YYYY-MM-DD}}
-- **Current phase:** Planning
-- **Completion:** 0%
-- **Next milestone:** 
+**Desired outcome:**
 
 
-## 🚧 Risks / Blockers
-- Format: [Blocker - Mitigation - Owner]
+**Success criteria:**
+- [ ]
+- [ ]
+- [ ]
 
+---
 
-## 🔗 Related Notes
+## 📋 Next Actions
+
+> *Konkrétní fyzické akce k provedení. Použij @context tagy.*
+
+### 🔥 Active
+- [ ] @computer
+- [ ]
+
+### ⏳ Waiting For
+- [ ] @waiting —
+
+### 📅 Scheduled
+- [ ]
+
+---
+
+## 🗺️ Project Plan
+
+### Phase 1: Setup
+- [ ]
+- [ ]
+
+### Phase 2: Execution
+- [ ]
+- [ ]
+
+### Phase 3: Review & Close
+- [ ] Final review
+- [ ] Archive project
+
+---
+
+## 📊 Progress
+
+```
+Progress: ░░░░░░░░░░ 0%
+```
+
+| Milestone | Status | Date |
+|-----------|--------|------|
+| Projekt založen | ✅ | <% tp.date.now("YYYY-MM-DD") %> |
+| | | |
+| | | |
+
+---
+
+## 📝 Notes & Log
+
+### <% tp.date.now("YYYY-MM-DD") %>
+- Projekt vytvořen
+
+---
+
+## 🚧 Blockers / Risks
+
+| Blocker | Impact | Mitigation | Owner |
+|---------|--------|------------|-------|
+| | | | |
+
+---
+
+## 🔗 Related
+
 - [[]]
 
 ---
-⬆️:: [[03-Efforts]]
+⬆️:: [[03-Efforts]] | [[🎯GTD Command Center]]

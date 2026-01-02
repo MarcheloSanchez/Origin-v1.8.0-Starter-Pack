@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "3faa5eb31b967e8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a208d5f73e1aff99",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68474f348b080596",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8353fbd638ca8f2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9398b3d1c1641ae0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc73af86199f4c7f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8a250135febaf262",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4abc19f76df0249d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c1450ef47511be38",
+    "type": "split",
+    "children": [
+      {
+        "id": "3294b1d1acb34fef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05c5307730a41806",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "🎯GTD Command Center.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 🎯GTD Command Center"
+            }
+          },
+          {
+            "id": "d73f3bc13994396e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "🎯GTD Command Center.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 🎯GTD Command Center"
+            }
+          },
+          {
+            "id": "7f07b29abe450ba8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eb33a3aaf257fd41",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f19c94e7b62e8756",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🎯GTD Command Center.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 🎯GTD Command Center"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "68474f348b080596",
+  "lastOpenFiles": [
+    "🎯GTD Command Center.md",
+    "Templates/Quick Idea Capture.md",
+    "2026-01-02.md",
+    "Templates/Template - Last 7 Days Activity Report.md",
+    "Templates/+Aboutℹ️.md",
+    "🎯GTD Weekly Review.md"
+  ]
+}

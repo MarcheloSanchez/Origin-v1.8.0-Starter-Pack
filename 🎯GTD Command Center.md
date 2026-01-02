@@ -302,13 +302,13 @@ dv.paragraph(`
 
 ## 🔗 Quick Links
 
-| Akce | Odkaz |
-|------|-------|
-| ➕ Nový projekt | [[Effort/E-Full-Template]] |
-| 📥 Quick Capture | [[Quick Capture - Inbox]] |
-| 📅 Dnešní den | `= "[[" + dateformat(date(now), "yyyy-MM-dd") + "]]"` |
-| 🔄 Weekly Review | [[🎯GTD Weekly Review]] |
-| 📊 Dashboard | [[👁️Dashboard]] |
+| Akce             | Odkaz                                                 |
+| ---------------- | ----------------------------------------------------- |
+| ➕ Nový projekt   | [[Effort/E-Full-Template]]                            |
+| 📥 Quick Capture | [[Quick Capture - Inbox]]                             |
+| 📅 Dnešní den    | `= "[[" + dateformat(date(now), "yyyy-MM-dd") + "]]"` |
+| 🔄 Weekly Review | [[🎯GTD Weekly Review]]                               |
+| 📊 Dashboard     | [[👁️Dashboard]]                                      |
 
 ---
 

@@ -13,11 +13,27 @@ modified: "{{date:YYYY-MM-DD}}"
 # {{date:dddd, MMMM DD, YYYY}}
 
 
+## 🎮 Daily Quest
+
+> [!tip] Today's Challenge: {{date:dddd}}
+> Check [[00-Meta/🎮Gamification Dashboard#Daily Challenges|today's challenge]] for bonus XP!
+
+**Quick XP Opportunities:**
+- [ ] Create daily note (+5 XP) ✅
+- [ ] Process inbox to zero (+25 XP)
+- [ ] Complete 3 high-priority tasks (+30 XP)
+- [ ] Add 5+ internal links (+5 XP)
+- [ ] Complete today's daily challenge (+50 XP)
+
+**XP Earned Today:** 5 / ______
+
+---
+
 ## Today's Focus
 🎯**Top 3 priorities**:
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 🏠**Areas needing attention**: 
 

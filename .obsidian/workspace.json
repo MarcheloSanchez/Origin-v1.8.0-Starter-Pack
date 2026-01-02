@@ -183,8 +183,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "68474f348b080596",
+  "active": "bc73af86199f4c7f",
   "lastOpenFiles": [
+    "Templates/Quick-Inserts/Gamification Quick Insert.md",
+    "Templates/Gamification/Challenge-Weekly.md",
+    "Templates/Gamification/Challenge-Monthly.md",
+    "Templates/Gamification/Challenge-Daily.md",
+    "Templates/Gamification",
+    "99-System/CIS/gamification-levels.md",
+    "99-System/CIS/gamification-activities.md",
+    "99-System/CIS/gamification-achievements.md",
+    "00-Meta/🏆Achievement Tracker.md",
+    "00-Meta/🎮Gamification Quick Reference.md",
+    "00-Meta/🎮Gamification Dashboard.md",
+    "00-Meta/Documentation/🎮My PKM Gamification.md",
     "🎯GTD Command Center.md",
     "Templates/Quick Idea Capture.md",
     "2026-01-02.md",

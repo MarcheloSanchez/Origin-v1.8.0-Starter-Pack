@@ -1,24 +1,25 @@
 {
   "main": {
-    "id": "3faa5eb31b967e8f",
+    "id": "5c8e5ceff5bb50bf",
     "type": "split",
     "children": [
       {
-        "id": "a208d5f73e1aff99",
+        "id": "a07c790a8fb6d1b0",
         "type": "tabs",
         "children": [
           {
-            "id": "68474f348b080596",
+            "id": "48413879de02cfdf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md",
+                "file": "🧭 Review HQ.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence"
+              "title": "🧭 Review HQ"
             }
           }
         ]
@@ -27,15 +28,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "8353fbd638ca8f2e",
+    "id": "f23a5296fafac93e",
     "type": "split",
     "children": [
       {
-        "id": "9398b3d1c1641ae0",
+        "id": "d85935f8b9a1be9d",
         "type": "tabs",
+        "dimension": 71.09375,
         "children": [
           {
-            "id": "bc73af86199f4c7f",
+            "id": "5ec3facab638f060",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,15 +50,25 @@
             }
           },
           {
-            "id": "8a250135febaf262",
+            "id": "acaddd6f334db560",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "d697ead5e0d440c9",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#🧹tidy",
                 "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
+                "explainSearch": true,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -65,36 +77,188 @@
             }
           },
           {
-            "id": "4abc19f76df0249d",
+            "id": "0a555d6458259e6b",
             "type": "leaf",
             "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "type": "outline",
+              "state": {
+                "file": "TODO.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of TODO"
             }
           }
         ]
+      },
+      {
+        "id": "65bd846b4bc911ea",
+        "type": "tabs",
+        "dimension": 28.90625,
+        "children": [
+          {
+            "id": "b315c9a4ea07a898",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00-Meta/Documentation/Obsidian/Obsidian Hotkeys - Compact Cheatsheet.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian Hotkeys - Compact Cheatsheet"
+            }
+          },
+          {
+            "id": "6c9bf88f4e0b8023",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "🧭 Review HQ.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 🧭 Review HQ"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 217.5
   },
   "right": {
-    "id": "c1450ef47511be38",
+    "id": "0ad95b1b240467e8",
     "type": "split",
     "children": [
       {
-        "id": "3294b1d1acb34fef",
+        "id": "3a8a0950370c85d9",
         "type": "tabs",
+        "dimension": 30.481283422459892,
         "children": [
           {
-            "id": "05c5307730a41806",
+            "id": "53755e10127a1bae",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "abcdf216d928fbc7",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224398,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "4d6601e0b730adf4",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "todo"
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "eaf4c99a59805e11",
+        "type": "tabs",
+        "dimension": 69.5187165775401,
+        "children": [
+          {
+            "id": "49b6a28e2f00db7a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💾Changelog.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "💾Changelog"
+            }
+          },
+          {
+            "id": "70baa12c6d56e73d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "pinned": true,
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2eeaf8b37bd80b9a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "de8e76f7517fa914",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🎯GTD Command Center.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,104 +268,92 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 🎯GTD Command Center"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "d73f3bc13994396e",
+            "id": "751b5f4a2766e233",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🎯GTD Command Center.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 🎯GTD Command Center"
-            }
-          },
-          {
-            "id": "7f07b29abe450ba8",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "eb33a3aaf257fd41",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "f19c94e7b62e8756",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "🎯GTD Command Center.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 🎯GTD Command Center"
+              "title": "Outgoing links"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 384.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
       "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "templates:Insert template": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
       "bases:Create new base": false
     }
   },
-  "active": "bc73af86199f4c7f",
+  "active": "5ec3facab638f060",
   "lastOpenFiles": [
-    "Templates/Quick-Inserts/Gamification Quick Insert.md",
-    "Templates/Gamification/Challenge-Weekly.md",
-    "Templates/Gamification/Challenge-Monthly.md",
-    "Templates/Gamification/Challenge-Daily.md",
-    "Templates/Gamification",
-    "99-System/CIS/gamification-levels.md",
-    "99-System/CIS/gamification-activities.md",
-    "99-System/CIS/gamification-achievements.md",
-    "00-Meta/🏆Achievement Tracker.md",
-    "00-Meta/🎮Gamification Quick Reference.md",
-    "00-Meta/🎮Gamification Dashboard.md",
-    "00-Meta/Documentation/🎮My PKM Gamification.md",
+    "06-Archive/Completed/▶️ START HERE.md",
+    "🧭 Review HQ.md",
+    "03-Efforts/Ongoing/🏠 Weekly Maintenance Tracker.md",
+    "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md",
+    "03-Efforts/Ongoing/🏠 Maintenance Calendar.md",
+    "03-Efforts/Ongoing/🏠 Living Areas Tasks.md",
+    "03-Efforts/Ongoing/🏠 Kitchen Tasks.md",
+    "03-Efforts/Ongoing/🏠 Home Maintenance System.md",
+    "03-Efforts/Ongoing/🏠 Entry & Laundry Tasks.md",
+    "03-Efforts/Ongoing/🏠 Bedroom Tasks.md",
+    "03-Efforts/Ongoing/🏠 Bathroom Tasks.md",
+    "00-Meta/Documentation/Performance Metrics.md.tmp.60408.1768077601728",
+    "99-System/Scripts/archive-old-dailies.js.tmp.60408.1768077523785",
+    "01-MOCs/🗺️My PKM MOC.md",
+    "START HERE.md",
+    "README.md",
     "🎯GTD Command Center.md",
-    "Templates/Quick Idea Capture.md",
-    "2026-01-02.md",
-    "Templates/Template - Last 7 Days Activity Report.md",
-    "Templates/+Aboutℹ️.md",
-    "🎯GTD Weekly Review.md"
+    "00-Meta/Documentation/Performance Metrics.md",
+    "99-System/Scripts/archive-old-dailies.js",
+    "99-System/Scripts/archive-old-dailies.js.tmp.16700.1767992835386",
+    "00-Meta/VAULT-REPORT.md",
+    "05-Calendar/_Calendar_Data.base",
+    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987514808",
+    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987502616",
+    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987489037",
+    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987479497",
+    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987459790",
+    "👁️Dashboard.md",
+    "03-Efforts/On/effort test 1.md",
+    "01-MOCs/01-MOCs.md",
+    "01-MOCs/MOC - Automation Command Center.md",
+    "🎯GTD Weekly Review.md",
+    "99-System/Reports/phase1-foundation-fixes-log.md",
+    "99-System/Reports/naming-convention-audit.md",
+    "99-System/Reports/files-requiring-cleanup-review.md",
+    "00-Meta/Documentation/Obsidian/Obsidian Hotkeys - Compact Cheatsheet.md",
+    "99-System/Images/GTD.png",
+    "02-Dots/100-Atomics/Statements/Statements.canvas",
+    "02-Dots/100-Atomics/Quotes/Quotes.canvas",
+    "99-System/Images/IMG OBS ICONS MENU.png",
+    "99-System/Images/Pasted image 20251010232040.png",
+    "99-System/Images/photoHotkey4.png",
+    "99-System/Images/photoHotkey3.png",
+    "99-System/Images/photoHotkey2.png",
+    "99-System/Images/photoHotkey1.png",
+    "99-System/Images/IMG_Atlas.png",
+    "99-System/Images/TheRing.jpg",
+    "99-System/Images/pale-blue-dot-banner.jpg",
+    "04-Sources/310 Knowledge/Dots/Statements/Statements.canvas",
+    "04-Sources/310 Knowledge/Dots/Quotes/Quotes.canvas",
+    "03 Spaces/Canvas Mind Maps/Untitled.canvas"
   ]
 }

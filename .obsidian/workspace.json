@@ -1,14 +1,29 @@
 {
   "main": {
-    "id": "5c8e5ceff5bb50bf",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "a07c790a8fb6d1b0",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "48413879de02cfdf",
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "+Inbox/Home.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          },
+          {
+            "id": "13d3ad76635cee6c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,8 +36,24 @@
               "icon": "lucide-file",
               "title": "🧭 Review HQ"
             }
+          },
+          {
+            "id": "19a8de046bea370b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💾Changelog.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "💾Changelog"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -34,7 +65,7 @@
       {
         "id": "d85935f8b9a1be9d",
         "type": "tabs",
-        "dimension": 71.09375,
+        "dimension": 77.386468952734,
         "children": [
           {
             "id": "5ec3facab638f060",
@@ -42,7 +73,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTime",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -65,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#🧹tidy",
+                "query": "tag:🤖domain/ai",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -82,55 +113,49 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md",
+                "file": "05-Calendar/_Logs/Můza porada/2025 - Můza porada.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of TODO"
+              "title": "Outline of 2025 - Můza porada"
+            }
+          },
+          {
+            "id": "223c09196a5400c2",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
       },
       {
-        "id": "65bd846b4bc911ea",
+        "id": "f9be1820555f0736",
         "type": "tabs",
-        "dimension": 28.90625,
+        "dimension": 22.613531047265987,
         "children": [
-          {
-            "id": "b315c9a4ea07a898",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00-Meta/Documentation/Obsidian/Obsidian Hotkeys - Compact Cheatsheet.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Obsidian Hotkeys - Compact Cheatsheet"
-            }
-          },
           {
             "id": "6c9bf88f4e0b8023",
             "type": "leaf",
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "🧭 Review HQ.md"
+                "file": "💾Changelog.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 🧭 Review HQ"
+              "title": "File properties for 💾Changelog"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 305.5
   },
   "right": {
     "id": "0ad95b1b240467e8",
@@ -139,7 +164,7 @@
       {
         "id": "3a8a0950370c85d9",
         "type": "tabs",
-        "dimension": 30.481283422459892,
+        "dimension": 69.34046345811052,
         "children": [
           {
             "id": "53755e10127a1bae",
@@ -179,7 +204,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224398,
+                  "scale": 0.7132754626224391,
                   "close": true
                 }
               },
@@ -188,7 +213,52 @@
             }
           },
           {
-            "id": "4d6601e0b730adf4",
+            "id": "0d0483eb4fdc9052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💾Changelog.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "💾Changelog"
+            }
+          },
+          {
+            "id": "750ec5fd39495a46",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "6d3855fd7ee74a56",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "smart-lookup-view"
+            }
+          },
+          {
+            "id": "0162781797bf933d",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "todo"
+            }
+          },
+          {
+            "id": "d7fd4c82ffcfc379",
             "type": "leaf",
             "state": {
               "type": "todo",
@@ -203,25 +273,8 @@
       {
         "id": "eaf4c99a59805e11",
         "type": "tabs",
-        "dimension": 69.5187165775401,
+        "dimension": 30.65953654188948,
         "children": [
-          {
-            "id": "49b6a28e2f00db7a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💾Changelog.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "💾Changelog"
-            }
-          },
           {
             "id": "70baa12c6d56e73d",
             "type": "leaf",
@@ -254,11 +307,12 @@
             }
           },
           {
-            "id": "de8e76f7517fa914",
+            "id": "8b37289f30668740",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "💾Changelog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,92 +322,98 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "751b5f4a2766e233",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Backlinks for 💾Changelog"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 384.5,
-    "collapsed": true
+    "width": 446.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "daily-notes:Open today's daily note": false,
+      "cmdr:Open daily note": false,
+      "canvas:Create new canvas": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "templates:Insert template": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-kanban:Create new board": false,
+      "quickadd:QuickAdd": false,
+      "templater-obsidian:Templater": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "cmdr:Add fileClass to file": false,
+      "cmdr:QuickAdd: 🔁reorder": false,
+      "homepage:Open homepage": false,
+      "periodic-notes:Open today": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "callout-manager:Insert Callout": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "5ec3facab638f060",
+  "active": "19a8de046bea370b",
   "lastOpenFiles": [
-    "06-Archive/Completed/▶️ START HERE.md",
+    "💾Changelog.md",
+    "00-Meta/📝Release Notes.md",
+    "99-System/Images/route_2025-09-20_10.05am.gpx",
+    "99-System/Images/exporthealth2025.zip",
+    "99-System/Images/export_cda.xml",
+    "99-System/Images/export.zip",
     "🧭 Review HQ.md",
-    "03-Efforts/Ongoing/🏠 Weekly Maintenance Tracker.md",
-    "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md",
-    "03-Efforts/Ongoing/🏠 Maintenance Calendar.md",
-    "03-Efforts/Ongoing/🏠 Living Areas Tasks.md",
-    "03-Efforts/Ongoing/🏠 Kitchen Tasks.md",
-    "03-Efforts/Ongoing/🏠 Home Maintenance System.md",
-    "03-Efforts/Ongoing/🏠 Entry & Laundry Tasks.md",
-    "03-Efforts/Ongoing/🏠 Bedroom Tasks.md",
-    "03-Efforts/Ongoing/🏠 Bathroom Tasks.md",
-    "00-Meta/Documentation/Performance Metrics.md.tmp.60408.1768077601728",
-    "99-System/Scripts/archive-old-dailies.js.tmp.60408.1768077523785",
-    "01-MOCs/🗺️My PKM MOC.md",
-    "START HERE.md",
-    "README.md",
+    "+Inbox/Home.md",
+    "+Inbox/Manager of PKM in Obsidian.md",
+    "00-Meta/Playbooks/PlayBook - Review of Obsidian.md",
+    "Templates/Template - Monthly Report.md",
+    "TODO.md",
     "🎯GTD Command Center.md",
-    "00-Meta/Documentation/Performance Metrics.md",
-    "99-System/Scripts/archive-old-dailies.js",
-    "99-System/Scripts/archive-old-dailies.js.tmp.16700.1767992835386",
-    "00-Meta/VAULT-REPORT.md",
-    "05-Calendar/_Calendar_Data.base",
-    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987514808",
-    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987502616",
-    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987489037",
-    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987479497",
-    "00-Meta/🎮Gamification Dashboard.md.tmp.16700.1767987459790",
-    "👁️Dashboard.md",
-    "03-Efforts/On/effort test 1.md",
-    "01-MOCs/01-MOCs.md",
-    "01-MOCs/MOC - Automation Command Center.md",
-    "🎯GTD Weekly Review.md",
-    "99-System/Reports/phase1-foundation-fixes-log.md",
-    "99-System/Reports/naming-convention-audit.md",
-    "99-System/Reports/files-requiring-cleanup-review.md",
-    "00-Meta/Documentation/Obsidian/Obsidian Hotkeys - Compact Cheatsheet.md",
-    "99-System/Images/GTD.png",
-    "02-Dots/100-Atomics/Statements/Statements.canvas",
-    "02-Dots/100-Atomics/Quotes/Quotes.canvas",
-    "99-System/Images/IMG OBS ICONS MENU.png",
-    "99-System/Images/Pasted image 20251010232040.png",
-    "99-System/Images/photoHotkey4.png",
-    "99-System/Images/photoHotkey3.png",
-    "99-System/Images/photoHotkey2.png",
-    "99-System/Images/photoHotkey1.png",
-    "99-System/Images/IMG_Atlas.png",
-    "99-System/Images/TheRing.jpg",
-    "99-System/Images/pale-blue-dot-banner.jpg",
-    "04-Sources/310 Knowledge/Dots/Statements/Statements.canvas",
-    "04-Sources/310 Knowledge/Dots/Quotes/Quotes.canvas",
-    "03 Spaces/Canvas Mind Maps/Untitled.canvas"
+    "01-MOCs/MOC - Me myself and I.md",
+    "+Inbox/importdata_Claude0901/Testing & QA MOC.md",
+    "+Inbox/importdata_Claude0901/MOC - Life Dashboard.md",
+    "+Inbox/importdata_Claude0901/Playwright Best Practices Collection.md",
+    "+Inbox/importdata_Claude0901/MOC - Domácnost.md",
+    "+Inbox/Kitchen Storage Optimization.md",
+    "+Inbox/importdata_Claude0901/Area - Home & Life Systems.md",
+    "+Inbox/importdata_Claude0901/Migration Guide.md",
+    "01-MOCs/MOC - Prompt.md",
+    "_backups/normalize-snapshots/01-MOCs__MOC - Prompt.20260113-000624.md",
+    "_backups/normalize-snapshots",
+    "_backups",
+    "01-MOCs/MOC - AI.md",
+    "01-MOCs/MOC - Prompts.md",
+    "07-Prompts/01-Docs/Prompt Guide.md",
+    "07-Prompts/01-Docs/Prompt Dashboard OLD.md",
+    "07-Prompts/01-Docs/Playbook - Prompt.md",
+    "+Inbox/Cookie as a monster in mini town.md",
+    "All-Star-Base.base",
+    "Active-Types-base.base",
+    "99-System/_System_data.base",
+    "Overview of Data.base",
+    "99-System/Excalidraw/Capture - Quick add - Commander mindmap.canvas",
+    "99-System/Images/image-10.png",
+    "99-System/Images/stats_ALL_DURATION_2025.png",
+    "99-System/Images/stats_ALL_calories_burned_2025.png",
+    "99-System/Images/stats_ALL_distance _2025.png",
+    "99-System/Images/stats_ALL_max_distance_2025.png",
+    "99-System/Images/stats_ALL_avg-speed_2025.png",
+    "99-System/Images/stats_walk_2025.png",
+    "99-System/Images/stats_badminton_2025.png",
+    "99-System/Images/stats_run_avg-pace_2025.png",
+    "99-System/Images/stats_run_MAX_distance2025.png",
+    "05-Calendar/Layout - everyday morning for work.canvas",
+    "05-Calendar/Daily/Untitled.canvas",
+    "02-Dots/Food/Food compas cuisines.canvas",
+    "02-Dots/Seberozvoj/Celoživotní učení/Emoce/Scenarios for Emotions.canvas",
+    "02-Dots/Seberozvoj/Mapa seberozvoje.canvas",
+    "02-Dots/Seberozvoj/MAP of Self-development.canvas",
+    "02-Dots/IT/Linktree view for 3D print.canvas",
+    "02-Dots/Communication/MAP for communication.canvas",
+    "07-Prompts/01-Docs/Prompt expert Canvas.canvas"
   ]
 }

@@ -1,4 +1,16 @@
 [
-  "dataview",
-  "obsidian-tasks-plugin"
+  "lazy-plugins",
+  "obsidian-advanced-uri",
+  "folder-notes",
+  "obsidian-kanban",
+  "obsidian-minimal-settings",
+  "url-into-selection",
+  "periodic-notes",
+  "obsidian-plugin-update-tracker",
+  "quickadd",
+  "templater-obsidian",
+  "darlal-switcher-plus",
+  "obsidian-style-settings",
+  "cmdr",
+  "homepage"
 ]

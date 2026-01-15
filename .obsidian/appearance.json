@@ -1,1 +1,32 @@
-{}
+{
+  "cssTheme": "Minimal",
+  "showViewHeader": true,
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "media-grid-snippet",
+    "windows-file-improvements",
+    "Bigger-first-letter-drop-cap",
+    "cornell-main-nick1",
+    "cornell-main-v2",
+    "KANBAN-Snippet",
+    "obsidian_kanban_custom",
+    "test",
+    "Colored Sidebar Items",
+    "cornell-banner-nick1",
+    "cornell-banner-v2",
+    "kanban_custom",
+    "MCL Gallery Cards",
+    "MCL Multi Column",
+    "MCL Wide Views",
+    "nick-milo-callouts",
+    "timeline-snippet",
+    "action-menu-buttons"
+  ],
+  "textFontFamily": "Helvetica",
+  "monospaceFontFamily": "Montserrat",
+  "interfaceFontFamily": "Century Gothic",
+  "baseFontSizeAction": true,
+  "baseFontSize": 21,
+  "theme": "obsidian",
+  "nativeMenus": false
+}

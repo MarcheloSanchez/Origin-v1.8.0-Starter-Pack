@@ -1,0 +1,15 @@
+/* Remove additional header spacing */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Custom header colors */
+.markdown-preview-view h1 { color: #007bff; }
+.markdown-preview-view h2 { color: #28a745; }
+.markdown-preview-view h3 { color: #dc3545; }

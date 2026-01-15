@@ -1,0 +1,119 @@
+{
+  "dualConfigs": false,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 5,
+    "longDelaySeconds": 15,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": "short",
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "obsidian-advanced-uri": {
+        "startupType": "instant"
+      },
+      "auto-note-mover": {
+        "startupType": "long"
+      },
+      "calendar": {
+        "startupType": "short"
+      },
+      "callout-manager": {
+        "startupType": "short"
+      },
+      "cmdr": {
+        "startupType": "instant"
+      },
+      "dataview": {
+        "startupType": "short"
+      },
+      "folder-notes": {
+        "startupType": "instant"
+      },
+      "obsidian-checklist-plugin": {
+        "startupType": "disabled"
+      },
+      "obsidian-image-toolkit": {
+        "startupType": "disabled"
+      },
+      "obsidian-kanban": {
+        "startupType": "instant"
+      },
+      "obsidian-minimal-settings": {
+        "startupType": "instant"
+      },
+      "url-into-selection": {
+        "startupType": "instant"
+      },
+      "periodic-notes": {
+        "startupType": "instant"
+      },
+      "obsidian-plugin-update-tracker": {
+        "startupType": "instant"
+      },
+      "darlal-switcher-plus": {
+        "startupType": "instant"
+      },
+      "quickadd": {
+        "startupType": "instant"
+      },
+      "obsidian-style-settings": {
+        "startupType": "instant"
+      },
+      "tag-wrangler": {
+        "startupType": "short"
+      },
+      "templater-obsidian": {
+        "startupType": "instant"
+      },
+      "obsidian-text-format": {
+        "startupType": "short"
+      },
+      "metadata-menu": {
+        "startupType": "short"
+      },
+      "obsidian-tasks-plugin": {
+        "startupType": "short"
+      },
+      "copilot": {
+        "startupType": "disabled"
+      },
+      "buttons": {
+        "startupType": "short"
+      },
+      "obsidian-linter": {
+        "startupType": "short"
+      },
+      "nldates-obsidian": {
+        "startupType": "short"
+      },
+      "translate": {
+        "startupType": "short"
+      },
+      "obsidian-excalidraw-plugin": {
+        "startupType": "short"
+      },
+      "image-converter": {
+        "startupType": "long"
+      },
+      "obsidian-hider": {
+        "startupType": "disabled"
+      },
+      "various-complements": {
+        "startupType": "short"
+      },
+      "homepage": {
+        "startupType": "instant"
+      },
+      "obsidian-pandoc": {
+        "startupType": "short"
+      },
+      "recent-files-obsidian": {
+        "startupType": "short"
+      },
+      "smart-connections": {
+        "startupType": "short"
+      }
+    }
+  }
+}

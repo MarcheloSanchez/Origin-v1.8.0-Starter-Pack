@@ -1,0 +1,1253 @@
+{
+  "workspaces": {
+    "🔁ACTIVE": {
+      "main": {
+        "id": "5c8e5ceff5bb50bf",
+        "type": "split",
+        "children": [
+          {
+            "id": "2af8c1981623c57f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "cd2ba028726c3909",
+                "type": "leaf",
+                "state": {
+                  "type": "kanban",
+                  "state": {
+                    "file": "💾Backlog KANBAN for OBSIDIAN.md",
+                    "kanbanViewState": {
+                      "kanban-plugin": "board",
+                      "list-collapse": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false,
+                        false
+                      ]
+                    }
+                  },
+                  "icon": "lucide-trello",
+                  "title": "💾Backlog KANBAN for OBSIDIAN"
+                }
+              },
+              {
+                "id": "4c20d7e947a77353",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "🏡Home.md",
+                    "mode": "preview",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "🏡Home"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "f23a5296fafac93e",
+        "type": "split",
+        "children": [
+          {
+            "id": "d85935f8b9a1be9d",
+            "type": "tabs",
+            "dimension": 71.09375,
+            "children": [
+              {
+                "id": "5ec3facab638f060",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "acaddd6f334db560",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "d697ead5e0d440c9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#🧹tidy",
+                    "matchingCase": false,
+                    "explainSearch": true,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "0a555d6458259e6b",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "TODO.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of TODO"
+                }
+              }
+            ]
+          },
+          {
+            "id": "65bd846b4bc911ea",
+            "type": "tabs",
+            "dimension": 28.90625,
+            "children": [
+              {
+                "id": "b315c9a4ea07a898",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "00-Meta/Documentation/Obsidian/Obsidian Hotkeys - Compact Cheatsheet.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Obsidian Hotkeys - Compact Cheatsheet"
+                }
+              },
+              {
+                "id": "6c9bf88f4e0b8023",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "💾Backlog KANBAN for OBSIDIAN.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for 💾Backlog KANBAN for OBSIDIAN"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 276.5
+      },
+      "right": {
+        "id": "0ad95b1b240467e8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3a8a0950370c85d9",
+            "type": "tabs",
+            "dimension": 30.481283422459892,
+            "children": [
+              {
+                "id": "53755e10127a1bae",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "abcdf216d928fbc7",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "💾Backlog KANBAN for OBSIDIAN.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.7132754626224392,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 💾Backlog KANBAN for OBSIDIAN"
+                }
+              }
+            ]
+          },
+          {
+            "id": "eaf4c99a59805e11",
+            "type": "tabs",
+            "dimension": 69.5187165775401,
+            "children": [
+              {
+                "id": "49b6a28e2f00db7a",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "💾Changelog.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "💾Changelog"
+                }
+              },
+              {
+                "id": "70baa12c6d56e73d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "2eeaf8b37bd80b9a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "de8e76f7517fa914",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks"
+                }
+              },
+              {
+                "id": "751b5f4a2766e233",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 384.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "command-palette:Open command palette": false,
+          "templates:Insert template": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "bases:Create new base": false,
+          "markdown-importer:Open format converter": false,
+          "workspaces:Manage workspace layouts": false,
+          "obsidian-kanban:Create new board": false,
+          "quickadd:QuickAdd": false,
+          "templater-obsidian:Templater": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "periodic-notes:Open today": false,
+          "cmdr:Add fileClass to file": false,
+          "cmdr:QuickAdd: 🔁reorder": false,
+          "callout-manager:Insert Callout": false
+        }
+      },
+      "active": "cd2ba028726c3909",
+      "mtime": "2025-11-07T19:41:35+01:00"
+    },
+    "📅DAILY": {
+      "main": {
+        "id": "5c8e5ceff5bb50bf",
+        "type": "split",
+        "children": [
+          {
+            "id": "c128440f059e51a3",
+            "type": "split",
+            "children": [
+              {
+                "id": "2af8c1981623c57f",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4655cb4c1ed5efac",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "05-Calendar/Daily/2025-11-07.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "2025-11-07"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "85cad5291d68fcb2",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4c20d7e947a77353",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "👁️Dashboard.md",
+                        "mode": "preview",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "👁️Dashboard"
+                    }
+                  },
+                  {
+                    "id": "a37a8e6bf3f0290f",
+                    "type": "leaf",
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "💾Backlog KANBAN for OBSIDIAN.md",
+                        "kanbanViewState": {
+                          "kanban-plugin": "board",
+                          "list-collapse": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                          ]
+                        }
+                      },
+                      "icon": "lucide-trello",
+                      "title": "💾Backlog KANBAN for OBSIDIAN"
+                    }
+                  },
+                  {
+                    "id": "cd2ba028726c3909",
+                    "type": "leaf",
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "💾Backlog KANBAN for OBSIDIAN.md",
+                        "kanbanViewState": {
+                          "kanban-plugin": "board",
+                          "list-collapse": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                          ]
+                        }
+                      },
+                      "icon": "lucide-trello",
+                      "title": "💾Backlog KANBAN for OBSIDIAN"
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "f23a5296fafac93e",
+        "type": "split",
+        "children": [
+          {
+            "id": "d85935f8b9a1be9d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5ec3facab638f060",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "acaddd6f334db560",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "d697ead5e0d440c9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#🧹tidy",
+                    "matchingCase": false,
+                    "explainSearch": true,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "0a555d6458259e6b",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "TODO.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of TODO"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 214.5
+      },
+      "right": {
+        "id": "0ad95b1b240467e8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3a8a0950370c85d9",
+            "type": "tabs",
+            "dimension": 30.481283422459892,
+            "children": [
+              {
+                "id": "53755e10127a1bae",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "abcdf216d928fbc7",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "05-Calendar/Daily/2025-11-07.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.7132754626224392,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 2025-11-07"
+                }
+              },
+              {
+                "id": "49b6a28e2f00db7a",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "💾Changelog.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "💾Changelog"
+                }
+              }
+            ]
+          },
+          {
+            "id": "eaf4c99a59805e11",
+            "type": "tabs",
+            "dimension": 69.5187165775401,
+            "children": [
+              {
+                "id": "6c9bf88f4e0b8023",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "05-Calendar/Daily/2025-11-07.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for 2025-11-07"
+                }
+              },
+              {
+                "id": "70baa12c6d56e73d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "2eeaf8b37bd80b9a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "de8e76f7517fa914",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks"
+                }
+              },
+              {
+                "id": "751b5f4a2766e233",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 350.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "command-palette:Open command palette": false,
+          "templates:Insert template": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "bases:Create new base": false,
+          "markdown-importer:Open format converter": false,
+          "workspaces:Manage workspace layouts": false,
+          "obsidian-kanban:Create new board": false,
+          "quickadd:QuickAdd": false,
+          "templater-obsidian:Templater": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "periodic-notes:Open today": false,
+          "cmdr:Add fileClass to file": false,
+          "cmdr:QuickAdd: 🔁reorder": false,
+          "callout-manager:Insert Callout": false
+        }
+      },
+      "active": "4655cb4c1ed5efac",
+      "mtime": "2025-11-07T20:38:03+01:00"
+    },
+    "DEFAULT": {
+      "main": {
+        "id": "5c8e5ceff5bb50bf",
+        "type": "split",
+        "children": [
+          {
+            "id": "473cd1fb5dc5a9b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1ab24b5ed8f122af",
+                "type": "leaf",
+                "state": {
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
+                }
+              }
+            ],
+            "stacked": true
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "f23a5296fafac93e",
+        "type": "split",
+        "children": [
+          {
+            "id": "68423098322419a3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5ec3facab638f060",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "d697ead5e0d440c9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "acaddd6f334db560",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "0ad95b1b240467e8",
+        "type": "split",
+        "children": [
+          {
+            "id": "eaf4c99a59805e11",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "de8e76f7517fa914",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks"
+                }
+              },
+              {
+                "id": "751b5f4a2766e233",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links"
+                }
+              },
+              {
+                "id": "2eeaf8b37bd80b9a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "0a555d6458259e6b",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline"
+                }
+              },
+              {
+                "id": "70baa12c6d56e73d",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "8d65d664f487d122",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "bases:Create new base": false,
+          "markdown-importer:Open format converter": false,
+          "obsidian-kanban:Create new board": false,
+          "quickadd:QuickAdd": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "periodic-notes:Open today": false,
+          "cmdr:Add fileClass to file": false,
+          "cmdr:QuickAdd: 🔁reorder": false,
+          "callout-manager:Insert Callout": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "templates:Insert template": false,
+          "command-palette:Open command palette": false,
+          "workspaces:Manage workspace layouts": false,
+          "templater-obsidian:Templater": false
+        }
+      },
+      "active": "1ab24b5ed8f122af",
+      "mtime": "2025-11-07T20:38:32+01:00"
+    },
+    "⚡FASTER": {
+      "main": {
+        "id": "5c8e5ceff5bb50bf",
+        "type": "split",
+        "children": [
+          {
+            "id": "c128440f059e51a3",
+            "type": "split",
+            "children": [
+              {
+                "id": "2af8c1981623c57f",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "4655cb4c1ed5efac",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "05-Calendar/Daily/2025-11-07.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "2025-11-07"
+                    }
+                  },
+                  {
+                    "id": "d5eefb7cddce551b",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "🏡Home.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "🏡Home"
+                    }
+                  },
+                  {
+                    "id": "2b62803ea7092e3d",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "02-Dots/100-Atomics/dfffff.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "dfffff"
+                    }
+                  }
+                ],
+                "currentTab": 2
+              },
+              {
+                "id": "85cad5291d68fcb2",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "cd2ba028726c3909",
+                    "type": "leaf",
+                    "state": {
+                      "type": "kanban",
+                      "state": {
+                        "file": "💾Backlog KANBAN for OBSIDIAN.md",
+                        "kanbanViewState": {
+                          "kanban-plugin": "board",
+                          "list-collapse": [
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false,
+                            false
+                          ]
+                        }
+                      },
+                      "icon": "lucide-trello",
+                      "title": "💾Backlog KANBAN for OBSIDIAN"
+                    }
+                  },
+                  {
+                    "id": "09244b9fa574ba43",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "+Inbox/kanban_inbox/epic_vs_task_visual_guide_origin_vault.md",
+                        "mode": "source",
+                        "source": false,
+                        "backlinks": false
+                      },
+                      "icon": "lucide-file",
+                      "title": "epic_vs_task_visual_guide_origin_vault"
+                    }
+                  }
+                ],
+                "currentTab": 1,
+                "stacked": true
+              }
+            ],
+            "direction": "horizontal"
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "f23a5296fafac93e",
+        "type": "split",
+        "children": [
+          {
+            "id": "d85935f8b9a1be9d",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5ec3facab638f060",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "acaddd6f334db560",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
+                }
+              },
+              {
+                "id": "d697ead5e0d440c9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#🧹tidy",
+                    "matchingCase": false,
+                    "explainSearch": true,
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
+                }
+              },
+              {
+                "id": "0a555d6458259e6b",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "TODO.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of TODO"
+                }
+              }
+            ]
+          },
+          {
+            "id": "4482c70de2b97e6a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b326e14cfce61e14",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "03-Efforts/On/⚡ Automation Menu.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "⚡ Automation Menu"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 257.5
+      },
+      "right": {
+        "id": "0ad95b1b240467e8",
+        "type": "split",
+        "children": [
+          {
+            "id": "3a8a0950370c85d9",
+            "type": "tabs",
+            "dimension": 30.481283422459892,
+            "children": [
+              {
+                "id": "53755e10127a1bae",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "abcdf216d928fbc7",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "file": "05-Calendar/Daily/2025-11-07.md",
+                    "options": {
+                      "collapse-filter": true,
+                      "search": "",
+                      "localJumps": 1,
+                      "localBacklinks": true,
+                      "localForelinks": true,
+                      "localInterlinks": false,
+                      "showTags": false,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": true,
+                      "showArrow": false,
+                      "textFadeMultiplier": 0,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.7132754626224392,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph of 2025-11-07"
+                }
+              },
+              {
+                "id": "49b6a28e2f00db7a",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "💾Changelog.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": false
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "💾Changelog"
+                }
+              }
+            ]
+          },
+          {
+            "id": "eaf4c99a59805e11",
+            "type": "tabs",
+            "dimension": 69.5187165775401,
+            "children": [
+              {
+                "id": "6c9bf88f4e0b8023",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "02-Dots/100-Atomics/dfffff.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for dfffff"
+                }
+              },
+              {
+                "id": "70baa12c6d56e73d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "pinned": true,
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "2eeaf8b37bd80b9a",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 350.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "command-palette:Open command palette": false,
+          "templates:Insert template": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "bases:Create new base": false,
+          "markdown-importer:Open format converter": false,
+          "workspaces:Manage workspace layouts": false,
+          "obsidian-kanban:Create new board": false,
+          "quickadd:QuickAdd": false,
+          "templater-obsidian:Templater": false,
+          "darlal-switcher-plus:Open in Headings Mode": false,
+          "darlal-switcher-plus:Open Symbols for the active editor": false,
+          "periodic-notes:Open today": false,
+          "cmdr:Add fileClass to file": false,
+          "cmdr:QuickAdd: 🔁reorder": false,
+          "callout-manager:Insert Callout": false
+        }
+      },
+      "active": "2b62803ea7092e3d",
+      "mtime": "2025-11-07T21:12:03+01:00"
+    }
+  },
+  "active": "⚡FASTER"
+}

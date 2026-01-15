@@ -1,0 +1,124 @@
+{
+  "presetFields": [
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "right-triangle",
+      "tooltip": "Accepts a single value from a list",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesListNotePath",
+        "valuesList": {},
+        "valuesListNotePath": "99-System/CIS/CIS_STATUS.md"
+      },
+      "name": "status",
+      "id": "0lJSjy",
+      "path": ""
+    },
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "right-triangle",
+      "tooltip": "Accepts a single value from a list",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesListNotePath",
+        "valuesList": {},
+        "valuesListNotePath": "99-System/CIS/CIS_TYPE.md"
+      },
+      "name": "type",
+      "id": "4MrrPh",
+      "path": ""
+    },
+    {
+      "type": "Date",
+      "tagName": "date",
+      "icon": "calendar-with-checkmark",
+      "tooltip": "Accepts a date",
+      "colorClass": "date",
+      "options": {
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
+      },
+      "name": "modified",
+      "id": "POQKf1",
+      "path": ""
+    },
+    {
+      "type": "Date",
+      "tagName": "date",
+      "icon": "calendar-with-checkmark",
+      "tooltip": "Accepts a date",
+      "colorClass": "date",
+      "options": {
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
+      },
+      "name": "created",
+      "id": "oY1N0s",
+      "path": ""
+    },
+    {
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {},
+      "name": "tags",
+      "id": "oiM7TJ",
+      "path": ""
+    },
+    {
+      "type": "Object",
+      "tagName": "object",
+      "icon": "package",
+      "tooltip": "Accepts an object with nested fields",
+      "colorClass": "lookup",
+      "options": {
+        "displayTemplate": ""
+      },
+      "name": "fileClass",
+      "id": "7DR7AS",
+      "path": ""
+    }
+  ],
+  "fileClassQueries": [],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [],
+  "classFilesPath": "99-System/FileClass/",
+  "isAutosuggestEnabled": true,
+  "fileClassAlias": "fileClass",
+  "settingsVersion": "5.7",
+  "globalFileClass": "",
+  "firstDayOfWeek": 1,
+  "enableLinks": false,
+  "enableTabHeader": false,
+  "enableEditor": false,
+  "enableBacklinks": false,
+  "enableStarred": true,
+  "enableFileExplorer": true,
+  "enableSearch": false,
+  "enableProperties": true,
+  "tableViewMaxRecords": 10,
+  "frontmatterListDisplay": "asArray",
+  "fileClassExcludedFolders": [],
+  "showIndexingStatusInStatusBar": true,
+  "fileIndexingExcludedFolders": [
+    "06 Archive/"
+  ],
+  "fileIndexingExcludedExtensions": [
+    ".excalidraw.md"
+  ],
+  "fileIndexingExcludedRegex": [],
+  "frontmatterOnly": true,
+  "showFileClassSelectInModal": true,
+  "chooseFileClassAtFileCreation": false,
+  "autoInsertFieldsAtFileClassInsertion": true,
+  "fileClassIcon": "package",
+  "isAutoCalculationEnabled": true
+}

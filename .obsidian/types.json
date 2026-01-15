@@ -3,6 +3,9 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
+    "Date-Created": "date",
+    "Last Backup": "date",
+    "Created": "date",
     "TQ_explain": "checkbox",
     "TQ_extra_instructions": "text",
     "TQ_short_mode": "checkbox",
@@ -23,6 +26,9 @@
     "TQ_show_tags": "checkbox",
     "TQ_show_task_count": "checkbox",
     "TQ_show_tree": "checkbox",
-    "TQ_show_urgency": "checkbox"
+    "TQ_show_urgency": "checkbox",
+    "modified": "date",
+    "time_required": "multitext",
+    "related": "multitext"
   }
 }

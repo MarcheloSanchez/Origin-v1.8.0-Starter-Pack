@@ -1,0 +1,458 @@
+{
+  "callouts": {
+    "custom": [
+      "iconref-a",
+      "icon-ref-b",
+      "context",
+      "bikee",
+      "flex",
+      "end",
+      "flexx",
+      "int",
+      "cre",
+      "prs",
+      "cha",
+      "emp",
+      "com",
+      "rel",
+      "res",
+      "intu",
+      "men",
+      "emo",
+      "mus",
+      "trid",
+      "memory",
+      "crit",
+      "q",
+      "tar",
+      "lead",
+      "team",
+      "tool",
+      "focus",
+      "hearth",
+      "agi",
+      "prog",
+      "rock",
+      "surv",
+      "plane",
+      "car",
+      "idea",
+      "watch"
+    ],
+    "settings": {
+      "note": [
+        {
+          "changes": {
+            "icon": "lucide-file-text",
+            "color": "134, 142, 150"
+          }
+        }
+      ],
+      "help": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "255, 128, 183"
+          }
+        }
+      ],
+      "bikee": [
+        {
+          "changes": {
+            "icon": "lucide-trees",
+            "color": "46, 178, 92"
+          }
+        }
+      ],
+      "watch": [
+        {
+          "changes": {
+            "icon": "lucide-watch"
+          }
+        }
+      ],
+      "iconref-a": [
+        {
+          "changes": {
+            "icon": "lucide-trees",
+            "color": "216, 125, 206"
+          }
+        }
+      ],
+      "icon-ref-b": [
+        {
+          "changes": {
+            "icon": "lucide-boxes",
+            "color": "211, 120, 208"
+          }
+        }
+      ],
+      "context": [
+        {
+          "changes": {
+            "icon": "lucide-view",
+            "color": "123, 147, 173"
+          }
+        }
+      ],
+      "idea": [
+        {
+          "changes": {
+            "icon": "lucide-badge-help"
+          }
+        }
+      ],
+      "flex": [
+        {
+          "changes": {
+            "icon": "lucide-dumbbell"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "251, 70, 76"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "191, 34, 34"
+          }
+        }
+      ],
+      "end": [
+        {
+          "changes": {
+            "icon": "lucide-battery-full"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "180, 55, 225"
+          }
+        }
+      ],
+      "flexx": [
+        {
+          "changes": {
+            "icon": "lucide-biceps-flexed",
+            "color": "112, 221, 110"
+          }
+        }
+      ],
+      "int": [
+        {
+          "changes": {
+            "icon": "lucide-lightbulb"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "193, 164, 16"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "240, 244, 6"
+          }
+        }
+      ],
+      "cre": [
+        {
+          "changes": {
+            "icon": "lucide-palette"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "2, 122, 255"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "131, 51, 230"
+          }
+        }
+      ],
+      "prs": [
+        {
+          "changes": {
+            "icon": "lucide-puzzle"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "0, 128, 128"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "1, 167, 167"
+          }
+        }
+      ],
+      "cha": [
+        {
+          "changes": {
+            "icon": "lucide-stars",
+            "color": "255, 162, 0"
+          }
+        }
+      ],
+      "emp": [
+        {
+          "changes": {
+            "icon": "lucide-heart-handshake",
+            "color": "225, 0, 255"
+          }
+        }
+      ],
+      "com": [
+        {
+          "changes": {
+            "icon": "lucide-bot-message-square",
+            "color": "85, 178, 236"
+          }
+        }
+      ],
+      "rel": [
+        {
+          "changes": {
+            "icon": "lucide-users-round",
+            "color": "64, 150, 242"
+          }
+        }
+      ],
+      "res": [
+        {
+          "changes": {
+            "icon": "lucide-axis-3d",
+            "color": "31, 178, 75"
+          }
+        }
+      ],
+      "intu": [
+        {
+          "changes": {
+            "icon": "lucide-baby",
+            "color": "71, 69, 227"
+          }
+        }
+      ],
+      "men": [
+        {
+          "changes": {
+            "icon": "lucide-brain",
+            "color": "55, 186, 251"
+          }
+        }
+      ],
+      "emo": [
+        {
+          "changes": {
+            "icon": "lucide-hand-heart",
+            "color": "255, 0, 221"
+          }
+        }
+      ],
+      "mus": [
+        {
+          "changes": {
+            "icon": "lucide-music-4",
+            "color": "199, 128, 219"
+          }
+        }
+      ],
+      "trid": [
+        {
+          "changes": {
+            "icon": "lucide-rotate-3d",
+            "color": "255, 123, 0"
+          }
+        }
+      ],
+      "memory": [
+        {
+          "changes": {
+            "icon": "lucide-save",
+            "color": "68, 207, 110"
+          }
+        }
+      ],
+      "crit": [
+        {
+          "changes": {
+            "icon": "lucide-sunset",
+            "color": "22, 9, 211"
+          }
+        }
+      ],
+      "q": [
+        {
+          "changes": {
+            "icon": "lucide-badge-help"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "2, 122, 255"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "236, 205, 50"
+          }
+        }
+      ],
+      "tar": [
+        {
+          "changes": {
+            "icon": "lucide-target",
+            "color": "255, 255, 255"
+          }
+        }
+      ],
+      "lead": [
+        {
+          "changes": {
+            "icon": "lucide-hand-heart",
+            "color": "143, 98, 0"
+          }
+        }
+      ],
+      "team": [
+        {
+          "changes": {
+            "icon": "lucide-handshake",
+            "color": "133, 214, 134"
+          }
+        }
+      ],
+      "tool": [
+        {
+          "changes": {
+            "icon": "lucide-hammer"
+          }
+        }
+      ],
+      "focus": [
+        {
+          "changes": {
+            "icon": "lucide-scan-eye",
+            "color": "0, 238, 255"
+          }
+        }
+      ],
+      "hearth": [
+        {
+          "changes": {
+            "icon": "lucide-heart-pulse",
+            "color": "232, 105, 124"
+          }
+        }
+      ],
+      "agi": [
+        {
+          "changes": {
+            "icon": "lucide-accessibility",
+            "color": "35, 223, 32"
+          }
+        }
+      ],
+      "prog": [
+        {
+          "changes": {
+            "icon": "lucide-code-xml",
+            "color": "0, 255, 4"
+          }
+        }
+      ],
+      "rock": [
+        {
+          "changes": {
+            "icon": "lucide-brick-wall",
+            "color": "217, 217, 217"
+          }
+        }
+      ],
+      "surv": [
+        {
+          "changes": {
+            "icon": "lucide-trees",
+            "color": "26, 255, 64"
+          }
+        }
+      ],
+      "plane": [
+        {
+          "changes": {
+            "icon": "lucide-plane",
+            "color": "133, 190, 255"
+          }
+        }
+      ],
+      "car": [
+        {
+          "changes": {
+            "icon": "lucide-car",
+            "color": "87, 217, 234"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

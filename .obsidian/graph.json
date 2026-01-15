@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "WORKOUT",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#🗺️MOC  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#⚙️system  ",
+      "color": {
+        "a": 1,
+        "rgb": 15592941
+      }
+    },
+    {
+      "query": "tag:#☢️3dprint  ",
+      "color": {
+        "a": 1,
+        "rgb": 16746056
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.5,
+  "nodeSizeMultiplier": 1.02842105263158,
+  "lineSizeMultiplier": 1.36368421052632,
+  "collapse-forces": false,
+  "centerStrength": 0.826315789473684,
+  "repelStrength": 16.2105263157895,
+  "linkStrength": 1,
+  "linkDistance": 67,
+  "scale": 0.18028876271669703,
+  "close": false
+}

@@ -18,6 +18,7 @@ priority: high
 processing_priority: high
 created: 2026-01-15
 modified: 2026-01-15
+version: 2.0
 cssclasses:
   - wide-page
   - review-hq
@@ -53,6 +54,15 @@ related:
 ## 🚦 System Health Dashboard
 
 > [!tip] Glance here first. Green = calm. Yellow = attention needed. Red = action required.
+>
+> **Quick Actions by Status:**
+> | If Red... | Go To | Action |
+> |-----------|-------|--------|
+> | 📥 Inbox | [[+Inbox]] | Triage oldest 5 items |
+> | ⚠️ Overdue | [[#⚠️ Urgent Attention]] | Reschedule or complete |
+> | 🚀 Efforts | [[03-Efforts]] | Archive or pause 2 |
+> | ⏳ Waiting | [[#⏳ Waiting & Blocked]] | Follow up or close |
+> | 🧹 Maintenance | [[🧹Cleaning Lady]] | Quick 5-min fix |
 
 ```dataviewjs
 // ═══════════════════════════════════════════════════════════════════
@@ -213,9 +223,32 @@ if (candidates.length > 0) {
 
 > [!tip] Can't decide? Pick #1 and work for 25 minutes. Then reassess.
 
+> [!abstract]- 🎯 **Action Hub: Focus Work**
+> **Where to work:**
+> - Open the linked note directly and start working
+> - Use [[🎯GTD Command Center#🔥 Focus Now]] for energy-based filtering
+> - Need more context? → [[🎯GTD Command Center#📋 Next Actions by Context]]
+>
+> **After completing:**
+> 1. Mark task ✅ done in the source note
+> 2. Update `completion_percentage` if it's an effort
+> 3. Return here to check next focus item
+
 ---
 
 ## ⚠️ Urgent Attention
+
+> [!danger]- 🚨 **Action Hub: Urgent Items**
+> **Overdue tasks:**
+> - Click the task link → complete it NOW or reschedule with a new `due::` date
+> - Can't do it? → Change to `@waiting` and note who/what you're waiting for
+>
+> **Approaching deadlines:**
+> - Open the effort → update `next_actions` field with immediate step
+> - Need to delegate? → Add `waiting_for::` and `waiting_since::` fields
+> - Need to postpone? → Update `deadline` and add reason in note body
+>
+> **Where to manage:** [[🎯GTD Command Center#📅 Calendar View]]
 
 ### 🔴 Overdue Tasks
 
@@ -262,6 +295,31 @@ LIMIT 7
 
 > [!warning] Target: Process within 48 hours. Items older than 7 days need immediate attention.
 
+> [!example]- 📬 **Action Hub: Inbox Processing**
+> **Go to:** [[+Inbox]] to process items directly
+>
+> **2-Minute Triage Decision Tree:**
+> ```
+> Is it actionable?
+> ├─ NO → Is it reference material?
+> │       ├─ YES → Move to [[04-Sources]] or [[02-Dots]]
+> │       └─ NO → 🗑️ Delete it
+> └─ YES → Can I do it in <2 min?
+>         ├─ YES → Do it now, then delete/archive
+>         └─ NO → Is it a project?
+>                 ├─ YES → Create in [[03-Efforts/Simmering]]
+>                 └─ NO → Add task to relevant note
+> ```
+>
+> **Quick destination guide:**
+> | Content Type | Move To | Template |
+> |--------------|---------|----------|
+> | Idea/thought | [[02-Dots/100-Atomics]] | `Atomic-New` |
+> | Task/project | [[03-Efforts]] | `Effort-New` |
+> | Reference | [[04-Sources]] | `Source-New` |
+> | Meeting note | [[04-Sources/Meetings]] | `Meeting-New` |
+> | Unsure | Keep + add #🚤floating | — |
+
 ### Inbox Overview
 
 ```dataview
@@ -302,6 +360,24 @@ LIMIT 10
 ## ⏳ Waiting & Blocked
 
 > [!info] Things you can't act on until someone/something else moves.
+
+> [!question]- ⏳ **Action Hub: Unblock Your Work**
+> **For each waiting item, decide:**
+>
+> | Situation | Action | How |
+> |-----------|--------|-----|
+> | No response >3 days | Send follow-up | Note the follow-up in the task |
+> | Stale >2 weeks | Escalate or find alternative | Update `waiting_for` or remove |
+> | Resolved | Unblock it | Remove `waiting_for`, set `status: 🔄active` |
+> | No longer needed | Close it | Set `status: ❌cancelled` or delete |
+>
+> **Quick follow-up template:**
+> ```
+> Hey [name], following up on [topic] from [date].
+> Let me know if you need anything from me to move forward.
+> ```
+>
+> **Where to manage waiting contexts:** [[🎯GTD Command Center#⏳ Waiting For]]
 
 ### Notes in Waiting Status
 
@@ -350,6 +426,25 @@ LIMIT 7
 ## 🛠️ Maintenance Queue
 
 > [!info] Notes that need attention but aren't urgent. Tackle during low-energy time.
+
+> [!success]- 🧹 **Action Hub: Maintenance Work**
+> **Go to:** [[🧹Cleaning Lady]] for full maintenance dashboard
+>
+> **What each tag means & what to do:**
+>
+> | Tag | Meaning | Action | Time |
+> |-----|---------|--------|------|
+> | #🧹tidy | Needs reorganization | Restructure, fix formatting, clean up | 5-15 min |
+> | #🌱develop | Incomplete content | Add sections, expand ideas, add links | 10-30 min |
+> | #❔question | Needs research | Answer the question, then remove tag | 5-20 min |
+> | #🚤floating | No clear home | Decide: move, merge, or delete | 2-5 min |
+>
+> **Efficient workflow:**
+> 1. Pick **1 note** from lists below
+> 2. Open it → do the work → remove the tag
+> 3. If >15 min needed, schedule a time block instead
+>
+> **For bulk maintenance:** [[🧹Cleaning Lady]] | [[🌱Incubator]]
 
 ### 🧹 Notes Tagged #tidy
 
@@ -407,6 +502,25 @@ LIMIT 7
 ## 🔍 Data Integrity
 
 > [!warning] Notes with missing or inconsistent metadata. Fixing these improves queries and future-proofs your vault.
+
+> [!bug]- 🔧 **Action Hub: Fix Metadata**
+> **Tools:** `Cmd/Ctrl+P` → "MetaEdit" or edit YAML manually
+>
+> **Quick fix guide:**
+>
+> | Missing | Add This | Valid Values |
+> |---------|----------|--------------|
+> | `title` | `title: Note Name` | Any text |
+> | `type` | `type: atomic` | `atomic`, `effort`, `source`, `moc`, `meeting`, `area` |
+> | `status` | `status: 🔄active` | `📥inbox`, `🔄active`, `⏳waiting`, `✅completed`, `📦archived` |
+> | `created` | `created: 2026-01-15` | `YYYY-MM-DD` format |
+>
+> **Stale active notes:** These are marked "active" but haven't been touched in 30+ days.
+> - Still relevant? → Touch it (make any edit) or update `modified`
+> - Actually done? → Change to `status: ✅completed`
+> - No longer relevant? → Change to `status: 📦archived`
+>
+> **Reference docs:** [[99-System/CIS/CIS_STATUS]] | [[99-System/CIS/CIS_TYPE]] | [[99-System/FileClass]]
 
 ### Missing Critical Metadata
 
@@ -469,6 +583,24 @@ LIMIT 10
 
 ## 🔄 Review Flows
 
+> [!multi-column]
+>
+> > [!note]+ ☀️ Daily (10 min)
+> > **When:** Morning + Evening
+> > **Focus:** Clarity & closure
+> > **Skip to:** [[#☀️ Daily Review (10 min)]]
+>
+> > [!note]+ 📅 Weekly (30-45 min)
+> > **When:** End of week
+> > **Focus:** Get current
+> > **Skip to:** [[#📅 Weekly Review (30-45 min)]]
+> > **Full version:** [[🎯GTD Weekly Review]]
+>
+> > [!note]+ 📆 Monthly (60-90 min)
+> > **When:** First weekend
+> > **Focus:** Zoom out & realign
+> > **Skip to:** [[#📆 Monthly Review (60-90 min)]]
+
 ### ☀️ Daily Review (10 min)
 
 > [!info] Purpose: Start the day with clarity. End the day with closure.
@@ -486,6 +618,15 @@ LIMIT 10
 - [ ] Set tomorrow's intention (write in Daily Note or GTD Command Center)
 
 **Output:** Clear head, closed loops, tomorrow's focus set.
+
+> [!done]- ✅ **After Daily Review: What's Next?**
+> **Morning path:**
+> - Open your #1 focus item from [[#🔥 Top 3 Focus Suggestions]]
+> - Or go to [[🎯GTD Command Center#📋 Next Actions by Context]] for context-based work
+>
+> **Evening path:**
+> - Create tomorrow's Daily Note in [[05-Calendar/Daily]]
+> - Or log today's wins in [[🏡Home]]
 
 ---
 
@@ -521,6 +662,17 @@ LIMIT 10
 1.
 2.
 3.
+
+> [!done]- ✅ **After Weekly Review: What's Next?**
+> **Wrap-up actions:**
+> - [ ] Update [[05-Calendar/Weekly]] with this week's priorities
+> - [ ] Block time in your calendar for priority #1
+> - [ ] Send any follow-ups identified in Waiting review
+>
+> **Quick links for next week:**
+> - Start Monday with [[#☀️ Daily Review (10 min)]]
+> - Deep work? → [[🎯GTD Command Center#🔥 Focus Now]]
+> - Process captures? → [[+Inbox]]
 
 ---
 
@@ -566,11 +718,35 @@ LIMIT 10
 2.
 3.
 
+> [!done]- ✅ **After Monthly Review: What's Next?**
+> **Celebrate & capture:**
+> - [ ] Update [[05-Calendar/Monthly]] with theme and top efforts
+> - [ ] Archive this month's completed efforts → [[06-Archive/Completed]]
+> - [ ] Share a win with someone (optional but rewarding)
+>
+> **Set up for success:**
+> - [ ] Review [[MOC - Areas]] — ensure efforts align with what matters
+> - [ ] Clear any remaining 🔴 indicators in [[#🚦 System Health Dashboard]]
+> - [ ] Schedule next month's review in your calendar
+>
+> **System health:** [[🧹Cleaning Lady]] | [[99-System]]
+
 ---
 
 ## 🚨 Re-Entry Protocol
 
 > [!warning] Use this when you've been away from the system for 1+ weeks.
+
+> [!tip]- 🆘 **Quick Re-Entry Decision**
+> **How long were you away?**
+>
+> | Absence | What To Do | Time Needed |
+> |---------|------------|-------------|
+> | 3-7 days | Do a normal weekly review | 45 min |
+> | 1-2 weeks | Use [[#Triage Mode (15 min)]] below | 15 min + scheduled weekly |
+> | 2+ weeks | Use [[#Recovery Week Protocol]] | 5 days of 15-min sessions |
+>
+> **Remember:** The goal is "good enough," not "perfect." Your past self captured things for a reason—trust that and triage ruthlessly.
 
 ### Triage Mode (15 min)
 
@@ -616,6 +792,18 @@ After triage, use this modified weekly review:
 
 ## 🔗 Quick Navigation
 
+> [!tip]- 🧭 **When to Use Each Hub**
+> | I want to... | Go to |
+> |--------------|-------|
+> | See system health at a glance | **You're here!** [[#🚦 System Health Dashboard]] |
+> | Work on tasks by context (@computer, @home) | [[🎯GTD Command Center]] |
+> | Do a full weekly review checklist | [[🎯GTD Weekly Review]] |
+> | Process new captures | [[+Inbox]] |
+> | Work on active projects | [[03-Efforts]] |
+> | Fix and maintain notes | [[🧹Cleaning Lady]] |
+> | Develop incomplete ideas | [[🌱Incubator]] |
+> | See today's focus | [[🏡Home]] |
+
 ### Core Hubs
 - [[🎯GTD Command Center]] — Task management & contexts
 - [[🎯GTD Weekly Review]] — Full weekly review checklist
@@ -651,6 +839,22 @@ After triage, use this modified weekly review:
 ## 📊 Advanced: Cleanups That Compound
 
 > [!info] Small fixes that improve the system over time. Pick 1 per week.
+
+> [!abstract]- 🔨 **Action Hub: System Improvements**
+> **Where to do deep cleanup:** [[🧹Cleaning Lady]]
+>
+> **Priority order for cleanup work:**
+> 1. **Metadata fixes** → Makes queries work correctly
+> 2. **Orphan linking** → Improves discoverability
+> 3. **Note promotion** → Surfaces valuable content
+>
+> **Efficient batch workflow:**
+> 1. Open [[🧹Cleaning Lady]] in one pane
+> 2. Pick 3 notes from one category below
+> 3. Fix all 3 in one 15-min session
+> 4. Mark them done (remove tag or update metadata)
+>
+> **Tools:** MetaEdit plugin | [[99-System/FileClass]] for templates
 
 ### High-Impact Metadata Fixes
 

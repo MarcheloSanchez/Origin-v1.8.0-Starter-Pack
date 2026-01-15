@@ -492,13 +492,17 @@ from email.header import decode_header
 import os
 from datetime import datetime
 
-IMAP_SERVER = "imap.gmail.com"
-EMAIL = "your_email@gmail.com"
-PASSWORD = "your_app_password"
-VAULT_PATH = r"C:\Users\YourName\Documents\ObsidianVault\+Inbox"
+# SECURITY: Use environment variables for sensitive data
+IMAP_SERVER = os.getenv("IMAP_SERVER", "imap.gmail.com")
+EMAIL = os.getenv("EMAIL_ADDRESS")
+PASSWORD = os.getenv("EMAIL_PASSWORD")
+VAULT_PATH = os.getenv("VAULT_PATH", r"C:\Users\YourName\Documents\ObsidianVault\+Inbox")
 
 def connect_to_email():
     """Connect to email server"""
+    if not EMAIL or not PASSWORD:
+        raise ValueError("EMAIL_ADDRESS and EMAIL_PASSWORD environment variables must be set")
+
     mail = imaplib.IMAP4_SSL(IMAP_SERVER)
     mail.login(EMAIL, PASSWORD)
     mail.select("inbox")
@@ -591,6 +595,34 @@ if __name__ == "__main__":
     # Run every 5 minutes via cron/Task Scheduler
     main()
 ```
+
+**Setup Environment Variables (Required):**
+
+Before running the script, set up your credentials as environment variables:
+
+*Linux/Mac:*
+```bash
+export EMAIL_ADDRESS="your_email@gmail.com"
+export EMAIL_PASSWORD="your_app_password"
+export VAULT_PATH="/path/to/ObsidianVault/+Inbox"
+```
+
+*Windows (PowerShell):*
+```powershell
+$env:EMAIL_ADDRESS="your_email@gmail.com"
+$env:EMAIL_PASSWORD="your_app_password"
+$env:VAULT_PATH="C:\Users\YourName\Documents\ObsidianVault\+Inbox"
+```
+
+*Or create a `.env` file (recommended):*
+```bash
+EMAIL_ADDRESS=your_email@gmail.com
+EMAIL_PASSWORD=your_app_password
+IMAP_SERVER=imap.gmail.com
+VAULT_PATH=/path/to/ObsidianVault/+Inbox
+```
+
+⚠️ **Security Note:** Never commit credentials to version control. Add `.env` to `.gitignore`.
 
 **Cron Setup (Linux/Mac):**
 ```bash

@@ -17,7 +17,14 @@ related:
   - "[[03-Efforts]]"
   - "[[+Inbox]]"
 ---
-> [!orbit] GTD Navigation | [[🏡Home]] | [[TODO]] | [[03-Efforts]] | [[+Inbox]] | [[🎯GTD Weekly Review]]
+> [!orbit]- Quick Navigation
+> **Core Dashboards:**
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+>
+> **GTD Focus:**
+> [[+Inbox|📥 Inbox]] • [[TODO|✅ TODO]] • [[03-Efforts|🚀 Efforts]] • [[🧠GTD Weekly Review|📅 Review]] • [[📍Note Classification Guide|📍 Guide]]
+>
+> **Quick Processing:** `Ctrl+P` → ⚡Quick Process - Effort • 🤖Smart Classify • 📦Batch Process Inbox
 
 # 🎯 GTD Command Center
 

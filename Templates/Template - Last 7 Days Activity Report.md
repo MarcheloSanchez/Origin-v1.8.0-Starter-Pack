@@ -516,7 +516,7 @@ LIMIT 10
 - [[🏡Home]]
 - [[👁️Dashboard]]
 - [[05-Calendar]]
-- [[💾Backlog KANBAN]]
+- [[BACKLOG]]
 
 ---
 

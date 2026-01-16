@@ -13,47 +13,137 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "+Inbox/Home.md",
+                "file": "00-Meta/Documentation/🎮My PKM Gamification.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "🎮My PKM Gamification"
             }
           },
           {
-            "id": "13d3ad76635cee6c",
+            "id": "222a1c7e302a42b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧭 Review HQ.md",
+                "file": "00-Meta/🎮Gamification Dashboard.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "🧭 Review HQ"
+              "title": "🎮Gamification Dashboard"
             }
           },
           {
-            "id": "19a8de046bea370b",
+            "id": "fb25d69d9f1b67fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💾Changelog.md",
+                "file": "00-Meta/Documentation/📘SETUP GUIDE - Automated Reports & Export.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "💾Changelog"
+              "title": "📘SETUP GUIDE - Automated Reports & Export"
+            }
+          },
+          {
+            "id": "dbc9176446dcbccf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👁️Dashboard.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "👁️Dashboard"
+            }
+          },
+          {
+            "id": "3914ce602f774505",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "+Inbox/+ About Inbox ℹ️.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "+ About Inbox ℹ️"
+            }
+          },
+          {
+            "id": "70eae0c82477fa1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
+            }
+          },
+          {
+            "id": "ea2490402a758f31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
+            }
+          },
+          {
+            "id": "629502ed21801a4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
+            }
+          },
+          {
+            "id": "61971119cf6974e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -145,10 +235,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "💾Changelog.md"
+                "file": "CHANGELOG.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 💾Changelog"
+              "title": "File properties for CHANGELOG"
             }
           }
         ]
@@ -213,21 +303,6 @@
             }
           },
           {
-            "id": "0d0483eb4fdc9052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "💾Changelog.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "💾Changelog"
-            }
-          },
-          {
             "id": "750ec5fd39495a46",
             "type": "leaf",
             "state": {
@@ -235,6 +310,21 @@
               "state": {},
               "icon": "smart-connections",
               "title": "Connections"
+            }
+          },
+          {
+            "id": "0d0483eb4fdc9052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CHANGELOG.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CHANGELOG"
             }
           },
           {
@@ -268,7 +358,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "eaf4c99a59805e11",
@@ -312,7 +402,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💾Changelog.md",
+                "file": "CHANGELOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -322,7 +412,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 💾Changelog"
+              "title": "Backlinks for CHANGELOG"
             }
           }
         ],
@@ -351,16 +441,40 @@
       "cmdr:QuickAdd: 🔁reorder": false,
       "homepage:Open homepage": false,
       "periodic-notes:Open today": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "callout-manager:Insert Callout": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Smart Lookup: Open lookup view": false,
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "19a8de046bea370b",
+  "active": "5ec3facab638f060",
   "lastOpenFiles": [
-    "💾Changelog.md",
+    "06-Archive/Archived_CHANGELOG.md",
+    "QuickAdd Packages/smart_orig_quickadd-package-2026-01-16T18-13-23-010Z.quickadd.json",
+    "QuickAdd Packages/quickadd-package-2026-01-16T18-13-23-010Z.quickadd.json",
+    "QuickAdd Packages",
+    "+Inbox/+ About Inbox ℹ️.md",
+    "👁️Dashboard.md",
+    "00-Meta/Documentation/📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md",
+    "00-Meta/Documentation/🗺️ROADMAP - Origin v2.0 Lifetime Vault.md",
+    "00-Meta/Documentation/📘SETUP GUIDE - Automated Reports & Export.md",
+    "RELEASE NOTES.md",
+    "00-Meta/Documentation/Kanban/💾Backlog KANBAN for OBSIDIAN.md",
+    "BACKLOG.md",
+    "CHANGELOG.md",
+    "00-Meta/🎮Gamification Dashboard.md",
+    "00-Meta/Documentation/🎮My PKM Gamification.md",
+    "03-Efforts/Ongoing/🏠 Home Maintenance System.md",
+    "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md",
+    "03-Efforts/Ongoing/🏠 Kitchen Tasks.md",
+    "01-MOCs/MOC - Automation Command Center.md",
+    "01-MOCs/MOC - Areas.md",
+    "00-Meta/Documentation/PKM/GTD Contexts Guide.md",
+    "00-Meta/⚡Workflow Quick Reference.md",
+    "00-Meta/📍Note Classification Guide.md",
+    "02-Dots/100-Atomics/🏡Home.md",
+    "00-Meta/Documentation/Performance Metrics.md",
     "00-Meta/📝Release Notes.md",
     "99-System/Images/route_2025-09-20_10.05am.gpx",
     "99-System/Images/exporthealth2025.zip",
@@ -369,32 +483,9 @@
     "🧭 Review HQ.md",
     "+Inbox/Home.md",
     "+Inbox/Manager of PKM in Obsidian.md",
-    "00-Meta/Playbooks/PlayBook - Review of Obsidian.md",
-    "Templates/Template - Monthly Report.md",
-    "TODO.md",
-    "🎯GTD Command Center.md",
-    "01-MOCs/MOC - Me myself and I.md",
-    "+Inbox/importdata_Claude0901/Testing & QA MOC.md",
-    "+Inbox/importdata_Claude0901/MOC - Life Dashboard.md",
-    "+Inbox/importdata_Claude0901/Playwright Best Practices Collection.md",
-    "+Inbox/importdata_Claude0901/MOC - Domácnost.md",
-    "+Inbox/Kitchen Storage Optimization.md",
-    "+Inbox/importdata_Claude0901/Area - Home & Life Systems.md",
-    "+Inbox/importdata_Claude0901/Migration Guide.md",
-    "01-MOCs/MOC - Prompt.md",
-    "_backups/normalize-snapshots/01-MOCs__MOC - Prompt.20260113-000624.md",
     "_backups/normalize-snapshots",
     "_backups",
-    "01-MOCs/MOC - AI.md",
-    "01-MOCs/MOC - Prompts.md",
-    "07-Prompts/01-Docs/Prompt Guide.md",
-    "07-Prompts/01-Docs/Prompt Dashboard OLD.md",
-    "07-Prompts/01-Docs/Playbook - Prompt.md",
-    "+Inbox/Cookie as a monster in mini town.md",
     "All-Star-Base.base",
-    "Active-Types-base.base",
-    "99-System/_System_data.base",
-    "Overview of Data.base",
     "99-System/Excalidraw/Capture - Quick add - Commander mindmap.canvas",
     "99-System/Images/image-10.png",
     "99-System/Images/stats_ALL_DURATION_2025.png",

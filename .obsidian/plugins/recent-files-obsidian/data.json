@@ -1,8 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "💾Changelog",
-      "path": "💾Changelog.md"
+      "basename": "CHANGELOG",
+      "path": "CHANGELOG.md"
+    },
+    {
+      "basename": "+ About Inbox ℹ️",
+      "path": "+Inbox/+ About Inbox ℹ️.md"
+    },
+    {
+      "basename": "👁️Dashboard",
+      "path": "👁️Dashboard.md"
+    },
+    {
+      "basename": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence",
+      "path": "00-Meta/Documentation/📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md"
+    },
+    {
+      "basename": "🗺️ROADMAP - Origin v2.0 Lifetime Vault",
+      "path": "00-Meta/Documentation/🗺️ROADMAP - Origin v2.0 Lifetime Vault.md"
+    },
+    {
+      "basename": "📘SETUP GUIDE - Automated Reports & Export",
+      "path": "00-Meta/Documentation/📘SETUP GUIDE - Automated Reports & Export.md"
+    },
+    {
+      "basename": "RELEASE NOTES",
+      "path": "RELEASE NOTES.md"
+    },
+    {
+      "basename": "💾Backlog KANBAN for OBSIDIAN",
+      "path": "00-Meta/Documentation/Kanban/💾Backlog KANBAN for OBSIDIAN.md"
+    },
+    {
+      "basename": "BACKLOG",
+      "path": "BACKLOG.md"
+    },
+    {
+      "basename": "🎮Gamification Dashboard",
+      "path": "00-Meta/🎮Gamification Dashboard.md"
+    },
+    {
+      "basename": "🎮My PKM Gamification",
+      "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
+    },
+    {
+      "basename": "🏠 Home Maintenance System",
+      "path": "03-Efforts/Ongoing/🏠 Home Maintenance System.md"
+    },
+    {
+      "basename": "🏠 START HERE - Home Maintenance",
+      "path": "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md"
+    },
+    {
+      "basename": "🏠 Kitchen Tasks",
+      "path": "03-Efforts/Ongoing/🏠 Kitchen Tasks.md"
+    },
+    {
+      "basename": "MOC - Automation Command Center",
+      "path": "01-MOCs/MOC - Automation Command Center.md"
+    },
+    {
+      "basename": "MOC - Areas",
+      "path": "01-MOCs/MOC - Areas.md"
+    },
+    {
+      "basename": "GTD Contexts Guide",
+      "path": "00-Meta/Documentation/PKM/GTD Contexts Guide.md"
+    },
+    {
+      "basename": "⚡Workflow Quick Reference",
+      "path": "00-Meta/⚡Workflow Quick Reference.md"
+    },
+    {
+      "basename": "📍Note Classification Guide",
+      "path": "00-Meta/📍Note Classification Guide.md"
+    },
+    {
+      "basename": "🏡Home",
+      "path": "02-Dots/100-Atomics/🏡Home.md"
+    },
+    {
+      "basename": "Performance Metrics",
+      "path": "00-Meta/Documentation/Performance Metrics.md"
     },
     {
       "basename": "📝Release Notes",
@@ -119,86 +199,6 @@
     {
       "basename": "All-Star-Base",
       "path": "All-Star-Base.base"
-    },
-    {
-      "basename": "Active-Types-base",
-      "path": "Active-Types-base.base"
-    },
-    {
-      "basename": "👁️Dashboard",
-      "path": "👁️Dashboard.md"
-    },
-    {
-      "basename": "03-Efforts",
-      "path": "03-Efforts/03-Efforts.md"
-    },
-    {
-      "basename": "YAML Lint INBOX — 20260112",
-      "path": "99-System/Reports/YAML Lint INBOX — 20260112.md"
-    },
-    {
-      "basename": "Templates",
-      "path": "Templates/Templates.md"
-    },
-    {
-      "basename": "YAML Lint SYSTEM— 20260112",
-      "path": "99-System/Reports/YAML Lint SYSTEM— 20260112.md"
-    },
-    {
-      "basename": "YAML Lint EFFORTS— 20260112",
-      "path": "99-System/Reports/YAML Lint EFFORTS— 20260112.md"
-    },
-    {
-      "basename": "YAML Lint SOURCES— 20260112",
-      "path": "99-System/Reports/YAML Lint SOURCES— 20260112.md"
-    },
-    {
-      "basename": "YAML Lint META — 20260112",
-      "path": "99-System/Reports/YAML Lint META — 20260112.md"
-    },
-    {
-      "basename": "YAML Lint MOCS— 20260112",
-      "path": "99-System/Reports/YAML Lint MOCS— 20260112.md"
-    },
-    {
-      "basename": "01-MOCs",
-      "path": "01-MOCs/01-MOCs.md"
-    },
-    {
-      "basename": "YAML Lint DOTS— 20260112",
-      "path": "99-System/Reports/YAML Lint DOTS— 20260112.md"
-    },
-    {
-      "basename": "02-Dots",
-      "path": "02-Dots/02-Dots.md"
-    },
-    {
-      "basename": "🏡Home base",
-      "path": "🏡Home base.md"
-    },
-    {
-      "basename": "My WANTED functionalities",
-      "path": "+Inbox/My WANTED functionalities.md"
-    },
-    {
-      "basename": "🏡Home",
-      "path": "🏡Home.md"
-    },
-    {
-      "basename": "🧹Cleaning Lady",
-      "path": "01-MOCs/🧹Cleaning Lady.md"
-    },
-    {
-      "basename": "🌱Incubator",
-      "path": "01-MOCs/🌱Incubator.md"
-    },
-    {
-      "basename": "🤖 Systém Automatizace a údržba Vaultu",
-      "path": "+Inbox/+from_Ideaversee/🤖 Systém Automatizace a údržba Vaultu.md"
-    },
-    {
-      "basename": "Workout Plan",
-      "path": "02-Dots/Workout/Workout Plan.md"
     }
   ],
   "omittedPaths": [],

@@ -4,9 +4,18 @@ type: dashboard
 status: 🔄active
 tags: [gamification, dashboard, stats, achievements]
 created: 2026-01-02
-modified: 2026-01-02
+modified: 2026-01-16
 cssclasses: [dashboard, gamification]
 ---
+
+> [!orbit]- Quick Navigation
+> **Core Dashboards:**
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+>
+> **Game Focus:**
+> [[🎮Gamification Quick Reference|🎯 Quick Ref]] • [[🧠GTD Weekly Review|📅 Review]] • [[📈Performance Metrics Dashboard|📊 Stats]]
+>
+> **Level Up:** `Ctrl+P` → 🔄Update Metrics Cache • 📦Archive Old Dailies
 
 # 🎮 Gamification Dashboard
 

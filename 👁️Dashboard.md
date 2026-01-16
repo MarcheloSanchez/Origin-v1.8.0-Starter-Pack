@@ -18,7 +18,16 @@ obsidianUIMode: preview
 cssclasses:
   - wide-page
 ---
-> [!orbit] Wayfinder [[🏡Home]]|  [[TODO|✅TODO]] | **👁️Dashboard**  | [[🗺️My PKM MOC|🗺️PKM]] | [[MOC - Automation Command Center|⚡Automation]] | [[Obsidian Plugins & Features|🛠️Plugins]] | [[Prompt Dashboard|🤖Prompts]] | [[Performance Metrics|📊 Performance]] | [[05-Calendar|📅 Calendar]]
+> [!orbit]- Quick Navigation
+> **Core Dashboards:**
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+>
+> **Quick Actions:**
+> [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[TODO|✅ TODO]] • [[05-Calendar|📅 Calendar]] • [[📍Note Classification Guide|📍 Guide]]
+>
+> **Automation:** `Ctrl+P` → ⚡Quick Process (Atomic/Source/Effort) • 🤖Smart Classify • 📦Batch Process
+>
+> **Specialized:** [[MOC - Automation Command Center|⚡ Automation]] • [[Obsidian Plugins & Features|🛠️ Plugins]] • [[Prompt Dashboard|🤖 Prompts]]
 
 # 📆Agenda
 > [!Multi-column] 

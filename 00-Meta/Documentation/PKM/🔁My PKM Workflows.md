@@ -555,8 +555,8 @@ P -->|Yes| R[📅 Defer/Someday]
 - [[🔢My PKM Metadata]] - YAML standards
 - [[Templates]] - Template library
 - [[🔍My PKM Queries]] - Dataview query collection
-- [[💾Changelog]] - Document each added/ changed/ deleted attribute
-- [[💾Backlog KANBAN]] - Bucket for future improvements
+- [[CHANGELOG]] - Document each added/ changed/ deleted attribute
+- [[BACKLOG]] - Bucket for future improvements
 - 
 - Vault sledování metadat [[🛠️My PKM Maintenance]]
 ---

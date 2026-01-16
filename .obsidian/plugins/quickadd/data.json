@@ -2596,6 +2596,166 @@
       }
     },
     {
+      "id": "d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+      "name": "🤖Smart Classify Note",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "🤖Smart Classify Note",
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+        "commands": [
+          {
+            "name": "smart-classifier",
+            "type": "UserScript",
+            "id": "f6e5d4c3-b2a1-9876-5432-10fedcba9876",
+            "path": "99-System/Scripts/smart-classifier.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "e2f3a4b5-c6d7-8e9f-0a1b-2c3d4e5f6a7b",
+      "name": "📝Auto-Fill Metadata",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "📝Auto-Fill Metadata",
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef1",
+        "commands": [
+          {
+            "name": "auto-metadata",
+            "type": "UserScript",
+            "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+            "path": "99-System/Scripts/auto-metadata.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c",
+      "name": "📦Batch Process Inbox",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "📦Batch Process Inbox",
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef12",
+        "commands": [
+          {
+            "name": "batch-process-inbox",
+            "type": "UserScript",
+            "id": "b2c3d4e5-f6a7-8901-2345-6789abcdef01",
+            "path": "99-System/Scripts/batch-process-inbox.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-123456789abc",
+      "name": "⚡Quick Process - Atomic",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "⚡Quick Process - Atomic",
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef123",
+        "commands": [
+          {
+            "name": "quick-process-atomic",
+            "type": "UserScript",
+            "id": "e5f6a7b8-c9d0-1234-5678-90abcdef1234",
+            "path": "99-System/Scripts/quick-process-atomic.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-234567890bcd",
+      "name": "⚡Quick Process - Source",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "⚡Quick Process - Source",
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef12345",
+        "commands": [
+          {
+            "name": "quick-process-source",
+            "type": "UserScript",
+            "id": "a7b8c9d0-e1f2-3456-7890-abcdef123456",
+            "path": "99-System/Scripts/quick-process-source.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-345678901cde",
+      "name": "⚡Quick Process - Effort",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "⚡Quick Process - Effort",
+        "id": "b8c9d0e1-f2a3-4567-8901-bcdef1234567",
+        "commands": [
+          {
+            "name": "quick-process-effort",
+            "type": "UserScript",
+            "id": "c9d0e1f2-a3b4-5678-9012-cdef12345678",
+            "path": "99-System/Scripts/quick-process-effort.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0123-4567-89abcdef0123",
+      "name": "🔄Update Metrics Cache",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "🔄Update Metrics Cache",
+        "id": "e5f6a7b8-c9d0-1234-5678-9abcdef01234",
+        "commands": [
+          {
+            "name": "update-metrics-cache",
+            "type": "UserScript",
+            "id": "f6a7b8c9-d0e1-2345-6789-abcdef012345",
+            "path": "99-System/Scripts/update-metrics-cache.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1234-5678-9abcdef12345",
+      "name": "📦Archive Old Dailies",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "📦Archive Old Dailies",
+        "id": "f6a7b8c9-d0e1-2345-6789-abcdef123456",
+        "commands": [
+          {
+            "name": "archive-old-dailies",
+            "type": "UserScript",
+            "id": "a7b8c9d0-e1f2-3456-7890-bcdef1234567",
+            "path": "99-System/Scripts/archive-old-dailies.js",
+            "settings": {}
+          }
+        ]
+      }
+    },
+    {
       "id": "b9650ca6-7f0a-4698-ba77-73edab5eccbb",
       "name": "Add to Changelog",
       "type": "Macro",
@@ -2606,13 +2766,13 @@
         "id": "f6ab4c69-e600-4afe-b2c2-2ca6df2e8d50",
         "commands": [
           {
-            "filePath": "💾Changelog.md",
+            "filePath": "CHANGELOG.md",
             "type": "OpenFile",
             "id": "Y2PQXq_EI4AJgEPRIRtpA",
             "openInNewTab": false,
-            "location": "reuse",
+            "location": "tab",
             "focus": true,
-            "name": "Open file: 💾Changelog.md"
+            "name": "Open file: CHANGELOG.md"
           },
           {
             "name": "ENTER ",
@@ -2625,7 +2785,7 @@
               "command": false,
               "appendLink": false,
               "captureTo": "",
-              "captureToActiveFile": false,
+              "captureToActiveFile": true,
               "activeFileWritePosition": "cursor",
               "createFileIfItDoesntExist": {
                 "enabled": false,
@@ -2634,15 +2794,15 @@
               },
               "format": {
                 "enabled": true,
-                "format": "\n---\n11/11/26\n-"
+                "format": "\n---\n# 11/11/26\n- Added/Fixed/Changed"
               },
               "insertAfter": {
                 "enabled": true,
-                "after": "> Zde psát modifikace a úpravy ve vaultu.",
+                "after": "# new-old",
                 "insertAtEnd": true,
-                "considerSubsections": false,
-                "createIfNotFound": false,
-                "createIfNotFoundLocation": "top"
+                "considerSubsections": true,
+                "createIfNotFound": true,
+                "createIfNotFoundLocation": "bottom"
               },
               "newLineCapture": {
                 "enabled": false,

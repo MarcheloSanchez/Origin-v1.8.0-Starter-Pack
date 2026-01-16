@@ -34,7 +34,7 @@ related:
 - Schema - [[🔢My PKM Metadata#📊 Universal Metadata Schema|Metadata Schema]]
 - Hotkeys & zkratky — [[MOC Hotkeys]], [[Visual hotkeys]]
 ## 🧼 Maintenance
-- [[💾Changelog]] • [[💾Backlog KANBAN]]
+- [[CHANGELOG]] • [[BACKLOG]]
 - Plugin list sync & updates
 - Standardy & konvence — [[Naming convention Handbook]], [[Icon Package]]
 

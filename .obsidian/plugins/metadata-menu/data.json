@@ -85,6 +85,143 @@
       "name": "fileClass",
       "id": "7DR7AS",
       "path": ""
+    },
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "flag",
+      "tooltip": "Priority level",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesList",
+        "valuesList": {
+          "values": [
+            "🔴",
+            "🟡",
+            "🟢"
+          ]
+        },
+        "valuesListNotePath": ""
+      },
+      "name": "priority",
+      "id": "PRY123",
+      "path": ""
+    },
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "sprout",
+      "tooltip": "Note maturity level",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesList",
+        "valuesList": {
+          "values": [
+            "📤seed",
+            "🌱seedling",
+            "🪴sapling",
+            "🌲evergreen",
+            "🍓fruit"
+          ]
+        },
+        "valuesListNotePath": ""
+      },
+      "name": "maturity",
+      "id": "MAT456",
+      "path": ""
+    },
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "layers",
+      "tooltip": "Complexity level",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesList",
+        "valuesList": {
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "valuesListNotePath": ""
+      },
+      "name": "complexity",
+      "id": "CPX789",
+      "path": ""
+    },
+    {
+      "type": "MultiSelect",
+      "tagName": "multiselect",
+      "icon": "tags",
+      "tooltip": "Topic categories",
+      "colorClass": "multiselect",
+      "options": {
+        "sourceType": "ValuesList",
+        "valuesList": {
+          "values": [
+            "productivity",
+            "learning",
+            "projects",
+            "reference",
+            "people",
+            "tools",
+            "finance",
+            "health",
+            "career",
+            "personal"
+          ]
+        },
+        "valuesListNotePath": ""
+      },
+      "name": "topic_category",
+      "id": "TOP012",
+      "path": ""
+    },
+    {
+      "type": "MultiFile",
+      "tagName": "multifile",
+      "icon": "links",
+      "tooltip": "Related notes",
+      "colorClass": "multifile",
+      "options": {
+        "sourceType": "AllNotesInVault",
+        "fileDisplay": "basename"
+      },
+      "name": "related",
+      "id": "REL345",
+      "path": ""
+    },
+    {
+      "type": "Number",
+      "tagName": "number",
+      "icon": "percent",
+      "tooltip": "Completion percentage",
+      "colorClass": "number",
+      "options": {
+        "acceptDecimal": false,
+        "minValue": 0,
+        "maxValue": 100
+      },
+      "name": "completion",
+      "id": "CMP678",
+      "path": ""
+    },
+    {
+      "type": "Number",
+      "tagName": "number",
+      "icon": "star",
+      "tooltip": "Rating (1-5 stars)",
+      "colorClass": "number",
+      "options": {
+        "acceptDecimal": false,
+        "minValue": 1,
+        "maxValue": 5
+      },
+      "name": "rating",
+      "id": "RAT901",
+      "path": ""
     }
   ],
   "fileClassQueries": [],

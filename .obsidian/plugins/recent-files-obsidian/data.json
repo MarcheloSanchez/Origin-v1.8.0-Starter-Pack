@@ -5,6 +5,26 @@
       "path": "CHANGELOG.md"
     },
     {
+      "basename": "🏠 Weekly Maintenance Tracker",
+      "path": "03-Efforts/Ongoing/🏠 Weekly Maintenance Tracker.md"
+    },
+    {
+      "basename": "🏠 Bathroom Tasks",
+      "path": "03-Efforts/Ongoing/🏠 Bathroom Tasks.md"
+    },
+    {
+      "basename": "🏠 Home Maintenance System",
+      "path": "03-Efforts/Ongoing/🏠 Home Maintenance System.md"
+    },
+    {
+      "basename": "🎮My PKM Gamification",
+      "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
+    },
+    {
+      "basename": "🎮Gamification Dashboard",
+      "path": "00-Meta/🎮Gamification Dashboard.md"
+    },
+    {
       "basename": "+ About Inbox ℹ️",
       "path": "+Inbox/+ About Inbox ℹ️.md"
     },
@@ -35,18 +55,6 @@
     {
       "basename": "BACKLOG",
       "path": "BACKLOG.md"
-    },
-    {
-      "basename": "🎮Gamification Dashboard",
-      "path": "00-Meta/🎮Gamification Dashboard.md"
-    },
-    {
-      "basename": "🎮My PKM Gamification",
-      "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
-    },
-    {
-      "basename": "🏠 Home Maintenance System",
-      "path": "03-Efforts/Ongoing/🏠 Home Maintenance System.md"
     },
     {
       "basename": "🏠 START HERE - Home Maintenance",
@@ -191,14 +199,6 @@
     {
       "basename": "SKILL template",
       "path": "+Inbox/SKILL template.md"
-    },
-    {
-      "basename": "Spartan Race CZ Habits + Train plan",
-      "path": "02-Dots/Workout/Spartan Race CZ Habits + Train plan.md"
-    },
-    {
-      "basename": "All-Star-Base",
-      "path": "All-Star-Base.base"
     }
   ],
   "omittedPaths": [],

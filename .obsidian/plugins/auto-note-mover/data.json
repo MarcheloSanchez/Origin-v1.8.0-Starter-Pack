@@ -5,52 +5,52 @@
   "folder_tag_pattern": [
     {
       "folder": "+Inbox",
-      "tag": "📥inbox",
+      "tag": "#📥inbox",
       "pattern": ""
     },
     {
       "folder": "02-Dots/100-Atomics/Ideas",
-      "tag": "💡idea",
+      "tag": "#💡idea",
       "pattern": ""
     },
     {
       "folder": "03-Efforts",
-      "tag": "🚀project",
+      "tag": "#🚀project",
       "pattern": ""
     },
     {
       "folder": "04-Sources",
-      "tag": "",
+      "tag": "#📚source",
       "pattern": ""
     },
     {
       "folder": "02-Dots/500-Tools",
-      "tag": "🔧tool",
+      "tag": "#🔧tool",
       "pattern": ""
     },
     {
       "folder": "06-Archive",
-      "tag": "📦archived",
+      "tag": "#📦archived",
       "pattern": ""
     },
     {
       "folder": "03-Efforts/On",
-      "tag": "🔥on",
+      "tag": "#🔥on",
       "pattern": ""
     },
     {
       "folder": "03-Efforts/Ongoing",
-      "tag": "♻️ongoing",
+      "tag": "#♻️ongoing",
       "pattern": ""
     },
     {
       "folder": "03-Efforts/Simmering",
-      "tag": "🌊simmering",
+      "tag": "#🌊simmering",
       "pattern": ""
     },
     {
       "folder": "03-Efforts/Sleeping",
-      "tag": "💤sleeping",
+      "tag": "#💤sleeping",
       "pattern": ""
     },
     {

@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "👁️Dashboard",
+      "path": "👁️Dashboard.md"
+    },
+    {
+      "basename": "🏡Home",
+      "path": "🏡Home.md"
+    },
+    {
+      "basename": "Templater, Quick Tagging in place",
+      "path": "Templates/Scripts/Templater, Quick Tagging in place.md"
+    },
+    {
+      "basename": "_nav-breadcrumb",
+      "path": "Templates/Core/_nav-breadcrumb.md"
+    },
+    {
+      "basename": "Tools-New-Auto",
+      "path": "Templates/New-Notes/Type/Tool/Tools-New-Auto.md"
+    },
+    {
+      "basename": "Tool-New",
+      "path": "Templates/New-Notes/Type/Tool/Tool-New.md"
+    },
+    {
+      "basename": "🧭 Review HQ",
+      "path": "🧭 Review HQ.md"
+    },
+    {
+      "basename": "new-area",
+      "path": "Templates/Create/new-area.md"
+    },
+    {
+      "basename": "Area-New",
+      "path": "Templates/New-Notes/Type/Area/Area-New.md"
+    },
+    {
+      "basename": "new-meeting",
+      "path": "Templates/Create/new-meeting.md"
+    },
+    {
+      "basename": "new-meeting-auto",
+      "path": "Templates/Create/new-meeting-auto.md"
+    },
+    {
+      "basename": "_section-related",
+      "path": "Templates/Core/_section-related.md"
+    },
+    {
+      "basename": "_nav-wayfinder",
+      "path": "Templates/Core/_nav-wayfinder.md"
+    },
+    {
+      "basename": "🎮Gamification Dashboard",
+      "path": "00-Meta/🎮Gamification Dashboard.md"
+    },
+    {
+      "basename": "+ About Inbox ℹ️",
+      "path": "+Inbox/+ About Inbox ℹ️.md"
+    },
+    {
+      "basename": "area-body",
+      "path": "Templates/Body/area-body.md"
+    },
+    {
+      "basename": "Unified-Nav",
+      "path": "Templates/Add-Sections/Navigation/Unified-Nav.md"
+    },
+    {
+      "basename": "add-meta",
+      "path": "Templates/Actions/add-meta.md"
+    },
+    {
+      "basename": "add-body",
+      "path": "Templates/Actions/add-body.md"
+    },
+    {
+      "basename": "New Guide Auto",
+      "path": "Templates/_Drafts/New Guide Auto.md"
+    },
+    {
+      "basename": "210-Health",
+      "path": "02-Dots/200-Areas/210-Health/210-Health.md"
+    },
+    {
+      "basename": "Area Filled Out",
+      "path": "Templates/New-Notes/Type/_Examples/Area Filled Out.md"
+    },
+    {
       "basename": "CHANGELOG",
       "path": "CHANGELOG.md"
     },
@@ -19,18 +107,6 @@
     {
       "basename": "🎮My PKM Gamification",
       "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
-    },
-    {
-      "basename": "🎮Gamification Dashboard",
-      "path": "00-Meta/🎮Gamification Dashboard.md"
-    },
-    {
-      "basename": "+ About Inbox ℹ️",
-      "path": "+Inbox/+ About Inbox ℹ️.md"
-    },
-    {
-      "basename": "👁️Dashboard",
-      "path": "👁️Dashboard.md"
     },
     {
       "basename": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence",
@@ -85,20 +161,12 @@
       "path": "00-Meta/📍Note Classification Guide.md"
     },
     {
-      "basename": "🏡Home",
-      "path": "02-Dots/100-Atomics/🏡Home.md"
-    },
-    {
       "basename": "Performance Metrics",
       "path": "00-Meta/Documentation/Performance Metrics.md"
     },
     {
       "basename": "📝Release Notes",
       "path": "00-Meta/📝Release Notes.md"
-    },
-    {
-      "basename": "🧭 Review HQ",
-      "path": "🧭 Review HQ.md"
     },
     {
       "basename": "Home",
@@ -131,74 +199,6 @@
     {
       "basename": "MOC - Life Dashboard",
       "path": "+Inbox/importdata_Claude0901/MOC - Life Dashboard.md"
-    },
-    {
-      "basename": "Playwright Best Practices Collection",
-      "path": "+Inbox/importdata_Claude0901/Playwright Best Practices Collection.md"
-    },
-    {
-      "basename": "MOC - Domácnost",
-      "path": "+Inbox/importdata_Claude0901/MOC - Domácnost.md"
-    },
-    {
-      "basename": "Area - Home & Life Systems",
-      "path": "+Inbox/importdata_Claude0901/Area - Home & Life Systems.md"
-    },
-    {
-      "basename": "Migration Guide",
-      "path": "+Inbox/importdata_Claude0901/Migration Guide.md"
-    },
-    {
-      "basename": "MOC - Prompt",
-      "path": "01-MOCs/MOC - Prompt.md"
-    },
-    {
-      "basename": "MOC - AI",
-      "path": "01-MOCs/MOC - AI.md"
-    },
-    {
-      "basename": "Prompt Guide",
-      "path": "07-Prompts/01-Docs/Prompt Guide.md"
-    },
-    {
-      "basename": "Prompt Dashboard OLD",
-      "path": "07-Prompts/01-Docs/Prompt Dashboard OLD.md"
-    },
-    {
-      "basename": "Playbook - Prompt",
-      "path": "07-Prompts/01-Docs/Playbook - Prompt.md"
-    },
-    {
-      "basename": "Cookie as a monster in mini town",
-      "path": "+Inbox/Cookie as a monster in mini town.md"
-    },
-    {
-      "basename": "Rutina",
-      "path": "+Inbox/Rutina.md"
-    },
-    {
-      "basename": "Info - Morning routine",
-      "path": "+Inbox/Info - Morning routine.md"
-    },
-    {
-      "basename": "Gift Ideas",
-      "path": "02-Dots/100-Atomics/Concepts/Gift Ideas.md"
-    },
-    {
-      "basename": "Area - Society",
-      "path": "+Inbox/+from_Ideaversee/Area - Society.md"
-    },
-    {
-      "basename": "50 Unspoken Social rules",
-      "path": "02-Dots/Communication/50 Unspoken Social rules.md"
-    },
-    {
-      "basename": "YAML Lint TEMPLATES— 20260112",
-      "path": "99-System/Reports/YAML Lint TEMPLATES— 20260112.md"
-    },
-    {
-      "basename": "SKILL template",
-      "path": "+Inbox/SKILL template.md"
     }
   ],
   "omittedPaths": [],

@@ -6,9 +6,9 @@
 
 ## 📊 Current Metrics
 | Metric | Current | Target | Trend |
-|--------|---------|--------|-------|
-| | | | |
-| | | | |
+| ------ | ------- | ------ | ----- |
+|        |         |        |       |
+|        |         |        |       |
 
 ## 🚀 Active Efforts
 *Current projects advancing this area:*

@@ -1,12 +1,28 @@
 // templates.js — resilient after renames; supports new + legacy names
 // ────────────────────────────────────────────────────────────────────
+// NEW: Modular structure paths first, then legacy paths for backwards compat
+const META_ROOTS = [
+  "Templates/Meta",              // NEW: consolidated Meta location
+  "Templates/New-Notes/Type",    // Legacy
+  "Templates/Type",              // Legacy
+  "Templates"                    // Legacy
+];
+
+const BODY_ROOTS = [
+  "Templates/Body",              // NEW: consolidated Body location
+  "Templates/New-Notes/Type",    // Legacy
+  "Templates/Type",              // Legacy
+  "Templates"                    // Legacy
+];
+
+// Legacy ROOTS for backward compat (used by tryPaths)
 const ROOTS = [
   "Templates/New-Notes/Type",
   "Templates/Type",
   "Templates"
 ];
 
-// Map folder Type → short prefix used in filenames
+// Map folder Type → short prefix used in filenames (legacy)
 const TYPE_PREFIX = {
   "Atomic": "A",
   "Effort": "E",
@@ -16,20 +32,37 @@ const TYPE_PREFIX = {
   "Prompt": "PRM"
 };
 
+// Map lowercase type → fileClass for new templates
+const TYPE_LOWERCASE = {
+  "atomic": "atomic",
+  "effort": "effort",
+  "source": "source",
+  "moc": "moc",
+  "meeting": "meeting",
+  "prompt": "prompt",
+  "person": "person",
+  "place": "place",
+  "tool": "tool",
+  "area": "area"
+};
+
 // Preferred (new) names, then legacy fallbacks
 function candidateNames(prefix, kind) {
+  const typeLower = prefix.toLowerCase();
   if (kind === "meta") {
     return [
-      `${prefix}-Meta.yaml`,
+      `${typeLower}-meta.yaml`,    // NEW: lowercase naming
+      `${prefix}-Meta.yaml`,       // Legacy
       "Meta.yaml",
-      "00.Meta.yaml"           // legacy
+      "00.Meta.yaml"               // legacy
     ];
   }
   if (kind === "body") {
     return [
-      `${prefix}-Body`,
+      `${typeLower}-body`,         // NEW: lowercase naming
+      `${prefix}-Body`,            // Legacy
       "Body",
-      "10.Chapters.body"       // legacy
+      "10.Chapters.body"           // legacy
     ];
   }
   return [];
@@ -42,6 +75,13 @@ async function includeNote(tp, pathNoExt) {
 
 // Resolve the full path of the template note we should include
 function normalizeType(type) {
+  // NEW: Handle lowercase types (atomic, effort, etc.) for new modular structure
+  const typeLower = type.toLowerCase();
+  if (TYPE_LOWERCASE[typeLower]) {
+    // Return with capitalized folder name for legacy compat, but prefix is the lowercase type
+    const capitalFolder = typeLower.charAt(0).toUpperCase() + typeLower.slice(1);
+    return { folder: capitalFolder, prefix: typeLower };
+  }
   // allow passing either folder name ("Atomic") or prefix ("A")
   if (TYPE_PREFIX[type]) return { folder: type, prefix: TYPE_PREFIX[type] };
   // reverse lookup for direct prefix (e.g., "A")
@@ -56,9 +96,19 @@ function tryPaths(type, kind) {
   const { folder, prefix } = normalizeType(type);
   const names = candidateNames(prefix, kind);
   const out = [];
-  for (const root of ROOTS) {
+
+  // Use kind-specific roots (Meta vs Body paths)
+  const roots = kind === "meta" ? META_ROOTS : (kind === "body" ? BODY_ROOTS : ROOTS);
+
+  for (const root of roots) {
     for (const name of names) {
-      out.push(`${root}/${folder}/${name}.md`);
+      // NEW: For new modular paths (Templates/Meta, Templates/Body), files are at root level
+      if (root === "Templates/Meta" || root === "Templates/Body") {
+        out.push(`${root}/${name}.md`);
+      } else {
+        // Legacy: files are in type subfolders
+        out.push(`${root}/${folder}/${name}.md`);
+      }
     }
   }
   return out;

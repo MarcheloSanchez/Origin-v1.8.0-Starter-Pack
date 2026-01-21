@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "389ba6d0ade9cb29",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "5dad69ed0805e8b8",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "👁️Dashboard.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "👁️Dashboard"
             }
           }
         ]
@@ -23,47 +28,36 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f23a5296fafac93e",
+    "id": "8353fbd638ca8f2e",
     "type": "split",
     "children": [
       {
-        "id": "d85935f8b9a1be9d",
+        "id": "9398b3d1c1641ae0",
         "type": "tabs",
-        "dimension": 77.386468952734,
         "children": [
           {
-            "id": "5ec3facab638f060",
+            "id": "bc73af86199f4c7f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime",
-                "autoReveal": true
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "acaddd6f334db560",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          },
-          {
-            "id": "d697ead5e0d440c9",
+            "id": "8a250135febaf262",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:🤖domain/ai",
+                "query": "",
                 "matchingCase": false,
-                "explainSearch": true,
-                "collapseAll": true,
+                "explainSearch": false,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               },
@@ -72,208 +66,54 @@
             }
           },
           {
-            "id": "0a555d6458259e6b",
+            "id": "4abc19f76df0249d",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "05-Calendar/_Logs/Můza porada/2025 - Můza porada.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2025 - Můza porada"
-            }
-          },
-          {
-            "id": "223c09196a5400c2",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
+              "type": "bookmarks",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "recent-files"
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       },
       {
-        "id": "f9be1820555f0736",
+        "id": "3b7e11647295af6d",
         "type": "tabs",
-        "dimension": 22.613531047265987,
         "children": [
           {
-            "id": "6c9bf88f4e0b8023",
+            "id": "533051e1655cce27",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "👁️Dashboard.md"
+              },
               "icon": "lucide-info",
-              "title": "File properties"
+              "title": "File properties for 👁️Dashboard"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 471.5
   },
   "right": {
-    "id": "0ad95b1b240467e8",
+    "id": "c1450ef47511be38",
     "type": "split",
     "children": [
       {
-        "id": "3a8a0950370c85d9",
+        "id": "3294b1d1acb34fef",
         "type": "tabs",
-        "dimension": 69.34046345811052,
         "children": [
           {
-            "id": "53755e10127a1bae",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
-            "id": "abcdf216d928fbc7",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7132754626224391,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "750ec5fd39495a46",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
-            }
-          },
-          {
-            "id": "0d0483eb4fdc9052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CHANGELOG.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "CHANGELOG"
-            }
-          },
-          {
-            "id": "6d3855fd7ee74a56",
-            "type": "leaf",
-            "state": {
-              "type": "smart-lookup-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-lookup-view"
-            }
-          },
-          {
-            "id": "0162781797bf933d",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "todo"
-            }
-          },
-          {
-            "id": "d7fd4c82ffcfc379",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "todo"
-            }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "eaf4c99a59805e11",
-        "type": "tabs",
-        "dimension": 30.65953654188948,
-        "children": [
-          {
-            "id": "70baa12c6d56e73d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "pinned": true,
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "2eeaf8b37bd80b9a",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": true,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "8b37289f30668740",
+            "id": "05c5307730a41806",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Templates/Scripts/Templater, Quick Tagging in place.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,25 +123,87 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Templater, Quick Tagging in place"
+            }
+          },
+          {
+            "id": "d73f3bc13994396e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "🎯GTD Command Center.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "lucide-ghost",
+              "title": "outgoing-link"
+            }
+          },
+          {
+            "id": "7f07b29abe450ba8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "eb33a3aaf257fd41",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f19c94e7b62e8756",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Templates/Scripts/Templater, Quick Tagging in place.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Templater, Quick Tagging in place"
+            }
+          },
+          {
+            "id": "1f93a9ede0752fd2",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 446.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "cmdr:Open daily note": false,
-      "canvas:Create new canvas": false,
-      "switcher:Open quick switcher": false,
-      "command-palette:Open command palette": false,
-      "templates:Insert template": false,
-      "graph:Open graph view": false,
-      "bases:Create new base": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-kanban:Create new board": false,
       "quickadd:QuickAdd": false,
@@ -310,72 +212,59 @@
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "cmdr:Add fileClass to file": false,
       "cmdr:QuickAdd: 🔁reorder": false,
+      "cmdr:Open daily note": false,
       "homepage:Open homepage": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "periodic-notes:Open today": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "callout-manager:Insert Callout": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Smart Lookup: Open lookup view": false,
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "5dad69ed0805e8b8",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "CHANGELOG.md",
-    "03-Efforts/Ongoing/🏠 Weekly Maintenance Tracker.md",
-    "03-Efforts/Ongoing/🏠 Bathroom Tasks.md",
-    "03-Efforts/Ongoing/🏠 Home Maintenance System.md",
-    "00-Meta/Documentation/🎮My PKM Gamification.md",
+    "🏡Home.md",
+    "Templates/Scripts/Templater, Quick Tagging in place.md",
+    "Templates/Core/_nav-breadcrumb.md",
+    "Templates/New-Notes/Type/Tool/Tools-New-Auto.md",
+    "Templates/New-Notes/Type/Tool/Tool-New.md",
+    "🧭 Review HQ.md",
+    "00-Meta/_Metrics Cache.md",
+    "Templates/Create/new-area.md",
+    "+Inbox/Untitled.md",
+    "01-MOCs/MOC - .md",
+    "Templates/New-Notes/Type/Area/Area-New.md",
+    "Templates/Create/new-meeting.md",
+    "Templates/Create/new-meeting-auto.md",
+    "Templates/Core/_section-related.md",
+    "Templates/Core/_nav-wayfinder.md",
     "00-Meta/🎮Gamification Dashboard.md",
     "+Inbox/+ About Inbox ℹ️.md",
-    "06-Archive/Archived_CHANGELOG.md",
-    "QuickAdd Packages/smart_orig_quickadd-package-2026-01-16T18-13-23-010Z.quickadd.json",
-    "QuickAdd Packages/quickadd-package-2026-01-16T18-13-23-010Z.quickadd.json",
-    "QuickAdd Packages",
-    "👁️Dashboard.md",
-    "00-Meta/Documentation/📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md",
-    "00-Meta/Documentation/🗺️ROADMAP - Origin v2.0 Lifetime Vault.md",
-    "00-Meta/Documentation/📘SETUP GUIDE - Automated Reports & Export.md",
+    "Templates/Body/area-body.md",
+    "Templates/Add-Sections/Navigation/Unified-Nav.md",
+    "Templates/Actions/add-meta.md",
+    "Templates/Actions/add-body.md",
+    "Templates/_Drafts/New Guide Auto.md",
+    "02-Dots/200-Areas/210-Health/210-Health.md",
+    "Templates/New-Notes/Type/_Examples/Area Filled Out.md",
     "RELEASE NOTES.md",
-    "00-Meta/Documentation/Kanban/💾Backlog KANBAN for OBSIDIAN.md",
-    "BACKLOG.md",
-    "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md",
-    "03-Efforts/Ongoing/🏠 Kitchen Tasks.md",
-    "01-MOCs/MOC - Automation Command Center.md",
-    "01-MOCs/MOC - Areas.md",
-    "00-Meta/Documentation/PKM/GTD Contexts Guide.md",
-    "00-Meta/⚡Workflow Quick Reference.md",
-    "00-Meta/📍Note Classification Guide.md",
-    "02-Dots/100-Atomics/🏡Home.md",
-    "00-Meta/Documentation/Performance Metrics.md",
-    "00-Meta/📝Release Notes.md",
-    "99-System/Images/route_2025-09-20_10.05am.gpx",
-    "99-System/Images/exporthealth2025.zip",
-    "99-System/Images/export_cda.xml",
-    "99-System/Images/export.zip",
-    "🧭 Review HQ.md",
-    "_backups/normalize-snapshots",
-    "_backups",
-    "All-Star-Base.base",
-    "99-System/Excalidraw/Capture - Quick add - Commander mindmap.canvas",
-    "99-System/Images/image-10.png",
-    "99-System/Images/stats_ALL_DURATION_2025.png",
-    "99-System/Images/stats_ALL_calories_burned_2025.png",
-    "99-System/Images/stats_ALL_distance _2025.png",
-    "99-System/Images/stats_ALL_max_distance_2025.png",
-    "99-System/Images/stats_ALL_avg-speed_2025.png",
-    "99-System/Images/stats_walk_2025.png",
-    "99-System/Images/stats_badminton_2025.png",
-    "99-System/Images/stats_run_avg-pace_2025.png",
-    "99-System/Images/stats_run_MAX_distance2025.png",
-    "05-Calendar/Layout - everyday morning for work.canvas",
-    "05-Calendar/Daily/Untitled.canvas",
-    "02-Dots/Food/Food compas cuisines.canvas",
-    "02-Dots/Seberozvoj/Celoživotní učení/Emoce/Scenarios for Emotions.canvas",
-    "02-Dots/Seberozvoj/Mapa seberozvoje.canvas",
-    "02-Dots/Seberozvoj/MAP of Self-development.canvas",
-    "02-Dots/IT/Linktree view for 3D print.canvas",
-    "02-Dots/Communication/MAP for communication.canvas",
-    "07-Prompts/01-Docs/Prompt expert Canvas.canvas"
+    "CHANGELOG.md",
+    "99-System/Scripts/update-metrics-cache.js",
+    "99-System/Scripts/tmpclaude-c0fb-cwd",
+    "99-System/Scripts/tmpclaude-3a4e-cwd",
+    "99-System/Scripts/smart-classifier.js",
+    "99-System/Scripts/quick-process-source.js",
+    "99-System/Scripts/quick-process-effort.js",
+    "99-System/Scripts/quick-process-atomic.js",
+    "99-System/Scripts/batch-process-inbox.js",
+    "99-System/Scripts/auto-metadata.js",
+    "99-System/Scripts/archive-old-dailies.js"
   ]
 }

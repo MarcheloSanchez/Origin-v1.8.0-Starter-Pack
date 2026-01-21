@@ -117101,7 +117101,7 @@
       }
     }
   },
-  "previousRelease": "2.19.0",
+  "previousRelease": "2.19.1",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -117463,6 +117463,7 @@
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
   "aiEnabled": true,
+  "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-4o-mini",
   "openAIDefaultTextModelMaxTokens": 4096,
   "openAIDefaultVisionModel": "gpt-4o-mini",

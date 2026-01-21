@@ -420,7 +420,7 @@
               "openFileInMode": "default"
             }
           ],
-          "collapsed": false
+          "collapsed": true
         },
         {
           "id": "f4a7978b-587d-4061-a948-adbc829692f6",
@@ -1161,7 +1161,7 @@
           "collapsed": true
         }
       ],
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "05751f98-b7d2-40c5-bd4d-c7f07ede7535",
@@ -1895,36 +1895,6 @@
           "setFileExistsBehavior": false
         },
         {
-          "id": "fb3c9c79-874c-4a23-8e69-39b8e83b4e33",
-          "name": "CREATE HABIT TRACKER DASHBOARD",
-          "type": "Template",
-          "command": true,
-          "templatePath": "",
-          "fileNameFormat": {
-            "enabled": true,
-            "format": "HABIT TRACKER DASHBOARD"
-          },
-          "folder": {
-            "enabled": true,
-            "folders": [
-              "01-MOCs"
-            ],
-            "chooseWhenCreatingNote": false,
-            "createInSameFolderAsActiveFile": false,
-            "chooseFromSubfolders": false
-          },
-          "appendLink": false,
-          "openFile": true,
-          "fileOpening": {
-            "location": "tab",
-            "direction": "vertical",
-            "mode": "default",
-            "focus": true
-          },
-          "fileExistsMode": "Increment the file name",
-          "setFileExistsBehavior": false
-        },
-        {
           "id": "f4b3016c-ecf0-44d6-bfe0-ec52d867cf39",
           "name": "CurrFoldWithLink",
           "type": "Template",
@@ -2191,7 +2161,7 @@
           }
         }
       ],
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "77fa04f4-8e0a-4d11-af00-ca89dcfa9455",
@@ -2486,113 +2456,6 @@
         "direction": "vertical",
         "mode": "default",
         "focus": true
-      }
-    },
-    {
-      "id": "eb4fb0e6-206d-4750-ac20-335d238db2d2",
-      "name": "TEST MACRO",
-      "type": "Macro",
-      "command": true,
-      "runOnStartup": false,
-      "macro": {
-        "name": "TEST MACRO",
-        "id": "1da049ba-fbaa-4e6c-9edf-d35c6cfd5a2f",
-        "commands": [
-          {
-            "name": "Command palette: Open command palette",
-            "type": "Obsidian",
-            "id": "db74770d-c7e0-46a0-9acb-f468af54f4e5",
-            "commandId": "command-palette:open"
-          },
-          {
-            "name": "Open settings",
-            "type": "Obsidian",
-            "id": "208b4d3e-8637-4d8c-b2d3-d2aa84721179",
-            "commandId": "app:open-settings"
-          }
-        ]
-      }
-    },
-    {
-      "id": "881c620b-f5ad-4948-9d4a-ade8dc82fc86",
-      "name": "MOVE HABIT TRACKER DASHBOARD ",
-      "type": "Macro",
-      "command": true,
-      "runOnStartup": false,
-      "macro": {
-        "name": "MOVE HABIT TRACKER DASHBOARD ",
-        "id": "82f765b9-c244-45a5-ba21-e26290a71d07",
-        "commands": [
-          {
-            "filePath": "HABIT TRACKER DASHBOARD.md",
-            "type": "OpenFile",
-            "id": "MkLuQbOZF4yK-o3WpEKQi",
-            "openInNewTab": false,
-            "location": "reuse",
-            "focus": true,
-            "name": "Open file: HABIT TRACKER DASHBOARD.md"
-          },
-          {
-            "name": "Move current file to another folder",
-            "type": "Obsidian",
-            "id": "34aab2c2-f59b-4247-b8ff-db1aff01439d",
-            "commandId": "file-explorer:move-file"
-          },
-          {
-            "name": "Rename file",
-            "type": "Obsidian",
-            "id": "ca73fba3-5229-41f3-8c56-f931de5987c2",
-            "commandId": "workspace:edit-file-title"
-          },
-          {
-            "name": "date",
-            "type": "NestedChoice",
-            "id": "f8966c0e-8022-4e6c-bc7a-97b05fa400a9",
-            "choice": {
-              "id": "6902b9d1-96c1-4049-a07c-727215986f51",
-              "name": "date",
-              "type": "Capture",
-              "command": false,
-              "appendLink": false,
-              "captureTo": "",
-              "captureToActiveFile": true,
-              "activeFileWritePosition": "cursor",
-              "createFileIfItDoesntExist": {
-                "enabled": false,
-                "createWithTemplate": false,
-                "template": ""
-              },
-              "format": {
-                "enabled": true,
-                "format": "TRACKER DASHBOARD - {{DATE:}}}}"
-              },
-              "insertAfter": {
-                "enabled": false,
-                "after": "",
-                "insertAtEnd": false,
-                "considerSubsections": false,
-                "createIfNotFound": false,
-                "createIfNotFoundLocation": "top"
-              },
-              "newLineCapture": {
-                "enabled": false,
-                "direction": "below"
-              },
-              "prepend": false,
-              "task": false,
-              "openFile": false,
-              "fileOpening": {
-                "location": "tab",
-                "direction": "vertical",
-                "mode": "default",
-                "focus": true
-              },
-              "templater": {
-                "afterCapture": "none"
-              }
-            }
-          }
-        ]
       }
     },
     {

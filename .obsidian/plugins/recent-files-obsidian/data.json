@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Templater, update Modified",
+      "path": "Templates/Scripts/Templater, update Modified.md"
+    },
+    {
+      "basename": "Templater, Weekly Maintenance script",
+      "path": "Templates/Scripts/Templater, Weekly Maintenance script.md"
+    },
+    {
+      "basename": "Templater, YAML aktualizace modifikace",
+      "path": "Templates/Scripts/Templater, YAML aktualizace modifikace.md"
+    },
+    {
+      "basename": "Templater, YAML auto-fill",
+      "path": "Templates/Scripts/Templater, YAML auto-fill.md"
+    },
+    {
+      "basename": "Templater, YAML auto-maturity",
+      "path": "Templates/Scripts/Templater, YAML auto-maturity.md"
+    },
+    {
+      "basename": "prompt",
+      "path": "Templates/Static/prompt.md"
+    },
+    {
+      "basename": "tool",
+      "path": "Templates/Static/tool.md"
+    },
+    {
+      "basename": "place",
+      "path": "Templates/Static/place.md"
+    },
+    {
+      "basename": "person",
+      "path": "Templates/Static/person.md"
+    },
+    {
+      "basename": "moc",
+      "path": "Templates/Static/moc.md"
+    },
+    {
+      "basename": "area",
+      "path": "Templates/Static/area.md"
+    },
+    {
+      "basename": "atomic",
+      "path": "Templates/Static/atomic.md"
+    },
+    {
+      "basename": "atomic",
+      "path": "99-System/FileClass/atomic.md"
+    },
+    {
+      "basename": "new-meeting",
+      "path": "Templates/Create/new-meeting.md"
+    },
+    {
       "basename": "👁️Dashboard",
       "path": "👁️Dashboard.md"
     },
@@ -17,28 +73,12 @@
       "path": "Templates/Core/_nav-breadcrumb.md"
     },
     {
-      "basename": "Tools-New-Auto",
-      "path": "Templates/New-Notes/Type/Tool/Tools-New-Auto.md"
-    },
-    {
-      "basename": "Tool-New",
-      "path": "Templates/New-Notes/Type/Tool/Tool-New.md"
-    },
-    {
       "basename": "🧭 Review HQ",
       "path": "🧭 Review HQ.md"
     },
     {
       "basename": "new-area",
       "path": "Templates/Create/new-area.md"
-    },
-    {
-      "basename": "Area-New",
-      "path": "Templates/New-Notes/Type/Area/Area-New.md"
-    },
-    {
-      "basename": "new-meeting",
-      "path": "Templates/Create/new-meeting.md"
     },
     {
       "basename": "new-meeting-auto",
@@ -159,46 +199,6 @@
     {
       "basename": "📍Note Classification Guide",
       "path": "00-Meta/📍Note Classification Guide.md"
-    },
-    {
-      "basename": "Performance Metrics",
-      "path": "00-Meta/Documentation/Performance Metrics.md"
-    },
-    {
-      "basename": "📝Release Notes",
-      "path": "00-Meta/📝Release Notes.md"
-    },
-    {
-      "basename": "Home",
-      "path": "+Inbox/Home.md"
-    },
-    {
-      "basename": "Manager of PKM in Obsidian",
-      "path": "+Inbox/Manager of PKM in Obsidian.md"
-    },
-    {
-      "basename": "PlayBook - Review of Obsidian",
-      "path": "00-Meta/Playbooks/PlayBook - Review of Obsidian.md"
-    },
-    {
-      "basename": "Template - Monthly Report",
-      "path": "Templates/Template - Monthly Report.md"
-    },
-    {
-      "basename": "TODO",
-      "path": "TODO.md"
-    },
-    {
-      "basename": "MOC - Me myself and I",
-      "path": "01-MOCs/MOC - Me myself and I.md"
-    },
-    {
-      "basename": "Testing & QA MOC",
-      "path": "+Inbox/importdata_Claude0901/Testing & QA MOC.md"
-    },
-    {
-      "basename": "MOC - Life Dashboard",
-      "path": "+Inbox/importdata_Claude0901/MOC - Life Dashboard.md"
     }
   ],
   "omittedPaths": [],

@@ -12,9 +12,9 @@ obsidianUIMode: preview
 
 [[+About Peopleℹ️]]
 
-[[people-new-auto|👉Click here for template👈]]
-[[👤 Person BIO Template]]
-[[👤 Person Professional Template]]
+[[Templates/New-Notes/Type/People/people-new-auto|👉Click here for template👈]]
+[[Templates/New-Notes/Type/People/👤 Person BIO Template]]
+[[Templates/New-Notes/Type/People/👤 Person Professional Template]]
 ## Queries
 
 ```base

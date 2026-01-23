@@ -870,7 +870,7 @@ This creates the complete metadata backbone of your PKM system - comprehensive, 
 
 ---
 #🧹tidy - OLD 
-### 04-[[source|source]] Metadata (References)
+### 04-[[04-Sources/source|source]] Metadata (References)
 
 >**Účel:** Sledování čtení a hodnocení zdrojů
 >**Automatizace:** maturity applied
@@ -896,7 +896,7 @@ source_date: 2022-06-14
 source_type: book
 ```
 
-### 04-01 [[meeting]] metadata
+### 04-01 [[04-Sources/440-Meetings/meeting]] metadata
 
 ```
 meeting_date: YYYY-MM-DD

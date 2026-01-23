@@ -11,7 +11,7 @@ obsidianUIMode: preview
 ⬆️:: [[02-Dots]]
 
 [[+About Placesℹ️]]
-[[place-new|👉Click here for template👈]]
+[[Templates/New-Notes/Type/Place/place-new|👉Click here for template👈]]
 
 ## Queries
 

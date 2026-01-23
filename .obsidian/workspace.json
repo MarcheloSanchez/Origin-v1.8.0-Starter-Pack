@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "👁️Dashboard.md",
+                "file": "Templates/Scripts/Templater, update Modified.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "👁️Dashboard"
+              "title": "Templater, update Modified"
             }
           }
         ]
@@ -87,10 +87,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "👁️Dashboard.md"
+                "file": "Templates/Scripts/Templater, update Modified.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 👁️Dashboard"
+              "title": "File properties for Templater, update Modified"
             }
           }
         ]
@@ -204,6 +204,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "periodic-notes:Open today": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-kanban:Create new board": false,
       "quickadd:QuickAdd": false,
@@ -220,42 +221,39 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "periodic-notes:Open today": false,
-      "callout-manager:Insert Callout": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Lookup: Open lookup view": false,
-      "smart-connections:Smart Connections: Open random connection": false
+      "callout-manager:Insert Callout": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "🏡Home.md",
-    "Templates/Scripts/Templater, Quick Tagging in place.md",
-    "Templates/Core/_nav-breadcrumb.md",
-    "Templates/New-Notes/Type/Tool/Tools-New-Auto.md",
-    "Templates/New-Notes/Type/Tool/Tool-New.md",
-    "🧭 Review HQ.md",
-    "00-Meta/_Metrics Cache.md",
-    "Templates/Create/new-area.md",
-    "+Inbox/Untitled.md",
-    "01-MOCs/MOC - .md",
-    "Templates/New-Notes/Type/Area/Area-New.md",
-    "Templates/Create/new-meeting.md",
-    "Templates/Create/new-meeting-auto.md",
-    "Templates/Core/_section-related.md",
-    "Templates/Core/_nav-wayfinder.md",
-    "00-Meta/🎮Gamification Dashboard.md",
-    "+Inbox/+ About Inbox ℹ️.md",
-    "Templates/Body/area-body.md",
-    "Templates/Add-Sections/Navigation/Unified-Nav.md",
-    "Templates/Actions/add-meta.md",
-    "Templates/Actions/add-body.md",
-    "Templates/_Drafts/New Guide Auto.md",
-    "02-Dots/200-Areas/210-Health/210-Health.md",
-    "Templates/New-Notes/Type/_Examples/Area Filled Out.md",
-    "RELEASE NOTES.md",
-    "CHANGELOG.md",
+    "99-System/copilot-custom-prompts/Weekly review helper.md",
+    "99-System/copilot-custom-prompts/Synthesize knowledge.md",
+    "99-System/copilot-custom-prompts/Summarize meeting.md",
+    "99-System/copilot-custom-prompts/Suggest metadata.md",
+    "02-Dots/100-Atomics/Ideas/Process inbox note.md",
+    "99-System/copilot-custom-prompts/Generate questions.md",
+    "99-System/copilot-custom-prompts/Format as atomic.md",
+    "99-System/copilot-custom-prompts/Find connections.md",
+    "99-System/copilot-custom-prompts/Extract tasks.md",
+    "99-System/copilot-custom-prompts/Extract atomic notes.md",
+    "99-System/copilot-custom-prompts/Explain concept.md",
+    "99-System/copilot-custom-prompts/Deep research.md",
+    "99-System/copilot-custom-prompts/Decision analysis.md",
+    "99-System/copilot-custom-prompts/Create MOC structure.md",
+    "99-System/copilot-custom-prompts/Challenge this idea.md",
+    "99-System/copilot-custom-prompts/Build mental model.md",
+    "99-System/copilot-custom-prompts/Assess note maturity.md",
+    "02-Dots/100-Atomics/Ideas/Claude Skills for PKM.md",
+    "Templates/Scripts/Templater, Weekly Maintenance script.md",
+    "Templates/Scripts/Templater, YAML aktualizace modifikace.md",
+    "Templates/Scripts/Templater, YAML auto-fill.md",
+    "Templates/Scripts/Templater, YAML auto-maturity.md",
+    "Templates/Static/prompt.md",
+    "Templates/Static/tool.md",
+    "Templates/Static/place.md",
+    "Templates/Static/person.md",
+    "Templates/Static",
     "99-System/Scripts/update-metrics-cache.js",
     "99-System/Scripts/tmpclaude-c0fb-cwd",
     "99-System/Scripts/tmpclaude-3a4e-cwd",
@@ -264,7 +262,6 @@
     "99-System/Scripts/quick-process-effort.js",
     "99-System/Scripts/quick-process-atomic.js",
     "99-System/Scripts/batch-process-inbox.js",
-    "99-System/Scripts/auto-metadata.js",
-    "99-System/Scripts/archive-old-dailies.js"
+    "99-System/Scripts/auto-metadata.js"
   ]
 }

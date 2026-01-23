@@ -11,7 +11,7 @@ kanban-plugin: board
 - [ ] Add types, templates and document these: 
 	- People
 	- Places
-	- Tools - [[Tools-New-Auto]]
+	- Tools - [[Templates/New-Notes/Type/Tool/Tools-New-Auto]]
 	- 
 	
 	@[[2025-10-18]]

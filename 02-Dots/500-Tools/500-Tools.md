@@ -12,7 +12,7 @@ obsidianUIMode: preview
 
 [[+About Toolsℹ️]]
 
-[[Tool-New|Click here for template]]
+[[Templates/New-Notes/Type/Tool/Tool-New|Click here for template]]
 ## Queries
 
 ```base

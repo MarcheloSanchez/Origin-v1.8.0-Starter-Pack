@@ -112,7 +112,7 @@
         "startupType": "short"
       },
       "smart-connections": {
-        "startupType": "short"
+        "startupType": "disabled"
       }
     }
   }

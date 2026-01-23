@@ -9,7 +9,7 @@ status: 🔄active
 created: 2025-09-30
 modified: 2025-09-30
 related:
-  - "[[Tool-New]]"
+  - "[[Templates/New-Notes/Type/Tool/Tool-New]]"
 ---
 
 ⬆️:: [[500-Tools]]
@@ -24,7 +24,7 @@ related:
 > **Where**: 02-Dots/500-Tools, integrated with Areas and Efforts  
 > **Success**: Daily utility, measurable improvement, knowledge sharing
 >
-> **🛠️ Next Action**: Catalog your most essential tool using [[Tool-New]]
+> **🛠️ Next Action**: Catalog your most essential tool using [[Templates/New-Notes/Type/Tool/Tool-New]]
 
 ---
 
@@ -266,7 +266,7 @@ related:
 > [!rocket]+ **🎬 Build Your Tool Arsenal**
 > 
 > ### **Week 1: Foundation Assessment**
-> - **Day 1-2**: Inventory current tools using [[Tool-New]]
+> - **Day 1-2**: Inventory current tools using [[Templates/New-Notes/Type/Tool/Tool-New]]
 > - **Day 3-4**: Rate and evaluate your top 5 essential tools
 > - **Day 5-6**: Identify one major tool that needs better configuration
 > - **Day 7**: Document one tool workflow you can teach others

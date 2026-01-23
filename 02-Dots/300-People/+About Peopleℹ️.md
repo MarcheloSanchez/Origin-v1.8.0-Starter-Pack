@@ -10,9 +10,9 @@ status: 🔄active
 created: 2025-09-30
 modified: 2025-09-30
 related:
-  - "[[people-new]]"
-  - "[[👤 Person BIO Template]]"
-  - "[[👤 Person Professional Template]]"
+  - "[[Templates/New-Notes/Type/People/people-new]]"
+  - "[[Templates/New-Notes/Type/People/👤 Person BIO Template]]"
+  - "[[Templates/New-Notes/Type/People/👤 Person Professional Template]]"
 ---
 
 ⬆️:: [[300-People]]

@@ -120,4 +120,56 @@ PHASE 5: SYNTHESIS OPPORTUNITIES
 - [[secondary connection]] - [one line why]
 - [[surprising connection]] - [one line why]
 ```
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Connection & Synthesis
+**Compatible chains**:
+- `Research to Insight` (Step 3/4)
+- `Idea Validation` (Step 3/4)
+- `Note Evolution` (Step 2/3)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Find connections"
+  outputs_produced:
+    - structural_connections: "[Same-domain links identified]"
+    - bridge_connections: "[Cross-domain links identified]"
+    - unexpected_connections: "[Non-obvious links discovered]"
+    - moc_placement: "[Best fit MOC + secondary MOCs]"
+    - connection_density: "[Sparse/Moderate/Rich]"
+    - synthesis_candidates: "[Notes that could combine for insight]"
+
+recommended_next:
+  primary: "Synthesize knowledge"
+  trigger: "When you have 3+ connected notes ready for insight generation"
+  alternative: "Challenge this idea (if you want to stress-test connections)"
+
+handoff_instruction: |
+  Connections mapped. Ready for synthesis.
+  Use "Synthesize knowledge" to:
+  - Find emergent patterns across connected notes
+  - Build frameworks from relationships
+  - Generate non-obvious insights
+  Feed it: the connected notes together (combine content or list them)
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Research to Insight** chain:
+- [x] Deep research → Research plan complete
+- [x] Extract atomic notes → Atoms created
+- [x] **Find connections** ← YOU ARE HERE
+- [ ] Synthesize knowledge → Create frameworks
+
+**Notes ready for synthesis**:
+- [List the connected notes with their relationships]
+
+**Synthesis potential**: [Based on connection density and bridge insights]
+
+**To continue**: Run "Synthesize knowledge" on the connected notes above
 </output_format>

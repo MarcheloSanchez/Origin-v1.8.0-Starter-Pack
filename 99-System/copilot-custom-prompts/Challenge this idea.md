@@ -147,4 +147,56 @@ STEP 7: PATH TO SYNTHESIS
 **What was learned**: [Key insight from this exercise]
 **What changed**: [How understanding shifted]
 **Next action**: [What to do with this analysis]
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Critical Analysis
+**Compatible chains**:
+- `Idea Validation` (Step 1/4)
+- `Decision Support` (Step 1/3)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Challenge this idea"
+  outputs_produced:
+    - steel_manned_version: "[Strongest form of the argument]"
+    - assumptions_identified: "[List of explicit and implicit assumptions]"
+    - strongest_objections: "[Top 3 objections with severity]"
+    - boundary_conditions: "[Where claim holds vs fails]"
+    - alternative_explanations: "[Competing theories]"
+    - synthesized_claim: "[Modified claim post-challenge]"
+
+recommended_next:
+  primary: "Generate questions"
+  trigger: "To explore objections and assumptions more deeply"
+  alternative: "Find connections (to ground in evidence)"
+
+handoff_instruction: |
+  Your idea has been challenged. Key findings:
+  - Strongest objections: [list from output]
+  - Most dangerous assumption: [from output]
+
+  Use "Generate questions" to:
+  - Design questions that probe the objections
+  - Test the dangerous assumptions
+  - Find what else you don't know
+
+  Feed it: the original idea + the objections identified
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Idea Validation** chain:
+- [x] **Challenge this idea** ← YOU ARE HERE
+- [ ] Generate questions → Design probing questions
+- [ ] Find connections → Ground in evidence
+- [ ] Synthesize/Decision analysis → Final verdict
+
+**Challenge severity**: [From output - Fundamental/Significant/Minor]
+
+**To continue**: Run "Generate questions" on the idea + objections above
 </output_format>

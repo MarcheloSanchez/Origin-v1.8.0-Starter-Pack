@@ -161,4 +161,70 @@ PHASE 5: FRAMEWORK CONSTRUCTION
 **This could become**:
 - Part of [[MOC]] if [condition]
 - Its own MOC if [more notes accumulate around this]
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Synthesis & Framework
+**Compatible chains**:
+- `Research to Insight` (Step 4/4 - FINAL)
+- `Idea Validation` (Step 4/4 - FINAL)
+- `Content Pipeline` (Entry point)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Synthesize knowledge"
+  chain_status: "COMPLETE"
+  outputs_produced:
+    - emergent_insights: "[List of non-obvious insights generated]"
+    - framework: "[Name and description of synthesized model]"
+    - core_insight: "[Single most valuable takeaway]"
+    - new_atoms_to_create: "[Atomic notes derived from synthesis]"
+    - integration_points: "[Existing notes this connects to]"
+    - open_questions: "[Questions for further exploration]"
+
+chain_complete:
+  research_to_insight: true
+  deliverables:
+    - Synthesized framework ready for application
+    - New atomic notes identified for creation
+    - Integration points mapped to existing vault
+
+optional_next_chains:
+  - name: "Content Pipeline"
+    trigger: "If you want to publish/share this synthesis"
+    entry_skill: "Build mental model"
+  - name: "Idea Validation"
+    trigger: "If you want to stress-test the framework"
+    entry_skill: "Challenge this idea"
+  - name: "Deep Dive"
+    trigger: "If open questions warrant further research"
+    entry_skill: "Deep research"
+```
+
+### 🔄 Chain Progress Tracker
+
+**Research to Insight** chain: ✅ COMPLETE
+- [x] Deep research → Research plan
+- [x] Extract atomic notes → Atoms created
+- [x] Find connections → Relationships mapped
+- [x] **Synthesize knowledge** ← COMPLETED
+
+### 📦 Chain Deliverables Summary
+
+| Deliverable | Status | Location |
+|-------------|--------|----------|
+| Framework | Created | [This output] |
+| Atomic notes | To create | [Listed in "New Atomic Notes" section] |
+| MOC updates | To do | [Listed in "Integration Points" section] |
+
+### 🚀 What's Next?
+
+**Option A**: Create the atomic notes listed above
+**Option B**: Start "Content Pipeline" to publish this knowledge
+**Option C**: Run "Challenge this idea" to stress-test the framework
+**Option D**: Park it and return when ready to apply
 </output_format>

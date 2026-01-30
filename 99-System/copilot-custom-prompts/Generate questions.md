@@ -145,4 +145,59 @@ STEP 4: TEST QUESTION QUALITY
 - [ ] [Second priority]
 - [ ] [Third priority]
 ```
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Exploration & Inquiry
+**Compatible chains**:
+- `Idea Validation` (Step 2/4)
+- `Deep Learning Pipeline` (Entry point)
+- `Research to Insight` (Alternative entry)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Generate questions"
+  outputs_produced:
+    - clarifying_questions: "[Questions that sharpen understanding]"
+    - foundation_questions: "[Questions testing assumptions]"
+    - implication_questions: "[Questions about consequences]"
+    - perspective_questions: "[Questions from other viewpoints]"
+    - synthesis_questions: "[Questions combining threads]"
+    - killer_question: "[The single most important question]"
+    - investigation_order: "[Recommended sequence]"
+
+recommended_next:
+  primary: "Find connections"
+  trigger: "To find evidence and related ideas that answer these questions"
+  alternative: "Deep research (if questions require external information)"
+
+handoff_instruction: |
+  Questions generated. Your investigation priorities:
+  1. [First priority question]
+  2. [Second priority question]
+  3. [Killer question]
+
+  Use "Find connections" to:
+  - Find evidence in your vault that addresses these questions
+  - Discover related ideas that support or challenge
+  - Identify knowledge gaps to fill
+
+  Feed it: the original idea/note being questioned
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Idea Validation** chain:
+- [x] Challenge this idea → Objections identified
+- [x] **Generate questions** ← YOU ARE HERE
+- [ ] Find connections → Ground in evidence
+- [ ] Synthesize/Decision analysis → Final verdict
+
+**Key questions to investigate**: [List the top 3 from output]
+
+**To continue**: Run "Find connections" to find evidence for these questions
 </output_format>

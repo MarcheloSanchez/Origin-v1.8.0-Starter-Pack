@@ -193,4 +193,64 @@ A: [Answer addressing the nuance]
 ## Related
 - [[connection]]
 ```
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Learning & Understanding
+**Compatible chains**:
+- `Learning Path Designer` (Step 2/4)
+- `Explanation Chain` (Step 1/4)
+- `Standalone` (Can be used independently)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Explain concept"
+  outputs_produced:
+    - core_explanation: "[Clear explanation of the concept]"
+    - analogy: "[Best analogy for this concept]"
+    - examples: "[Concrete examples that illuminate]"
+    - non_examples: "[What it's NOT - common confusions]"
+    - misconceptions: "[Common wrong understandings]"
+    - prerequisites: "[What you need to know first]"
+    - connections: "[Related concepts in vault]"
+    - test_cases: "[Scenarios to test understanding]"
+
+recommended_next:
+  primary: "Generate questions"
+  trigger: "To probe deeper and find gaps in understanding"
+  alternative: "Build mental model (if ready to create framework)"
+
+handoff_instruction: |
+  Concept explained. Key outputs:
+  - TL;DR: [from output]
+  - Best analogy: [from output]
+  - Key misconception to avoid: [from output]
+
+  For deeper learning:
+  - Use "Generate questions" to probe edge cases
+  - Find gaps in your understanding
+  - Identify what to research next
+
+  For framework building:
+  - If you understand well enough, "Build mental model"
+  - Create reusable framework from understanding
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Learning Path Designer** chain:
+- [x] Deep research → Learning roadmap created
+- [x] **Explain concept** ← YOU ARE HERE (repeat for each core concept)
+- [ ] Generate questions → Identify gaps and edge cases
+- [ ] Build mental model → Create reusable framework
+
+**Understanding checkpoint**: Can you explain this to someone else?
+- If yes → Move to Generate questions
+- If fuzzy → Re-read, find better examples
+
+**To continue**: Run "Generate questions" on this explanation
 </output_format>

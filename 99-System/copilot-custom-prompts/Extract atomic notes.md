@@ -107,4 +107,52 @@ tags: [relevant tags]
 ## ⚠️ Notes Requiring Further Processing
 - [Concept that needs more research before atomization]
 - [Concept that might already exist in vault - check first]
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Content Processing
+**Compatible chains**:
+- `Research to Insight` (Step 2/4)
+- `Deep Learning Pipeline` (Step 2/3)
+- `Note Evolution` (Entry point)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Extract atomic notes"
+  outputs_produced:
+    - atoms_extracted: "[List of atomic note titles]"
+    - atom_count: "[Number of atoms created]"
+    - maturity_levels: "[Distribution: seeds/seedlings/saplings]"
+    - relationship_map: "[How atoms connect to each other]"
+    - pending_items: "[Concepts needing more research]"
+
+recommended_next:
+  primary: "Find connections"
+  trigger: "Once atoms are created, map their relationships to existing vault"
+  alternative: "Suggest metadata (if atoms need classification first)"
+
+handoff_instruction: |
+  Your atomic notes are ready for connection mapping.
+  Use "Find connections" on each new atom to:
+  - Map structural connections (same domain)
+  - Discover bridge connections (adjacent domains)
+  - Find unexpected links (non-obvious)
+  Feed it: each atomic note one at a time, or a list of all atoms
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Research to Insight** chain:
+- [x] Deep research → Completed research plan
+- [x] **Extract atomic notes** ← YOU ARE HERE
+- [ ] Find connections → Map relationships
+- [ ] Synthesize knowledge → Create frameworks
+
+**Atoms ready for connection mapping**: [List the atomic note titles above]
+
+**To continue**: Run "Find connections" on each atomic note
 </output_format>

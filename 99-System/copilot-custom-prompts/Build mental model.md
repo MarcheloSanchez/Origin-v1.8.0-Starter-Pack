@@ -199,4 +199,61 @@ Example formats:
 **Remember**: [Mnemonic or memorable phrase]
 **Apply when**: [Trigger condition]
 **The move**: [What to do]
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Framework Construction
+**Compatible chains**:
+- `Content Pipeline` (Step 2/4)
+- `Deep Learning Pipeline` (Final step)
+- `Explanation Chain` (Final step)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Build mental model"
+  outputs_produced:
+    - model_name: "[Memorable name for the model]"
+    - model_type: "[Causal/Structural/Process/Decision/Perspective]"
+    - one_sentence: "[Complete model in one sentence]"
+    - visual: "[ASCII or description of visual representation]"
+    - examples: "[List of concrete examples]"
+    - boundaries: "[Where model applies and doesn't]"
+    - atomic_note_version: "[One-paragraph version for vault]"
+
+recommended_next:
+  primary: "Content Outline (via Content Pipeline)"
+  trigger: "If you want to share this model as content"
+  alternative: "Challenge this idea (to stress-test the model)"
+
+handoff_instruction: |
+  Mental model constructed. Key outputs:
+  - Model name: [from output]
+  - One-liner: [from output]
+  - Visual: [from output]
+
+  For content creation:
+  - Use the visual as centerpiece
+  - Use examples as body content
+  - Use one-liner as hook or title basis
+
+  For validation:
+  - Run "Challenge this idea" on the model
+  - Test if boundaries are accurate
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Content Pipeline** chain:
+- [x] Synthesize knowledge → Core insight crystallized
+- [x] **Build mental model** ← YOU ARE HERE
+- [ ] Content Outline → Structure for target format
+- [ ] Draft Content → Publication ready
+
+**Model ready for content**: [Name + one-liner]
+
+**To continue**: Use Content Pipeline outline template for your format
 </output_format>

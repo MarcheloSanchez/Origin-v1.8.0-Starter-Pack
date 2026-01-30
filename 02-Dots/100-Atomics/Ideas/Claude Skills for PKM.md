@@ -243,6 +243,8 @@ Meta-skills are **orchestrator prompts** that guide you through entire skill cha
 |------------|-------|-------------|
 | **Research Orchestrator** | Deep research → Extract atoms → Find connections → Synthesize | Deep learning on new topic |
 | **Idea Validator** | Challenge idea → Generate questions → Find connections → Synthesize/Decide | Testing hypotheses or beliefs |
+| **Content Pipeline** | Synthesize → Build mental model → Content outline → Draft | Publishing knowledge as content |
+| **Decision Navigator** | Challenge → Questions → Decision analysis → Synthesize | Making high-stakes decisions |
 
 ### Handoff Protocol
 

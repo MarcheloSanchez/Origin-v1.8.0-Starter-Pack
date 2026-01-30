@@ -246,6 +246,7 @@ Meta-skills are **orchestrator prompts** that guide you through entire skill cha
 | **Content Pipeline** | Synthesize → Build mental model → Content outline → Draft | Publishing knowledge as content |
 | **Decision Navigator** | Challenge → Questions → Decision analysis → Synthesize | Making high-stakes decisions |
 | **Learning Path Designer** | Deep research → Explain concept → Generate questions → Build mental model | Designing optimal learning sequences |
+| **Note Evolver** | Assess maturity → Find connections → Suggest metadata → Integrate | Maturing notes from seed to evergreen |
 
 ### Handoff Protocol
 

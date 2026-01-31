@@ -1,6 +1,58 @@
 {
   "recentFiles": [
     {
+      "basename": "Create MOC structure",
+      "path": "99-System/copilot-custom-prompts/Create MOC structure.md"
+    },
+    {
+      "basename": "Decision analysis",
+      "path": "99-System/copilot-custom-prompts/Decision analysis.md"
+    },
+    {
+      "basename": "Deep research",
+      "path": "99-System/copilot-custom-prompts/Deep research.md"
+    },
+    {
+      "basename": "Emojify",
+      "path": "99-System/copilot-custom-prompts/Emojify.md"
+    },
+    {
+      "basename": "Extract atomic notes",
+      "path": "99-System/copilot-custom-prompts/Extract atomic notes.md"
+    },
+    {
+      "basename": "Generate glossary",
+      "path": "99-System/copilot-custom-prompts/Generate glossary.md"
+    },
+    {
+      "basename": "Generate questions",
+      "path": "99-System/copilot-custom-prompts/Generate questions.md"
+    },
+    {
+      "basename": "Suggest metadata",
+      "path": "99-System/copilot-custom-prompts/Suggest metadata.md"
+    },
+    {
+      "basename": "Weekly review helper",
+      "path": "99-System/copilot-custom-prompts/Weekly review helper.md"
+    },
+    {
+      "basename": "Summarize meeting",
+      "path": "99-System/copilot-custom-prompts/Summarize meeting.md"
+    },
+    {
+      "basename": "Translate to Chinese",
+      "path": "99-System/copilot-custom-prompts/Translate to Chinese.md"
+    },
+    {
+      "basename": "Simplify",
+      "path": "99-System/copilot-custom-prompts/Simplify.md"
+    },
+    {
+      "basename": "Summarize",
+      "path": "99-System/copilot-custom-prompts/Summarize.md"
+    },
+    {
       "basename": "Templater, update Modified",
       "path": "Templates/Scripts/Templater, update Modified.md"
     },
@@ -147,58 +199,6 @@
     {
       "basename": "🎮My PKM Gamification",
       "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
-    },
-    {
-      "basename": "📘IMPLEMENTATION GUIDE - Phase 2 Intelligence",
-      "path": "00-Meta/Documentation/📘IMPLEMENTATION GUIDE - Phase 2 Intelligence.md"
-    },
-    {
-      "basename": "🗺️ROADMAP - Origin v2.0 Lifetime Vault",
-      "path": "00-Meta/Documentation/🗺️ROADMAP - Origin v2.0 Lifetime Vault.md"
-    },
-    {
-      "basename": "📘SETUP GUIDE - Automated Reports & Export",
-      "path": "00-Meta/Documentation/📘SETUP GUIDE - Automated Reports & Export.md"
-    },
-    {
-      "basename": "RELEASE NOTES",
-      "path": "RELEASE NOTES.md"
-    },
-    {
-      "basename": "💾Backlog KANBAN for OBSIDIAN",
-      "path": "00-Meta/Documentation/Kanban/💾Backlog KANBAN for OBSIDIAN.md"
-    },
-    {
-      "basename": "BACKLOG",
-      "path": "BACKLOG.md"
-    },
-    {
-      "basename": "🏠 START HERE - Home Maintenance",
-      "path": "03-Efforts/Ongoing/🏠 START HERE - Home Maintenance.md"
-    },
-    {
-      "basename": "🏠 Kitchen Tasks",
-      "path": "03-Efforts/Ongoing/🏠 Kitchen Tasks.md"
-    },
-    {
-      "basename": "MOC - Automation Command Center",
-      "path": "01-MOCs/MOC - Automation Command Center.md"
-    },
-    {
-      "basename": "MOC - Areas",
-      "path": "01-MOCs/MOC - Areas.md"
-    },
-    {
-      "basename": "GTD Contexts Guide",
-      "path": "00-Meta/Documentation/PKM/GTD Contexts Guide.md"
-    },
-    {
-      "basename": "⚡Workflow Quick Reference",
-      "path": "00-Meta/⚡Workflow Quick Reference.md"
-    },
-    {
-      "basename": "📍Note Classification Guide",
-      "path": "00-Meta/📍Note Classification Guide.md"
     }
   ],
   "omittedPaths": [],

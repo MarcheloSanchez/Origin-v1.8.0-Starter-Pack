@@ -8,15 +8,6 @@ kanban-plugin: board
 
 - [ ] Přidat quick zkratku na otevření dashboard - home (šlo by bez pluginu?)
 - [ ] action button section for each button create entities
-- [ ] Add types, templates and document these: 
-	- People
-	- Places
-	- Tools - [[Templates/New-Notes/Type/Tool/Tools-New-Auto]]
-	- 
-	
-	@[[2025-10-18]]
-- [ ] Create Review notes / Playbooks
-	- Extract flow from actual PKM notes like [[✅My PKM Tasks#**Weekly Review** (30-45 minutes)]] and more ...
 - [ ] compare hotkeys from LYT and add to Origin
 
 
@@ -34,6 +25,15 @@ kanban-plugin: board
 
 
 ## ✅Done
+
+- [x] Add types, templates and document these: People, Places, Tools ✅ 2026-01-21
+	- Implemented in `Templates/Create/` with new-person, new-place, new-tool
+	- Static fallbacks in `Templates/Static/`
+- [x] Create Review notes / Playbooks ✅ 2026-01-15
+	- Implemented via [[🧭 Review HQ]] - comprehensive review convergence point
+- [x] Template refactoring - modular architecture ✅ 2026-01-21
+	- Reduced from 95+ to ~40 templates
+	- New Meta/, Body/, Create/, Actions/ structure
 
 
 

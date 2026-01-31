@@ -197,4 +197,46 @@ Research is complete when:
 - [ ] Key notes created and linked
 - [ ] Can explain to someone else
 - [ ] Clear on remaining uncertainties
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Research & Planning
+**Compatible chains**:
+- `Research to Insight` (Step 1/4)
+- `Deep Learning Pipeline` (Step 1/3)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Deep research"
+  outputs_produced:
+    - research_questions: "[List primary + supporting questions]"
+    - knowledge_gaps: "[Known unknowns identified]"
+    - source_strategy: "[Tier 1-3 sources mapped]"
+    - learning_roadmap: "[Phased learning path]"
+    - expected_outputs: "[Atomic notes to create]"
+
+recommended_next:
+  primary: "Extract atomic notes"
+  trigger: "Once you've consumed sources and have raw material"
+  alternative: "Find connections (if material already atomic)"
+
+handoff_instruction: |
+  After completing your research phases, use "Extract atomic notes"
+  on your raw notes/highlights to decompose them into atomic concepts.
+  Feed it: your research notes, highlights, and key passages.
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Research to Insight** chain:
+- [x] **Deep research** ← YOU ARE HERE
+- [ ] Extract atomic notes → Decompose findings into atoms
+- [ ] Find connections → Map relationships between atoms
+- [ ] Synthesize knowledge → Create emergent frameworks
+
+**To continue**: Run "Extract atomic notes" on your research materials
 </output_format>

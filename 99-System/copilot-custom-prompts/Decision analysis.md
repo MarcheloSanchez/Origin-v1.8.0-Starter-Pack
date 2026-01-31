@@ -210,4 +210,63 @@ STEP 7: DECISION HEURISTICS
 
 **What this decision reveals**: [Pattern or learning about decision-making]
 **Framework for future similar decisions**: [Reusable heuristic]
+
+---
+
+## ⏭️ Workflow Continuation
+
+**Skill type**: Decision Making
+**Compatible chains**:
+- `Decision Navigator` (Step 3/4)
+- `Idea Validation` (Alternative final step)
+- `Standalone` (Can be used independently)
+
+### Handoff Package
+
+```yaml
+chain_context:
+  skill_completed: "Decision analysis"
+  outputs_produced:
+    - decision_framing: "[Precise statement of what's being decided]"
+    - options_evaluated: "[List of options with scores]"
+    - recommendation: "[Recommended option]"
+    - confidence: "[High/Medium/Low]"
+    - key_assumption: "[Thing that must be true]"
+    - pre_mortem: "[Key failure modes identified]"
+    - implementation_plan: "[Immediate actions]"
+    - reconsider_triggers: "[What would change the decision]"
+
+recommended_next:
+  primary: "Synthesize knowledge"
+  trigger: "For high-stakes decisions - create reusable decision record"
+  alternative: "Execute (if straightforward two-way door decision)"
+
+handoff_instruction: |
+  Decision analysis complete. Key outputs:
+  - Recommendation: [from output]
+  - Confidence: [from output]
+  - Key assumption: [from output]
+
+  For high-stakes decisions:
+  - Use "Synthesize knowledge" to create decision record
+  - Extract reusable framework for future similar decisions
+  - Document for future learning
+
+  For straightforward decisions:
+  - Execute the implementation plan
+  - Set review date to assess outcome
+```
+
+### 🔄 Chain Progress Tracker
+
+If following **Decision Navigator** chain:
+- [x] Challenge this idea → Assumptions tested
+- [x] Generate questions → Unknowns mapped
+- [x] **Decision analysis** ← YOU ARE HERE
+- [ ] Synthesize knowledge → Decision record (optional)
+
+**Decision ready**: [Recommendation + confidence level]
+
+**For high-stakes**: Run "Synthesize knowledge" to create permanent record
+**For quick decisions**: Execute and set review date
 </output_format>

@@ -227,6 +227,127 @@ Explain concept → Generate questions → Challenge this idea → Build mental 
 
 ---
 
+## Meta-Skills Architecture (Level 4)
+
+Meta-skills are **orchestrator prompts** that guide you through entire skill chains. Instead of manually running skills in sequence, meta-skills:
+
+- Assess your starting point
+- Recommend the optimal chain
+- Track progress through steps
+- Ensure handoffs between skills
+- Integrate outputs coherently
+
+### Available Meta-Skills
+
+| Meta-Skill | Chain | When to Use |
+|------------|-------|-------------|
+| **Research Orchestrator** | Deep research → Extract atoms → Find connections → Synthesize | Deep learning on new topic |
+| **Idea Validator** | Challenge idea → Generate questions → Find connections → Synthesize/Decide | Testing hypotheses or beliefs |
+| **Content Pipeline** | Synthesize → Build mental model → Content outline → Draft | Publishing knowledge as content |
+| **Decision Navigator** | Challenge → Questions → Decision analysis → Synthesize | Making high-stakes decisions |
+| **Learning Path Designer** | Deep research → Explain concept → Generate questions → Build mental model | Designing optimal learning sequences |
+| **Note Evolver** | Assess maturity → Find connections → Suggest metadata → Integrate | Maturing notes from seed to evergreen |
+
+### Handoff Protocol
+
+Skills now include a `⏭️ Workflow Continuation` section with:
+
+```yaml
+chain_context:
+  skill_completed: "Skill name"
+  outputs_produced:
+    - key_output: "[Summary of what was generated]"
+
+recommended_next:
+  primary: "Next skill name"
+  trigger: "When to proceed"
+
+handoff_instruction: |
+  What to feed the next skill
+```
+
+### Using Meta-Skills
+
+1. **Start with orchestrator**: Run "Research Orchestrator" or "Idea Validator"
+2. **Follow the guide**: Orchestrator tells you exactly which skill to run next
+3. **Use handoffs**: Each skill ends with clear instructions for the next step
+4. **Track artifacts**: Orchestrator provides artifact tracker for deliverables
+
+### Example: Research to Insight Flow
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    RESEARCH ORCHESTRATOR                            │
+│  Assesses: starting point, goal, recommended entry                  │
+│  Provides: customized workflow, decision points, artifact tracker   │
+└────────────────────────────┬────────────────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│  Deep research  │ ──▶ │ Extract atomic   │ ──▶ │ Find connections│
+│                 │     │ notes            │     │                 │
+│ Handoff:        │     │ Handoff:         │     │ Handoff:        │
+│ research plan   │     │ atom list        │     │ connection map  │
+│ source strategy │     │ maturity levels  │     │ MOC placement   │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
+                                                          │
+                                                          ▼
+                                               ┌───────────────────┐
+                                               │ Synthesize        │
+                                               │ knowledge         │
+                                               │                   │
+                                               │ Final output:     │
+                                               │ framework         │
+                                               │ insights          │
+                                               │ mental model      │
+                                               └───────────────────┘
+```
+
+### Example: Idea Validation Flow
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                      IDEA VALIDATOR                                  │
+│  Assesses: claim type, stakes, current confidence                   │
+│  Provides: validation plan, checkpoints, outcome framework          │
+└────────────────────────────┬────────────────────────────────────────┘
+                             │
+                             ▼
+┌──────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ Challenge this   │ ──▶ │ Generate         │ ──▶ │ Find connections│
+│ idea             │     │ questions        │     │                 │
+│                  │     │                  │     │                 │
+│ Handoff:         │     │ Handoff:         │     │ Handoff:        │
+│ steel-manned ver │     │ investigation Qs │     │ evidence map    │
+│ objections       │     │ killer question  │     │ counter-examples│
+│ boundaries       │     │ priority order   │     │ knowledge gaps  │
+└──────────────────┘     └──────────────────┘     └─────────────────┘
+                                                          │
+                                                          ▼
+                                               ┌───────────────────┐
+                                               │ Synthesize OR     │
+                                               │ Decision analysis │
+                                               │                   │
+                                               │ Outcome:          │
+                                               │ VALIDATED         │
+                                               │ REFINED           │
+                                               │ UNCERTAIN         │
+                                               │ INVALIDATED       │
+                                               └───────────────────┘
+```
+
+### Benefits of Meta-Skills
+
+| Without Meta-Skills | With Meta-Skills |
+|---------------------|------------------|
+| Remember which skill comes next | Orchestrator guides you |
+| Manually track outputs | Artifact tracker provided |
+| Risk skipping steps | Chain ensures completeness |
+| Context lost between skills | Handoffs preserve context |
+| Know when you're done | Clear success criteria |
+
+---
+
 ## Customization Guide
 
 ### Adding Vault-Specific Context
@@ -311,4 +432,4 @@ After using any prompt:
 
 ---
 
-*Document Status: 🪴 Sapling | Last Updated: 2025-01-23 | Version: Level 3*
+*Document Status: 🪴 Sapling | Last Updated: 2025-01-26 | Version: Level 4 (Meta-Skills)*

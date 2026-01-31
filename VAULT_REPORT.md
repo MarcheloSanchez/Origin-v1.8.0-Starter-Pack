@@ -253,7 +253,8 @@ maturity: seed | seedling | sapling | evergreen | fruit
 | v1.4.0 | Aug 16, 2025 | Technical documentation, automation |
 | v1.5.0 | Aug 23, 2025 | Atomic template system |
 | v1.6.0 | Oct 13, 2025 | JavaScript modules, Meta-skills |
-| v1.8.0 | Current | Latest release |
+| v1.7.0 | Jan 15, 2026 | Gamification, GTD, Review HQ, Home Maintenance |
+| v1.8.0 | Jan 31, 2026 | Meta-skills architecture, Template refactoring |
 
 ---
 

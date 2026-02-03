@@ -5,8 +5,8 @@ status: 🔄active
 tags:
   - 📊dashboard
   - 🗺️MOC
-  - 🏠system
   - 📋review
+  - ⚙️system
 created: 2025-09-29
 modified: 2025-09-29
 related:

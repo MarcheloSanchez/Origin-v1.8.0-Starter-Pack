@@ -5,7 +5,7 @@ Created: 2025-06-30
 
 ---
 **Last Updated:** 2026-01-31
-**Version Range:** v1.0.0 - v1.8.0
+**Version Range:** v1.0.0 - v1.9.1
 **Period:** January 2025 - January 2026
 
 ---
@@ -62,6 +62,70 @@ Created: 2025-06-30
 ### Fixed
 - **Security Vulnerability**: Removed secrets from vault
 - **Auto-Note Mover**: Fixed missing "#" in tag configuration
+## [v1.9.1] – 2026-01-24
+### Added
+- **Claude AI Skills Level 3** - Advanced prompt engineering with structured outputs
+- **17 Copilot Custom Prompts** for PKM workflows:
+  - Assess note maturity, Build mental model, Challenge this idea
+  - Create MOC structure, Decision analysis, Deep research
+  - Explain concept, Extract atomic notes, Extract tasks
+  - Find connections, Format as atomic, Generate questions
+  - Suggest metadata, Summarize meeting, Synthesize knowledge
+  - Emojify, Simplify, Weekly review helper
+- **Progressive disclosure patterns** in AI prompts
+
+### Changed
+- Upgraded Claude skills from Level 2 to Level 3
+- Enhanced prompt templates with context-aware outputs
+
+---
+
+## [v1.9.0] – 2026-01-21
+### Added
+- **Static Fallback Templates** (`Templates/Static/`) - No Templater required
+  - atomic.md, effort.md, source.md, moc.md
+  - person.md, place.md, tool.md, area.md, prompt.md
+- **Modular Template Architecture** - Separate Meta, Body, and Create templates
+- **Core Navigation Snippets** - `_nav-breadcrumb.md`, `_nav-wayfinder.md`, `_section-related.md`
+
+### Changed
+- **Template Refactoring Complete** - Reduced from 95+ to ~40 template files
+- Consolidated action templates into generic `Actions/` folder
+- Updated QuickAdd macros to use new template paths
+- Removed legacy `Type/` folder structure
+
+### Removed
+- Deprecated `*-Full-Template.md` files (redundant with Meta + Body)
+- Legacy Dot, Concept, Idea templates (merged into Atomic)
+- Calendar CZ TODO stubs
+- v1 variants of Callout, ToC, Kanban templates
+
+---
+
+## [v1.8.0] – 2026-01-16
+### Added
+- **Home Maintenance System** (`🏠 Home Maintenance System`) - Room tracking in 400-Places
+- **Review HQ** (`🧭 Review HQ`) - Convergence point for all review workflows
+- **Gamification System** - Dashboard, Quick Reference, PKM Gamification
+- **GTD Contexts Guide** - Context-based task management
+- **Note Classification Guide** (`📍Note Classification Guide`)
+- **Calendar Period Architecture** - Connective tissue for temporal system
+
+### Changed
+- Renamed CHANGELOG, RELEASE NOTES, BACKLOG to capitals
+- Plugin settings fixes (Auto-note Mover tags)
+
+---
+
+## [v1.7.0] – 2026-01-02
+### Added
+- **Comprehensive GTD System** - Full Getting Things Done implementation
+- **Vault Analysis & Health Report** - Automated vault diagnostics
+- **Gamification Features** - XP, achievements, streaks
+
+### Changed
+- Major reorganization and template updates
+- Security improvements (removed hardcoded credentials)
 
 ---
 

@@ -10,6 +10,58 @@ Created: 2025-06-30
 
 ---
 
+## [v1.8.0] – 2026-01-31
+### Added
+- **Meta-Skills Architecture**: 6 chainable AI meta-skills with handoff protocol
+    - Note Evolver - Mature notes to evergreen status
+    - Learning Path Designer - Optimal learning sequences
+    - Content Pipeline - Content workflow optimization
+    - Decision Navigator - Structured decision analysis
+    - Research Orchestrator - Investigation coordination
+    - Idea Validator - Concept validation
+- **Claude AI Skills**: Level 3 advanced prompt engineering for PKM workflows
+- **Modular Template Architecture**: Complete template refactoring (Phases 1-6)
+    - Phase 1-2: Core modular template system
+    - Phase 3-4: QuickAdd macro integration
+    - Phase 5-6: Validation and deprecated template cleanup
+- **Static Fallback Templates**: Templates that work without Templater dependency
+- **Vault Report**: Comprehensive documentation of vault structure and features
+
+### Changed
+- **Template System Overhaul**: Migrated to modular, component-based architecture
+- **Copilot Prompts**: Standardized all 6 meta-skills to consistent template format
+- **Legacy Cleanup**: Removed deprecated Type/ folders (Option B cleanup)
+
+### Fixed
+- Template compatibility issues with QuickAdd macros
+- Deprecated template references updated
+
+---
+
+## [v1.7.0] – 2026-01-15
+### Added
+- **Comprehensive Gamification System**: XP tracking, challenges, achievement dashboard
+- **GTD System Enhancement**: Full Getting Things Done implementation
+- **Home Maintenance System**: Room-based organization with quick-start guide
+    - Each room tracked in [[400-Places]]
+    - Maintenance scheduling and project tracking
+- **Review HQ**: Comprehensive convergence point for all review workflows
+    - Contextual action callouts throughout
+- **Calendar Period Architecture**: Connective tissue linking temporal notes
+- **Vault Analysis & Health Report**: System health monitoring
+- **GitHub Actions**:
+    - Labeler workflow for automated PR labeling
+    - Enhanced first issue and PR messages
+- **MIT License**: Open source licensing added
+
+### Changed
+- **Security Hardening**: Replaced hardcoded credentials with environment variables
+- **Workspace Configuration**: Updated workspace.json settings
+- **Template Organization**: Reorganization with missing templates added
+
+### Fixed
+- **Security Vulnerability**: Removed secrets from vault
+- **Auto-Note Mover**: Fixed missing "#" in tag configuration
 ## [v1.9.1] – 2026-01-24
 ### Added
 - **Claude AI Skills Level 3** - Advanced prompt engineering with structured outputs
@@ -249,19 +301,20 @@ Created: 2025-06-30
 - **Guidelines** - Systematic guidelines documentation
 ---
 ## Summary Statistics
-**Development Period:** 6 weeks (July 12 - August 23, 2025)  
-**Total Changes:** 76 individual updates  
-**Major Releases:** 2 (v1.4.0 released, v1.5.0 in preparation)  
-**Update Sessions:** 13 development cycles
+**Development Period:** 13 months (January 2025 - January 2026)  
+**Total Changes:** 100+ individual updates  
+**Major Releases:** 8 (v1.0.0 through v1.8.0)  
+**Update Sessions:** 20+ development cycles
 **Change Distribution:**
-- **Added:** 58 new features and components (76%)
-- **Changed:** 16 modifications and improvements (21%)
-- **Fixed:** 2 critical bug fixes and resolutions (3%)
-**Focus Areas:**
-- Template System Overhaul (35%)
-- Metadata & Organization (25%)
-- Plugin Integration (20%)
-- Documentation & Guides (20%)
+- **Added:** 75+ new features and components (70%)
+- **Changed:** 25+ modifications and improvements (25%)
+- **Fixed:** 10+ bug fixes and resolutions (5%)
+**Focus Areas (v1.7.0-v1.8.0):**
+- AI & Meta-Skills Integration (30%)
+- Template System Overhaul (25%)
+- Review & GTD Systems (20%)
+- Security & Infrastructure (15%)
+- Gamification & Tracking (10%)
 ---
 ## [v1.2.2] – 2025-07-09
 ### Added

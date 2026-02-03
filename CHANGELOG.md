@@ -1,9 +1,9 @@
 ---
 Version: 1.8.0
-Last Backup: 2025-11-13
+Last Backup: 2026-01-31
 template-status: origin_production
 ---
-⬆️:: [[🏡Home]] 
+⬆️:: [[🏡Home]]
 [[TODO]] - [[BACKLOG]] - [[RELEASE NOTES]]
 ---
 *Poslední aktualizace: `= date(now)`*
@@ -14,6 +14,9 @@ template-status: origin_production
 ---
 # 31/01/26
 - Updated changelog with recent changes
+- Added [[VAULT_REPORT]] - comprehensive vault documentation
+- Converted all 6 meta-skills to standard prompt template format
+- Updated [[RELEASE NOTES]] with v1.7.0 and v1.8.0 documentation
 
 ---
 # 24/01/26

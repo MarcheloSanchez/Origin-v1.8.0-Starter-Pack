@@ -63,8 +63,8 @@ sort by due
 ## Deadline check 
 ```dataview-
 TASK
-WHERE !completed AND deadline
-SORT deadline ASC
+WHERE !completed AND due
+SORT due ASC
 ```
 ## Čekající úkoly (GTD)
 ```

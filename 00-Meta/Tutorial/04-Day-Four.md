@@ -80,7 +80,7 @@ Alex creates a tool note to document how to use it.
 type: effort
 priority: high
 completion_percentage: 15
-deadline: 2026-03-31
+due: 2026-03-31
 energy_required: high
 tags: [🚀effort, 🎯project, 🔥priority/high]
 ```

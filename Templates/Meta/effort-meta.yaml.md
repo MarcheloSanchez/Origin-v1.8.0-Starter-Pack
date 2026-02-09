@@ -10,7 +10,7 @@ status: 🔄active
 priority: medium
 created: <% tp.date.now("YYYY-MM-DD") %>
 modified: <% tp.date.now("YYYY-MM-DD") %>
-deadline:
+due:
 estimated_effort:
 completion_percentage: 0
 next_actions:

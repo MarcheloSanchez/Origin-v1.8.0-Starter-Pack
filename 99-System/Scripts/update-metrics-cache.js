@@ -277,114 +277,122 @@ async function calculateProcessing(allPages) {
 }
 
 /**
- * Write metrics to cache file
+ * Write metrics to cache file using Dataview inline fields
+ * Fields are queryable via: dv.page("00-Meta/_Metrics Cache").field_name
  */
 async function writeCacheFile(metrics) {
   const cachePath = '00-Meta/_Metrics Cache.md';
 
-  // Check if file exists
   const existingFile = app.vault.getAbstractFileByPath(cachePath);
 
+  // Calculate health score from metrics
+  const inboxHealth = metrics.counts.inbox <= 10 ? "🟢" : metrics.counts.inbox <= 20 ? "🟡" : "🔴";
+  const projectsHealth = metrics.counts.efforts <= 7 ? "🟢" : metrics.counts.efforts <= 12 ? "🟡" : "🔴";
+  const connectionHealth = metrics.connections.density >= 70 ? "🟢" : metrics.connections.density >= 40 ? "🟡" : "🔴";
+
+  const healthScore = (
+    (metrics.counts.inbox <= 20 ? 25 : metrics.counts.inbox <= 40 ? 15 : 5) +
+    (metrics.counts.efforts >= 1 && metrics.counts.efforts <= 7 ? 25 : 15) +
+    (metrics.connections.orphans <= metrics.counts.total * 0.2 ? 25 : 15) +
+    25 // placeholder for stale projects
+  );
+
+  const hubLinks = metrics.connections.hubs
+    .map(hub => `[[${hub.name}]] (${hub.connections})`)
+    .join(', ');
+
   const content = `---
+title: Metrics Cache
 type: system
 status: 🔄active
-last_updated: ${metrics.timestamp}
+tags: [⚙️system, 📊metrics, cache]
+created: 2026-02-07
+modified: ${metrics.lastUpdated}
 ---
 
 # 📊 Metrics Cache
 
-> [!info] Cache Information
-> This file contains cached metrics to improve dashboard performance.
+> [!info] Auto-generated cache for dashboard performance
 > **Last Updated**: ${metrics.timestamp}
-> **Next Update**: Scheduled daily at 6am
-
-## 📈 Quick Stats
-
-\`\`\`dataviewjs
-const cache = ${JSON.stringify(metrics, null, 2)};
-
-dv.table(["Metric", "Value", "Status"], [
-  ["📝 Total Notes", cache.counts.total, ""],
-  ["📥 Inbox", cache.counts.inbox, cache.counts.inbox <= 20 ? "🟢" : "🔴"],
-  ["💡 Atomics", cache.counts.atomics, ""],
-  ["🚀 Efforts", cache.counts.efforts, ""],
-  ["📚 Sources", cache.counts.sources, ""],
-  ["🗺️ MOCs", cache.counts.mocs, ""],
-  ["", "", ""],
-  ["🔗 Connection Density", cache.connections.density + "%", cache.connections.density >= 70 ? "🟢" : cache.connections.density >= 40 ? "🟡" : "🔴"],
-  ["🏝️ Orphan Notes", cache.connections.orphans, ""],
-  ["🌟 Hub Notes", cache.connections.hubs.length, ""],
-  ["", "", ""],
-  ["⭐ Total XP", cache.xp.total, ""],
-  ["🎯 Level", cache.xp.level, ""],
-  ["📊 Processing Rate", cache.processing.rate + "%", cache.processing.rate >= 80 ? "🟢" : "🟡"]
-]);
-\`\`\`
-
-## 🔗 Connection Metrics
-
-**Cached Data**:
-- Connected Notes: ${metrics.connections.connected} / ${metrics.counts.total}
-- Orphan Notes: ${metrics.connections.orphans}
-- Average Connections: ${metrics.connections.average} per note
-- Network Health: ${metrics.connections.density >= 70 ? '🟢 Well Connected' : metrics.connections.density >= 40 ? '🟡 Moderate' : '🔴 Fragmented'}
-
-**Top Hub Notes**:
-${metrics.connections.hubs.map(hub => `- [[${hub.name}]] (${hub.connections} connections)`).join('\n')}
-
-## ⭐ XP & Gamification
-
-**Cached Data**:
-- Total XP: ${metrics.xp.total}
-- Current Level: ${metrics.xp.level}
-- Progress to Next Level: ${metrics.xp.progress}%
-- XP Needed: ${metrics.xp.nextLevelXP - metrics.xp.total}
-
-## 📈 Growth Trends
-
-**Cached Data**:
-- Weekly Captures: ${metrics.growth.weekly} notes
-- Monthly Captures: ${metrics.growth.monthly} notes
-- Growth Rate: ${metrics.growth.growthRate >= 0 ? '+' : ''}${metrics.growth.growthRate}%
-- Average per Day: ${metrics.growth.avgPerDay} notes
-
-## 📊 Processing Metrics
-
-**Cached Data**:
-- Created This Week: ${metrics.processing.created}
-- Processed This Week: ${metrics.processing.processed}
-- Current Inbox: ${metrics.processing.inbox}
-- Processing Rate: ${metrics.processing.rate}%
+> **Update**: \`Ctrl+P\` → "QuickAdd: 🔄Update Metrics Cache"
+> **Usage**: \`dv.page("00-Meta/_Metrics Cache").field_name\`
 
 ---
 
-## 🔄 Usage in Dashboards
+## Core Metrics
 
-To use cached metrics in your dashboards:
-
-\`\`\`dataviewjs
-const cache = dv.page("00-Meta/_Metrics Cache");
-// Access cached values directly
-const totalXP = cache.xp?.total || 0;
-const connectionDensity = cache.connections?.density || 0;
-\`\`\`
-
-## ⚙️ Update Schedule
-
-This cache is automatically updated daily at 6am via Periodic Notes template.
-
-**Manual Update**: Run \`Ctrl/Cmd + P → "QuickAdd: 🔄Update Metrics Cache"\`
+total_notes:: ${metrics.counts.total}
+inbox_count:: ${metrics.counts.inbox}
+atomic_count:: ${metrics.counts.atomics}
+effort_count:: ${metrics.counts.efforts}
+source_count:: ${metrics.counts.sources}
+moc_count:: ${metrics.counts.mocs}
+daily_count:: ${metrics.counts.dailies}
+archived_count:: ${metrics.counts.archived}
+content_total:: ${metrics.counts.totalContent}
 
 ---
 
-*Cache generated: ${metrics.timestamp}*
+## Health Scores
+
+health_score:: ${healthScore}
+inbox_health:: ${inboxHealth}
+projects_health:: ${projectsHealth}
+connection_health:: ${connectionHealth}
+
+---
+
+## Connection Metrics
+
+connection_total:: ${metrics.connections.total}
+connected_notes:: ${metrics.connections.connected}
+orphan_notes:: ${metrics.connections.orphans}
+connection_density:: ${metrics.connections.density}
+avg_connections:: ${metrics.connections.average}
+hub_notes:: ${hubLinks}
+
+---
+
+## Gamification
+
+xp_total:: ${metrics.xp.total}
+xp_level:: ${metrics.xp.level}
+xp_next_level:: ${metrics.xp.nextLevelXP}
+xp_progress:: ${metrics.xp.progress}
+
+---
+
+## Growth Trends
+
+growth_weekly:: ${metrics.growth.weekly}
+growth_monthly:: ${metrics.growth.monthly}
+growth_rate:: ${metrics.growth.growthRate}
+avg_per_day:: ${metrics.growth.avgPerDay}
+
+---
+
+## Processing Metrics
+
+processing_created:: ${metrics.processing.created}
+processing_processed:: ${metrics.processing.processed}
+processing_inbox:: ${metrics.processing.inbox}
+processing_rate:: ${metrics.processing.rate}
+
+---
+
+## Cache Info
+
+cache_timestamp:: ${metrics.timestamp}
+cache_date:: ${metrics.lastUpdated}
+
+---
+
+*Auto-updated by \`update-metrics-cache.js\` — do not edit manually*
 `;
 
   if (existingFile) {
-    // Update existing file
     await app.vault.modify(existingFile, content);
   } else {
-    // Create new file
     await app.vault.create(cachePath, content);
   }
 }

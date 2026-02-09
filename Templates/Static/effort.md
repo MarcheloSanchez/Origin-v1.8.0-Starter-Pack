@@ -10,7 +10,7 @@ status: 🔄active
 priority: medium
 created:
 modified:
-deadline:
+due:
 completion_percentage: 0
 next_actions:
 context:

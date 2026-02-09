@@ -68,7 +68,7 @@
 
 ## **6️⃣ Status Prefixes** _(Stavové prefixy)_
 
-> Instantly see what’s in draft, final, or review.
+> Instantly see what's in draft, final, or review.
 
 ```
 ✏️ Draft - [Title]
@@ -76,3 +76,12 @@
 📦 Archived - [Original Title]
 🔍 Review - [Title]
 ```
+
+---
+
+## 🔗 Related System Notes
+
+- [[MOC - Visual Identity]] – Visual standards hub (emoji prefixes documented here)
+- [[🗺️My PKM MOC]] – Parent PKM system
+- [[🏛️My PKM Governance]] – System rules and standards
+- [[🏷️My PKM Tags]] – Tag conventions with emoji-first format

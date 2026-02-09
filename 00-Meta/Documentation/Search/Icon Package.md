@@ -310,8 +310,9 @@ Level 3: ████     (rich colors, special occasions)
 ---
 
 ## 🔗 Related System Notes
+- [[MOC - Visual Identity]] – Central hub for all visual elements
 - [[🏛️My PKM Governance]]
 - [[🏷️My PKM Tags]]
 - [[🔁My PKM Workflows]]
-- [[Visual hotkeys]] 
- - [[🙂My PKM Icon Reference]] - Simplified showcase of used icons
+- [[Visual hotkeys]]
+- [[🙂My PKM Icon Reference]] - Simplified showcase of used icons

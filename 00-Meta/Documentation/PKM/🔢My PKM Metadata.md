@@ -104,9 +104,8 @@ fileClass: base|atomic|effort|source|moc|meeting|prompt|archive
   // Time & Scheduling
 "created",
 "modified",
-"start", 
-"due",
-"deadline",
+"start",
+"due",  // ⚠️ Standardized: use "due" instead of "deadline" (auto-renamed by YAML Orchestrator)
 "end",
 "last_review",
 "review_frequency", 
@@ -815,6 +814,7 @@ dv.paragraph(`${p.file.link}: ${score}/${requiredFields.length} (${Math.round(sc
 
 ## 🔗 Related System Notes
 
+- [[MOC - Visual Identity]] – Visual standards hub (maturity icons, status emojis)
 - [[🔁My PKM Workflows]] - How metadata drives automation
 - [[+About Templatesℹ️]] - Metadata in templates
 - [[🔍My PKM Queries]] - Dataview query collection

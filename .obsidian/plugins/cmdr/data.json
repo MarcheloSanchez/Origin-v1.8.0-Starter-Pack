@@ -13,23 +13,25 @@
   "fileMenu": [],
   "leftRibbon": [
     {
-      "id": "metadata-menu:add_fileclass_to_file",
-      "icon": "package-plus",
-      "name": "Add fileClass to file",
+      "id": "quickadd:choice:961cb8b9-dfd8-4f3e-9b97-263a6f80c612",
+      "icon": "lucide-lightbulb",
+      "name": "Quick Idea",
       "mode": "any",
-      "color": "#1eff00"
-    },
-    {
-      "id": "quickadd:choice:fd7122d3-9391-4def-b087-f6be1f2d5530",
-      "icon": "lucide-list-restart",
-      "name": "QuickAdd: 🔁reorder",
-      "mode": "any"
+      "color": "#00ff11"
     },
     {
       "id": "periodic-notes:open-daily-note",
-      "icon": "calendar-day",
-      "name": "Open daily note",
-      "mode": "any"
+      "icon": "lucide-calendar-days",
+      "name": "Daily Note",
+      "mode": "any",
+      "color": "#ff8c00"
+    },
+    {
+      "id": "quickadd:choice:f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c",
+      "icon": "lucide-inbox",
+      "name": "Process Inbox",
+      "mode": "any",
+      "color": "#cc66ff"
     }
   ],
   "rightRibbon": [],
@@ -37,95 +39,32 @@
   "statusBar": [],
   "pageHeader": [
     {
-      "id": "quickadd:choice:78962bab-6be1-4df5-be91-e36ee1c0b8ac",
-      "icon": "lucide-box",
-      "name": "Create new Atomic",
-      "mode": "any",
-      "color": "#00ff11"
-    },
-    {
-      "id": "quickadd:choice:378a1ce2-6fa5-4b6d-89d4-3c33b70f6ef0",
-      "icon": "lucide-area-chart",
-      "name": "Create new Area",
-      "mode": "any",
-      "color": "#11ff00"
-    },
-    {
-      "id": "quickadd:choice:16d5f0a1-6295-4aaa-b7cd-dc99e4afc47e",
-      "icon": "lucide-activity",
-      "name": "Create new Effort",
-      "mode": "any",
-      "color": "#11ff00"
-    },
-    {
-      "id": "quickadd:choice:7a4869fb-0105-4cb3-9acd-61d51740fdcf",
-      "icon": "lucide-book",
-      "name": "Create new Source",
-      "mode": "any",
-      "color": "#2bff00"
-    },
-    {
-      "id": "quickadd:choice:71eeeb2d-ddb1-4902-9ad7-8b31911947be",
-      "icon": "lucide-handshake",
-      "name": "Create new Meeting",
-      "mode": "any",
-      "color": "#11ff00"
-    },
-    {
-      "id": "quickadd:choice:d6ee1d72-52fe-47d1-b0d9-692984c933db",
-      "icon": "lucide-map",
-      "name": "MOC",
-      "mode": "any",
-      "color": "#00ff04"
-    },
-    {
-      "id": "quickadd:choice:961cb8b9-dfd8-4f3e-9b97-263a6f80c612",
-      "icon": "lucide-lightbulb",
-      "name": "💡 Quick Idea",
-      "mode": "any",
-      "color": "#eeff00"
-    },
-    {
-      "id": "quickadd:choice:fd7122d3-9391-4def-b087-f6be1f2d5530",
-      "icon": "lucide-refresh-cw",
-      "name": "🔁reorder",
-      "mode": "any",
-      "color": "#4dc3ff"
-    },
-    {
-      "id": "quickadd:choice:77fa04f4-8e0a-4d11-af00-ca89dcfa9455",
-      "icon": "lucide-split-square-horizontal",
-      "name": "⬅️Focus-sidebar➡️",
+      "id": "quickadd:choice:aa11bb22-cc33-dd44-ee55-ff6677889900",
+      "icon": "lucide-arrow-right-circle",
+      "name": "Advance Status",
       "mode": "any",
       "color": "#4dc3ff"
     },
     {
       "id": "quickadd:choice:41ab2c65-237a-48e5-a693-0a3d78e7920e",
       "icon": "lucide-tag",
-      "name": "🏷️Quick Tag",
+      "name": "Quick Tag",
       "mode": "any",
-      "color": "#fff700"
+      "color": "#f5a623"
     },
     {
-      "id": "quickadd:choice:852b1953-3be5-4414-9bd1-7de1cca53b4f",
-      "icon": "lucide-notepad-text-dashed",
-      "name": "\"lint\"!- ask Folders - no memory",
+      "id": "quickadd:choice:dd44ee55-ff66-7788-9900-112233445566",
+      "icon": "lucide-archive",
+      "name": "Archive Note",
       "mode": "any",
-      "color": "#2ec0ff"
+      "color": "#ff8c00"
     },
     {
-      "id": "quickadd:choice:6b4bb779-6e64-4a9b-a86f-520a98535ba5",
-      "icon": "lucide-grid",
-      "name": "🏛️normalize - ask Folders - no memory - backup",
+      "id": "quickadd:choice:77fa04f4-8e0a-4d11-af00-ca89dcfa9455",
+      "icon": "lucide-eye",
+      "name": "Focus Mode",
       "mode": "any",
-      "color": "#1fd2ff"
-    },
-    {
-      "id": "quickadd:choice:05751f98-b7d2-40c5-bd4d-c7f07ede7535",
-      "icon": "lucide-code",
-      "name": "MENU: 🔢YAML - Automation ⚡",
-      "mode": "any",
-      "color": "#33ccff"
+      "color": "#4dc3ff"
     }
   ],
   "macros": [],

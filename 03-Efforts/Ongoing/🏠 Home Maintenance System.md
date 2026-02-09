@@ -11,7 +11,7 @@ priority: high
 action_required: false
 created: 2026-01-14
 modified:
-deadline:
+due:
 estimated_effort: "30 min/week"
 completion_percentage: 0
 next_actions:

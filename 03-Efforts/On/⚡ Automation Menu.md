@@ -8,7 +8,7 @@ priority:
 action_required: 
 created: "2025-08-20"
 modified: 
-deadline: 
+due:
 completion_percentage: 
 next_actions: 
 related: 

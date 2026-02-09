@@ -5,30 +5,30 @@
   "daily": {
     "format": "",
     "folder": "05-Calendar/Daily",
-    "template": "Templates/New-Notes/Type/Calendar/Template Daily.md",
+    "template": "Templates/Calendar/Template Daily.md",
     "enabled": true
   },
   "weekly": {
     "format": "gggg-[W]ww",
-    "template": "Templates/New-Notes/Type/Calendar/Template Weekly.md",
+    "template": "Templates/Calendar/Template Weekly.md",
     "folder": "05-Calendar/Weekly",
     "enabled": true
   },
   "monthly": {
     "format": "",
-    "template": "Templates/New-Notes/Type/Calendar/Template Monthly.md",
+    "template": "Templates/Calendar/Template Monthly.md",
     "folder": "05-Calendar/Monthly",
     "enabled": true
   },
   "quarterly": {
     "format": "",
-    "template": "Templates/New-Notes/Type/Calendar/Template Quarterly.md",
+    "template": "Templates/Calendar/Template Quarterly.md",
     "folder": "05-Calendar/Quarterly",
     "enabled": true
   },
   "yearly": {
     "format": "",
-    "template": "Templates/New-Notes/Type/Calendar/Template Yearly.md",
+    "template": "Templates/Calendar/Template Yearly.md",
     "folder": "05-Calendar/Yearly",
     "enabled": true
   }

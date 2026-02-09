@@ -109,8 +109,9 @@ related:
 - **Consistency**: Same color always means same thing across system
 
 ## 🔗 Related System Notes
+- [[MOC - Visual Identity]] – Central hub for all visual elements
 - [[🏛️My PKM Governance]]
 - [[🏷️My PKM Tags]]
 - [[🔁My PKM Workflows]]
-- [[Visual hotkeys]] 
- - [[Icon Package]] - Comprehensive list of icons
+- [[Visual hotkeys]]
+- [[Icon Package]] - Comprehensive list of icons

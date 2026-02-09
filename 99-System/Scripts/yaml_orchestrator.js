@@ -70,7 +70,7 @@ const defaults = {
       "status", "maturity", "priority", "processing_priority", "completeness", 
       "coverage_areas", "action_required",
       // Time & Scheduling
-      "created", "modified", "start", "due", "deadline", "end", 
+      "created", "modified", "start", "due", "end",
       "last_review", "review_frequency", "estimated_effort",
       // Actions & Progress
       "completion_percentage", "next_actions", "capture_method", "linked_notes_count",
@@ -92,11 +92,11 @@ const defaults = {
     status: ["📥inbox", "🔄active", "⏳waiting", "✅completed", "📦archived"]
   },
   toArray: ["tags", "aliases"],
-  dateKeys: ["created", "modified", "start", "due", "deadline", "end", "last_review"],
+  dateKeys: ["created", "modified", "start", "due", "end", "last_review"],
   rules: {
     tags: { stripHashes: true, lowerCase: false, sort: true, dedupe: true, trim: true },
     aliases: { dedupe: true, sort: false, trim: true },
-    rename: { "seeAlso": "see_also", "relatedNotes": "related" },
+    rename: { "seeAlso": "see_also", "relatedNotes": "related", "deadline": "due" },
     ensureRequired: ["title", "type", "status", "created"],
     removeEmpty: true
   }
@@ -240,12 +240,43 @@ const defaults = {
     if ("aliases" in fm) fm.aliases = normalizeArray(fm.aliases, rules.aliases || {});
     for (const k of (cfg.toArray || [])) if (k in fm) fm[k] = asArray(fm[k]);
 
-    // 3) Status enum (lowercased)
+    // 3) Status enum (normalized with emoji prefixes)
     if (fm.status && typeof fm.status === "string") {
-      const low = fm.status.toLowerCase().trim();
+      const raw = fm.status.trim();
       const allowed = cfg.enums?.status || [];
-      const map = { "done":"completed", "complete":"completed", "finished":"completed", "archive":"archived" };
-      fm.status = allowed.includes(low) ? low : (map[low] || low);
+
+      // Status normalization map - maps plain values to emoji-prefixed canonical values
+      const statusMap = {
+        // Plain → Emoji-prefixed
+        "inbox": "📥inbox",
+        "active": "🔄active",
+        "waiting": "⏳waiting",
+        "completed": "✅completed",
+        "archived": "📦archived",
+        "paused": "⏸️paused",
+        "cancelled": "❌cancelled",
+        // Common aliases
+        "done": "✅completed",
+        "complete": "✅completed",
+        "finished": "✅completed",
+        "archive": "📦archived",
+        "in_progress": "🔄active",
+        "in-progress": "🔄active",
+        "blocked": "⏳waiting",
+        "on_hold": "⏸️paused",
+        "on-hold": "⏸️paused"
+      };
+
+      // Check if already in allowed list (emoji-prefixed)
+      if (allowed.includes(raw)) {
+        fm.status = raw;
+      } else {
+        // Try to normalize from plain or alias
+        const lowRaw = raw.toLowerCase();
+        // Strip existing emoji if present to get base value
+        const baseValue = lowRaw.replace(/^[📥🔄⏳✅📦⏸️❌]/u, "").trim();
+        fm.status = statusMap[baseValue] || statusMap[lowRaw] || raw;
+      }
     }
 
     // 4) Dates → YYYY-MM-DD; fill created from file stat if missing
@@ -263,6 +294,19 @@ const defaults = {
     // 5) Ensure required keys exist (empty if missing)
     const required = rules.ensureRequired || [];
     for (const k of required) if (!(k in fm)) fm[k] = "";
+
+    // 5b) Validation — tag notes with missing required fields for review
+    const missingFields = required.filter(k => {
+      const v = fm[k];
+      return v === undefined || v === null || v === "";
+    });
+    if (missingFields.length > 0) {
+      if (!fm.tags) fm.tags = [];
+      if (Array.isArray(fm.tags) && !fm.tags.includes("🧹tidy")) {
+        fm.tags.push("🧹tidy");
+      }
+      console.warn(`YAML Validator: ${file.path} missing: ${missingFields.join(', ')}`);
+    }
 
     // 6) Remove empties (optional)
     if (rules.removeEmpty) {

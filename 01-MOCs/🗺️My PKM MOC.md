@@ -19,18 +19,20 @@ related:
   - "[[🏷️My PKM Tags]]"
   - "[[✅My PKM Tasks]]"
   - "[[ℹ️My PKM Naming Convention]]"
+  - "[[MOC - Visual Identity]]"
 ---
 > [!orbit] Wayfinder | 🗺️**My PKM MOC** |  [[🏛️My PKM Governance]] | [[🔢My PKM Metadata]] | [[🔍My PKM Queries]] |  [[📁My PKM Folders]] |  [[🏷️My PKM Tags]] |  [[🔁My PKM Workflows]] | [[✅My PKM Tasks]] | [[ℹ️My PKM Naming Convention]]
 
 ⬆️:: [[🏡Home]]
 
- Summarized rules for PKM-| [[🏛️My PKM Governance]] 
- Metadata described for each type-| [[🔢My PKM Metadata]] 
- -| [[🔍My PKM Queries]] 
- -|  [[📁My PKM Folders]] 
- -|  [[🏷️My PKM Tags]] 
- -|  [[🔁My PKM Workflows]] 
- -| [[✅My PKM Tasks]] 
+ Summarized rules for PKM-| [[🏛️My PKM Governance]]
+ Metadata described for each type-| [[🔢My PKM Metadata]]
+ -| [[🔍My PKM Queries]]
+ -|  [[📁My PKM Folders]]
+ -|  [[🏷️My PKM Tags]]
+ -|  [[🔁My PKM Workflows]]
+ -| [[✅My PKM Tasks]]
  -| [[ℹ️My PKM Naming Convention]]
+ Icons, colors, CSS, callouts-| [[MOC - Visual Identity]]
 
 ![[PKM_Workflow_process.jpg]]

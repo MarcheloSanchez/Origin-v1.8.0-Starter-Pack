@@ -9,7 +9,7 @@ priority: high
 action_required: true
 created: 2025-10-09
 modified:
-deadline:
+due:
 estimated_effort:
 completion_percentage:
 next_actions:

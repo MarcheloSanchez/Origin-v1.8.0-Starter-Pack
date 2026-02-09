@@ -38,6 +38,7 @@ cssclasses:
 > 
 > > [!calendar]+ ##  `$= '[['+moment().format("YYYY-MM")+'|Měsíc]]'`
 
+
 # 🏠 PKM Home Dashboard
 
 *Your personal knowledge management command center
@@ -56,24 +57,37 @@ cssclasses:
 
 ## 📊 System Health at a Glance
 ```dataviewjs
-// System Health Indicators
-const pages = dv.pages();
-const today = dv.date('today');
+/**
+ * QUERY: System Health Quick Overview (Cache-Optimized)
+ * PURPOSE: Display key metrics at a glance for daily check-in
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  const today = dv.date('today');
 
-// Calculate key metrics
-const inboxCount = dv.pages('"+Inbox"').length;
-const activeEfforts = dv.pages('"03-Efforts"').where(p => p.status === "active").length;
-const atomicNotes = dv.pages('"02-Dots/100-Atomics"').length;
-const sourcesThisWeek = dv.pages('"04-Sources"').where(p => 
-  p.file.ctime >= today.minus({days: 7})
-).length;
+  let inboxCount, activeEfforts, atomicNotes, sourcesThisWeek;
 
-// Health status
-const healthStatus = inboxCount <= 20 ? "🟢 Healthy" : 
-                    inboxCount <= 40 ? "🟡 Needs Attention" : 
-                    "🔴 Critical";
+  if (cache?.cache_date) {
+    // Use cached values
+    inboxCount = cache.inbox_count ?? 0;
+    activeEfforts = cache.effort_count ?? 0;
+    atomicNotes = cache.atomic_count ?? 0;
+    sourcesThisWeek = cache.growth_weekly ?? 0;
+  } else {
+    // Live fallback
+    inboxCount = dv.pages('"+Inbox"')?.length ?? 0;
+    activeEfforts = dv.pages('"03-Efforts"').where(p => p.status === "🔄active").length ?? 0;
+    atomicNotes = dv.pages('"02-Dots/100-Atomics"')?.length ?? 0;
+    sourcesThisWeek = dv.pages('"04-Sources"').where(p => p.file.ctime >= today.minus({days: 7})).length ?? 0;
+  }
 
-dv.paragraph(`
+  const healthStatus = inboxCount <= 20 ? "🟢 Healthy" :
+                      inboxCount <= 40 ? "🟡 Needs Attention" :
+                      "🔴 Critical";
+
+  dv.paragraph(`
 ### Current Status: ${healthStatus}
 
 | Metric | Count | Status |
@@ -83,39 +97,60 @@ dv.paragraph(`
 | 💡 **Atomic Notes** | ${atomicNotes} | ${atomicNotes >= 10 ? '✅' : '⚠️'} |
 | 📚 **Sources This Week** | ${sourcesThisWeek} | ${sourcesThisWeek >= 1 ? '✅' : '⚠️'} |
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading health overview: ${e.message}`);
+}
 ```
 ```dataviewjs
-// Automated system health indicators
-const today = dv.date('today');
-const pages = dv.pages().where(p => !p.file.path.includes("99-System"));
+/**
+ * QUERY: System Health Score (Cache-Optimized)
+ * PURPOSE: Calculate overall vault health with weighted scoring (0-100)
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * SCORING: inbox(25) + projects(25) + stale(25) + orphans(25) = 100
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let metrics;
 
-// Core metrics
-const metrics = {
-  inbox: dv.pages('"+Inbox"').length,
-  activeProjects: dv.pages('"03-Efforts"').where(p => p.status === "active").length,
-  staleProjects: dv.pages('"03-Efforts"').where(p => 
-    p.status === "active" && 
-    today.diff(p.file.mtime, 'days') > 14
-  ).length,
-  orphanNotes: pages.where(p => 
-    (!p.related || p.related.length === 0) && 
-    (!p.file.inlinks || p.file.inlinks.length === 0)
-  ).length,
-  totalNotes: pages.length
-};
+  if (cache?.cache_date) {
+    metrics = {
+      inbox: cache.inbox_count ?? 0,
+      activeProjects: cache.effort_count ?? 0,
+      staleProjects: 0, // not cached yet — future enhancement
+      orphanNotes: cache.orphan_notes ?? 0,
+      totalNotes: cache.total_notes ?? 0
+    };
+  } else {
+    const today = dv.date('today');
+    const pages = dv.pages().where(p => !p.file.path.includes("99-System"));
+    metrics = {
+      inbox: dv.pages('"+Inbox"')?.length ?? 0,
+      activeProjects: dv.pages('"03-Efforts"').where(p => p.status === "🔄active").length ?? 0,
+      staleProjects: dv.pages('"03-Efforts"').where(p => {
+        if (p.status !== "🔄active") return false;
+        const daysDiff = today.diff(p.file.mtime, 'days');
+        return daysDiff && daysDiff.days > 14;
+      }).length ?? 0,
+      orphanNotes: pages.where(p =>
+        (!p.related || p.related.length === 0) &&
+        (!p.file.inlinks || p.file.inlinks.length === 0)
+      ).length ?? 0,
+      totalNotes: pages?.length ?? 0
+    };
+  }
 
-// Health scoring
-const healthScore = (
-  (metrics.inbox <= 20 ? 25 : metrics.inbox <= 40 ? 15 : 5) +
-  (metrics.activeProjects >= 1 && metrics.activeProjects <= 7 ? 25 : 15) +
-  (metrics.staleProjects === 0 ? 25 : metrics.staleProjects <= 2 ? 20 : 10) +
-  (metrics.orphanNotes <= metrics.totalNotes * 0.2 ? 25 : 15)
-);
+  const healthScore = (
+    (metrics.inbox <= 20 ? 25 : metrics.inbox <= 40 ? 15 : 5) +
+    (metrics.activeProjects >= 1 && metrics.activeProjects <= 7 ? 25 : 15) +
+    (metrics.staleProjects === 0 ? 25 : metrics.staleProjects <= 2 ? 20 : 10) +
+    (metrics.totalNotes > 0 && metrics.orphanNotes <= metrics.totalNotes * 0.2 ? 25 : 15)
+  );
 
-const healthGrade = healthScore >= 80 ? "🟢 Excellent" : 
-                   healthScore >= 60 ? "🟡 Good" : "🔴 Needs Attention";
+  const healthGrade = healthScore >= 80 ? "🟢 Excellent" :
+                     healthScore >= 60 ? "🟡 Good" : "🔴 Needs Attention";
 
-dv.paragraph(`
+  dv.paragraph(`
 **📊 System Health Score: ${healthScore}/100 - ${healthGrade}**
 
 | Metric | Current | Status | Target |
@@ -123,9 +158,12 @@ dv.paragraph(`
 | 📥 Inbox Items | ${metrics.inbox} | ${metrics.inbox <= 20 ? '✅' : '⚠️'} | ≤20 |
 | 🚀 Active Projects | ${metrics.activeProjects} | ${metrics.activeProjects >= 1 && metrics.activeProjects <= 7 ? '✅' : '⚠️'} | 1-7 |
 | ⏰ Stale Projects | ${metrics.staleProjects} | ${metrics.staleProjects === 0 ? '✅' : '⚠️'} | 0 |
-| 🏝️ Orphan Notes | ${metrics.orphanNotes} | ${metrics.orphanNotes <= metrics.totalNotes * 0.2 ? '✅' : '⚠️'} | <20% |
+| 🏝️ Orphan Notes | ${metrics.orphanNotes} | ${metrics.totalNotes > 0 && metrics.orphanNotes <= metrics.totalNotes * 0.2 ? '✅' : '⚠️'} | <20% |
 | 📄 Total Notes | ${metrics.totalNotes} | 📊 | Growth |
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error calculating health score: ${e.message}`);
+}
 ```
 
 ## 🔝 One-glance (Top panel)
@@ -133,32 +171,49 @@ dv.paragraph(`
 > Rychlý přehled stavu + skoky do sekcí
 
 ```dataviewjs
-const today = dv.date('today');
-const pages = dv.pages();
+/**
+ * QUERY: One-Glance Status Panel
+ * PURPOSE: Quick overview of tasks, projects, inbox for daily review
+ * DEPENDS ON: tasks (due dates), 03-Efforts (status), +Inbox, 05-Calendar/Daily
+ * UPDATED: 2026-02-05
+ */
+try {
+  const today = dv.date('today');
+  const pages = dv.pages();
 
-// Tasks (DataviewJS čte úkoly z md: - [ ] ... s daty)
-const allTasks = pages.file.tasks.array();
-const overdue = allTasks.filter(t => !t.completed && t.due && dv.date(t.due) < today).length;
-const dueToday = allTasks.filter(t => !t.completed && t.due && dv.date(t.due).toISODate() === today.toISODate()).length;
+  // Tasks with null-safe date handling
+  const allTasks = pages.file.tasks?.array() ?? [];
+  const overdue = allTasks.filter(t => {
+    if (t.completed || !t.due) return false;
+    const dueDate = dv.date(t.due);
+    return dueDate && dueDate < today;
+  }).length;
+  const dueToday = allTasks.filter(t => {
+    if (t.completed || !t.due) return false;
+    const dueDate = dv.date(t.due);
+    return dueDate && dueDate.toISODate() === today.toISODate();
+  }).length;
 
-// Efforts (active window)
-const activeEfforts = dv.pages('"03-Efforts"')
-  .where(p => ['active','in_progress','blocked','on_hold'].includes((p.status||'').toLowerCase()))
-  .length;
+  const activeEfforts = dv.pages('"03-Efforts"')
+    .where(p => p.status === "🔄active" || p.status === "⏳waiting")
+    .length ?? 0;
 
-// Inbox count
-const inboxCount = dv.pages('"+Inbox"').length;
+  // Inbox count
+  const inboxCount = dv.pages('"+Inbox"')?.length ?? 0;
 
-// Weekly highlights (denní poznámky s `highlight::`)
-const weekStart = today.startOf('week');
-const weeklyHighlights = dv.pages('"05-Calendar/Daily"')
-  .where(p => p.file.day && p.file.day >= weekStart && p.highlight)
-  .length;
+  // Weekly highlights
+  const weekStart = today.startOf('week');
+  const weeklyHighlights = dv.pages('"05-Calendar/Daily"')
+    .where(p => p.file.day && p.file.day >= weekStart && p.highlight)
+    .length ?? 0;
 
-dv.table(
-  ["📌 Overdue", "📅 Due dnes", "🧭 Aktivní projekty", "📥 Inbox", "✨ Highlights (týden)"],
-  [[overdue, dueToday, activeEfforts, inboxCount, weeklyHighlights]]
-);
+  dv.table(
+    ["📌 Overdue", "📅 Due dnes", "🧭 Aktivní projekty", "📥 Inbox", "✨ Highlights (týden)"],
+    [[overdue, dueToday, activeEfforts, inboxCount, weeklyHighlights]]
+  );
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading status panel: ${e.message}`);
+}
 ```
 
 ## 🎯 Today's Focus
@@ -183,7 +238,7 @@ TABLE WITHOUT ID
   choice(due, "📅 " + due, "No deadline") as "Due",
   choice(next-action, "▶️ " + next-action, "❓ Needs planning") as "Next Action"
 FROM "03-Efforts"
-WHERE status = "🔁active"
+WHERE status = "🔄active"
 SORT completion DESC
 LIMIT 5
 ```
@@ -200,7 +255,7 @@ TABLE WITHOUT ID
   maturity as "Stage",
   created as "Captured"
 FROM "02-Dots/100-Atomics"
-WHERE status = "🔁active"
+WHERE status = "🔄active"
 SORT created DESC
 LIMIT 5
 ```
@@ -218,7 +273,7 @@ TABLE WITHOUT ID
   choice(rating, rating + "⭐", "Not rated") as "Rating",
   created as "Added"
 FROM "04-Sources"
-WHERE status = "active"
+WHERE status = "🔄active"
 SORT created DESC
 LIMIT 5
 ```
@@ -230,27 +285,38 @@ LIMIT 5
 ## 📈 Weekly Progress
 
 ```dataviewjs
-// Weekly capture and processing stats
-const today = dv.date('today');
-const weekStart = today.minus({days: today.weekday});
+/**
+ * QUERY: Weekly Progress Stats (Cache-Optimized)
+ * PURPOSE: Track capture vs processing velocity for the current week
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let weeklyCaptures, weeklyProcessed, processingRate;
 
-const weeklyCaptures = dv.pages('"+Inbox"').where(p => 
-  p.file.ctime >= weekStart
-).length;
+  if (cache?.cache_date) {
+    weeklyCaptures = cache.processing_created ?? 0;
+    weeklyProcessed = cache.processing_processed ?? 0;
+    processingRate = cache.processing_rate ?? 0;
+  } else {
+    const today = dv.date('today');
+    const weekStart = today.minus({days: today.weekday});
+    weeklyCaptures = dv.pages('"+Inbox"').where(p => p.file.ctime >= weekStart).length ?? 0;
+    weeklyProcessed = dv.pages().where(p => p.status === "🔄active" && p.file.mtime >= weekStart && !p.file.path.includes("+Inbox")).length ?? 0;
+    processingRate = weeklyCaptures > 0 ? Math.round((weeklyProcessed / weeklyCaptures) * 100) : 0;
+  }
 
-const weeklyProcessed = dv.pages().where(p => 
-  p.status === "active" && p.file.mtime >= weekStart && !p.file.path.includes("+Inbox")
-).length;
-
-const processingRate = weeklyCaptures > 0 ? Math.round((weeklyProcessed / weeklyCaptures) * 100) : 0;
-
-dv.paragraph(`
+  dv.paragraph(`
 ### This Week's Activity
 - 📥 **Captured**: ${weeklyCaptures} items
-- 🔄 **Processed**: ${weeklyProcessed} items  
+- 🔄 **Processed**: ${weeklyProcessed} items
 - 📊 **Processing Rate**: ${processingRate}%
 - 🎯 **Processing Health**: ${processingRate >= 80 ? '🟢 Excellent' : processingRate >= 60 ? '🟡 Good' : '🔴 Needs Work'}
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading weekly progress: ${e.message}`);
+}
 ```
 
 ---
@@ -258,19 +324,37 @@ dv.paragraph(`
 ## 🔗 Knowledge Graph Insights
 
 ```dataviewjs
-// Connection analysis
-const pages = dv.pages().where(p => !p.file.path.includes("99-System"));
-const totalPages = pages.length;
-const pagesWithLinks = pages.where(p => (p.related && p.related.length > 0)).length;
-const connectionDensity = totalPages > 0 ? Math.round((pagesWithLinks / totalPages) * 100) : 0;
+/**
+ * QUERY: Knowledge Graph Connection Analysis (Cache-Optimized)
+ * PURPOSE: Measure how well-connected notes are
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let totalPages, pagesWithLinks, connectionDensity;
 
-dv.paragraph(`
+  if (cache?.cache_date) {
+    totalPages = cache.total_notes ?? 0;
+    pagesWithLinks = cache.connected_notes ?? 0;
+    connectionDensity = cache.connection_density ?? 0;
+  } else {
+    const pages = dv.pages().where(p => !p.file.path.includes("99-System"));
+    totalPages = pages?.length ?? 0;
+    pagesWithLinks = pages.where(p => p.related && p.related.length > 0).length ?? 0;
+    connectionDensity = totalPages > 0 ? Math.round((pagesWithLinks / totalPages) * 100) : 0;
+  }
+
+  dv.paragraph(`
 ### Connection Health
 - 📄 **Total Notes**: ${totalPages}
 - 🔗 **Connected Notes**: ${pagesWithLinks}
 - 📊 **Connection Density**: ${connectionDensity}%
 - 🎯 **Connection Health**: ${connectionDensity >= 70 ? '🟢 Well Connected' : connectionDensity >= 40 ? '🟡 Moderate' : '🔴 Isolated'}
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error analyzing connections: ${e.message}`);
+}
 ```
 
 ---
@@ -290,7 +374,7 @@ dv.paragraph(`
 ```dataview
 LIST
 FROM "01-MOCs"
-WHERE status = "🔁active"
+WHERE status = "🔄active"
 SORT file.mtime DESC
 LIMIT 8
 ```
@@ -313,13 +397,30 @@ ADD Butto deck most used
 
 **Nové poznámky — týden & měsíc**
 ```dataviewjs
-const today = dv.date('today');
-const weekAgo = today.minus({days: 7});
-const monthAgo = today.minus({days: 30});
-const week = dv.pages().where(p => p.file.ctime >= weekAgo);
-const month = dv.pages().where(p => p.file.ctime >= monthAgo);
-dv.paragraph(`Nové poznámky tento týden: **${week.length}**`);
-dv.paragraph(`Nové poznámky tento měsíc: **${month.length}**`);
+/**
+ * QUERY: Note Creation Metrics (Cache-Optimized)
+ * PURPOSE: Track weekly and monthly note creation volume
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), file.ctime (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let weekCount, monthCount;
+
+  if (cache?.cache_date) {
+    weekCount = cache.growth_weekly ?? 0;
+    monthCount = cache.growth_monthly ?? 0;
+  } else {
+    const today = dv.date('today');
+    weekCount = dv.pages().where(p => p.file.ctime >= today.minus({days: 7})).length ?? 0;
+    monthCount = dv.pages().where(p => p.file.ctime >= today.minus({days: 30})).length ?? 0;
+  }
+
+  dv.paragraph(`Nové poznámky tento týden: **${weekCount}**`);
+  dv.paragraph(`Nové poznámky tento měsíc: **${monthCount}**`);
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading metrics: ${e.message}`);
+}
 ```
 
 ---

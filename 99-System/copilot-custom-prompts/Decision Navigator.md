@@ -8,7 +8,7 @@ tags:
   - decision-making
   - analysis
   - pkm
-status: active
+status: 🔄active
 created: 2025-01-26
 modified: 2025-01-26
 audience: strategist

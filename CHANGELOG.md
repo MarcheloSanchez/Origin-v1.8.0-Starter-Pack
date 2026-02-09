@@ -10,7 +10,44 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
-
+# 07/02/26
+- **Vault Optimization v2.0 — Priority 1: Foundation Fixes**
+- Standardized `deadline` → `due` across 6 notes, 3 queries, 2 config/doc files
+- Normalized status values: 16 notes fixed (`active` → `🔄active`), removed OR fallbacks from 10+ queries
+- Added try-catch error handling to all DataviewJS blocks (Dashboard 6, GTD 2, Review HQ 4, Gamification 9)
+- Added query purpose documentation to all DataviewJS blocks
+- Updated `yaml-meta-config.json`: removed `deadline` from field order and dateKeys
+- Updated `Query - Active Projects.md` template: removed transition compatibility notes
+- **Vault Optimization v2.0 — Priority 2: Query Optimization**
+- Extended `metrics-core.js` with gamification functions (maturity counts, XP/level calc, daily streak)
+- Rewrote `_Metrics Cache.md` to use Dataview inline fields (queryable via `dv.page()`)
+- Updated `update-metrics-cache.js` to output inline field format instead of embedded JSON
+- Created `Query - Weekly Stats.md` template (6th query template in library)
+- Fixed maturity values in `Query - Maturity Distribution.md` (`🌱seed` → `📤seed`, `🌿seedling` → `🌱seedling`)
+- Fixed `isActive` fallback patterns in `Query - Health Status.md`
+- Fixed `status = "waiting"` OR fallback in Review HQ Waiting query
+- Fixed maturity values in Review HQ config notes section
+- Refactored 4 dashboards to use metrics cache with live fallback:
+  - Dashboard: 6 DataviewJS blocks optimized
+  - GTD Command Center: 2 DataviewJS blocks optimized
+  - Review HQ: 1 DataviewJS block optimized (inbox/efforts from cache)
+  - Gamification Dashboard: 4 DataviewJS blocks optimized (XP, achievements, progress, maturity)
+- **Vault Optimization v2.0 — Priority 3: Automation Enhancement**
+- Fixed maturity-promoter.js STAGES: `🌱seed` → `📤seed`, `🌿seedling` → `🌱seedling`
+- Fixed yaml_validator.js atomic schema maturity values to canonical CIS values
+- Added validation step 5b to yaml_orchestrator.js: tags notes with `#🧹tidy` when required fields missing
+- Fixed Review HQ maturity promotion widget and "Notes Worth Promoting" query maturity values
+- Enhanced Review HQ stale content tip callout with specific action suggestions
+- Verified tag health monitoring and stale content alerts already integrated in Review HQ
+- **Vault Optimization v2.0 — Priority 4: Advanced Features**
+- Fixed Vault Analytics: maturity values (`🌱seed` → `📤seed`), removed status OR fallback patterns, added cache-first optimization to Vault Overview
+- Added 🔗 Connection Suggestions section to Review HQ: "Recently Well-Connected" + "Least Connected Active Notes" widgets with Smart Connections integration
+- Created `generate-weekly-report.js`: automated weekly report generator (QuickAdd script) outputting to `05-Calendar/Weekly/`
+- Updated WIP Limits table in Review HQ with Connection Suggestions limits
+- **🎉 Vault Optimization v2.0 — ALL 4 PRIORITIES COMPLETE**
+---
+# 03/02/26
+- Added [[Prompt Meta-Skills Playbook]]
 ---
 # 31/01/26
 - Updated changelog with recent changes
@@ -62,3 +99,8 @@ template-status: origin_production
 # 04/11/25
 - Added tags #🪵log, #📋about
 - Tady přidávám co změním. Držím to vždy krátce informativně. 
+# new-old
+
+---
+# 11/11/26
+- Added/Fixed/Changed

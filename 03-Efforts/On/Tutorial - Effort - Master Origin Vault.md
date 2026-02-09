@@ -10,7 +10,7 @@ tags:
 status: 🔄active
 priority: high
 completion_percentage: 30
-deadline: 2026-03-31
+due: 2026-03-31
 next_actions: "Complete Phase 2 - Daily practice"
 energy_required: high
 created: 2026-01-30

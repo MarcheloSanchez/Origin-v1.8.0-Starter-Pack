@@ -28,7 +28,7 @@ fields:
       bold: true
     path: ""
     id: Izpf8K
-  - name: deadline
+  - name: due
     type: Date
     options:
       dateShiftInterval: 1 day

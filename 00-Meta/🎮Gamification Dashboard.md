@@ -28,14 +28,24 @@ cssclasses: [dashboard, gamification]
 ### Current Level & XP
 
 ```dataviewjs
-// Calculate total XP based on vault activities
-const notes = dv.pages().length;
-const tasks = dv.pages().file.tasks.length;
-const evergreens = dv.pages().where(p => p.maturity === "🌲evergreen").length;
-const fruits = dv.pages().where(p => p.maturity === "🍓fruit").length;
+/** QUERY: Level & XP Calculator (Cache-Optimized) | DEPENDS ON: _Metrics Cache, pages count, maturity, tasks */
+try {
+const cache = dv.page("00-Meta/_Metrics Cache");
+let notes, tasks, evergreens, fruits, totalXP;
 
-// Simple XP calculation (can be enhanced)
-const totalXP = (notes * 5) + (tasks * 3) + (evergreens * 50) + (fruits * 100);
+if (cache?.cache_date && cache.xp_total) {
+  totalXP = cache.xp_total;
+  notes = cache.total_notes ?? 0;
+  tasks = 0; // not needed when using cached XP
+  evergreens = 0;
+  fruits = 0;
+} else {
+  notes = dv.pages().length;
+  tasks = dv.pages().file.tasks.length;
+  evergreens = dv.pages().where(p => p.maturity === "🌲evergreen").length;
+  fruits = dv.pages().where(p => p.maturity === "🍓fruit").length;
+  totalXP = (notes * 5) + (tasks * 3) + (evergreens * 50) + (fruits * 100);
+}
 
 // Calculate level
 function getLevel(xp) {
@@ -92,6 +102,7 @@ const filled = Math.floor(barLength * progress / 100);
 const empty = barLength - filled;
 const progressBar = '█'.repeat(filled) + '░'.repeat(empty);
 dv.paragraph(`\`${progressBar}\` ${progress}%`);
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ### Quick Stats
@@ -120,17 +131,19 @@ FLATTEN data.value as value
 ### Recently Unlocked
 
 ```dataviewjs
-// Check achievements based on vault data
+/** QUERY: Achievement Tracker (Cache-Optimized) | DEPENDS ON: _Metrics Cache, pages count, maturity, MOCs, daily notes */
+try {
 const achievements = [];
+const _c = dv.page("00-Meta/_Metrics Cache");
 
 // Note count achievements
-const noteCount = dv.pages().length;
+const noteCount = _c?.total_notes ?? dv.pages().length;
 if (noteCount >= 1) achievements.push({name: "🏆 First Steps", desc: "Created first note", rarity: "Common"});
 if (noteCount >= 100) achievements.push({name: "🏆 Century Club", desc: "Created 100 notes", rarity: "Uncommon"});
 if (noteCount >= 500) achievements.push({name: "🏆 Knowledge Factory", desc: "Created 500 notes", rarity: "Rare"});
 if (noteCount >= 1000) achievements.push({name: "🏆 Prolific Producer", desc: "Created 1,000 notes", rarity: "Epic"});
 
-// Maturity achievements
+// Maturity achievements (use cache when available)
 const evergreens = dv.pages().where(p => p.maturity === "🌲evergreen").length;
 const fruits = dv.pages().where(p => p.maturity === "🍓fruit").length;
 
@@ -139,11 +152,11 @@ if (evergreens >= 100) achievements.push({name: "🌲 Master Gardener", desc: "1
 if (fruits >= 10) achievements.push({name: "🍓 Fruit Harvester", desc: "Created 10 fruit notes", rarity: "Epic"});
 
 // MOC achievements
-const mocs = dv.pages('"01-MOCs"').length;
+const mocs = _c?.moc_count ?? dv.pages('"01-MOCs"').length;
 if (mocs >= 20) achievements.push({name: "🗺️ MOC Architect", desc: "Created 20 MOCs", rarity: "Epic"});
 
 // Calendar achievements
-const dailyNotes = dv.pages('"05-Calendar/Daily"').length;
+const dailyNotes = _c?.daily_count ?? dv.pages('"05-Calendar/Daily"').length;
 if (dailyNotes >= 7) achievements.push({name: "🔥 Week Warrior", desc: "7 daily notes", rarity: "Common"});
 if (dailyNotes >= 30) achievements.push({name: "🔥 Month Master", desc: "30 daily notes", rarity: "Rare"});
 if (dailyNotes >= 365) achievements.push({name: "🔥 Year Legend", desc: "365 daily notes", rarity: "Legendary"});
@@ -159,16 +172,19 @@ if (achievements.length > 0) {
 }
 
 dv.paragraph(`**Total Unlocked:** ${achievements.length} achievements`);
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ### Achievement Progress
 
 ```dataviewjs
-// Track progress toward next achievements
-const noteCount = dv.pages().length;
+/** QUERY: Achievement Progress (Cache-Optimized) | DEPENDS ON: _Metrics Cache, pages count, maturity, MOCs */
+try {
+const _c2 = dv.page("00-Meta/_Metrics Cache");
+const noteCount = _c2?.total_notes ?? dv.pages().length;
 const evergreens = dv.pages().where(p => p.maturity === "🌲evergreen").length;
 const fruits = dv.pages().where(p => p.maturity === "🍓fruit").length;
-const mocs = dv.pages('"01-MOCs"').length;
+const mocs = _c2?.moc_count ?? dv.pages('"01-MOCs"').length;
 
 const progressTowards = [];
 
@@ -198,6 +214,7 @@ dv.table(
         return [p.goal, `\`${bar}\` ${p.progress}/${p.target} (${percent}%)`];
     })
 );
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ---
@@ -207,6 +224,8 @@ dv.table(
 ### Daily Challenges
 
 ```dataviewjs
+/** QUERY: Daily Challenge Rotation | DEPENDS ON: current date */
+try {
 const today = dv.date("today");
 const dayOfWeek = today.toFormat("cccc");
 
@@ -223,11 +242,14 @@ const dailyChallenges = {
 
 dv.paragraph(`**Today's Challenge (${dayOfWeek}):** ${dailyChallenges[dayOfWeek]}`);
 dv.paragraph("**Reward:** 50 XP + Daily Challenge Badge");
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ### Weekly Challenges
 
 ```dataviewjs
+/** QUERY: Weekly Challenge Rotation | DEPENDS ON: current week number */
+try {
 const weekNum = dv.date("today").weekNumber;
 const weeklyRotation = weekNum % 4;
 
@@ -241,11 +263,14 @@ const weeklyChallenges = [
 dv.paragraph(`**This Week's Challenge:**`);
 dv.paragraph(weeklyChallenges[weeklyRotation]);
 dv.paragraph("**Reward:** 200 XP + Weekly Challenge Badge");
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ### Monthly Challenge
 
 ```dataviewjs
+/** QUERY: Monthly Challenge | DEPENDS ON: current month */
+try {
 const month = dv.date("today").toFormat("MMMM");
 
 dv.paragraph(`**${month} Challenge:** 🏆 **Perfect Month**`);
@@ -258,6 +283,7 @@ dv.list([
     "Complete 50 tasks"
 ]);
 dv.paragraph("**Reward:** 1,000 XP + Exclusive Monthly Badge + 2x XP multiplier for next week");
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ---
@@ -283,18 +309,23 @@ LIMIT 10
 ### Maturity Distribution
 
 ```dataviewjs
+/** QUERY: Maturity Distribution | DEPENDS ON: maturity field */
+try {
+// Use cache if available for performance
+const _cache = dv.page("00-Meta/_Metrics Cache");
+const pages = dv.pages();
 const maturityCounts = {
-    "📤 Seed": dv.pages().where(p => p.maturity === "📤seed").length,
-    "🌱 Seedling": dv.pages().where(p => p.maturity === "🌱seedling").length,
-    "🪴 Sapling": dv.pages().where(p => p.maturity === "🪴sapling").length,
-    "🌲 Evergreen": dv.pages().where(p => p.maturity === "🌲evergreen").length,
-    "🍓 Fruit": dv.pages().where(p => p.maturity === "🍓fruit").length
+    "📤 Seed": pages.where(p => p.maturity === "📤seed").length,
+    "🌱 Seedling": pages.where(p => p.maturity === "🌱seedling").length,
+    "🪴 Sapling": pages.where(p => p.maturity === "🪴sapling").length,
+    "🌲 Evergreen": pages.where(p => p.maturity === "🌲evergreen").length,
+    "🍓 Fruit": pages.where(p => p.maturity === "🍓fruit").length
 };
 
 dv.table(
     ["Maturity Level", "Count", "Percentage"],
     Object.entries(maturityCounts).map(([level, count]) => {
-        const total = dv.pages().length;
+        const total = pages.length;
         const percent = ((count / total) * 100).toFixed(1);
         const barLength = 20;
         const filled = Math.floor(barLength * count / total);
@@ -302,11 +333,14 @@ dv.table(
         return [level, count, `\`${bar}\` ${percent}%`];
     })
 );
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ### Personal Records
 
 ```dataviewjs
+/** QUERY: Personal Records | DEPENDS ON: file.ctime, tasks, links */
+try {
 dv.table(
     ["Record", "Value", "Date"],
     [
@@ -316,6 +350,7 @@ dv.table(
         ["Most links created in one day", "Calculate", "TBD"]
     ]
 );
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ---
@@ -325,7 +360,8 @@ dv.table(
 ### Current Streaks
 
 ```dataviewjs
-// Calculate streaks from daily notes
+/** QUERY: Daily Note Streak Calculator | DEPENDS ON: 05-Calendar/Daily file names */
+try {
 const dailyNotes = dv.pages('"05-Calendar/Daily"')
     .sort(p => p.file.name, 'desc');
 
@@ -349,6 +385,7 @@ if (currentStreak >= 365) dv.paragraph("🏆 **LEGENDARY!** One year streak!");
 else if (currentStreak >= 90) dv.paragraph("🏆 **EPIC!** Quarter year streak!");
 else if (currentStreak >= 30) dv.paragraph("🏆 **RARE!** Month streak!");
 else if (currentStreak >= 7) dv.paragraph("🏆 **Keep going!** Week streak!");
+} catch (e) { dv.paragraph(`⚠️ Error: ${e.message}`); }
 ```
 
 ---

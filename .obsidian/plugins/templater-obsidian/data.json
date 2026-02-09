@@ -1,19 +1,35 @@
 {
   "command_timeout": 5,
   "templates_folder": "Templates",
-  "templates_pairs": [
-    [
-      "",
-      ""
-    ]
-  ],
-  "trigger_on_file_creation": false,
+  "templates_pairs": [],
+  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "99-System/Scripts",
-  "enable_folder_templates": false,
-  "folder_templates": [],
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "+Inbox",
+      "template": "Templates/Quick Capture - Inbox.md"
+    },
+    {
+      "folder": "02-Dots/100-Atomics",
+      "template": "Templates/Create/new-atomic-auto.md"
+    },
+    {
+      "folder": "03-Efforts",
+      "template": "Templates/Create/new-effort-auto.md"
+    },
+    {
+      "folder": "04-Sources",
+      "template": "Templates/Create/new-source-auto.md"
+    },
+    {
+      "folder": "01-MOCs",
+      "template": "Templates/Create/new-moc-auto.md"
+    }
+  ],
   "enable_file_templates": false,
   "file_templates": [
     {

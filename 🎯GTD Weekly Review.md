@@ -97,7 +97,7 @@ TABLE WITHOUT ID
   next_actions as "Next Action",
   choice(next_actions, "✅", "❌ CHYBÍ!") as "Has NA?"
 FROM "03-Efforts"
-WHERE status = "🔄active" OR status = "active"
+WHERE status = "🔄active"
 SORT priority DESC
 ```
 
@@ -105,7 +105,7 @@ SORT priority DESC
 ```dataview
 LIST
 FROM "03-Efforts"
-WHERE (status = "🔄active" OR status = "active") AND !next_actions
+WHERE status = "🔄active" AND !next_actions
 ```
 
 #### 📦 Review Someday/Maybe
@@ -196,6 +196,23 @@ dv.paragraph(`
 - [ ] Vyčisti tagy
 - [ ] Aktualizuj MOCs pokud potřeba
 - [ ] Backup vault
+
+---
+
+## 🧪 Experiment: Surfacing Pilot (2 weeks)
+
+Purpose: Validate that title rewrites + a 2-link connection ritual increase discoverability and reuse.
+
+- [ ] Baseline: record `inlink_count` distribution & `processing_rate` on `👁️Dashboard` (today)
+- [ ] Rewrite titles for 20 high-potential captures (split over this week)
+- [ ] Process 10 inbox items with the linking ritual (2 links each) — start with Automations via FastKey
+- [ ] Tag reused notes with `used:: YYYY-MM-DD` when they are employed in writing or projects
+- [ ] After 14 days: compare median `inlink_count`, total `used::` events, and `processing_rate`
+
+Notes:
+- Start with `+Inbox` items; prioritize items older than 7 days for title rewrites.
+- Link each processed note to one MOC and one related atomic.
+
 
 ---
 

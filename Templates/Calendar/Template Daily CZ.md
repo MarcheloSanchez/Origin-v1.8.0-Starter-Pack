@@ -65,9 +65,9 @@ sort by priority
 TABLE WITHOUT ID
   file.link as "Projekt",
   next_actions as "Next Action",
-  deadline as "Deadline"
+  due as "Due"
 FROM "03-Efforts"
-WHERE status = "🔄active" OR status = "active"
+WHERE status = "🔄active"
 LIMIT 5
 ```
 

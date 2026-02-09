@@ -35,22 +35,43 @@ related:
 ## 📊 System Status
 
 ```dataviewjs
-const inbox = dv.pages('"+Inbox"').length;
-const activeProjects = dv.pages('"03-Efforts"').where(p =>
-  p.status === "🔄active" || p.status === "active"
-).length;
-const waitingFor = dv.pages().file.tasks.where(t =>
-  !t.completed && t.text.includes("@waiting")
-).length;
-const today = dv.date('today');
-const overdue = dv.pages().file.tasks.where(t =>
-  !t.completed && t.due && dv.date(t.due) < today
-).length;
+/**
+ * QUERY: GTD System Status Overview (Cache-Optimized)
+ * PURPOSE: Quick GTD health check - inbox, projects, waiting, overdue
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let inbox, activeProjects, waitingFor, overdue;
 
-const inboxStatus = inbox <= 10 ? "🟢" : inbox <= 25 ? "🟡" : "🔴";
-const projectStatus = activeProjects <= 7 ? "🟢" : activeProjects <= 12 ? "🟡" : "🔴";
+  if (cache?.cache_date) {
+    inbox = cache.inbox_count ?? 0;
+    activeProjects = cache.effort_count ?? 0;
+    // Waiting and overdue still need live queries (not cached yet)
+    waitingFor = dv.pages().file.tasks.where(t => !t.completed && t.text.includes("@waiting")).length ?? 0;
+    const today = dv.date('today');
+    overdue = dv.pages().file.tasks.where(t => {
+      if (t.completed || !t.due) return false;
+      const dueDate = dv.date(t.due);
+      return dueDate && dueDate < today;
+    }).length ?? 0;
+  } else {
+    inbox = dv.pages('"+Inbox"')?.length ?? 0;
+    activeProjects = dv.pages('"03-Efforts"').where(p => p.status === "🔄active").length ?? 0;
+    waitingFor = dv.pages().file.tasks.where(t => !t.completed && t.text.includes("@waiting")).length ?? 0;
+    const today = dv.date('today');
+    overdue = dv.pages().file.tasks.where(t => {
+      if (t.completed || !t.due) return false;
+      const dueDate = dv.date(t.due);
+      return dueDate && dueDate < today;
+    }).length ?? 0;
+  }
 
-dv.paragraph(`
+  const inboxStatus = inbox <= 10 ? "🟢" : inbox <= 25 ? "🟡" : "🔴";
+  const projectStatus = activeProjects <= 7 ? "🟢" : activeProjects <= 12 ? "🟡" : "🔴";
+
+  dv.paragraph(`
 | Metrika | Počet | Status | Cíl |
 |---------|-------|--------|-----|
 | 📥 **Inbox** | ${inbox} | ${inboxStatus} | ≤10 |
@@ -58,6 +79,9 @@ dv.paragraph(`
 | ⏳ **Waiting For** | ${waitingFor} | ${waitingFor <= 5 ? "🟢" : "🟡"} | track |
 | ⚠️ **Overdue** | ${overdue} | ${overdue === 0 ? "🟢" : "🔴"} | 0 |
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading GTD status: ${e.message}`);
+}
 ```
 
 ---
@@ -211,18 +235,18 @@ TABLE WITHOUT ID
   status as "Status",
   priority as "Priorita",
   choice(completion_percentage, completion_percentage + "%", "0%") as "Progress",
-  choice(deadline, "📅 " + deadline, "—") as "Deadline",
+  choice(due, "📅 " + due, "—") as "Due",
   next_actions as "Next Action"
 FROM "03-Efforts"
-WHERE status = "🔄active" OR status = "active"
-SORT priority DESC, deadline ASC
+WHERE status = "🔄active"
+SORT priority DESC, due ASC
 ```
 
 ### 🔥 On (Hot Projects)
 ```dataview
 LIST
 FROM "03-Efforts/On"
-WHERE status = "🔄active" OR status = "active"
+WHERE status = "🔄active"
 SORT file.mtime DESC
 ```
 
@@ -281,28 +305,46 @@ LIMIT 10
 ## 📊 Weekly Stats
 
 ```dataviewjs
-const today = dv.date('today');
-const weekAgo = today.minus({days: 7});
+/**
+ * QUERY: Weekly Task & Note Statistics (Cache-Optimized)
+ * PURPOSE: Track task completion rate and note creation velocity
+ * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * UPDATED: 2026-02-07
+ */
+try {
+  const cache = dv.page("00-Meta/_Metrics Cache");
+  let tasksCompleted, tasksCreated, notesCreated;
 
-const tasksCompleted = dv.pages().file.tasks
-  .where(t => t.completed && t.completion && dv.date(t.completion) >= weekAgo)
-  .length;
+  if (cache?.cache_date) {
+    notesCreated = cache.growth_weekly ?? 0;
+    tasksCompleted = cache.processing_processed ?? 0;
+    tasksCreated = cache.processing_created ?? 0;
+  } else {
+    const today = dv.date('today');
+    const weekAgo = today.minus({days: 7});
+    tasksCompleted = dv.pages().file.tasks.where(t => {
+      if (!t.completed || !t.completion) return false;
+      const completionDate = dv.date(t.completion);
+      return completionDate && completionDate >= weekAgo;
+    }).length ?? 0;
+    tasksCreated = dv.pages().file.tasks.where(t => {
+      if (!t.created) return false;
+      const createdDate = dv.date(t.created);
+      return createdDate && createdDate >= weekAgo;
+    }).length ?? 0;
+    notesCreated = dv.pages().where(p => p.file.ctime >= weekAgo).length ?? 0;
+  }
 
-const tasksCreated = dv.pages().file.tasks
-  .where(t => t.created && dv.date(t.created) >= weekAgo)
-  .length;
-
-const notesCreated = dv.pages()
-  .where(p => p.file.ctime >= weekAgo)
-  .length;
-
-dv.paragraph(`
+  dv.paragraph(`
 ### Tento týden
 - ✅ **Dokončeno úkolů:** ${tasksCompleted}
 - ➕ **Vytvořeno úkolů:** ${tasksCreated}
 - 📝 **Nových poznámek:** ${notesCreated}
 - 📈 **Completion rate:** ${tasksCreated > 0 ? Math.round(tasksCompleted/tasksCreated*100) : 0}%
 `);
+} catch (e) {
+  dv.paragraph(`⚠️ Error loading weekly stats: ${e.message}`);
+}
 ```
 
 ---

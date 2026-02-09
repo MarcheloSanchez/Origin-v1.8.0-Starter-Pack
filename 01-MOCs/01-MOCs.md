@@ -13,5 +13,4 @@ obsidianUIMode: preview
 [[+ About MOCs ℹ️]]
 [[MOC-Full-Template|Click here for template]]
 
-
 ![[_MOCs_Data.base]]

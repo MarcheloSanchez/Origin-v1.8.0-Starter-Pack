@@ -27,16 +27,13 @@ views:
       - file.name
       - file.folder
       - tags
-      - file.ctime
-      - file.mtime
     sort:
       - property: tags
         direction: ASC
     limit: 10
     columnSize:
-      file.name: 193
+      file.name: 327
       note.tags: 436
-      file.ctime: 153
   - type: table
     name: 📤Seed Maturity
     filters:

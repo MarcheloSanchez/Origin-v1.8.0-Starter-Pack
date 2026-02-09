@@ -41,10 +41,10 @@ ${carryOverTasks}
 
 ## 🔄 Aktivní projekty
 \`\`\`dataview
-TABLE status, priority, deadline
+TABLE status, priority, due
 FROM "03 Efforts"
 WHERE status = "🔄active"
-SORT priority DESC, deadline ASC
+SORT priority DESC, due ASC
 LIMIT 5
 \`\`\`
 

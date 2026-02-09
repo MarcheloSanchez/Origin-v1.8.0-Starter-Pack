@@ -9,7 +9,7 @@ priority: high
 action_required: true
 created: 2025-09-02
 modified: 2025-09-02
-deadline: 2025-09-05
+due: 2025-09-05
 completion_percentage: 69
 next_actions: Fill out the rest of headings content
 related: 

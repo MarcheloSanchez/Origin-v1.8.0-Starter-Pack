@@ -54,7 +54,7 @@ Current list of metadata in `yaml_meta_config.json`
   "title","aliases","type","fileClass","cssclass","tags",
   "status","maturity","priority","processing_priority","completeness",
   "coverage_areas","action_required",
-  "created","modified","start","due","deadline","end",
+  "created","modified","start","due","end",
   "last_review","review_frequency","estimated_effort",
   "completion_percentage","next_actions","capture_method","linked_notes_count",
   "confidence_level","evidence_quality","read_status","rating_type",

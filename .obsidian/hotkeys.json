@@ -194,63 +194,12 @@
       "key": "W"
     }
   ],
-  "quickadd:choice:8caa151d-3223-478d-a0b3-5aa59749877c": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "I"
-    }
-  ],
   "templater-obsidian:insert-templater": [
     {
       "modifiers": [
         "Alt"
       ],
       "key": "R"
-    }
-  ],
-  "quickadd:choice:de6c50e2-0612-4e40-b65b-b663f34566fd": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
-  "quickadd:choice:17a73132-eb09-43d2-b1de-0ce723fee02b": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "E"
-    }
-  ],
-  "quickadd:choice:39e7b05b-8527-4c9f-a6a2-235c71505890": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
-    }
-  ],
-  "quickadd:choice:5f97a380-19c9-47cf-893b-60f8f1c819d5": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "A"
-    }
-  ],
-  "templater-obsidian:create-99 System/Templater/TEMPLATEr STRUCTURE/05-Automation/Templater, Quick Tagging in place.md": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
     }
   ],
   "editor:set-heading": [
@@ -260,15 +209,6 @@
         "Mod"
       ],
       "key": "H"
-    }
-  ],
-  "templater-obsidian:99 System/Templater/05-Automation/TEMPLATER, Quick Tagging in place.md": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "T"
     }
   ],
   "editor:insert-wikilink": [
@@ -287,14 +227,6 @@
         "Mod"
       ],
       "key": "P"
-    }
-  ],
-  "quickadd:choice:951f7cf2-5513-4cd4-92f9-1e7015d0116f": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
     }
   ],
   "quickadd:choice:02ad965d-4964-4a18-8a1a-5a9fa0462e15": [
@@ -331,16 +263,9 @@
     {
       "modifiers": [
         "Mod",
-        "Shift"
+        "Alt"
       ],
-      "key": "ArrowUp"
-    },
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "ArrowDown"
+      "key": "F"
     }
   ],
   "app:toggle-left-sidebar": [
@@ -378,6 +303,30 @@
         "Alt"
       ],
       "key": "T"
+    }
+  ],
+  "quickadd:choice:961cb8b9-dfd8-4f3e-9b97-263a6f80c612": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
+  ],
+  "quickadd:choice:aa11bb22-cc33-dd44-ee55-ff6677889900": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "quickadd:choice:dd44ee55-ff66-7788-9900-112233445566": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
     }
   ]
 }

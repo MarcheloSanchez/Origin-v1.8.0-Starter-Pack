@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "eb4be5b1ea432abd",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "ee6cc7b98b470bc0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "👁️Dashboard.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "👁️Dashboard"
+              "title": "New tab"
             }
           }
         ]
@@ -54,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#🧹tidy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,18 +81,16 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "👁️Dashboard.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for 👁️Dashboard"
+              "title": "File properties"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 333.5
   },
   "right": {
     "id": "c1450ef47511be38",
@@ -175,13 +168,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Scripts/Templater, Quick Tagging in place.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Templater, Quick Tagging in place"
+              "title": "Outline"
             }
           },
           {
@@ -195,7 +187,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -204,6 +196,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "periodic-notes:Open today": false,
+      "cmdr:Quick Idea": false,
+      "cmdr:Daily Note": false,
+      "cmdr:Process Inbox": false,
       "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -216,52 +212,48 @@
       "templater-obsidian:Templater": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "cmdr:Add fileClass to file": false,
-      "cmdr:QuickAdd: 🔁reorder": false,
-      "cmdr:Open daily note": false,
       "homepage:Open homepage": false,
-      "periodic-notes:Open today": false,
       "callout-manager:Insert Callout": false,
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "ee6cc7b98b470bc0",
   "lastOpenFiles": [
-    "BACKLOG.md.tmp.42244.1769879735823",
-    "RELEASE NOTES.md.tmp.42244.1769879709626",
-    "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md.tmp.42244.1769879667671",
-    "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md.tmp.42244.1769879655429",
-    "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md.tmp.42244.1769879640647",
-    "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md.tmp.42244.1769879621031",
     "👁️Dashboard.md",
-    "99-System/copilot-custom-prompts/Create MOC structure.md",
-    "99-System/copilot-custom-prompts/Decision analysis.md",
-    "99-System/copilot-custom-prompts/Deep research.md",
-    "99-System/copilot-custom-prompts/Emojify.md",
-    "99-System/copilot-custom-prompts/Extract atomic notes.md",
-    "99-System/copilot-custom-prompts/Generate glossary.md",
-    "99-System/copilot-custom-prompts/Generate questions.md",
-    "99-System/copilot-custom-prompts/Suggest metadata.md",
-    "99-System/copilot-custom-prompts/Weekly review helper.md",
-    "99-System/copilot-custom-prompts/Summarize meeting.md",
-    "99-System/copilot-custom-prompts/Translate to Chinese.md",
-    "99-System/copilot-custom-prompts/Simplify.md",
-    "99-System/copilot-custom-prompts/Summarize.md",
-    "Templates/Scripts/Templater, update Modified.md",
-    "99-System/copilot-custom-prompts/Synthesize knowledge.md",
-    "02-Dots/100-Atomics/Ideas/Process inbox note.md",
-    "99-System/copilot-custom-prompts/Format as atomic.md",
-    "99-System/copilot-custom-prompts/Find connections.md",
-    "99-System/copilot-custom-prompts/Extract tasks.md",
-    "99-System/copilot-custom-prompts/Explain concept.md",
-    "99-System/copilot-custom-prompts/Challenge this idea.md",
-    "99-System/copilot-custom-prompts/Build mental model.md",
-    "99-System/copilot-custom-prompts/Assess note maturity.md",
-    "02-Dots/100-Atomics/Ideas/Claude Skills for PKM.md",
-    "Templates/Static",
-    "99-System/Scripts/update-metrics-cache.js",
-    "99-System/Scripts/tmpclaude-c0fb-cwd",
-    "99-System/Scripts/tmpclaude-3a4e-cwd",
-    "99-System/Scripts/smart-classifier.js"
+    "+Inbox/Untitled.md",
+    "CHANGELOG.md",
+    "+Inbox/AAA.md",
+    "02-Dots/100-Atomics/Ideas/aaa1.md",
+    "VAULT_REPORT.md",
+    "05-Calendar/📅 Calendar Period Architecture Setup.md",
+    "99-System/copilot-custom-prompts/Note Evolver.md",
+    "+Inbox/Automations via fastkey.md",
+    "+Inbox/🏷️My PKM Tags.md",
+    "+Inbox/Tutorial - Raw Capture (Coffee Chat).md",
+    "05-Calendar/Daily/2026-02-05.md",
+    "+Inbox/2026-W06.md",
+    "+Inbox/2026-02.md",
+    "Templates/Queries/Query - Active Projects.md",
+    "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md",
+    "00-Meta/Documentation/Prompt Meta-Skills Playbook.md",
+    "Templates/Scripts/Templater, YAML auto-maturity-script.md",
+    "Templates/Scripts/Templater, YAML auto-maturity.md",
+    "04-Sources/Content - Surfacing into Action.md",
+    "02-Dots/100-Atomics/Surfacing - Connections Map.md",
+    "02-Dots/100-Atomics/Surfacing - Surfacing Metrics.md",
+    "02-Dots/100-Atomics/Surfacing - Connection Ritual.md",
+    "02-Dots/100-Atomics/Surfacing - Signal Design.md",
+    "04-Sources/Research - Improving Note Surfacing.md",
+    "01-MOCs/MOC - Areas.md",
+    "01-MOCs/🗺️My PKM MOC.md.tmp.3528.1770229238634",
+    "01-MOCs/🗺️My PKM MOC.md.tmp.3528.1770229230234",
+    "00-Meta/Documentation/🎮My PKM Gamification.md.tmp.3528.1770229217786",
+    "00-Meta/Documentation/PKM/🔢My PKM Metadata.md.tmp.3528.1770229173977",
+    "00-Meta/Documentation/PKM/🏷️My PKM Tags.md.tmp.3528.1770229159198",
+    "01-MOCs/MOC - Visual Identity.md.tmp.3528.1770229143515",
+    "01-MOCs/MOC - Visual Identity.md.tmp.3528.1770229130290",
+    "00-Meta/Documentation/PKM/🙂My PKM Icon Reference.md.tmp.3528.1770228876422",
+    "99-System/Scripts/status-picker.js",
+    "Templates/Core"
   ]
 }

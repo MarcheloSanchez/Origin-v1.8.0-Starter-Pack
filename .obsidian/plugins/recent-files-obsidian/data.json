@@ -1,6 +1,162 @@
 {
   "recentFiles": [
     {
+      "basename": "👁️Dashboard",
+      "path": "👁️Dashboard.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "+Inbox/Untitled.md"
+    },
+    {
+      "basename": "CHANGELOG",
+      "path": "CHANGELOG.md"
+    },
+    {
+      "basename": "VAULT_REPORT",
+      "path": "VAULT_REPORT.md"
+    },
+    {
+      "basename": "📅 Calendar Period Architecture Setup",
+      "path": "05-Calendar/📅 Calendar Period Architecture Setup.md"
+    },
+    {
+      "basename": "Note Evolver",
+      "path": "99-System/copilot-custom-prompts/Note Evolver.md"
+    },
+    {
+      "basename": "Automations via fastkey",
+      "path": "+Inbox/Automations via fastkey.md"
+    },
+    {
+      "basename": "🏷️My PKM Tags",
+      "path": "+Inbox/🏷️My PKM Tags.md"
+    },
+    {
+      "basename": "Tutorial - Raw Capture (Coffee Chat)",
+      "path": "+Inbox/Tutorial - Raw Capture (Coffee Chat).md"
+    },
+    {
+      "basename": "2026-02-05",
+      "path": "05-Calendar/Daily/2026-02-05.md"
+    },
+    {
+      "basename": "Query - Active Projects",
+      "path": "Templates/Queries/Query - Active Projects.md"
+    },
+    {
+      "basename": "🔧PKM Template Refactoring Plan",
+      "path": "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md"
+    },
+    {
+      "basename": "Prompt Meta-Skills Playbook",
+      "path": "00-Meta/Documentation/Prompt Meta-Skills Playbook.md"
+    },
+    {
+      "basename": "Templater, YAML auto-maturity-script",
+      "path": "Templates/Scripts/Templater, YAML auto-maturity-script.md"
+    },
+    {
+      "basename": "Templater, YAML auto-maturity",
+      "path": "Templates/Scripts/Templater, YAML auto-maturity.md"
+    },
+    {
+      "basename": "MOC - Areas",
+      "path": "01-MOCs/MOC - Areas.md"
+    },
+    {
+      "basename": "MOC - Visual Identity",
+      "path": "01-MOCs/MOC - Visual Identity.md"
+    },
+    {
+      "basename": "+About Templatesℹ️",
+      "path": "Templates/+About Templatesℹ️.md"
+    },
+    {
+      "basename": "Visual hotkeys",
+      "path": "00-Meta/Documentation/Visual hotkeys.md"
+    },
+    {
+      "basename": "🏡Home",
+      "path": "🏡Home.md"
+    },
+    {
+      "basename": "Multi-Agent Orchestrator",
+      "path": "99-System/copilot-custom-prompts/Multi-Agent Orchestrator.md"
+    },
+    {
+      "basename": "Tutorial - Raw Capture (Mycelium)",
+      "path": "+Inbox/Tutorial - Raw Capture (Mycelium).md"
+    },
+    {
+      "basename": "01-Day-One",
+      "path": "00-Meta/Tutorial/01-Day-One.md"
+    },
+    {
+      "basename": "00-Tutorial-Guide",
+      "path": "00-Meta/Tutorial/00-Tutorial-Guide.md"
+    },
+    {
+      "basename": "🍓Maturity Garden",
+      "path": "01-MOCs/🍓Maturity Garden.md"
+    },
+    {
+      "basename": "🌱Incubator",
+      "path": "01-MOCs/🌱Incubator.md"
+    },
+    {
+      "basename": "➕Add",
+      "path": "01-MOCs/➕Add.md"
+    },
+    {
+      "basename": "🎮Gamification Dashboard",
+      "path": "00-Meta/🎮Gamification Dashboard.md"
+    },
+    {
+      "basename": "2026-02-03",
+      "path": "05-Calendar/Daily/2026-02-03.md"
+    },
+    {
+      "basename": "Quick Insert, Bases status update",
+      "path": "Templates/Quick-Inserts/Quick Insert, Bases status update.md"
+    },
+    {
+      "basename": "Challenge-Daily",
+      "path": "Templates/Gamification/Challenge-Daily.md"
+    },
+    {
+      "basename": "Template - Weekly Report",
+      "path": "Templates/Template - Weekly Report.md"
+    },
+    {
+      "basename": "Archive filled out",
+      "path": "06-Archive/Archive filled out.md"
+    },
+    {
+      "basename": "Area Filled Out",
+      "path": "Templates/_Examples/Area Filled Out.md"
+    },
+    {
+      "basename": "Template Daily",
+      "path": "Templates/Calendar/Template Daily.md"
+    },
+    {
+      "basename": "01-MOCs",
+      "path": "01-MOCs/01-MOCs.md"
+    },
+    {
+      "basename": "area",
+      "path": "Templates/Static/area.md"
+    },
+    {
+      "basename": "atomic",
+      "path": "Templates/Static/atomic.md"
+    },
+    {
+      "basename": "2026-02-04",
+      "path": "02-Dots/100-Atomics/2026-02-04.md"
+    },
+    {
       "basename": "Create MOC structure",
       "path": "99-System/copilot-custom-prompts/Create MOC structure.md"
     },
@@ -39,166 +195,6 @@
     {
       "basename": "Summarize meeting",
       "path": "99-System/copilot-custom-prompts/Summarize meeting.md"
-    },
-    {
-      "basename": "Translate to Chinese",
-      "path": "99-System/copilot-custom-prompts/Translate to Chinese.md"
-    },
-    {
-      "basename": "Simplify",
-      "path": "99-System/copilot-custom-prompts/Simplify.md"
-    },
-    {
-      "basename": "Summarize",
-      "path": "99-System/copilot-custom-prompts/Summarize.md"
-    },
-    {
-      "basename": "Templater, update Modified",
-      "path": "Templates/Scripts/Templater, update Modified.md"
-    },
-    {
-      "basename": "Templater, Weekly Maintenance script",
-      "path": "Templates/Scripts/Templater, Weekly Maintenance script.md"
-    },
-    {
-      "basename": "Templater, YAML aktualizace modifikace",
-      "path": "Templates/Scripts/Templater, YAML aktualizace modifikace.md"
-    },
-    {
-      "basename": "Templater, YAML auto-fill",
-      "path": "Templates/Scripts/Templater, YAML auto-fill.md"
-    },
-    {
-      "basename": "Templater, YAML auto-maturity",
-      "path": "Templates/Scripts/Templater, YAML auto-maturity.md"
-    },
-    {
-      "basename": "prompt",
-      "path": "Templates/Static/prompt.md"
-    },
-    {
-      "basename": "tool",
-      "path": "Templates/Static/tool.md"
-    },
-    {
-      "basename": "place",
-      "path": "Templates/Static/place.md"
-    },
-    {
-      "basename": "person",
-      "path": "Templates/Static/person.md"
-    },
-    {
-      "basename": "moc",
-      "path": "Templates/Static/moc.md"
-    },
-    {
-      "basename": "area",
-      "path": "Templates/Static/area.md"
-    },
-    {
-      "basename": "atomic",
-      "path": "Templates/Static/atomic.md"
-    },
-    {
-      "basename": "atomic",
-      "path": "99-System/FileClass/atomic.md"
-    },
-    {
-      "basename": "new-meeting",
-      "path": "Templates/Create/new-meeting.md"
-    },
-    {
-      "basename": "👁️Dashboard",
-      "path": "👁️Dashboard.md"
-    },
-    {
-      "basename": "🏡Home",
-      "path": "🏡Home.md"
-    },
-    {
-      "basename": "Templater, Quick Tagging in place",
-      "path": "Templates/Scripts/Templater, Quick Tagging in place.md"
-    },
-    {
-      "basename": "_nav-breadcrumb",
-      "path": "Templates/Core/_nav-breadcrumb.md"
-    },
-    {
-      "basename": "🧭 Review HQ",
-      "path": "🧭 Review HQ.md"
-    },
-    {
-      "basename": "new-area",
-      "path": "Templates/Create/new-area.md"
-    },
-    {
-      "basename": "new-meeting-auto",
-      "path": "Templates/Create/new-meeting-auto.md"
-    },
-    {
-      "basename": "_section-related",
-      "path": "Templates/Core/_section-related.md"
-    },
-    {
-      "basename": "_nav-wayfinder",
-      "path": "Templates/Core/_nav-wayfinder.md"
-    },
-    {
-      "basename": "🎮Gamification Dashboard",
-      "path": "00-Meta/🎮Gamification Dashboard.md"
-    },
-    {
-      "basename": "+ About Inbox ℹ️",
-      "path": "+Inbox/+ About Inbox ℹ️.md"
-    },
-    {
-      "basename": "area-body",
-      "path": "Templates/Body/area-body.md"
-    },
-    {
-      "basename": "Unified-Nav",
-      "path": "Templates/Add-Sections/Navigation/Unified-Nav.md"
-    },
-    {
-      "basename": "add-meta",
-      "path": "Templates/Actions/add-meta.md"
-    },
-    {
-      "basename": "add-body",
-      "path": "Templates/Actions/add-body.md"
-    },
-    {
-      "basename": "New Guide Auto",
-      "path": "Templates/_Drafts/New Guide Auto.md"
-    },
-    {
-      "basename": "210-Health",
-      "path": "02-Dots/200-Areas/210-Health/210-Health.md"
-    },
-    {
-      "basename": "Area Filled Out",
-      "path": "Templates/New-Notes/Type/_Examples/Area Filled Out.md"
-    },
-    {
-      "basename": "CHANGELOG",
-      "path": "CHANGELOG.md"
-    },
-    {
-      "basename": "🏠 Weekly Maintenance Tracker",
-      "path": "03-Efforts/Ongoing/🏠 Weekly Maintenance Tracker.md"
-    },
-    {
-      "basename": "🏠 Bathroom Tasks",
-      "path": "03-Efforts/Ongoing/🏠 Bathroom Tasks.md"
-    },
-    {
-      "basename": "🏠 Home Maintenance System",
-      "path": "03-Efforts/Ongoing/🏠 Home Maintenance System.md"
-    },
-    {
-      "basename": "🎮My PKM Gamification",
-      "path": "00-Meta/Documentation/🎮My PKM Gamification.md"
     }
   ],
   "omittedPaths": [],

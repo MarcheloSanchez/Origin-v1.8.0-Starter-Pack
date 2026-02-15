@@ -232,7 +232,7 @@ tags:
 - topic-name
 created: 2025-09-30
 modified: 2025-09-30
-maturity: 🌱seed|🌿seedling|🪴sapling|🌲evergreen|🍓fruit
+maturity: 📤seed|🌱seedling|🪴sapling|🌲evergreen|🍓fruit
 domain: psychology|tech|business|health|finance
 source_inspiration: "[[Source Note]]"
 confidence_level: high|medium|low|uncertain

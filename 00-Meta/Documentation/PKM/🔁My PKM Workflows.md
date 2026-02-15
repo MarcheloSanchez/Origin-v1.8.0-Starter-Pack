@@ -7,12 +7,15 @@ tags:
   - 📋documentation
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-02-15
 related:
   - "[[👁️Dashboard]]"
   - "[[🏛️My PKM Governance]]"
   - "[[📁My PKM Folders]]"
   - "[[🏷️My PKM Tags]]"
+  - "[[🔧Scripts Reference]]"
+  - "[[📦Template System Guide]]"
+  - "[[🚀Vault Migration Guide]]"
 ---
 > [!orbit] Wayfinder | [[🗺️My PKM MOC]] | [[🏛️My PKM Governance]] | [[🔢My PKM Metadata]] | [[🔍My PKM Queries]] |  [[📁My PKM Folders]] |  [[🏷️My PKM Tags]] | 🔁My PKM Workflows | [[✅My PKM Tasks]] | [[ℹ️My PKM Naming Convention]]
 
@@ -49,7 +52,21 @@ G -.-> A
 ```
 
 
-**Status Flow**: 📥 inbox → 🔄 active → ⏳ waiting → ✅ completed → 📦 archived
+**Status Flow**: 📥inbox → 🔄active → ⏳waiting → ✅completed → 📦archived
+
+#### Status Transition Decision Tree
+
+| Current Status | Transition To | When? |
+|---------------|--------------|-------|
+| `📥inbox` | `🔄active` | You've processed the note and are working on it |
+| `🔄active` | `⏳waiting` | Blocked by external dependency (person, event, info) |
+| `🔄active` | `✅completed` | All tasks done, deliverable met |
+| `🔄active` | `⏸️paused` | Deliberately pausing — not blocked, just deprioritized |
+| `⏳waiting` | `🔄active` | Blocker resolved, ready to resume |
+| `✅completed` | `📦archived` | Learnings extracted, ready to move to `06-Archive/` |
+| Any | `❌cancelled` | No longer relevant, won't be completed |
+
+**Scripts**: Use `status-progression.js` (hotkey) for linear advance, or `status-picker.js` (Commander button) for any-to-any transition. See [[🔧Scripts Reference]].
 ### Information Flow Diagram
 
 ```
@@ -210,7 +227,7 @@ P -->|Yes| R[📅 Defer/Someday]
 
 
 **Type-Specific Extensions**:
-- **Atomics**: `maturity: 🌱seed|🌿seedling|🪴sapling|🌲evergreen|🍓fruit`
+- **Atomics**: `maturity: 📤seed|🌱seedling|🪴sapling|🌲evergreen|🍓fruit`
 - **Efforts**: `due: YYYY-MM-DD`, `priority: high|medium|low`, `next_action: ""`
 - **Sources**: `author: ""`, `source_type: book|article|video`, `read_status: unread|reading|completed`
 - **MOCs**: `coverage_areas: ""`, `last_review: YYYY-MM-DD`
@@ -449,37 +466,144 @@ P -->|Yes| R[📅 Defer/Someday]
 
 ---
 
+## 🤖 Extended Workflows
+
+### **Prompt System Workflow**
+
+The vault includes a full prompt management system in `07-Prompts/` for AI prompt templates.
+
+**Prompt Lifecycle**:
+```
+Create → Classify → Promote → Archive
+
+draft → active → winner → archived
+```
+
+| Stage | `prompt_status` | Location | Description |
+|-------|----------------|----------|-------------|
+| **Draft** | `draft` | `07-Prompts/Drafts/` | New prompt being tested |
+| **Active** | `active` | `07-Prompts/Active/` | In regular use, proving value |
+| **Winner** | `winner` | `07-Prompts/Active/` | Best-in-class for its category |
+| **Archived** | `archived` | `07-Prompts/Archive/` | Superseded or no longer needed |
+
+> [!note] `prompt_status` is separate from the vault-wide `status` field. A prompt can have `status: 🔄active` (vault status) and `prompt_status: draft` (prompt lifecycle).
+
+**Creating Prompts**:
+- **Full prompt**: Use `Templates/Create/new-prompt.md` — complete template with structured sections
+- **Quick prompt**: Use `Templates/Create/new-quick-prompt.md` — minimal YAML + instruction block
+
+**Normalizing Legacy Prompts**: Run `normalize_prompts.js` via QuickAdd to batch-update YAML in `Prompts_org/` (legacy) or `copilot-custom-prompts/` folders. See [[🔧Scripts Reference#`normalize_prompts.js`]].
+
+**CIS References**: [[CIS_PROMPT_STATUS]], [[CIS_PROMPT_TYPE]], [[CIS_PROMPT_CATEGORY]], [[CIS_INTENT]]
+
+---
+
+### **Newsletter Generation Workflow**
+
+Assemble a curated newsletter from flagged vault notes.
+
+**Workflow**:
+1. **Flag notes**: Set `newsletter: true` in frontmatter of notes worth sharing
+2. **Generate**: Run QuickAdd macro "📰 Generate Newsletter" (`generate-newsletter.js`)
+3. **Review**: Edit the draft at `05-Calendar/Newsletter/Newsletter YYYY-MM-DD.md`
+4. **Publish**: Copy/export the final newsletter
+
+**Newsletter Sections** (auto-grouped by maturity):
+- **Highlights**: 🌲evergreen / 🍓fruit notes
+- **New Ideas**: 📤seed / 🌱seedling notes
+- **Deep Dives**: 🪴sapling notes
+- **Sources**: Notes with `type: source`
+
+After generation, the `newsletter: true` flag is automatically cleared from included notes to prevent duplication in the next issue.
+
+---
+
+### **Changelog Update Workflow**
+
+Auto-draft a CHANGELOG entry from recent vault changes.
+
+**Workflow**:
+1. Run QuickAdd macro "📋 Update Changelog" (`update-changelog.js`)
+2. Script parses the last entry date from `CHANGELOG.md`
+3. Queries all files modified since that date
+4. Groups changes by category (Scripts, Templates, Dashboards, Notes, Config)
+5. Prepends a new dated section to `CHANGELOG.md`
+6. Review and edit the draft entry
+
+**Recommended frequency**: Monthly or after significant vault changes.
+
+---
+
+### **Metrics Cache Update Workflow**
+
+Expensive Dataview queries are cached for fast dashboard rendering.
+
+**Workflow**:
+1. Run QuickAdd macro "📊 Update Metrics Cache" (`update-metrics-cache.js`)
+2. Script calculates all vault metrics (note counts, XP, growth trends, orphans, etc.)
+3. Writes results as Dataview inline fields to `00-Meta/_Metrics Cache.md`
+4. Dashboards read cached values: `dv.page("00-Meta/_Metrics Cache").field_name`
+5. If cache is stale, dashboards fall back to live Dataview queries
+
+**Performance**: 60-80% dashboard load improvement with fresh cache.
+
+**Recommended frequency**: Daily (morning) or before reviewing dashboards.
+
+**Cache Fields**: Note counts by type, connection density, orphan count, hub pages, weekly/monthly growth, XP/gamification stats.
+
+---
+
 ## 🛠️ Tools & Automation
 
 ### **Plugin Ecosystem**
 
 | Plugin | Workflow Stage | Purpose |
 |--------|---------------|---------|
-| **QuickAdd** | Capture | Instant templated notes |
-| **Templater** | Capture/Process | Auto-fill metadata, prompts |
-| **Tasks** | Organize/Review | GTD-style task management |
+| **QuickAdd** | Capture/Process | Instant templated notes, macro triggers for scripts |
+| **Templater** | Capture/Process | Template composition, auto-fill metadata |
 | **Dataview** | Review | Dynamic dashboards & queries |
 | **Kanban** | Organize/Execute | Visual project tracking |
 | **Periodic Notes** | Capture/Review | Daily/Weekly/Monthly notes |
-| **MetaEdit** | Process/Archive | Bulk metadata updates |
+| **Commander** | All stages | Custom buttons for status/maturity scripts |
 | **Advanced URI** | All stages | External automation hooks |
+| **Homepage** | Navigation | Auto-open `🏡Home.md` on vault launch |
+
+### **Script-Powered Automation**
+
+The vault includes 22 scripts in `99-System/Scripts/`. See [[🔧Scripts Reference]] for complete documentation.
+
+**Inbox Processing Scripts**:
+- `batch-process-inbox.js` — Process multiple inbox notes at once (weekly GTD review)
+- `smart-classifier.js` — Analyze content and suggest type/folder/tags
+- `quick-process-atomic.js` / `quick-process-effort.js` / `quick-process-source.js` — Type-specific instant processing (10-20 seconds per note)
+
+**Status & Maturity Scripts**:
+- `status-progression.js` — One-keystroke linear status advance
+- `status-picker.js` — Visual status picker (any-to-any)
+- `maturity-evolve.js` — Manual maturity stage picker
+
+**Metadata & Maintenance Scripts**:
+- `yaml_orchestrator.js` — Batch YAML normalize/lint/reorder
+- `auto-metadata.js` — Auto-populate missing frontmatter fields
+- `archive_note.js` / `archive-old-dailies.js` — Archival automation
 
 ### **Automation Touchpoints**
 
 **Daily Automation**:
-- Auto-create Daily Note at 6 AM
+- Auto-create Daily Note at 6 AM (Periodic Notes)
 - Process inbox reminder at 9 AM
-- End-of-day review prompt at 8 PM
+- `update-metrics-cache.js` — Refresh dashboard cache (QuickAdd macro)
 
 **Weekly Automation**:
-- Sunday evening: Weekly Review reminder
-- Monday morning: Weekly planning dashboard
-- Friday: Archive completed items
+- `generate-weekly-report.js` — Create structured weekly report (Sunday evening)
+- `batch-process-inbox.js` — Batch triage if inbox > 10 items
+- `maturity-promoter.js` — Review maturity suggestions during weekly review
 
 **Monthly Automation**:
-- First of month: Generate monthly metrics
-- Last day: Backup vault to Git
-- Mid-month: Plugin update check
+- `update-changelog.js` — Auto-draft CHANGELOG entry from recent changes
+- `generate-newsletter.js` — Assemble newsletter from `newsletter: true` notes
+- `yaml_orchestrator.js` — Run normalize with backup on all active folders
+- Backup vault to Git
 
 ---
 
@@ -520,6 +644,18 @@ P -->|Yes| R[📅 Defer/Someday]
 | **🪴 Sapling** | Rich content, multiple connections | Refine and apply |
 | **🌲 Evergreen** | Stable, reusable knowledge | Maintain and teach |
 | **🍓 Fruit** | Actionable insight, widely applicable | Leverage and share |
+
+### **Promotion Criteria** (from `maturity-promoter.js`)
+
+| Transition | Outbound Links | Backlinks | Stability (days) |
+|-----------|---------------|-----------|-------------------|
+| 📤seed → 🌱seedling | 2+ | 1+ | — |
+| 🌱seedling → 🪴sapling | 5+ | 2+ | — |
+| 🪴sapling → 🌲evergreen | 10+ | 5+ | 30+ |
+| 🌲evergreen → 🍓fruit | 15+ | 10+ | 60+ |
+
+**Scripts**: Use `maturity-evolve.js` (QuickAdd macro) for manual maturity changes, or review suggestions from `maturity-promoter.js` during weekly review. See [[🔧Scripts Reference#`maturity-promoter.js`]] for details.
+
 [[Maturity Evolve|Read more]]
 
 ---
@@ -553,12 +689,14 @@ P -->|Yes| R[📅 Defer/Someday]
 - [[📁My PKM Folders]] - Folder structure guide
 - [[🏷️My PKM Tags]] - Tagging taxonomy
 - [[🔢My PKM Metadata]] - YAML standards
+- [[📦Template System Guide]] - Template architecture and composition flow
+- [[🔧Scripts Reference]] - All 22 vault scripts documented
+- [[🚀Vault Migration Guide]] - Fork setup and domain adaptation
 - [[Templates]] - Template library
 - [[🔍My PKM Queries]] - Dataview query collection
-- [[CHANGELOG]] - Document each added/ changed/ deleted attribute
+- [[CHANGELOG]] - Document each added/changed/deleted attribute
 - [[BACKLOG]] - Bucket for future improvements
-- 
-- Vault sledování metadat [[🛠️My PKM Maintenance]]
+- [[🛠️My PKM Maintenance]] - Vault metadata tracking
 ---
 
 > [!quote]+ **💭 Workflow Philosophy**
@@ -566,7 +704,7 @@ P -->|Yes| R[📅 Defer/Someday]
 
 ---
 
-*Last Updated: 2025-09-30 | Review: Quarterly | Status: 🟢 Active & Optimized*
+*Last Updated: 2026-02-15 | Review: Quarterly | Status: 🔄active*
 
 ## **Key Features:**
 ## **🎨 Visual Excellence**
@@ -747,76 +885,6 @@ P -->|Yes| R[📅 Defer/Someday]
 - **Annual Planning**: Complete workflow and structure evaluation
 
 ---
-## Core Workflow: Capture → Process → Organize → Review → Archive
-
-```
- #📥inbox → #🔄active → #✅completed  → #📦archived 
-```
-
-```
-📥 Capture (QuickAdd / Mobile / Voice)
-   ↓
-🔍 Process (Daily Inbox Review, <2min rule, triage to folder)
-   ↓
-🏗 Organize (Linking, tagging, MOC updates, metadata fill)
-   ↓
-📊 Review (Daily priorities, Weekly project review, Monthly cleanup)
-   ↓
-📦 Archive (Move to 06 Archive, auto-add archived_date)
-```
-
-#🧹tidy duplication down 
-### **1. Capture (Zachycení)**
-- Vše jde nejprv do **+Inbox**
-- Rychlé zachycení bez přemýšlení o organizaci
-- Používej Quick Capture šablony
-- Dataview pro přehled [[Performance Metrics#Capture - Souhrn|Týdenní]] nebo [[Performance Metrics#Denní|Denní]] 
-### **2. Process (Zpracování)**  
-- Denní Inbox processing (ráno 10 min)
-- Rozhodovací strom: Co to je? Actionable? < 2 min? [[GtD - Getting Things Done#**Decision tree simplified **|Decision tree in GtD]]
-- Třídění do správných složek s metadaty
-### **3. Organize (Organizace)**
-- Propojování nových poznámek s existujícími
-- Aktualizace MOCs a tagů
-- Vytváření souvislostí mezi Dots a Efforts
-- Link density: průměrný počet wikilinků na poznámku  
-[[Performance Metrics#List of 10 notes that have the most links.]]
-### **4. Review (Revize)**
-- **Denní:** Rychlý přehled priorit a úkolů
-- **Týdenní:** Review projektů, archive dokončených
-- **Měsíční:** Systémová údržba, cleanup
-### **Review Cycles**
-
-- **Daily**
-    - Process Inbox (10 min)
-    - Check Today’s tasks & priorities
-    - Log reflections in Daily Note
-- **Weekly**
-    - Review active Efforts & MOCs
-    - Update statuses & archive completed items
-    - Clean #🧹tidy and #❔question notes
-- **Monthly**
-    - Structural cleanup
-    - Adjust folder/tag/metadata rules
-    - Backup vault & review plugin list
-- **Quarterly**
-    - Audit system relevance
-    - Optimize templates & queries
----
-## Recall & Reflect Process
-
-### Pravidelné procesy pro udržení kvality:
-- **Weekly Dots Review:** Projdi náhodné Dots, hledej propojení
-- **Monthly Efforts Check:** Vyhodnoť pokrok, archivuj neaktivní
-- **Quarterly System Review:** Optimalizace workflow a struktury
----
-## Obecné workflow pro vault
-
-**1. 80/20 Rule:** 80% univerzální obsah, 20% customization zones
-**2. Progressive Enhancement:** Začni jednoduše, postupně rozšiřuj  
-**3. Clear Documentation:** Každá customization je zdokumentovaná  
-**4. Feedback Loops:** Pravidelně vyhodnocuj a zlepšuj systém  
-**5. Version Control:** Sleduj změny a možnosti rollback
 
 ## 💡 Practical Examples {#examples}
 
@@ -827,11 +895,11 @@ P -->|Yes| R[📅 Defer/Someday]
 ---
 title: "Remote Work Impact on Team Creativity"
 type: effort
-status: active
-tags: [effort, research, psychology]
+status: 🔄active
+tags: [🚀effort, research, psychology]
 priority: high
 completion: 65%
-due: 2024-05-01
+due: 2025-05-01
 ---
 
 # Remote Work Impact on Team Creativity
@@ -881,8 +949,8 @@ Move from inbox to proper location and format.
 ---
 title: "Pseudo-work vs. Real Work Distinction"
 type: atomic
-maturity: seedling
-tags: [atomic, productivity]
+maturity: 🌱seedling
+tags: [💡atomic, productivity]
 related: [Deep-Work-Principles, Research-Efficiency]
 ---
 
@@ -903,14 +971,6 @@ This explains my research project struggles - spending hours on citation formatt
 **Step 4: Connect** (2 minutes)
 Link to related productivity notes and current research project.
 
-## Vault-Specific Guidelines
-
-*Přizpůsobení pro tento vault:*
-
-- [ ] Definovat specifické rutiny
-- [ ] Upravit review cykly  
-- [ ] Přidat specializované workflow
-
 ---
-*Last Updated: 2025-09-29 | Status: 🔄active | Next Review: Monthly*
 
+*Last Updated: 2026-02-15 | Status: 🔄active | Next Review: Monthly*

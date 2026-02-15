@@ -1,0 +1,4 @@
+draft
+active
+winner
+archived

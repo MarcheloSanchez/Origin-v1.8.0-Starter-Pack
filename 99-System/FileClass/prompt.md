@@ -15,6 +15,8 @@ fieldsOrder:
   - IUdSCn
   - RTiSC5
   - TdbweT
+  - pSt4Xq
+  - bLm7In
 version: "2.12"
 fields:
   - name: audience
@@ -49,4 +51,20 @@ fields:
       valuesListNotePath: 99 System/CIS/CIS_DIFFICULTY.md
     path: ""
     id: 2ma9Uf
+  - name: prompt_status
+    type: Select
+    options:
+      sourceType: ValuesListNotePath
+      valuesList: {}
+      valuesListNotePath: 99 System/CIS/CIS_PROMPT_STATUS.md
+    path: ""
+    id: pSt4Xq
+  - name: intent
+    type: Select
+    options:
+      sourceType: ValuesListNotePath
+      valuesList: {}
+      valuesListNotePath: 99 System/CIS/CIS_INTENT.md
+    path: ""
+    id: bLm7In
 ---

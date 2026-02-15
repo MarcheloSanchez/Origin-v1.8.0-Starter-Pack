@@ -1,6 +1,6 @@
 ---
 title: GTD Command Center
-type: moc
+type: dashboard
 status: 🔄active
 tags:
   - 📊dashboard

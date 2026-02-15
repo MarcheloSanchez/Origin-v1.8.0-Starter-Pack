@@ -72,6 +72,23 @@ async function calculateMetrics() {
   const dailies = allPages.filter(f => f.path.includes('05-Calendar/Daily')).length;
   const archived = allPages.filter(f => f.path.includes('06-Archive')).length;
 
+  // Prompt counts
+  const promptFiles = app.vault.getMarkdownFiles().filter(f => f.path.startsWith('07-Prompts'));
+  const promptTotal = promptFiles.filter(f => {
+    const cache = app.metadataCache.getFileCache(f);
+    return cache?.frontmatter?.type === 'prompt';
+  }).length;
+  const promptActive = promptFiles.filter(f => {
+    const cache = app.metadataCache.getFileCache(f);
+    const fm = cache?.frontmatter;
+    return fm?.type === 'prompt' && (fm?.prompt_status === 'active' || fm?.prompt_status === 'winner');
+  }).length;
+  const promptDraft = promptFiles.filter(f => {
+    const cache = app.metadataCache.getFileCache(f);
+    const fm = cache?.frontmatter;
+    return fm?.type === 'prompt' && fm?.prompt_status === 'draft';
+  }).length;
+
   // Connection analysis
   const connectionMetrics = await analyzeConnections(allPages);
 
@@ -96,7 +113,10 @@ async function calculateMetrics() {
       mocs,
       dailies,
       archived,
-      totalContent: atomics + efforts + sources + mocs
+      totalContent: atomics + efforts + sources + mocs,
+      promptTotal,
+      promptActive,
+      promptDraft
     },
     connections: connectionMetrics,
     xp: xpMetrics,
@@ -330,6 +350,14 @@ moc_count:: ${metrics.counts.mocs}
 daily_count:: ${metrics.counts.dailies}
 archived_count:: ${metrics.counts.archived}
 content_total:: ${metrics.counts.totalContent}
+
+---
+
+## Prompt Metrics
+
+prompt_total:: ${metrics.counts.promptTotal}
+prompt_active:: ${metrics.counts.promptActive}
+prompt_draft:: ${metrics.counts.promptDraft}
 
 ---
 

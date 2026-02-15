@@ -1,6 +1,6 @@
 ---
 title: "Kitchen Tasks & Tracking"
-type: task-category
+type: effort
 tags:
   - 🏠home
   - 🍳kitchen

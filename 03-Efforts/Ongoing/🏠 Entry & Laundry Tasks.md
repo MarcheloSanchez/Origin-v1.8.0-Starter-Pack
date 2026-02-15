@@ -1,6 +1,6 @@
 ---
 title: "Entry & Laundry Tasks & Tracking"
-type: task-category
+type: effort
 tags:
   - 🏠home
   - 🚪entry

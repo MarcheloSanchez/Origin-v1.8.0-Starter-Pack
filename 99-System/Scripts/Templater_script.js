@@ -34,6 +34,7 @@ const TYPE_PREFIX = {
 
 // Map lowercase type → fileClass for new templates
 const TYPE_LOWERCASE = {
+  // Full types (complete template stack)
   "atomic": "atomic",
   "effort": "effort",
   "source": "source",
@@ -43,7 +44,19 @@ const TYPE_LOWERCASE = {
   "person": "person",
   "place": "place",
   "tool": "tool",
-  "area": "area"
+  "area": "area",
+  // Lightweight types (CIS + script only, no FileClass/templates)
+  "system": "system",
+  "dashboard": "dashboard",
+  "about": "about",
+  "guide": "guide",
+  "tutorial": "tutorial",
+  "daily": "daily",
+  "weekly": "weekly",
+  "monthly": "monthly",
+  "quarterly": "quarterly",
+  "yearly": "yearly",
+  "challenge": "challenge"
 };
 
 // Preferred (new) names, then legacy fallbacks
@@ -182,19 +195,18 @@ async function add_chapters(tp, type) {
   return "ok";
 }
 
-// ── 3) Create (empty/auto) — write meta + body
+// ── 3) Create (empty/auto) — return meta + body content for Templater tR
 async function combine(tp, type, mode = "empty") {
   let meta = await includeByKind(tp, type, "meta");
   const body = await includeByKind(tp, type, "body");
   if (!meta?.trim() || !body?.trim()) {
-    new Notice("Create: meta/body template missing"); return "missing";
+    new Notice("Create: meta/body template missing"); return "";
   }
   if (mode === "auto") {
     meta = meta.replace('status: "📥inbox"', 'status: "🔄active"');
   }
-  await writeActive(meta + "\n\n" + body);
   new Notice(`Create: ${type} (${mode})`);
-  return "ok";
+  return meta + "\n\n" + body;
 }
 
 // ── 4) Reset Body — keep YAML, replace body with template

@@ -1,16 +1,17 @@
 {
   "order": { 
-    "default": ["up","in","title","aliases","type","fileClass","cssclass","tags","status","maturity","priority","processing_priority","completeness","coverage_areas","action_required","created","modified","start","due","end","last_review","review_frequency","estimated_effort","completion_percentage","next_actions","capture_method","linked_notes_count","confidence_level","evidence_quality","read_status","rating_type","source_author","source_date","source_type","participants","location","meeting_type","action_items","audience","difficulty","prompt_category","prompt_type","related","see_also","related_concepts","related_ideas","role","org","company","email","phone","website","twitter","github","linkedin"] 
+    "default": ["up","in","title","aliases","type","fileClass","cssclass","tags","status","maturity","priority","processing_priority","completeness","coverage_areas","action_required","created","modified","start","due","end","last_review","review_frequency","estimated_effort","completion_percentage","next_actions","capture_method","linked_notes_count","confidence_level","evidence_quality","read_status","rating_type","source_author","source_date","source_type","participants","location","meeting_type","action_items","audience","difficulty","prompt_category","prompt_type","prompt_status","intent","related","newsletter","see_also","related_concepts","related_ideas","role","org","company","email","phone","website","twitter","github","linkedin"] 
   },
   "enums": { 
-    "status": ["📥inbox","🔄active","⏳waiting","✅completed","📦archived"] 
+    "status": ["📥inbox","🔄active","⏳waiting","✅completed","📦archived"],
+    "prompt_status": ["draft","active","winner","archived"]
   },
   "toArray": ["tags","aliases"],
   "dateKeys": ["created","modified","start","due","end","last_review"],
   "rules": {
     "tags": { "stripHashes": true, "lowerCase": false, "sort": true, "dedupe": true, "trim": true },
     "aliases": { "dedupe": true, "sort": false, "trim": true },
-    "rename": { "seeAlso": "see_also", "relatedNotes": "related" },
+    "rename": { "seeAlso": "see_also", "relatedNotes": "related", "Category": "prompt_category", "Type": "prompt_type", "Audience": "audience", "Difficulty": "difficulty", "Source": "source" },
     "ensureRequired": ["title","type","status","created"],
     "removeEmpty": true
   }

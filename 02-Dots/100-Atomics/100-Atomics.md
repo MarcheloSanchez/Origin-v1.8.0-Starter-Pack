@@ -11,8 +11,9 @@ obsidianUIMode: preview
 ⬆️:: [[02-Dots]]
 
 [[+About Atomicsℹ️]]
-[[A-Full-Template|Click here for template]]
 
+[[Templates/Static/atomic|Click here for template]]
+[[atomic-meta.yaml|Click here for metadata]]
 ## Sub-Categories
 [[Concepts]]
 [[Ideas]]

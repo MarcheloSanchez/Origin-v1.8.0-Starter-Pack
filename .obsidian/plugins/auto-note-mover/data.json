@@ -5,7 +5,7 @@
   "folder_tag_pattern": [
     {
       "folder": "+Inbox",
-      "tag": "#📥inbox",
+      "tag": "",
       "pattern": ""
     },
     {

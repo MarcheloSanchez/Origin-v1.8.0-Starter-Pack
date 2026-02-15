@@ -1,16 +1,136 @@
 {
   "recentFiles": [
     {
+      "basename": "Emojify",
+      "path": "07-Prompts/Drafts/copilot-custom-prompts/Emojify.md"
+    },
+    {
+      "basename": "Untitled 1",
+      "path": "+Inbox/Untitled 1.md"
+    },
+    {
       "basename": "👁️Dashboard",
       "path": "👁️Dashboard.md"
     },
     {
-      "basename": "Untitled",
-      "path": "+Inbox/Untitled.md"
+      "basename": "Make longer",
+      "path": "07-Prompts/Drafts/copilot-custom-prompts/Make longer.md"
+    },
+    {
+      "basename": "Explain like I am 5",
+      "path": "07-Prompts/Drafts/copilot-custom-prompts/Explain like I am 5.md"
+    },
+    {
+      "basename": "🧭 Review HQ",
+      "path": "🧭 Review HQ.md"
+    },
+    {
+      "basename": "00-Tutorial-Guide",
+      "path": "00-Meta/Tutorial/00-Tutorial-Guide.md"
+    },
+    {
+      "basename": "01-Day-One",
+      "path": "00-Meta/Tutorial/01-Day-One.md"
+    },
+    {
+      "basename": "Vault-Dash-Missing",
+      "path": "99-System/Vault-Dash-Missing.base"
+    },
+    {
+      "basename": "Active-Types-base",
+      "path": "99-System/Active-Types-base.base"
+    },
+    {
+      "basename": "Session Memory",
+      "path": "99-System/Session Memory.md"
+    },
+    {
+      "basename": "⚡ Automation Menu",
+      "path": "⚡ Automation Menu.md"
+    },
+    {
+      "basename": "Tutorial - Effort - Master Origin Vault",
+      "path": "03-Efforts/On/Tutorial - Effort - Master Origin Vault.md"
+    },
+    {
+      "basename": "Places & Travel",
+      "path": "02-Dots/400-Places/Places & Travel.md"
+    },
+    {
+      "basename": "+Inbox",
+      "path": "+Inbox/+Inbox.md"
+    },
+    {
+      "basename": "Tutorial - Tool - Excalidraw",
+      "path": "02-Dots/500-Tools/Tutorial - Tool - Excalidraw.md"
+    },
+    {
+      "basename": "400-Places",
+      "path": "02-Dots/400-Places/400-Places.md"
+    },
+    {
+      "basename": "Tutorial - Person - Dr. Maya Chen",
+      "path": "02-Dots/300-People/Tutorial - Person - Dr. Maya Chen.md"
+    },
+    {
+      "basename": "Process inbox note",
+      "path": "99-System/copilot-custom-prompts/Process inbox note.md"
+    },
+    {
+      "basename": "Maturity Evolve",
+      "path": "02-Dots/100-Atomics/Concepts/Maturity Evolve.md"
+    },
+    {
+      "basename": "BOAT notes",
+      "path": "02-Dots/100-Atomics/Concepts/BOAT notes.md"
+    },
+    {
+      "basename": "Automations via fastkey",
+      "path": "+Inbox/Automations via fastkey.md"
+    },
+    {
+      "basename": "02-Dots",
+      "path": "02-Dots/02-Dots.md"
+    },
+    {
+      "basename": "100-Atomics",
+      "path": "02-Dots/100-Atomics/100-Atomics.md"
+    },
+    {
+      "basename": "CIS_MATURITY",
+      "path": "99-System/CIS/CIS_MATURITY.md"
+    },
+    {
+      "basename": "area-body",
+      "path": "Templates/Body/area-body.md"
+    },
+    {
+      "basename": "🍓Maturity Garden",
+      "path": "01-MOCs/🍓Maturity Garden.md"
+    },
+    {
+      "basename": "Area Filled Out",
+      "path": "Templates/_Examples/Area Filled Out.md"
+    },
+    {
+      "basename": "new-area",
+      "path": "Templates/Create/new-area.md"
+    },
+    {
+      "basename": "new-area-auto",
+      "path": "Templates/Create/new-area-auto.md"
     },
     {
       "basename": "CHANGELOG",
       "path": "CHANGELOG.md"
+    },
+    {
+      "basename": "🏡Home",
+      "path": "🏡Home.md"
+    },
+    {
+      "basename": "🎮Gamification Dashboard",
+      "path": "00-Meta/🎮Gamification Dashboard.md"
     },
     {
       "basename": "VAULT_REPORT",
@@ -23,10 +143,6 @@
     {
       "basename": "Note Evolver",
       "path": "99-System/copilot-custom-prompts/Note Evolver.md"
-    },
-    {
-      "basename": "Automations via fastkey",
-      "path": "+Inbox/Automations via fastkey.md"
     },
     {
       "basename": "🏷️My PKM Tags",
@@ -77,124 +193,8 @@
       "path": "00-Meta/Documentation/Visual hotkeys.md"
     },
     {
-      "basename": "🏡Home",
-      "path": "🏡Home.md"
-    },
-    {
       "basename": "Multi-Agent Orchestrator",
       "path": "99-System/copilot-custom-prompts/Multi-Agent Orchestrator.md"
-    },
-    {
-      "basename": "Tutorial - Raw Capture (Mycelium)",
-      "path": "+Inbox/Tutorial - Raw Capture (Mycelium).md"
-    },
-    {
-      "basename": "01-Day-One",
-      "path": "00-Meta/Tutorial/01-Day-One.md"
-    },
-    {
-      "basename": "00-Tutorial-Guide",
-      "path": "00-Meta/Tutorial/00-Tutorial-Guide.md"
-    },
-    {
-      "basename": "🍓Maturity Garden",
-      "path": "01-MOCs/🍓Maturity Garden.md"
-    },
-    {
-      "basename": "🌱Incubator",
-      "path": "01-MOCs/🌱Incubator.md"
-    },
-    {
-      "basename": "➕Add",
-      "path": "01-MOCs/➕Add.md"
-    },
-    {
-      "basename": "🎮Gamification Dashboard",
-      "path": "00-Meta/🎮Gamification Dashboard.md"
-    },
-    {
-      "basename": "2026-02-03",
-      "path": "05-Calendar/Daily/2026-02-03.md"
-    },
-    {
-      "basename": "Quick Insert, Bases status update",
-      "path": "Templates/Quick-Inserts/Quick Insert, Bases status update.md"
-    },
-    {
-      "basename": "Challenge-Daily",
-      "path": "Templates/Gamification/Challenge-Daily.md"
-    },
-    {
-      "basename": "Template - Weekly Report",
-      "path": "Templates/Template - Weekly Report.md"
-    },
-    {
-      "basename": "Archive filled out",
-      "path": "06-Archive/Archive filled out.md"
-    },
-    {
-      "basename": "Area Filled Out",
-      "path": "Templates/_Examples/Area Filled Out.md"
-    },
-    {
-      "basename": "Template Daily",
-      "path": "Templates/Calendar/Template Daily.md"
-    },
-    {
-      "basename": "01-MOCs",
-      "path": "01-MOCs/01-MOCs.md"
-    },
-    {
-      "basename": "area",
-      "path": "Templates/Static/area.md"
-    },
-    {
-      "basename": "atomic",
-      "path": "Templates/Static/atomic.md"
-    },
-    {
-      "basename": "2026-02-04",
-      "path": "02-Dots/100-Atomics/2026-02-04.md"
-    },
-    {
-      "basename": "Create MOC structure",
-      "path": "99-System/copilot-custom-prompts/Create MOC structure.md"
-    },
-    {
-      "basename": "Decision analysis",
-      "path": "99-System/copilot-custom-prompts/Decision analysis.md"
-    },
-    {
-      "basename": "Deep research",
-      "path": "99-System/copilot-custom-prompts/Deep research.md"
-    },
-    {
-      "basename": "Emojify",
-      "path": "99-System/copilot-custom-prompts/Emojify.md"
-    },
-    {
-      "basename": "Extract atomic notes",
-      "path": "99-System/copilot-custom-prompts/Extract atomic notes.md"
-    },
-    {
-      "basename": "Generate glossary",
-      "path": "99-System/copilot-custom-prompts/Generate glossary.md"
-    },
-    {
-      "basename": "Generate questions",
-      "path": "99-System/copilot-custom-prompts/Generate questions.md"
-    },
-    {
-      "basename": "Suggest metadata",
-      "path": "99-System/copilot-custom-prompts/Suggest metadata.md"
-    },
-    {
-      "basename": "Weekly review helper",
-      "path": "99-System/copilot-custom-prompts/Weekly review helper.md"
-    },
-    {
-      "basename": "Summarize meeting",
-      "path": "99-System/copilot-custom-prompts/Summarize meeting.md"
     }
   ],
   "omittedPaths": [],

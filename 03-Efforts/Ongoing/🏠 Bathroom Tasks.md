@@ -1,6 +1,6 @@
 ---
 title: "Bathroom Tasks & Tracking"
-type: task-category
+type: effort
 tags:
   - 🏠home
   - 🚿bathroom

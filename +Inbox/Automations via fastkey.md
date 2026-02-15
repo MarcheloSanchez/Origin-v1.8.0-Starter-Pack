@@ -3,11 +3,15 @@ title: When automating quick actions — Automations via FastKey
 type: atomic
 status: 🔄active
 created: 2026-02-04
-tags: Inbox,automation,tools
+tags:
+  - 📥inbox
+  - automation
+  - tools
 processing_priority: low
-related: Surfacing - Signal Design
-MOC: 🗺️My PKM MOC
-maturity: sapling
+related:
+  - "[[Surfacing - Signal Design]]"
+MOC: "[[🗺️My PKM MOC]]"
+maturity: 🪴sapling
 processed: true
 modified: 2026-02-08
 ---

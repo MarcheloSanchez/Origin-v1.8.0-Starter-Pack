@@ -1,6 +1,6 @@
 ---
 title: "Living Areas Tasks & Tracking"
-type: task-category
+type: effort
 tags:
   - 🏠home
   - 🛋️living

@@ -1,3 +1,3 @@
 <%*
-await tp.user.Templater_script.combine(tp, "person", "auto");
+tR += await tp.user.Templater_script.combine(tp, "person", "auto");
 %>

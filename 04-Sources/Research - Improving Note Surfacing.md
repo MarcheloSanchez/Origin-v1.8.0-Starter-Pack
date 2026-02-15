@@ -1,6 +1,6 @@
 ---
 title: Research Plan: Improving Note Surfacing
-type: research
+type: source
 status: 🔄active
 tags: [research, surfacing, pkmsystem]
 created: 2026-02-04

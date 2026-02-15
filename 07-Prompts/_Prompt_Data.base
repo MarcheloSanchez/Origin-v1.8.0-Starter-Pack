@@ -1,0 +1,31 @@
+filters:
+  and:
+    - file.folder.contains("07-Prompts")
+views:
+  - type: table
+    name: All Prompts
+    order:
+      - file.name
+      - file.folder
+      - file.tags
+      - file.mtime
+      - file.ctime
+  - type: table
+    name: All Prompts Detailed
+    order:
+      - file.name
+      - file.tags
+      - difficulty
+      - intent
+      - audience
+      - pattern
+      - prompt_category
+      - prompt_subcategory
+      - eval_score
+      - file.ctime
+      - file.mtime
+  - type: table
+    name: Recently Edited
+    sort:
+      - property: file.mtime
+        direction: DESC

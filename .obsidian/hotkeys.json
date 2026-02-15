@@ -328,5 +328,32 @@
       ],
       "key": "A"
     }
+  ],
+  "quickadd:choice:qa-open-home-0001-000000000001": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "graph:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "G"
+    }
+  ],
+  "quickadd:choice:31e6a7fd-82cd-4d3f-a5ff-b9e3f4a29daf": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "X"
+    }
   ]
 }

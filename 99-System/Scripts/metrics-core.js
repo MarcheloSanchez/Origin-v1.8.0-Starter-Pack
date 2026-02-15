@@ -315,6 +315,63 @@ module.exports = () => {
   };
 
   // ============================================
+  // PROMPT METRICS
+  // ============================================
+
+  /**
+   * Get total prompt count
+   * @param {object} dv - Dataview API object
+   * @returns {number}
+   */
+  const getPromptCount = (dv) => {
+    try {
+      return safeLength(
+        dv.pages('"07-Prompts"').where(p => p.type === "prompt")
+      );
+    } catch (e) {
+      console.error('metrics-core: getPromptCount error:', e);
+      return 0;
+    }
+  };
+
+  /**
+   * Get count of active prompts (prompt_status = "active" or "winner")
+   * @param {object} dv - Dataview API object
+   * @returns {number}
+   */
+  const getActivePromptCount = (dv) => {
+    try {
+      return safeLength(
+        dv.pages('"07-Prompts"').where(p =>
+          p.type === "prompt" &&
+          (p.prompt_status === "active" || p.prompt_status === "winner")
+        )
+      );
+    } catch (e) {
+      console.error('metrics-core: getActivePromptCount error:', e);
+      return 0;
+    }
+  };
+
+  /**
+   * Get count of draft prompts
+   * @param {object} dv - Dataview API object
+   * @returns {number}
+   */
+  const getDraftPromptCount = (dv) => {
+    try {
+      return safeLength(
+        dv.pages('"07-Prompts"').where(p =>
+          p.type === "prompt" && p.prompt_status === "draft"
+        )
+      );
+    } catch (e) {
+      console.error('metrics-core: getDraftPromptCount error:', e);
+      return 0;
+    }
+  };
+
+  // ============================================
   // WEEKLY METRICS
   // ============================================
 
@@ -513,6 +570,11 @@ module.exports = () => {
     getTotalNotes,
     getOverdueTasks,
     getWaitingFor,
+
+    // Prompts
+    getPromptCount,
+    getActivePromptCount,
+    getDraftPromptCount,
 
     // Gamification
     getMaturityCounts,

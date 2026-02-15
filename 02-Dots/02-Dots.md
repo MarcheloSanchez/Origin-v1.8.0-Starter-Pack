@@ -25,8 +25,6 @@ obsidianUIMode: preview
 ⬆️:: [[🏡Home]]
 
 [[+ About Dotsℹ️]]
-[[A-Full-Template|Click here for template]]
-[[A-Meta.yaml|Click here for metadata]]
 ```button
 name New Atomic
 type command
@@ -36,15 +34,15 @@ action QuickAdd: Atomic
 - [[100-Atomics]]
 	- [[Concepts]]
 ```button
-name New Concept - TODO
+name New Concept
 type command
-action QuickAdd: Concept
+action QuickAdd: Atomic
 ```
-	- [[Ideas]]
+- [[Ideas]]
 ```button
 name New Idea
 type command
-action QuickAdd: New Idea
+action QuickAdd: New Quick Idea
 ```
 - [[Quotes]]
 - [[Statements]]
@@ -62,21 +60,21 @@ action QuickAdd: Area
 - [[250-Personal]]
 - [[300-People]]
 ```button
-name New People - TODO
+name New Person
 type command
-action QuickAdd: People
+action QuickAdd: Person
 ```
 - [[400-Places]]
 ```button
-name New Places - TODO
+name New Place
 type command
-action QuickAdd: Places
+action QuickAdd: Place
 ```
 - [[500-Tools]]
 ```button
-name New Tools - TODO
+name New Tool
 type command
-action QuickAdd: Tools
+action QuickAdd: Tool
 ```
 - [[X]]
 

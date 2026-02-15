@@ -1,0 +1,48 @@
+---
+up: "[[07-Prompts]]"
+type: prompt
+fileClass: Prompt
+tags: 
+  - 🤖AI/prompt
+  - 🧹tidy
+status: 📥inbox
+created: "2026-02-13"
+audience: "self-improver"
+difficulty: intermediate
+prompt_category: 🧠 Mastery Prompts
+prompt_type: utility
+prompt_status: draft
+Created: "2025-05-11"
+Language: english
+Modified: "2025-05-11"
+source: "ai-output"
+---
+
+
+## 💡Prompt PP - [Detect Bias or Missing Angles] Detail
+
+## 📝Description 
+
+## 📋Instructions 
+
+```ENG
+Review this note {activeNote}. Point out any:
+- Biases in perspective
+- Missing viewpoints or counterarguments
+- Suggestions to make it more balanced
+```
+
+```CZ
+Prohlédněte si tuto poznámku {activeNote}. Upozorněte na všechny: 
+- Předsudky v perspektivě 
+- chybějící úhly pohledu nebo protiargumenty 
+- Návrhy, jak ji učinit vyváženější
+```
+## Example Usage 
+## 🔗Related Prompts 
+See also: ...
+[[]]
+
+## **Feedback/Evaluation**: 
+(Optional) Add a section for user notes or improvements.
+

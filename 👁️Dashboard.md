@@ -1,10 +1,9 @@
 ---
 title: 📊 Dashboard
-type: moc
+type: dashboard
 status: 🔄active
 tags:
   - 📊dashboard
-  - 🗺️MOC
   - 📋review
   - ⚙️system
 created: 2025-09-29

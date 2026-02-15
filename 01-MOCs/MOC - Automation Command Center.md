@@ -1,6 +1,6 @@
 ---
 title: Automation Command Center
-type: moc
+type: system
 status: 🔄active
 created: 2025-09-22
 modified: 2025-11-05

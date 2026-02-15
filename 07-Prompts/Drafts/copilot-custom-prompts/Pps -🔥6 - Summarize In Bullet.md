@@ -1,0 +1,20 @@
+---
+up: "[[07-Prompts]]"
+type: prompt
+fileClass: prompt
+tags: 
+  - 🤖AI/prompt
+  - quick
+  - 🧹tidy
+status: 🔄active
+created: "2026-02-13"
+difficulty: beginner
+prompt_type: utility
+prompt_status: draft
+copilot-command-context-menu-enabled: false
+copilot-command-context-menu-order: 9007199254740991
+copilot-command-last-used: 1756927959552
+copilot-command-model-key: 
+copilot-command-slash-enabled: true
+---
+Summarize the text below into a concise overview, highlighting the key insights and most important facts in a bullet-point list. Ensure the summary captures the essence and main points of the text.[Insert text] 

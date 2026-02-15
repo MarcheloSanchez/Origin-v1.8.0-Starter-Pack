@@ -10,6 +10,43 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
+# 10/02/26
+- Added [[Query - Newsletter Queue]]
+- Added [[new-effort-auto]]
+- Added [[new-atomic]]
+- Added [[new-atomic-auto]]
+- Added [[👁️Dashboard]]
+- Added [[🎯GTD Command Center]]
+- Added `CIS_TYPE.md`
+- Added [[TODO]]
+- Added [[CLAUDE]]
+- Added [[CHANGELOG]]
+- Added [[2026-02-10]]
+- Added [[Research - Improving Note Surfacing]]
+- Added [[⚡ Automation Menu]]
+- Added [[🏠 Living Areas Tasks]]
+- Added [[🏠 Kitchen Tasks]]
+- Added [[🏠 Entry & Laundry Tasks]]
+- Added [[🏠 Bedroom Tasks]]
+- Added [[🏠 Bathroom Tasks]]
+- Added [[MOC - Automation Command Center]]
+- Added [[Automations via fastkey]]
+---
+# 10/02/26
+- **Two-tier type system**: 10 full types + 11 lightweight types registered in `CIS_TYPE.md` + `Templater_script.js`
+- Retyped notes: 3 dashboards, 1 system, 5 efforts (from task-category), 1 source (from research)
+- Fixed 5 broken buttons in `02-Dots.md` (Person, Place, Tool, Concept, Idea)
+- Added `Person` QuickAdd Template choice for `02-Dots/300-People`
+- Added `🏡 Open Home` macro + hotkey `Ctrl+Shift+H`
+- Added `Ctrl+Shift+G` (global graph) and `Ctrl+Shift+X` (extract selection) hotkeys
+- Fixed tag formatting in `+Inbox/Automations via fastkey.md`
+- Added newsletter workflow: `newsletter: true` frontmatter flag + `generate-newsletter.js` script
+- Added `update-changelog.js` for one-click changelog drafting from vault changes
+- Added `Query - Newsletter Queue.md` template for Dataview queue view
+- Registered QuickAdd macros: 📰 Generate Newsletter, 📋 Update Changelog
+- Added newsletter + changelog buttons to [[⚡ Automation Menu]]
+- Updated `yaml-meta-config.json`: added `newsletter` to field order
+---
 # 07/02/26
 - **Vault Optimization v2.0 — Priority 1: Foundation Fixes**
 - Standardized `deadline` → `due` across 6 notes, 3 queries, 2 config/doc files

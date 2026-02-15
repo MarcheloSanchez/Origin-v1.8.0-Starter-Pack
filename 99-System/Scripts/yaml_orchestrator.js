@@ -81,7 +81,7 @@ const defaults = {
       // Context & Collaboration
       "participants", "location", "meeting_type", "action_items",
       // Specialized (AI/Prompts)
-      "audience", "difficulty", "prompt_category", "prompt_type",
+      "audience", "difficulty", "prompt_category", "prompt_type", "prompt_status", "intent",
       // Relations (stay at end)
       "related", "see_also", "related_concepts", "related_ideas",
       // People (future-proofing)
@@ -89,14 +89,15 @@ const defaults = {
     ]
   },
   enums: {
-    status: ["📥inbox", "🔄active", "⏳waiting", "✅completed", "📦archived"]
+    status: ["📥inbox", "🔄active", "⏳waiting", "✅completed", "📦archived"],
+    prompt_status: ["draft", "active", "winner", "archived"]
   },
   toArray: ["tags", "aliases"],
   dateKeys: ["created", "modified", "start", "due", "end", "last_review"],
   rules: {
     tags: { stripHashes: true, lowerCase: false, sort: true, dedupe: true, trim: true },
     aliases: { dedupe: true, sort: false, trim: true },
-    rename: { "seeAlso": "see_also", "relatedNotes": "related", "deadline": "due" },
+    rename: { "seeAlso": "see_also", "relatedNotes": "related", "deadline": "due", "Category": "prompt_category", "Type": "prompt_type", "Audience": "audience", "Difficulty": "difficulty", "Source": "source" },
     ensureRequired: ["title", "type", "status", "created"],
     removeEmpty: true
   }
@@ -264,7 +265,8 @@ const defaults = {
         "in-progress": "🔄active",
         "blocked": "⏳waiting",
         "on_hold": "⏸️paused",
-        "on-hold": "⏸️paused"
+        "on-hold": "⏸️paused",
+        "draft": "📥inbox"
       };
 
       // Check if already in allowed list (emoji-prefixed)
@@ -277,6 +279,13 @@ const defaults = {
         const baseValue = lowRaw.replace(/^[📥🔄⏳✅📦⏸️❌]/u, "").trim();
         fm.status = statusMap[baseValue] || statusMap[lowRaw] || raw;
       }
+    }
+
+    // 3b) prompt_status enum (lowercase, trim, validate)
+    if (fm.prompt_status && typeof fm.prompt_status === "string") {
+      const rawPS = fm.prompt_status.trim().toLowerCase();
+      const allowedPS = cfg.enums?.prompt_status || ["draft", "active", "winner", "archived"];
+      fm.prompt_status = allowedPS.includes(rawPS) ? rawPS : rawPS;
     }
 
     // 4) Dates → YYYY-MM-DD; fill created from file stat if missing

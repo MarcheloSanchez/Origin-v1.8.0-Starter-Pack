@@ -1,6 +1,6 @@
 ---
 title: ✅ List of tasks
-type: moc
+type: dashboard
 status: 🔄active
 tags:
   - 📊dashboard

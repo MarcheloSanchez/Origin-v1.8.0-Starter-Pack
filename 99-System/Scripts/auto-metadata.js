@@ -151,8 +151,19 @@ function detectTypeFromPath(path) {
   return 'undefined';
 }
 
+// Canonical maturity emoji values — keep in sync with metrics-core.js MATURITY_STAGES
+const MV = {
+  SEED:      '📤seed',
+  SEEDLING:  '🌱seedling',
+  SAPLING:   '🪴sapling',
+  EVERGREEN: '🌲evergreen',
+  FRUIT:     '🍓fruit'
+};
+
 /**
- * Calculate maturity based on content depth
+ * Calculate maturity based on content depth (word count + structural signals).
+ * Uses a different algorithm than maturity-promoter.js (link counts) — both are
+ * intentional: this is used at creation time when link counts are near zero.
  */
 function calculateMaturity(content) {
   // Remove frontmatter
@@ -176,11 +187,11 @@ function calculateMaturity(content) {
   if (hasCodeBlocks) score += 1;
   if (hasLists) score += 1;
 
-  // Map score to maturity level
-  if (score >= 7) return '🌲evergreen';
-  if (score >= 5) return '🪴sapling';
-  if (score >= 3) return '🌱seedling';
-  return '📤seed';
+  // Map score to maturity level (fruit not auto-assigned — requires human judgment)
+  if (score >= 7) return MV.EVERGREEN;
+  if (score >= 5) return MV.SAPLING;
+  if (score >= 3) return MV.SEEDLING;
+  return MV.SEED;
 }
 
 /**

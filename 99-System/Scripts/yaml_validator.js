@@ -25,7 +25,7 @@ module.exports = () => {
       required: ['title', 'type', 'status', 'created'],
       optional: ['modified', 'tags', 'related', 'fileClass', 'aliases'],
       enums: {
-        status: ['📥inbox', '🔄active', '⏳waiting', '✅completed', '📦archived', '⏸️paused', '❌cancelled'],
+        status: ['📥inbox', '🔄active', '⏳waiting', '✅completed', '📦archived', '⏸️paused', '❌cancelled', '⚠️blocked'],
         type: ['atomic', 'effort', 'source', 'moc', 'meeting', 'prompt', 'tool', 'person', 'place', 'area', 'daily', 'weekly', 'monthly', 'archive']
       },
       dateFields: ['created', 'modified'],

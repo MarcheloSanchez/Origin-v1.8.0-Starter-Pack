@@ -10,6 +10,11 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
+# 18/02/26
+- Reviewed and prioritized all active efforts; created [[🗺️ Project Roadmap]] in `00-Meta/`
+- Established 4-priority roadmap: (1) Complete Tutorial, (2) Activate Home Maintenance System, (3) Clear system backlog, (4) Resolve stale efforts
+- Archived `Hobbies & Interests` effort (overdue since 2025-10-04, placeholder content)
+---
 # 07/02/26
 - **Vault Optimization v2.0 — Priority 1: Foundation Fixes**
 - Standardized `deadline` → `due` across 6 notes, 3 queries, 2 config/doc files

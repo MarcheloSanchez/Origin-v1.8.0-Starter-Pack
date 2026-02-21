@@ -62,6 +62,21 @@
 💻 Script - [Function] - [Description]
 🗺️ MOC - [Topic Area]
 📊 Dashboard - [Scope]
+🔍 Query - [Metric/Focus] (in Templates/Queries/)
+```
+
+### Template Folder Structure
+```
+Templates/
+  Meta/       {type}-meta.yaml.md      — YAML frontmatter blocks
+  Body/       {type}-body.md           — Content structure
+  Static/     {type}.md                — Standalone fallbacks
+  Create/     new-{type}.md            — Creation templates
+  Core/       _nav-*.md, _section-*.md — Shared snippets
+  Queries/    Query - [Topic].md       — Reusable Dataview queries
+  Calendar/   Template Daily/Weekly/Monthly/Quarterly/Yearly
+  Kanban/     Template_Kanban*.md      — Board templates
+  _Examples/  [Type] Filled Out.md     — Reference examples
 ```
 
 ---

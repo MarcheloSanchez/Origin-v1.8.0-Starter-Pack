@@ -7,7 +7,7 @@ tags:
   - 📋documentation
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-02-21
 related:
   - "[[🏛️My PKM Governance]]"
   - "[[🔁My PKM Workflows]]"
@@ -62,7 +62,7 @@ type: atomic|effort|source|moc|meeting|prompt|tool|person|place
 ```
 title: for query
 type: atomic|effort|source|moc|meeting|prompt|archive
-status: 📥inbox|🔄active|⏳waiting|✅completed|📦archived
+status: 📥inbox|🔄active|⏳waiting|✅completed|📦archived|⏸️paused|❌cancelled|⚠️blocked
 tags: 
 created: YYYY-MM-DD
 modified: YYYY-MM-DD
@@ -232,7 +232,7 @@ tags:
 - topic-name
 created: 2025-09-30
 modified: 2025-09-30
-maturity: 🌱seed|🌿seedling|🪴sapling|🌲evergreen|🍓fruit
+maturity: 📤seed|🌱seedling|🪴sapling|🌲evergreen|🍓fruit
 domain: psychology|tech|business|health|finance
 source_inspiration: "[[Source Note]]"
 confidence_level: high|medium|low|uncertain
@@ -247,8 +247,8 @@ fileClass: Atomic
 
 | Stage         | Icon | Description                       | Exit Criteria                        |
 | ------------- | ---- | --------------------------------- | ------------------------------------ |
-| **Seed**      | 🌱   | Raw capture, minimal context      | Basic metadata + folder move         |
-| **Seedling**  | 🌿   | Early development, some links     | 2+ links, structured content         |
+| **Seed**      | 📤   | Raw capture, minimal context      | Basic metadata + folder move         |
+| **Seedling**  | 🌱   | Early development, some links     | 2+ links, structured content         |
 | **Sapling**   | 🪴   | Growing content, rich connections | 5+ links, 2+ backlinks               |
 | **Evergreen** | 🌲   | Stable, foundational knowledge    | Frequently referenced, comprehensive |
 | **Fruit**     | 🍓   | Original insight, external value  | Published, actionable output         |
@@ -569,7 +569,7 @@ fileClass: Archived
 
 ```mermaid
 graph LR
-A[🌱 Seed] --> B[🌿 Seedling]
+A[📤 Seed] --> B[🌱 Seedling]
 B --> C[🪴 Sapling]
 C --> D[🌲 Evergreen]
 D --> E[🍓 Fruit]
@@ -578,15 +578,15 @@ D --> E[🍓 Fruit]
 
 **Promotion Checklist**:
 
-**🌱 → 🌿 (Seed to Seedling)**
+**📤 → 🌱 (Seed to Seedling)**
 - [ ] Title is clear and descriptive
 - [ ] Type assigned (atomic/effort/source)
 - [ ] Basic tags applied
 - [ ] Moved from Inbox to proper folder
 - [ ] Content has structure (headers, paragraphs)
-- [ ] At least 1 internal link added
+- [ ] At least 2 outbound links + 1 backlink
 
-**🌿 → 🪴 (Seedling to Sapling)**
+**🌱 → 🪴 (Seedling to Sapling)**
 - [ ] 5+ internal links (outbound)
 - [ ] 2+ backlinks (inbound references)
 - [ ] Content is comprehensive and complete
@@ -600,7 +600,7 @@ D --> E[🍓 Fruit]
 - [ ] Frequently referenced
 - [ ] Part of knowledge structure
 
-**🌲 c🍓 (Evergreen to Fruit)**
+**🌲 → 🍓 (Evergreen to Fruit)**
 - [ ] Content adapted for external audience
 - [ ] Published on external platform
 - [ ] Generates external engagement/value
@@ -681,7 +681,7 @@ context: <%= context %>
 <%
 const folder = tp.file.folder(true);
 let maturity = "📤seed";
-if (folder.includes("02-Dots")) maturity = "🌱seedling";
+if (folder.includes("02-Dots")) maturity = "🌱seedling";  // 📤seed → 🌱seedling
 if (folder.includes("01-MOCs")) maturity = "🌲evergreen";
 %>
 maturity: <%= maturity %>
@@ -828,7 +828,50 @@ dv.paragraph(`${p.file.link}: ${score}/${requiredFields.length} (${Math.round(sc
 
 ---
 
-*Last Updated: 2025-09-30 | Review: Quarterly | Status: 🟢 Optimized & Automated*
+## 🛡️ Metadata Validation & Automation Tools (v2.0)
+
+> [!hint]+ **Added in Vault Optimization v2.0**
+> These tools enforce metadata consistency automatically.
+
+### YAML Validator (`yaml_validator.js`)
+Validates note frontmatter against type-specific schemas. Checks required fields, enum values (status, maturity, priority), date formats, and array/numeric types. Supports 15+ note types including periodic notes.
+
+```
+<%* await tp.user.yaml_validator() %>
+```
+
+### Maturity Promoter (`maturity-promoter.js`)
+Analyzes notes and suggests maturity stage promotions based on link metrics and stability:
+- **📤 → 🌱**: 2+ outlinks, 1+ backlink
+- **🌱 → 🪴**: 5+ outlinks, 2+ backlinks, 30+ days stable
+- **🪴 → 🌲**: 10+ outlinks, 5+ backlinks, 90+ days stable
+- **🌲 → 🍓**: Manual (external publication/application)
+
+### Metrics Core (`metrics-core.js`)
+Single source of truth for all vault metrics. Provides health scoring (0-100), gamification XP/level calculations, and weekly activity metrics. Used by dashboards, weekly reports, and the metrics cache.
+
+### Status & Maturity Pickers
+- **`status-picker.js`** — QuickAdd UI for changing note status
+- **`maturity-evolve.js`** — QuickAdd UI for changing maturity stage
+
+### Weekly Report Generator (`generate-weekly-report.js`)
+Automated weekly report with metrics, highlights, maturity pipeline, and 8-week trend visualization. Outputs to `05-Calendar/Weekly/`.
+
+### Query Templates (`Templates/Queries/`)
+Six reusable Dataview query templates:
+- **Active Projects** — Efforts with status `🔄active`, sorted by priority
+- **Health Status** — Weighted vault health score (0-100)
+- **Inbox Processing** — GTD inbox with age indicators
+- **Maturity Distribution** — Knowledge pipeline visualization
+- **Orphan Notes** — Disconnected notes for review
+- **Weekly Stats** — Task completion rate and note creation velocity
+
+### YAML Orchestrator Auto-Tidy
+The `yaml_orchestrator.js` now tags notes with `#🧹tidy` when required fields are missing (validation step 5b).
+
+---
+
+*Last Updated: 2026-02-21 | Review: Quarterly | Status: 🟢 Optimized & Automated*
 
 
 

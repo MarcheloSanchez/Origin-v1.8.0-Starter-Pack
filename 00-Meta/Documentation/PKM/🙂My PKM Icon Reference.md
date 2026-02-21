@@ -7,7 +7,7 @@ tags:
   - 📋documentation
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-02-21
 related:
   - "[[🏛️My PKM Governance]]"
   - "[[🏷️My PKM Tags]]"
@@ -20,12 +20,15 @@ related:
 
 ## Core System Icons
 
-### Status Indicators
-- ✅ **Completed/Active** - Green (success, healthy)
-- ⚠️ **Warning/Attention** - Yellow (caution, moderate)
-- 🚨 **Critical/Urgent** - Red (danger, immediate action)
-- ⏸️ **Paused/Waiting** - Blue (neutral, paused)
-- 📦 **Archived** - Gray (stored, inactive)
+### Status Indicators (YAML `status` field)
+- 📥 **Inbox** - New, unprocessed capture
+- 🔄 **Active** - Currently in progress
+- ⏳ **Waiting** - Blocked on external dependency
+- ✅ **Completed** - Done, successful
+- 📦 **Archived** - Stored, inactive
+- ⏸️ **Paused** - Temporarily on hold
+- ❌ **Cancelled** - Abandoned, no longer relevant
+- ⚠️ **Blocked** - Cannot proceed, needs resolution
 
 ### Note Types
 - 💡 **Atomic Notes** - Ideas and insights
@@ -43,12 +46,12 @@ related:
 - 🟢 **P4 - Low** - When time allows
 - ⚪ **P5 - Someday** - Future consideration
 
-### Progress Indicators
-- 🌱 **Seed** - Basic capture, minimal development
-- 🌿 **Seedling** - Some expansion and structure
+### Maturity Indicators (YAML `maturity` field)
+- 📤 **Seed** - Raw capture, minimal development
+- 🌱 **Seedling** - Early development, some links
 - 🪴 **Sapling** - Well-developed, good connections
 - 🌲 **Evergreen** - Mature, stable content
-- 🍓 **Fruit** - Ready to teach/share
+- 🍓 **Fruit** - Original insight, ready to share
 
 ### Time & Energy
 - ⚡ **Quick** - <15 minutes

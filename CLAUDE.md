@@ -34,6 +34,10 @@ Templates use **separation of concerns** — Meta (YAML) + Body (content) compos
 - **Static fallbacks**: `Templates/Static/{type}.md` — standalone, no Templater required
 - **Create templates**: `Templates/Create/new-{type}.md` (empty/inbox mode), `new-{type}-auto.md` (auto-active mode)
 - **Core snippets**: `Templates/Core/_nav-breadcrumb.md`, `_nav-wayfinder.md`, `_section-related.md`
+- **Query templates**: `Templates/Queries/Query - {Topic}.md` — Reusable Dataview/DataviewJS query blocks
+- **Calendar templates**: `Templates/Calendar/Template {Period}.md` — Daily, Weekly, Monthly, Quarterly, Yearly
+- **Kanban templates**: `Templates/Kanban/Template_Kanban*.md` — Board layouts
+- **Examples**: `Templates/_Examples/{Type} Filled Out.md` — Reference filled-out notes
 
 **Supported types**: atomic, effort, source, moc, meeting, area, person, place, tool, prompt
 
@@ -52,9 +56,11 @@ The main template engine is `99-System/Scripts/Templater_script.js` which provid
 | `quick-process-atomic.js` | Atomic note quick processing |
 | `quick-process-effort.js` | Effort quick processing |
 | `quick-process-source.js` | Source quick processing |
-| `maturity-promoter.js` | Note maturity advancement |
-| `metrics-core.js` | Vault health metrics (inbox health, stale notes, orphans) |
-| `update-metrics-cache.js` | Metrics caching |
+| `maturity-promoter.js` | Note maturity promotion suggestions (link metrics & stability) |
+| `maturity-evolve.js` | QuickAdd picker for maturity stage changes |
+| `metrics-core.js` | Vault health metrics, gamification XP/levels, weekly stats |
+| `update-metrics-cache.js` | Metrics caching (inline field format for `dv.page()`) |
+| `generate-weekly-report.js` | Automated weekly report generator (QuickAdd macro) |
 | `archive_note.js` / `archive-old-dailies.js` | Archival automation |
 | `status-picker.js` / `status-progression.js` | Status workflow UI & automation |
 
@@ -67,7 +73,7 @@ Scripts run inside Obsidian via **Templater** user scripts. They are NOT Node.js
 up: "[[Parent]]"           # Breadcrumb navigation
 title: "Note Title"
 type: atomic | effort | source | moc | meeting | area | person | place | tool | prompt
-status: 📥inbox | 🔄active | ⏳waiting | ✅completed | 📦archived | ❌cancel | ⚠️blocked
+status: 📥inbox | 🔄active | ⏳waiting | ✅completed | 📦archived | ⏸️paused | ❌cancelled | ⚠️blocked
 maturity: 📤seed | 🌱seedling | 🪴sapling | 🌲evergreen | 🍓fruit
 priority: high | medium | low
 tags: []                   # Emoji-prefixed, e.g. 💡atomic, 🚀project, 📚source
@@ -77,6 +83,12 @@ related: []
 ```
 
 Field ordering is enforced by `yaml-meta-config.json`. Keys use **snake_case**. Status/maturity values use emoji prefixes.
+
+**Important conventions**:
+- Use `due` (not `deadline`) — YAML Orchestrator auto-renames `deadline` → `due`
+- Always use emoji-prefixed status values (e.g., `🔄active` not bare `active`)
+- Maturity canonical values: `📤seed`, `🌱seedling`, `🪴sapling`, `🌲evergreen`, `🍓fruit`
+- Notes missing required fields get auto-tagged `#🧹tidy` by YAML Orchestrator
 
 ### CIS (Custom Information System) — `99-System/CIS/`
 30+ enum definition files named `CIS_{FIELD_NAME}.md` (e.g., `CIS_STATUS.md`, `CIS_MATURITY.md`). These feed Obsidian Bases field validation and UI dropdowns.
@@ -100,7 +112,7 @@ Each prompt file has `fileClass: Prompt` frontmatter with `prompt_category`, `pr
 
 ## Naming Conventions
 
-- **Templates**: `{type}-meta.yaml.md`, `{type}-body.md`, `new-{type}.md`, `new-{type}-auto.md`
+- **Templates**: `{type}-meta.yaml.md`, `{type}-body.md`, `new-{type}.md`, `new-{type}-auto.md`, `Query - {Topic}.md`
 - **Scripts**: descriptive kebab-case (`smart-classifier.js`, `yaml-orchestrator.js`)
 - **CIS enums**: `CIS_{FIELD_NAME}.md` (SCREAMING_SNAKE_CASE)
 - **YAML keys**: snake_case (`processing_priority`, `completion_percentage`)

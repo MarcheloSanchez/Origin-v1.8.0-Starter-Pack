@@ -413,13 +413,12 @@ module.exports = () => {
   const getMaturityCounts = (dv) => {
     try {
       const pages = dv.pages();
-      return {
-        seed: safeLength(pages.where(p => p.maturity === "📤seed")),
-        seedling: safeLength(pages.where(p => p.maturity === "🌱seedling")),
-        sapling: safeLength(pages.where(p => p.maturity === "🪴sapling")),
-        evergreen: safeLength(pages.where(p => p.maturity === "🌲evergreen")),
-        fruit: safeLength(pages.where(p => p.maturity === "🍓fruit"))
-      };
+      const counts = {};
+      for (const stage of MATURITY_STAGES) {
+        const key = [...stage.value].slice(1).join(''); // strip leading emoji code point
+        counts[key] = safeLength(pages.where(p => p.maturity === stage.value));
+      }
+      return counts;
     } catch (e) {
       console.error('metrics-core: getMaturityCounts error:', e);
       return { seed: 0, seedling: 0, sapling: 0, evergreen: 0, fruit: 0 };

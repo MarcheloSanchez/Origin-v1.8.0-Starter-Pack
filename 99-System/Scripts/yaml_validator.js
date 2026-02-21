@@ -121,6 +121,27 @@ module.exports = () => {
       enums: {
         energy: ['high', 'medium', 'low']
       }
+    },
+
+    // Prompt notes (99-System/copilot-custom-prompts)
+    // Note: prompt_category and audience enums are intentionally omitted —
+    // CIS_PROMPT_CATEGORY.md and CIS_AUDIENCE.md values don't align with
+    // what's used in practice; validate prompt_type only (from CIS_PROMPT_TYPE.md).
+    prompt: {
+      extends: 'base',
+      required: ['title', 'type', 'created'],
+      optional: [
+        'prompt_category', 'prompt_type', 'audience', 'model_defaults',
+        'intent', 'pattern', 'summary', 'version', 'id', 'context_packs',
+        'prompt_subcategory', 'eval_score', 'last_run', 'language', 'owner', 'source'
+      ],
+      enums: {
+        prompt_type: [
+          'explanation', 'reflection', 'simulation', 'summarization',
+          'rewrite', 'generation', 'analysis', 'planning', 'idea',
+          'prompt-design', 'comparison', 'compression', 'creative', 'utility'
+        ]
+      }
     }
   };
 

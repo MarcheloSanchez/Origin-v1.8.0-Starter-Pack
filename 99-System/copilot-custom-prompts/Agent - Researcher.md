@@ -7,7 +7,7 @@ tags:
   - micro-agent
   - research
   - pkm
-status: active
+status: 🔄active
 created: 2025-01-27
 modified: 2025-01-27
 audience: power-user

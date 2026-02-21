@@ -105,13 +105,19 @@ function analyzeContent(content, frontmatter, filename) {
   analysis.hasQuotes = /^>\s/m.test(bodyContent);
   analysis.hasHeadings = /^#{1,6}\s/m.test(bodyContent);
 
-  // Keyword-based type detection
+  // Keyword-based type detection (Czech + English; covers all 10 vault note types)
   const typeKeywords = {
-    effort: ['projekt', 'project', 'úkol', 'task', 'cíl', 'goal', 'milník', 'milestone', 'deadline', 'akce', 'action'],
-    source: ['zdroj', 'source', 'kniha', 'book', 'článek', 'article', 'video', 'podcast', 'autor', 'author', 'url:', 'link:'],
+    effort:  ['projekt', 'project', 'úkol', 'task', 'cíl', 'goal', 'milník', 'milestone', 'deadline', 'akce', 'action'],
+    source:  ['zdroj', 'source', 'kniha', 'book', 'článek', 'article', 'video', 'podcast', 'autor', 'author', 'url:', 'link:'],
     meeting: ['meeting', 'schůzka', 'call', 'hovor', 'účastníci', 'participants', 'agenda', 'action items', 'rozhodnutí', 'decisions'],
-    moc: ['moc', 'map of content', 'přehled', 'overview', 'index', 'katalog', 'catalog', 'hub'],
-    atomic: ['myšlenka', 'idea', 'koncept', 'concept', 'poznámka', 'note', 'poznatek', 'insight']
+    moc:     ['moc', 'map of content', 'přehled', 'overview', 'index', 'katalog', 'catalog', 'hub'],
+    atomic:  ['myšlenka', 'idea', 'koncept', 'concept', 'poznámka', 'note', 'poznatek', 'insight'],
+    // ---- Extended types (previously unclassified, defaulted to atomic) ----
+    area:    ['oblast', 'area', 'odpovědnost', 'responsibility', 'horizont', 'horizon', 'doména', 'domain', 'ongoing', 'průběžný'],
+    person:  ['kontakt', 'contact', 'vztah', 'relationship', 'kolega', 'colleague', 'mentor', 'email:', 'telefon', 'phone', 'linkedin', 'github'],
+    place:   ['místo', 'place', 'lokace', 'location', 'město', 'city', 'adresa', 'address', 'souřadnice', 'coordinates', 'navštíveno', 'visited'],
+    tool:    ['nástroj', 'tool', 'instalace', 'installation', 'verze', 'version', 'plugin', 'software', 'cena', 'pricing', 'integrace', 'integration'],
+    prompt:  ['prompt', 'model', 'llm', 'ai', 'copilot', 'role:', 'context:', 'instruction:', 'system prompt', 'eval_score', 'prompt_category']
   };
 
   // Score each type based on keyword matches
@@ -131,7 +137,7 @@ function analyzeContent(content, frontmatter, filename) {
     }
   }
 
-  // Structural scoring
+  // Structural scoring — original types
   if (analysis.hasTasks) typeScores.effort = (typeScores.effort || 0) + 3;
   if (analysis.hasQuotes) typeScores.source = (typeScores.source || 0) + 2;
   if (analysis.hasLinks && analysis.hasHeadings) typeScores.moc = (typeScores.moc || 0) + 2;
@@ -139,11 +145,32 @@ function analyzeContent(content, frontmatter, filename) {
     typeScores.meeting = (typeScores.meeting || 0) + 5;
   }
 
-  // Filename-based hints
+  // Structural scoring — extended types
+  if (/email:|phone:|tel:|linkedin\.com|github\.com/i.test(bodyContent)) {
+    typeScores.person = (typeScores.person || 0) + 4;
+  }
+  if (/\d{1,3}\.\d{1,6},\s*\d{1,3}\.\d{1,6}/.test(bodyContent)) { // coordinate pattern
+    typeScores.place = (typeScores.place || 0) + 5;
+  }
+  if (analysis.hasCodeBlocks && /version|install|npm|pip|brew|apt/i.test(bodyContent)) {
+    typeScores.tool = (typeScores.tool || 0) + 4;
+  }
+  if (/^#{1,3}\s*(Role|System|Instructions?|Context|Output Format)/m.test(bodyContent)) {
+    typeScores.prompt = (typeScores.prompt || 0) + 5;
+  }
+
+  // Filename-based hints — original types
   if (/^(MTG|Meeting|Schůzka)/i.test(filename)) typeScores.meeting = (typeScores.meeting || 0) + 5;
   if (/^(MOC|Přehled)/i.test(filename)) typeScores.moc = (typeScores.moc || 0) + 5;
   if (/^(Effort|Projekt|Project)/i.test(filename)) typeScores.effort = (typeScores.effort || 0) + 5;
   if (/^(Source|Zdroj|Book|Kniha)/i.test(filename)) typeScores.source = (typeScores.source || 0) + 5;
+
+  // Filename-based hints — extended types
+  if (/^(Area|Oblast)/i.test(filename)) typeScores.area = (typeScores.area || 0) + 5;
+  if (/^(Person|Osoba|Kontakt)/i.test(filename)) typeScores.person = (typeScores.person || 0) + 5;
+  if (/^(Place|Místo|Lokace)/i.test(filename)) typeScores.place = (typeScores.place || 0) + 5;
+  if (/^(Tool|Nástroj)/i.test(filename)) typeScores.tool = (typeScores.tool || 0) + 5;
+  if (/^(Prompt|Agent)/i.test(filename)) typeScores.prompt = (typeScores.prompt || 0) + 5;
 
   // Determine suggested type
   const maxScore = Math.max(...Object.values(typeScores));
@@ -156,13 +183,18 @@ function analyzeContent(content, frontmatter, filename) {
     analysis.confidence = 0.3;
   }
 
-  // Suggest folder based on type
+  // Suggest folder based on type (covers all 10 vault note types)
   const folderMap = {
-    atomic: '02-Dots/100-Atomics',
-    effort: '03-Efforts',
-    source: '04-Sources',
+    atomic:  '02-Dots/100-Atomics',
+    effort:  '03-Efforts',
+    source:  '04-Sources',
     meeting: '04-Sources/Meetings',
-    moc: '01-MOCs'
+    moc:     '01-MOCs',
+    area:    '02-Dots/200-Areas',
+    person:  '02-Dots/300-People',
+    place:   '02-Dots/400-Places',
+    tool:    '02-Dots/500-Tools',
+    prompt:  '99-System/copilot-custom-prompts'
   };
   analysis.suggestedFolder = folderMap[analysis.suggestedType] || '+Inbox';
 
@@ -202,12 +234,18 @@ function analyzeContent(content, frontmatter, filename) {
  * Present suggestions to user for confirmation/modification
  */
 async function presentSuggestions(analysis, QuickAdd) {
+  const sug = analysis.suggestedType;
   const typeOptions = [
-    { label: `💡 Atomic (${analysis.suggestedType === 'atomic' ? '⭐ Suggested' : 'Other'})`, value: 'atomic' },
-    { label: `🚀 Effort (${analysis.suggestedType === 'effort' ? '⭐ Suggested' : 'Other'})`, value: 'effort' },
-    { label: `📚 Source (${analysis.suggestedType === 'source' ? '⭐ Suggested' : 'Other'})`, value: 'source' },
-    { label: `🤝 Meeting (${analysis.suggestedType === 'meeting' ? '⭐ Suggested' : 'Other'})`, value: 'meeting' },
-    { label: `🗺️ MOC (${analysis.suggestedType === 'moc' ? '⭐ Suggested' : 'Other'})`, value: 'moc' }
+    { label: `💡 Atomic  (${sug === 'atomic'  ? '⭐ Suggested' : 'Other'})`, value: 'atomic'  },
+    { label: `🚀 Effort  (${sug === 'effort'  ? '⭐ Suggested' : 'Other'})`, value: 'effort'  },
+    { label: `📚 Source  (${sug === 'source'  ? '⭐ Suggested' : 'Other'})`, value: 'source'  },
+    { label: `🤝 Meeting (${sug === 'meeting' ? '⭐ Suggested' : 'Other'})`, value: 'meeting' },
+    { label: `🗺️ MOC    (${sug === 'moc'     ? '⭐ Suggested' : 'Other'})`, value: 'moc'     },
+    { label: `🌐 Area   (${sug === 'area'    ? '⭐ Suggested' : 'Other'})`, value: 'area'    },
+    { label: `👤 Person (${sug === 'person'  ? '⭐ Suggested' : 'Other'})`, value: 'person'  },
+    { label: `📍 Place  (${sug === 'place'   ? '⭐ Suggested' : 'Other'})`, value: 'place'   },
+    { label: `🔧 Tool   (${sug === 'tool'    ? '⭐ Suggested' : 'Other'})`, value: 'tool'    },
+    { label: `🤖 Prompt (${sug === 'prompt'  ? '⭐ Suggested' : 'Other'})`, value: 'prompt'  }
   ];
 
   let selectedType;
@@ -229,13 +267,18 @@ async function presentSuggestions(analysis, QuickAdd) {
 
   if (!selectedType) return null;
 
-  // Folder selection based on type
+  // Folder selection based on type (covers all 10 vault note types)
   const folderMap = {
-    atomic: '02-Dots/100-Atomics',
-    effort: '03-Efforts',
-    source: '04-Sources',
+    atomic:  '02-Dots/100-Atomics',
+    effort:  '03-Efforts',
+    source:  '04-Sources',
     meeting: '04-Sources/Meetings',
-    moc: '01-MOCs'
+    moc:     '01-MOCs',
+    area:    '02-Dots/200-Areas',
+    person:  '02-Dots/300-People',
+    place:   '02-Dots/400-Places',
+    tool:    '02-Dots/500-Tools',
+    prompt:  '99-System/copilot-custom-prompts'
   };
 
   return {
@@ -251,15 +294,18 @@ async function presentSuggestions(analysis, QuickAdd) {
  * Apply classification to note
  */
 async function applyClassification(file, classification, content) {
-  // Parse frontmatter
-  const fmMatch = content.match(/^---\s*\n([\s\S]*?)\n---/);
-  let frontmatter = {};
-  let body = content;
+  // Use Obsidian's metadata cache instead of custom parseYAML — more reliable,
+  // handles multi-line values, arrays, and edge cases correctly
+  const cache = app.metadataCache.getFileCache(file);
+  const rawFm = cache?.frontmatter || {};
+  // Strip internal Obsidian keys before working with frontmatter
+  const frontmatter = Object.fromEntries(
+    Object.entries(rawFm).filter(([k]) => !['position', 'frontmatterLinks', 'headings'].includes(k))
+  );
 
+  const fmMatch = content.match(/^---\s*\n([\s\S]*?)\n---/);
+  let body = content;
   if (fmMatch) {
-    // Parse existing YAML
-    const fmText = fmMatch[1];
-    frontmatter = parseYAML(fmText);
     body = content.slice(fmMatch[0].length);
   }
 

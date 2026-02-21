@@ -26,7 +26,7 @@ module.exports = () => {
       optional: ['modified', 'tags', 'related', 'fileClass', 'aliases'],
       enums: {
         status: ['📥inbox', '🔄active', '⏳waiting', '✅completed', '📦archived', '⏸️paused', '❌cancelled', '⚠️blocked'],
-        type: ['atomic', 'effort', 'source', 'moc', 'meeting', 'prompt', 'tool', 'person', 'place', 'area', 'daily', 'weekly', 'monthly', 'archive']
+        type: ['atomic', 'effort', 'source', 'moc', 'meeting', 'prompt', 'tool', 'person', 'place', 'area', 'daily', 'weekly', 'monthly', 'quarterly', 'yearly', 'archive']
       },
       dateFields: ['created', 'modified'],
       arrayFields: ['tags', 'related', 'aliases']
@@ -117,10 +117,49 @@ module.exports = () => {
     daily: {
       extends: 'base',
       required: ['title', 'type', 'created'],
-      optional: ['energy', 'mood', 'focus_area', 'wins_today'],
+      optional: ['energy', 'mood', 'sleep', 'focus_area', 'wins_today'],
       enums: {
-        energy: ['high', 'medium', 'low']
+        energy: ['high', 'medium', 'low'],
+        mood: ['excellent', 'good', 'okay', 'neutral', 'stressed', 'tired', 'sad', 'anxious', 'energized', 'motivated', 'creative', 'productive', 'happy', 'excited', 'bored', 'frustrated', 'angry']
       }
+    },
+
+    // Weekly notes (05-Calendar/Weekly)
+    weekly: {
+      extends: 'base',
+      required: ['title', 'type', 'created'],
+      optional: ['energy', 'mood', 'focus_area', 'wins_week', 'last_review'],
+      enums: {
+        energy: ['high', 'medium', 'low'],
+        mood: ['excellent', 'good', 'okay', 'neutral', 'stressed', 'tired', 'sad', 'anxious', 'energized', 'motivated', 'creative', 'productive', 'happy', 'excited', 'bored', 'frustrated', 'angry']
+      }
+    },
+
+    // Monthly notes (05-Calendar/Monthly)
+    monthly: {
+      extends: 'base',
+      required: ['title', 'type', 'created'],
+      optional: ['energy', 'mood', 'theme', 'focus_area', 'last_review'],
+      enums: {
+        energy: ['high', 'medium', 'low'],
+        mood: ['excellent', 'good', 'okay', 'neutral', 'stressed', 'tired', 'sad', 'anxious', 'energized', 'motivated', 'creative', 'productive', 'happy', 'excited', 'bored', 'frustrated', 'angry']
+      }
+    },
+
+    // Quarterly notes (05-Calendar/Quarterly)
+    quarterly: {
+      extends: 'base',
+      required: ['title', 'type', 'created'],
+      optional: ['focus_area', 'theme', 'last_review'],
+      enums: {}
+    },
+
+    // Yearly notes (05-Calendar/Yearly)
+    yearly: {
+      extends: 'base',
+      required: ['title', 'type', 'created'],
+      optional: ['focus_area', 'theme', 'last_review'],
+      enums: {}
     },
 
     // Prompt notes (99-System/copilot-custom-prompts)

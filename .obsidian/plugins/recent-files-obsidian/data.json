@@ -1,200 +1,168 @@
 {
   "recentFiles": [
     {
-      "basename": "Emojify",
-      "path": "07-Prompts/Drafts/copilot-custom-prompts/Emojify.md"
-    },
-    {
-      "basename": "Untitled 1",
-      "path": "+Inbox/Untitled 1.md"
-    },
-    {
-      "basename": "👁️Dashboard",
-      "path": "👁️Dashboard.md"
-    },
-    {
-      "basename": "Make longer",
-      "path": "07-Prompts/Drafts/copilot-custom-prompts/Make longer.md"
-    },
-    {
-      "basename": "Explain like I am 5",
-      "path": "07-Prompts/Drafts/copilot-custom-prompts/Explain like I am 5.md"
-    },
-    {
-      "basename": "🧭 Review HQ",
-      "path": "🧭 Review HQ.md"
-    },
-    {
-      "basename": "00-Tutorial-Guide",
-      "path": "00-Meta/Tutorial/00-Tutorial-Guide.md"
-    },
-    {
-      "basename": "01-Day-One",
-      "path": "00-Meta/Tutorial/01-Day-One.md"
-    },
-    {
-      "basename": "Vault-Dash-Missing",
-      "path": "99-System/Vault-Dash-Missing.base"
-    },
-    {
-      "basename": "Active-Types-base",
-      "path": "99-System/Active-Types-base.base"
-    },
-    {
-      "basename": "Session Memory",
-      "path": "99-System/Session Memory.md"
-    },
-    {
-      "basename": "⚡ Automation Menu",
-      "path": "⚡ Automation Menu.md"
-    },
-    {
-      "basename": "Tutorial - Effort - Master Origin Vault",
-      "path": "03-Efforts/On/Tutorial - Effort - Master Origin Vault.md"
-    },
-    {
-      "basename": "Places & Travel",
-      "path": "02-Dots/400-Places/Places & Travel.md"
-    },
-    {
-      "basename": "+Inbox",
-      "path": "+Inbox/+Inbox.md"
-    },
-    {
-      "basename": "Tutorial - Tool - Excalidraw",
-      "path": "02-Dots/500-Tools/Tutorial - Tool - Excalidraw.md"
-    },
-    {
-      "basename": "400-Places",
-      "path": "02-Dots/400-Places/400-Places.md"
-    },
-    {
-      "basename": "Tutorial - Person - Dr. Maya Chen",
-      "path": "02-Dots/300-People/Tutorial - Person - Dr. Maya Chen.md"
-    },
-    {
-      "basename": "Process inbox note",
-      "path": "99-System/copilot-custom-prompts/Process inbox note.md"
-    },
-    {
-      "basename": "Maturity Evolve",
-      "path": "02-Dots/100-Atomics/Concepts/Maturity Evolve.md"
-    },
-    {
-      "basename": "BOAT notes",
-      "path": "02-Dots/100-Atomics/Concepts/BOAT notes.md"
-    },
-    {
-      "basename": "Automations via fastkey",
-      "path": "+Inbox/Automations via fastkey.md"
-    },
-    {
-      "basename": "02-Dots",
-      "path": "02-Dots/02-Dots.md"
-    },
-    {
-      "basename": "100-Atomics",
-      "path": "02-Dots/100-Atomics/100-Atomics.md"
-    },
-    {
-      "basename": "CIS_MATURITY",
-      "path": "99-System/CIS/CIS_MATURITY.md"
-    },
-    {
-      "basename": "area-body",
-      "path": "Templates/Body/area-body.md"
-    },
-    {
-      "basename": "🍓Maturity Garden",
-      "path": "01-MOCs/🍓Maturity Garden.md"
-    },
-    {
-      "basename": "Area Filled Out",
-      "path": "Templates/_Examples/Area Filled Out.md"
-    },
-    {
-      "basename": "new-area",
-      "path": "Templates/Create/new-area.md"
-    },
-    {
-      "basename": "new-area-auto",
-      "path": "Templates/Create/new-area-auto.md"
-    },
-    {
-      "basename": "CHANGELOG",
-      "path": "CHANGELOG.md"
+      "basename": "VAULT_REPORT",
+      "path": "VAULT_REPORT.md"
     },
     {
       "basename": "🏡Home",
       "path": "🏡Home.md"
     },
     {
-      "basename": "🎮Gamification Dashboard",
-      "path": "00-Meta/🎮Gamification Dashboard.md"
+      "basename": "TASKS",
+      "path": "TASKS.md"
     },
     {
-      "basename": "VAULT_REPORT",
-      "path": "VAULT_REPORT.md"
+      "basename": "CIS_MATURITY",
+      "path": "99-System/CIS/CIS_MATURITY.md"
     },
     {
       "basename": "📅 Calendar Period Architecture Setup",
       "path": "05-Calendar/📅 Calendar Period Architecture Setup.md"
     },
     {
-      "basename": "Note Evolver",
-      "path": "99-System/copilot-custom-prompts/Note Evolver.md"
+      "basename": "📅 Calendar Review Hub",
+      "path": "05-Calendar/📅 Calendar Review Hub.md"
     },
     {
-      "basename": "🏷️My PKM Tags",
-      "path": "+Inbox/🏷️My PKM Tags.md"
+      "basename": "Weekly Report 2026-W09",
+      "path": "05-Calendar/Weekly/Weekly Report 2026-W09.md"
+    },
+    {
+      "basename": "📊 Calendar System Dashboard",
+      "path": "05-Calendar/📊 Calendar System Dashboard.md"
+    },
+    {
+      "basename": "👁️Dashboard",
+      "path": "👁️Dashboard.md"
+    },
+    {
+      "basename": "CHANGELOG",
+      "path": "CHANGELOG.md"
+    },
+    {
+      "basename": "Automations via fastkey",
+      "path": "+Inbox/Automations via fastkey.md"
+    },
+    {
+      "basename": "Claude Skills for PKM",
+      "path": "+Inbox/Claude Skills for PKM.md"
     },
     {
       "basename": "Tutorial - Raw Capture (Coffee Chat)",
       "path": "+Inbox/Tutorial - Raw Capture (Coffee Chat).md"
     },
     {
-      "basename": "2026-02-05",
-      "path": "05-Calendar/Daily/2026-02-05.md"
+      "basename": "Tutorial - Raw Capture (Mycelium)",
+      "path": "+Inbox/Tutorial - Raw Capture (Mycelium).md"
     },
     {
-      "basename": "Query - Active Projects",
-      "path": "Templates/Queries/Query - Active Projects.md"
+      "basename": "Guide — YAML Orchestrator",
+      "path": "00-Meta/Documentation/Guide — YAML Orchestrator.md"
     },
     {
-      "basename": "🔧PKM Template Refactoring Plan",
-      "path": "00-Meta/Documentation/PKM/🔧PKM Template Refactoring Plan.md"
+      "basename": "🔧Scripts Reference",
+      "path": "00-Meta/Documentation/PKM/🔧Scripts Reference.md"
     },
     {
-      "basename": "Prompt Meta-Skills Playbook",
-      "path": "00-Meta/Documentation/Prompt Meta-Skills Playbook.md"
+      "basename": "Custom Callout System",
+      "path": "00-Meta/Documentation/Custom Callout System.md"
     },
     {
-      "basename": "Templater, YAML auto-maturity-script",
-      "path": "Templates/Scripts/Templater, YAML auto-maturity-script.md"
+      "basename": "🏷️My PKM Tags",
+      "path": "00-Meta/Documentation/PKM/🏷️My PKM Tags.md"
     },
     {
-      "basename": "Templater, YAML auto-maturity",
-      "path": "Templates/Scripts/Templater, YAML auto-maturity.md"
+      "basename": "PKM Graph Overview",
+      "path": "00-Meta/Documentation/PKM/PKM Graph Overview.md"
     },
     {
-      "basename": "MOC - Areas",
-      "path": "01-MOCs/MOC - Areas.md"
+      "basename": "GTD Contexts Guide",
+      "path": "00-Meta/Documentation/PKM/GTD Contexts Guide.md"
     },
     {
-      "basename": "MOC - Visual Identity",
-      "path": "01-MOCs/MOC - Visual Identity.md"
+      "basename": "✅My PKM Tasks",
+      "path": "00-Meta/Documentation/PKM/✅My PKM Tasks.md"
     },
     {
-      "basename": "+About Templatesℹ️",
-      "path": "Templates/+About Templatesℹ️.md"
+      "basename": "100-Atomics",
+      "path": "02-Dots/100-Atomics/100-Atomics.md"
     },
     {
-      "basename": "Visual hotkeys",
-      "path": "00-Meta/Documentation/Visual hotkeys.md"
+      "basename": "Surfacing - Connection Ritual",
+      "path": "02-Dots/100-Atomics/Surfacing - Connection Ritual.md"
     },
     {
-      "basename": "Multi-Agent Orchestrator",
-      "path": "99-System/copilot-custom-prompts/Multi-Agent Orchestrator.md"
+      "basename": "Surfacing - Signal Design",
+      "path": "02-Dots/100-Atomics/Surfacing - Signal Design.md"
+    },
+    {
+      "basename": "⚡Workflow Quick Reference",
+      "path": "00-Meta/⚡Workflow Quick Reference.md"
+    },
+    {
+      "basename": "Performance Metrics",
+      "path": "00-Meta/Documentation/Performance Metrics.md"
+    },
+    {
+      "basename": "08-Connections-Revealed",
+      "path": "00-Meta/Tutorial/08-Connections-Revealed.md"
+    },
+    {
+      "basename": "07-Day-Seven",
+      "path": "00-Meta/Tutorial/07-Day-Seven.md"
+    },
+    {
+      "basename": "06-Day-Six",
+      "path": "00-Meta/Tutorial/06-Day-Six.md"
+    },
+    {
+      "basename": "05-Day-Five",
+      "path": "00-Meta/Tutorial/05-Day-Five.md"
+    },
+    {
+      "basename": "04-Day-Four",
+      "path": "00-Meta/Tutorial/04-Day-Four.md"
+    },
+    {
+      "basename": "03-Day-Three",
+      "path": "00-Meta/Tutorial/03-Day-Three.md"
+    },
+    {
+      "basename": "02-Day-Two",
+      "path": "00-Meta/Tutorial/02-Day-Two.md"
+    },
+    {
+      "basename": "01-Day-One",
+      "path": "00-Meta/Tutorial/01-Day-One.md"
+    },
+    {
+      "basename": "00-Tutorial-Guide",
+      "path": "00-Meta/Tutorial/00-Tutorial-Guide.md"
+    },
+    {
+      "basename": "Tutorial - MOC - Growth Patterns",
+      "path": "01-MOCs/Tutorial - MOC - Growth Patterns.md"
+    },
+    {
+      "basename": "Tutorial - Effort - Master Origin Vault",
+      "path": "03-Efforts/On/Tutorial - Effort - Master Origin Vault.md"
+    },
+    {
+      "basename": "Tutorial - Weekly - 2026-W05",
+      "path": "05-Calendar/Weekly/Tutorial - Weekly - 2026-W05.md"
+    },
+    {
+      "basename": "Tutorial - Daily - 2026-01-27",
+      "path": "05-Calendar/Daily/Tutorial - Daily - 2026-01-27.md"
+    },
+    {
+      "basename": "VAULT-REPORT",
+      "path": "00-Meta/VAULT-REPORT.md"
+    },
+    {
+      "basename": "📍Note Classification Guide",
+      "path": "00-Meta/📍Note Classification Guide.md"
     }
   ],
   "omittedPaths": [],

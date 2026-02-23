@@ -1,12 +1,12 @@
 ---
-title: Raw Capture - Coffee Chat
+title: "Raw Capture - Coffee Chat"
 type: inbox
-tags: #📥inbox,#📤seed,#📋tutorial
 status: ✅completed
+created: "2026-01-29"
+modified: "2026-02-03"
 processed: true
-processed_to: [[Tutorial - Meeting - Coffee with Maya]]
-created: 2026-01-29
-modified: 2026-02-03
+processed_to: 
+  - "Tutorial - Meeting - Coffee with Maya"
 ---
 
 

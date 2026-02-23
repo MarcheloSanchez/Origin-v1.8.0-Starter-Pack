@@ -2,15 +2,15 @@
 up: "[[🗺️My PKM MOC]]"
 title: Claude Skills for PKM
 type: atomic
-tags:
+tags: 
+  - 💡idea
   - 📋documentation
   - 🤖ai
-  - 💡idea
 status: 🔄active
 maturity: 🪴sapling
-created: 2025-01-23
-modified: 2025-01-23
-related:
+created: "2025-01-23"
+modified: "2025-01-23"
+related: 
   - "[[🗺️My PKM MOC]]"
 ---
 

@@ -10,6 +10,98 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
+# 23/02/26
+- Added [[base]]
+- Added [[🏡Home]]
+- Modified [[📍Note Classification Guide]]
+- Modified [[⚡Workflow Quick Reference]]
+- Modified [[VAULT-REPORT]]
+- Modified [[08-Connections-Revealed]]
+- Modified [[07-Day-Seven]]
+- Modified [[06-Day-Six]]
+- Modified [[05-Day-Five]]
+- Modified [[04-Day-Four]]
+- Modified [[03-Day-Three]]
+- Modified [[02-Day-Two]]
+- Modified [[🗺️ROADMAP - Origin v2.0 Lifetime Vault]]
+- Modified [[🏷️My PKM Tags]]
+- Modified [[🔍My PKM Queries]]
+- Added [[QuickAdd Audit Results]]
+- Modified [[PKM Graph Overview]]
+- Added [[Implementation Plan - Vault Optimization]]
+- Modified [[Performance Metrics]]
+- Modified [[Guide — YAML Orchestrator]]
+- Modified [[Custom Callout System]]
+- Modified [[TASKS]]
+- Modified [[glossary]]
+- Added [[CLAUDE]]
+- Added [[CHANGELOG]]
+- Modified [[Tutorial - Weekly - 2026-W05]]
+- Added [[2026-02-23]]
+- Modified [[Tutorial - Daily - 2026-01-27]]
+- Added [[2026-02-18]]
+- Modified [[+Inbox]]
+- Modified [[Tutorial - Source - Thinking in Systems]]
+- Modified [[Surfacing - Signal Design]]
+- Modified [[Surfacing - Connection Ritual]]
+- Modified [[Tutorial - MOC - Growth Patterns]]
+- Added [[MOC - Bases]]
+- Modified [[Claude Skills for PKM]]
+- Modified [[Tutorial - Raw Capture (Mycelium)]]
+- Modified [[Tutorial - Raw Capture (Coffee Chat)]]
+- Modified [[Automations via fastkey]]
+- Modified [[+ About Inbox ℹ️]]
+---
+# 18/02/26
+- Added [[Daily-View]] — new `.base` file with Created Today + Modified Today tabs (vault-wide)
+- Fixed [[Active-Types-base]] — removed phantom `Insights` view (type not in vault schema); added Meetings, People, Places, Tools, Areas views
+- Fixed [[Vault-Dash-Missing]] — repaired broken MOCs filter (was double-negated `not:`); removed invalid `file.backlinks` / `file.links` fields; removed Insights view
+- Fixed [[_System_data]] — `modified` → `file.mtime` in properties; `not x` → `!x` in view filters; unquoted `order` field
+- Added [[MOC - Bases]] — MOC linking all base files with live index query and filter syntax reference table
+- Added `Templates/Static/base.md` — scaffold template for new base files with all common filter patterns
+---
+# 15/02/26
+- Added [[quick-prompt]]
+- Added [[Query - Newsletter Queue]]
+- Added [[new-tool]]
+- Added [[new-tool-auto]]
+- Added [[new-source]]
+- Added [[new-source-auto]]
+- Added [[new-quick-prompt]]
+- Added [[new-prompt]]
+- Added [[new-prompt-auto]]
+- Added [[new-place]]
+- Added [[new-place-auto]]
+- Added [[new-person]]
+- Added [[new-person-auto]]
+- Added [[new-moc]]
+- Added [[new-moc-auto]]
+- Added [[new-meeting]]
+- Added [[new-meeting-auto]]
+- Added [[new-effort-auto]]
+- Added [[new-effort]]
+- Added [[new-atomic]]
+- Added [[new-atomic-auto]]
+- Added [[new-area]]
+- Added [[new-area-auto]]
+- Modified [[area-body]]
+- Added [[👁️Dashboard]]
+- Added [[🎯GTD Command Center]]
+- Modified [[_Metrics Cache]]
+- Added [[🚀Vault Migration Guide]]
+- Added [[🔧Scripts Reference]]
+- Added [[🔢My PKM Metadata]]
+- Added [[🔁My PKM Workflows]]
+- Added [[📦Template System Guide]]
+- Added `CIS_TYPE.md`
+- Added `CIS_PROMPT_STATUS.md`
+- Modified `CIS_MATURITY.md`
+- Added `CIS_INTENT.md`
+- Added [[⚡ Automation Menu]]
+- Added [[07-Prompts__Prompts_org__Templater prompts__PP🔥🧾 TEMPLATE_Comprehension_and_Summarization - Detail 1.20260214-005715]]
+- Added prompts and updated its metadata to fit Origin vault.
+- ...and 920 more notes
+---
 # 10/02/26
 - Added [[Query - Newsletter Queue]]
 - Added [[new-effort-auto]]
@@ -130,12 +222,6 @@ template-status: origin_production
 - Added files from AI updated Origin_Starter PACK, like - [[🧭 Review HQ|Review Hub]], [[🎮Gamification Dashboard]], [[🎮Gamification Quick Reference]], [[🎮My PKM Gamification]], [[GTD Contexts Guide]], [[📍Note Classification Guide]] 
 - [[MOC - Life Dashboard]] ... hmm maybe I will transfer from Main the MOCs later on
 - Changed names to capitals for [[CHANGELOG]], [[RELEASE NOTES]], [[BACKLOG]]
-
-# LAST RELEASE
----
-# 04/11/25
-- Added tags #🪵log, #📋about
-- Tady přidávám co změním. Držím to vždy krátce informativně. 
 # new-old
 
 ---

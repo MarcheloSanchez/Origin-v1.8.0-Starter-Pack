@@ -54,17 +54,48 @@ views:
       - status
       - title
   - type: table
+    name: Meetings — All
+    filters:
+      and:
+        - type == "meeting"
+    order:
+      - status
+      - title
+  - type: table
+    name: People — All
+    filters:
+      and:
+        - type == "person"
+    order:
+      - title
+  - type: table
+    name: Places — All
+    filters:
+      and:
+        - type == "place"
+    order:
+      - title
+  - type: table
+    name: Tools — All
+    filters:
+      and:
+        - type == "tool"
+    order:
+      - status
+      - title
+  - type: table
+    name: Areas — All
+    filters:
+      and:
+        - type == "area"
+    order:
+      - status
+      - title
+  - type: table
     name: System — All
     filters:
       and:
         - type == "system"
-    order:
-      - title
-  - type: table
-    name: Insights — All
-    filters:
-      and:
-        - type == "insight"
     order:
       - title
   - type: table

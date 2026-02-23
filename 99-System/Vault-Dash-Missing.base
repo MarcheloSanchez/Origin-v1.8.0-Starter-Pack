@@ -15,25 +15,10 @@ views:
   - type: table
     name: MOCs — All
     filters:
-      not:
-        - '!type.contains("moc")'
-        - and:
-            - file.folder.startsWith("01-MOCs")
+      and:
+        - type == "moc"
     order:
-      - file.name
-      - file.mtime
-      - file.ctime
-      - tags
-      - file.backlinks
-    sort:
-      - property: file.basename
-        direction: ASC
-      - property: file.name
-        direction: ASC
-      - property: file.links
-        direction: ASC
-    columnSize:
-      note.title: 242
+      - title
   - type: table
     name: Efforts — All
     filters:
@@ -74,13 +59,6 @@ views:
     filters:
       and:
         - type == "system"
-    order:
-      - title
-  - type: table
-    name: Insights — All
-    filters:
-      and:
-        - type == "insight"
     order:
       - title
   - type: table

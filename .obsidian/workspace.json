@@ -4,41 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "a119f9d22de34d49",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "d3ebf5c0bf5f4993",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "👁️Dashboard.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "👁️Dashboard"
-            }
-          },
-          {
-            "id": "b6ac28227ba8cc60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07-Prompts/Drafts/copilot-custom-prompts/Emojify.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Emojify"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -50,7 +29,7 @@
       {
         "id": "9398b3d1c1641ae0",
         "type": "tabs",
-        "dimension": 57.98319327731093,
+        "dimension": 58.932238193018485,
         "children": [
           {
             "id": "bc73af86199f4c7f",
@@ -59,7 +38,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -97,25 +76,23 @@
       {
         "id": "3b7e11647295af6d",
         "type": "tabs",
-        "dimension": 42.016806722689076,
+        "dimension": 41.067761806981515,
         "children": [
           {
             "id": "533051e1655cce27",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "07-Prompts/Drafts/copilot-custom-prompts/Emojify.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for Emojify"
+              "title": "File properties"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 221.5
   },
   "right": {
     "id": "c1450ef47511be38",
@@ -216,8 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,43 +218,43 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b6ac28227ba8cc60",
+  "active": "d3ebf5c0bf5f4993",
   "lastOpenFiles": [
-    "+Inbox/Untitled 1.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥🧾 TEMPLATE_Comprehension_and_Summarization - Detail 1.20260214-005715.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥📚 TEMPLATE_Learn_notes - Detail 1.20260214-005714.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥💼 TEMPLATE_Career - Detail 1.20260214-005714.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥💡 TEMPLATE_Personal_Growth - Detail 1.20260214-005714.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥 🧪 TEMPLATE_QA_and_Testing - Detail 1.20260214-005713.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥 🧠 TEMPLATE_Mastery_Prompts_ - Detail 1.20260214-005713.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥 🗣 TEMPLATE_Voice_Simulation - Detail 1.20260214-005713.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥 📥 TEMPLATE_Inbox-Unfiltered - Detail 1.20260214-005713.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP🔥 📣 TEMPLATE_Content_&_Marketing - Detail 1.20260214-005712.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP 🧰 Smart Tagger - Detail.20260214-005712.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Templater prompts__PP 🧰 Smart Review - Detail.20260214-005712.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Prompt Template v2 (Filled).20260214-005712.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__Prompt Template v2 (empty).20260214-005711.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾Book summarize - Detail.20260214-005711.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 TEMPLATE_Comprehension_and_Summarization - Detail.20260214-005711.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Summarize long text&docs - Detail.20260214-005710.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Scientific Data Visualizer - Detail.20260214-005710.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Commentariat - Detail.20260214-005709.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Act as a Synonym Finder - Detail.20260214-005709.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Act as a Idea Clarifier - Detail.20260214-005709.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧾 Act as a Fancy Title Generator - Detail.20260214-005709.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧪 Cyber Security Specialist - Detail.20260214-005708.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧪 Act as a Software Quality Assurance Tester - Detail.20260214-005708.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧠Act as a Diagram generator - Detail.20260214-005708.md",
-    "_backups/normalize-snapshots/07-Prompts__Prompts_org__PP🔥🧠 Prompt Generator - Detail.20260214-005707.md",
+    "+Inbox/Untitled.md",
+    "VAULT_REPORT.md",
+    "🏡Home.md",
+    "TASKS.md",
+    "_backups/normalize-snapshots/+Inbox__Untitled.20260223-211553.md",
     "_backups/normalize-snapshots",
     "_backups",
-    "99-System/Scripts/normalize_prompts.js",
+    "99-System/CIS/CIS_MATURITY.md",
+    "02-Dots/500-Tools/FQWEF.md",
+    "+Inbox/FASDF.md",
+    "+Inbox/FDQF.md",
+    "02-Dots/100-Atomics/FQWEF.md",
+    "02-Dots/300-People/320-PROFESSIONAL/FQWEF.md",
+    "02-Dots/300-People/320-PROFESSIONAL",
+    "05-Calendar/📅 Calendar Period Architecture Setup.md",
+    "05-Calendar/📅 Calendar Review Hub.md",
+    "05-Calendar/Weekly/Weekly Report 2026-W09.md",
+    "05-Calendar/📊 Calendar System Dashboard.md",
+    "👁️Dashboard.md",
+    "05-Calendar/Daily/2026-02-18.md",
+    "05-Calendar/Daily/2026-02-05.md",
+    "05-Calendar/Daily/2026-02-03.md",
+    "05-Calendar/Daily/2025-10-29.md",
+    "05-Calendar/Daily/2025-10-28.md",
+    "05-Calendar/Daily/2025-10-27.md",
+    "05-Calendar/Daily/2025-10-21.md",
+    "05-Calendar/Daily/2025-10-10.md",
+    "05-Calendar/Daily/2025-10-02.md",
+    "05-Calendar/Daily/2025-09-29.md",
+    "CHANGELOG.md.tmp.28288.1771452936993",
+    "99-System/_System_data.base",
+    "99-System/_System_data.base.tmp.28288.1771451945423",
     "99-System/Vault-Dash-Missing.base",
     "99-System/Active-Types-base.base",
-    "Templates/Create/new-tool-auto.md.tmp.33684.1770733658151",
-    "Templates/Create/new-atomic.md.tmp.33684.1770733614357",
-    "99-System/Scripts/Templater_script.js.tmp.33684.1770733541380",
-    "99-System/Scripts/Templater_script.js.tmp.33684.1770733533007",
-    "99-System/Scripts/Templater_script.js.tmp.33684.1770733523233"
+    "99-System/Daily-View.base",
+    "99-System/Active-Types-base.base.tmp.28288.1771451239303"
   ]
 }

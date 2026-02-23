@@ -86,7 +86,13 @@ The place where you always come back, that's **home**. 🦔🍎
 ---
 ## Rychlý přístup
 
-## 🧭 Quick Access 
+## 📊 Quick Access Dashboards
+- [[🧭 Review HQ|👁️ Review & Process Notes]]
+- [[🎯GTD Command Center|🎯 Workflow & Tasks]]
+- [[🎮Gamification Dashboard|🎮 Progress Tracking]]
+- [[📈Vault Analytics|📈 Metrics & Insights]]
+
+## 🧭 Quick Access
 - [[Performance Metrics]]
 - [[Views]]
 - [[🌱Incubator]]

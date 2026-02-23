@@ -1,12 +1,12 @@
 ---
-title: Raw Capture - Mycelium
+title: "Raw Capture - Mycelium"
 type: inbox
-tags: #📥inbox,#📤seed,#📋tutorial
 status: ✅completed
+created: "2026-01-27"
+modified: "2026-02-03"
 processed: true
-processed_to: [[Tutorial - Idea - Mycelium Networks]]
-created: 2026-01-27
-modified: 2026-02-03
+processed_to: 
+  - "Tutorial - Idea - Mycelium Networks"
 ---
 
 

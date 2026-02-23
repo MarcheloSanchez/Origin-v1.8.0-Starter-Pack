@@ -7,7 +7,7 @@ tags:
   - 🔧scripts
 status: 🔄active
 created: 2026-02-15
-modified: 2026-02-15
+modified: 2026-02-17
 related:
   - "[[🔁My PKM Workflows]]"
   - "[[📦Template System Guide]]"
@@ -19,7 +19,7 @@ related:
 
 > [!info]+ **⚡ Script Ecosystem**
 > **Location**: `99-System/Scripts/`
-> **Count**: 22 JavaScript scripts
+> **Count**: 25 JavaScript scripts
 > **Triggers**: Templater user scripts, QuickAdd macros, or manual invocation
 > **Philosophy**: Automate repetitive vault operations while keeping the user in control
 
@@ -30,7 +30,7 @@ related:
 | Category | Scripts | Purpose |
 |----------|---------|---------|
 | **Core Template & Metadata** | 3 | Template composition, YAML normalization, schema validation |
-| **Metrics & Reporting** | 4 | Vault health metrics, weekly reports, maturity suggestions |
+| **Metrics & Reporting** | 7 | Vault health metrics, weekly/monthly/quarterly/yearly reports, maturity suggestions |
 | **Inbox Processing** | 5 | Batch triage, smart classification, type-specific quick processing |
 | **Status & Maturity** | 3 | Status progression, visual picker, maturity evolution |
 | **Archive & Maintenance** | 2 | Single-note archival, bulk daily note archival |
@@ -182,6 +182,63 @@ QuickAdd > Macros > 📊 Update Metrics Cache
 **Report Sections**: Week summary, metrics snapshot, completed tasks, inbox throughput, connection growth, maturity promotions, notes created/modified during the week.
 
 **Date Handling**: Sets week boundaries Monday 00:00 to Sunday 23:59, extracts ISO week number.
+
+---
+
+### `generate-monthly-report.js`
+
+> Creates a structured monthly report by aggregating weekly reports and vault data.
+
+| Detail | Value |
+|--------|-------|
+| **Trigger** | QuickAdd macro (🧹 Maintain > 📊 Generate Monthly Report) |
+| **Inputs** | Prompts for `YYYY-MM` period; blank defaults to current month |
+| **Outputs** | Creates `05-Calendar/Monthly/Monthly Report YYYY-MM.md` |
+| **Dependencies** | Obsidian Vault API, MetadataCache, QuickAdd API |
+
+**Report Sections**: Key Metrics, Weekly Summaries (links to weekly reports), Area Health Check (5 life areas via backlinks), Effort Portfolio (grouped by status), Maturity Pipeline, Monthly Highlights, Month Summary, Next Month Focus, 4-Week Trend (DataviewJS).
+
+**Data Flow**: Finds weekly reports in `05-Calendar/Weekly/` whose ISO weeks overlap the target month. Parses metrics tables via regex. **Fallback**: If <2 weekly reports found, queries vault directly using `file.stat.ctime/mtime` date filtering.
+
+**Past-Period Support**: On launch, prompts for `YYYY-MM` (e.g. `2025-06`). Leave blank or accept the default to generate for the current month. Allows generating retroactive reports for any past month.
+
+---
+
+### `generate-quarterly-report.js`
+
+> Creates a structured quarterly report by aggregating monthly reports and vault data.
+
+| Detail | Value |
+|--------|-------|
+| **Trigger** | QuickAdd macro (🧹 Maintain > 📊 Generate Quarterly Report) |
+| **Inputs** | Prompts for `YYYY-Q#` period; blank defaults to current quarter |
+| **Outputs** | Creates `05-Calendar/Quarterly/Quarterly Report YYYY-Q#.md` |
+| **Dependencies** | Obsidian Vault API, MetadataCache, QuickAdd API |
+
+**Report Sections**: Key Metrics, Monthly Summaries (links to monthly reports), Area Health Trends (month-over-month comparison), Major Initiatives (high-priority active efforts), Maturity Pipeline, Quarter Summary, Strategic Insights, Next Quarter Focus, 12-Week Trend (DataviewJS).
+
+**Data Flow**: Finds monthly reports in `05-Calendar/Monthly/` for the quarter's 3 months. Parses metrics tables and area health tables via regex for trend tracking. **Fallback**: If <2 monthly reports found, queries vault directly.
+
+**Past-Period Support**: On launch, prompts for `YYYY-Q#` (e.g. `2025-Q3`). Leave blank or accept the default to generate for the current quarter.
+
+---
+
+### `generate-yearly-report.js`
+
+> Creates a structured yearly report by aggregating quarterly reports and vault data.
+
+| Detail | Value |
+|--------|-------|
+| **Trigger** | QuickAdd macro (🧹 Maintain > 📊 Generate Yearly Report) |
+| **Inputs** | Prompts for `YYYY` period; blank defaults to current year |
+| **Outputs** | Creates `05-Calendar/Yearly/Yearly Report YYYY.md` |
+| **Dependencies** | Obsidian Vault API, MetadataCache, QuickAdd API |
+
+**Report Sections**: Key Metrics, Quarterly Summaries (links to quarterly reports), Annual Area Overview (backlinks + yearly activity), Knowledge Growth (atomics/sources/MOCs created), Maturity Pipeline, System Maturity (connection density, orphans, review consistency), Year Summary, Annual Reflections, Next Year Vision, 12-Month Trend (DataviewJS).
+
+**Data Flow**: Finds quarterly reports in `05-Calendar/Quarterly/` for the target year. Parses metrics tables via regex. Always queries: knowledge growth counts, connection density, review consistency. **Fallback**: If <2 quarterly reports found, queries vault directly.
+
+**Past-Period Support**: On launch, prompts for `YYYY` (e.g. `2025`). Leave blank or accept the default to generate for the current year.
 
 ---
 
@@ -470,6 +527,9 @@ Supports dry-run mode for preview without writes.
 | `metrics-core.js` | Metrics | Templater (library) | Metric calculations |
 | `update-metrics-cache.js` | Metrics | QuickAdd | Cache refresh |
 | `generate-weekly-report.js` | Metrics | QuickAdd | Weekly report creation |
+| `generate-monthly-report.js` | Metrics | QuickAdd | Monthly report creation |
+| `generate-quarterly-report.js` | Metrics | QuickAdd | Quarterly report creation |
+| `generate-yearly-report.js` | Metrics | QuickAdd | Yearly report creation |
 | `maturity-promoter.js` | Metrics | Templater | Promotion suggestions |
 | `batch-process-inbox.js` | Inbox | QuickAdd | Batch inbox triage |
 | `smart-classifier.js` | Inbox | QuickAdd/Templater | Content classification |
@@ -515,7 +575,8 @@ Supports dry-run mode for preview without writes.
 - [[📦Template System Guide]] — How templates use `Templater_script.js`
 - [[🔁My PKM Workflows]] — Where scripts fit in daily/weekly/monthly workflows
 - [[🚀Vault Migration Guide]] — Configuring scripts after forking
+- [[📅 Calendar Review Hub]] — Action center for all report generation scripts
 
 ---
 
-*Last Updated: 2026-02-15 | Status: 🔄active*
+*Last Updated: 2026-02-17 | Status: 🔄active*

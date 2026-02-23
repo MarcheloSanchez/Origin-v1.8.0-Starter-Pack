@@ -47,7 +47,7 @@ FLATTEN file.tags as tag
 WHERE !contains(tag, "system")
 GROUP BY tag
 SORT length(rows) DESC
-LIMIT 50
+LIMIT 20
 ```
 
 

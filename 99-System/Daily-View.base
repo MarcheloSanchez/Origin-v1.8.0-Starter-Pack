@@ -1,0 +1,40 @@
+properties:
+  title:
+    displayName: Title
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  file.folder:
+    displayName: Folder
+  file.ctime:
+    displayName: Created
+  file.mtime:
+    displayName: Modified
+views:
+  - type: table
+    name: Created Today
+    filters:
+      and:
+        - file.ctime >= today()
+    order:
+      - title
+      - type
+      - status
+      - file.folder
+      - file.ctime
+    sort: []
+  - type: table
+    name: Modified Today
+    filters:
+      and:
+        - file.mtime >= today()
+    order:
+      - title
+      - type
+      - status
+      - file.folder
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC

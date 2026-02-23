@@ -22,6 +22,9 @@ Central view of your temporal reflection system—see all your period reviews at
 > - System health metrics
 > - Links to setup and documentation
 
+> [!tip]+ **Action Center**
+> Visit [[📅 Calendar Review Hub]] for automated report generation and live review tracking.
+
 ---
 
 ## 🎯 Quick Navigation - Current Periods

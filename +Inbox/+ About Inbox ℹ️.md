@@ -2,13 +2,13 @@
 up: "[[+Inbox]]"
 title: About Inbox
 type: about
-tags:
-  - 📋about
+tags: 
   - 🎯capture
+  - 📋about
 status: 🔄active
-created: 2025-09-30
-modified: 2025-09-30
-related:
+created: "2025-09-30"
+modified: "2025-09-30"
+related: 
   - "[[👁️Dashboard]]"
   - "[[🔁My PKM Workflows]]"
   - "[[99-System]]"

@@ -138,6 +138,12 @@ template-status: origin_production
 - Registered QuickAdd macros: 📰 Generate Newsletter, 📋 Update Changelog
 - Added newsletter + changelog buttons to [[⚡ Automation Menu]]
 - Updated `yaml-meta-config.json`: added `newsletter` to field order
+# 21/02/26
+- **Documentation Update — Reflecting Vault Optimization v2.0 changes**
+- Updated [[🔢My PKM Metadata]] — fixed maturity emojis (`🌱seed` → `📤seed`, `🌿seedling` → `🌱seedling`), expanded status enum (+`⏸️paused`, `❌cancelled`, `⚠️blocked`), added validation & automation tools section (yaml_validator, maturity-promoter, metrics-core, query templates)
+- Updated [[🙂My PKM Icon Reference]] — corrected maturity icons to canonical values, rewrote status indicators to match CIS_STATUS (8 values)
+- Updated [[ℹ️My PKM Naming Convention]] — added query template naming pattern, documented full template folder structure (Queries, Calendar, Kanban, _Examples)
+- Updated [[CLAUDE.md]] — added new scripts (maturity-evolve, generate-weekly-report, metrics-core enhancements), template subfolders, `deadline` → `due` convention, canonical maturity values
 ---
 # 07/02/26
 - **Vault Optimization v2.0 — Priority 1: Foundation Fixes**

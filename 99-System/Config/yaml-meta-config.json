@@ -1,10 +1,9 @@
 {
-  "order": { 
-    "default": ["up","in","title","aliases","type","fileClass","cssclass","tags","status","maturity","priority","processing_priority","completeness","coverage_areas","action_required","created","modified","start","due","end","last_review","review_frequency","estimated_effort","completion_percentage","next_actions","capture_method","linked_notes_count","confidence_level","evidence_quality","read_status","rating_type","source_author","source_date","source_type","participants","location","meeting_type","action_items","audience","difficulty","prompt_category","prompt_type","prompt_status","intent","related","newsletter","see_also","related_concepts","related_ideas","role","org","company","email","phone","website","twitter","github","linkedin"] 
+  "order": {
+    "default": ["up","in","title","aliases","type","fileClass","cssclass","tags","status","maturity","priority","processing_priority","completeness","coverage_areas","action_required","created","modified","start","due","end","last_review","review_frequency","estimated_effort","completion_percentage","next_actions","energy","mood","sleep","focus_area","wins_today","wins_week","theme","context","blockers","outcome","capture_method","linked_notes_count","confidence_level","evidence_quality","domain","read_status","rating_type","rating","source_author","source_date","source_type","source_url","participants","location","meeting_type","meeting_date","duration","action_items","audience","difficulty","prompt_category","prompt_type","model_defaults","intent","pattern","summary","version","id","context_packs","prompt_subcategory","eval_score","last_run","language","owner","source","related","see_also","related_concepts","related_ideas","relationship","contact_method","last_interaction","areas_of_expertise","role","org","company","email","phone","website","twitter","github","linkedin","tool_category","mastery_level","usage_frequency","cost","platform"]
   },
-  "enums": { 
-    "status": ["📥inbox","🔄active","⏳waiting","✅completed","📦archived"],
-    "prompt_status": ["draft","active","winner","archived"]
+  "enums": {
+    "status": ["📥inbox","🔄active","⏳waiting","✅completed","📦archived","⏸️paused","❌cancelled","⚠️blocked"]
   },
   "toArray": ["tags","aliases"],
   "dateKeys": ["created","modified","start","due","end","last_review"],

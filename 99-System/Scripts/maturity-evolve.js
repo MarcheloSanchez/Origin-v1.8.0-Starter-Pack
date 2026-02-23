@@ -7,6 +7,15 @@ module.exports = async (args) => {
   const { app, Notice } = window;
   const QuickAdd = window.QuickAddApi;
 
+  // Canonical emoji values — keep in sync with metrics-core.js MATURITY_STAGES
+  const MV = {
+    SEED:      '📤seed',
+    SEEDLING:  '🌱seedling',
+    SAPLING:   '🪴sapling',
+    EVERGREEN: '🌲evergreen',
+    FRUIT:     '🍓fruit'
+  };
+
   try {
     const activeFile = app.workspace.getActiveFile();
     if (!activeFile) {
@@ -15,11 +24,11 @@ module.exports = async (args) => {
     }
 
     const stages = [
-      { label: "📤 Seed — raw capture, unprocessed", value: "📤seed" },
-      { label: "🌱 Seedling — initial thoughts added", value: "🌱seedling" },
-      { label: "🪴 Sapling — developing, needs refinement", value: "🪴sapling" },
-      { label: "🌲 Evergreen — mature, well-linked", value: "🌲evergreen" },
-      { label: "🍓 Fruit — polished, ready to share", value: "🍓fruit" }
+      { label: `📤 Seed — raw capture, unprocessed`,       value: MV.SEED      },
+      { label: `🌱 Seedling — initial thoughts added`,      value: MV.SEEDLING  },
+      { label: `🪴 Sapling — developing, needs refinement`, value: MV.SAPLING   },
+      { label: `🌲 Evergreen — mature, well-linked`,         value: MV.EVERGREEN },
+      { label: `🍓 Fruit — polished, ready to share`,        value: MV.FRUIT     }
     ];
 
     const cache = app.metadataCache.getFileCache(activeFile);

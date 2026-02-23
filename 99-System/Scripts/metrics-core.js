@@ -15,6 +15,37 @@
 
 module.exports = () => {
   // ============================================
+  // CANONICAL CONSTANTS (single source of truth)
+  // ============================================
+
+  /**
+   * Canonical maturity stages — single source of truth for emoji values, ranks, and thresholds.
+   * maturity-promoter.js and maturity-evolve.js keep their own local copies; when changing
+   * emoji or stage names update this object first and propagate to those files.
+   */
+  const MATURITY_STAGES = [
+    { value: '📤seed',       rank: 1, label: 'Seed — raw capture, unprocessed',          minOutlinks: 0, minInlinks: 0, minStabilityDays: 0   },
+    { value: '🌱seedling',   rank: 2, label: 'Seedling — initial thoughts added',         minOutlinks: 2, minInlinks: 1, minStabilityDays: 0   },
+    { value: '🪴sapling',    rank: 3, label: 'Sapling — developing, needs refinement',    minOutlinks: 5, minInlinks: 2, minStabilityDays: 30  },
+    { value: '🌲evergreen',  rank: 4, label: 'Evergreen — mature, well-linked',           minOutlinks: 10,minInlinks: 5, minStabilityDays: 90  },
+    { value: '🍓fruit',      rank: 5, label: 'Fruit — polished, ready to share',          minOutlinks: 0, minInlinks: 0, minStabilityDays: 0   }
+  ];
+
+  /**
+   * Canonical status values — must match CIS_STATUS.md and yaml_validator.js enums
+   */
+  const STATUS_VALUES = {
+    INBOX:     '📥inbox',
+    ACTIVE:    '🔄active',
+    WAITING:   '⏳waiting',
+    COMPLETED: '✅completed',
+    ARCHIVED:  '📦archived',
+    PAUSED:    '⏸️paused',
+    CANCELLED: '❌cancelled',
+    BLOCKED:   '⚠️blocked'
+  };
+
+  // ============================================
   // CONFIGURATION
   // ============================================
 
@@ -59,6 +90,15 @@ module.exports = () => {
            normalized === '🔄active' ||
            normalized.includes('in_progress') ||
            normalized.includes('in-progress');
+  };
+
+  /**
+   * Check if status indicates blocked state (distinct from waiting)
+   */
+  const isBlocked = (status) => {
+    if (!status) return false;
+    const normalized = String(status).toLowerCase();
+    return normalized.includes('blocked') || normalized === '⚠️blocked';
   };
 
   /**
@@ -430,13 +470,12 @@ module.exports = () => {
   const getMaturityCounts = (dv) => {
     try {
       const pages = dv.pages();
-      return {
-        seed: safeLength(pages.where(p => p.maturity === "📤seed")),
-        seedling: safeLength(pages.where(p => p.maturity === "🌱seedling")),
-        sapling: safeLength(pages.where(p => p.maturity === "🪴sapling")),
-        evergreen: safeLength(pages.where(p => p.maturity === "🌲evergreen")),
-        fruit: safeLength(pages.where(p => p.maturity === "🍓fruit"))
-      };
+      const counts = {};
+      for (const stage of MATURITY_STAGES) {
+        const key = [...stage.value].slice(1).join(''); // strip leading emoji code point
+        counts[key] = safeLength(pages.where(p => p.maturity === stage.value));
+      }
+      return counts;
     } catch (e) {
       console.error('metrics-core: getMaturityCounts error:', e);
       return { seed: 0, seedling: 0, sapling: 0, evergreen: 0, fruit: 0 };
@@ -589,6 +628,11 @@ module.exports = () => {
 
     // Helpers
     isActive,
-    safeLength
+    isBlocked,
+    safeLength,
+
+    // Constants (single source of truth)
+    STATUS_VALUES,
+    MATURITY_STAGES
   };
 };

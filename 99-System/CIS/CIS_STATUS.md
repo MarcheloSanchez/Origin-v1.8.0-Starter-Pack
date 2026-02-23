@@ -3,5 +3,6 @@
 ⏳waiting
 ✅completed
 📦archived
-❌cancel
+⏸️paused
+❌cancelled
 ⚠️blocked

@@ -89,8 +89,7 @@ const defaults = {
     ]
   },
   enums: {
-    status: ["📥inbox", "🔄active", "⏳waiting", "✅completed", "📦archived"],
-    prompt_status: ["draft", "active", "winner", "archived"]
+    status: ["📥inbox", "🔄active", "⏳waiting", "✅completed", "📦archived", "⏸️paused", "❌cancelled", "⚠️blocked"]
   },
   toArray: ["tags", "aliases"],
   dateKeys: ["created", "modified", "start", "due", "end", "last_review"],
@@ -247,6 +246,7 @@ const defaults = {
       const allowed = cfg.enums?.status || [];
 
       // Status normalization map - maps plain values to emoji-prefixed canonical values
+      // Canonical set matches CIS_STATUS.md and yaml_validator.js enums
       const statusMap = {
         // Plain → Emoji-prefixed
         "inbox": "📥inbox",
@@ -256,6 +256,7 @@ const defaults = {
         "archived": "📦archived",
         "paused": "⏸️paused",
         "cancelled": "❌cancelled",
+        "blocked": "⚠️blocked",
         // Common aliases
         "done": "✅completed",
         "complete": "✅completed",
@@ -263,7 +264,7 @@ const defaults = {
         "archive": "📦archived",
         "in_progress": "🔄active",
         "in-progress": "🔄active",
-        "blocked": "⏳waiting",
+        "cancel": "❌cancelled",
         "on_hold": "⏸️paused",
         "on-hold": "⏸️paused",
         "draft": "📥inbox"

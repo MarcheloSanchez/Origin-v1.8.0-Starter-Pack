@@ -18,20 +18,30 @@ module.exports = () => {
   // MATURITY STAGE CONFIGURATION
   // ============================================
 
+  // Canonical emoji values — keep in sync with metrics-core.js MATURITY_STAGES.
+  // Change emoji here only; STAGES below references these via variables.
+  const MV = {
+    SEED:      '📤seed',
+    SEEDLING:  '🌱seedling',
+    SAPLING:   '🪴sapling',
+    EVERGREEN: '🌲evergreen',
+    FRUIT:     '🍓fruit'
+  };
+
   const STAGES = {
     seed: {
-      value: '📤seed',
+      value: MV.SEED,
       rank: 1,
-      next: '🌱seedling',
+      next: MV.SEEDLING,
       criteria: {
         description: 'Raw capture, minimal context',
         exitCriteria: 'Basic metadata + folder move + 1 link'
       }
     },
     seedling: {
-      value: '🌱seedling',
+      value: MV.SEEDLING,
       rank: 2,
-      next: '🪴sapling',
+      next: MV.SAPLING,
       criteria: {
         minOutlinks: 2,
         minInlinks: 1,
@@ -40,9 +50,9 @@ module.exports = () => {
       }
     },
     sapling: {
-      value: '🪴sapling',
+      value: MV.SAPLING,
       rank: 3,
-      next: '🌲evergreen',
+      next: MV.EVERGREEN,
       criteria: {
         minOutlinks: 5,
         minInlinks: 2,
@@ -52,9 +62,9 @@ module.exports = () => {
       }
     },
     evergreen: {
-      value: '🌲evergreen',
+      value: MV.EVERGREEN,
       rank: 4,
-      next: '🍓fruit',
+      next: MV.FRUIT,
       criteria: {
         minOutlinks: 10,
         minInlinks: 5,
@@ -64,7 +74,7 @@ module.exports = () => {
       }
     },
     fruit: {
-      value: '🍓fruit',
+      value: MV.FRUIT,
       rank: 5,
       next: null,
       criteria: {

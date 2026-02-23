@@ -22,28 +22,64 @@ Marchelo (@marcel.9991@seznam.cz), building Origin PKM vault as a **template for
 | **Metadata** | YAML frontmatter; enforced field order via yaml-meta-config.json |
 | **v2.0 adaptability** | Core system should work for different vault scenarios (work-only, personal, mixed) without major refactoring |
 
-## Architecture (Origin)
-- **+Inbox:** Capture entry
-- **00-Meta:** System docs, checklists, guides, gamification
-- **01-MOCs:** Maps of Content (navigation hubs)
-- **02-Dots:** Atomic knowledge (Ideas, Concepts, Statements, Things, People, Places)
-- **03-Efforts:** Projects (On/, Ongoing/, Simmering/)
-- **04-Sources:** External references (Knowledge, Media, Guides, Meetings)
-- **05-Calendar:** Daily, Weekly, Monthly, Quarterly, Yearly notes
-- **06-Archive:** Completed/inactive
-- **07-Prompts:** Prompt Library (Active/, Drafts/, Archive/, 01-Docs/)
-- **99-System:** Scripts, Config, CIS enums, FileClass, AI prompts
-- **Templates:** 155 templates across 16 categories
+## Vault Architecture
+
+**8-layer PARA-inspired folder structure** with information flow: Capture → Process → Organize → Connect → Review → Archive
+
+| Folder | Role |
+|--------|------|
+| `+Inbox` | Quick capture entry point |
+| `00-Meta` | System documentation, checklists, guides, gamification |
+| `01-MOCs` | Maps of Content — navigation hubs |
+| `02-Dots` | Atomic knowledge (Ideas, Concepts, Statements, Things, People, Places) |
+| `03-Efforts` | Projects: `On/` (active), `Ongoing/`, `Simmering/` (background) |
+| `04-Sources` | External references: Knowledge, Media, Guides, Meetings |
+| `05-Calendar` | Periodic notes: Daily, Weekly, Monthly, Quarterly, Yearly |
+| `06-Archive` | Completed/inactive content |
+| `99-System` | Infrastructure: Scripts, Config, CIS enums, FileClasses, AI prompts, images |
+| `Templates` | 150+ templates across 15 categories |
+
+Root dashboards: `🏡Home.md` (main entry), `👁️Dashboard.md` (metrics), `🎯GTD Command Center.md`, `🧭 Review HQ.md`
+
+## Template System (Modular 3-Tier Architecture)
+
+Templates use **separation of concerns** — Meta (YAML) + Body (content) composed at creation time:
+
+- **Meta templates**: `Templates/Meta/{type}-meta.yaml.md` — YAML frontmatter blocks
+- **Body templates**: `Templates/Body/{type}-body.md` — content structure
+- **Static fallbacks**: `Templates/Static/{type}.md` — standalone, no Templater required
+- **Create templates**: `Templates/Create/new-{type}.md` (empty/inbox mode), `new-{type}-auto.md` (auto-active mode)
+- **Core snippets**: `Templates/Core/_nav-breadcrumb.md`, `_nav-wayfinder.md`, `_section-related.md`
+- **Query templates**: `Templates/Queries/Query - {Topic}.md` — Reusable Dataview/DataviewJS query blocks
+- **Calendar templates**: `Templates/Calendar/Template {Period}.md` — Daily, Weekly, Monthly, Quarterly, Yearly
+- **Kanban templates**: `Templates/Kanban/Template_Kanban*.md` — Board layouts
+- **Examples**: `Templates/_Examples/{Type} Filled Out.md` — Reference filled-out notes
+
+**Supported types**: atomic, effort, source, moc, meeting, area, person, place, tool, prompt
+
+The main template engine is `99-System/Scripts/Templater_script.js` which provides `inject_meta_if_missing()`, `add_chapters()`, `combine()`, `reset_body()`, `reset_meta()`, `reset_all()`. It resolves both modular and legacy paths with BOM/whitespace tolerance.
+
+## Automation Scripts (`99-System/Scripts/`)
 
 ## Key Scripts
 | Script | Purpose |
 |--------|---------|
-| Templater_script.js | Core template engine; inject_meta_if_missing(), combine(), reset_* functions |
-| yaml_orchestrator.js | YAML normalization/linting |
-| smart-classifier.js | Auto-suggest note type/folder/tag |
-| metrics-core.js | Vault health (inbox, stale notes, orphans) |
-| generate-weekly-report.js | Weekly aggregation |
-| maturity-promoter.js | Advance note maturity level |
+| `Templater_script.js` | Core template inclusion & composition engine |
+| `yaml_orchestrator.js` | YAML metadata reorder/normalize/lint (config: `99-System/Config/yaml-meta-config.json`) |
+| `yaml_validator.js` | YAML field type & required field validation |
+| `smart-classifier.js` | Intelligent note type/folder/tag suggestion from content |
+| `auto-metadata.js` | Automatic frontmatter population |
+| `batch-process-inbox.js` | Bulk inbox processing |
+| `quick-process-atomic.js` | Atomic note quick processing |
+| `quick-process-effort.js` | Effort quick processing |
+| `quick-process-source.js` | Source quick processing |
+| `maturity-promoter.js` | Note maturity promotion suggestions (link metrics & stability) |
+| `maturity-evolve.js` | QuickAdd picker for maturity stage changes |
+| `metrics-core.js` | Vault health metrics, gamification XP/levels, weekly stats |
+| `update-metrics-cache.js` | Metrics caching (inline field format for `dv.page()`) |
+| `generate-weekly-report.js` | Automated weekly report generator (QuickAdd macro) |
+| `archive_note.js` / `archive-old-dailies.js` | Archival automation |
+| `status-picker.js` / `status-progression.js` | Status workflow UI & automation |
 
 ## Quick Commands
 
@@ -53,27 +89,31 @@ Marchelo (@marcel.9991@seznam.cz), building Origin PKM vault as a **template for
 # Use Obsidian app -> Open folder as vault
 # Location: C:\Users\MarcelMachanec\Documents\_Foundation for ORIGIN\Origin_DEV_STARTER_PACK\Origin-v1.9.1-Starter-Pack
 
-# Find and list all scripts
-ls 99-System/Scripts/*.js
-
-# Check vault structure
-ls -d */ | head -15
+### YAML Frontmatter Schema
+```yaml
+up: "[[Parent]]"           # Breadcrumb navigation
+title: "Note Title"
+type: atomic | effort | source | moc | meeting | area | person | place | tool | prompt
+status: 📥inbox | 🔄active | ⏳waiting | ✅completed | 📦archived | ⏸️paused | ❌cancelled | ⚠️blocked
+maturity: 📤seed | 🌱seedling | 🪴sapling | 🌲evergreen | 🍓fruit
+priority: high | medium | low
+tags: []                   # Emoji-prefixed, e.g. 💡atomic, 🚀project, 📚source
+created: YYYY-MM-DD
+modified: YYYY-MM-DD
+related: []
 ```
 
 ### Script Execution
 **All scripts run within Obsidian via Templater or QuickAdd:**
 
-| Operation | How to Execute | Notes |
-|-----------|----------------|-------|
-| **YAML normalization** | Templater command palette: "Templater: Open Insert Template Modal" → Select yaml_orchestrator | Creates backup in `_backups/normalize-snapshots/` |
-| **Update metrics cache** | QuickAdd macro: "Update Metrics Cache" | Writes to `00-Meta/_Metrics Cache.md` |
-| **Generate weekly report** | QuickAdd macro: "Generate Weekly Report" | Creates report in `05-Calendar/Weekly/` |
-| **Validate YAML** | Templater user script: `yaml_validator.js` | Run via template or command palette |
-| **Maturity promotion** | Templater user script: `maturity-promoter.js` | Suggests promotions in Review HQ |
-| **Navigate to Home** | QuickAdd macro: "Open Home" | Opens `🏡Home.md` |
-| **New full prompt** | Templates/Create/new-prompt.md via Templater | Full prompt with inputs/outputs/changelog |
-| **New quick prompt** | Templates/Create/new-quick-prompt.md via Templater | Minimal prompt with single instruction block |
-| **Browse prompts** | Open `07-Prompts/01-Docs/Prompt Dashboard NEW.md` | Overview of all prompts by status/category |
+**Important conventions**:
+- Use `due` (not `deadline`) — YAML Orchestrator auto-renames `deadline` → `due`
+- Always use emoji-prefixed status values (e.g., `🔄active` not bare `active`)
+- Maturity canonical values: `📤seed`, `🌱seedling`, `🪴sapling`, `🌲evergreen`, `🍓fruit`
+- Notes missing required fields get auto-tagged `#🧹tidy` by YAML Orchestrator
+
+### CIS (Custom Information System) — `99-System/CIS/`
+30+ enum definition files named `CIS_{FIELD_NAME}.md` (e.g., `CIS_STATUS.md`, `CIS_MATURITY.md`). These feed Obsidian Bases field validation and UI dropdowns.
 
 ### Daily Workflow Commands
 ```markdown
@@ -115,7 +155,12 @@ ls -d */ | head -15
 - Step-by-step guides for complex processes (Review Hub, Bases views)
 - Czech vault, but work in English with Claude
 
-## Gotchas & Critical Patterns
+- **Templates**: `{type}-meta.yaml.md`, `{type}-body.md`, `new-{type}.md`, `new-{type}-auto.md`, `Query - {Topic}.md`
+- **Scripts**: descriptive kebab-case (`smart-classifier.js`, `yaml-orchestrator.js`)
+- **CIS enums**: `CIS_{FIELD_NAME}.md` (SCREAMING_SNAKE_CASE)
+- **YAML keys**: snake_case (`processing_priority`, `completion_percentage`)
+- **Tags**: emoji + category (`💡atomic`, 🚀project`, `📚source`, `📥inbox`)
+- **About files**: `+About {Section}ℹ️.md` pattern for folder documentation
 
 ### ⚠️ Critical Issues to Avoid
 

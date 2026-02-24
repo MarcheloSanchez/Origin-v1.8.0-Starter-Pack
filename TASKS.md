@@ -33,64 +33,7 @@
   - [ ] FileClass customization for new domain
   - [ ] Quick-start checklist for deploying Origin to new vault
 
-### Calendar Review Hub - Phase 1: Architecture & Step-by-Step Docs
 
-**Goal:** Build Review Hub that aggregates daily notes → weekly reports → monthly reviews → yearly reflections with clear step-by-step guides.
-
-- [ ] **Audit current Review Hub/Report generation setup**
-  - [ ] Review existing `generate-weekly-report.js` logic
-  - [ ] Check if Review Hub note exists in `05-Calendar/` (or `01-MOCs/`)
-  - [ ] Identify what's already aggregating (daily → weekly) vs. what's missing (weekly → monthly, etc.)
-
-- [ ] **Design Review Hub workflow** (step-by-step)
-  - [ ] Daily review entry point → where does it live?
-  - [ ] Weekly report generation trigger → manual or automatic?
-  - [ ] Monthly review aggregation → pulls from weekly reports
-  - [ ] Yearly reflection aggregation → pulls from monthly reviews
-  - [ ] Create visual flowchart of the cascade
-
-- [ ] **Create step-by-step guide** in `00-Meta/Review Hub Workflow.md`
-  - [ ] How to capture daily notes (what goes in Daily/ each day)
-  - [ ] How to trigger weekly report generation (QuickAdd macro button?)
-  - [ ] How to write/aggregate weekly report (what structure, Dataview query?)
-  - [ ] How to write/aggregate monthly review (what structure, Dataview query?)
-  - [ ] How to write/aggregate yearly reflection (what structure, Dataview query?)
-  - [ ] Pitfalls & gotchas (what breaks the cascade)
-
-- [ ] **Implement missing aggregation pieces** (if needed)
-  - [ ] Monthly aggregation query (weekly → monthly)
-  - [ ] Yearly aggregation query (monthly → yearly or direct from weeklies?)
-  - [ ] Review Hub dashboard that shows all 4 levels
-
-- [ ] **Create Review Hub note** (`05-Calendar/Review Hub.md` or `01-MOCs/Review Hub.md`)
-  - [ ] Entry point for the review system
-  - [ ] Links to latest daily/weekly/monthly/yearly
-  - [ ] Dataview queries showing recent entries at each level
-
-### Bases Daily View - Mini Task
-
-**Goal:** Add Bases view showing notes created today.
-
-- [ ] **Audit current Bases setup**
-  - [ ] What Bases exist? (FileClass: atomic, effort, source, moc, etc.)
-  - [ ] Where are Bases views currently configured? (in .obsidian/plugins/obsidian-databases/)
-
-- [ ] **Design "Created Today" view**
-  - [ ] Query: `created: YYYY-MM-DD` (today) across all FileClasses
-  - [ ] Display columns: title, type, created, status, maturity
-  - [ ] Sorting: by creation time (newest first)
-
-- [ ] **Add to appropriate Bases view**
-  - [ ] Main dashboard (👁️Dashboard.md)?
-  - [ ] New dedicated "Daily Captures" view?
-  - [ ] Existing Bases database query?
-
-- [ ] **Test and verify** the query works across vault
-
-## Waiting On
-
-- [ ] Clarification on Review Hub template structure (what should each level look like?)
-- [ ] Confirm if Bases Daily View should be main dashboard or separate view
 
 ## Someday
 
@@ -100,3 +43,15 @@
 - [ ] Migration playbook for v2.0 (full end-to-end guide)
 
 ## Done
+
+### Calendar Review Hub - Phase 1 ✅
+- Full cascade: Daily → Weekly → Monthly → Quarterly → Yearly
+- `05-Calendar/📅 Calendar Review Hub.md` — hub with QuickAdd buttons, Dataview status tracker, data flow diagram
+- `00-Meta/Documentation/PKM/📅 Calendar Review Hub Guide.md` — step-by-step guide
+- All 4 aggregation scripts in `99-System/Scripts/` (weekly, monthly, quarterly, yearly)
+
+### Bases Daily View ✅
+- `99-System/Daily-View.base` — notes created today + modified today
+- `99-System/Active-Types-base.base` — browse all note types
+- `99-System/Vault-Dash-Missing.base` — gap scanner
+- `99-System/_System_data.base` — missing metadata checker

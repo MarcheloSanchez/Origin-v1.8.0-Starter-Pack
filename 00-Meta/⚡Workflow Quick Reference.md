@@ -153,7 +153,7 @@ up: [[🏡Home]]
 **Steps:**
 1. **Reflect:** Review past week's accomplishments
 2. **Process:** Run `📦Batch Process Inbox`
-3. **Review Projects:** Update status in [[🎯GTD Command Center]]
+3. **Review Projects:** Update status in [[TODO]]
 4. **Plan:** Set priorities for next week
 5. **Cleanup:** Run `🔄Update Metrics Cache`
 6. **Archive:** (Quarterly) Run `📦Archive Old Dailies`
@@ -191,7 +191,7 @@ up: [[🏡Home]]
 
 ### GTD Processing (10 min daily)
 
-**Command:** Open [[🎯GTD Command Center]]
+**Command:** Open [[TODO]]
 
 **Steps:**
 1. Review **System Status** (inbox, active efforts)
@@ -452,7 +452,7 @@ up: [[🏡Home]]
 
 **Or use dashboards:**
 - [[👁️Dashboard]] - Daily agenda view
-- [[🎯GTD Command Center]] - Task-focused
+- [[TODO]] - Task-focused
 - [[📈Performance Metrics Dashboard]] - Analytics
 
 ---
@@ -531,7 +531,7 @@ up: [[🏡Home]]
 | Inbox count | <20 | [[+Inbox]] |
 | Connection density | >70% | [[📈Performance Metrics Dashboard\|Metrics]] |
 | Orphan notes | <10% | [[📈Performance Metrics Dashboard\|Metrics]] |
-| Processing rate | >80% | [[🎯GTD Command Center\|GTD]] |
+| Processing rate | >80% | [[TODO\|GTD]] |
 | Weekly captures | 20-40 | [[📈Performance Metrics Dashboard\|Metrics]] |
 
 ---

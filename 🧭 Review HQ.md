@@ -18,12 +18,11 @@ priority: high
 processing_priority: high
 created: 2026-01-15
 modified: 2026-01-15
-version: 2.0
+version: 2
 cssclasses:
   - wide-page
   - review-hq
 related:
-  - "[[🎯GTD Command Center]]"
   - "[[🎯GTD Weekly Review]]"
   - "[[🧹Cleaning Lady]]"
   - "[[🌱Incubator]]"
@@ -224,7 +223,7 @@ if (candidates.length > 0) {
     ])
   );
 } else {
-  dv.paragraph("*No urgent focus items detected. Check your [[🎯GTD Command Center]] for next actions by context.*");
+  dv.paragraph("*No urgent focus items detected. Check your [[TODO]] for next actions by context.*");
 }
 } catch (e) {
   dv.paragraph(`⚠️ Error loading focus items: ${e.message}`);
@@ -236,8 +235,8 @@ if (candidates.length > 0) {
 > [!abstract]- 🎯 **Action Hub: Focus Work**
 > **Where to work:**
 > - Open the linked note directly and start working
-> - Use [[🎯GTD Command Center#🔥 Focus Now]] for energy-based filtering
-> - Need more context? → [[🎯GTD Command Center#📋 Next Actions by Context]]
+> - Use [[TODO#🔥 Focus Now]] for energy-based filtering
+> - Need more context? → [[TODO#📋 Next Actions by Context]]
 >
 > **After completing:**
 > 1. Mark task ✅ done in the source note
@@ -258,7 +257,7 @@ if (candidates.length > 0) {
 > - Need to delegate? → Add `waiting_for::` and `waiting_since::` fields
 > - Need to postpone? → Update `due` and add reason in note body
 >
-> **Where to manage:** [[🎯GTD Command Center#📅 Calendar View]]
+> **Where to manage:** [[TODO#📅 Calendar View]]
 
 ### 🔴 Overdue Tasks
 
@@ -387,7 +386,7 @@ LIMIT 10
 > Let me know if you need anything from me to move forward.
 > ```
 >
-> **Where to manage waiting contexts:** [[🎯GTD Command Center#⏳ Waiting For]]
+> **Where to manage waiting contexts:** [[TODO#⏳ Waiting For]]
 
 ### Notes in Waiting Status
 
@@ -631,14 +630,14 @@ LIMIT 10
 - [ ] Log what I accomplished in today's Daily Note
 - [ ] Any new tasks captured? Quick inbox sweep
 - [ ] Pick 1 note from [[#🛠️ Maintenance Queue]] → 5 min cleanup
-- [ ] Set tomorrow's intention (write in Daily Note or GTD Command Center)
+- [ ] Set tomorrow's intention (write in Daily Note or TODO)
 
 **Output:** Clear head, closed loops, tomorrow's focus set.
 
 > [!done]- ✅ **After Daily Review: What's Next?**
 > **Morning path:**
 > - Open your #1 focus item from [[#🔥 Top 3 Focus Suggestions]]
-> - Or go to [[🎯GTD Command Center#📋 Next Actions by Context]] for context-based work
+> - Or go to [[TODO#📋 Next Actions by Context]] for context-based work
 >
 > **Evening path:**
 > - Create tomorrow's Daily Note in [[05-Calendar/Daily]]
@@ -687,7 +686,7 @@ LIMIT 10
 >
 > **Quick links for next week:**
 > - Start Monday with [[#☀️ Daily Review (10 min)]]
-> - Deep work? → [[🎯GTD Command Center#🔥 Focus Now]]
+> - Deep work? → [[TODO#🔥 Focus Now]]
 > - Process captures? → [[+Inbox]]
 
 ---
@@ -812,7 +811,7 @@ After triage, use this modified weekly review:
 > | I want to... | Go to |
 > |--------------|-------|
 > | See system health at a glance | **You're here!** [[#🚦 System Health Dashboard]] |
-> | Work on tasks by context (@computer, @home) | [[🎯GTD Command Center]] |
+> | Work on tasks by context (@computer, @home) | [[TODO]] |
 > | Do a full weekly review checklist | [[🎯GTD Weekly Review]] |
 > | Process new captures | [[+Inbox]] |
 > | Work on active projects | [[03-Efforts]] |
@@ -821,7 +820,7 @@ After triage, use this modified weekly review:
 > | See today's focus | [[🏡Home]] |
 
 ### Core Hubs
-- [[🎯GTD Command Center]] — Task management & contexts
+- [[TODO]] — Task management & contexts
 - [[🎯GTD Weekly Review]] — Full weekly review checklist
 - [[🏡Home]] — Daily dashboard
 - [[👁️Dashboard]] — System overview
@@ -1175,4 +1174,4 @@ To keep this hub usable, all queries above enforce limits:
 
 *Last updated: `= this.modified`*
 
-*Navigate: [[🏡Home]] | [[🎯GTD Command Center]] | [[🎯GTD Weekly Review]] | [[+Inbox]]*
+*Navigate: [[🏡Home]] | [[TODO]] | [[🎯GTD Weekly Review]] | [[+Inbox]]*

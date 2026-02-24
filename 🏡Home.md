@@ -1,6 +1,6 @@
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[Performance Metrics|📈Performance]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[Performance Metrics|📈Performance]]
 >
 > **Quick Actions:**
 > [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🎯GTD Weekly Review|📅 Review]] • [[TODO|✅ TODO]] • [[📍Note Classification Guide|📍 Guide]]
@@ -88,7 +88,7 @@ The place where you always come back, that's **home**. 🦔🍎
 
 ## 📊 Quick Access Dashboards
 - [[🧭 Review HQ|👁️ Review & Process Notes]]
-- [[🎯GTD Command Center|🎯 Workflow & Tasks]]
+- [[TODO|✅ Workflow & Tasks]]
 - [[🎮Gamification Dashboard|🎮 Progress Tracking]]
 - [[📈Vault Analytics|📈 Metrics & Insights]]
 

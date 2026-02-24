@@ -8,7 +8,7 @@ tags:
   - ⚙️system
 created: 2026-01-01
 related:
-  - "[[🎯GTD Command Center]]"
+  - "[[TODO]]"
   - "[[🎯GTD Weekly Review]]"
 ---
 
@@ -124,4 +124,4 @@ Příklad:
 
 ---
 
-⬆️:: [[🎯GTD Command Center]] | [[00-Meta/Documentation]]
+⬆️:: [[TODO]] | [[00-Meta/Documentation]]

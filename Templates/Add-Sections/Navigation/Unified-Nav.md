@@ -9,7 +9,7 @@ tags: [navigation, ux]
 
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
 >
 > **Quick Actions:**
 > [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🧠GTD Weekly Review|📅 Review]]
@@ -39,7 +39,7 @@ Copy the navigation callout below and paste into any note:
 ```markdown
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
 >
 > **Quick Actions:**
 > [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🧠GTD Weekly Review|📅 Review]]
@@ -65,7 +65,7 @@ Copy the navigation callout below and paste into any note:
 **Effort Notes:**
 ```markdown
 > [!orbit]- Quick Navigation
-> [[🎯GTD Command Center|🎯 GTD]] • [[03-Efforts/_Index|🚀 Projects]] • [[+Inbox|📥]]
+> [[TODO|✅ TODO]] • [[03-Efforts/_Index|🚀 Projects]] • [[+Inbox|📥]]
 >
 > **Quick Actions:** `Ctrl+P` → ⚡Quick Process - Effort • Update Status
 ```

@@ -113,4 +113,4 @@ try {
 ---
 
 *Generated: 2026-02-23 by Weekly Report Generator*
-*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[🎯GTD Command Center]]*
+*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[TODO]]*

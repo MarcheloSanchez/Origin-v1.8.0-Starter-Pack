@@ -92,7 +92,7 @@ module.exports = async (args) => {
       } else if (
         file.path.startsWith("00-Meta/") ||
         file.path === "👁️Dashboard.md" ||
-        file.path === "🎯GTD Command Center.md" ||
+        file.path === "TODO.md" ||
         file.path === "🧭 Review HQ.md" ||
         file.path === "🏡Home.md"
       ) {

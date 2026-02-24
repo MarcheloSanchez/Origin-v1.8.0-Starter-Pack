@@ -131,6 +131,69 @@ module.exports = async (args) => {
     }
 
     // ============================================
+    // DAILY NOTES CONTENT — highlights, energy, mood
+    // ============================================
+
+    const dailyNotesThisWeek = allFiles.filter(f => {
+      if (!f.path.startsWith("05-Calendar/Daily/")) return false;
+      if (f.path.includes("Template") || f.path.includes("+")) return false;
+      const fm = getFM(f);
+      if (fm.date) {
+        const d = new Date(fm.date);
+        return !isNaN(d.getTime()) && d >= weekStart && d <= weekEnd;
+      }
+      return isThisWeek(f.stat.ctime); // fallback for legacy notes without date field
+    });
+
+    const weekHighlights = dailyNotesThisWeek
+      .map(f => {
+        const fm = getFM(f);
+        const val = fm.highlight;
+        if (!val || String(val).trim() === '') return null;
+        return { date: fm.date || formatDate(new Date(f.stat.ctime)), text: String(val).trim() };
+      })
+      .filter(h => h !== null)
+      .sort((a, b) => a.date.localeCompare(b.date));
+
+    const energyDist = { High: 0, Medium: 0, Low: 0, Unknown: 0 };
+    const moodDist   = { Positive: 0, Neutral: 0, Negative: 0, Unknown: 0 };
+
+    dailyNotesThisWeek.forEach(f => {
+      const fm = getFM(f);
+      const e = fm.energy ? String(fm.energy).toLowerCase() : '';
+      if      (e.includes('high') || e.includes('⚡'))            energyDist.High++;
+      else if (e.includes('medium') || e.includes('mid') || e.includes('🔋')) energyDist.Medium++;
+      else if (e.includes('low')  || e.includes('🪫'))            energyDist.Low++;
+      else if (e !== '')                                           energyDist.Medium++;
+      else                                                         energyDist.Unknown++;
+
+      const m = fm.mood ? String(fm.mood).toLowerCase() : '';
+      if      (m.includes('good') || m.includes('great') || m.includes('😊') || m.includes('🌤')) moodDist.Positive++;
+      else if (m.includes('ok')   || m.includes('neutral') || m.includes('😐'))                   moodDist.Neutral++;
+      else if (m.includes('bad')  || m.includes('low') || m.includes('😔') || m.includes('😞'))   moodDist.Negative++;
+      else if (m !== '')                                                                            moodDist.Neutral++;
+      else                                                                                          moodDist.Unknown++;
+    });
+
+    const energySummary = [
+      energyDist.High   > 0 ? `⚡ High ×${energyDist.High}`   : null,
+      energyDist.Medium > 0 ? `🔋 Med ×${energyDist.Medium}`  : null,
+      energyDist.Low    > 0 ? `🪫 Low ×${energyDist.Low}`     : null,
+      energyDist.Unknown> 0 ? `— ×${energyDist.Unknown}`       : null,
+    ].filter(Boolean).join(', ') || '—';
+
+    const moodSummary = [
+      moodDist.Positive > 0 ? `😊 ×${moodDist.Positive}` : null,
+      moodDist.Neutral  > 0 ? `😐 ×${moodDist.Neutral}`  : null,
+      moodDist.Negative > 0 ? `😔 ×${moodDist.Negative}` : null,
+      moodDist.Unknown  > 0 ? `— ×${moodDist.Unknown}`    : null,
+    ].filter(Boolean).join(', ') || '—';
+
+    const highlightsSection = weekHighlights.length > 0
+      ? weekHighlights.map(h => `| ${h.date} | ${h.text} |`).join('\n')
+      : '| — | No highlights recorded this week |';
+
+    // ============================================
     // GENERATE REPORT CONTENT
     // ============================================
 
@@ -176,6 +239,9 @@ related:
 | Efforts Completed | ${completedEfforts.length} | — |
 | Active Efforts | ${activeEfforts.length} | ${efforts.length} |
 | Current Inbox | ${inboxItems.length} | — |
+| Daily Notes | ${dailyNotesThisWeek.length} | — |
+| Energy (days) | ${energySummary} | — |
+| Mood (days) | ${moodSummary} | — |
 
 ---
 
@@ -192,6 +258,14 @@ ${folderBreakdown || "| — | 0 |"}
 | Stage | Count |
 |-------|-------|
 ${maturityBreakdown}
+
+---
+
+## 📔 Daily Highlights
+
+| Date | Highlight |
+|------|-----------|
+${highlightsSection}
 
 ---
 
@@ -258,7 +332,7 @@ try {
 ---
 
 *Generated: ${formatDate(now)} by Weekly Report Generator*
-*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[🎯GTD Command Center]]*
+*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[TODO]]*
 `;
 
     // ============================================

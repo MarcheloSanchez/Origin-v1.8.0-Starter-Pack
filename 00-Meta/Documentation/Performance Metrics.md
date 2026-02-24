@@ -28,7 +28,7 @@ obsidianUIMode: preview
 
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
 >
 > **Analytics Focus:**
 > [[🧠GTD Weekly Review|📅 Review]] • [[🧹Cleaning Lady|🧹 Cleanup]] • [[Tags - Status Check|🏷️ Tags]] • [[📍Note Classification Guide|📍 Guide]]
@@ -911,7 +911,7 @@ Copy navigation callout from template file
 **Added To**:
 - [🏡Home.md](🏡Home.md) (line 1-10)
 - [👁️Dashboard.md](👁️Dashboard.md) (line 21-30)
-- [🎯GTD Command Center.md](🎯GTD Command Center.md) (line 20-27)
+- [TODO.md](TODO.md) (line 20-27)
 - [🎮Gamification Dashboard.md](00-Meta/🎮Gamification Dashboard.md) (line 11-18)
 - [📈Performance Metrics Dashboard](00-Meta/Documentation/Performance Metrics.md) (line 29-36)
 

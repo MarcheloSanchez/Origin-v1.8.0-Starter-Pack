@@ -10,7 +10,7 @@ cssclasses: [dashboard, gamification]
 
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
 >
 > **Game Focus:**
 > [[🎮Gamification Quick Reference|🎯 Quick Ref]] • [[🧠GTD Weekly Review|📅 Review]] • [[📈Performance Metrics Dashboard|📊 Stats]]

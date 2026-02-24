@@ -194,7 +194,7 @@ Add to existing **Home.md** (or 🏡Home if it exists):
 ## 📊 Quick Access Dashboards
 
 - [[👁️ Review HQ|Review & process notes]]
-- [[🎯 GTD Command Center|Workflow & tasks]]
+- [[TODO|✅ Workflow & Tasks]]
 - [[🎮 Gamification Dashboard|Progress tracking]]
 - [[📈 Vault Analytics|Metrics & insights]]
 ```
@@ -289,7 +289,7 @@ These are working but not referenced in menu (might be internal dependencies):
 
 - [[Implementation Plan - Vault Optimization]] - Main vault optimization plan
 - [[🔢My PKM Metadata]] - Metadata standards
-- [[🎯GTD Command Center]] - GTD workflow reference
+- [[TODO]] - GTD workflow reference
 
 ---
 

@@ -276,7 +276,7 @@ maturity: seed | seedling | sapling | evergreen | fruit
 1. **Quick Start**: Open `START HERE.md`
 2. **Full Documentation**: Read `README.md`
 3. **Daily Workflow**: Use `🏡Home.md` as your dashboard
-4. **Task Management**: Access `🎯GTD Command Center.md`
+4. **Task Management**: Access `TODO.md`
 5. **Weekly Reviews**: Follow `🎯GTD Weekly Review.md`
 
 ---

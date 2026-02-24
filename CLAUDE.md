@@ -7,7 +7,7 @@ Marchelo (@marcel.9991@seznam.cz), building Origin PKM vault as a **template for
 | Project | Goal | Status |
 |---------|------|--------|
 | **Origin v2.0** | Upgrade vault; document workflows; prep for multi-vault migrations; keep core adaptable | ✅ Complete — All 4 priorities implemented (2026-02-07) |
-| **Calendar Review Hub** | Aggregate daily notes → weekly reports → monthly reviews → yearly reflections | Planning — Step-by-step docs needed |
+| **Calendar Review Hub** | Aggregate daily notes → weekly reports → monthly reviews → yearly reflections | ✅ Complete — Step-by-step guide created (2026-02-23): `00-Meta/Documentation/PKM/📅 Calendar Review Hub Guide.md` |
 | **Bases Daily View** | Add Bases view showing notes created today across vault | Planning — Mini task |
 
 ## Key Concepts
@@ -39,7 +39,7 @@ Marchelo (@marcel.9991@seznam.cz), building Origin PKM vault as a **template for
 | `99-System` | Infrastructure: Scripts, Config, CIS enums, FileClasses, AI prompts, images |
 | `Templates` | 150+ templates across 15 categories |
 
-Root dashboards: `🏡Home.md` (main entry), `👁️Dashboard.md` (metrics), `🎯GTD Command Center.md`, `🧭 Review HQ.md`
+Root dashboards: `🏡Home.md` (main entry), `👁️Dashboard.md` (metrics), `TODO.md`, `🧭 Review HQ.md`
 
 ## Template System (Modular 3-Tier Architecture)
 
@@ -129,7 +129,7 @@ related: []
 
 3. Check Dashboard
    - Open 👁️Dashboard.md for vault health metrics
-   - Open 🎯GTD Command Center.md for tasks
+   - Open TODO.md for tasks
 ```
 
 ### Validation & Maintenance
@@ -266,7 +266,7 @@ Daily Note → Periodic Notes plugin (auto-created)
    - Opens in 05-Calendar/Weekly/
 
 2. Review active efforts
-   - Open 🎯GTD Command Center.md
+   - Open TODO.md
    - Update completion percentages
    - Set next_actions for each project
    - Archive completed items (status: 📦archived)

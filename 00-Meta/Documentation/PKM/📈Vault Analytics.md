@@ -506,4 +506,4 @@ try {
 
 *Last updated: `= this.modified`*
 
-*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[🎯GTD Command Center]]*
+*Navigate: [[👁️Dashboard]] | [[🧭 Review HQ]] | [[TODO]]*

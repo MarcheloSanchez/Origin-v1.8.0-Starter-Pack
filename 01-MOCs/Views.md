@@ -30,7 +30,7 @@ Hub notes for navigation and status overview.
 | -------------------------------- | ------------------------------------------------------------- |
 | [[👁️Dashboard]]                 | Main PKM dashboard — task status, inbox count, active efforts |
 | [[🏡Home]]                       | Vault home — quick nav to all core areas                      |
-| [[🎯GTD Command Center]]         | GTD workflow hub — next actions, projects, waiting            |
+| [[TODO]]                         | GTD workflow hub — next actions, projects, waiting            |
 | [[🎮Gamification Dashboard]]     | XP, streaks, and habit tracking                               |
 | [[📊 Calendar System Dashboard]] | Calendar system overview — daily/weekly/monthly status        |
 | [[Prompt Dashboard NEW]]         | Active prompt library browser                                 |

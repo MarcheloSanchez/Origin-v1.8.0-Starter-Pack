@@ -19,7 +19,7 @@ cssclasses:
 ---
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[🎯GTD Command Center|🎯 GTD]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
 >
 > **Quick Actions:**
 > [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[TODO|✅ TODO]] • [[05-Calendar|📅 Calendar]] • [[📍Note Classification Guide|📍 Guide]]
@@ -44,13 +44,13 @@ cssclasses:
 
 ## 🎯 Quick Actions
 
-| Action                | Shortcut         | Template                         |
-| --------------------- | ---------------- | -------------------------------- |
-| 📥 **Quick Capture**  | `Ctrl+N` #🧹tidy | [[Quick Capture - Inbox]]        |
-| 📝 **Daily Note**     | `Ctrl+SHIFT+D`   | [[Template Daily\|New Daily]]    |
-| 🚀 **New Project**    | `Ctrl+P`         | [[E-Full-Template\|New Project]] |
-| 📚 **Process Source** | `Ctrl+S`         | [[S-Full-Template\|New Source]]  |
-| 💡 **Create Atomic**  | `Ctrl+A`         | [[A-Full-Template\|New Atomic]]  |
+| Action                | Shortcut       | Template                                 |
+| --------------------- | -------------- | ---------------------------------------- |
+| 📥 **Quick Capture**  | `Ctrl+N`       | [[Quick Capture - Inbox]]                |
+| 📝 **Daily Note**     | `Ctrl+SHIFT+D` | [[Template Daily\|New Daily]]            |
+| 🚀 **New Project**    | `Ctrl+P`       | [[Templates/Static/effort\|New Project]] |
+| 📚 **Process Source** | `Ctrl+S`       | [[Templates/Static/source\|New Source]]  |
+| 💡 **Create Atomic**  | `Ctrl+A`       | [[Templates/Static/atomic\|New Atomic]]  |
 
 ---
 

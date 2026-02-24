@@ -8,7 +8,6 @@ tags:
   - 📅weekly
 created: 2026-01-01
 related:
-  - "[[🎯GTD Command Center]]"
   - "[[🏡Home]]"
 ---
 
@@ -236,4 +235,4 @@ Notes:
 
 ---
 
-⬆️:: [[🎯GTD Command Center]] | [[🏡Home]]
+⬆️:: [[TODO]] | [[🏡Home]]

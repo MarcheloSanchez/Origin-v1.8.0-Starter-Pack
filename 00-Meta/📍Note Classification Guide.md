@@ -320,7 +320,7 @@ If you prefer a step-by-step checklist:
 ## 🔗 Related Resources
 
 - [[🏡Home]] - Start here guide
-- [[🎯GTD Command Center]] - Task management workflow
+- [[TODO]] - Task management workflow
 - [[🧠GTD Weekly Review]] - Weekly processing routine
 - [[📈Performance Metrics Dashboard]] - System health monitoring
 - [[🗺️My PKM MOC]] - Complete system overview

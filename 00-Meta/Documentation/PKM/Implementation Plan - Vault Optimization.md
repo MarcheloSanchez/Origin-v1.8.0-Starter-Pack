@@ -12,7 +12,7 @@ related:
   - "[[🔢My PKM Metadata]]"
   - "[[🔍My PKM Queries]]"
   - "[[👁️Dashboard]]"
-  - "[[🎯GTD Command Center]]"
+  - "[[TODO]]"
 ---
 
 # Implementation Plan - Vault Optimization v2.0
@@ -38,7 +38,7 @@ This plan addresses the identified inconsistencies and missed opportunities from
 
 **Current State**:
 - `👁️Dashboard.md` uses: `due`
-- `🎯GTD Command Center.md` uses: `deadline`
+- `TODO.md` uses: `deadline`
 - `🔢My PKM Metadata.md` documents both fields
 
 **Action Items**:
@@ -133,7 +133,7 @@ try {
 
 **Files to Update**:
 - [ ] `👁️Dashboard.md` - 4 DataviewJS blocks
-- [ ] `🎯GTD Command Center.md` - 2 DataviewJS blocks
+- [ ] `TODO.md` - 2 DataviewJS blocks
 - [ ] `🧭Review HQ.md` - DataviewJS blocks
 - [ ] `🎮Gamification Dashboard.md` - All calculation blocks
 

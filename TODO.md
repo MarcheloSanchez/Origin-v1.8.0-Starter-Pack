@@ -32,7 +32,7 @@ cssclasses:
 > > ```dataview
 > > TASK
 > > FROM "03-Efforts" OR "+Inbox"
-> > WHERE !completed AND meta(energy) = "high"
+> > WHERE !completed AND contains(text, "#energy/high")
 > > LIMIT 5
 > > ```
 >
@@ -40,7 +40,7 @@ cssclasses:
 > > ```dataview
 > > TASK
 > > FROM "03-Efforts" OR "+Inbox"
-> > WHERE !completed AND meta(energy) = "medium"
+> > WHERE !completed AND contains(text, "#energy/medium")
 > > LIMIT 5
 > > ```
 >
@@ -48,7 +48,7 @@ cssclasses:
 > > ```dataview
 > > TASK
 > > FROM "03-Efforts" OR "+Inbox"
-> > WHERE !completed AND meta(energy) = "low"
+> > WHERE !completed AND contains(text, "#energy/low")
 > > LIMIT 5
 > > ```
 

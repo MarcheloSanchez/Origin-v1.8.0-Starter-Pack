@@ -175,9 +175,10 @@ created today
 
 ```dataview
 TASK
-FROM ""
+FROM -"Templates" AND -"99-System" AND -"00-Meta" AND -"docs"
+WHERE !contains(file.name, "Review HQ") AND !contains(file.name, "GTD Weekly Review") AND !contains(file.name, "My PKM Tasks")
 GROUP BY file.link
-LIMIT 5
+LIMIT 10
 ```
 
 ---

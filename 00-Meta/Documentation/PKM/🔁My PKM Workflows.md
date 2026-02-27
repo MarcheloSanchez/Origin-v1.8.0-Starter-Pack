@@ -595,7 +595,7 @@ The vault includes 22 scripts in `99-System/Scripts/`. See [[🔧Scripts Referen
 - `update-metrics-cache.js` — Refresh dashboard cache (QuickAdd macro)
 
 **Weekly Automation**:
-- `generate-weekly-report.js` — Create structured weekly report (Sunday evening)
+- `generate-weekly-report.js` — Create structured weekly report (Sunday evening) → see [[📅 Calendar Review Hub Guide]]
 - `batch-process-inbox.js` — Batch triage if inbox > 10 items
 - `maturity-promoter.js` — Review maturity suggestions during weekly review
 
@@ -697,6 +697,8 @@ The vault includes 22 scripts in `99-System/Scripts/`. See [[🔧Scripts Referen
 - [[CHANGELOG]] - Document each added/changed/deleted attribute
 - [[BACKLOG]] - Bucket for future improvements
 - [[🛠️My PKM Maintenance]] - Vault metadata tracking
+- [[📅 Calendar Review Hub Guide]] - Step-by-step guide for automated report generation (weekly → monthly → quarterly → yearly)
+- [[📊 Bases Formulas Reference]] - All computed formula fields across People, Efforts, Atomics, and Sources base files
 ---
 
 > [!quote]+ **💭 Workflow Philosophy**

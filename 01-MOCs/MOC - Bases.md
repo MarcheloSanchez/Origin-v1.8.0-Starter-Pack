@@ -29,18 +29,18 @@ related:
 
 ### 99-System
 
-| File | Purpose |
-|------|---------|
-| [[Active-Types-base]] | Browse every note type — atomic, effort, source, prompt, meeting, person, place, tool, area |
-| [[Daily-View]] | Created Today + Modified Today across the entire vault |
-| [[Vault-Dash-Missing]] | Notes grouped by type — scan for gaps |
-| [[_System_data]] | System notes missing `status`, `created`, or `type` |
+| File                        | Purpose                                                                                     |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| [[Active-Types-base.base]]  | Browse every note type — atomic, effort, source, prompt, meeting, person, place, tool, area |
+| [[Daily-View.base]]         | Created Today + Modified Today across the entire vault                                      |
+| [[Vault-Dash-Missing.base]] | Notes grouped by type — scan for gaps                                                       |
+| [[_System_data.base]]       | System notes missing `status`, `created`, or `type`                                         |
 
 ### 01-MOCs
 
-| File | Purpose |
-|------|---------|
-| [[_MOCs_Data]] | All MOC notes with completeness + coverage metadata |
+| File                | Purpose                                             |
+| ------------------- | --------------------------------------------------- |
+| [[_MOCs_Data.base]] | All MOC notes with completeness + coverage metadata |
 
 ---
 
@@ -88,7 +88,7 @@ views:
 
 ## Template
 
-- [[Base - Template]] — Scaffold for creating new base files
+- [[Base - Block]] / [[Templates/Static/base|base]] / [[Quick Insert, Bases]] — Scaffold for creating new base files
 
 ## Related
 

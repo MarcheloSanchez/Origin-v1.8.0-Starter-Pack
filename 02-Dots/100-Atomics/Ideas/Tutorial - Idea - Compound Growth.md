@@ -1,5 +1,5 @@
 ---
-title: "Compound Growth"
+title: Compound Growth
 type: atomic
 fileClass: atomic
 tags:
@@ -8,7 +8,7 @@ tags:
   - "#domain/systems"
   - "#📋tutorial"
 status: 🔄active
-maturity: 🌱seedling
+maturity: 🌲evergreen
 created: 2026-01-28
 related:
   - "[[Tutorial - Source - Thinking in Systems]]"

@@ -55,13 +55,9 @@ E --> F[💡 Insights]
 ### [[base]] YAML Properties (All Notes) 
 >*Dublin Core inspired*
 
-#🧹tidy -add person, tool, place - need template -> quickadd -> add to PKM structure
-
-type: atomic|effort|source|moc|meeting|prompt|tool|person|place
-
 ```
 title: for query
-type: atomic|effort|source|moc|meeting|prompt|archive
+type: atomic|effort|source|moc|meeting|prompt|person|place|tool|area|system|dashboard|about|guide|tutorial|daily|weekly|monthly|quarterly|yearly|challenge|archive
 status: 📥inbox|🔄active|⏳waiting|✅completed|📦archived|⏸️paused|❌cancelled|⚠️blocked
 tags: 
 created: YYYY-MM-DD
@@ -913,7 +909,7 @@ This creates the complete metadata backbone of your PKM system - comprehensive, 
 
 ---
 #🧹tidy - OLD 
-### 04-[[04-Sources/source|source]] Metadata (References)
+### 04-[[Templates/Static/source|source]] Metadata (References)
 
 >**Účel:** Sledování čtení a hodnocení zdrojů
 >**Automatizace:** maturity applied

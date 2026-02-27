@@ -11,7 +11,7 @@ tags:
 review_frequency: monthly
 related:
   - "[[🗺️My PKM MOC]]"
-  - "[[🙂My PKM Icon Reference]]"
+  - "[[🙂Icon Reference & Color System]]"
   - "[[Icon Package]]"
   - "[[🏷️My PKM Tags]]"
   - "[[🔢My PKM Metadata]]"
@@ -30,7 +30,7 @@ related:
 
 The foundation of visual consistency across the vault.
 
-- [[🙂My PKM Icon Reference]] – Core icon standards & color psychology
+- [[🙂Icon Reference & Color System]] – Core icon standards & color psychology
 - [[Icon Package]] – Comprehensive icon library with search keywords
 - [[Visual hotkeys]] – Keyboard shortcuts visualized with icons
 

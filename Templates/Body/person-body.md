@@ -32,4 +32,10 @@
 
 ---
 
+## 🤝 Meetings
+
+![[_Meetings_Data.base#Meetings]]
+
+---
+
 *Status: 📥inbox | Priority: high | Next review: monthly*

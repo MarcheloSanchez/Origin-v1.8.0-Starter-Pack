@@ -12,8 +12,9 @@ related:
   - "[[🔁My PKM Workflows]]"
   - "[[📦Template System Guide]]"
   - "[[🚀Vault Migration Guide]]"
+  - "[[📊 Bases Formulas Reference]]"
 ---
-> [!orbit] Wayfinder | [[🗺️My PKM MOC]] | [[🔁My PKM Workflows]] | [[📦Template System Guide]] | 🔧Scripts Reference | [[🚀Vault Migration Guide]]
+> [!orbit] Wayfinder | [[🗺️My PKM MOC]] | [[🔁My PKM Workflows]] | [[📦Template System Guide]] | 🔧Scripts Reference | [[🚀Vault Migration Guide]] | [[📊 Bases Formulas Reference]]
 
 ⬆️:: [[🏡Home]]
 

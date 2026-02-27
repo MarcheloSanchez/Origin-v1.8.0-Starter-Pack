@@ -127,6 +127,7 @@ A Markdown notes app where you link ideas with `[[anchors]]` 🔗, build simple 
 | **Hotkeys/Shortcuts** | All stages         | Speed & frictionless flow                         |
 | **Bases**             | All stages         | Dashboards (store filter YAML).                   |
 | **n8n**               | undefined          | GCal → daily/effort notes; append highlights.     |
+|                       |                    |                                                   |
 [[MOC - Automation Command Center|Read more...]]
 #🧹tidy  - create as embeded obsidian plugins note
 

@@ -10,8 +10,18 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
+# 25/02/26
+- Added CSS snippet `uc-production.css` — UC theme: teal accent, deep slate, PROD badge
+- Added CSS snippet `uc-dev.css` — UC theme: amber accent, warm charcoal, DEV badge + monospace nav
+- Added CSS snippet `uc-work.css` — UC theme: steel blue accent, cool ink, WORK badge
+- Added CSS snippet `uc-experimental.css` — UC theme: hot pink accent, deep violet, EXP badge + gradient H1
+- Added CSS snippet `sidebar-icons-only.css` — fixes Minimal theme vertical sidebar tabs → horizontal icons
+- Updated CSS snippet `headers-custom.css` — warm gradient headings (H1→H6), bold (peach), italic (lavender)
+- Updated `CLAUDE.md` — restructured, trimmed 360→170 lines, fixed broken code fences
+
 # 23/02/26
 - Added [[base]]
+- Added [[📊 Bases Formulas Reference]]
 - Added [[🏡Home]]
 - Modified [[📍Note Classification Guide]]
 - Modified [[⚡Workflow Quick Reference]]
@@ -51,6 +61,14 @@ template-status: origin_production
 - Modified [[Tutorial - Raw Capture (Coffee Chat)]]
 - Modified [[Automations via fastkey]]
 - Modified [[+ About Inbox ℹ️]]
+- Added [[_Daily_Data.base]] — `Quarter` formula; renamed `Notes Captured` → `Links Made`; added `highlight` column to Daily Log view; added `Highlights Stream` and `High Energy Days` views
+- Modified [[generate-weekly-report.js]] — added daily notes data block (highlights, energy/mood distribution); 3 new metric rows in Key Metrics table; new `## 📔 Daily Highlights` section
+- Modified [[Template Daily.md]] — added `date:`, `energy:`, `mood:`, `highlight:` frontmatter; converted `{{date:...}}` → Templater syntax (`tp.file.title`-derived); folder-prefixed nav links; removed inline fields and star-rating section
+- Modified [[Template Weekly.md]] — converted to Templater syntax; `startOf('isoWeek')` day derivation; folder-prefixed nav and day links
+- Modified [[Template Monthly.md]] — converted to Templater syntax; folder-prefixed nav links; static dataview month filter
+- Modified [[Template Yearly.md]] — converted to Templater syntax; folder-prefixed nav links
+- Modified [[📊 Bases Formulas Reference]] — renamed `Notes Captured` section; added `Quarter` formula docs; added `Highlights Stream` and `High Energy Days` to Views Quick Reference
+- Modified `templater-obsidian/data.json` — registered folder templates for `05-Calendar/Daily`, `Weekly`, `Monthly`, `Yearly` (enables click-to-create with correct template)
 ---
 # 18/02/26
 - Added [[Daily-View]] — new `.base` file with Created Today + Modified Today tabs (vault-wide)
@@ -141,7 +159,7 @@ template-status: origin_production
 # 21/02/26
 - **Documentation Update — Reflecting Vault Optimization v2.0 changes**
 - Updated [[🔢My PKM Metadata]] — fixed maturity emojis (`🌱seed` → `📤seed`, `🌿seedling` → `🌱seedling`), expanded status enum (+`⏸️paused`, `❌cancelled`, `⚠️blocked`), added validation & automation tools section (yaml_validator, maturity-promoter, metrics-core, query templates)
-- Updated [[🙂My PKM Icon Reference]] — corrected maturity icons to canonical values, rewrote status indicators to match CIS_STATUS (8 values)
+- Updated [[🙂Icon Reference & Color System]] — corrected maturity icons to canonical values, rewrote status indicators to match CIS_STATUS (8 values)
 - Updated [[ℹ️My PKM Naming Convention]] — added query template naming pattern, documented full template folder structure (Queries, Calendar, Kanban, _Examples)
 - Updated [[CLAUDE.md]] — added new scripts (maturity-evolve, generate-weekly-report, metrics-core enhancements), template subfolders, `deadline` → `due` convention, canonical maturity values
 ---

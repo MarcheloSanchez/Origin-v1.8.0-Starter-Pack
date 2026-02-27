@@ -40,8 +40,7 @@ cssclasses:
 
 # 🏠 PKM Home Dashboard
 
-*Your personal knowledge management command center
-
+*Your personal knowledge management command center*
 ## 🎯 Quick Actions
 
 | Action                | Shortcut       | Template                                 |

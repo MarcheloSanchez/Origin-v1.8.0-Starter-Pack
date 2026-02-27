@@ -60,11 +60,11 @@ template-status: origin
 ---
 # 01/10/25
 - Updated Archived folders for better searchability. Stays grey in search but at the bottom. Applied to [99-System] + [Templates]
-- Changed [[Maturity Evolve]] attributes:  Inspired from [[🙂My PKM Icon Reference]] 
+- Changed [[Maturity Evolve]] attributes:  Inspired from [[🙂Icon Reference & Color System]] 
 	- `📤seed` → `🌱seed`
 	- `🌱seedling`  → `🌿seedling` 
 - Added for future visual testing on mobile [[Custom Callout System]] needs to be finished template vault first.
-- Replaced [[Icon Package]] with → [[🙂My PKM Icon Reference]]
+- Replaced [[Icon Package]] with → [[🙂Icon Reference & Color System]]
 - Updated [[CIS_TYPE]] with defined in [[🔢My PKM Metadata]]
 ---
 # 30/09/25

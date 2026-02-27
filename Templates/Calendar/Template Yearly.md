@@ -1,16 +1,24 @@
+<%*
+const d = moment(tp.file.title, "YYYY", true);
+const ds = d.isValid() ? d : moment();
+const yearStr     = ds.format("YYYY");
+const prevYearStr = ds.clone().subtract(1, 'year').format("YYYY");
+const nextYearStr = ds.clone().add(1, 'year').format("YYYY");
+const todayStr    = moment().format("YYYY-MM-DD");
+-%>
 ---
-title: "{{date:YYYY}}"
+title: "<% yearStr %>"
 type: yearly
 tags:
   - 📅yearly
-created: "{{date:YYYY-MM-DD}}"
-modified: "{{date:YYYY-MM-DD}}"
+created: "<% todayStr %>"
+modified: "<% todayStr %>"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[{{date-1y:YYYY}}|⏪ {{date-1y:YYYY}}]] · [[{{date+1y:YYYY}}|{{date+1y:YYYY}} ⏩]]
+[[05-Calendar/Yearly/<% prevYearStr %>|⏪ <% prevYearStr %>]] · [[05-Calendar/Yearly/<% nextYearStr %>|<% nextYearStr %> ⏩]]
 
-# Rok {{date:YYYY}}
+# Rok <% yearStr %>
 
 ## 🎯 Roční vize
 *Hlavní téma a směr pro tento rok*
@@ -19,12 +27,12 @@ modified: "{{date:YYYY-MM-DD}}"
 *Kompletní hodnocení všech životních domén*
 
 ```dataview
-TABLE  
-priority as "Priorita",  
-maturity as "Zralost",  
-review_frequency as "Frekvence"  
-FROM "02-Dots/200-Areas"  
-WHERE type = "area"  
+TABLE
+priority as "Priorita",
+maturity as "Zralost",
+review_frequency as "Frekvence"
+FROM "02-Dots/200-Areas"
+WHERE type = "area"
 SORT priority DESC
 ```
 
@@ -36,7 +44,7 @@ SORT priority DESC
 *Klíčové poznatky a růst*
 
 ## 🔮 Plány pro příští rok
-*Směr a priority pro {{date+1y:YYYY}}*
+*Směr a priority pro <% nextYearStr %>*
 
 ---
-*Rok {{date:YYYY}} | Celkové hodnocení: ⭐⭐⭐⭐⭐*
+*Rok <% yearStr %> | Celkové hodnocení: ⭐⭐⭐⭐⭐*

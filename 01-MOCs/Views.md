@@ -34,6 +34,7 @@ Hub notes for navigation and status overview.
 | [[🎮Gamification Dashboard]]     | XP, streaks, and habit tracking                               |
 | [[📊 Calendar System Dashboard]] | Calendar system overview — daily/weekly/monthly status        |
 | [[Prompt Dashboard NEW]]         | Active prompt library browser                                 |
+| [[Tags - Status Check]]          |                                                               |
 
 
 ---

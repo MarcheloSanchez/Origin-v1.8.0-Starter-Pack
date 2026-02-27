@@ -1,33 +1,51 @@
+<%*
+const d = moment(tp.file.title, "gggg-[W]ww", true);
+const ds = d.isValid() ? d : moment();
+const mon = ds.clone().startOf('isoWeek');
+const tue = mon.clone().add(1, 'day');
+const wed = mon.clone().add(2, 'day');
+const thu = mon.clone().add(3, 'day');
+const fri = mon.clone().add(4, 'day');
+const sat = mon.clone().add(5, 'day');
+const sun = mon.clone().add(6, 'day');
+const weekStr     = ds.format("gggg-[W]ww");
+const prevWeekStr = ds.clone().subtract(1, 'week').format("gggg-[W]ww");
+const nextWeekStr = ds.clone().add(1, 'week').format("gggg-[W]ww");
+const monthStr    = mon.format("YYYY-MM");
+const weekNum     = ds.format("ww");
+const monthYear   = ds.format("MMMM YYYY");
+const todayStr    = moment().format("YYYY-MM-DD");
+-%>
 ---
-title: "{{date:gggg-[W]ww}}"
+title: "<% weekStr %>"
 type: weekly
 tags:
   - 📅weekly
-created: "{{date:YYYY-MM-DD}}"
-modified: "{{date:YYYY-MM-DD}}"
+created: "<% todayStr %>"
+modified: "<% todayStr %>"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[{{date-1w:gggg-[W]ww}}|⏪ Minulý týden]] · [[{{date:YYYY-MM}}|📅 Tento měsíc]] · [[{{date+1w:gggg-[W]ww}}|Příští týden ⏩]]
+[[05-Calendar/Weekly/<% prevWeekStr %>|⏪ Minulý týden]] · [[05-Calendar/Monthly/<% monthStr %>|📅 Tento měsíc]] · [[05-Calendar/Weekly/<% nextWeekStr %>|Příští týden ⏩]]
 
-# Týden {{date:ww}} · {{date:MMMM YYYY}}
-*{{monday:MMMM DD}} – {{sunday:MMMM DD}}*
+# Týden <% weekNum %> · <% monthYear %>
+*<% mon.format("MMMM DD") %> – <% sun.format("MMMM DD") %>*
 
 ## 🎯 Týdenní cíle
 *3-5 klíčových výsledků pro tento týden*
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
+- [ ]
 
 ## 🚀 Pokrok v projektech
 *Postup v tento týden*
 
 ```dataview
-TABLE  
-completion_percentage + "%" as "Pokrok",  
-next_actions as "Další kroky"  
-FROM "03-Efforts"  
-WHERE status = "🔄active"  
+TABLE
+completion_percentage + "%" as "Pokrok",
+next_actions as "Další kroky"
+FROM "03-Efforts"
+WHERE status = "🔄active"
 SORT completion_percentage DESC
 ```
 ## 🏠 Pozornost oblastem
@@ -40,13 +58,13 @@ SORT completion_percentage DESC
 | [[Area – Vzdělávání]] | | |
 
 ## 📅 Odkazy na dny
-- [[{{monday:YYYY-MM-DD}}|{{monday:dddd}}]]
-- [[{{tuesday:YYYY-MM-DD}}|{{tuesday:dddd}}]]
-- [[{{wednesday:YYYY-MM-DD}}|{{wednesday:dddd}}]]
-- [[{{thursday:YYYY-MM-DD}}|{{thursday:dddd}}]]
-- [[{{friday:YYYY-MM-DD}}|{{friday:dddd}}]]
-- [[{{saturday:YYYY-MM-DD}}|{{saturday:dddd}}]]
-- [[{{sunday:YYYY-MM-DD}}|{{sunday:dddd}}]]
+- [[05-Calendar/Daily/<% mon.format("YYYY-MM-DD") %>|<% mon.format("dddd") %>]]
+- [[05-Calendar/Daily/<% tue.format("YYYY-MM-DD") %>|<% tue.format("dddd") %>]]
+- [[05-Calendar/Daily/<% wed.format("YYYY-MM-DD") %>|<% wed.format("dddd") %>]]
+- [[05-Calendar/Daily/<% thu.format("YYYY-MM-DD") %>|<% thu.format("dddd") %>]]
+- [[05-Calendar/Daily/<% fri.format("YYYY-MM-DD") %>|<% fri.format("dddd") %>]]
+- [[05-Calendar/Daily/<% sat.format("YYYY-MM-DD") %>|<% sat.format("dddd") %>]]
+- [[05-Calendar/Daily/<% sun.format("YYYY-MM-DD") %>|<% sun.format("dddd") %>]]
 
 ## 💡 Klíčové poznatky
 *Co fungovalo, co ne, co upravit*
@@ -58,4 +76,4 @@ SORT completion_percentage DESC
 - [ ] Identifikovat oblasti potřebující pozornost
 
 ---
-*Týden {{date:ww, YYYY}} | Energie: ⭐⭐⭐⭐⭐ | Zaměření: ⭐⭐⭐⭐⭐*
+*Týden <% weekNum %>, <% ds.format("YYYY") %> | Energie: ⭐⭐⭐⭐⭐ | Zaměření: ⭐⭐⭐⭐⭐*

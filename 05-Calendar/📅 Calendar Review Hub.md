@@ -240,6 +240,12 @@ LIMIT 10
 
 ---
 
+## 📖 Documentation
+
+→ [[📅 Calendar Review Hub Guide]] — Step-by-step setup and usage guide
+
+---
+
 ## 🔧 Setup & Configuration
 
 ### QuickAdd Macros (Pre-configured)

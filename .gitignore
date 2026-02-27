@@ -1,0 +1,30 @@
+# ── Obsidian runtime state (personal, volatile) ──
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# ── Plugin code (comes from community, don't version) ──
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+
+# ── Plugin usage data (personal history) ──
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/plugins/various-complements/histories.json
+.obsidian/plugins/smart-connections/
+
+# ── Backup artifacts ──
+*.backup
+*.bak-*
+
+# ── Database state files ──
+*.base
+
+# ── Build outputs ──
+Origin-Starter-Pack-*/
+
+# ── OS / editor junk ──
+.DS_Store
+Thumbs.db
+NUL
+
+# ── Claude Code temp files ──
+99-System/Scripts/tmpclaude-*

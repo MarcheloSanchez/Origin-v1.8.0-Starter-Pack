@@ -28,6 +28,22 @@
     {
       "folder": "01-MOCs",
       "template": "Templates/Create/new-moc-auto.md"
+    },
+    {
+      "folder": "05-Calendar/Daily",
+      "template": "Templates/Calendar/Template Daily.md"
+    },
+    {
+      "folder": "05-Calendar/Weekly",
+      "template": "Templates/Calendar/Template Weekly.md"
+    },
+    {
+      "folder": "05-Calendar/Monthly",
+      "template": "Templates/Calendar/Template Monthly.md"
+    },
+    {
+      "folder": "05-Calendar/Yearly",
+      "template": "Templates/Calendar/Template Yearly.md"
     }
   ],
   "enable_file_templates": false,

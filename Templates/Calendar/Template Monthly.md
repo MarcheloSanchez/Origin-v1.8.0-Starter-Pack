@@ -1,33 +1,43 @@
+<%*
+const d = moment(tp.file.title, "YYYY-MM", true);
+const ds = d.isValid() ? d : moment();
+const monthStr     = ds.format("YYYY-MM");
+const prevMonthStr = ds.clone().subtract(1, 'month').format("YYYY-MM");
+const nextMonthStr = ds.clone().add(1, 'month').format("YYYY-MM");
+const yearStr      = ds.format("YYYY");
+const monthYear    = ds.format("MMMM YYYY");
+const todayStr     = moment().format("YYYY-MM-DD");
+-%>
 ---
-title: "{{date:YYYY-MM}}"
+title: "<% monthStr %>"
 type: monthly
 tags:
   - 📅monthly
-created: "{{date:YYYY-MM-DD}}"
-modified: "{{date:YYYY-MM-DD}}"
+created: "<% todayStr %>"
+modified: "<% todayStr %>"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[{{date-1M:YYYY-MM}}|⏪ Minulý měsíc]] · [[{{date:YYYY}}|📅 Tento rok]] · [[{{date+1M:YYYY-MM}}|Příští měsíc ⏩]]
+[[05-Calendar/Monthly/<% prevMonthStr %>|⏪ Minulý měsíc]] · [[05-Calendar/Yearly/<% yearStr %>|📅 Tento rok]] · [[05-Calendar/Monthly/<% nextMonthStr %>|Příští měsíc ⏩]]
 
-# {{date:MMMM YYYY}}
+# <% monthYear %>
 
 ## 🎯 Měsíční cíle
 *3-5 hlavních výsledků plánovaných*
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
+- [ ]
 
 ## 🚀 Přehled projektů
 *Status projektů a rozhodnutí*
 
 ```dataview
-TABLE  
-status,  
-completion_percentage + "%" as "Pokrok",  
-priority as "Priorita"  
-FROM "03-Efforts"  
-WHERE contains(string(created), "{{date:YYYY-MM}}") OR contains(string(modified), "{{date:YYYY-MM}}")  
+TABLE
+status,
+completion_percentage + "%" as "Pokrok",
+priority as "Priorita"
+FROM "03-Efforts"
+WHERE contains(string(created), "<% monthStr %>") OR contains(string(modified), "<% monthStr %>")
 SORT priority DESC, completion_percentage DESC
 ```
 
@@ -35,12 +45,12 @@ SORT priority DESC, completion_percentage DESC
 *Měsíční přehled všech životních domén*
 
 ```dataview
-TABLE  
-priority as "Priorita",  
-last_review as "Poslední přehled",  
-review_frequency as "Frekvence"  
-FROM "02-Dots/200-Areas"  
-WHERE type = "area"  
+TABLE
+priority as "Priorita",
+last_review as "Poslední přehled",
+review_frequency as "Frekvence"
+FROM "02-Dots/200-Areas"
+WHERE type = "area"
 SORT priority DESC
 ```
 
@@ -49,9 +59,9 @@ SORT priority DESC
 *Zjištění z měsíčního přehledu oblastí*
 
 ## 📊 Měsíční metriky
-**Dokončené projekty**: 
-**Nové znalosti zachycené**: 
-**Pokročilé oblasti**: 
+**Dokončené projekty**:
+**Nové znalosti zachycené**:
+**Pokročilé oblasti**:
 **Celková energie**: ⭐⭐⭐⭐⭐
 
 ## 🎉 Vítězství a úspěchy
@@ -67,5 +77,4 @@ SORT priority DESC
 - [ ] Aktualizovat priority na základě tohoto měsíce
 
 ---
-*{{date:MMMM YYYY}} | Status: 🔄active | Příští přehled: {{date+1M:YYYY-MM}}*
-
+*<% monthYear %> | Status: 🔄active | Příští přehled: <% nextMonthStr %>*

@@ -14,3 +14,5 @@ obsidianUIMode: preview
 [[MOC-Full-Template|Click here for template]]
 
 ![[_MOCs_Data.base]]
+
+- [[BOAT notes]]

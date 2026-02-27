@@ -1,1 +1,8 @@
-{}
+{
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-default",
+  "minimal-style@@tabs-style": "tabs-default",
+  "minimal-style@@vault-profile-display": "vault-profile-default",
+  "minimal-style@@bases-table-header-icon-display": "flex",
+  "minimal-style@@dataview-inline-lists": false,
+  "modular-css-layout-wv@@wide-table-global": false
+}

@@ -144,6 +144,6 @@ views:
 ## Related
 
 - [[MOC - Bases]] — All base files in the vault
-- [[Active-Types-base]] — Reference: multi-view type browser
-- [[Daily-View]] — Reference: date filter pattern
-- [[_System_data]] — Reference: missing field filter pattern
+- [[Active-Types-base.base]] — Reference: multi-view type browser
+- [[Daily-View.base]] — Reference: date filter pattern
+- [[_System_data.base]] — Reference: missing field filter pattern

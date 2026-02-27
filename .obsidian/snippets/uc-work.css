@@ -1,0 +1,196 @@
+/* =============================================================================
+   UC: WORK — Professional Vault
+
+   Aesthetic: Sharp, focused, no-nonsense. Steel blue accent on deep
+   ink backgrounds. Corporate-elegant without being boring.
+   The corner office — clarity and precision.
+
+   Drop this snippet into any vault's .obsidian/snippets/ folder.
+   Enable it in Settings → Appearance → CSS Snippets.
+   Only ONE uc-*.css should be active per vault.
+   ============================================================================= */
+
+/* ─── Accent Palette ─── */
+:root {
+  --uc-accent:          #6889ff;
+  --uc-accent-dim:      #4c6edb;
+  --uc-accent-bright:   #93aaff;
+  --uc-accent-muted:    rgba(104, 137, 255, 0.09);
+  --uc-accent-glow:     rgba(104, 137, 255, 0.20);
+  --uc-accent-text:     #bfcfff;
+
+  /* Surface system — cool ink */
+  --uc-bg-primary:      #0d1017;
+  --uc-bg-secondary:    #121620;
+  --uc-bg-tertiary:     #171c28;
+  --uc-bg-elevated:     #1c2230;
+  --uc-border:          rgba(104, 137, 255, 0.07);
+  --uc-border-active:   rgba(104, 137, 255, 0.18);
+
+  /* Text hierarchy — cool neutrals */
+  --uc-text-primary:    #d6dde8;
+  --uc-text-secondary:  #7e8ca0;
+  --uc-text-faint:      #4a5568;
+
+  /* Status bar badge */
+  --uc-badge-bg:        rgba(104, 137, 255, 0.12);
+  --uc-badge-text:      #6889ff;
+  --uc-badge-label:     "WORK";
+}
+
+/* ─── Core Overrides (Minimal Theme) ─── */
+.theme-dark {
+  --background-primary:           var(--uc-bg-primary);
+  --background-primary-alt:       var(--uc-bg-secondary);
+  --background-secondary:         var(--uc-bg-secondary);
+  --background-secondary-alt:     var(--uc-bg-tertiary);
+  --background-modifier-border:   var(--uc-border);
+  --background-modifier-hover:    var(--uc-accent-muted);
+
+  --interactive-accent:           var(--uc-accent);
+  --interactive-accent-hover:     var(--uc-accent-bright);
+
+  --text-normal:                  var(--uc-text-primary);
+  --text-muted:                   var(--uc-text-secondary);
+  --text-faint:                   var(--uc-text-faint);
+  --text-accent:                  var(--uc-accent);
+  --text-accent-hover:            var(--uc-accent-bright);
+
+  --link-color:                   var(--uc-accent);
+  --link-color-hover:             var(--uc-accent-bright);
+  --link-external-color:          var(--uc-accent-dim);
+  --link-external-color-hover:    var(--uc-accent);
+}
+
+/* ─── Sidebar Background ─── */
+.theme-dark .workspace-split.mod-left-split,
+.theme-dark .mod-left-split .workspace-tabs {
+  background-color: var(--uc-bg-secondary);
+}
+
+/* ─── Tab Header Accent Line ─── */
+.workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 var(--uc-accent) !important;
+}
+
+/* ─── Active File in Nav ─── */
+.nav-file-title.is-active {
+  background-color: var(--uc-accent-muted) !important;
+  color: var(--uc-accent-text) !important;
+  border-left: 2px solid var(--uc-accent);
+}
+
+/* ─── Headings ─── */
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: var(--uc-accent-bright) !important;
+}
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: var(--uc-accent) !important;
+}
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: var(--uc-accent-dim) !important;
+}
+
+/* ─── Tags ─── */
+.tag, a.tag {
+  background-color: var(--uc-accent-muted) !important;
+  color: var(--uc-accent) !important;
+  border: 1px solid var(--uc-border-active) !important;
+}
+
+/* ─── Checkboxes ─── */
+input[type="checkbox"]:checked {
+  background-color: var(--uc-accent) !important;
+  border-color: var(--uc-accent) !important;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar-thumb {
+  background-color: var(--uc-accent-dim) !important;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--uc-accent) !important;
+}
+
+/* ─── Blockquotes ─── */
+.markdown-preview-view blockquote {
+  border-left: 3px solid var(--uc-accent-dim) !important;
+  background-color: var(--uc-accent-muted) !important;
+}
+
+/* ─── Selection ─── */
+::selection {
+  background-color: var(--uc-accent-glow) !important;
+}
+
+/* ─── Status Bar UC Badge ─── */
+.status-bar::before {
+  content: var(--uc-badge-label);
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 8px;
+  margin-right: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--uc-badge-text);
+  background: var(--uc-badge-bg);
+  border: 1px solid var(--uc-border-active);
+  border-radius: 3px;
+}
+
+/* ─── Titlebar Tint ─── */
+.titlebar {
+  border-bottom: 1px solid var(--uc-border-active) !important;
+}
+
+/* ─── Callout Accent ─── */
+.callout {
+  border-left-color: var(--uc-accent-dim) !important;
+}
+.callout-title {
+  color: var(--uc-accent) !important;
+}
+
+/* ─── Buttons ─── */
+.mod-cta {
+  background-color: var(--uc-accent) !important;
+  color: var(--uc-bg-primary) !important;
+}
+.mod-cta:hover {
+  background-color: var(--uc-accent-bright) !important;
+}
+
+/* ─── Search Match Highlight ─── */
+.search-result-file-matched-text {
+  background-color: var(--uc-accent-glow) !important;
+  color: var(--uc-accent-bright) !important;
+}
+
+/* ─── Graph View ─── */
+.graph-view.color-fill {
+  color: var(--uc-accent) !important;
+}
+.graph-view.color-line {
+  color: var(--uc-border-active) !important;
+}
+
+/* ─── Vault Name ─── */
+.workspace-drawer-vault-name {
+  color: var(--uc-accent) !important;
+  font-weight: 600;
+}
+
+/* ─── WORK-specific: Tighter spacing for density ─── */
+.nav-file-title {
+  padding: 2px 8px !important;
+}
+.markdown-preview-view {
+  max-width: 800px;
+  margin: 0 auto;
+}

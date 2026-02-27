@@ -315,4 +315,4 @@ Level 3: ████     (rich colors, special occasions)
 - [[🏷️My PKM Tags]]
 - [[🔁My PKM Workflows]]
 - [[Visual hotkeys]]
-- [[🙂My PKM Icon Reference]] - Simplified showcase of used icons
+- [[🙂Icon Reference & Color System]] - Simplified showcase of used icons

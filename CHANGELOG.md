@@ -10,6 +10,18 @@ template-status: origin_production
 ---
 > Zde psát modifikace a úpravy ve vaultu.
 ---
+# 28/02/26
+## Distribution & Config Management
+- Added `.gitignore` — ignore plugin code (`main.js`, `styles.css`), workspace state, `.base` files, backup artifacts, Claude temp files
+- Untracked 62 plugin code files from git (-162K lines) — only configs (`data.json`) and version metadata (`manifest.json`) stay versioned
+- Added `99-System/Config/plugin-manifest.json` — pinned versions for 32 plugins across 3 tiers (core/recommended/optional)
+- Added `99-System/Scripts/build-starter-pack.sh` — export clean starter pack from personal vault (strips personal content, keeps tutorials/templates/scripts/CIS)
+## QuickAdd Optimization (final deliverables)
+- Added `99-System/Scripts/process-note-safe.js` — combo macro: Classify + Autofill Metadata + Normalize YAML in sequence
+- Added "Process Note (Safe)" as first entry in 🧩 Process QuickAdd menu
+- Added `00-Meta/Documentation/Quick Reference Card.md` — beginner reference: 4 header buttons, 3 ribbon buttons, 7 hotkeys, full menu structure, workflow guide
+
+---
 # 25/02/26
 - Added CSS snippet `uc-production.css` — UC theme: teal accent, deep slate, PROD badge
 - Added CSS snippet `uc-dev.css` — UC theme: amber accent, warm charcoal, DEV badge + monospace nav

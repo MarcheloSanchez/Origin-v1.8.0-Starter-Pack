@@ -1,6 +1,13 @@
 filters:
   and:
     - file.folder.contains("Sources")
+    - '!file.name.startswith("+")'
+    - '!file.name.startswith("04")'
+    - '!file.name.contains("Template")'
+formulas:
+  Notes Extracted: file.links.filter(value.asFile().properties.type == "atomic").length
+  Days Since Started: (today() - file.ctime).days.round() + " days"
+  Days Stale: (today() - file.mtime).days.round() + " days ago"
 views:
   - type: table
     name: All sources
@@ -44,6 +51,53 @@ views:
       - status
       - tags
       - type
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Reading Now
+    filters:
+      and:
+        - read_status == "reading"
+    order:
+      - file.name
+      - source_type
+      - source_author
+      - formula.Days Since Started
+      - formula.Days Stale
+      - formula.Notes Extracted
+      - key_insights_count
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: To Read
+    filters:
+      and:
+        - read_status == "unread"
+    order:
+      - file.name
+      - source_type
+      - source_author
+      - source_date
+      - formula.Days Since Started
+    sort:
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.source_date: 149
+  - type: table
+    name: Completed
+    filters:
+      and:
+        - read_status == "completed"
+    order:
+      - file.name
+      - source_type
+      - source_author
+      - rating_type
+      - formula.Notes Extracted
+      - key_insights_count
     sort:
       - property: file.mtime
         direction: DESC

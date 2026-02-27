@@ -7,6 +7,23 @@ filters:
 formulas:
   stage: maturity
   last_touch: file.mtime.date().toString()
+  Outlinks: file.links.length
+  Backlinks: file.backlinks.length
+  Days Stable: (today() - file.mtime).days.round()
+  Promote?: |-
+    if(maturity == "📤seed",
+      if(file.links.length >= 2 && file.backlinks.length >= 1, "✅ → seedling", "❌"),
+      if(maturity == "🌱seedling",
+        if(file.links.length >= 5 && file.backlinks.length >= 2, "✅ → sapling", "❌"),
+        if(maturity == "🪴sapling",
+          if(file.links.length >= 10 && file.backlinks.length >= 5 && (today() - file.mtime).days.round() >= 30, "✅ → evergreen", "❌"),
+          if(maturity == "🌲evergreen",
+            if(file.links.length >= 15 && file.backlinks.length >= 10 && (today() - file.mtime).days.round() >= 60, "✅ → fruit", "❌"),
+            "🍓"
+          )
+        )
+      )
+    )
 properties:
   title:
     displayName: Atomic
@@ -31,3 +48,29 @@ views:
       - file.mtime
   - type: table
     name: All Atomics
+  - type: table
+    name: Maturity Pipeline
+    order:
+      - file.name
+      - maturity
+      - formula.Outlinks
+      - formula.Backlinks
+      - formula.Days Stable
+      - formula.Promote?
+    sort:
+      - property: formula.Promote?
+        direction: DESC
+      - property: maturity
+        direction: ASC
+  - type: table
+    name: Ready to Promote
+    order:
+      - file.name
+      - maturity
+      - formula.Promote?
+      - formula.Outlinks
+      - formula.Backlinks
+      - formula.Days Stable
+    sort:
+      - property: maturity
+        direction: ASC

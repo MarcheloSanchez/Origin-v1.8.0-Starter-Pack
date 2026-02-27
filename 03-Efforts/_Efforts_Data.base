@@ -1,6 +1,14 @@
 filters:
   and:
     - file.folder.startsWith("03-Efforts")
+    - '!file.name.startswith("+")'
+    - '!file.name.startswith("03")'
+    - '!file.name.contains("Template")'
+formulas:
+  Days Stale: (today() - file.mtime).days.round() + " days ago"
+  Due In: (note["due"] - today()).days.round() + " days"
+  Linked Atoms: file.links.filter(value.asFile().properties.type == "atomic").length
+  Linked Sources: file.links.filter(value.asFile().properties.type == "source").length
 views:
   - type: table
     name: All Efforts
@@ -8,9 +16,11 @@ views:
       - file.name
       - rank
       - file.folder
-      - up
-      - related
-      - file.links
+      - status
+      - formula.Due In
+      - formula.Days Stale
+      - formula.Linked Atoms
+      - formula.Linked Sources
     sort:
       - property: file.folder
         direction: ASC
@@ -27,9 +37,12 @@ views:
     order:
       - file.name
       - rank
-      - up
-      - related
-      - file.links
+      - status
+      - formula.Due In
+      - formula.Days Stale
+      - formula.Linked Atoms
+      - formula.Linked Sources
+      - next_actions
     sort:
       - property: rank
         direction: DESC
@@ -66,12 +79,26 @@ views:
     order:
       - file.name
       - rank
-      - up
-      - related
-      - file.links
+      - formula.Days Stale
+      - formula.Due In
+      - formula.Linked Atoms
+      - formula.Linked Sources
     sort:
       - property: file.mtime
         direction: DESC
     columnSize:
       file.name: 318
-      file.folder: 229
+  - type: table
+    name: Needs Attention
+    filters:
+      and:
+        - status == "🔄active"
+    order:
+      - file.name
+      - formula.Days Stale
+      - formula.Due In
+      - next_actions
+      - priority
+    sort:
+      - property: file.mtime
+        direction: ASC

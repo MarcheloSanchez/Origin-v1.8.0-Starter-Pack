@@ -17,19 +17,5 @@ obsidianUIMode: preview
 [[Templates/New-Notes/Type/People/👤 Person Professional Template]]
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("300-People")
-views:
-  - type: table
-    name: All People
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-```
+![[_People_Data.base]]
 

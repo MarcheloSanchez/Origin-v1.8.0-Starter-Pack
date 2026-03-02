@@ -36,59 +36,7 @@ related:
 ## 🧭 Domain & Topic  
 
 
-# Overview of active tags 
-```dataview
-TABLE WITHOUT ID
-tag as "🏷️ Tag",
-length(rows) as "Usage Count",
-join(rows.file.link, ", ") as "Files Using It"
-FROM ""
-FLATTEN file.tags as tag
-WHERE !contains(tag, "system")
-GROUP BY tag
-SORT length(rows) DESC
-LIMIT 20
-```
-
-
-## many notes query
-
-```dataview
-TABLE WITHOUT ID
-file.link as "⚠️ Over-Tagged Notes",
-length(file.tags) as "Count"
-FROM ""
-WHERE length(file.tags) > 10
-SORT length(file.tags) DESC
-LIMIT 15
-```
-### 🧮 Tag Usage Summary
-```dataview
-
-TABLE WITHOUT ID
-tag as "🏷️ Tag",
-length(rows) as "Usage Count",
-join(rows.file.link, ", ") as "Used In"
-FROM ""
-FLATTEN file.tags as tag
-GROUP BY tag
-SORT length(rows) DESC
-LIMIT 25
-```
-### ⚠️ Orphan Tags (Unused)
-```dataview
-
-TABLE WITHOUT ID
-tag as "Tag",
-length(rows) as "Usage Count"
-FROM ""
-FLATTEN file.tags as tag
-GROUP BY tag
-WHERE length(rows) < 3
-SORT length(rows) ASC
-LIMIT 20
-
-```
+> [!tip] Tag health monitoring → [[Tags - Status Check]]
 
 # 🏷️ PKM Tags System
 

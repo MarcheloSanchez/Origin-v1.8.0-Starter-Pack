@@ -15,20 +15,6 @@ obsidianUIMode: preview
 [[Templates/New-Notes/Type/Tool/Tool-New|Click here for template]]
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("500-Tools")
-views:
-  - type: table
-    name: All Tools
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-```
+![[_Tools_Data.base]]
 
 

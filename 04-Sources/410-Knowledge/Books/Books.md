@@ -1,5 +1,7 @@
 # Reading Map of Content
 
+![[_Books_Data.base]]
+
 ## Currently Reading
 - [[Building a Second Brain]] #reading #productivity
   - Status: Page 156

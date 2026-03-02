@@ -5,6 +5,7 @@ tags:
   - 📥inbox
   - automation
   - tools
+in: "[[500-Tools]]"
 status: 🔄active
 maturity: 🪴sapling
 processing_priority: low

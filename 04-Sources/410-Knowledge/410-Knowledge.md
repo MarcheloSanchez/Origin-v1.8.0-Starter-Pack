@@ -15,23 +15,8 @@ obsidianUIMode: preview
 - [[Articles]]
 - [[Books]]
 - [[Courses]]
-- [[440-Meetings]]]]
+- [[440-Meetings]]
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("410-Knowledge")
-views:
-  - type: table
-    name: All Knowledge Notes
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-
-```
+![[_Knowledge_Data.base]]
 

@@ -4,7 +4,7 @@ status: 🔄active
 created: 2026-01-16
 modified: 2026-01-16
 tags: [workflow, reference, quickstart, automation]
-up: [[🏡Home]]
+up: "[[🏡Home]]"
 ---
 
 # ⚡ Workflow Quick Reference

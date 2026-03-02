@@ -14,20 +14,5 @@ obsidianUIMode: preview
 
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("430-Guides")
-views:
-  - type: table
-    name: All Guides
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-
-```
+![[_Guides_Data.base]]
 

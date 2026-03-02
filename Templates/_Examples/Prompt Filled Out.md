@@ -83,22 +83,13 @@ Generates a compact quiz for classroom or self-study, aligned to Bloom’s taxon
 ---
 
 ## 📋Instructions 
-```ENG
-Create a 5-question quiz on {topic}.  
-Each question must map to a Bloom level (Remember → Analyze).  
-Add an answer key with short explanations.  
-Output in Markdown:
-1. Questions list  
-2. Answer Key  
 ```
-
-```CZ
-Vytvoř 5 otázek k tématu {topic}.  
-Každá otázka odpovídá úrovni Bloom (Pamatuj → Analyzuj).  
-Přidej správné odpovědi s krátkým vysvětlením.  
-Výstup v Markdownu:  
-1. Seznam otázek  
-2. Klíč odpovědí  
+Create a 5-question quiz on {topic}.
+Each question must map to a Bloom level (Remember → Analyze).
+Add an answer key with short explanations.
+Output in Markdown:
+1. Questions list
+2. Answer Key
 ```
 
 ## Example Input

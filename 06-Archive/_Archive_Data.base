@@ -1,18 +1,91 @@
 filters:
   and:
-    - 'file.folder.contains("06-Archive") or status == "📦archived"'
-
+    - file.folder.contains("06-Archive") or status == "📦archived"
+formulas:
+  Days Archived: (today() - note["archived_date"]).days.round()
 properties:
-  title: { displayName: "Archived" }
-  type: { displayName: "Type" }
-  file.inlinks.length: { displayName: "Inlinks" }
-  file.outlinks.length: { displayName: "Outlinks" }
-
+  title:
+    displayName: 📦 Archived
+  type:
+    displayName: 🏷️ Type
+  archive_reason:
+    displayName: 📋 Reason
+  archived_date:
+    displayName: 📅 Archived On
+  original_location:
+    displayName: 📂 Original Path
+  retention_period:
+    displayName: 🔒 Retention
+  delete_after:
+    displayName: 🗑️ Expires
+  completion_percentage:
+    displayName: 📊 Progress %
+  file.inlinks.length:
+    displayName: ⬅️ Inlinks
+  file.outlinks.length:
+    displayName: ➡️ Outlinks
+  formula.Days Archived:
+    displayName: ⏳ Days Archived
 views:
   - type: table
-    name: "Archive — Link integrity"
+    name: 🔗 Link Integrity
     filters:
       and:
-        - 'file.inlinks.length + file.outlinks.length >= 0'   # show all to spot 0/0
+        - file.inlinks.length + file.outlinks.length >= 0
     order:
-      - 'file.inlinks.length'
+      - file.name
+      - file.inlinks.length
+      - file.outlinks.length
+      - archive_reason
+      - completion_percentage
+    columnSize:
+      file.name: 280
+      file.inlinks.length: 80
+      file.outlinks.length: 80
+      archive_reason: 120
+      completion_percentage: 100
+  - type: table
+    name: 📋 By Reason
+    order:
+      - file.name
+      - archive_reason
+      - type
+      - archived_date
+      - formula.Days Archived
+      - original_location
+      - retention_period
+      - file.inlinks.length
+      - file.outlinks.length
+    sort:
+      - property: archive_reason
+        direction: ASC
+    columnSize:
+      file.name: 240
+      archive_reason: 120
+      original_location: 180
+      formula.Days Archived: 110
+  - type: table
+    name: 🗑️ Expiring Soon
+    order:
+      - file.name
+      - delete_after
+      - archive_reason
+      - retention_period
+      - archived_date
+      - formula.Days Archived
+    sort:
+      - property: delete_after
+        direction: ASC
+    columnSize:
+      file.name: 280
+      delete_after: 110
+      retention_period: 100
+  - type: cards
+    name: 🃏 Archive Cards
+    order:
+      - file.name
+      - archive_reason
+      - type
+      - archived_date
+      - completion_percentage
+    limit: 100

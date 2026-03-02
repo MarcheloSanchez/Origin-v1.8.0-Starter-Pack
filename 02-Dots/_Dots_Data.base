@@ -1,13 +1,118 @@
 filters:
   and:
     - file.folder.contains("02-Dots")
+    - '!file.name.contains(".base")'
+    - '!file.name.startswith("+")'
+    - '!file.name.startswith("02-")'
+    - '!file.name.contains("Template")'
+formulas:
+  Days Idle: (today() - file.mtime).days.round()
+  Backlinks: file.backlinks.length
+  Outlinks: file.links.length
+properties:
+  file.name:
+    displayName: 📌 Name
+  type:
+    displayName: 🏷️ Type
+  fileClass:
+    displayName: 📂 Class
+  maturity:
+    displayName: 🌱 Maturity
+  status:
+    displayName: ⚡ Status
+  tags:
+    displayName: 🔖 Tags
+  up:
+    displayName: ⬆️ Parent
+  related:
+    displayName: 🔗 Related
+  formula.Days Idle:
+    displayName: 💤 Idle Days
+  formula.Backlinks:
+    displayName: ⬅️ Back
+  formula.Outlinks:
+    displayName: ➡️ Out
+  file.mtime:
+    displayName: 🕐 Modified
 views:
   - type: table
-    name: All Dots
+    name: 📋 All Dots
     order:
       - file.name
+      - type
+      - fileClass
+      - maturity
       - status
       - tags
       - up
       - related
-      - in
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 280
+      type: 100
+      fileClass: 100
+      maturity: 120
+      status: 100
+  - type: cards
+    name: 🃏 Dots Cards
+    order:
+      - file.name
+      - type
+      - maturity
+      - status
+      - tags
+    limit: 100
+  - type: table
+    name: 📤 Seeds to Promote
+    filters:
+      and:
+        - maturity == "📤seed"
+    order:
+      - file.name
+      - type
+      - maturity
+      - status
+      - tags
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: ASC
+    columnSize:
+      file.name: 300
+      type: 100
+  - type: table
+    name: 🕐 Recently Modified
+    order:
+      - file.name
+      - type
+      - maturity
+      - status
+      - formula.Days Idle
+    sort:
+      - property: file.mtime
+        direction: DESC
+    columnSize:
+      file.name: 300
+      type: 100
+      formula.Days Idle: 100
+  - type: table
+    name: 🔗 Unlinked Dots
+    order:
+      - file.name
+      - type
+      - maturity
+      - formula.Backlinks
+      - formula.Outlinks
+      - formula.Days Idle
+    sort:
+      - property: formula.Backlinks
+        direction: DESC
+      - property: formula.Outlinks
+        direction: ASC
+    columnSize:
+      file.name: 300
+      type: 100
+      formula.Backlinks: 70
+      formula.Outlinks: 70

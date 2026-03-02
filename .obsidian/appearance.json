@@ -22,7 +22,9 @@
     "Colored Sidebar Items",
     "sidebar-icons-only",
     "headers-custom",
-    "kanban_custom"
+    "kanban_custom",
+    "uc-dev",
+    "base-views"
   ],
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "Cascadia Code",

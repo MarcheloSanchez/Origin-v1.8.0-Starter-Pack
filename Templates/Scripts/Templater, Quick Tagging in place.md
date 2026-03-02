@@ -1,5 +1,5 @@
 <%*  
-// Quick Tag Script pro Alt+T  
+// Quick Tag Script for Alt+T  
 const predefinedTags = [  
 "#📥inbox", "#🔄active", "#⏳waiting", "#🎯priority-high", "#✅completed",  
 "#📦archived", "#💡idea", "#⚗️experiment", " #💼work", "#🏠home", "#🗺️map ", "#🔥on", "#♻️ongoing", "#🌊simmering ", "#💤sleeping", "#🚀project", "#📚source",  
@@ -10,7 +10,7 @@ predefinedTags.map(tag => tag.replace("#", "")),
 predefinedTags  
 );  
 if (selectedTag) {  
-// Vloží tag na pozici kurzoru  
+// Insert tag at cursor position  
 return selectedTag + " ";  
 }  
 %> 

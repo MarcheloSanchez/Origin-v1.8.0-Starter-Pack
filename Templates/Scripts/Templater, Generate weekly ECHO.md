@@ -1,16 +1,16 @@
-<% 
+<%
 const today = moment();
 const weekStart = today.clone().startOf('week');
 
-let dashboard = `# Týdenní přehled (${weekStart.format('DD.MM')} - ${today.format('DD.MM')})\n\n`;
+let dashboard = `# Weekly Overview (${weekStart.format('DD.MM')} - ${today.format('DD.MM')})\n\n`;
 
-dashboard += `## Statistiky:\n`;
-dashboard += `- Nové poznámky: ${newNotesCount}\n`;
-dashboard += `- Dokončené úkoly: ${completedTasks}\n`;
-dashboard += `- Aktivní projekty: ${activeProjects}\n\n`;
+dashboard += `## Stats:\n`;
+dashboard += `- New notes: ${newNotesCount}\n`;
+dashboard += `- Completed tasks: ${completedTasks}\n`;
+dashboard += `- Active projects: ${activeProjects}\n\n`;
 
-dashboard += `## Top tagy tohoto týdne:\n`;
+dashboard += `## Top tags this week:\n`;
 dashboard += getTopTags().map(tag => `- ${tag}`).join('\n');
 
 return dashboard;
-%>  
+%>

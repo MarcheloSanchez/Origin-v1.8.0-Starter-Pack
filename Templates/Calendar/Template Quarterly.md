@@ -8,52 +8,51 @@ modified: "{{date:YYYY-MM-DD}}"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[{{date-3M:YYYY}} Q{{date-3M:Q}}|⏪ Minulé čtvrtletí]] · [[{{date:YYYY}}|📅 Tento rok]] · [[{{date+3M:YYYY}} Q{{date+3M:Q}}|Příští čtvrtletí ⏩]]
+[[{{date-3M:YYYY}} Q{{date-3M:Q}}|⏪ Previous quarter]] · [[{{date:YYYY}}|📅 This year]] · [[{{date+3M:YYYY}} Q{{date+3M:Q}}|Next quarter ⏩]]
 
 # {{date:YYYY}} · Q{{date:Q}}
 
-## 🎯 Čtvrtletní OKRs
-*Objectives and Key Results pro toto čtvrtletí*
+## 🎯 Quarterly OKRs
+*Objectives and Key Results for this quarter*
 
-### Cíl 1: [Oblast]
-- [ ] KR 1: Měřitelný výsledek
-- [ ] KR 2: Měřitelný výsledek  
-- [ ] KR 3: Měřitelný výsledek
+### Objective 1: [Area]
+- [ ] KR 1: Measurable result
+- [ ] KR 2: Measurable result
+- [ ] KR 3: Measurable result
 
-### Cíl 2: [Oblast]
-- [ ] KR 1: Měřitelný výsledek
-- [ ] KR 2: Měřitelný výsledek
+### Objective 2: [Area]
+- [ ] KR 1: Measurable result
+- [ ] KR 2: Measurable result
 
-## 🏠 Strategický přehled oblastí
-*Čtvrtletní strategické hodnocení*
+## 🏠 Strategic Area Overview
+*Quarterly strategic assessment*
 
 ```dataview
-TABLE  
-priority as "Priorita",  
-maturity as "Zralost",  
-last_review as "Poslední přehled"  
-FROM "02-Dots/200-Areas"  
-WHERE type = "area"  
+TABLE
+priority as "Priority",
+maturity as "Maturity",
+last_review as "Last Review"
+FROM "02-Dots/200-Areas"
+WHERE type = "area"
 SORT priority DESC
 ```
 
 
 
-## 🚀 Velké iniciativy
-*Hlavní projekty a iniciativy tohoto čtvrtletí*
+## 🚀 Major Initiatives
+*Key projects and initiatives this quarter*
 
-## 📈 Metriky pokroku
-**Dokončené projekty**: 
-**Nové systémy implementované**: 
-**Oblasti významně pokročilé**: 
-**Znalostní síť rozšířena o**: 
+## 📈 Progress Metrics
+**Completed projects**:
+**New systems implemented**:
+**Areas significantly advanced**:
+**Knowledge network expanded by**:
 
-## 💡 Strategické poznatky
-*Dlouhodobé pozorování a trendy*
+## 💡 Strategic Insights
+*Long-term observations and trends*
 
 ## 🔄 Adjustments
-*Úpravy strategie pro příští čtvrtletí*
+*Strategy adjustments for next quarter*
 
 ---
-*Q{{date:Q}} {{date:YYYY}} | Celkové hodnocení: ⭐⭐⭐⭐⭐*
-
+*Q{{date:Q}} {{date:YYYY}} | Overall rating: ⭐⭐⭐⭐⭐*

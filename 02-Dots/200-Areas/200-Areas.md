@@ -19,20 +19,5 @@ action QuickAdd: Area
 ```
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("200-Areas")
-views:
-  - type: table
-    name: All Areas
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-
-```
+![[_Areas_Data.base]]
 

@@ -70,6 +70,13 @@ due today
 sort by priority
 ```
 
+### ⏰ Scheduled Today
+```tasks
+not done
+scheduled today
+sort by priority
+```
+
 ### 📆 Due This Week
 ```tasks
 not done
@@ -91,53 +98,57 @@ limit 15
 
 ## 📋 Next Actions by Context
 
-### 💻 @computer
-```tasks
-not done
-description includes @computer
-sort by priority
-limit 10
-```
+> [!multi-column]
+>
+> > [!note]- 💻 @computer
+> > ```tasks
+> > not done
+> > description includes @computer
+> > sort by priority
+> > limit 10
+> > ```
+>
+> > [!tip]- 🏠 @home
+> > ```tasks
+> > not done
+> > description includes @home
+> > sort by priority
+> > limit 10
+> > ```
+>
+> > [!warning]- 💼 @work
+> > ```tasks
+> > not done
+> > description includes @work
+> > sort by priority
+> > limit 10
+> > ```
 
-### 🏠 @home
-```tasks
-not done
-description includes @home
-sort by priority
-limit 10
-```
-
-### 💼 @work
-```tasks
-not done
-description includes @work
-sort by priority
-limit 10
-```
-
-### 📱 @phone
-```tasks
-not done
-description includes @phone
-sort by priority
-limit 10
-```
-
-### 🚗 @errands
-```tasks
-not done
-description includes @errands
-sort by priority
-limit 10
-```
-
-### 👤 @people
-```tasks
-not done
-description includes @people
-sort by priority
-limit 10
-```
+> [!multi-column]
+>
+> > [!note]- 📱 @phone
+> > ```tasks
+> > not done
+> > description includes @phone
+> > sort by priority
+> > limit 10
+> > ```
+>
+> > [!tip]- 🚗 @errands
+> > ```tasks
+> > not done
+> > description includes @errands
+> > sort by priority
+> > limit 10
+> > ```
+>
+> > [!abstract]- 👤 @people
+> > ```tasks
+> > not done
+> > description includes @people
+> > sort by priority
+> > limit 10
+> > ```
 
 ---
 
@@ -171,14 +182,14 @@ created today
 
 ---
 
-## 🗂️ All Tasks by File
+## 🗂️ Active Efforts — Tasks by File
 
 ```dataview
 TASK
-FROM -"Templates" AND -"99-System" AND -"00-Meta" AND -"docs"
-WHERE !contains(file.name, "Review HQ") AND !contains(file.name, "GTD Weekly Review") AND !contains(file.name, "My PKM Tasks")
+FROM "03-Efforts"
+WHERE !completed
 GROUP BY file.link
-LIMIT 10
+LIMIT 20
 ```
 
 ---
@@ -199,5 +210,5 @@ LIMIT 10
 
 ```tasks
 done
-done on week this week
+done this week
 ```

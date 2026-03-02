@@ -1,93 +1,93 @@
-<%*  
+<%*
 
-const dv = app.plugins.plugins["dataview"].api;  
+const dv = app.plugins.plugins["dataview"].api;
 
-const vault = app.vault;  
+const vault = app.vault;
 
-const moment = window.moment;  
+const moment = window.moment;
 
-  
 
-// === Parametry časového rozsahu ===  
 
-const today = moment();  
+// === Time range parameters ===
 
-const start = today.clone().subtract(6, "days");  
+const today = moment();
 
-const end = today.clone();  
+const start = today.clone().subtract(6, "days");
 
-  
+const end = today.clone();
 
-// === Cílová složka s denními poznámkami ===  
 
-const pages = dv.pages('"05 Calendar/Daily"')  
 
-.where(p => p.file.day >= start && p.file.day <= end)  
+// === Target folder with daily notes ===
 
-.sort(p => p.file.day, 'asc');  
+const pages = dv.pages('"05 Calendar/Daily"')
 
-  
+.where(p => p.file.day >= start && p.file.day <= end)
 
-let output = `# 🗓 Shrnutí týdne ${start.format("YYYY-MM-DD")} – ${end.format("YYYY-MM-DD")}\n\n`;  
+.sort(p => p.file.day, 'asc');
 
-  
 
-for (const page of pages) {  
 
-const filePath = page.file.path;  
+let output = `# 🗓 Week Summary ${start.format("YYYY-MM-DD")} – ${end.format("YYYY-MM-DD")}\n\n`;
 
-const fileObj = vault.getAbstractFileByPath(filePath);  
 
-if (!fileObj) continue;  
 
-  
+for (const page of pages) {
 
-const fileContent = await vault.read(fileObj);  
+const filePath = page.file.path;
 
-  
+const fileObj = vault.getAbstractFileByPath(filePath);
 
-const getSection = (title) => {  
+if (!fileObj) continue;
 
-const regex = new RegExp(`###\\s*${title}[\\s\\S]*?(?=\\n###|\\n##|$)`, "i");  
 
-const match = fileContent.match(regex);  
 
-return match ? match[0].replace(/###.*\n/, "").trim() : "";  
+const fileContent = await vault.read(fileObj);
 
-};  
 
-  
 
-const gratitude = getSection("🌞 Za co jsem vděčný\\?");  
+const getSection = (title) => {
 
-const insight = getSection("🧠 Co mě zaujalo\\/naučilo\\?");  
+const regex = new RegExp(`###\\s*${title}[\\s\\S]*?(?=\\n###|\\n##|$)`, "i");
 
-const emotion = getSection("💭 Emoce zažita\\?");  
+const match = fileContent.match(regex);
 
-const highlight = page.highlight ?? "";  
+return match ? match[0].replace(/###.*\n/, "").trim() : "";
 
-  
+};
 
-output += `## 📅 ${page.file.day.toFormat("YYYY-MM-DD")} ([[${page.file.name}]])\n`;  
 
-if (highlight) output += `- ✨ highlight:: ${highlight}\n`;  
 
-if (gratitude) output += `- 🌞 Vděčnost: ${gratitude}\n`;  
+const gratitude = getSection("🌞 What am I grateful for\\?");
 
-if (insight) output += `- 🧠 Poznatek: ${insight}\n`;  
+const insight = getSection("🧠 What caught my attention\\/taught me\\?");
 
-if (emotion) output += `- 💭 Emoce: ${emotion}\n`;  
+const emotion = getSection("💭 Emotion experienced\\?");
 
-output += `\n`;  
+const highlight = page.highlight ?? "";
 
-}  
 
-  
 
-output += `---\n\n## ✍️ Reflexe týdne\n- Co se povedlo:\n- Co bych chtěl změnit:\n- Co chci zkusit příští týden:\n`;  
+output += `## 📅 ${page.file.day.toFormat("YYYY-MM-DD")} ([[${page.file.name}]])\n`;
 
-  
+if (highlight) output += `- ✨ highlight:: ${highlight}\n`;
 
-tR += output;  
+if (gratitude) output += `- 🌞 Gratitude: ${gratitude}\n`;
+
+if (insight) output += `- 🧠 Insight: ${insight}\n`;
+
+if (emotion) output += `- 💭 Emotion: ${emotion}\n`;
+
+output += `\n`;
+
+}
+
+
+
+output += `---\n\n## ✍️ Week Reflection\n- What went well:\n- What I'd like to change:\n- What I want to try next week:\n`;
+
+
+
+tR += output;
 
 %>

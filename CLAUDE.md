@@ -64,6 +64,7 @@ Engine: `99-System/Scripts/Templater_script.js` — provides `inject_meta_if_mis
 | `generate-weekly-report.js` | Automated weekly report generator |
 | `archive_note.js` / `archive-old-dailies.js` | Archival automation |
 | `status-picker.js` / `status-progression.js` | Status workflow UI & automation |
+| `process-note-safe.js` | Combo macro: Classify + Autofill Metadata + Normalize YAML |
 
 ## YAML Frontmatter Schema
 
@@ -106,6 +107,10 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 8. **Review HQ**: Uses mix of cached metrics + live queries for dynamic data (overdue tasks, waiting items can't be cached).
 
+9. **Bilingual classifiers**: `batch-process-inbox.js`, `quick-process-atomic.js`, `quick-process-source.js` intentionally contain Czech keywords for classifying Czech-written notes — do NOT remove. `smart-classifier.js` is English-only.
+
+10. **Tags Showcase stale**: Bottom section of `00-Meta/Documentation/PKM/🏷️My PKM Tags.md` ("Tags Showcase") contains legacy tag names (e.g. `#💡idea`, `#🚀project`, `#💼work`) — do NOT use as reference. Canonical taxonomy is in the tables above it. Tag unification in vault notes is pending.
+
 ## Naming Conventions
 
 - **Templates**: `{type}-meta.yaml.md`, `{type}-body.md`, `new-{type}.md`, `new-{type}-auto.md`
@@ -146,3 +151,5 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 - Full glossary: `memory/glossary.md`
 - System architecture: `99-System/` docs
 - Workflows: `00-Meta/Documentation/PKM/🔁My PKM Workflows.md`
+- Tag system: `00-Meta/Documentation/PKM/🏷️My PKM Tags.md`
+- Tag health monitoring: `00-Meta/Documentation/Tags - Status Check.md`

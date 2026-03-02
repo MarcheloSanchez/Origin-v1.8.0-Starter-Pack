@@ -2247,7 +2247,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "<%*\nconst file = tp.file.find_tfile(tp.file.title);\nconst cache = app.metadataCache.getFileCache(file);\nconst fm = cache?.frontmatter || {};\nlet current = fm.status || \"📥inbox\";\n\n// 🔁 cyklus vpřed\nconst cycle = [\"📥inbox\", \"🔄active\", \"⏳waiting\", \"✅completed\", \"📦archived\"];\nlet nextStatus = cycle[(cycle.indexOf(current) + 1) % cycle.length];\n\n// 🧩 načti obsah souboru\nlet content = await app.vault.read(file);\n\n// 🧩 aktualizuj status\nif (content.includes(\"status:\")) {\n  content = content.replace(/status:.*/, `status: ${nextStatus}`);\n} else {\n  content = content.replace(/---/, `---\\nstatus: ${nextStatus}`);\n}\n\n// 🧩 pokud archivujeme, přidej metadata\nif (nextStatus === \"📦archived\" && !content.includes(\"archived_date:\")) {\n  const today = window.moment().format(\"YYYY-MM-DD\");\n  content = content.replace(/---/, `---\\narchived_date: ${today}\\narchive_reason: Auto-archived`);\n}\n\n// 🧩 ulož soubor\nawait app.vault.modify(file, content);\n\n// 🧩 zobraz notifikaci\nnew Notice(`✅ Status updated: ${current} → ${nextStatus}`, 4000);\n%>\n"
+        "format": "<%*\nconst file = tp.file.find_tfile(tp.file.title);\nconst cache = app.metadataCache.getFileCache(file);\nconst fm = cache?.frontmatter || {};\nlet current = fm.status || \"📥inbox\";\n\n// 🔁 Cycle forward\nconst cycle = [\"📥inbox\", \"🔄active\", \"⏳waiting\", \"✅completed\", \"📦archived\"];\nlet nextStatus = cycle[(cycle.indexOf(current) + 1) % cycle.length];\n\n// 🧩 Read file content\nlet content = await app.vault.read(file);\n\n// 🧩 Update status\nif (content.includes(\"status:\")) {\n  content = content.replace(/status:.*/, `status: ${nextStatus}`);\n} else {\n  content = content.replace(/---/, `---\\nstatus: ${nextStatus}`);\n}\n\n// 🧩 If archiving, add metadata\nif (nextStatus === \"📦archived\" && !content.includes(\"archived_date:\")) {\n  const today = window.moment().format(\"YYYY-MM-DD\");\n  content = content.replace(/---/, `---\\narchived_date: ${today}\\narchive_reason: Auto-archived`);\n}\n\n// 🧩 Save file\nawait app.vault.modify(file, content);\n\n// 🧩 Show notification\nnew Notice(`✅ Status updated: ${current} → ${nextStatus}`, 4000);\n%>\n"
       },
       "insertAfter": {
         "enabled": false,
@@ -2286,7 +2286,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "<%*\nconst file = tp.file.find_tfile(tp.file.title);\nconst cache = app.metadataCache.getFileCache(file);\nconst fm = cache?.frontmatter || {};\nlet current = fm.status || \"📥inbox\";\n\n// 🔁 cyklus zpět\nconst cycle = [\"📥inbox\", \"🔄active\", \"⏳waiting\", \"✅completed\", \"📦archived\"];\nlet prevIndex = cycle.indexOf(current) - 1;\nif (prevIndex < 0) prevIndex = cycle.length - 1;\nlet prevStatus = cycle[prevIndex];\n\n// 🧩 načti obsah\nlet content = await app.vault.read(file);\n\n// 🧩 přepiš status\nif (content.includes(\"status:\")) {\n  content = content.replace(/status:.*/, `status: ${prevStatus}`);\n} else {\n  content = content.replace(/---/, `---\\nstatus: ${prevStatus}`);\n}\n\n// 🧩 ulož změny\nawait app.vault.modify(file, content);\n\n// 🧩 zobraz notifikaci\nnew Notice(`↩️ Status reverted: ${current} → ${prevStatus}`, 4000);\n%>\n"
+        "format": "<%*\nconst file = tp.file.find_tfile(tp.file.title);\nconst cache = app.metadataCache.getFileCache(file);\nconst fm = cache?.frontmatter || {};\nlet current = fm.status || \"📥inbox\";\n\n// 🔁 Cycle backward\nconst cycle = [\"📥inbox\", \"🔄active\", \"⏳waiting\", \"✅completed\", \"📦archived\"];\nlet prevIndex = cycle.indexOf(current) - 1;\nif (prevIndex < 0) prevIndex = cycle.length - 1;\nlet prevStatus = cycle[prevIndex];\n\n// 🧩 Read file content\nlet content = await app.vault.read(file);\n\n// 🧩 Update status\nif (content.includes(\"status:\")) {\n  content = content.replace(/status:.*/, `status: ${prevStatus}`);\n} else {\n  content = content.replace(/---/, `---\\nstatus: ${prevStatus}`);\n}\n\n// 🧩 Save changes\nawait app.vault.modify(file, content);\n\n// 🧩 Show notification\nnew Notice(`↩️ Status reverted: ${current} → ${prevStatus}`, 4000);\n%>\n"
       },
       "insertAfter": {
         "enabled": false,
@@ -2422,7 +2422,7 @@
               },
               "format": {
                 "enabled": true,
-                "format": "<%*\nconst stages = [\"📤seed\", \"🌱seedling\", \"🪴sapling\", \"🌲evergreen\", \"🍓fruit\"];\nconst current = tp.frontmatter.maturity || \"📤seed\";\nconst choice = await tp.system.suggester(stages, stages, false, `Aktuální: ${current}`);\n\nif (choice) {\n  await tp.file.writeYaml(\"maturity\", choice);\n  new Notice(`🌱 Nastaveno: ${choice}`);\n  tR = `✅ Změna maturity: ${current} → ${choice}`;\n} else {\n  tR = \"❌ Akce zrušena.\";\n}\n%>\n"
+                "format": "<%*\nconst stages = [\"📤seed\", \"🌱seedling\", \"🪴sapling\", \"🌲evergreen\", \"🍓fruit\"];\nconst current = tp.frontmatter.maturity || \"📤seed\";\nconst choice = await tp.system.suggester(stages, stages, false, `Current: ${current}`);\n\nif (choice) {\n  await tp.file.writeYaml(\"maturity\", choice);\n  new Notice(`🌱 Set to: ${choice}`);\n  tR = `✅ Maturity changed: ${current} → ${choice}`;\n} else {\n  tR = \"❌ Action cancelled.\";\n}\n%>\n"
               },
               "insertAfter": {
                 "enabled": false,
@@ -2465,7 +2465,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "<%*  \n// Quick Tag Script pro Alt+T  \nconst predefinedTags = [  \n\"#📥inbox\", \"#🔄active\", \"#⏳waiting\", \"#🎯priority-high\", \"#✅completed\",  \n\"#📦archived\", \"#💡idea\", \"#⚗️experiment\", \" #💼work\", \"#🏠home\", \"#🗺️map \", \"#🔥on\", \"#♻️ongoing\", \"#🌊simmering \", \"#💤sleeping\", \"#🚀project\", \"#📚source\",  \n\"#👤contact\", \"#🤝meeting\", \"#🧹tidy\", \"#🚤boat\", \"#🌱develop\", \"#❔question\", \"#📝concept \"  \n];  \nconst selectedTag = await tp.system.suggester(  \npredefinedTags.map(tag => tag.replace(\"#\", \"\")),  \npredefinedTags  \n);  \nif (selectedTag) {  \n// Vloží tag na pozici kurzoru  \nreturn selectedTag + \" \";  \n}  \n%> "
+        "format": "<%*  \n// Quick Tag Script pro Alt+T  \nconst predefinedTags = [  \n\"#📥inbox\", \"#🔄active\", \"#⏳waiting\", \"#🎯priority-high\", \"#✅completed\",  \n\"#📦archived\", \"#💡idea\", \"#⚗️experiment\", \" #💼work\", \"#🏠home\", \"#🗺️map \", \"#🔥on\", \"#♻️ongoing\", \"#🌊simmering \", \"#💤sleeping\", \"#🚀project\", \"#📚source\",  \n\"#👤contact\", \"#🤝meeting\", \"#🧹tidy\", \"#🚤boat\", \"#🌱develop\", \"#❔question\", \"#📝concept \"  \n];  \nconst selectedTag = await tp.system.suggester(  \npredefinedTags.map(tag => tag.replace(\"#\", \"\")),  \npredefinedTags  \n);  \nif (selectedTag) {  \n// Insert tag at cursor position  \nreturn selectedTag + \" \";  \n}  \n%> "
       },
       "insertAfter": {
         "enabled": false,

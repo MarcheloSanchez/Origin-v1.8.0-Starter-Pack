@@ -1,16 +1,48 @@
 ---
-Version: 1.8.0
-Last Backup: 2026-01-31
-template-status: origin_production
+Version: 1.9.1
+Last Backup: 2026-03-03
+template-status: origin_dev
 ---
 ⬆️:: [[🏡Home]]
 [[TODO]] - [[BACKLOG]] - [[RELEASE NOTES]]
 ---
-*Poslední aktualizace: `= date(now)`*
+*Last updated: `= date(now)`*
 ---
-> Zde psát modifikace a úpravy ve vaultu.
+> Vault modifications and changes log.
+---
+# 02/03/26
+## TODO.md Dashboard
+- Added `⏰ Scheduled Today` section (Tasks plugin query, between Due Today and Due This Week)
+- Fixed `Done This Week` query syntax (`done on week this week` → `done this week`)
+- Collapsed 6 context sections into 2× multi-column callout rows (3+3, collapsed by default)
+- Renamed "All Tasks by File" → "Active Efforts — Tasks by File", narrowed to `03-Efforts`, limit 20
+
+## Tags - Status Check
+- Added Tag Usage Overview query (top 30 tags by usage)
+- Added Orphan Tags query (< 3 uses)
+- Added Over-Tagged Notes query (> 10 tags)
+
+## PKM Tags Cleanup
+- Removed duplicate scratch queries from top of `🏷️My PKM Tags.md`
+- Replaced with callout link pointing to `Tags - Status Check`
+
 ---
 # 28/02/26
+## Czech → English Cleanup (Automation Layer)
+- Cleaned `quickadd/data.json` — 4 inline scripts: Status Progression NEXT/PREV, Maturity selector, Quick Tag comments and UI strings translated to English
+- Cleaned `smart-classifier.js` — removed all Czech keywords from typeKeywords, tagKeywords, filename hints, structural scoring (bilingual classification kept in batch-process-inbox.js, quick-process-atomic.js, quick-process-source.js for Czech note support)
+- Rewrote `Templates/Calendar/Template Monthly.md` — all section headers, Dataview column names, labels → English
+- Rewrote `Templates/Calendar/Template Quarterly.md` — OKRs, area overview, metrics → English
+- Rewrote `Templates/Calendar/Template Weekly.md` — goals, area table, reflection prompts → English
+- Rewrote `Templates/Calendar/Template Yearly.md` — vision, achievements, lessons → English
+- Cleaned `Templates/Scripts/Templater, Generate weekly ECHO.md` — output strings → English
+- Cleaned `Templates/Scripts/Templater, Quick Tagging in place.md` — comments → English
+- Rewrote `Templates/Scripts/Week Review v2.md` — section headers, daily note extraction labels, reflection prompts → English
+- Cleaned `Templates/Tests/Learn Fast with Short Text.md` — all sections → English
+- Cleaned `Templates/Tests/WTF Weekly dashboar templater.md` — output strings → English
+- Cleaned `Templates/_Examples/Prompt Filled Out.md` — removed redundant CZ translation block
+- Renamed `Templater, YAML aktualizace modifikace.md` → `Templater, YAML Update Modification.md`
+
 ## Distribution & Config Management
 - Added `.gitignore` — ignore plugin code (`main.js`, `styles.css`), workspace state, `.base` files, backup artifacts, Claude temp files
 - Untracked 62 plugin code files from git (-162K lines) — only configs (`data.json`) and version metadata (`manifest.json`) stay versioned

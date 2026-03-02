@@ -18,33 +18,33 @@ modified: "<% todayStr %>"
 ⬆️:: [[05-Calendar]]
 [[05-Calendar/Yearly/<% prevYearStr %>|⏪ <% prevYearStr %>]] · [[05-Calendar/Yearly/<% nextYearStr %>|<% nextYearStr %> ⏩]]
 
-# Rok <% yearStr %>
+# Year <% yearStr %>
 
-## 🎯 Roční vize
-*Hlavní téma a směr pro tento rok*
+## 🎯 Annual Vision
+*Main theme and direction for this year*
 
-## 📊 Ročního přehled oblastí
-*Kompletní hodnocení všech životních domén*
+## 📊 Annual Area Overview
+*Complete assessment of all life domains*
 
 ```dataview
 TABLE
-priority as "Priorita",
-maturity as "Zralost",
-review_frequency as "Frekvence"
+priority as "Priority",
+maturity as "Maturity",
+review_frequency as "Frequency"
 FROM "02-Dots/200-Areas"
 WHERE type = "area"
 SORT priority DESC
 ```
 
 
-## 🏆 Hlavní úspěchy roku
-*Největší vítězství a milníky*
+## 🏆 Major Achievements
+*Biggest wins and milestones*
 
-## 📚 Naučené lekce
-*Klíčové poznatky a růst*
+## 📚 Lessons Learned
+*Key insights and growth*
 
-## 🔮 Plány pro příští rok
-*Směr a priority pro <% nextYearStr %>*
+## 🔮 Plans for Next Year
+*Direction and priorities for <% nextYearStr %>*
 
 ---
-*Rok <% yearStr %> | Celkové hodnocení: ⭐⭐⭐⭐⭐*
+*Year <% yearStr %> | Overall rating: ⭐⭐⭐⭐⭐*

@@ -26,38 +26,38 @@ modified: "<% todayStr %>"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[05-Calendar/Weekly/<% prevWeekStr %>|⏪ Minulý týden]] · [[05-Calendar/Monthly/<% monthStr %>|📅 Tento měsíc]] · [[05-Calendar/Weekly/<% nextWeekStr %>|Příští týden ⏩]]
+[[05-Calendar/Weekly/<% prevWeekStr %>|⏪ Previous week]] · [[05-Calendar/Monthly/<% monthStr %>|📅 This month]] · [[05-Calendar/Weekly/<% nextWeekStr %>|Next week ⏩]]
 
-# Týden <% weekNum %> · <% monthYear %>
+# Week <% weekNum %> · <% monthYear %>
 *<% mon.format("MMMM DD") %> – <% sun.format("MMMM DD") %>*
 
-## 🎯 Týdenní cíle
-*3-5 klíčových výsledků pro tento týden*
+## 🎯 Weekly Goals
+*3-5 key outcomes for this week*
 - [ ]
 - [ ]
 - [ ]
 
-## 🚀 Pokrok v projektech
-*Postup v tento týden*
+## 🚀 Project Progress
+*Progress this week*
 
 ```dataview
 TABLE
-completion_percentage + "%" as "Pokrok",
-next_actions as "Další kroky"
+completion_percentage + "%" as "Progress",
+next_actions as "Next Actions"
 FROM "03-Efforts"
 WHERE status = "🔄active"
 SORT completion_percentage DESC
 ```
-## 🏠 Pozornost oblastem
-*Distribuce pozornosti napříč životními doménami*
+## 🏠 Area Attention
+*Attention distribution across life domains*
 
-| Oblast | Plánované zaměření | Skutečný výsledek |
-|--------|-------------------|-------------------|
+| Area | Planned Focus | Actual Outcome |
+|------|--------------|----------------|
 | [[Area – Health]] | | |
-| [[Area – Práce]] | | |
-| [[Area – Vzdělávání]] | | |
+| [[Area – Work]] | | |
+| [[Area – Learning]] | | |
 
-## 📅 Odkazy na dny
+## 📅 Day Links
 - [[05-Calendar/Daily/<% mon.format("YYYY-MM-DD") %>|<% mon.format("dddd") %>]]
 - [[05-Calendar/Daily/<% tue.format("YYYY-MM-DD") %>|<% tue.format("dddd") %>]]
 - [[05-Calendar/Daily/<% wed.format("YYYY-MM-DD") %>|<% wed.format("dddd") %>]]
@@ -66,14 +66,14 @@ SORT completion_percentage DESC
 - [[05-Calendar/Daily/<% sat.format("YYYY-MM-DD") %>|<% sat.format("dddd") %>]]
 - [[05-Calendar/Daily/<% sun.format("YYYY-MM-DD") %>|<% sun.format("dddd") %>]]
 
-## 💡 Klíčové poznatky
-*Co fungovalo, co ne, co upravit*
+## 💡 Key Insights
+*What worked, what didn't, what to adjust*
 
-## ⚡ Příprava na příští týden
-*Nastavení pro nadcházející týden*
-- [ ] Zkontrolovat a aktualizovat aktivní projekty
-- [ ] Zkontrolovat kalendář kvůli konfliktům
-- [ ] Identifikovat oblasti potřebující pozornost
+## ⚡ Next Week Prep
+*Setup for the upcoming week*
+- [ ] Review and update active projects
+- [ ] Check calendar for conflicts
+- [ ] Identify areas needing attention
 
 ---
-*Týden <% weekNum %>, <% ds.format("YYYY") %> | Energie: ⭐⭐⭐⭐⭐ | Zaměření: ⭐⭐⭐⭐⭐*
+*Week <% weekNum %>, <% ds.format("YYYY") %> | Energy: ⭐⭐⭐⭐⭐ | Focus: ⭐⭐⭐⭐⭐*

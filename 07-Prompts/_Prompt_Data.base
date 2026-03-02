@@ -15,6 +15,7 @@ views:
     order:
       - file.name
       - file.tags
+      - prompt_status
       - difficulty
       - intent
       - audience
@@ -24,6 +25,35 @@ views:
       - eval_score
       - file.ctime
       - file.mtime
+  - type: table
+    name: Winners
+    filters:
+      and:
+        - prompt_status == "winner"
+    order:
+      - file.name
+      - prompt_category
+      - difficulty
+      - intent
+      - audience
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+  - type: table
+    name: Drafts
+    filters:
+      and:
+        - prompt_status == "draft"
+    order:
+      - file.name
+      - prompt_category
+      - difficulty
+      - intent
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
   - type: table
     name: Recently Edited
     sort:

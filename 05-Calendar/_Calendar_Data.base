@@ -23,3 +23,17 @@ views:
     sort:
       - property: file.mtime
         direction: DESC
+  - type: table
+    name: Periodic Reviews
+    filters:
+      and:
+        - '!file.folder.contains("Daily")'
+    order:
+      - file.name
+      - file.tags
+      - type
+      - status
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC

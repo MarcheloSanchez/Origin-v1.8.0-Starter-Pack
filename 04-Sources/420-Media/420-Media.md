@@ -14,25 +14,7 @@ obsidianUIMode: preview
 [[+About Mediaℹ️]]
 media template is via WebClipper
 
-## TOP 10
-
-```base
-filters:
-  and:
-    - file.folder.contains("420-Media")
-views:
-  - type: table
-    name: All Media Notes
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-    limit: 10
-
-```
+![[_Media_Data.base]]
 
 
 

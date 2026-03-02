@@ -15,19 +15,4 @@ obsidianUIMode: preview
 
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("440-Meetings")
-views:
-  - type: table
-    name: All Meetings
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-
-```
+![[_Meetings_Data.base]]

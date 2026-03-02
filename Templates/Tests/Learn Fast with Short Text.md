@@ -1,27 +1,27 @@
-# 📄 {{title}}  ← Název tématu
+# 📄 {{title}}  ← Topic name
 
-## 📌 Shrnutí (1–2 řádky)
-> Rychlé TL;DR
+## 📌 Summary (1–2 lines)
+> Quick TL;DR
 
-## 🔑 Klíčové pojmy
-- *Neuron* = základní jednotka mozku
-- *Inflace* = růst cen → ↓ kupní síla
+## 🔑 Key Concepts
+- *Neuron* = basic unit of the brain
+- *Inflation* = rising prices → ↓ purchasing power
 
-## 🔁 Vztahy / Vztahové mapy
+## 🔁 Relationships / Relationship Maps
 - A → B → C
 - X ⊂ Y
-- 💡 A funguje podobně jako B
+- 💡 A works similarly to B
 
-## 🧠 Moje poznatky
-- 💡 „Tohle mi připomíná...“
-- 💭 Možné srovnání...
+## 🧠 My Insights
+- 💡 "This reminds me of..."
+- 💭 Possible comparison...
 
-## ❓Otázky
-- Proč X způsobuje Y?
-- Co by se stalo, kdyby...?
+## ❓Questions
+- Why does X cause Y?
+- What would happen if...?
 
-## 🗺️ Vizuální mapa (Mermaid / ASCII / obrázek)
+## 🗺️ Visual Map (Mermaid / ASCII / image)
 ```mermaid
 graph TD
-  A[Začátek] --> B[Proces]
-  B --> C[Výstup]
+  A[Start] --> B[Process]
+  B --> C[Output]

@@ -78,6 +78,8 @@ action QuickAdd: Tool
 ```
 - [[X]]
 
+![[_Dots_Data.base]]
+
 ## 🆕 Recent Dots (30 days)
 ```dataview
 TABLE created, maturity

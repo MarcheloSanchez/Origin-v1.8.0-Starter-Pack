@@ -15,19 +15,4 @@ obsidianUIMode: preview
 
 ## Queries
 
-```base
-filters:
-  and:
-    - file.folder.contains("400-Places")
-views:
-  - type: table
-    name: All Places
-    order:
-      - file.name
-      - status
-      - type
-      - file.tags
-      - related
-      - file.mtime
-
-```
+![[_Places_Data.base]]

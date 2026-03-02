@@ -18,63 +18,63 @@ modified: "<% todayStr %>"
 ---
 
 ⬆️:: [[05-Calendar]]
-[[05-Calendar/Monthly/<% prevMonthStr %>|⏪ Minulý měsíc]] · [[05-Calendar/Yearly/<% yearStr %>|📅 Tento rok]] · [[05-Calendar/Monthly/<% nextMonthStr %>|Příští měsíc ⏩]]
+[[05-Calendar/Monthly/<% prevMonthStr %>|⏪ Previous month]] · [[05-Calendar/Yearly/<% yearStr %>|📅 This year]] · [[05-Calendar/Monthly/<% nextMonthStr %>|Next month ⏩]]
 
 # <% monthYear %>
 
-## 🎯 Měsíční cíle
-*3-5 hlavních výsledků plánovaných*
+## 🎯 Monthly Goals
+*3-5 key outcomes planned*
 - [ ]
 - [ ]
 - [ ]
 
-## 🚀 Přehled projektů
-*Status projektů a rozhodnutí*
+## 🚀 Project Overview
+*Project status and decisions*
 
 ```dataview
 TABLE
 status,
-completion_percentage + "%" as "Pokrok",
-priority as "Priorita"
+completion_percentage + "%" as "Progress",
+priority as "Priority"
 FROM "03-Efforts"
 WHERE contains(string(created), "<% monthStr %>") OR contains(string(modified), "<% monthStr %>")
 SORT priority DESC, completion_percentage DESC
 ```
 
-## 🏠 Health Check oblastí
-*Měsíční přehled všech životních domén*
+## 🏠 Area Health Check
+*Monthly overview of all life domains*
 
 ```dataview
 TABLE
-priority as "Priorita",
-last_review as "Poslední přehled",
-review_frequency as "Frekvence"
+priority as "Priority",
+last_review as "Last Review",
+review_frequency as "Frequency"
 FROM "02-Dots/200-Areas"
 WHERE type = "area"
 SORT priority DESC
 ```
 
 
-### Poznámky z přehledu oblastí
-*Zjištění z měsíčního přehledu oblastí*
+### Notes from Area Review
+*Findings from monthly area review*
 
-## 📊 Měsíční metriky
-**Dokončené projekty**:
-**Nové znalosti zachycené**:
-**Pokročilé oblasti**:
-**Celková energie**: ⭐⭐⭐⭐⭐
+## 📊 Monthly Metrics
+**Completed projects**:
+**New knowledge captured**:
+**Areas advanced**:
+**Overall energy**: ⭐⭐⭐⭐⭐
 
-## 🎉 Vítězství a úspěchy
-*Co šlo výjimečně dobře*
+## 🎉 Wins and Achievements
+*What went exceptionally well*
 
-## 🔧 Identifikovaná vylepšení
-*Co upravit nebo změnit*
+## 🔧 Identified Improvements
+*What to adjust or change*
 
-## ⚡ Nastavení příštího měsíce
-*Příprava na nadcházející měsíc*
-- [ ] Zkontrolovat oblasti potřebující pozornost
-- [ ] Naplánovat nové projekty nebo upravit stávající
-- [ ] Aktualizovat priority na základě tohoto měsíce
+## ⚡ Next Month Setup
+*Preparation for the upcoming month*
+- [ ] Review areas needing attention
+- [ ] Plan new projects or adjust existing ones
+- [ ] Update priorities based on this month
 
 ---
-*<% monthYear %> | Status: 🔄active | Příští přehled: <% nextMonthStr %>*
+*<% monthYear %> | Status: 🔄active | Next review: <% nextMonthStr %>*

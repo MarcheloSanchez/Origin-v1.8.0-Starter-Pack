@@ -105,18 +105,18 @@ function analyzeContent(content, frontmatter, filename) {
   analysis.hasQuotes = /^>\s/m.test(bodyContent);
   analysis.hasHeadings = /^#{1,6}\s/m.test(bodyContent);
 
-  // Keyword-based type detection (Czech + English; covers all 10 vault note types)
+  // Keyword-based type detection (English-only; covers all 10 vault note types)
   const typeKeywords = {
-    effort:  ['projekt', 'project', 'úkol', 'task', 'cíl', 'goal', 'milník', 'milestone', 'deadline', 'akce', 'action'],
-    source:  ['zdroj', 'source', 'kniha', 'book', 'článek', 'article', 'video', 'podcast', 'autor', 'author', 'url:', 'link:'],
-    meeting: ['meeting', 'schůzka', 'call', 'hovor', 'účastníci', 'participants', 'agenda', 'action items', 'rozhodnutí', 'decisions'],
-    moc:     ['moc', 'map of content', 'přehled', 'overview', 'index', 'katalog', 'catalog', 'hub'],
-    atomic:  ['myšlenka', 'idea', 'koncept', 'concept', 'poznámka', 'note', 'poznatek', 'insight'],
-    // ---- Extended types (previously unclassified, defaulted to atomic) ----
-    area:    ['oblast', 'area', 'odpovědnost', 'responsibility', 'horizont', 'horizon', 'doména', 'domain', 'ongoing', 'průběžný'],
-    person:  ['kontakt', 'contact', 'vztah', 'relationship', 'kolega', 'colleague', 'mentor', 'email:', 'telefon', 'phone', 'linkedin', 'github'],
-    place:   ['místo', 'place', 'lokace', 'location', 'město', 'city', 'adresa', 'address', 'souřadnice', 'coordinates', 'navštíveno', 'visited'],
-    tool:    ['nástroj', 'tool', 'instalace', 'installation', 'verze', 'version', 'plugin', 'software', 'cena', 'pricing', 'integrace', 'integration'],
+    effort:  ['project', 'task', 'goal', 'milestone', 'deadline', 'action'],
+    source:  ['source', 'book', 'article', 'video', 'podcast', 'author', 'url:', 'link:'],
+    meeting: ['meeting', 'call', 'participants', 'agenda', 'action items', 'decisions'],
+    moc:     ['map of content', 'overview', 'index', 'catalog', 'hub'],
+    atomic:  ['idea', 'concept', 'note', 'insight'],
+    // ---- Extended types ----
+    area:    ['area', 'responsibility', 'horizon', 'domain', 'ongoing'],
+    person:  ['contact', 'relationship', 'colleague', 'mentor', 'email:', 'phone', 'linkedin', 'github'],
+    place:   ['place', 'location', 'city', 'address', 'coordinates', 'visited'],
+    tool:    ['tool', 'installation', 'version', 'plugin', 'software', 'pricing', 'integration'],
     prompt:  ['prompt', 'model', 'llm', 'ai', 'copilot', 'role:', 'context:', 'instruction:', 'system prompt', 'eval_score', 'prompt_category']
   };
 
@@ -141,7 +141,7 @@ function analyzeContent(content, frontmatter, filename) {
   if (analysis.hasTasks) typeScores.effort = (typeScores.effort || 0) + 3;
   if (analysis.hasQuotes) typeScores.source = (typeScores.source || 0) + 2;
   if (analysis.hasLinks && analysis.hasHeadings) typeScores.moc = (typeScores.moc || 0) + 2;
-  if (bodyContent.includes('Účastníci:') || bodyContent.includes('Participants:')) {
+  if (bodyContent.includes('Participants:')) {
     typeScores.meeting = (typeScores.meeting || 0) + 5;
   }
 
@@ -160,16 +160,16 @@ function analyzeContent(content, frontmatter, filename) {
   }
 
   // Filename-based hints — original types
-  if (/^(MTG|Meeting|Schůzka)/i.test(filename)) typeScores.meeting = (typeScores.meeting || 0) + 5;
-  if (/^(MOC|Přehled)/i.test(filename)) typeScores.moc = (typeScores.moc || 0) + 5;
-  if (/^(Effort|Projekt|Project)/i.test(filename)) typeScores.effort = (typeScores.effort || 0) + 5;
-  if (/^(Source|Zdroj|Book|Kniha)/i.test(filename)) typeScores.source = (typeScores.source || 0) + 5;
+  if (/^(MTG|Meeting)/i.test(filename)) typeScores.meeting = (typeScores.meeting || 0) + 5;
+  if (/^(MOC)/i.test(filename)) typeScores.moc = (typeScores.moc || 0) + 5;
+  if (/^(Effort|Project)/i.test(filename)) typeScores.effort = (typeScores.effort || 0) + 5;
+  if (/^(Source|Book)/i.test(filename)) typeScores.source = (typeScores.source || 0) + 5;
 
   // Filename-based hints — extended types
-  if (/^(Area|Oblast)/i.test(filename)) typeScores.area = (typeScores.area || 0) + 5;
-  if (/^(Person|Osoba|Kontakt)/i.test(filename)) typeScores.person = (typeScores.person || 0) + 5;
-  if (/^(Place|Místo|Lokace)/i.test(filename)) typeScores.place = (typeScores.place || 0) + 5;
-  if (/^(Tool|Nástroj)/i.test(filename)) typeScores.tool = (typeScores.tool || 0) + 5;
+  if (/^(Area)/i.test(filename)) typeScores.area = (typeScores.area || 0) + 5;
+  if (/^(Person|Contact)/i.test(filename)) typeScores.person = (typeScores.person || 0) + 5;
+  if (/^(Place|Location)/i.test(filename)) typeScores.place = (typeScores.place || 0) + 5;
+  if (/^(Tool)/i.test(filename)) typeScores.tool = (typeScores.tool || 0) + 5;
   if (/^(Prompt|Agent)/i.test(filename)) typeScores.prompt = (typeScores.prompt || 0) + 5;
 
   // Determine suggested type
@@ -209,13 +209,13 @@ function analyzeContent(content, frontmatter, filename) {
 
   // Suggest tags based on content
   const tagKeywords = {
-    '📥inbox': ['inbox', 'nová', 'new', 'nezpracováno'],
-    '🔄active': ['aktivní', 'active', 'probíhá', 'ongoing'],
-    '💡idea': ['nápad', 'idea', 'myšlenka'],
-    '🎯priority-high': ['důležité', 'important', 'urgent', 'asap', 'priorita'],
-    '💼work': ['práce', 'work', 'job', 'business'],
-    '🏠home': ['dům', 'home', 'personal', 'osobní'],
-    '🌱develop': ['vývoj', 'development', 'růst', 'growth']
+    '📥inbox': ['inbox', 'new', 'unprocessed'],
+    '🔄active': ['active', 'ongoing'],
+    '💡idea': ['idea', 'thought'],
+    '🎯priority-high': ['important', 'urgent', 'asap', 'priority'],
+    '💼work': ['work', 'job', 'business'],
+    '🏠home': ['home', 'personal'],
+    '🌱develop': ['development', 'growth']
   };
 
   for (const [tag, keywords] of Object.entries(tagKeywords)) {

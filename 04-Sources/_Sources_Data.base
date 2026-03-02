@@ -19,7 +19,7 @@ views:
       - related
       - file.mtime
     sort:
-      - property: source
+      - property: source_type
         direction: DESC
       - property: file.ctime
         direction: DESC
@@ -74,7 +74,7 @@ views:
     name: To Read
     filters:
       and:
-        - read_status == "unread"
+        - read_status == "to-read"
     order:
       - file.name
       - source_type
@@ -101,3 +101,18 @@ views:
     sort:
       - property: file.mtime
         direction: DESC
+  - type: table
+    name: Reference Library
+    filters:
+      and:
+        - read_status == "reference"
+    order:
+      - file.name
+      - source_type
+      - source_author
+      - rating_type
+      - key_insights_count
+      - formula.Notes Extracted
+    sort:
+      - property: source_type
+        direction: ASC

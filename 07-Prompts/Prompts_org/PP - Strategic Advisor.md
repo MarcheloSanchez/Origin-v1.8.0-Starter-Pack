@@ -1,4 +1,5 @@
 ---
+title: "PP - Strategic Advisor"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣- Act As A Midjourney Prompt Generator"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want you to act as a prompt generator for Midjourney’s artificial intelligence program. Your job is to provide detailed and creative
 descriptions that will inspire unique and interesting images from the AI. Keep in mind that the AI is capable of understanding a wide range of language and

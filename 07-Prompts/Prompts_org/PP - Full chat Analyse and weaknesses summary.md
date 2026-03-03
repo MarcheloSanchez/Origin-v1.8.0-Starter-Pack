@@ -1,4 +1,5 @@
 ---
+title: "PP - Full chat Analyse and weaknesses summary"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

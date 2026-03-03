@@ -1,4 +1,5 @@
 ---
+title: "Fix grammar and spelling"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,5 +16,6 @@ copilot-command-context-menu-order: 0
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Fix the grammar and spelling of {}. Preserve all formatting, line breaks, and special characters. Do not add or remove any content. Return only the corrected text.

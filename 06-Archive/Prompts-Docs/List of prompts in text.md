@@ -1,5 +1,7 @@
 ---
+title: "List of prompts in text"
 status: 📦archived
+modified: 2026-03-03
 ---
 
 APPLY TO FASTKEY LIST 

@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 Metaphor Machine - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

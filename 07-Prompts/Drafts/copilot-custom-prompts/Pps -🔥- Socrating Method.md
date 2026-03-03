@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥- Socrating Method"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want you to act as a Socrat. You must use the Socratic method to continue questioning my beliefs. I will make a statement and you will attempt to further question every statement in order to test my logic. You will respond with one line at a time. My first claim is "justice is neccessary in a society

@@ -25,4 +25,5 @@ related_notes:
   - "[[PKM Trends 2024]]"
   - "[[Digital Transformation]]"
 archived_copy: true
+modified: 2026-03-03
 ---

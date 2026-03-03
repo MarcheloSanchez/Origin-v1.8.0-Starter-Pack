@@ -1,9 +1,11 @@
 ---
+title: "Suggest metadata"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1090
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Analyze {} and suggest appropriate YAML frontmatter:
 

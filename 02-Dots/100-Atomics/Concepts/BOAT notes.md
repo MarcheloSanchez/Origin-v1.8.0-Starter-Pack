@@ -1,8 +1,10 @@
 ---
+title: "BOAT notes"
 up: "[[🏡Home]]"
 in: "[[01-MOCs]]"
 related:
-Created: 
+Created:
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 

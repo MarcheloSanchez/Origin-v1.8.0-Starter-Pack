@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🧪 TEMPLATE_QA_and_Testing - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

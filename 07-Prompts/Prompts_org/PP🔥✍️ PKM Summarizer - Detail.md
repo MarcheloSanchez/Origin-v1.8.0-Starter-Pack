@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ PKM Summarizer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

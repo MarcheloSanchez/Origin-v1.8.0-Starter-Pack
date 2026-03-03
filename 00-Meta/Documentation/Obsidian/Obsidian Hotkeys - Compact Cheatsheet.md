@@ -1,10 +1,12 @@
 ---
+title: "Obsidian Hotkeys - Compact Cheatsheet"
 in:
   - "[[MOC Hotkeys]]"
 tags:
   - 💯cheatsheet
   - 🚤boat
 status: 🔄active
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 Exported here: [[Obsidian_Hotkeys_Cheatsheet_Landscape_Purple.pdf|👉Click for pdf here👈]]

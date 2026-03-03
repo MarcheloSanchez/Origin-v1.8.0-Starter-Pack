@@ -4,6 +4,7 @@ in:
   - "[[Maps]]"
 title: MOC - Prompts
 type: moc
+fileClass: moc
 tags:
   - 🗺️MOC
   - 🤖prompt

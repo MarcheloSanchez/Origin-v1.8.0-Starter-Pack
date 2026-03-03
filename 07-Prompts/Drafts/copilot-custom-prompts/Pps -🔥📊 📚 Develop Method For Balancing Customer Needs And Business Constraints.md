@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥📊 📚 Develop Method For Balancing Customer Needs And Business Constraints"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I'm facing a situation where customer desires conflict with business limitations. Guide me through a decision-making framework to find the best compromise.

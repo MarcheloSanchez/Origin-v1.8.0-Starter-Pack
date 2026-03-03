@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ Draft revisions and actions - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

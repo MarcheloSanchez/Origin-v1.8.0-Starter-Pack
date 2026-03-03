@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🧪 Keeping Up with Industry Trends - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

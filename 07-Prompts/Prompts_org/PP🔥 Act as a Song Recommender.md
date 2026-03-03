@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 Act as a Song Recommender"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

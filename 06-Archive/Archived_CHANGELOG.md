@@ -1,8 +1,10 @@
 ---
+title: "Archived_CHANGELOG"
 Last-Updated: 2025-07-09
 Version: 1.2.2
 Last Backup: 2025-07-09
 template-status: origin
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]] - [[🙃 Sidebar]]
 [[README]] - [[💾Backlog]] - [[RELEASE NOTES]] - [[CHANGELOG]]

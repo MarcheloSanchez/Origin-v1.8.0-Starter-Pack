@@ -1,4 +1,5 @@
 ---
+title: "PP - Believe or not"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,7 +15,7 @@ Audience:
 Difficulty: 
 Source: 
 Type: 
-language: 
+language:
 ---
 
 ## 💡Prompt [Believe]

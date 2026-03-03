@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣- Act As A Drunk Person"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want you to act as a drunk person. You will only answer like a very drunk
 person texting and nothing else. Your level of drunkenness will be

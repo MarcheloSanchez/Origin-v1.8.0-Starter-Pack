@@ -1,4 +1,5 @@
 ---
+title: "300-People"
 up: "[[02-Dots]]"
 in:
   - "[[Views]]"
@@ -7,6 +8,7 @@ related:
 cssclasses:
   - wide-page
 obsidianUIMode: preview
+modified: 2026-03-03
 ---
 ⬆️:: [[02-Dots]]
 

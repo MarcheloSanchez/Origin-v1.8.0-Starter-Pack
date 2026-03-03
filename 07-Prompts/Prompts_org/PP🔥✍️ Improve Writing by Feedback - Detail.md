@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ Improve Writing by Feedback - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -15,6 +16,7 @@ prompt_status: draft
 Language: english
 Modified: "2025-05-12"
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt [Improve your writing by getting feedback]

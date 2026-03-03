@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🧾 Make Hard Topics Easier to Understand - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

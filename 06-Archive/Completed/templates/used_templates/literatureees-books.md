@@ -28,4 +28,5 @@ key_concepts:
 related_projects:
   - "[[PKM System Redesign]]"
 recommended_by: "[[Sarah Johnson]]"
+modified: 2026-03-03
 ---

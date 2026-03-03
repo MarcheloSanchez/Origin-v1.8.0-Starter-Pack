@@ -1,6 +1,7 @@
 ---
 title: "Monthly Report - <% tp.date.now("MMMM YYYY") %>"
 type: moc
+fileClass: moc
 status: 🔄active
 created: <% tp.date.now("YYYY-MM-DD") %>
 month: <% tp.date.now("YYYY-MM") %>
@@ -11,6 +12,7 @@ tags:
   - 🔍review
 period_start: <% tp.date.now("YYYY-MM-01") %>
 period_end: <% tp.date.now("YYYY-MM-DD") %>
+modified: 2026-03-03
 ---
 
 ⬆️:: [[05-Calendar]]

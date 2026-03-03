@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 References Preparation - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

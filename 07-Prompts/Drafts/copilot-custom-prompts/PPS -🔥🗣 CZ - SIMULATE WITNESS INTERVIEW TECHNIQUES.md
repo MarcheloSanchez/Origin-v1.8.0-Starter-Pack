@@ -1,4 +1,5 @@
 ---
+title: "PPS -🔥🗣 CZ - SIMULATE WITNESS INTERVIEW TECHNIQUES"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Zahrajeme si roli výslechu svědka. Já budu hrát roli neochotného svědka a vy budete reagovat jako soukromý vyšetřovatel a předvedete efektivní techniky výslechu, abyste získali důležité informace.

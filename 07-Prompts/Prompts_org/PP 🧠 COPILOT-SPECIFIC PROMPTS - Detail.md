@@ -1,4 +1,5 @@
 ---
+title: "PP 🧠 COPILOT-SPECIFIC PROMPTS - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

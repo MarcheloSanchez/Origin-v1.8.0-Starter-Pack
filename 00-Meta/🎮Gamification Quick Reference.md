@@ -3,6 +3,7 @@ title: 🎮 Gamification Quick Reference
 type: reference
 tags: [gamification, quick-reference, cheatsheet]
 created: 2026-01-02
+modified: 2026-03-03
 ---
 
 # 🎮 Gamification Quick Reference
@@ -200,4 +201,4 @@ created: 2026-01-02
 
 ---
 
-For full documentation: [[00-Meta/Documentation/🎮My PKM Gamification]]
+For full documentation: [[🎮My PKM Gamification]]

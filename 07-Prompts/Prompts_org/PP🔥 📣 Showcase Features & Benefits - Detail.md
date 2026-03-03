@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 Showcase Features & Benefits - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

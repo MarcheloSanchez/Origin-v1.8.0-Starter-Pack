@@ -19,6 +19,7 @@ related:
   - "[[Tutorial - Idea - Compound Growth]]"
   - "[[Tutorial - Idea - Network Effects]]"
   - "[[Tutorial - Concept - Growth Patterns]]"
+modified: 2026-03-03
 ---
 
 # MOC - Growth Patterns

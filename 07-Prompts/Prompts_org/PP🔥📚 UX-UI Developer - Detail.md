@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 UX-UI Developer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

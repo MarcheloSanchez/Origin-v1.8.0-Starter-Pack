@@ -1,6 +1,7 @@
 ---
 title: Surfacing - Signal Design
 type: atomic
+fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, metadata, title]
 created: 2026-02-04

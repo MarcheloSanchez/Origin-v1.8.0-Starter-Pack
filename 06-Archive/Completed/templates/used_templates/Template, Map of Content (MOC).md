@@ -1,6 +1,7 @@
 ---
 title: "Personal Knowledge Management MOC"
 type: "moc"
+fileClass: moc
 tags:
   - moc
   - pkm
@@ -30,4 +31,5 @@ active_projects:
   - "[[Template Library Creation]]"
 maintenance_frequency: "weekly"
 next_review: 2024-01-27
+modified: 2026-03-03
 ---

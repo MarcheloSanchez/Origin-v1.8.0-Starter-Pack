@@ -1,4 +1,5 @@
 ---
+title: "PPS -🔥💼 CREATE A WINNING RESUME TO HELP YOU LAND YOUR NEXT JOB"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Analyze my professional details below and create a persuasive resume tailored for the position of [enter job details]. Ensure the resume highlights my strengths and relevant experiences to increase my chances of securing this job.[Enter your professional details] 

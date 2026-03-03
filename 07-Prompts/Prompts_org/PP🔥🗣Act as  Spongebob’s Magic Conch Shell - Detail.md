@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣Act as  Spongebob’s Magic Conch Shell - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

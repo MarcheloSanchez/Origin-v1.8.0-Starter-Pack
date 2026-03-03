@@ -1,4 +1,5 @@
 ---
+title: "PP - Prompt 10x to Goals faster"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,7 +15,7 @@ Audience:
 Difficulty: 
 Source: 
 Type: 
-language: 
+language:
 ---
 
 ## 💡Prompt [Prompt 10x to Goals faster]

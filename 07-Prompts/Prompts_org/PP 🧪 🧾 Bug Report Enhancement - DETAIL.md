@@ -1,4 +1,5 @@
 ---
+title: "PP 🧪 🧾 Bug Report Enhancement - DETAIL"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,6 +15,7 @@ prompt_type: generation
 prompt_status: draft
 language: 
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt [Bug Report Enhancement]

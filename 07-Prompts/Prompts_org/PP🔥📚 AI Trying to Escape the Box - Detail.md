@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 AI Trying to Escape the Box - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

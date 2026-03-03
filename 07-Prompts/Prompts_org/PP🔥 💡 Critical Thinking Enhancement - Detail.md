@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 💡 Critical Thinking Enhancement - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

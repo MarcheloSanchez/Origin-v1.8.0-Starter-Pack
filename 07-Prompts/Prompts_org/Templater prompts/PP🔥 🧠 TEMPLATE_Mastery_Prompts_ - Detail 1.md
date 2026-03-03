@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🧠 TEMPLATE_Mastery_Prompts_ - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

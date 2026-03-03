@@ -1,4 +1,5 @@
 ---
+title: "PP 👷 Enhanced Export PRO Specialist - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

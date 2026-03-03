@@ -1,6 +1,7 @@
 ---
 title: Surfacing - Connection Ritual
 type: atomic
+fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, ritual, connections]
 created: 2026-02-04

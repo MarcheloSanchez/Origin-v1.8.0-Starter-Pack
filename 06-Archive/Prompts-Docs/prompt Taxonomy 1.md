@@ -1,5 +1,7 @@
 ---
+title: "prompt Taxonomy 1"
 status: 📦archived
+modified: 2026-03-03
 ---
 
   intent: [remember, understand, apply, analyze, evaluate, create]

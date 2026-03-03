@@ -1,4 +1,5 @@
 ---
+title: "PPS -🔥📚 🧾 PROFESSIONAL SUMMARY CREATION"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 You are an expert job search consultant. I am dealing with [describe problem in detail with context]. I need to create a compelling professional summary for my resume that highlights my achievements in [Specific Field] and my skills in [Relevant Skills]. Can you help me write this summary to capture the attention of potential employers? Ensure the summary is concise and impactful.  

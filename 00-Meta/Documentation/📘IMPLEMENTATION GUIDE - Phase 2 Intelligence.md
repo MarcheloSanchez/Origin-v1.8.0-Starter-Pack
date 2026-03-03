@@ -746,7 +746,7 @@ tags:
 <!-- Add manual observations here -->
 
 ---
-⬆️:: [[02-Dots/Health]]
+⬆️:: [[Health]]
 """
 
         with open(filepath, 'w', encoding='utf-8') as f:

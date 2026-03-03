@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 Functional Resume Creation- Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

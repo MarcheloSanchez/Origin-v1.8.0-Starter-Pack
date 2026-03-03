@@ -1,4 +1,5 @@
 ---
+title: "Dataview syntax"
 tags:
   - 💯cheatsheet
 created: 2024-12-11
@@ -6,6 +7,7 @@ related:
   - "[[🔍My PKM Queries]]"
   - "[[Dataview Practicesheet]]"
   - "[[MODULAR dataview syntax]]"
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 

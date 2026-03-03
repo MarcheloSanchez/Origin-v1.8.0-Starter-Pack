@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Act as Emoji Translator - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

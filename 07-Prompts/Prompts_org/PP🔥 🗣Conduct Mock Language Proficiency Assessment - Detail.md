@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🗣Conduct Mock Language Proficiency Assessment - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

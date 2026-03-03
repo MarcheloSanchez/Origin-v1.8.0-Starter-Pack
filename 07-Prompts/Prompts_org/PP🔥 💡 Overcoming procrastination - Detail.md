@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 💡 Overcoming procrastination - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

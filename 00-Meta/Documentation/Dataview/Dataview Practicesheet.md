@@ -1,10 +1,12 @@
 ---
+title: "Dataview Practicesheet"
 up: "[[🏡Home]]"
 tags:
   - 💯cheatsheet
 created: 2025-03-09
 related:
   - "[[🔍My PKM Queries]]"
+modified: 2026-03-03
 ---
 
 ⬆️:: [[🏡Home]]

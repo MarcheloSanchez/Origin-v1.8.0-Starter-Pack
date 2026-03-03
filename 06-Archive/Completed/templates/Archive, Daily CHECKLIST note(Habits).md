@@ -1,4 +1,5 @@
 ---
+title: "Archive, Daily CHECKLIST note(Habits)"
 mood: 
 sleep: 
 sleepschedule: 00:00 am/00:00 pm
@@ -26,6 +27,7 @@ ručníky:
 utěrky: 
 nádobí: 
 week: <%moment(tp.file.title).format("gggg-[W]ww")%>
+modified: 2026-03-03
 ---
 pokus: [[<%tp.date.now("YYYY-MM-DD",tp.file.title,"YYYY-MM-DD" )%> | DNES je: ]]
 

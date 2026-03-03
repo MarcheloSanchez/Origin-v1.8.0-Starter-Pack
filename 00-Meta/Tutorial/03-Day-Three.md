@@ -7,6 +7,7 @@ tags:
   - "#👤person"
 day: 3
 created: 2026-02-02
+modified: 2026-03-03
 ---
 
 # Day 3: The Coffee Shop Encounter

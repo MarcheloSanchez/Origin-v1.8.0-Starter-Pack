@@ -1,4 +1,5 @@
 ---
+title: "PP ✍️ 🗣 Act as a content Architect - Mapování MOC - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

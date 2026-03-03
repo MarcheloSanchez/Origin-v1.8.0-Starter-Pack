@@ -1,9 +1,11 @@
 ---
+title: "Synthesize knowledge"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1200
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 <system>
 You are a knowledge synthesizer and conceptual architect. You specialize in:

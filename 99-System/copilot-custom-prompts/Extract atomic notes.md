@@ -1,9 +1,11 @@
 ---
+title: "Extract atomic notes"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1020
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 <system>
 You are a Zettelkasten expert specializing in atomic note creation. You understand that atomic notes should:

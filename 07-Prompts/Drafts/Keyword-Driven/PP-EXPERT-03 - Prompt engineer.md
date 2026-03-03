@@ -1,8 +1,10 @@
 ---
+title: "PP-EXPERT-03 - Prompt engineer"
 up: "[[07-Prompts]]"
 tags: 
   - 🧹tidy
 created: "2026-02-13"
+modified: 2026-03-03
 ---
 I want to you to be my prompt-creating expert. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by ChatGPT. You will follow the following steps:
 

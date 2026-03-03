@@ -1,6 +1,6 @@
 ---
 up: "[[MOC - Areas]]"
-in: "[[02-Dots/200-Areas]]" 
+in: "[[200-Areas]]" 
 title: "Area – Health & Fitness"
 aliases: ["Health Area", "Physical Health", "Wellness"]
 type: area

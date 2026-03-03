@@ -1,4 +1,5 @@
 ---
+title: "+Inbox"
 created: 2026-01-02
 modified: 2026-02-23
 ---

@@ -1,9 +1,11 @@
 ---
+title: "Rewrite as tweet"
 copilot-command-context-menu-enabled: false
 copilot-command-slash-enabled: false
 copilot-command-context-menu-order: 1130
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Rewrite {} as a single tweet with these requirements:
     1. Maximum 280 characters

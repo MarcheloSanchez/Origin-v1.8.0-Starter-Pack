@@ -1,4 +1,5 @@
 ---
+title: "Summarize"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,5 +16,6 @@ copilot-command-context-menu-order: 20
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Create a bullet-point summary of {}. Each bullet point should capture a key point. Return only the bullet-point summary.

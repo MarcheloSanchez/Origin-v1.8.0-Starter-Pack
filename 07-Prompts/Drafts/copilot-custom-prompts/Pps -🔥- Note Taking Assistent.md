@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥- Note Taking Assistent"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want you to act as a note-taking assistant for a lecture. Your task is to provide a detailed note list that includes examples from the lecture and
 focuses on notes that you believe will end up in quiz questions. Additionally, please make a separate list for notes that have numbers and data in them and

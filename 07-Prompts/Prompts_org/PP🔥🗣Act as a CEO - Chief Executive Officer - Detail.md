@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣Act as a CEO - Chief Executive Officer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

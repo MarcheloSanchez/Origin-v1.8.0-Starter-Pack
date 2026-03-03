@@ -1,6 +1,8 @@
 ---
+title: "🏡House Tour"
 Date-Created: 2025-06-04
 Last-Updated: 2025-06-04
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 

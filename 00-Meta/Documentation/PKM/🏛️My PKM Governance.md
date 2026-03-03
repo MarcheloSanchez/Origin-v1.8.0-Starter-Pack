@@ -1,6 +1,7 @@
 ---
 title: PKM Standards AKA Governance
 type: moc
+fileClass: moc
 tags:
   - ⚙️system
   - 📊metadata

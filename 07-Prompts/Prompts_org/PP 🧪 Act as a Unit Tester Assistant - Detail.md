@@ -1,4 +1,5 @@
 ---
+title: "PP 🧪 Act as a Unit Tester Assistant - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

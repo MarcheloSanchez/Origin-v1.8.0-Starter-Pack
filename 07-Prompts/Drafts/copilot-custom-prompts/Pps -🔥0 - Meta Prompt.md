@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥0 - Meta Prompt"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
   Vypracujte {úkol} na míru, který bude odpovídat individuálním potřebám uživatele a bude obsahovat poznatky z dodaných referenčních materiálů. Zahajte interaktivní konverzaci, abyste zjistili základní specifika a vyjasnili případné nejasnosti. Iterativně zdokonalujte {úkol} na základě průběžných hodnocení pomocí poskytnutého hodnotícíhoRubricu a shromažďujte zpětnou vazbu od uživatelů, abyste zajistili, že konečný produkt splní očekávání. PŘESNĚ DODRŽUJTE PRAVIDLA.",
   

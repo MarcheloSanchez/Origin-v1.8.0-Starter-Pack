@@ -1,10 +1,12 @@
 ---
+title: "Prompt images in GPT"
 status: 📦archived
 tags:
   - 🤖AI
 created: 2025-03-31
 related:
   - "[[AI MOC]]"
+modified: 2026-03-03
 ---
 
 - [ ] Connect later on videos

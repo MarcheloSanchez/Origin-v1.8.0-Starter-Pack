@@ -1,4 +1,5 @@
 ---
+title: "05-Calendar"
 up: "[[🏡Home]]"
 in:
   - "[[Views]]"
@@ -7,6 +8,7 @@ related:
 cssclasses:
   - wide-page
 obsidianUIMode: preview
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 

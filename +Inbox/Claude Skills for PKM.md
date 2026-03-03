@@ -2,6 +2,7 @@
 up: "[[🗺️My PKM MOC]]"
 title: Claude Skills for PKM
 type: atomic
+fileClass: atomic
 tags: 
   - 💡idea
   - 📋documentation

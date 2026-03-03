@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🧪- 02 - Test Case Development"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Help me develop detailed test cases based on this user story [insert user story]. Include positive, negative, and edge cases:
 

@@ -1,6 +1,7 @@
 ---
 title: How to Use the Prompt Library
 type: source
+fileClass: source
 tags: 
   - 📖guide
   - 🤖AI/prompt
@@ -88,7 +89,7 @@ Use the `status` field in YAML to track lifecycle.
 ## 🔗 Related 
 #🧹tidy 
 Not used yet but need to include these: 
-[[07-Prompts/01-Docs/Prompt Concepts]]
+[[Prompt Concepts]]
 [[Prompts — Patterns]]
 [[Prompts — Evaluation Rubrics]]
 [[Playbook - Prompt]]

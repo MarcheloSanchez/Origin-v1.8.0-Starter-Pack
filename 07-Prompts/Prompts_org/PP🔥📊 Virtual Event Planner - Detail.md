@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📊 Virtual Event Planner - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

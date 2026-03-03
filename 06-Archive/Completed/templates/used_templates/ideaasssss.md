@@ -37,4 +37,5 @@ next_steps:
 related_ideas:
   - "[[Smart Note Templates]]"
   - "[[Automated Research Assistant]]"
+modified: 2026-03-03
 ---

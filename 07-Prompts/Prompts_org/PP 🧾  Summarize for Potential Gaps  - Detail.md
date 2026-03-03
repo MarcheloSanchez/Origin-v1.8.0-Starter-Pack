@@ -1,4 +1,5 @@
 ---
+title: "PP 🧾  Summarize for Potential Gaps  - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

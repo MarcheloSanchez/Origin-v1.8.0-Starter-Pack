@@ -4,6 +4,7 @@ in:
   - "[[Views]]"
 title: PKM Metadata Standards
 type: moc
+fileClass: moc
 tags:
   - ⚙️system
   - 🗺️MOC

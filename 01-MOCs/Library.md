@@ -1,9 +1,11 @@
 ---
+title: "Library"
 up: "[[🏡Home]]"
 in:
   - "[[Maps]]"
 created: 2025-06-06
 related:
+modified: 2026-03-03
 ---
 
 Navigate your library of maps with a classification system made specifically for PKM. 

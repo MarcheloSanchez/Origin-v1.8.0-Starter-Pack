@@ -1,4 +1,5 @@
 ---
+title: "Rewrite as tweet thread"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,6 +16,7 @@ copilot-command-context-menu-order: 110
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Convert {} into a Twitter thread following these rules:
     1. Each tweet must be under 240 characters

@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ Translate & Rephrase Simultaneously - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -16,6 +17,7 @@ Created: "2025-05-12"
 Language: english
 Modified: "2025-05-12"
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt [Translate & Rephrase Simultaneously]

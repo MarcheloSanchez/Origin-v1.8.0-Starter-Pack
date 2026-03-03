@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣- Act As Emoji Translator"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want you to translate the sentences I wrote into emojis. I will write the
 sentence, and you will express it with emojis. I just want you to express it

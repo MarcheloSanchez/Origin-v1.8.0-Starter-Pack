@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥- Improve Your Writing By Getting Feedback"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Proofread my writings above. Fix grammar and spelling mistakes. And make sugestions that will improve the clarity of my writing

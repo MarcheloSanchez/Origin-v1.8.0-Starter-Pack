@@ -1,6 +1,7 @@
 ---
 title: "Obsidian"
 type: "tool"
+fileClass: tool
 tags:
   - tools
   - pkm
@@ -41,4 +42,5 @@ integrations:
   - "[[Zotero]]"
   - "[[Readwise]]"
   - "[[Todoist]]"
+modified: 2026-03-03
 ---

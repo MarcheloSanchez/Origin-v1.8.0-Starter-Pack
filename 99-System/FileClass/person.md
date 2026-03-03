@@ -1,4 +1,5 @@
 ---
+title: "person"
 limit: 20
 mapWithTag: true
 icon: person
@@ -38,4 +39,5 @@ fields:
     options: {}
     path: ""
     id: bX2wQj
+modified: 2026-03-03
 ---

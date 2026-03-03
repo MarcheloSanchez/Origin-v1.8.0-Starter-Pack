@@ -1,4 +1,5 @@
 ---
+title: "effort"
 limit: 20
 mapWithTag: false
 icon: rocket
@@ -73,4 +74,5 @@ fields:
       valuesListNotePath: 99-System/CIS/CIS_TIME_REQUIRED.md
     path: ""
     id: Ds2mfd
+modified: 2026-03-03
 ---

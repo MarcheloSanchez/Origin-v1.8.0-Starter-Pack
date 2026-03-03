@@ -1,6 +1,7 @@
 ---
 title: When automating quick actions — Automations via FastKey
 type: atomic
+fileClass: atomic
 tags: 
   - 📥inbox
   - automation

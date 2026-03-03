@@ -1,4 +1,5 @@
 ---
+title: "PP - Čtení z dlaně - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,7 +15,7 @@ Category:
 Difficulty: 
 Source: 
 Type: 
-language: 
+language:
 ---
 
 ## 💡Prompt [Čtení z dlaně]

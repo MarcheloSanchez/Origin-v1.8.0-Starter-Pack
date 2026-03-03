@@ -16,6 +16,7 @@ related:
   - "[[Tutorial - Idea - Mycelium Networks]]"
   - "[[Tutorial - Place - Kew Gardens]]"
   - "[[Tutorial - MOC - Growth Patterns]]"
+modified: 2026-03-03
 ---
 
 # Dr. Maya Chen

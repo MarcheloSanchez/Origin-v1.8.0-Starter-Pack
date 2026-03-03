@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🧾 TEMPLATE_Comprehension_and_Summarization - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

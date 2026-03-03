@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 LinkedIn Summary Update - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

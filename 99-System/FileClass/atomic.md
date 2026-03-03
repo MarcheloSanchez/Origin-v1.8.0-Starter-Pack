@@ -1,4 +1,5 @@
 ---
+title: "atomic"
 limit: 20
 mapWithTag: false
 icon: atom
@@ -21,4 +22,5 @@ fields:
       valuesListNotePath: 99 System/CIS/CIS_MATURITY.md
     path: ""
     id: Xeifqh
+modified: 2026-03-03
 ---

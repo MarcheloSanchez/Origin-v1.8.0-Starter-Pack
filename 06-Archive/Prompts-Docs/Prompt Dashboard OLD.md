@@ -1,4 +1,5 @@
 ---
+title: "Prompt Dashboard OLD"
 status: 📦archived
 up: "[[🏡Home]]"
 tags:
@@ -10,8 +11,9 @@ URLs:
   - https://github.com/f/awesome-chatgpt-prompts
   - https://www.aiforwork.co/
   - https://free.theresanaiforthat.com/leaderboard/
+modified: 2026-03-03
 ---
-> [!orbit] Wayfinder **Ej Aj** |   [[AI MOC]] | [[MOC - Prompts]] | [[07-Prompts/01-Docs/Prompts breakendown/Prompt Concepts]] | [[AI Agents LINKS]] | [[AI Tools]]  | [[AI Questions of wonder]] |  [[AI jailbreaks]] | [[AI Evolution in Time]] | Prompt Dashboard
+> [!orbit] Wayfinder **Ej Aj** |   [[AI MOC]] | [[MOC - Prompts]] | [[Prompt Concepts]] | [[AI Agents LINKS]] | [[AI Tools]]  | [[AI Questions of wonder]] |  [[AI jailbreaks]] | [[AI Evolution in Time]] | Prompt Dashboard
 
 # 🧭 Prompt Dashboard - "Queries"
 ---
@@ -20,8 +22,8 @@ _A smart overview of your categorized prompts._
 > [!cite]- Settings
 > > > [[Prompt_attributes_explained]]
 > [[Prompt_Category]]
-> [[07-Prompts/01-Docs/Prompts breakendown/Prompt_Type]]
-> [[07-Prompts/01-Docs/Prompts breakendown/Prompt_Audience]]
+> [[Prompt_Type]]
+> [[Prompt_Audience]]
 > [[Prompt_languages]]
 > used [[Template, new Prompt]]
 > ```

@@ -1,9 +1,11 @@
 ---
+title: "Generate questions"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1050
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 <system>
 You are a Socratic facilitator and expert question designer. You understand that powerful questions:

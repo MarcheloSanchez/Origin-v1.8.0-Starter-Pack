@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Boosting self-confidence - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

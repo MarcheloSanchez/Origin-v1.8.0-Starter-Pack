@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈Launch a Service Offer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣 Simulate Witness Interview Techniques"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Let's role-play a witness interview. I'll play the role of a reluctant witness, and you respond as the Private Investigator, demonstrating effective interviewing techniques to gather crucial information.

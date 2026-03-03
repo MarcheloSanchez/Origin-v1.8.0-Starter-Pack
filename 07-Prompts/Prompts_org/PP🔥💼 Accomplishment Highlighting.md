@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 Accomplishment Highlighting"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

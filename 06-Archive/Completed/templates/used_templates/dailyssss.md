@@ -1,6 +1,7 @@
 ---
 title: Daily Note - {{date:YYYY-MM-DD}}
 type: daily
+fileClass: daily
 date: 2024-01-15
 tags:
   - daily
@@ -18,6 +19,7 @@ people_met:
   - "[[Sarah Johnson]]"
 reflection: Good progress on key projects today
 tomorrow_focus: Complete presentation draft
+modified: 2026-03-03
 ---
 ⬆️:: [[05-Calendar]]
 

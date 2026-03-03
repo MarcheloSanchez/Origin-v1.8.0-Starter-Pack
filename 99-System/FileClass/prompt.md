@@ -1,4 +1,5 @@
 ---
+title: "prompt"
 limit: 20
 mapWithTag: false
 icon: bot-message-square
@@ -67,4 +68,5 @@ fields:
       valuesListNotePath: 99 System/CIS/CIS_INTENT.md
     path: ""
     id: bLm7In
+modified: 2026-03-03
 ---

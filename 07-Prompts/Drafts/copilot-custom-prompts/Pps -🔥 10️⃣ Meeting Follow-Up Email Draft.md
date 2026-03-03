@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥 10️⃣ Meeting Follow-Up Email Draft"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Based on {activeNote}, draft a follow-up email summarizing key points and next steps. Use a polite and professional tone.

@@ -1,4 +1,5 @@
 ---
+title: "Rewrite as press release"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,6 +16,7 @@ copilot-command-context-menu-order: 130
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Transform {} into a professional press release:
     1. Use formal, journalistic style

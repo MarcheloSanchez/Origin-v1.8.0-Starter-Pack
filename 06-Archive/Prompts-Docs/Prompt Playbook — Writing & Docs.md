@@ -2,6 +2,7 @@
 status: 📦archived
 title: Prompt Playbook — Writing & Docs
 type: playbook
+modified: 2026-03-03
 ---
 # Prompt Playbook — Writing & Docs
 

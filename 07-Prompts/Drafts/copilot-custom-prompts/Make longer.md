@@ -1,4 +1,5 @@
 ---
+title: "Make longer"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,6 +16,7 @@ copilot-command-context-menu-order: 60
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Expand {} to twice its length by:
     1. Adding relevant details and examples

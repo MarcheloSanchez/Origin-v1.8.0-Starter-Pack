@@ -1,4 +1,5 @@
 ---
+title: "PP 📚 💡📣 🧾 📊  Key Metrics for Newsletter - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -16,6 +17,7 @@ Created: "2025-05-11"
 Language: english
 Modified: "2025-05-11"
 source: "ai-output"
+modified: 2026-03-03
 ---
  
 

@@ -1,9 +1,11 @@
 ---
+title: "Make shorter"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1130
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Reduce {} to half its length while preserving these elements:
     1. Main ideas and key points

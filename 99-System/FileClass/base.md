@@ -1,4 +1,5 @@
 ---
+title: "base"
 fields:
   - name: created
     type: Date
@@ -78,4 +79,5 @@ fieldsOrder:
   - qCKBfQ
   - YQaNwU
   - Whj3xE
+modified: 2026-03-03
 ---

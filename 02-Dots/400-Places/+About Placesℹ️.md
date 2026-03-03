@@ -293,7 +293,7 @@ related:
 **Knowledge Connections:**
 - [[04-Sources]] → Travel guides, cultural content, location-specific research
 - [[100-Atomics]] → Insights and learnings gained from place experiences
-- [[Photos/Media]] → Visual documentation and memory preservation
+- [[Media]] → Visual documentation and memory preservation
 - [[Daily Notes]] → Travel journaling and real-time experience capture
 
 **Planning Connections:**

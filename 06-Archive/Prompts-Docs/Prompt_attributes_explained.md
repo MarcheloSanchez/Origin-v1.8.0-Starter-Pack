@@ -1,4 +1,5 @@
 ---
+title: "Prompt_attributes_explained"
 status: 📦archived
 up: "[[🏡Home]]"
 tags:
@@ -7,6 +8,7 @@ created: 2025-05-10
 related:
   - "[[AI MOC]]"
   - "[[Prompt Dashboard OLD]]"
+modified: 2026-03-03
 ---
 ***
 ## Written down attributes - 

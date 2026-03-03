@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🧾 Summarize long text&docs - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

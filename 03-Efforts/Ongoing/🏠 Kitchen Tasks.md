@@ -1,12 +1,14 @@
 ---
 title: "Kitchen Tasks & Tracking"
 type: effort
+fileClass: effort
 tags:
   - 🏠home
   - 🍳kitchen
   - 📋maintenance
 status: 🔄active
 created: 2026-01-14
+modified: 2026-03-03
 ---
 
 ⬆️:: [[🏠 Home Maintenance System]]

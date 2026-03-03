@@ -14,6 +14,7 @@ related:
   - "[[Tutorial - Idea - Mycelium Networks]]"
   - "[[Tutorial - Idea - Compound Growth]]"
   - "[[Tutorial - MOC - Growth Patterns]]"
+modified: 2026-03-03
 ---
 
 # Network Effects

@@ -1,4 +1,5 @@
 ---
+title: "Relate"
 up:
   - "[[🏡Home]]"
 related:
@@ -10,6 +11,7 @@ in:
 obsidianUIMode: preview
 cssclasses:
   - wide-page
+modified: 2026-03-03
 ---
 
 Your **Relate** note is a place of joy—without expectations or obligations.

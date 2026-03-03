@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🗣Role-play Handling Controversial Topics - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

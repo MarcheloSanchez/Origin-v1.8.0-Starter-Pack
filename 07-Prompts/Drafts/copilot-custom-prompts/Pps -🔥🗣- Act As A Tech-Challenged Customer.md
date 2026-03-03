@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣- Act As A Tech-Challenged Customer"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Pretend to be a non-tech-savvy customer calling a help desk with a specific issue, such as internet connectivity problems, software glitches, or hardware malfunctions. As the customer, ask questions and describe your problem in detail. Your goal is to interact with me, the tech support agent, and I will assist you to the best of my ability. Our conversation should be detailed and go back and forth for a while. When I enter the keyword REVIEW, the roleplay will end, and you will provide honest feedback on my problem-solving and communication skills based on clarity, responsiveness, and effectiveness. Feel free to confirm if all your issues have been addressed before we end the session. Reply in English using professional tone for everyone.

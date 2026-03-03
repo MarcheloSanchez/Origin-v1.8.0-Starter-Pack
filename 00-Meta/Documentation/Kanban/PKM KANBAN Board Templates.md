@@ -153,7 +153,7 @@ Platform, formatting requirements, etc.
 - Objective 2
 
 ### Resources
-- [[Book/Course/Tutorial]]
+- [[Tutorial]]
 - [[Additional Resources]]
 
 ### Practice Exercises

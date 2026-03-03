@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 Effective Study Strategies - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

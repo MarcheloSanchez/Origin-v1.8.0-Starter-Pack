@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Time Travel Guide - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

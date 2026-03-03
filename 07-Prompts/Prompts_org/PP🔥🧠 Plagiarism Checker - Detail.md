@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🧠 Plagiarism Checker - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -1,4 +1,5 @@
 ---
+title: "PP 🧪 Exploratory Testing Scenarios - DETAIL"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -15,6 +16,7 @@ prompt_status: draft
 Language: english
 language: 
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt  [Exploratory Testing Scenarios]

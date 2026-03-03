@@ -1,4 +1,5 @@
 ---
+title: "Extensions of files"
 related:
   - "[[Exclusion list]]"
 created: 2025-05-05
@@ -6,6 +7,7 @@ tags:
   - 🛜IT
   - 💯cheatsheet
 exclude: "true"
+modified: 2026-03-03
 ---
 r
 ## ✅ **Ready-Copy-Paste: Clean Exclusion List**

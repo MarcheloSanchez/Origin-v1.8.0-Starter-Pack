@@ -1,5 +1,7 @@
 ---
+title: "Prompt Atlas"
 status: 📦archived
+modified: 2026-03-03
 ---
 
 > [!orbit] Wayfinder |  Prompt Atlas |  [[Prompt Dashboard NEW]] |  [[Prompt Attribute Glossary]] |  [[Prompt Taxonomy]] | [[Prompt Categories Catalog]] |  [[Prompt Guide]] |  [[PRM-Full-Template]] | [[Prompt Filled Out]] 

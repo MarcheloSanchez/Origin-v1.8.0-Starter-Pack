@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🖨 TEMPLATE_3D Printing_Prompts - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

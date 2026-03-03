@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 Creating article more personalized to audience - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

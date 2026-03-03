@@ -1,6 +1,7 @@
 ---
 title: Visual Identity
 type: moc
+fileClass: moc
 status: 🔄active
 created: 2026-02-04
 modified: 2026-02-04

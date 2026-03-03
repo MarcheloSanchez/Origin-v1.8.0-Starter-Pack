@@ -1,4 +1,5 @@
 ---
+title: "Emojify"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,6 +16,7 @@ copilot-command-context-menu-order: 40
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Add relevant emojis to enhance {}. Follow these rules:
     1. Insert emojis at natural breaks in the text

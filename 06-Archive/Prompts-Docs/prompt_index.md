@@ -1,5 +1,7 @@
 ---
+title: "prompt_index"
 status: 📦archived
+modified: 2026-03-03
 ---
 
 /Prompts/

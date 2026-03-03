@@ -1,5 +1,7 @@
 ---
+title: "Prompt_Category"
 status: 📦archived
+modified: 2026-03-03
 ---
 
 📥 Inbox / Unfiltered

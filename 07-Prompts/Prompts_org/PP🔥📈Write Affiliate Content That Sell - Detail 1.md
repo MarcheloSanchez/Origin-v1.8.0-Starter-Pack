@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈Write Affiliate Content That Sell - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

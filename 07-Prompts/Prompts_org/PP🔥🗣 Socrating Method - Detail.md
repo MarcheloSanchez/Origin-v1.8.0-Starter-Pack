@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Socrating Method - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

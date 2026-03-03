@@ -1,4 +1,5 @@
 ---
+title: "PP 📈💡Skill to learn guide - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -14,6 +15,7 @@ prompt_type: planning
 prompt_status: draft
 Language: english
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt:  Skill to learn guide

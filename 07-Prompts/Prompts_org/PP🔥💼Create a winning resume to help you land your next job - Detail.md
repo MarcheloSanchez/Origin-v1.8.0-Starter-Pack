@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼Create a winning resume to help you land your next job - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

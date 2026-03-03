@@ -1,6 +1,7 @@
 ---
 title: PKM Metadata Standards
 type: source
+fileClass: source
 tags:
   - ⚙️system
   - 📊metadata
@@ -935,7 +936,7 @@ source_date: 2022-06-14
 source_type: book
 ```
 
-### 04-01 [[04-Sources/440-Meetings/meeting]] metadata
+### 04-01 [[meeting]] metadata
 
 ```
 meeting_date: YYYY-MM-DD

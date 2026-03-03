@@ -4,6 +4,7 @@ in:
   - "[[Views]]"
 title: 📈 Performance Metrics Dashboard
 type: moc
+fileClass: moc
 tags:
   - 📊dashboard
   - 📶performance

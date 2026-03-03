@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈 Goal Building Assistant - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

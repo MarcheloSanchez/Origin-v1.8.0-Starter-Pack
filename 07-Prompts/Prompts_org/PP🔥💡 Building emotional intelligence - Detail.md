@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Building emotional intelligence - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -4,10 +4,12 @@ in:
   - "[[Maps]]"
 title: MOC - Areas
 type: moc
+fileClass: moc
 tags:
   - 🗺️MOC
   - 🏠area
 status: 🔄active
+modified: 2026-03-03
 ---
 
 # 🗺️ MOC - Areas

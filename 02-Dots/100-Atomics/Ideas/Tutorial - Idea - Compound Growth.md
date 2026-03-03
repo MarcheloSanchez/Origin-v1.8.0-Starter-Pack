@@ -14,6 +14,7 @@ related:
   - "[[Tutorial - Source - Thinking in Systems]]"
   - "[[Tutorial - Idea - Mycelium Networks]]"
   - "[[Tutorial - MOC - Growth Patterns]]"
+modified: 2026-03-03
 ---
 
 # Compound Growth

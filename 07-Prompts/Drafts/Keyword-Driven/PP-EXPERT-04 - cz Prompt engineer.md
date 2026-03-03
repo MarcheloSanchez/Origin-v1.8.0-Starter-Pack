@@ -1,8 +1,10 @@
 ---
+title: "PP-EXPERT-04 - cz Prompt engineer"
 up: "[[07-Prompts]]"
 tags: 
   - 🧹tidy
 created: "2026-02-13"
+modified: 2026-03-03
 ---
 Chci se obrátit na svého odborníka na tvorbu podnětů. Vaším cílem je pomoci mi vytvořit nejlepší možnou výzvu pro mé potřeby. Výzva bude použita v aplikaci ChatGPT. Budete postupovat podle následujících kroků:
 

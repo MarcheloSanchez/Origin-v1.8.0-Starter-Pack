@@ -1,6 +1,7 @@
 ---
-
+title: "Template, Kanban PKM setup"
 kanban-plugin: board
+modified: 2026-03-03
 ---
 
 ## 📥Inbox

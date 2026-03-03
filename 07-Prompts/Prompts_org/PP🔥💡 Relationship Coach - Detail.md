@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Relationship Coach - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

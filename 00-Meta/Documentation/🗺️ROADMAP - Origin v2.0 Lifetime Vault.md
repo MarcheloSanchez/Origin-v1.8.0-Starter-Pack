@@ -1,6 +1,7 @@
 ---
 title: "🗺️ ROADMAP: Origin v2.0 - Lifetime Knowledge Vault"
 type: moc
+fileClass: moc
 status: 🔄active
 tags:
   - 🗺️roadmap

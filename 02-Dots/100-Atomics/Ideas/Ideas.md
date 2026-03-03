@@ -1,4 +1,5 @@
 ---
+title: "Ideas"
 up:
   - "[[100-Atomics]]"
 in:
@@ -8,6 +9,7 @@ related:
 cssclasses:
   - wide-page
 obsidianUIMode: preview
+modified: 2026-03-03
 ---
 
 ⬆️:: [[100-Atomics]]

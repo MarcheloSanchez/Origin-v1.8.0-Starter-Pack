@@ -1,4 +1,5 @@
 ---
+title: "PP - Healing coach for inner child"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,7 +15,7 @@ Category:
 Difficulty: 
 Source: 
 Type: 
-language: 
+language:
 ---
 
 ## 💡Prompt [Healing coach for inner child]

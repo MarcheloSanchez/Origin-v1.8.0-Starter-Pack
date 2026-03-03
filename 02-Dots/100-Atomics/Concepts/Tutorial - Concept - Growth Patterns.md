@@ -19,6 +19,7 @@ related:
   - "[[Tutorial - Idea - Mycelium Networks]]"
   - "[[Tutorial - Idea - Compound Growth]]"
   - "[[Tutorial - Idea - Network Effects]]"
+modified: 2026-03-03
 ---
 
 # Growth Patterns

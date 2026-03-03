@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Travel Guide - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

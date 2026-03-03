@@ -1,9 +1,11 @@
 ---
+title: "Translate to Chinese"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1130
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Translate {} into Chinese:
     1. Preserve the meaning and tone

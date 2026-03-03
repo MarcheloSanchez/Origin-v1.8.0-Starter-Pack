@@ -1,5 +1,7 @@
 ---
+title: "ORGANIZE prompts by Blooms Taxonomy"
 status: 📦archived
+modified: 2026-03-03
 ---
 
 ![[Pasted image 20250725105215.png]]

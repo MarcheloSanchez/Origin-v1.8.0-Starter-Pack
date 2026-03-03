@@ -10,6 +10,7 @@ created: 2026-01-01
 related:
   - "[[TODO]]"
   - "[[🎯GTD Weekly Review]]"
+modified: 2026-03-03
 ---
 
 # 🏷️ GTD Contexts Guide
@@ -124,4 +125,4 @@ Příklad:
 
 ---
 
-⬆️:: [[TODO]] | [[00-Meta/Documentation]]
+⬆️:: [[TODO]] | [[Documentation]]

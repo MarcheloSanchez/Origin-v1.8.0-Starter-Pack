@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🗣Private investigator - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

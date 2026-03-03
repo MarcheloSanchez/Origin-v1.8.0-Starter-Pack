@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🍃 Florist - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -96,7 +96,7 @@ tR += `tags: [area/${choice}]`;
 Create partials (e.g., `04-Templates/_parts/Review.md`) and include:
 
 ```markdown
-<%* tR += await tp.file.include("[[04-Templates/_parts/Review]]") %>
+<%* tR += await tp.file.include("[[Review]]") %>
 ```
 
 Keep templates small and compose them with includes.
@@ -173,7 +173,7 @@ module.exports = async (tp, str) => {
 - `` → Use `` (built‑in). `tp.user.*` requires you to create a *user script* of that name.
 - **Template not triggering on new file** → Turn on *Trigger Templater on new file creation* and configure **Folder Templates** for that folder.
 - **Conflicts with Core Templates plugin** → If both are used, assign **different hotkeys** and disable *Automatically apply* in the core plugin to avoid double insertion.
-- ``** not found** → Use a valid wiki‑link to the partial, e.g., `[[04-Templates/_parts/Review]]` and ensure the file exists.
+- ``** not found** → Use a valid wiki‑link to the partial, e.g., `[[Review]]` and ensure the file exists.
 
 ### 2.9 Best Practices
 
@@ -244,7 +244,7 @@ tag: [project]
 - M1 —
 - M2 —
 
-<%* tR += await tp.file.include("[[04-Templates/_parts/Review]]") %>
+<%* tR += await tp.file.include("[[Review]]") %>
 ```
 
 **C) Daily Review Partial (**``**)**
@@ -285,7 +285,7 @@ Date: <% tp.date.now("YYYY-MM-DD") %>
 Cursor: <% tp.file.cursor() %>
 Prompt: <%* tR += await tp.system.prompt("Question?") %>
 Suggest: <%* const v = await tp.system.suggester(["A","B"],["a","b"]); tR += v %>
-Include: <%* tR += await tp.file.include("[[04-Templates/_parts/Block]]") %>
+Include: <%* tR += await tp.file.include("[[Block]]") %>
 Rename: <%* await tp.file.rename(tp.file.title.toLowerCase().replace(/\s+/g,'-')) %>
 Move: <%* await tp.file.move(`Area/${tp.file.title}`) %>
 ```

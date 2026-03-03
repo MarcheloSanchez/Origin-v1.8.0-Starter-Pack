@@ -17,6 +17,7 @@ related:
   - "[[Tutorial - Idea - Mycelium Networks]]"
   - "[[Tutorial - Source - Thinking in Systems]]"
   - "[[Tutorial - MOC - Growth Patterns]]"
+modified: 2026-03-03
 ---
 
 # Coffee with Dr. Maya Chen

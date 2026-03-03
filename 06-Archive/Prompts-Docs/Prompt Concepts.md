@@ -1,4 +1,5 @@
 ---
+title: "Prompt Concepts"
 status: 📦archived
 up:
   - "[[AI MOC]]"
@@ -8,6 +9,7 @@ tags:
 created: 2025-01-22
 related:
   - "[[MOC - Prompts]]"
+modified: 2026-03-03
 ---
 > [!orbit] Wayfinder **Ej Aj** |   [[AI MOC]] | [[MOC - Prompts]] | Prompt Concepts | [[AI Agents LINKS]] | [[AI Tools]]  | [[AI Questions of wonder]] |  [[AI jailbreaks]] | [[AI Evolution in Time]] | [[Prompt Dashboard OLD]]
 # Simple template

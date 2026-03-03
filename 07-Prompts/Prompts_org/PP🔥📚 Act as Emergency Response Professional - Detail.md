@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 Act as Emergency Response Professional - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -1,4 +1,5 @@
 ---
+title: "Pps🔥✍️  topic expander"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -11,6 +12,7 @@ created: "2026-02-13"
 difficulty: beginner
 prompt_type: utility
 prompt_status: draft
+modified: 2026-03-03
 ---
 You are a topic expander.
 

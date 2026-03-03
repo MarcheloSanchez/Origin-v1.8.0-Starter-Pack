@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈Create a Sellable Digital Product - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

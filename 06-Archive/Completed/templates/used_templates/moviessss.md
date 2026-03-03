@@ -32,4 +32,5 @@ key_quotes:
 philosophical_concepts:
   - "[[Plato's Cave]]"
   - "[[Simulation Hypothesis]]"
+modified: 2026-03-03
 ---

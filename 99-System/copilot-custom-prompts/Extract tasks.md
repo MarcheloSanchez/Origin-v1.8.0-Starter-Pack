@@ -1,9 +1,11 @@
 ---
+title: "Extract tasks"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1100
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Transform {} into clear, actionable tasks. For each task identified:
 

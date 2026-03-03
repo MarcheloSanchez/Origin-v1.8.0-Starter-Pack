@@ -4,6 +4,7 @@ in:
   - "[[Views]]"
 title: Overview of all views 
 type: moc
+fileClass: moc
 tags:
   - ⚙️system
   - 🗺️MOC

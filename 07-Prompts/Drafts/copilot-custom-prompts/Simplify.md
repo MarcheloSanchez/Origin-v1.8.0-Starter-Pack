@@ -1,4 +1,5 @@
 ---
+title: "Simplify"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,5 +16,6 @@ copilot-command-context-menu-order: 30
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Simplify {} to a 6th-grade reading level (ages 11-12). Use simple sentences, common words, and clear explanations. Maintain the original key concepts. Return only the simplified text.

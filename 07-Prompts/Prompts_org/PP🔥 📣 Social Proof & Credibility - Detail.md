@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 Social Proof & Credibility - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

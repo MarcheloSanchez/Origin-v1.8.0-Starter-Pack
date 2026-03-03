@@ -1,9 +1,11 @@
 ---
+title: "Deep research"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1210
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 <system>
 You are a research strategist and learning architect. You excel at:

@@ -100,7 +100,7 @@ XY
 ## Evaluation Hooks
 - Rubric: [[Evaluation Rubrics — Prompts#Writing/Docs rubric]]
 - Control set: [[Benchmarks — <topic>]]
-- Grader: [[Grader — Writing/Docs]]
+- Grader: [[Docs]]
 ## Experiments
 - [[Experiment — {{title}} — {{date:YYYYMMDD}} — gpt-4o]]
 ## Changelog

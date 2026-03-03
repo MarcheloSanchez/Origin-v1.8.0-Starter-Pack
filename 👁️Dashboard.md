@@ -363,10 +363,10 @@ try {
 
 | Area                     | Latest Update                  | Notes Count                                                                |
 | ------------------------ | ------------------------------ | -------------------------------------------------------------------------- |
-| 📊 **Work**              | [[02-Dots/200-Areas/Work]]     | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Work")))`     |
-| 💪 **Health**            | [[02-Dots/200-Areas/Health]]   | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Health")))`   |
-| 📚 **Learning**          | [[02-Dots/200-Areas/Learning]] | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Learning")))` |
-| 👨‍👩‍👧‍👦 **Personal** | [[02-Dots/200-Areas/Personal]] | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Personal")))` |
+| 📊 **Work**              | [[Work]]     | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Work")))`     |
+| 💪 **Health**            | [[Health]]   | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Health")))`   |
+| 📚 **Learning**          | [[Learning]] | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Learning")))` |
+| 👨‍👩‍👧‍👦 **Personal** | [[Personal]] | `= length(filter(this.file.inlinks, (l) => contains(l.path, "Personal")))` |
 
 ### 🗺️ Maps of Content
 ```dataview

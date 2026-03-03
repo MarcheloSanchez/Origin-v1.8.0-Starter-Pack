@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 Decision Matrix - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

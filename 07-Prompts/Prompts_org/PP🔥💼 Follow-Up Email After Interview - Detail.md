@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 Follow-Up Email After Interview - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -11,6 +11,7 @@ location: "London, UK"
 created: 2026-01-27
 related:
   - "[[Tutorial - Idea - Mycelium Networks]]"
+modified: 2026-03-03
 ---
 
 # Kew Gardens

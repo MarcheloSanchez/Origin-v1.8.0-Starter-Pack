@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ compare and contrast - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

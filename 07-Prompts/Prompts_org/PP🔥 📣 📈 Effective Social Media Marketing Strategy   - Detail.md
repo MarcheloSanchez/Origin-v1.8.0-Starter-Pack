@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 📈 Effective Social Media Marketing Strategy   - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

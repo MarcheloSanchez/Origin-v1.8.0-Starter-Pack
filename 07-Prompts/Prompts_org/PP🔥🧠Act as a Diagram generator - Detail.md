@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🧠Act as a Diagram generator - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

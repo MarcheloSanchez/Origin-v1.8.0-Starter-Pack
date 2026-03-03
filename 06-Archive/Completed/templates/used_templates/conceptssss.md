@@ -32,4 +32,5 @@ related_concepts:
 practical_examples:
   - "[[Research Paper Analysis]]"
   - "[[Book Notes Template]]"
+modified: 2026-03-03
 ---

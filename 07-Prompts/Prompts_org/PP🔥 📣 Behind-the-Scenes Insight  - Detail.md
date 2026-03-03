@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 Behind-the-Scenes Insight  - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

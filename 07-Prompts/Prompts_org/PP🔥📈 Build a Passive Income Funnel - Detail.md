@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈 Build a Passive Income Funnel - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

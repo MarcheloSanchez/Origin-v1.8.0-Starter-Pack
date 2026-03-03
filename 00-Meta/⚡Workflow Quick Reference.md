@@ -1,4 +1,5 @@
 ---
+title: "⚡Workflow Quick Reference"
 type: guide
 status: 🔄active
 created: 2026-01-16

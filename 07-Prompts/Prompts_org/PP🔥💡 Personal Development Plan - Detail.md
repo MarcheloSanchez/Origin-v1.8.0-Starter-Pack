@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Personal Development Plan - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

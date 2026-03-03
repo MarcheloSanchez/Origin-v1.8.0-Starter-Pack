@@ -1,4 +1,5 @@
 ---
+title: "Rewrite as tweet"
 type: prompt
 fileClass: prompt
 tags: 
@@ -15,6 +16,7 @@ copilot-command-context-menu-order: 100
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: false
+modified: 2026-03-03
 ---
 Rewrite {} as a single tweet with these requirements:
     1. Maximum 280 characters

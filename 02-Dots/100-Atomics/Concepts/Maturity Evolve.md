@@ -1,6 +1,7 @@
 ---
 title: Maturity Tracking
 type: atomic
+fileClass: atomic
 status: 🔄active
 maturity: 🌲evergreen
 created: 2025-09-30

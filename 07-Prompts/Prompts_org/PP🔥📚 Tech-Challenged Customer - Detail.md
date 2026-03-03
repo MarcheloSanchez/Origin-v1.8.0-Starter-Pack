@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 Tech-Challenged Customer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

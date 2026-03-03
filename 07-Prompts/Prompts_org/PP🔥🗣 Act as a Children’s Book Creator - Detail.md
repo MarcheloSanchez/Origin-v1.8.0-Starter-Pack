@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Act as a Children’s Book Creator - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

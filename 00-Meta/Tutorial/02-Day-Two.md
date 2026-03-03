@@ -6,6 +6,7 @@ tags:
   - "#📚source"
 day: 2
 created: 2026-02-02
+modified: 2026-03-03
 ---
 
 # Day 2: Extracting Wisdom from Books

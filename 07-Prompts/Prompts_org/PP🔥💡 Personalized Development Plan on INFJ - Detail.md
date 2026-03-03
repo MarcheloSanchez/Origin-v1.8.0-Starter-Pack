@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Personalized Development Plan on INFJ - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

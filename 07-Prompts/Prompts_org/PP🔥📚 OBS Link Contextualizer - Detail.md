@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 OBS Link Contextualizer - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

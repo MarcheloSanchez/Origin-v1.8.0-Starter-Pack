@@ -3,6 +3,7 @@ up: "[[🏡Home]]"
 in: "[[Views]]"
 title: Map for PKM
 type: moc
+fileClass: moc
 tags:
   - ⚙️system
   - 📋documentation

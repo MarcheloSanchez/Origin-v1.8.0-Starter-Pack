@@ -1,4 +1,5 @@
 ---
+title: "PP 📚 💡 Real life demonstration of concept - DETAIL"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -13,6 +14,7 @@ prompt_category: "📚 Learning & Teaching"
 prompt_type: explanation
 prompt_status: draft
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt  [Real life demonstration of concept]

@@ -1,6 +1,7 @@
 ---
 title: Vault Analytics
 type: moc
+fileClass: moc
 status: 🔄active
 tags:
   - 📊dashboard

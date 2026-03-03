@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥2️⃣ Batch Processing Improve All Notes By Tag Task"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 For each note tagged with {#task}, rewrite the content to be more concise and professional. List suggestions for title improvements and tag optimizations.

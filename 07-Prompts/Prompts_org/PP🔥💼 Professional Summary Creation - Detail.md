@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼 Professional Summary Creation - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

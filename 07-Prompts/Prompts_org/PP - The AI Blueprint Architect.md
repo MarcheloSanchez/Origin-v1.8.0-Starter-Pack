@@ -1,4 +1,5 @@
 ---
+title: "PP - The AI Blueprint Architect"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,7 +15,7 @@ Audience:
 Difficulty: 
 Source: 
 Type: 
-language: 
+language:
 ---
 
 ## 💡Prompt [The AI Blueprint Architect]

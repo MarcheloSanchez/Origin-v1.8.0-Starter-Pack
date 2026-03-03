@@ -1,6 +1,8 @@
 ---
+title: "archived_pkm_queries"
 status: 📦archived
 tags:
+modified: 2026-03-03
 ---
 > [!orbit] Wayfinder | [[🗺️My PKM MOC]] |  [[🏛️My PKM Governance]] | **My PKM Queries** |  [[📁My PKM Folders]] |  [[🏷️My PKM Tags]] |  [[🔁My PKM Workflows]] | [[✅My PKM Tasks]] | 
 

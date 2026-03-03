@@ -1,7 +1,9 @@
 ---
+title: "Search Engine for OBSIDIAN"
 created: 2024-07-16
 related:
   - "[[Google search CHEATSHEET]]"
+modified: 2026-03-03
 ---
 ⬆️:: [[🏡Home]]
 

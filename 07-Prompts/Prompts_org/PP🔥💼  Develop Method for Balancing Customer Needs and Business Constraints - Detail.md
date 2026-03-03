@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💼  Develop Method for Balancing Customer Needs and Business Constraints - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

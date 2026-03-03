@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🔗 Cross-Link Suggestions"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Based on {activeNote}, suggest 3-5 other note titles in my vault that I should link to, and explain why.

@@ -1,7 +1,7 @@
 ---
-
+title: "💾Backlog KANBAN for OBSIDIAN"
 kanban-plugin: board
-
+modified: 2026-03-03
 ---
 ## ⚡NOW (3)
 

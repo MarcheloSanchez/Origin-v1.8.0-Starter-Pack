@@ -1,4 +1,5 @@
 ---
+title: "PPS -🔥🗣 ROLE-PLAY HANDLING CONTROVERSIAL TOPICS"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Let's roleplay an interview with a controversial public figure. I'll play the role of the figure, and you respond as the journalist, asking tough questions while maintaining professionalism and objectivity.

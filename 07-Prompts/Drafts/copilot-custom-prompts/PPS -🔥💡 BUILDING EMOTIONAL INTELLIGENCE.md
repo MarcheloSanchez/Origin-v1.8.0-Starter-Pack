@@ -1,4 +1,5 @@
 ---
+title: "PPS -🔥💡 BUILDING EMOTIONAL INTELLIGENCE"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,6 +17,7 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 I want to improve my emotional intelligence to better manage my emotions and relationships. Can you provide a 30-day plan With daily
 exercises and reflection prompts to enhance my emotional awareness and regulation?

@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈 buss prompt - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

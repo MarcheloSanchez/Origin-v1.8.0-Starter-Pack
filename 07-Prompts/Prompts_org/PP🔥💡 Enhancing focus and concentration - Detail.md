@@ -1,4 +1,5 @@
 ---
+title: "PP🔥💡 Enhancing focus and concentration - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

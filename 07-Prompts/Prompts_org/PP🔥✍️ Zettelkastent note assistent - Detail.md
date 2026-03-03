@@ -1,4 +1,5 @@
 ---
+title: "PP🔥✍️ Zettelkastent note assistent - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

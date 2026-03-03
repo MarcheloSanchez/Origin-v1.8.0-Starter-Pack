@@ -1,4 +1,5 @@
 ---
+title: "📍Note Classification Guide"
 type: guide
 status: 🔄active
 created: 2026-01-16

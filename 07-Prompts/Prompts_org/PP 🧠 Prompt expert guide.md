@@ -1,4 +1,5 @@
 ---
+title: "PP 🧠 Prompt expert guide"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -14,6 +15,7 @@ prompt_status: draft
 Language: czech
 category: 🧠 Mastery Prompts
 source: "AI-FOR-WORK"
+modified: 2026-03-03
 ---
 ***STATUS:*** Idea made solid
 # Task:

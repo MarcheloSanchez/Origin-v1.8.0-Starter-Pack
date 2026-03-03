@@ -1,6 +1,7 @@
 ---
 title: "Daily Note - 2026-01-27"
 type: daily
+fileClass: daily
 tags:
   - "#📅daily"
   - "#📋tutorial"
@@ -9,6 +10,7 @@ date: 2026-01-27
 mood: "🌤️ Good"
 energy: "🔋 High"
 created: 2026-01-27
+modified: 2026-03-03
 ---
 
 # Sunday, January 27, 2026

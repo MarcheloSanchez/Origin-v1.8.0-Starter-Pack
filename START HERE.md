@@ -75,7 +75,7 @@ git clone https://github.com/yourusername/origin-vault.git
 #### Klíčové soubory pro start
 | Soubor | Účel | Odkaz |
 |--------|------|-------|
-| `README.md` | Tento průvodce | [[06-Archive/Completed/README]] |
+| `README.md` | Tento průvodce | [[README]] |
 | `My PKM MOC.md` | Kompletní mapa systému | [[My PKM MOC]] |
 | `Home.md` | Denní dashboard | [[🏡Home]] |
 

@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 📣 TEMPLATE_Content_&_Marketing - Detail 1"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

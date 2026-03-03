@@ -323,10 +323,10 @@ LIMIT 7
 > **Quick destination guide:**
 > | Content Type | Move To | Template |
 > |--------------|---------|----------|
-> | Idea/thought | [[02-Dots/100-Atomics]] | `Atomic-New` |
+> | Idea/thought | [[100-Atomics]] | `Atomic-New` |
 > | Task/project | [[03-Efforts]] | `Effort-New` |
 > | Reference | [[04-Sources]] | `Source-New` |
-> | Meeting note | [[04-Sources/Meetings]] | `Meeting-New` |
+> | Meeting note | [[Meetings]] | `Meeting-New` |
 > | Unsure | Keep + add #🚤floating | — |
 
 ### Inbox Overview
@@ -529,7 +529,7 @@ LIMIT 7
 > - Actually done? → Change to `status: ✅completed`
 > - No longer relevant? → Change to `status: 📦archived`
 >
-> **Reference docs:** [[99-System/CIS/CIS_STATUS]] | [[99-System/CIS/CIS_TYPE]] | [[99-System/FileClass]]
+> **Reference docs:** [[CIS_STATUS]] | [[CIS_TYPE]] | [[99-System/FileClass]]
 
 ### Missing Critical Metadata
 
@@ -640,7 +640,7 @@ LIMIT 10
 > - Or go to [[TODO#📋 Next Actions by Context]] for context-based work
 >
 > **Evening path:**
-> - Create tomorrow's Daily Note in [[05-Calendar/Daily]]
+> - Create tomorrow's Daily Note in [[Daily]]
 > - Or log today's wins in [[🏡Home]]
 
 ---
@@ -671,7 +671,7 @@ LIMIT 10
 #### Phase 4: COMMIT (5 min)
 - [ ] Set 3 priorities for next week (write below or in Weekly Note)
 - [ ] Schedule any calendar blocks needed
-- [ ] Update this week's [[05-Calendar/Weekly]] note
+- [ ] Update this week's [[Weekly]] note
 
 **This Week's Priorities:**
 1.
@@ -680,7 +680,7 @@ LIMIT 10
 
 > [!done]- ✅ **After Weekly Review: What's Next?**
 > **Wrap-up actions:**
-> - [ ] Update [[05-Calendar/Weekly]] with this week's priorities
+> - [ ] Update [[Weekly]] with this week's priorities
 > - [ ] Block time in your calendar for priority #1
 > - [ ] Send any follow-ups identified in Waiting review
 >
@@ -708,7 +708,7 @@ LIMIT 10
 - [ ] Check: Are efforts aligned with areas that matter?
 
 #### Part C: Effort Pipeline (20 min)
-- [ ] Review [[03-Efforts/On]] — still the right active projects?
+- [ ] Review [[On]] — still the right active projects?
 - [ ] Review [[03-Efforts/Simmering]] — anything ready to activate?
 - [ ] Review [[03-Efforts/Ongoing]] — any maintenance work overdue?
 - [ ] Kill or archive stalled efforts (>60 days no progress)
@@ -723,7 +723,7 @@ LIMIT 10
 - [ ] What's the theme for next month?
 - [ ] What 3 efforts would make next month successful?
 - [ ] Any upcoming dues to prepare for?
-- [ ] Update [[05-Calendar/Monthly]] note
+- [ ] Update [[Monthly]] note
 
 **This Month's Theme:**
 
@@ -735,7 +735,7 @@ LIMIT 10
 
 > [!done]- ✅ **After Monthly Review: What's Next?**
 > **Celebrate & capture:**
-> - [ ] Update [[05-Calendar/Monthly]] with theme and top efforts
+> - [ ] Update [[Monthly]] with theme and top efforts
 > - [ ] Archive this month's completed efforts → [[06-Archive/Completed]]
 > - [ ] Share a win with someone (optional but rewarding)
 >
@@ -828,7 +828,7 @@ After triage, use this modified weekly review:
 ### Work Locations
 - [[+Inbox]] — Capture dropzone
 - [[03-Efforts]] — Active projects
-- [[03-Efforts/On]] — Hot projects
+- [[On]] — Hot projects
 - [[03-Efforts/Simmering]] — Backburner
 - [[03-Efforts/Ongoing]] — Maintenance efforts
 
@@ -840,8 +840,8 @@ After triage, use this modified weekly review:
 
 ### Time Locations
 - [[05-Calendar]] — Calendar hub
-- [[05-Calendar/Daily]] — Daily notes
-- [[05-Calendar/Weekly]] — Weekly notes
+- [[Daily]] — Daily notes
+- [[Weekly]] — Weekly notes
 
 ### System Locations
 - [[99-System]] — System documentation

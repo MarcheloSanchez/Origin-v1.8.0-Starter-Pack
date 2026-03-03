@@ -1,6 +1,7 @@
 ---
 title: Surfacing - Metrics
 type: atomic
+fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, metrics]
 created: 2026-02-04

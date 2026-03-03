@@ -1,6 +1,7 @@
 ---
 title: "John Smith"
 type: "person"
+fileClass: person
 tags:
   - people
   - colleague
@@ -24,4 +25,5 @@ communication_style: "direct"
 preferred_contact: "email"
 notes: "Excellent problem solver, prefers technical discussions"
 last_interaction: 2024-01-14
+modified: 2026-03-03
 ---

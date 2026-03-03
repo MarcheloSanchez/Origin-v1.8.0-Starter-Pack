@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🧪- 04 - Exploratory Testing Scenarios"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Generate a list of exploratory testing scenarios for a new online payment feature in a mobile app, focusing on security and user experience.

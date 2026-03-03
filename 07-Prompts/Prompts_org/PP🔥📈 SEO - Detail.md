@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📈 SEO - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt
@@ -15,6 +16,7 @@ prompt_status: draft
 URL: "https://team-gpt.com/blog/chatgpt-prompts-for-seo/"
 language: ENGLISH
 source: "ai-output"
+modified: 2026-03-03
 ---
 
 ## 💡Prompt [Generate a list of Seed Keywords]

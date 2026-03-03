@@ -2,6 +2,7 @@
 status: 📦archived
 title: Evaluation Rubrics — Prompts
 type: evaluation
+modified: 2026-03-03
 ---
 # 🧮 Prompts — Evaluation Rubrics
 

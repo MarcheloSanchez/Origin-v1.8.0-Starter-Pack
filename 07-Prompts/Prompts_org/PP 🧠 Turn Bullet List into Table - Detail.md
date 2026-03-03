@@ -1,4 +1,5 @@
 ---
+title: "PP 🧠 Turn Bullet List into Table - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

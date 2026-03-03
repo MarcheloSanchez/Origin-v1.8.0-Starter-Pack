@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 Act as Text Based Adventure Game - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

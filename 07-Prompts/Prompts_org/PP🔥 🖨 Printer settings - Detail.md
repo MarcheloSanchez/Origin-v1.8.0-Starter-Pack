@@ -1,4 +1,5 @@
 ---
+title: "PP🔥 🖨 Printer settings - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

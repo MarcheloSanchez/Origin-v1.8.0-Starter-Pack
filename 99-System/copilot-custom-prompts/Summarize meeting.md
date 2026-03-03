@@ -1,9 +1,11 @@
 ---
+title: "Summarize meeting"
 copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1120
 copilot-command-model-key: ""
 copilot-command-last-used: 0
+modified: 2026-03-03
 ---
 Create a meeting note summary from {}:
 

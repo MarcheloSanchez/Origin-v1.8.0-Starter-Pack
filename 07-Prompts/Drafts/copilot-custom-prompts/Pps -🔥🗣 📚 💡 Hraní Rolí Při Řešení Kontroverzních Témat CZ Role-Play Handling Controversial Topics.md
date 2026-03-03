@@ -1,4 +1,5 @@
 ---
+title: "Pps -🔥🗣 📚 💡 Hraní Rolí Při Řešení Kontroverzních Témat CZ Role-Play Handling Controversial Topics"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: prompt
@@ -16,5 +17,6 @@ copilot-command-context-menu-order: 9007199254740991
 copilot-command-last-used: 0
 copilot-command-model-key: 
 copilot-command-slash-enabled: true
+modified: 2026-03-03
 ---
 Pojďme si zahrát rozhovor s kontroverzní veřejnou osobností. Já budu hrát roli této osobnosti a ty budeš odpovídat jako novinář a klást náročné otázky, přičemž zachováš profesionalitu a objektivitu."

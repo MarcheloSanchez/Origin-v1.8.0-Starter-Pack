@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣Act as Budha - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

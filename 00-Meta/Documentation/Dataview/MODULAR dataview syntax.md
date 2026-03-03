@@ -1,4 +1,5 @@
 ---
+title: "MODULAR dataview syntax"
 up: "[[🏡Home]]"
 tags:
   - 🛜IT
@@ -7,6 +8,7 @@ created: 2025-04-16
 related:
   - "[[Dataview syntax]]"
   - "[[Dataview MOC]]"
+modified: 2026-03-03
 ---
 
 ⬆️:: [[🏡Home]]

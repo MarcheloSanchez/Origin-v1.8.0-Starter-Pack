@@ -1,5 +1,7 @@
 ---
+title: "GtD - Getting Things Done"
 status: ✅completed
+modified: 2026-03-03
 ---
 
 ⬆️:: [[🏡Home]]

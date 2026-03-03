@@ -1,4 +1,5 @@
 ---
+title: "PP - Master thinker"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

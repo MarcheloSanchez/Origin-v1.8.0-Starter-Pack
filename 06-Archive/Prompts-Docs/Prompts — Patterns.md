@@ -2,6 +2,7 @@
 status: 📦archived
 title: Patterns — Prompting
 type: pattern
+modified: 2026-03-03
 ---
 # Patterns — Prompting
 

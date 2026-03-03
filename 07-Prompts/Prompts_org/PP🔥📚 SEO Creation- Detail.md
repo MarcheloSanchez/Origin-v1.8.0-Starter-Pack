@@ -1,4 +1,5 @@
 ---
+title: "PP🔥📚 SEO Creation- Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

@@ -1,6 +1,7 @@
 ---
 title: QuickAdd Audit Results
 type: source
+fileClass: source
 status: 🔄active
 tags:
   - ⚙️system

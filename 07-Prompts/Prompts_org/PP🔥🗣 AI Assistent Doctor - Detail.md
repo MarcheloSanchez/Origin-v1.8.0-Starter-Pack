@@ -1,4 +1,5 @@
 ---
+title: "PP🔥🗣 AI Assistent Doctor - Detail"
 up: "[[07-Prompts]]"
 type: prompt
 fileClass: Prompt

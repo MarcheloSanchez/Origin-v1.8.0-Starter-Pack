@@ -39,3 +39,5 @@ Chci, abyste působili jako generátor Graphviz DOT, odborník na vytváření s
 ## 🔗Related Prompts 
 See also: ...
 [[PT11 - Act as a Yogi]]
+
+ 

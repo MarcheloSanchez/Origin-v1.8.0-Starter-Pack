@@ -20,7 +20,6 @@ source: "ai-output"
 modified: 2026-03-03
 ---
 
-
 ## 💡Prompt PT02 - [80 of 20]
 
 ## 📝Description 

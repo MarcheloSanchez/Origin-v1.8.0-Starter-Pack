@@ -17,7 +17,7 @@
               "name": "People - Proffesional",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-person.md",
+              "templatePath": "Templates/New-Notes/Type/People/👤 Person Professional Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -53,7 +53,7 @@
               "name": "People - Personal",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-person.md",
+              "templatePath": "Templates/New-Notes/Type/People/👤 Person BIO Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -96,7 +96,7 @@
               "name": "Quick Idea",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Idea Capture.md",
+              "templatePath": "Templates/New-Notes/Quick Idea Capture.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -132,7 +132,7 @@
               "name": "Quick Inbox",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Capture - Inbox.md",
+              "templatePath": "Templates/New-Notes/Quick Capture - Inbox.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -168,7 +168,7 @@
               "name": "Atomic",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-atomic.md",
+              "templatePath": "Templates/New-Notes/Type/Atomic/A-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Atomic - "
@@ -204,7 +204,7 @@
               "name": "MOC",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-moc.md",
+              "templatePath": "Templates/New-Notes/Type/MOC/MOC-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "MOC - "
@@ -240,7 +240,7 @@
               "name": "Effort",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-effort.md",
+              "templatePath": "Templates/New-Notes/Type/Effort/E-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Effort - "
@@ -280,7 +280,7 @@
               "name": "Meeting",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-meeting.md",
+              "templatePath": "Templates/New-Notes/Type/Meeting/MTG-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Meeting - "
@@ -316,7 +316,7 @@
               "name": "Source",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-source.md",
+              "templatePath": "Templates/New-Notes/Type/Source/S-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Source - "
@@ -352,7 +352,7 @@
               "name": "Prompt",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-prompt.md",
+              "templatePath": "Templates/New-Notes/Type/Prompt/PRM-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Prompt - "
@@ -388,7 +388,7 @@
               "name": "Area",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-area.md",
+              "templatePath": "Templates/New-Notes/Type/Area/Area-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Area - "
@@ -433,7 +433,7 @@
               "name": "Quick Inbox (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Capture - Inbox.md",
+              "templatePath": "Templates/New-Notes/Quick Capture - Inbox.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -473,7 +473,7 @@
               "name": "Quick Idea (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Idea Capture.md",
+              "templatePath": "Templates/New-Notes/Quick Idea Capture.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -513,7 +513,7 @@
               "name": "Atomic (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-atomic.md",
+              "templatePath": "Templates/New-Notes/Type/Atomic/A-Full-Template.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Atomic - "
@@ -553,7 +553,7 @@
               "name": "Effort (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-effort.md",
+              "templatePath": "Templates/New-Notes/Type/Effort/E-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Effort - "
@@ -593,7 +593,7 @@
               "name": "Meeting (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-meeting.md",
+              "templatePath": "Templates/New-Notes/Type/Meeting/MTG-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Meeting - "
@@ -633,7 +633,7 @@
               "name": "Source (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-source.md",
+              "templatePath": "Templates/New-Notes/Type/Source/S-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Source - "
@@ -673,7 +673,7 @@
               "name": "MOC (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-moc.md",
+              "templatePath": "Templates/New-Notes/Type/MOC/MOC-New.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "MOC - "
@@ -713,7 +713,7 @@
               "name": "Prompt (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-prompt.md",
+              "templatePath": "Templates/New-Notes/Type/Prompt/PRM-Full-Template.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Prompt - "
@@ -753,7 +753,7 @@
               "name": "Area (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-area.md",
+              "templatePath": "Templates/New-Notes/Type/Area/Area-New.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Area - "
@@ -802,7 +802,7 @@
               "name": "Quick Inbox (copy) (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Capture - Inbox.md",
+              "templatePath": "Templates/New-Notes/Quick Capture - Inbox.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -842,7 +842,7 @@
               "name": "Quick Idea (copy) (copy)",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Quick Idea Capture.md",
+              "templatePath": "Templates/New-Notes/Quick Idea Capture.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": ""
@@ -882,7 +882,7 @@
               "name": "🤖🔗Atomic ",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-atomic-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Atomic/A-New-Auto.md",
               "fileNameFormat": {
                 "enabled": false,
                 "format": "Atomic - "
@@ -922,7 +922,7 @@
               "name": "🤖🔗Effort",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-effort-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Effort/E-New-Auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Effort - "
@@ -962,7 +962,7 @@
               "name": "🤖🔗Meeting ",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-meeting-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Meeting/MTG-New-auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Meeting - "
@@ -1002,7 +1002,7 @@
               "name": "🤖🔗Source ",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-source-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Source/S-New-Auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Source - "
@@ -1042,7 +1042,7 @@
               "name": "🤖🔗MOC",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-moc-auto.md",
+              "templatePath": "Templates/New-Notes/Type/MOC/MOC-New-Auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "MOC - "
@@ -1082,7 +1082,7 @@
               "name": "🤖🔗Prompt",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-prompt-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Prompt/PRM-New-Auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Prompt - "
@@ -1122,7 +1122,7 @@
               "name": "🤖🔗Area ",
               "type": "Template",
               "command": true,
-              "templatePath": "Templates/Create/new-area-auto.md",
+              "templatePath": "Templates/New-Notes/Type/Area/Area-New-Auto.md",
               "fileNameFormat": {
                 "enabled": true,
                 "format": "Area - "
@@ -1871,7 +1871,7 @@
           "name": "CurrFolder - Quick Capture",
           "type": "Template",
           "command": true,
-          "templatePath": "Templates/Quick Capture - Inbox.md",
+          "templatePath": "Templates/New-Notes/Template Quick Capture - Inbox.md",
           "fileNameFormat": {
             "enabled": false,
             "format": ""
@@ -1929,7 +1929,7 @@
           "name": "CurrFoldWithLink",
           "type": "Template",
           "command": true,
-          "templatePath": "Templates/Quick Capture - Inbox.md",
+          "templatePath": "Templates/New-Notes/Template Quick Capture - Inbox.md",
           "fileNameFormat": {
             "enabled": false,
             "format": ""
@@ -1986,7 +1986,7 @@
                       "name": "new atomic",
                       "type": "Template",
                       "command": false,
-                      "templatePath": "Templates/Create/new-atomic.md",
+                      "templatePath": "Templates/New-Notes/Type/Atomic/A-Full-Template.md",
                       "fileNameFormat": {
                         "enabled": false,
                         "format": ""
@@ -2341,7 +2341,7 @@
               "createFileIfItDoesntExist": {
                 "enabled": true,
                 "createWithTemplate": true,
-                "template": "Templates/Quick Capture - Inbox.md"
+                "template": "Templates/New-Notes/Quick Capture - Inbox.md"
               },
               "format": {
                 "enabled": true,

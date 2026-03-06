@@ -24,7 +24,7 @@ language:
 
 ## 📋Instructions 
 ```ENG
-Now that you can remember everything ľve ever typed here, point out my top five blind spotsl
+Now that you can remember everything ľve ever typed here, point out my top five blind spots
 ```
 
 ```CZ

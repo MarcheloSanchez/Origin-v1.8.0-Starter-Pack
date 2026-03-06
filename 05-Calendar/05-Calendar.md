@@ -30,8 +30,7 @@ Denní poznámky — „05 Calendar/Daily“ + tlačítka/šablony (link)
 Týdenní review — checklists + panely dokončeného / stagnujícího
 Měsíční přehledy — archiv, refaktoring struktury, zálohy
 Produktivita & metriky — [[Performance Metrics]] (tag coverage, capture rate)
-Plánované rituály — odkazy na „Review scripts/templaty“ v [[System & Automation]]
-Highlight stream — výběr „highlight::“ z deníků (Dataview panel)
+Plánované rituály — odkazy na „Review scripts/templaty“ v [[MOC - Automation Command Center]]
 
 ## Rollup last 14 days of Highlight
 ```dataview

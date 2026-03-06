@@ -25,57 +25,54 @@ obsidianUIMode: preview
 ⬆️:: [[🏡Home]]
 
 [[+ About Dotsℹ️]]
-```button
-name New Atomic
-type command
-action QuickAdd: Atomic 
-```
-# 💡 02 Dots — Overview
-- [[100-Atomics]]
-	- [[Concepts]]
-```button
-name New Concept
-type command
-action QuickAdd: Atomic
-```
-- [[Ideas]]
-```button
-name New Idea
-type command
-action QuickAdd: New Quick Idea
-```
-- [[Quotes]]
-- [[Statements]]
-- [[Things]]
-- [[200-Areas]]
+
+## Button Menu
 ```button
 name New Area
 type command
 action QuickAdd: Area
 ```
+```button
+name New Idea
+type command
+action QuickAdd: New Quick Idea
+```
+```button
+name New Atomic
+type command
+action QuickAdd: Atomic 
+```
+```button
+name New Person
+type command
+action QuickAdd: Person
+```
+```button
+name New Place
+type command
+action QuickAdd: Place
+```
+```button
+name New Tool
+type command
+action QuickAdd: Tool
+```
+# 💡 02 Dots — Overview
+- [[100-Atomics]]
+	- [[Concepts]]
+- [[Ideas]]
+- [[Quotes]]
+- [[Statements]]
+- [[Things]]
+- [[200-Areas]]
 - [[210-Health]]
 - [[220-Finance]]
 - [[230-Career]]
 - [[240-Relationships]]
 - [[250-Personal]]
 - [[300-People]]
-```button
-name New Person
-type command
-action QuickAdd: Person
-```
 - [[400-Places]]
-```button
-name New Place
-type command
-action QuickAdd: Place
-```
 - [[500-Tools]]
-```button
-name New Tool
-type command
-action QuickAdd: Tool
-```
 - [[X]]
 
 ![[_Dots_Data.base]]
@@ -90,7 +87,7 @@ SORT created DESC
 
 ## 🌱 Maturity distribution
 ```dataview
-TABLE maturity, length(rows) AS count
+TABLE length(rows) AS count
 FROM "02-Dots"
 WHERE type = "atomic"
 GROUP BY maturity

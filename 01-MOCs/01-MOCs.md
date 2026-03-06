@@ -13,8 +13,6 @@ modified: 2026-03-03
 ⬆️:: [[🏡Home]],
 
 [[+ About MOCs ℹ️]]
-[[MOC-Full-Template|Click here for template]]
+[[Templates/Static/moc|Click here for template]]
 
 ![[_MOCs_Data.base]]
-
-- [[BOAT notes]]

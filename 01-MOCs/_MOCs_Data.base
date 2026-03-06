@@ -14,3 +14,18 @@ views:
       - file.mtime
       - file.ctime
       - up
+  - type: table
+    name: All MOCs 🔄active
+    filters:
+      and:
+        - status == "🔄active"
+    order:
+      - file.name
+      - file.tags
+      - completeness
+      - coverage_areas
+      - last_review
+      - review_frequency
+      - file.mtime
+      - file.ctime
+      - up

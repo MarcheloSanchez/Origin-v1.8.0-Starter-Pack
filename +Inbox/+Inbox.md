@@ -1,11 +1,14 @@
 ---
 title: "+Inbox"
-created: 2026-01-02
-modified: 2026-02-23
+up: "[[🏡Home]]"
+in:
+  - "[[Views]]"
+created: 2025-10-13
+modified: 2026-03-03
+cssclasses:
+  - wide-page
+obsidianUIMode: preview
 ---
-
-
-
 
 ⬆️:: [[🏡Home]]
 
@@ -17,6 +20,7 @@ type command
 action QuickAdd: Quick Inbox
 ```
 ## ⚡ Quick actions
+#🌱develop 
 - ⏱️ 10‑min Inbox sweep
 - ➡️ Move to: [[02-Dots]] / [[03-Efforts]] / [[04-Sources]] / [[05-Calendar]]
 - 🏷️ Alt+T for priority/energy/context tags

@@ -23,11 +23,11 @@ cssclasses:
   - wide-page
   - review-hq
 related:
-  - "[[🎯GTD Weekly Review]]"
+  - "[[🎯GTD Weekly Review - Template]]"
   - "[[🧹Cleaning Lady]]"
   - "[[🌱Incubator]]"
 ---
-#📦archived - Overloaded. Mix up with [[TODO]] & [[🎯GTD Weekly Review]]
+
 # 🧭 Review HQ
 
 > [!quote] One Place Where Remaining Work Meets
@@ -568,6 +568,32 @@ SORT file.mtime DESC
 LIMIT 10
 ```
 
+### Per-Type Metadata Gaps
+
+> [!info] Type-specific validation — checks fields required by each note type's schema.
+> Full queries: [[🔍My PKM Queries#31. Effort Metadata Gaps|Q31 Efforts]] · [[🔍My PKM Queries#32. Atomic Metadata Gaps|Q32 Atomics]] · [[🔍My PKM Queries#33. Source Metadata Gaps|Q33 Sources]] · [[🔍My PKM Queries#34. Meeting Metadata Gaps|Q34 Meetings]] · [[🔍My PKM Queries#35. Person Metadata Gaps|Q35 People]]
+
+```dataview
+TABLE WITHOUT ID
+  file.link as "Note",
+  type as "Type",
+  choice(type = "effort" AND !priority, "priority", "") +
+  choice(type = "source" AND !source_type, "source_type", "") +
+  choice(type = "source" AND !read_status, "read_status", "") +
+  choice(type = "meeting" AND !meeting_type, "meeting_type", "") +
+  choice(type = "person" AND !relationship, "relationship", "") +
+  choice(type = "atomic" AND (!tags OR length(file.tags) = 0), "tags", "") as "Missing Field"
+FROM "02-Dots" OR "03-Efforts" OR "04-Sources"
+WHERE
+  (type = "effort" AND !priority) OR
+  (type = "source" AND (!source_type OR !read_status)) OR
+  (type = "meeting" AND !meeting_type) OR
+  (type = "person" AND !relationship) OR
+  (type = "atomic" AND (!tags OR length(file.tags) = 0))
+SORT type ASC
+LIMIT 15
+```
+
 ### Stale Active Notes (Active but untouched >30 days)
 
 ```dataview
@@ -609,7 +635,7 @@ LIMIT 10
 > > **When:** End of week
 > > **Focus:** Get current
 > > **Skip to:** [[#📅 Weekly Review (30-45 min)]]
-> > **Full version:** [[🎯GTD Weekly Review]]
+> > **Full version:** [[🎯GTD Weekly Review - Template]]
 >
 > > [!note]+ 📆 Monthly (60-90 min)
 > > **When:** First weekend
@@ -647,7 +673,7 @@ LIMIT 10
 
 ### 📅 Weekly Review (30-45 min)
 
-> [!info] Purpose: Get current. Get clear. Get creative. ([Full checklist →](🎯GTD%20Weekly%20Review.md))
+> [!info] Purpose: Get current. Get clear. Get creative. ([Full checklist →](🎯GTD%20Weekly%20Review%20-%20Template.md))
 
 #### Phase 1: GET CLEAR (10 min)
 - [ ] Empty inbox to ≤5 items ([[+Inbox]])
@@ -812,7 +838,7 @@ After triage, use this modified weekly review:
 > |--------------|-------|
 > | See system health at a glance | **You're here!** [[#🚦 System Health Dashboard]] |
 > | Work on tasks by context (@computer, @home) | [[TODO]] |
-> | Do a full weekly review checklist | [[🎯GTD Weekly Review]] |
+> | Do a full weekly review checklist | [[🎯GTD Weekly Review - Template]] |
 > | Process new captures | [[+Inbox]] |
 > | Work on active projects | [[03-Efforts]] |
 > | Fix and maintain notes | [[🧹Cleaning Lady]] |
@@ -821,7 +847,7 @@ After triage, use this modified weekly review:
 
 ### Core Hubs
 - [[TODO]] — Task management & contexts
-- [[🎯GTD Weekly Review]] — Full weekly review checklist
+- [[🎯GTD Weekly Review - Template]] — Full weekly review checklist
 - [[🏡Home]] — Daily dashboard
 - [[👁️Dashboard]] — System overview
 
@@ -1174,4 +1200,4 @@ To keep this hub usable, all queries above enforce limits:
 
 *Last updated: `= this.modified`*
 
-*Navigate: [[🏡Home]] | [[TODO]] | [[🎯GTD Weekly Review]] | [[+Inbox]]*
+*Navigate: [[🏡Home]] | [[TODO]] | [[🎯GTD Weekly Review - Template]] | [[+Inbox]]*

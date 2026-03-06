@@ -87,7 +87,7 @@ async function processFile(file) {
   }
 
   // 4. Status (if missing and type requires it)
-  const statusTypes = ['effort', 'source', 'meeting'];
+  const statusTypes = ['effort', 'source', 'meeting', 'atomic', 'area', 'person', 'place', 'tool', 'moc'];
   if (!newMetadata.status && statusTypes.includes(newMetadata.type)) {
     newMetadata.status = '📥inbox';
     updated = true;
@@ -141,11 +141,19 @@ function detectTypeFromPath(path) {
   if (path.includes('+Inbox')) return 'undefined';
   if (path.includes('01-MOCs')) return 'moc';
   if (path.includes('02-Dots/100-Atomics')) return 'atomic';
-  if (path.includes('02-Dots')) return 'dot';
+  if (path.includes('02-Dots/200-Areas')) return 'area';
+  if (path.includes('02-Dots/300-People')) return 'person';
+  if (path.includes('02-Dots/400-Places')) return 'place';
+  if (path.includes('02-Dots/500-Tools')) return 'tool';
+  if (path.includes('02-Dots')) return 'atomic';
   if (path.includes('03-Efforts')) return 'effort';
-  if (path.includes('04-Sources/Meetings')) return 'meeting';
+  if (path.includes('04-Sources/440-Meetings')) return 'meeting';
   if (path.includes('04-Sources')) return 'source';
   if (path.includes('05-Calendar/Daily')) return 'daily';
+  if (path.includes('05-Calendar/Weekly')) return 'weekly';
+  if (path.includes('05-Calendar/Monthly')) return 'monthly';
+  if (path.includes('05-Calendar/Quarterly')) return 'quarterly';
+  if (path.includes('05-Calendar/Yearly')) return 'yearly';
   if (path.includes('07-Prompts')) return 'prompt';
 
   return 'undefined';
@@ -231,11 +239,16 @@ function suggestParentLink(path) {
 
   // Folder-specific parents
   if (path.includes('01-MOCs')) parent = '[[01-MOCs]]';
-  if (path.includes('02-Dots/100-Atomics')) parent = '[[02-Dots]]';
+  if (path.includes('02-Dots/100-Atomics')) parent = '[[100-Atomics]]';
+  if (path.includes('02-Dots/200-Areas')) parent = '[[200-Areas]]';
+  if (path.includes('02-Dots/300-People')) parent = '[[300-People]]';
+  if (path.includes('02-Dots/400-Places')) parent = '[[400-Places]]';
+  if (path.includes('02-Dots/500-Tools')) parent = '[[500-Tools]]';
+  if (path.includes('02-Dots')) parent = '[[02-Dots]]';
   if (path.includes('03-Efforts')) parent = '[[03-Efforts]]';
-  if (path.includes('04-Sources/Meetings')) parent = '[[04-Sources]]';
+  if (path.includes('04-Sources/440-Meetings')) parent = '[[440-Meetings]]';
   if (path.includes('04-Sources')) parent = '[[04-Sources]]';
-  if (path.includes('05-Calendar/Daily')) parent = '[[05-Calendar]]';
+  if (path.includes('05-Calendar')) parent = '[[05-Calendar]]';
   if (path.includes('07-Prompts')) parent = '[[07-Prompts]]';
 
   return parent;

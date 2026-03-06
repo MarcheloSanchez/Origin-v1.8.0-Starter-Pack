@@ -1,9 +1,21 @@
+---
+title: 🏡Home
+type: 🏡Home
+status: 🔄active
+tags:
+  - ⚙️system
+created: 2025-09-29
+modified: 2025-09-29
+obsidianUIMode: preview
+cssclasses:
+  - wide-page
+---
 > [!orbit]- Quick Navigation
 > **Core Dashboards:**
 > [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[Performance Metrics|📈Performance]]
 >
 > **Quick Actions:**
-> [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🎯GTD Weekly Review|📅 Review]] • [[TODO|✅ TODO]] • [[📍Note Classification Guide|📍 Guide]]
+> [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🎯GTD Weekly Review - Template|📅 Review]] • [[TODO|✅ TODO]] • [[📍Note Classification Guide|📍 Guide]]
 >
 > **Automation:** `Ctrl+P` → ⚡Quick Process (Atomic/Source/Effort) • 🤖Smart Classify • 📦Batch Process • 📝Auto-Fill Metadata
 >

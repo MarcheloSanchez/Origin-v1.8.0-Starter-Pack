@@ -1,20 +1,19 @@
 ---
-title: "PP - Content Creation Techniques for Document"
+title: PP - Content Creation Techniques for Document
 up: "[[07-Prompts]]"
 type: prompt
-fileClass: Prompt
-tags: 
+fileClass: prompt
+tags:
   - 🤖AI/prompt
-  - 🧹tidy
-status: 📥inbox
-created: "2025-07-29"
-modified: 
+status: 🔄active
+created: 2025-07-29
+modified:
 prompt_category: ✍️ Copywriting
 prompt_status: draft
-Audience: 
-Difficulty: 
-Source: 
-Type: 
+Audience:
+Difficulty:
+Source:
+Type:
 language:
 ---
 

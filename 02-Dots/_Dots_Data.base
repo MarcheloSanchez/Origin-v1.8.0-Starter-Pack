@@ -1,3 +1,5 @@
+summaries:
+  Filled: values.filter(!value.isType("null")).length
 filters:
   and:
     - file.folder.contains("02-Dots")
@@ -63,7 +65,7 @@ views:
       - maturity
       - status
       - tags
-    limit: 100
+    limit: 6
   - type: table
     name: 📤 Seeds to Promote
     filters:
@@ -107,10 +109,11 @@ views:
       - formula.Outlinks
       - formula.Days Idle
     sort:
-      - property: formula.Backlinks
-        direction: DESC
       - property: formula.Outlinks
         direction: ASC
+    summaries:
+      file.name: Empty
+      formula.Backlinks: Average
     columnSize:
       file.name: 300
       type: 100

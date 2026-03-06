@@ -16,6 +16,8 @@ modified: 2026-03-03
 [[+About Mediaℹ️]]
 media template is via WebClipper
 
+gather templates for such WebClipper
+
 ![[_Media_Data.base]]
 
 

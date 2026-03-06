@@ -1,11 +1,15 @@
 ---
-title: "📍Note Classification Guide"
+title: 📍Note Classification Guide
 type: guide
 status: 🔄active
 created: 2026-01-16
 modified: 2026-01-16
-tags: [meta, workflow, classification, guide]
-up: [[🏡Home]]
+tags:
+  - meta
+  - workflow
+  - classification
+  - guide
+up: "[[🏡Home]]"
 ---
 
 # 📍 Where Does This Note Belong?

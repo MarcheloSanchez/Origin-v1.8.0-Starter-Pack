@@ -1,5 +1,5 @@
 ---
-title: Research Plan: Improving Note Surfacing
+title: "Research Plan: Improving Note Surfacing"
 type: source
 fileClass: source
 status: 🔄active

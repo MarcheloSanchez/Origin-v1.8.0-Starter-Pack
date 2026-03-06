@@ -9,7 +9,7 @@ tags:
 created: 2026-01-01
 related:
   - "[[TODO]]"
-  - "[[🎯GTD Weekly Review]]"
+  - "[[🎯GTD Weekly Review - Template]]"
 modified: 2026-03-03
 ---
 

@@ -28,6 +28,8 @@ cssclasses:
 >
 > **Specialized:** [[MOC - Automation Command Center|⚡ Automation]] • [[Obsidian Plugins & Features|🛠️ Plugins]] • [[Prompt Dashboard|🤖 Prompts]]
 
+
+
 # 📆Agenda
 > [!Multi-column] 
 > 
@@ -376,6 +378,8 @@ WHERE status = "🔄active"
 SORT file.mtime DESC
 LIMIT 8
 ```
+
+![[_MOCs_Data.base]]
 
 ---
 

@@ -13,11 +13,26 @@ modified: 2026-03-03
 ⬆️:: [[🏡Home]]
 
 [[+About Sourcesℹ️]]
-[[S-Full-Template|Click here for template]]
+[[Templates/Static/source|Click here for template]]
 ```button
 name New Source
 type command
 action QuickAdd: Source 
+```
+```button
+name New Meeting
+type command
+action QuickAdd: Meeting
+```
+```button
+name New Meeting
+type command
+action QuickAdd: Meeting
+```
+```button
+name New Guide 
+type command
+action QuickAdd: Guide
 ```
 This is where I keep tabs on some of the sources I have encountered. 
 What "sources" should you track? 
@@ -34,10 +49,6 @@ Typy zdrojů — Knihy, Články, Videa, Podcasty, Papers (podsložky „04 Sour
 - [[420-Media]]
 - [[430-Guides]]
 - [[440-Meetings]]
-```button
-name New Meeting
-type command
-action QuickAdd: Meeting
-```
+
 
 ![[_Sources_Data.base]]

@@ -11,7 +11,7 @@ modified: 2026-02-04
 - [[Surfacing - Connection Ritual]] ←→ [[Surfacing - Signal Design]]
 
 ## Bridge Connections
-- [[Surfacing - Connection Ritual]] ←→ [[🎯GTD Weekly Review]]
+- [[Surfacing - Connection Ritual]] ←→ [[🎯GTD Weekly Review - Template]]
   → Insight: Add a weekly surfacing check into the review ritual
 - [[Surfacing - Metrics]] ←→ [[👁️Dashboard]]
   → Insight: Expose `inlink_count` and `processing_rate` on dashboards

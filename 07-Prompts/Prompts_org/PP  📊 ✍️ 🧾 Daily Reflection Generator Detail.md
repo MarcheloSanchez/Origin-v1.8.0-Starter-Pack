@@ -20,23 +20,17 @@ source: "ai-output"
 modified: 2026-03-03
 ---
 
-
 ## 💡Prompt PP - [Daily Reflection Generator] Detail
-
 ## 📝Description 
-
 ## 📋Instructions 
 ```ENG
 Based on my note {activeNote}, generate 5 personalized reflection questions to help me deepen insights and spot lessons.
 ```
-
 ```CZ
-
 ```
 ## Example Usage 
 ## 🔗Related Prompts 
 See also: ...
 [[]]
-
 ## **Feedback/Evaluation**: 
 (Optional) Add a section for user notes or improvements.

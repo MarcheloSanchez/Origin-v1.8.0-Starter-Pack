@@ -936,7 +936,7 @@ source_date: 2022-06-14
 source_type: book
 ```
 
-### 04-01 [[meeting]] metadata
+### 04-01 [[99-System/FileClass/meeting]] metadata
 
 ```
 meeting_date: YYYY-MM-DD

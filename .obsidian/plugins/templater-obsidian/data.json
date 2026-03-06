@@ -44,6 +44,30 @@
     {
       "folder": "05-Calendar/Yearly",
       "template": "Templates/Calendar/Template Yearly.md"
+    },
+    {
+      "folder": "05-Calendar/Quarterly",
+      "template": "Templates/Calendar/Template Quarterly.md"
+    },
+    {
+      "folder": "02-Dots/200-Areas",
+      "template": "Templates/Create/new-area-auto.md"
+    },
+    {
+      "folder": "02-Dots/300-People",
+      "template": "Templates/Create/new-person-auto.md"
+    },
+    {
+      "folder": "02-Dots/400-Places",
+      "template": "Templates/Create/new-place-auto.md"
+    },
+    {
+      "folder": "02-Dots/500-Tools",
+      "template": "Templates/Create/new-tool-auto.md"
+    },
+    {
+      "folder": "04-Sources/440-Meetings",
+      "template": "Templates/Create/new-meeting-auto.md"
     }
   ],
   "enable_file_templates": false,

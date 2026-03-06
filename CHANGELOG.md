@@ -12,6 +12,38 @@ modified: 2026-03-03
 ---
 > Vault modifications and changes log.
 ---
+# 06/03/26
+## v2.0 Readiness — Metadata & Template Infrastructure
+
+### QuickAdd Config Fix
+- Fixed 21 dead template paths in `quickadd/data.json` — all pointed to removed `Templates/New-Notes/` structure
+- Remapped to current `Templates/Create/` and `Templates/Quick *.md` paths
+
+### Per-Type Metadata Validation (Queries 31–35)
+- Added 5 type-specific validation queries to `My PKM Queries.md`:
+  - Q31: Effort gaps (missing priority)
+  - Q32: Atomic gaps (missing tags/status)
+  - Q33: Source gaps (missing source_type/read_status)
+  - Q34: Meeting gaps (missing meeting_type/participants)
+  - Q35: Person gaps (missing relationship)
+- Added combined per-type validation view to Review HQ (Data Integrity section)
+
+### Folder-Template Mappings
+- Added 6 new Templater folder-template mappings:
+  - `02-Dots/200-Areas` → area-auto
+  - `02-Dots/300-People` → person-auto
+  - `02-Dots/400-Places` → place-auto
+  - `02-Dots/500-Tools` → tool-auto
+  - `04-Sources/440-Meetings` → meeting-auto
+  - `05-Calendar/Quarterly` → quarterly template
+- Ctrl+N in any content folder now auto-applies correct template (15 total mappings)
+
+### auto-metadata.js Improvements
+- Added type detection for Areas, People, Places, Tools, Meetings, Weekly/Monthly/Quarterly/Yearly
+- Fixed parent link suggestions for all new folder mappings
+- Expanded status default coverage to all content types
+
+---
 # 02/03/26
 ## TODO.md Dashboard
 - Added `⏰ Scheduled Today` section (Tasks plugin query, between Due Today and Due This Week)

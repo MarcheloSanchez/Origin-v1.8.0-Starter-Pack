@@ -1,5 +1,5 @@
 ---
-title: "Master Origin Vault"
+title: Master Origin Vault
 type: effort
 fileClass: effort
 tags:
@@ -8,10 +8,9 @@ tags:
   - "#🔥priority/high"
   - "#📋tutorial"
 status: 🔄active
-priority: high
 completion_percentage: 30
 due: 2026-03-31
-next_actions: "Complete Phase 2 - Daily practice"
+next_actions: Complete Phase 2 - Daily practice
 energy_required: high
 created: 2026-01-30
 related:
@@ -19,6 +18,7 @@ related:
   - "[[00-Tutorial-Guide]]"
   - "[[Tutorial - MOC - Growth Patterns]]"
 modified: 2026-03-03
+priority: high
 ---
 
 # Project: Master Origin Vault

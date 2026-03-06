@@ -13,12 +13,17 @@ views:
       - file.mtime
     sort: []
   - type: table
-    name: All Meta 2xx
+    name: All Meta 🔄active
+    filters:
+      and:
+        - status == "🔄active"
     order:
       - file.name
-      - status
       - type
       - up
       - tags
       - file.mtime
+    sort:
+      - property: status
+        direction: ASC
     limit: 10

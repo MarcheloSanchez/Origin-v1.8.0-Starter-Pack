@@ -502,6 +502,114 @@ LIMIT 10
 
 ---
 
+### **31. Effort Metadata Gaps** 🚀 Type Validation
+
+```
+TABLE WITHOUT ID
+file.link as "Effort",
+default(priority, "❌ missing") as "Priority",
+default(due, "—") as "Due",
+default(completion_percentage, "—") as "Progress"
+FROM "03-Efforts"
+WHERE type = "effort"
+AND (!priority OR !status OR !created)
+SORT file.name ASC
+
+```
+
+**Purpose**: Find effort notes missing required fields (priority is required per schema)
+**Review**: Monthly
+**Action**: Fill priority + any other missing fields
+
+---
+
+### **32. Atomic Metadata Gaps** 💡 Type Validation
+
+```
+
+TABLE WITHOUT ID
+file.link as "Atomic",
+default(maturity, "❌ missing") as "Maturity",
+default(status, "❌ missing") as "Status",
+length(file.tags) as "Tags"
+FROM "02-Dots"
+WHERE type = "atomic"
+AND (!tags OR length(file.tags) = 0 OR !status)
+SORT file.name ASC
+
+```
+
+**Purpose**: Find atomic notes missing tags (required) or status
+**Review**: Monthly
+**Action**: Add tags and status
+
+---
+
+### **33. Source Metadata Gaps** 📚 Type Validation
+
+```
+
+TABLE WITHOUT ID
+file.link as "Source",
+default(source_type, "❌ missing") as "Source Type",
+default(read_status, "❌ missing") as "Read Status",
+default(rating, "—") as "Rating"
+FROM "04-Sources"
+WHERE type = "source"
+AND (!source_type OR !read_status)
+SORT file.name ASC
+
+```
+
+**Purpose**: Find sources missing source_type or read_status (optional but recommended)
+**Review**: Monthly
+**Action**: Classify source type and reading status
+
+---
+
+### **34. Meeting Metadata Gaps** 🤝 Type Validation
+
+```
+
+TABLE WITHOUT ID
+file.link as "Meeting",
+default(meeting_type, "❌ missing") as "Type",
+default(participants, "❌ missing") as "Participants",
+default(status, "❌ missing") as "Status"
+FROM "04-Sources/440-Meetings"
+WHERE type = "meeting"
+AND (!meeting_type OR !participants OR !status)
+SORT file.name ASC
+
+```
+
+**Purpose**: Find meetings missing type, participants, or status
+**Review**: Monthly
+**Action**: Fill meeting context fields
+
+---
+
+### **35. Person Metadata Gaps** 👤 Type Validation
+
+```
+
+TABLE WITHOUT ID
+file.link as "Person",
+default(relationship, "❌ missing") as "Relationship",
+default(status, "❌ missing") as "Status"
+FROM "02-Dots/300-People"
+WHERE type = "person"
+AND (!relationship OR !status)
+SORT file.name ASC
+
+```
+
+**Purpose**: Find person notes missing relationship classification
+**Review**: Quarterly
+**Action**: Classify relationship type
+
+---
+
 ## 📈 Performance Metrics Queries
 
 ### **23. Vault Growth Rate** 📶 Capture Velocity
@@ -832,8 +940,8 @@ p.file.tags?.join(", ")
 
 ### **📊 Comprehensive Coverage**
 
-- **30+ essential queries** organized by use case
-- **6 major categories** (Daily/Weekly/Knowledge/Health/Metrics/Context)
+- **35+ essential queries** organized by use case
+- **7 major categories** (Daily/Weekly/Knowledge/Health/Type Validation/Metrics/Context)
 - **Copy-paste ready** - all queries tested and functional
 - **Purpose + Review frequency** for each query
 

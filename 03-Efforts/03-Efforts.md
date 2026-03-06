@@ -17,7 +17,7 @@ obsidianUIMode: preview
 ⬆️:: [[🏡Home]]
 
 [[+About Effortsℹ️]]
-[[E-Full-Template|Click here for template]]
+[[Templates/Static/effort|Click here for template]]
 ```button
 name New Effort 
 type command

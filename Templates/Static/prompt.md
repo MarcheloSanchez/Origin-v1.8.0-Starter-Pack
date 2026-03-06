@@ -1,52 +1,29 @@
 ---
-in:
-  - "[[07-Prompts]]"
 title:
 type: prompt
-fileClass: prompt
 tags:
-  - 🤖prompt
-status: 🔄active
+  - 🤖AI/prompt
+status: draft
 prompt_category:
-prompt_type:
-audience:
-difficulty:
-tone:
-version: 1.0.0
 created:
 modified:
-related:
-  - "[[]]"
+owner: MM
 ---
 
-# 💡 Prompt:
+# Prompt:
 
-## 📝 Description
+## Description
 (1-2 lines: what this prompt does)
 
-## Inputs
-- **{variable1}** —
-- **{variable2}** —
-
-## Quality Gates
-- [ ] Scope aligned
-- [ ] Output matches audience/tone
-- [ ] Example works
-
-## 📋 Instructions
+## Instructions
 ```
 (The actual prompt text)
 ```
 
-## Example Input
+## Example Usage
 ```
-(Sample input)
-```
-
-## Example Output
-```
-(Expected output)
+(Sample input → expected output)
 ```
 
-## 📝 Changelog
+## Changelog
 - **1.0.0** — Created

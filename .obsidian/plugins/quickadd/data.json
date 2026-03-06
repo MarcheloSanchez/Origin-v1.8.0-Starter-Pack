@@ -360,7 +360,7 @@
               "folder": {
                 "enabled": true,
                 "folders": [
-                  "07-Prompts/Drafts"
+                  "07-Prompts/Inbox"
                 ],
                 "chooseWhenCreatingNote": false,
                 "createInSameFolderAsActiveFile": false,
@@ -721,7 +721,7 @@
               "folder": {
                 "enabled": true,
                 "folders": [
-                  "07-Prompts/Drafts"
+                  "07-Prompts/Inbox"
                 ],
                 "chooseWhenCreatingNote": false,
                 "createInSameFolderAsActiveFile": false,
@@ -1090,7 +1090,7 @@
               "folder": {
                 "enabled": true,
                 "folders": [
-                  "07-Prompts/Drafts"
+                  "07-Prompts/Inbox"
                 ],
                 "chooseWhenCreatingNote": false,
                 "createInSameFolderAsActiveFile": false,

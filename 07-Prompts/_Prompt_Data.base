@@ -1,55 +1,56 @@
 filters:
   and:
     - file.folder.contains("07-Prompts")
+    - not file.folder.contains("Archive")
+    - not file.folder.contains("01-Docs")
 views:
   - type: table
     name: All Prompts
     order:
       - file.name
       - file.folder
-      - file.tags
-      - file.mtime
-      - file.ctime
-  - type: table
-    name: All Prompts Detailed
-    order:
-      - file.name
-      - file.tags
-      - prompt_status
-      - difficulty
-      - intent
-      - audience
-      - pattern
+      - status
       - prompt_category
-      - prompt_subcategory
-      - eval_score
-      - file.ctime
       - file.mtime
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
-    name: Winners
+    name: Workbench
     filters:
       and:
-        - prompt_status == "winner"
+        - file.folder.contains("Workbench")
     order:
       - file.name
       - prompt_category
+      - prompt_type
       - difficulty
-      - intent
-      - audience
       - file.mtime
     sort:
       - property: file.mtime
         direction: DESC
   - type: table
-    name: Drafts
+    name: Reference
     filters:
       and:
-        - prompt_status == "draft"
+        - file.folder.contains("Reference")
     order:
       - file.name
       - prompt_category
-      - difficulty
-      - intent
+      - status
+      - file.mtime
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Inbox
+    filters:
+      and:
+        - file.folder.contains("Inbox")
+    order:
+      - file.name
+      - prompt_category
+      - status
       - file.mtime
     sort:
       - property: file.mtime
@@ -59,3 +60,8 @@ views:
     sort:
       - property: file.mtime
         direction: DESC
+    order:
+      - file.name
+      - file.folder
+      - prompt_category
+      - file.mtime

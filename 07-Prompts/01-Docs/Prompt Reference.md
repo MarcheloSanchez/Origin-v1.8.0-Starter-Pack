@@ -68,7 +68,7 @@ Subcategories are no longer used.
 
 ```
 07-Prompts/
-├── 01-Docs/        → This reference + dashboard
+├── 01-Docs/        → Reference docs & prompt engineering knowledge
 ├── Workbench/      → Daily-use prompts you actively run
 ├── Reference/      → Well-crafted prompts worth keeping
 ├── Fun/            → Roleplay, creative, entertainment
@@ -96,3 +96,11 @@ Subcategories are no longer used.
 - Can be adapted for similar use cases
 - Has at least one example invocation
 - Category assigned, summary written (for complex prompts)
+
+---
+
+## Related Docs
+
+- [[Prompt Patterns]] — Techniques & reusable structures (CoT, few-shot, mega-prompt, etc.)
+- [[Prompt Playbook]] — Model-specific tips, temperature guide, common pitfalls
+- [[Prompt Lab]] — Personal experiment log and learnings

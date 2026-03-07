@@ -1,8 +1,8 @@
 filters:
   and:
     - file.folder.contains("07-Prompts")
-    - not file.folder.contains("Archive")
-    - not file.folder.contains("01-Docs")
+    - '!file.folder.contains("Archive")'
+    - '!file.folder.contains("01-Docs")'
 views:
   - type: table
     name: All Prompts
@@ -11,6 +11,9 @@ views:
       - file.folder
       - status
       - prompt_category
+      - prompt_type
+      - difficulty
+      - summary
       - file.mtime
     sort:
       - property: file.name
@@ -25,6 +28,9 @@ views:
       - prompt_category
       - prompt_type
       - difficulty
+      - summary
+      - language
+      - version
       - file.mtime
     sort:
       - property: file.mtime
@@ -36,8 +42,11 @@ views:
         - file.folder.contains("Reference")
     order:
       - file.name
-      - prompt_category
       - status
+      - prompt_category
+      - prompt_type
+      - difficulty
+      - summary
       - file.mtime
     sort:
       - property: file.name
@@ -50,18 +59,37 @@ views:
     order:
       - file.name
       - prompt_category
+      - prompt_type
+      - difficulty
+      - summary
       - status
       - file.mtime
     sort:
       - property: file.mtime
         direction: DESC
   - type: table
-    name: Recently Edited
+    name: Fun
+    filters:
+      and:
+        - file.folder.contains("Fun")
+    order:
+      - file.name
+      - prompt_category
+      - prompt_type
+      - summary
+      - file.mtime
     sort:
-      - property: file.mtime
-        direction: DESC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Recently Edited
     order:
       - file.name
       - file.folder
       - prompt_category
+      - prompt_type
+      - summary
       - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC

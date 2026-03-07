@@ -46,4 +46,6 @@ Prompt Library for creating, organizing, and maintaining reusable prompts in Obs
 ## Resources
 
 - [[Prompt Reference]] — Metadata schema, categories, workflow
-- [[Prompt Dashboard]] — Discovery queries and overview
+- [[Prompt Patterns]] — Prompt engineering techniques & structures
+- [[Prompt Playbook]] — Model tips, settings, common pitfalls
+- [[Prompt Lab]] — Personal experiment log and learnings

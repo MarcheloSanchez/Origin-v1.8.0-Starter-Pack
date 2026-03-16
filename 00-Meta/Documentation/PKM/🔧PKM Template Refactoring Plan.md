@@ -1,6 +1,6 @@
 ---
 title: PKM Template Refactoring Plan
-type: source
+type: system
 fileClass: source
 tags:
   - ⚙️system

@@ -1,6 +1,6 @@
 ---
 title: PKM Metadata Standards
-type: source
+type: system
 fileClass: source
 tags:
   - ⚙️system

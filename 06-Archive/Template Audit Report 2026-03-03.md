@@ -1,13 +1,16 @@
 ---
-title:
-type: atomic
-fileClass: atomic
-status: 📥inbox
-created:
+title: Template Audit Report 2026-03-03
+up: "[[00-Meta]]"
+type: system
+status: ✅completed
+created: 2026-03-03
 tags:
-processing_priority:
+  - ⚙️system
+  - 📋documentation
 related:
-modified: 2026-03-03
+  - "[[Templates/Meta/place-meta.yaml.md]]"
+  - "[[Templates/Meta/tool-meta.yaml.md]]"
+modified: 2026-03-13
 ---
 
   112 templates scanned, 20 issues found

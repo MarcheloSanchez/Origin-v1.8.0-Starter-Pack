@@ -1,3 +1,18 @@
+---
+up: "[[430-Guides]]"
+title: Git Guide
+type: guide
+status: 🌲evergreen
+tags:
+  - 📖guide
+  - 🔧git
+created: 2026-01-01
+modified: 2026-03-13
+related:
+  - "[[04-Sources/430-Guides/Git Guide]]"
+  - "[[🗺️My PKM MOC]]"
+---
+
 Tato příručka shrnuje klíčové příkazy Git, doporučené workflow, strategie větvení a postupy pro řešení nejčastějších chyb. Cílí na vývojáře v rámci projektu ORIGIN, ale je plně využitelná v libovolném týmu.
 
 První odstavec (shrnutí)

@@ -1,3 +1,18 @@
+---
+up: "[[430-Guides]]"
+title: Choosing a PKM System
+type: guide
+status: 🌲evergreen
+tags:
+  - 📖guide
+  - ⚙️system
+created: 2026-01-01
+modified: 2026-03-13
+related:
+  - "[[GtD - Getting Things Done]]"
+  - "[[🗺️My PKM MOC]]"
+---
+
 # 0. Choosing a System (Why & When)
 **What problem are you solving? Pick the system by the primary question.**
 - **GTD** — _What should I do next?_ Manage commitments, next actions, and reviews. Use when you’re drowning in inputs or need reliable execution.

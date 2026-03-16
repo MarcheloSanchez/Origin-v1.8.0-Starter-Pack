@@ -1,3 +1,18 @@
+---
+up: "[[430-Guides]]"
+title: Learn Symbols & Abbreviations
+type: guide
+status: 🌲evergreen
+tags:
+  - 📖guide
+  - 📋documentation
+created: 2026-01-01
+modified: 2026-03-13
+related:
+  - "[[430-Guides]]"
+  - "[[🗺️My PKM MOC]]"
+---
+
 ⬆️:: [[🏡Home]]
 [[abbreviations]]
 [[Learn Fast with Short Text|👉Click here for template👈]]

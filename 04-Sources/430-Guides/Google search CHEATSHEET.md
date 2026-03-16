@@ -1,4 +1,18 @@
 
+---
+up: "[[430-Guides]]"
+title: Google Search Cheatsheet
+type: guide
+status: 🌲evergreen
+tags:
+  - 📖guide
+  - 🔍search
+created: 2026-01-01
+modified: 2026-03-13
+related:
+  - "[[430-Guides]]"
+---
+
 ⬆️:: [[🏡Home]]
 
 # Cheatsheet for SEARCHING

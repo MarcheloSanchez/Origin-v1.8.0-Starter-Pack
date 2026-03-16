@@ -1,6 +1,6 @@
 ---
 title: How to Use the Prompt Library
-type: source
+type: guide
 fileClass: source
 tags: 
   - 📖guide

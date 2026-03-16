@@ -7,6 +7,7 @@ type: place
 fileClass: Place
 tags:
   - 📍place
+status: 📥inbox
 place_status:
 priority:
 region:

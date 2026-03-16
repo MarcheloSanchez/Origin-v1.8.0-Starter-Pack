@@ -6,6 +6,7 @@ type: tool
 fileClass: Tool
 tags:
   - 🧰tool
+status: 📥inbox
 tool_status:
 maturity:
 priority:

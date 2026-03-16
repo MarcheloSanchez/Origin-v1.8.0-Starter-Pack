@@ -1,6 +1,6 @@
 ---
 title: Implementation Plan - Vault Optimization
-type: source
+type: system
 fileClass: source
 status: 🔄active
 tags:

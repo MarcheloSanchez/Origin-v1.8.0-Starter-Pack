@@ -2,7 +2,7 @@
 in:
   - "[[04-Sources]]"
 title:
-type: source
+type: system
 fileClass: source
 tags:
   - 📚source

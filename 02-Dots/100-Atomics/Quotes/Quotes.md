@@ -5,6 +5,9 @@ in:
   - "[[Views]]"
 created: 2025-10-13
 related:
+  - "[[Ideas]]"
+  - "[[Statements]]"
+  - "[[04-Sources]]"
 cssclasses:
   - wide-page
 obsidianUIMode: preview

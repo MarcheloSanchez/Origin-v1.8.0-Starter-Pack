@@ -1,11 +1,16 @@
 ---
 title: Surfacing - Metrics
+up: "[[100-Atomics]]"
 type: atomic
 fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, metrics]
+related:
+  - "[[Surfacing - Connection Ritual]]"
+  - "[[Surfacing - Connections Map]]"
+  - "[[Surfacing - Signal Design]]"
 created: 2026-02-04
-modified: 2026-02-04
+modified: 2026-03-13
 ---
 # Surfacing Metrics
 

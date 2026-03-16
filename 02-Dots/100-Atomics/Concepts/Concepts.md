@@ -5,6 +5,10 @@ in:
   - "[[Views]]"
 created: 2025-10-13
 related:
+  - "[[Ideas]]"
+  - "[[Statements]]"
+  - "[[BOAT notes]]"
+  - "[[GtD - Getting Things Done]]"
 cssclasses:
   - wide-page
 obsidianUIMode: preview

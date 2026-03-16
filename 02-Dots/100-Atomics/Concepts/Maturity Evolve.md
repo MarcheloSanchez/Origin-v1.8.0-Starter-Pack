@@ -1,11 +1,16 @@
 ---
 title: Maturity Tracking
+up: "[[Concepts]]"
 type: atomic
 fileClass: atomic
 status: 🔄active
 maturity: 🌲evergreen
+related:
+  - "[[🍓Maturity Garden]]"
+  - "[[Concepts]]"
+  - "[[BOAT notes]]"
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-03-13
 ---
 ⬆️:: [[🏡Home]]
 # Maturity Tracking 🌱

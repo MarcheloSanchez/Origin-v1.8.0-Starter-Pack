@@ -1,8 +1,13 @@
 ---
 title: Surfacing — Connection Map
+up: "[[100-Atomics]]"
 type: map
+related:
+  - "[[Surfacing - Connection Ritual]]"
+  - "[[Surfacing - Signal Design]]"
+  - "[[Surfacing - Surfacing Metrics]]"
 created: 2026-02-04
-modified: 2026-02-04
+modified: 2026-03-13
 ---
 # Surfacing — Connection Map
 

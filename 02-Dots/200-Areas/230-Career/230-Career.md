@@ -5,6 +5,9 @@ in:
   - "[[Views]]"
 created: 2025-10-13
 related:
+  - "[[200-Areas]]"
+  - "[[220-Finance]]"
+  - "[[300-People]]"
 cssclasses:
   - wide-page
 obsidianUIMode: preview

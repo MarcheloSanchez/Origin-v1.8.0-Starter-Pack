@@ -1,11 +1,16 @@
 ---
 title: Surfacing - Signal Design
+up: "[[100-Atomics]]"
 type: atomic
 fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, metadata, title]
+related:
+  - "[[Surfacing - Connection Ritual]]"
+  - "[[Surfacing - Connections Map]]"
+  - "[[Surfacing - Surfacing Metrics]]"
 created: 2026-02-04
-modified: 2026-02-04
+modified: 2026-03-13
 ---
 # Surfacing — Signal Design
 

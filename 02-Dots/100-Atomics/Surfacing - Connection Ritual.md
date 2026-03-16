@@ -1,11 +1,16 @@
 ---
 title: Surfacing - Connection Ritual
+up: "[[100-Atomics]]"
 type: atomic
 fileClass: atomic
 maturity: 🌱 seedling
 tags: [surfacing, ritual, connections]
+related:
+  - "[[Surfacing - Connections Map]]"
+  - "[[Surfacing - Signal Design]]"
+  - "[[Surfacing - Surfacing Metrics]]"
 created: 2026-02-04
-modified: 2026-02-04
+modified: 2026-03-13
 ---
 # Connection Ritual
 

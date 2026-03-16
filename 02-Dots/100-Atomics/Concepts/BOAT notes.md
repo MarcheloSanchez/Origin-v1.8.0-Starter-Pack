@@ -3,6 +3,10 @@ title: "BOAT notes"
 up: "[[🏡Home]]"
 in: "[[01-MOCs]]"
 related:
+  - "[[Concepts]]"
+  - "[[🌱Incubator]]"
+  - "[[Maturity Evolve]]"
+  - "[[Surfacing - Connection Ritual]]"
 Created:
 modified: 2026-03-03
 ---

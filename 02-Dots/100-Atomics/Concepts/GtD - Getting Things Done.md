@@ -1,7 +1,14 @@
 ---
 title: "GtD - Getting Things Done"
+up: "[[Concepts]]"
+type: atomic
+fileClass: atomic
 status: ✅completed
-modified: 2026-03-03
+related:
+  - "[[Concepts]]"
+  - "[[Surfacing - Connection Ritual]]"
+  - "[[🗺️My PKM MOC]]"
+modified: 2026-03-13
 ---
 
 ⬆️:: [[🏡Home]]

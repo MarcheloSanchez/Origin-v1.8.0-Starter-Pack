@@ -4,7 +4,7 @@ limit: 20
 mapWithTag: true
 icon: map-pinned
 tagNames:
-  - 🗺️map
+  - 🗺️MOC
 filesPaths:
   - 01-MOCs
 bookmarksGroups:

@@ -9,7 +9,7 @@ filesPaths:
   - 04-Sources
 bookmarksGroups: 
 excludes: 
-extends: 
+extends: Base
 savedViews: 
 favoriteView: 
 fieldsOrder:
@@ -62,7 +62,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_READ_STATUS.md
+      valuesListNotePath: 99-System/CIS/CIS_READ_STATUS.md
     path: ""
     id: UYpchI
   - name: rating_type

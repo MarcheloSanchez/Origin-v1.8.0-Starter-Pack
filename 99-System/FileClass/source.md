@@ -13,6 +13,7 @@ extends:
 savedViews: 
 favoriteView: 
 fieldsOrder:
+  - mAtur1
   - N4jB6T
   - UYpchI
   - HZ6kjx
@@ -21,6 +22,14 @@ fieldsOrder:
   - 251inT
 version: "2.16"
 fields:
+  - name: maturity
+    type: Select
+    options:
+      sourceType: ValuesListNotePath
+      valuesList: {}
+      valuesListNotePath: 99-System/CIS/CIS_MATURITY.md
+    path: ""
+    id: mAtur1
   - name: source_type
     type: Cycle
     options:

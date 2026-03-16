@@ -7,7 +7,6 @@ fileClass: Tool
 tags:
   - 🧰tool
 tool_status:
-maturity:
 priority:
 created: <% tp.date.now("YYYY-MM-DD") %>
 modified: <% tp.date.now("YYYY-MM-DD") %>

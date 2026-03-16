@@ -8,7 +8,6 @@ fileClass: Area
 tags:
   - 🏠area
 status: 🔄active
-maturity: 🌿sapling
 priority:
 processing_priority: normal
 action_required: false

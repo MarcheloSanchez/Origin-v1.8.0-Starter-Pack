@@ -312,7 +312,7 @@ async function applyClassification(file, classification, content) {
   // Update frontmatter
   frontmatter.type = classification.type;
   if (classification.status) frontmatter.status = classification.status;
-  if (classification.maturity && classification.type === 'atomic') {
+  if (classification.maturity && ['atomic', 'source', 'moc'].includes(classification.type)) {
     frontmatter.maturity = classification.maturity;
   }
 

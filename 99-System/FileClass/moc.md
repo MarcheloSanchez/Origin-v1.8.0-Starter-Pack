@@ -13,12 +13,21 @@ extends: Base
 savedViews: []
 favoriteView:
 fieldsOrder:
+  - mAtur2
   - jOSmag
   - b0QBq3
   - R1vCko
   - y61mL4
 version: "2.17"
 fields:
+  - name: maturity
+    type: Select
+    options:
+      sourceType: ValuesListNotePath
+      valuesList: {}
+      valuesListNotePath: 99-System/CIS/CIS_MATURITY.md
+    path: ""
+    id: mAtur2
   - name: coverage_areas
     type: Input
     options: {}

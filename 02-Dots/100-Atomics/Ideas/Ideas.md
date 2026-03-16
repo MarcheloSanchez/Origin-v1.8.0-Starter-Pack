@@ -6,6 +6,10 @@ in:
   - "[[Views]]"
 created: 2025-10-13
 related:
+  - "[[Concepts]]"
+  - "[[Tutorial - Idea - Compound Growth]]"
+  - "[[Tutorial - Idea - Mycelium Networks]]"
+  - "[[Tutorial - Idea - Network Effects]]"
 cssclasses:
   - wide-page
 obsidianUIMode: preview

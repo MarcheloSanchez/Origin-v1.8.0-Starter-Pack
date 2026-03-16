@@ -72,6 +72,29 @@ async function calculateMetrics() {
   const dailies = allPages.filter(f => f.path.includes('05-Calendar/Daily')).length;
   const archived = allPages.filter(f => f.path.includes('06-Archive')).length;
 
+  // Subscription counts
+  const subscriptionFiles = app.vault.getMarkdownFiles()
+    .filter(f => f.path.includes('220-Finance/Subscriptions'));
+  const subscriptionsActive = subscriptionFiles.filter(f => {
+    const cache = app.metadataCache.getFileCache(f);
+    const fm = cache?.frontmatter;
+    return fm?.type === 'subscription' && fm?.status === '🔄active';
+  });
+  const subscriptionActiveCount = subscriptionsActive.length;
+  const subscriptionMonthlySpend = subscriptionsActive.reduce((sum, f) => {
+    const cache = app.metadataCache.getFileCache(f);
+    const fm = cache?.frontmatter;
+    if (!fm?.cost) return sum;
+    if (fm?.billing_cycle === 'monthly') return sum + Number(fm.cost);
+    if (fm?.billing_cycle === 'annual') return sum + Math.round(Number(fm.cost) / 12);
+    return sum;
+  }, 0);
+  const subscriptionArchivedCount = app.vault.getMarkdownFiles()
+    .filter(f => {
+      const cache = app.metadataCache.getFileCache(f);
+      return f.path.includes('06-Archive/Subscriptions') && cache?.frontmatter?.type === 'subscription';
+    }).length;
+
   // Prompt counts
   const promptFiles = app.vault.getMarkdownFiles().filter(f => f.path.startsWith('07-Prompts'));
   const promptTotal = promptFiles.filter(f => {
@@ -116,7 +139,10 @@ async function calculateMetrics() {
       totalContent: atomics + efforts + sources + mocs,
       promptTotal,
       promptActive,
-      promptDraft
+      promptDraft,
+      subscriptionActiveCount,
+      subscriptionMonthlySpend,
+      subscriptionArchivedCount
     },
     connections: connectionMetrics,
     xp: xpMetrics,
@@ -405,6 +431,14 @@ processing_created:: ${metrics.processing.created}
 processing_processed:: ${metrics.processing.processed}
 processing_inbox:: ${metrics.processing.inbox}
 processing_rate:: ${metrics.processing.rate}
+
+---
+
+## Subscription Metrics
+
+subscriptions_active:: ${metrics.counts.subscriptionActiveCount}
+subscriptions_monthly_spend:: ${metrics.counts.subscriptionMonthlySpend}
+subscriptions_archived:: ${metrics.counts.subscriptionArchivedCount}
 
 ---
 

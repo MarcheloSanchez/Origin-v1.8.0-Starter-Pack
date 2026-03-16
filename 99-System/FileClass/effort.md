@@ -4,7 +4,7 @@ limit: 20
 mapWithTag: false
 icon: rocket
 tagNames:
-  - 🚀project
+  - 🚀effort
 filesPaths:
   - 03-Efforts
 bookmarksGroups: 
@@ -48,7 +48,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_RECURRENCE.md
+      valuesListNotePath: 99-System/CIS/CIS_RECURRENCE.md
     path: ""
     id: fmMUJa
   - name: action_required

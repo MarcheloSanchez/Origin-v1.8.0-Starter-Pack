@@ -1,10 +1,12 @@
 ---
 title: "prompt"
 limit: 20
-mapWithTag: false
+mapWithTag: true
 icon: bot-message-square
 tagNames:
+  - 🤖AI/prompt
 filesPaths:
+  - 07-Prompts
 bookmarksGroups:
 excludes:
   - type
@@ -25,7 +27,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_AUDIENCE.md
+      valuesListNotePath: 99-System/CIS/CIS_AUDIENCE.md
     path: ""
     id: TdbweT
   - name: prompt_type
@@ -33,7 +35,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_PROMPT_TYPE.md
+      valuesListNotePath: 99-System/CIS/CIS_PROMPT_TYPE.md
     path: ""
     id: RTiSC5
   - name: prompt_category
@@ -41,7 +43,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_PROMPT_CATEGORY.md
+      valuesListNotePath: 99-System/CIS/CIS_PROMPT_CATEGORY.md
     path: ""
     id: IUdSCn
   - name: difficulty
@@ -49,7 +51,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_DIFFICULTY.md
+      valuesListNotePath: 99-System/CIS/CIS_DIFFICULTY.md
     path: ""
     id: 2ma9Uf
   - name: prompt_status
@@ -57,7 +59,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_PROMPT_STATUS.md
+      valuesListNotePath: 99-System/CIS/CIS_PROMPT_STATUS.md
     path: ""
     id: pSt4Xq
   - name: intent
@@ -65,7 +67,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_INTENT.md
+      valuesListNotePath: 99-System/CIS/CIS_INTENT.md
     path: ""
     id: bLm7In
 modified: 2026-03-03

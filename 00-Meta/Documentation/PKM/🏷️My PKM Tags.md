@@ -90,9 +90,9 @@ E --> F[💡 Insights]
 | `#📅weekly` | 📅 | `05-Calendar/Weekly` | Weekly reviews | ✅ Periodic Notes |
 | `#📅monthly` | 📅 | `05-Calendar/Monthly` | Monthly reflections | ✅ Periodic Notes |
 | `#👤person` | 👤 | `02-Dots/300-People` | Person profiles | ✅ Template |
-| `#📍place` | 📍 | `02-Dots/600-Places` | Location notes | ✅ Template |
-| `#🛠️tool` | 🛠️ | `02-Dots/500-Tools` | Tool documentation | ✅ Template |
-| `#🎯prompt` | 🎯 | `07-Prompts` | AI prompts and templates | ✅ Template |
+| `#📍place` | 📍 | `02-Dots/400-Places` | Location notes | ✅ Template |
+| `#🧰tool` | 🧰 | `02-Dots/500-Tools` | Tool documentation | ✅ Template |
+| `#🤖AI/prompt` | 🤖 | `07-Prompts` | AI prompts and templates | ✅ Template |
 
 ---
 

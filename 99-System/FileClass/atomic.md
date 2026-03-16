@@ -1,10 +1,12 @@
 ---
 title: "atomic"
 limit: 20
-mapWithTag: false
+mapWithTag: true
 icon: atom
 tagNames:
+  - 💡atomic
 filesPaths:
+  - 02-Dots/100-Atomics
 bookmarksGroups:
 excludes:
 extends: Base
@@ -19,7 +21,7 @@ fields:
     options:
       sourceType: ValuesListNotePath
       valuesList: {}
-      valuesListNotePath: 99 System/CIS/CIS_MATURITY.md
+      valuesListNotePath: 99-System/CIS/CIS_MATURITY.md
     path: ""
     id: Xeifqh
 modified: 2026-03-03

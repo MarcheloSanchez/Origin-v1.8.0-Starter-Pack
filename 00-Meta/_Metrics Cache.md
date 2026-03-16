@@ -85,6 +85,14 @@ processing_rate:: 100
 
 ---
 
+## Subscription Metrics
+
+subscriptions_active:: 0
+subscriptions_monthly_spend:: 0
+subscriptions_archived:: 0
+
+---
+
 ## Cache Info
 
 cache_timestamp:: 2026-02-14 01:04:07

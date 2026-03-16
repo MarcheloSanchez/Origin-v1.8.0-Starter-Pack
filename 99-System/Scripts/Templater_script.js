@@ -45,6 +45,8 @@ const TYPE_LOWERCASE = {
   "place": "place",
   "tool": "tool",
   "area": "area",
+  // Subscription type (lightweight — no FileClass, but has full Meta+Body templates)
+  "subscription": "subscription",
   // Lightweight types (CIS + script only, no FileClass/templates)
   "system": "system",
   "dashboard": "dashboard",

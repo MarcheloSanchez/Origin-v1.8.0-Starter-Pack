@@ -70,11 +70,32 @@ SORT priority DESC
 ## 🔧 Identified Improvements
 *What to adjust or change*
 
+## 💳 Subscription Review
+*Renewing this month or needing evaluation*
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Subscription",
+  vendor AS "Vendor",
+  cost + " " + currency AS "Cost",
+  renewal_date AS "Renewal",
+  roi_rating AS "ROI ⭐"
+FROM "02-Dots/200-Areas/220-Finance/Subscriptions"
+WHERE type = "subscription" AND status = "🔄active"
+  AND renewal_date >= date("<% monthStr %>-01")
+  AND renewal_date <= date("<% nextMonthStr %>-01")
+SORT renewal_date ASC
+```
+
+**Subscriptions cancelled this month**:
+**Net monthly change**:
+
 ## ⚡ Next Month Setup
 *Preparation for the upcoming month*
 - [ ] Review areas needing attention
 - [ ] Plan new projects or adjust existing ones
 - [ ] Update priorities based on this month
+- [ ] Check [[_Subscriptions Hub]] for upcoming renewals
 
 ---
 *<% monthYear %> | Status: 🔄active | Next review: <% nextMonthStr %>*

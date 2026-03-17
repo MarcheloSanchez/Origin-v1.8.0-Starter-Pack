@@ -13,6 +13,7 @@
 
 # ── Backup artifacts ──
 *.backup
+*.bak
 *.bak-*
 
 # ── Database state files ──

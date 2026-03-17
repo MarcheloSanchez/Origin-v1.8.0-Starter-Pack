@@ -5,9 +5,9 @@ status: 🔄active
 created: 2025-09-22
 modified: 2025-11-05
 tags:
-  - "#🗺️MOC"
-  - "#automation"
-  - "#⚙️system"
+  - 🗺️MOC
+  - automation
+  - ⚙️system
 review_frequency: weekly
 related:
   - "[[⚡ Automation Menu]]"

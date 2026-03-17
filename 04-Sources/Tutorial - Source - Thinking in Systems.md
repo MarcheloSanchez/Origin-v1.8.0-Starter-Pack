@@ -3,10 +3,10 @@ title: "Thinking in Systems: A Primer"
 type: source
 fileClass: source
 tags:
-  - "#📚source"
-  - "#source/book"
-  - "#domain/systems"
-  - "#📋tutorial"
+  - 📚source
+  - source/book
+  - domain/systems
+  - 📋tutorial
 status: 🔄active
 maturity: 🌲evergreen
 source_author: "Donella Meadows"

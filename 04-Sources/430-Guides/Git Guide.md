@@ -1,3 +1,9 @@
+---
+type: source
+fileClass: source
+created: 2026-03-03
+---
+
 Tato příručka shrnuje klíčové příkazy Git, doporučené workflow, strategie větvení a postupy pro řešení nejčastějších chyb. Cílí na vývojáře v rámci projektu ORIGIN, ale je plně využitelná v libovolném týmu.
 
 První odstavec (shrnutí)

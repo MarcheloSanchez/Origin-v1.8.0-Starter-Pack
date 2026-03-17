@@ -3,9 +3,9 @@ title: "Excalidraw"
 type: tool
 fileClass: Tool
 tags:
-  - "#🛠️tool"
-  - "#💻context/computer"
-  - "#📋tutorial"
+  - 🛠️tool
+  - 💻context/computer
+  - 📋tutorial
 status: 🔄active
 created: 2026-01-30
 related:

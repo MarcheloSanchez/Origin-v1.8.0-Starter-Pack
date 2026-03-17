@@ -2,8 +2,8 @@
 title: "Day 1: Capture & First Seed"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🎯capture"
+  - 📋tutorial
+  - 🎯capture
 day: 1
 created: 2026-02-02
 modified: 2026-03-03

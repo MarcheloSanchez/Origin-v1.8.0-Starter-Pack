@@ -3,8 +3,8 @@ title: "Daily Note - 2026-01-27"
 type: daily
 fileClass: daily
 tags:
-  - "#📅daily"
-  - "#📋tutorial"
+  - 📅daily
+  - 📋tutorial
 status: ✅completed
 date: 2026-01-27
 mood: "🌤️ Good"

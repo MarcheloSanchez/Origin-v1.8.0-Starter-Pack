@@ -2,9 +2,9 @@
 title: "Day 3: Meeting & People"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🤝meeting"
-  - "#👤person"
+  - 📋tutorial
+  - 🤝meeting
+  - 👤person
 day: 3
 created: 2026-02-02
 modified: 2026-03-03

@@ -1,3 +1,9 @@
+---
+type: source
+fileClass: source
+created: 2026-03-03
+---
+
 ⬆️:: [[🔁My PKM Workflows]]
 [[📁My PKM Folders]]
 [[ℹ️My PKM Naming Convention]]

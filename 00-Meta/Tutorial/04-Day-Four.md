@@ -2,9 +2,9 @@
 title: "Day 4: Projects & Tools"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🚀effort"
-  - "#🛠️tool"
+  - 📋tutorial
+  - 🚀effort
+  - 🛠️tool
 day: 4
 created: 2026-02-02
 modified: 2026-03-03

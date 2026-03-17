@@ -2,9 +2,9 @@
 title: "Weekly Review - 2026-W05"
 type: weekly
 tags:
-  - "#📅weekly"
-  - "#review/weekly"
-  - "#📋tutorial"
+  - 📅weekly
+  - review/weekly
+  - 📋tutorial
 status: ✅completed
 week: "2026-W05"
 date_range: "2026-01-27 to 2026-02-02"

@@ -2,8 +2,8 @@
 title: "Day 6: MOC & Connections"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🗺️MOC"
+  - 📋tutorial
+  - 🗺️MOC
 day: 6
 created: 2026-02-02
 modified: 2026-03-03

@@ -2,9 +2,9 @@
 title: "Day 7: Fruit & Archive"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🍓fruit"
-  - "#📦archived"
+  - 📋tutorial
+  - 🍓fruit
+  - 📦archived
 day: 7
 created: 2026-02-02
 modified: 2026-03-03

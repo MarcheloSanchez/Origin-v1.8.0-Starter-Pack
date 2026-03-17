@@ -1,3 +1,9 @@
+---
+type: source
+fileClass: source
+created: 2026-03-03
+---
+
 # Reading Map of Content
 
 ![[_Books_Data.base]]

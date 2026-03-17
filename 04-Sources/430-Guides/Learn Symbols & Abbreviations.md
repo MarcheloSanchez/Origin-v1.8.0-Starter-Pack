@@ -1,3 +1,9 @@
+---
+type: source
+fileClass: source
+created: 2026-03-03
+---
+
 ⬆️:: [[🏡Home]]
 [[abbreviations]]
 [[Learn Fast with Short Text|👉Click here for template👈]]

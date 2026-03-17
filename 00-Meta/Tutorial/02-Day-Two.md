@@ -2,8 +2,8 @@
 title: "Day 2: Source Processing"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#📚source"
+  - 📋tutorial
+  - 📚source
 day: 2
 created: 2026-02-02
 modified: 2026-03-03

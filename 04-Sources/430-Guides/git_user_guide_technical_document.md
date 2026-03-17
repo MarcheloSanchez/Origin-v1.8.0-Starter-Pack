@@ -1,3 +1,9 @@
+---
+type: source
+fileClass: source
+created: 2026-03-03
+---
+
 # Git User Guide (Technical Document)
 
 ## 1) Overview

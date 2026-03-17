@@ -3,10 +3,10 @@ title: Master Origin Vault
 type: effort
 fileClass: effort
 tags:
-  - "#🚀effort"
-  - "#🎯project"
-  - "#🔥priority/high"
-  - "#📋tutorial"
+  - 🚀effort
+  - 🎯project
+  - 🔥priority/high
+  - 📋tutorial
 status: 🔄active
 completion_percentage: 30
 due: 2026-03-31

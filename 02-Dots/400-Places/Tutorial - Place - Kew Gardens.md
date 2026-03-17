@@ -3,9 +3,9 @@ title: "Kew Gardens"
 type: place
 fileClass: Place
 tags:
-  - "#📍place"
-  - "#🌱nature"
-  - "#📋tutorial"
+  - 📍place
+  - 🌱nature
+  - 📋tutorial
 status: 🔄active
 location: "London, UK"
 created: 2026-01-27

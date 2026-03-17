@@ -3,10 +3,10 @@ title: "MOC - Growth Patterns"
 type: moc
 fileClass: moc
 tags:
-  - "#🗺️MOC"
-  - "#domain/systems"
-  - "#🌱growth"
-  - "#📋tutorial"
+  - 🗺️MOC
+  - domain/systems
+  - 🌱growth
+  - 📋tutorial
 status: 🔄active
 maturity: 🪴sapling
 completeness: partial

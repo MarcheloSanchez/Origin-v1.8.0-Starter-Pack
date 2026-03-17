@@ -3,11 +3,11 @@ title: "Growth Patterns"
 type: atomic
 fileClass: atomic
 tags:
-  - "#💡atomic"
-  - "#🍓fruit"
-  - "#domain/systems"
-  - "#public"
-  - "#📋tutorial"
+  - 💡atomic
+  - 🍓fruit
+  - domain/systems
+  - public
+  - 📋tutorial
 status: 🔄active
 maturity: 🍓fruit
 created: 2026-02-02

@@ -6,9 +6,9 @@ status: 🔄active
 created: 2026-02-04
 modified: 2026-02-04
 tags:
-  - "#🗺️MOC"
-  - "#⚙️system"
-  - "#🎨design"
+  - 🗺️MOC
+  - ⚙️system
+  - 🎨design
 review_frequency: monthly
 related:
   - "[[🗺️My PKM MOC]]"

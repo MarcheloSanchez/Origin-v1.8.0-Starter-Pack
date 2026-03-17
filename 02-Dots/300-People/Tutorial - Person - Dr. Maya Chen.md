@@ -3,9 +3,9 @@ title: "Dr. Maya Chen"
 type: person
 fileClass: Person
 tags:
-  - "#👤person"
-  - "#🔬research"
-  - "#📋tutorial"
+  - 👤person
+  - 🔬research
+  - 📋tutorial
 status: 🔄active
 org: "University of Cambridge"
 role: "Forest Ecologist"

@@ -2,8 +2,8 @@
 title: "Connections Revealed: The Complete Picture"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#🗺️synthesis"
+  - 📋tutorial
+  - 🗺️synthesis
 day: 8
 created: 2026-02-02
 modified: 2026-03-03

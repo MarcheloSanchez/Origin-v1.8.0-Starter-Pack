@@ -2,9 +2,9 @@
 title: "First Clickthrough Tutorial Guide"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#⚙️system"
-  - "#🚀getting-started"
+  - 📋tutorial
+  - ⚙️system
+  - 🚀getting-started
 status: 🔄active
 created: 2026-02-02
 modified: 2026-03-03

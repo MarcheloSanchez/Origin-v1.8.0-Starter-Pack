@@ -3,10 +3,10 @@ title: Compound Growth
 type: atomic
 fileClass: atomic
 tags:
-  - "#💡atomic"
-  - "#🌱develop"
-  - "#domain/systems"
-  - "#📋tutorial"
+  - 💡atomic
+  - 🌱develop
+  - domain/systems
+  - 📋tutorial
 status: 🔄active
 maturity: 🌲evergreen
 created: 2026-01-28

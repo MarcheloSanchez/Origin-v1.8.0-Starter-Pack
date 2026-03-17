@@ -2,9 +2,9 @@
 title: "Day 5: Weekly Review & Evolution"
 type: tutorial
 tags:
-  - "#📋tutorial"
-  - "#📅weekly"
-  - "#review/weekly"
+  - 📋tutorial
+  - 📅weekly
+  - review/weekly
 day: 5
 created: 2026-02-02
 modified: 2026-03-03

@@ -3,9 +3,9 @@ title: "Coffee with Dr. Maya Chen"
 type: meeting
 fileClass: meeting
 tags:
-  - "#🤝meeting"
-  - "#🔬research"
-  - "#📋tutorial"
+  - 🤝meeting
+  - 🔬research
+  - 📋tutorial
 status: ✅completed
 participants:
   - "[[Tutorial - Person - Dr. Maya Chen]]"

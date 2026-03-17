@@ -3,10 +3,10 @@ title: "Network Effects"
 type: atomic
 fileClass: atomic
 tags:
-  - "#💡atomic"
-  - "#🌱develop"
-  - "#domain/systems"
-  - "#📋tutorial"
+  - 💡atomic
+  - 🌱develop
+  - domain/systems
+  - 📋tutorial
 status: 🔄active
 maturity: 🌱seedling
 created: 2026-02-01

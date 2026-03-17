@@ -3,10 +3,10 @@ title: "Mycelium Networks"
 type: atomic
 fileClass: atomic
 tags:
-  - "#💡atomic"
-  - "#🌱develop"
-  - "#domain/systems"
-  - "#📋tutorial"
+  - 💡atomic
+  - 🌱develop
+  - domain/systems
+  - 📋tutorial
 status: 🔄active
 maturity: 🪴sapling
 created: 2026-01-27

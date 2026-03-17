@@ -31,49 +31,6 @@
       "path": ""
     },
     {
-      "type": "Date",
-      "tagName": "date",
-      "icon": "calendar-with-checkmark",
-      "tooltip": "Accepts a date",
-      "colorClass": "date",
-      "options": {
-        "dateShiftInterval": "1 day",
-        "dateFormat": "YYYY-MM-DD",
-        "defaultInsertAsLink": false,
-        "linkPath": ""
-      },
-      "name": "modified",
-      "id": "POQKf1",
-      "path": ""
-    },
-    {
-      "type": "Date",
-      "tagName": "date",
-      "icon": "calendar-with-checkmark",
-      "tooltip": "Accepts a date",
-      "colorClass": "date",
-      "options": {
-        "dateShiftInterval": "1 day",
-        "dateFormat": "YYYY-MM-DD",
-        "defaultInsertAsLink": false,
-        "linkPath": ""
-      },
-      "name": "created",
-      "id": "oY1N0s",
-      "path": ""
-    },
-    {
-      "type": "Input",
-      "tagName": "single",
-      "icon": "pencil",
-      "tooltip": "Accepts any value",
-      "colorClass": "single",
-      "options": {},
-      "name": "tags",
-      "id": "oiM7TJ",
-      "path": ""
-    },
-    {
       "type": "Object",
       "tagName": "object",
       "icon": "package",
@@ -87,24 +44,39 @@
       "path": ""
     },
     {
+      "type": "Number",
+      "tagName": "number",
+      "icon": "percent",
+      "tooltip": "Completion percentage",
+      "colorClass": "number",
+      "options": {
+        "acceptDecimal": false,
+        "minValue": 0,
+        "maxValue": 100
+      },
+      "name": "completion",
+      "id": "CMP678",
+      "path": ""
+    },
+    {
       "type": "Select",
       "tagName": "select",
-      "icon": "flag",
-      "tooltip": "Priority level",
+      "icon": "layers",
+      "tooltip": "Complexity level",
       "colorClass": "select",
       "options": {
         "sourceType": "ValuesList",
         "valuesList": {
           "values": [
-            "🔴",
-            "🟡",
-            "🟢"
+            "low",
+            "medium",
+            "high"
           ]
         },
         "valuesListNotePath": ""
       },
-      "name": "priority",
-      "id": "PRY123",
+      "name": "complexity",
+      "id": "CPX789",
       "path": ""
     },
     {
@@ -131,24 +103,69 @@
       "path": ""
     },
     {
+      "type": "Date",
+      "tagName": "date",
+      "icon": "calendar-with-checkmark",
+      "tooltip": "Accepts a date",
+      "colorClass": "date",
+      "options": {
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
+      },
+      "name": "modified",
+      "id": "POQKf1",
+      "path": ""
+    },
+    {
       "type": "Select",
       "tagName": "select",
-      "icon": "layers",
-      "tooltip": "Complexity level",
+      "icon": "flag",
+      "tooltip": "Priority level",
       "colorClass": "select",
       "options": {
         "sourceType": "ValuesList",
         "valuesList": {
           "values": [
-            "low",
-            "medium",
-            "high"
+            "🔴",
+            "🟡",
+            "🟢"
           ]
         },
         "valuesListNotePath": ""
       },
-      "name": "complexity",
-      "id": "CPX789",
+      "name": "priority",
+      "id": "PRY123",
+      "path": ""
+    },
+    {
+      "type": "Number",
+      "tagName": "number",
+      "icon": "star",
+      "tooltip": "Rating (1-5 stars)",
+      "colorClass": "number",
+      "options": {
+        "acceptDecimal": false,
+        "minValue": 1,
+        "maxValue": 5
+      },
+      "name": "rating",
+      "id": "RAT901",
+      "path": ""
+    },
+    {
+      "type": "MultiFile",
+      "tagName": "multifile",
+      "icon": "links",
+      "tooltip": "Related notes",
+      "colorClass": "multifile",
+      "options": {
+        "sourceType": "AllNotesInVault",
+        "fileDisplay": "basename"
+      },
+      "name": "related",
+      "id": "REL345",
       "path": ""
     },
     {
@@ -180,47 +197,30 @@
       "path": ""
     },
     {
-      "type": "MultiFile",
-      "tagName": "multifile",
-      "icon": "links",
-      "tooltip": "Related notes",
-      "colorClass": "multifile",
+      "type": "Date",
+      "tagName": "date",
+      "icon": "calendar-with-checkmark",
+      "tooltip": "Accepts a date",
+      "colorClass": "date",
       "options": {
-        "sourceType": "AllNotesInVault",
-        "fileDisplay": "basename"
+        "dateShiftInterval": "1 day",
+        "dateFormat": "YYYY-MM-DD",
+        "defaultInsertAsLink": false,
+        "linkPath": ""
       },
-      "name": "related",
-      "id": "REL345",
+      "name": "created",
+      "id": "oY1N0s",
       "path": ""
     },
     {
-      "type": "Number",
-      "tagName": "number",
-      "icon": "percent",
-      "tooltip": "Completion percentage",
-      "colorClass": "number",
-      "options": {
-        "acceptDecimal": false,
-        "minValue": 0,
-        "maxValue": 100
-      },
-      "name": "completion",
-      "id": "CMP678",
-      "path": ""
-    },
-    {
-      "type": "Number",
-      "tagName": "number",
-      "icon": "star",
-      "tooltip": "Rating (1-5 stars)",
-      "colorClass": "number",
-      "options": {
-        "acceptDecimal": false,
-        "minValue": 1,
-        "maxValue": 5
-      },
-      "name": "rating",
-      "id": "RAT901",
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {},
+      "name": "tags",
+      "id": "oiM7TJ",
       "path": ""
     }
   ],
@@ -257,5 +257,6 @@
   "chooseFileClassAtFileCreation": false,
   "autoInsertFieldsAtFileClassInsertion": true,
   "fileClassIcon": "package",
-  "isAutoCalculationEnabled": true
+  "isAutoCalculationEnabled": true,
+  "disableDataviewPrompt": true
 }

@@ -34,6 +34,7 @@ related:
  -|  [[🔁My PKM Workflows]]
  -| [[✅My PKM Tasks]]
  -| [[ℹ️My PKM Naming Convention]]
- Icons, colors, CSS, callouts-| [[MOC - Visual Identity]]
+ Icons, colors, CSS, callouts-| [[MOC - Visual Identity]] 
+ What Origin is and what is it not for - [[🪪 Vault Identity]]
 
 ![[PKM_Workflow_process.jpg]]

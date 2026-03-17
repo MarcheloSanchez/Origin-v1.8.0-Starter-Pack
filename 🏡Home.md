@@ -103,18 +103,19 @@ The place where you always come back, that's **home**. 🦔🍎
 - [[TODO|✅ Workflow & Tasks]]
 - [[🎮Gamification Dashboard|🎮 Progress Tracking]]
 - [[📈Vault Analytics|📈 Metrics & Insights]]
-
-## 🧭 Quick Access
-- [[Performance Metrics]]
-- [[Views]]
-- [[🌱Incubator]]
-- [[🧹Cleaning Lady]]
-- [[Visual hotkeys]]
-- [[Icon Package]]
-- 🚀[[Google search CHEATSHEET]]
-- 📊[[Performance Metrics]]
-- 📖[[List of Custom Callouts]]
-- 📖[[Debug Guide]]
+> [!MAP]- 🧭 Quick Access 
+> #🧹tidy maybe outdated. Needs manual rewrite. Below Favorites seems better decision
+> - [[📈Performance Metrics]]
+> - [[Views]]
+> - [[🌱Incubator]]
+> - [[🧹Cleaning Lady]]
+> - [[Visual hotkeys]]
+> - [[Icon Package]]
+> - 🚀[[Google search CHEATSHEET]]
+> - 📊[[📈Performance Metrics]]
+> - 📖[[List of Custom Callouts]]
+> - 📖[[Debug Guide]]
+> - [[Guide — YAML Orchestrator]]
 ## Favorites ( ❤️ or ⭐)
 ```dataview
 LIST
@@ -135,19 +136,18 @@ FROM ""
 SORT file.mtime DESC
 LIMIT 7
 ```
-
-## MOCs
----
-- [[+Inbox]] - Incoming notes
-- [[00-Meta]] - Meta files about vault 
-- [[01-MOCs]] - Maps of Contents 
-- [[02-Dots]] - Categorized notes
-- [[03-Efforts]] - Overview of projects
-- [[04-Sources]] - Overview of sources
-- [[05-Calendar]] - Overview of daily notes and other journalling 
-- [[06-Archive]] - Overview of archived notes
-- [[99-System]]
-- [[07-Prompts]]
-- [[Templates]]
-
+> [!MAP]- MOCs
+> - [[+Inbox]] - Incoming notes
+> - [[00-Meta]] - Meta files about vault 
+> - [[01-MOCs]] - Maps of Contents 
+> - [[02-Dots]] - Categorized notes
+> - [[03-Efforts]] - Overview of projects
+> - [[04-Sources]] - Overview of sources
+> - [[05-Calendar]] - Overview of daily notes and other journalling 
+> - [[06-Archive]] - Overview of archived notes
+> - [[99-System]]
+> - [[07-Prompts]]
+> - [[Templates]]
 Více zde: [[+Aboutℹ️]]
+
+![[pale-blue-dot-banner.jpg]]

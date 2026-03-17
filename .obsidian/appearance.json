@@ -23,8 +23,8 @@
     "sidebar-icons-only",
     "headers-custom",
     "kanban_custom",
-    "uc-dev",
-    "base-views"
+    "base-views",
+    "uc-dev"
   ],
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "Cascadia Code",

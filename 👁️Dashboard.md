@@ -429,4 +429,3 @@ try {
 
 *Last updated: `= this.file.mtime`*
 *System health check: `= choice(this.inbox-count <= 20, "🟢 Healthy", "⚠️ Needs attention")`*
-

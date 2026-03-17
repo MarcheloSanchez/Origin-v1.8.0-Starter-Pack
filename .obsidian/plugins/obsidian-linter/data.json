@@ -58,16 +58,16 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
-      "date-created": true,
-      "date-created-key": "date created",
+      "enabled": true,
+      "date-created": false,
+      "date-created-key": "created",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
-      "date-modified-key": "date modified",
-      "date-modified-source-of-truth": "file system",
-      "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+      "date-modified-key": "modified",
+      "date-modified-source-of-truth": "frontmatter",
+      "format": "YYYY-MM-DD",
       "convert-to-utc": false,
-      "update-on-file-contents-updated": "never"
+      "update-on-file-contents-updated": "on-save"
     },
     "yaml-title": {
       "enabled": false,
@@ -181,7 +181,7 @@
       "inner-new-lines": false
     },
     "consecutive-blank-lines": {
-      "enabled": false
+      "enabled": true
     },
     "convert-spaces-to-tabs": {
       "enabled": false,
@@ -191,7 +191,7 @@
       "enabled": false
     },
     "empty-line-around-code-fences": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-horizontal-rules": {
       "enabled": false
@@ -203,12 +203,12 @@
       "enabled": false
     },
     "heading-blank-lines": {
-      "enabled": false,
+      "enabled": true,
       "bottom": true,
       "empty-line-after-yaml": true
     },
     "line-break-at-document-end": {
-      "enabled": false
+      "enabled": true
     },
     "move-math-block-indicators-to-their-own-line": {
       "enabled": false
@@ -243,7 +243,7 @@
       "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
-      "enabled": false,
+      "enabled": true,
       "two-space-line-break": false
     },
     "add-blockquote-indentation-on-paste": {
@@ -271,14 +271,24 @@
       "enabled": false
     }
   },
-  "lintOnSave": false,
+  "lintOnSave": true,
   "recordLintOnSaveLogs": false,
   "displayChanged": true,
   "suppressMessageWhenNoChange": false,
   "lintOnFileChange": false,
   "displayLintOnFileChangeNotice": true,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "additionalFileExtensions": [],
+  "foldersToIgnore": [
+    "05-Calendar",
+    "01-MOCs",
+    "00-Meta",
+    "+Inbox",
+    "06-Archive",
+    "99-System",
+    "Templates",
+    "QuickAdd Packages"
+  ],
   "filesToIgnore": [
     {
       "label": "",

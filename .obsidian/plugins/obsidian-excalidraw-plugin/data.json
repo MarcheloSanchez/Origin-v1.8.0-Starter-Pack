@@ -117102,7 +117102,7 @@
       }
     }
   },
-  "previousRelease": "2.20.5",
+  "previousRelease": "2.20.6",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,

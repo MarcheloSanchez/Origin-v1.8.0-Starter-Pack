@@ -29,6 +29,7 @@
     "TQ_show_urgency": "checkbox",
     "modified": "date",
     "time_required": "multitext",
-    "related": "multitext"
+    "related": "multitext",
+    "TQ_show_toolbar": "checkbox"
   }
 }

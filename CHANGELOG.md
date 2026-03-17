@@ -12,6 +12,27 @@ modified: 2026-03-03
 ---
 > Vault modifications and changes log.
 ---
+# 17/03/26
+## Vault Identity & Template Audit
+
+### Vault Identity Document
+- Created `00-Meta/Documentation/PKM/🪪 Vault Identity.md`
+- Defines Origin's purpose, philosophy, and boundaries vs other vaults (Muza, Ideaversee, Work)
+- Cross-vault contrast table comparing 10 dimensions across all 4 vaults
+- Origin-specific rules summary with links to detailed docs (no duplication)
+- Automation inventory: 21 QuickAdd commands, 10 standalone macros, 4 captures, 36 scripts
+- Vault direction section with open design questions
+
+### Template Audit
+- Created `00-Meta/Documentation/PKM/Template Audit Results.md`
+- Scanned 159 templates — 0 critical issues found
+- 3 missing frontmatter fields: `prompt-meta` (fileClass, in), `place-meta` (status), `tool-meta` (status)
+- 12 QuickAdd entries with `(copy)` naming debt
+- Typo found: `People - Proffesional` in QuickAdd config
+- Documented naming inconsistencies across legacy templates (4 separator styles)
+- Actionable checklist: quick fixes, medium effort, design decisions
+
+---
 # 06/03/26
 ## v2.0 Readiness — Metadata & Template Infrastructure
 

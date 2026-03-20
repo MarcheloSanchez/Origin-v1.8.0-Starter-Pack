@@ -4,3 +4,8 @@ projects
 reference
 people
 tools
+psychology
+communication
+neurodivergence
+gamification
+health

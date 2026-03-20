@@ -456,11 +456,11 @@ graph TB
 
 ## 8. Jak dál rozvíjet
 
-### Fáze 1 — Základy (týden 1–2)
-- [ ] Vytvořit 5 MOC souborů (použij `moc-meta.yaml.md` + `moc-body.md` šablony)
-- [ ] Vytvořit Area – Neurodivergence
-- [ ] Napsat prvních 5–10 seed atomic notes (po 1–2 z každého tématu)
-- [ ] Přidat nové tagy do `CIS_TOPIC_CATEGORIES.md`
+### Fáze 1 — Základy (týden 1–2) ✅
+- [x] Vytvořit 5 MOC souborů (použij `moc-meta.yaml.md` + `moc-body.md` šablony)
+- [x] Vytvořit Area – Neurodivergence
+- [x] Napsat prvních 5–10 seed atomic notes (po 1–2 z každého tématu) — vytvořeno 31 seed notes
+- [x] Přidat nové tagy do `CIS_TOPIC_CATEGORIES.md`
 
 ### Fáze 2 — Plnění (týden 3–6)
 - [ ] Přidat source notes pro klíčové knihy/videa

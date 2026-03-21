@@ -462,11 +462,11 @@ graph TB
 - [x] Napsat prvních 5–10 seed atomic notes (po 1–2 z každého tématu) — vytvořeno 31 seed notes
 - [x] Přidat nové tagy do `CIS_TOPIC_CATEGORIES.md`
 
-### Fáze 2 — Plnění (týden 3–6)
-- [ ] Přidat source notes pro klíčové knihy/videa
-- [ ] Rozvíjet seed → seedling (doplnit kontext, příklady, vlastní zkušenosti)
-- [ ] Vytvářet cross-links mezi tématy
-- [ ] Založit effort: "Effort – Prozkoumej AuDHD" (v `03-Efforts/On/`)
+### Fáze 2 — Plnění (týden 3–6) ✅
+- [x] Přidat source notes pro klíčové knihy/videa — 9 source notes vytvořeno
+- [x] Rozvíjet seed → seedling (doplnit kontext, příklady, vlastní zkušenosti) — 6 klíčových notes upgradováno
+- [x] Vytvářet cross-links mezi tématy — všech 31+ notes propojeno cross-domain
+- [x] Založit effort: "Effort – Prozkoumej AuDHD" (v `03-Efforts/On/`)
 
 ### Fáze 3 — Propojování (měsíc 2–3)
 - [ ] Vytvářet "bridge notes" — koncepty na průsečíku 2 témat

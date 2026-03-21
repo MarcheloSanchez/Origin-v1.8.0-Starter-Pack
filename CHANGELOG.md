@@ -303,7 +303,7 @@ modified: 2026-03-03
 ---
 # 31/01/26
 - Updated changelog with recent changes
-- Added [[VAULT_REPORT]] - comprehensive vault documentation
+- Added [[VAULT_REPORT-31-01-2026]] - comprehensive vault documentation
 - Converted all 6 meta-skills to standard prompt template format
 - Updated [[RELEASE NOTES]] with v1.7.0 and v1.8.0 documentation
 

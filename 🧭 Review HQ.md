@@ -17,7 +17,7 @@ maturity: 🌲evergreen
 priority: high
 processing_priority: high
 created: 2026-01-15
-modified: 2026-01-15
+modified: 2026-03-18
 version: 2
 cssclasses:
   - wide-page
@@ -55,6 +55,7 @@ related:
 > [!tip] Glance here first. Green = calm. Yellow = attention needed. Red = action required.
 >
 > **Quick Actions by Status:**
+> 
 > | If Red... | Go To | Action |
 > |-----------|-------|--------|
 > | 📥 Inbox | [[+Inbox]] | Triage oldest 5 items |

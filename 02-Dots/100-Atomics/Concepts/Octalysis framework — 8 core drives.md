@@ -9,7 +9,7 @@ tags:
   - domain/psychology
   - domain/gamification
 status: 🔄active
-maturity: 🌱seedling
+maturity: 🌲evergreen
 processing_priority: high
 created: 2026-03-20
 modified: 2026-03-21

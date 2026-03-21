@@ -9,9 +9,9 @@ tags:
   - 🗺️MOC
   - domain/psychology
 status: 🔄active
-maturity: 📤seed
+maturity: 🌱seedling
 priority: high
-completeness:
+completeness: 70%
 coverage_areas:
   - kognitivní psychologie
   - sociální psychologie
@@ -19,9 +19,9 @@ coverage_areas:
   - behaviorální vědy
 action_required:
 created: 2026-03-20
-modified: 2026-03-20
-last_review:
-review_frequency:
+modified: 2026-03-21
+last_review: 2026-03-21
+review_frequency: monthly
 related:
   - "[[MOC - Komunikace]]"
   - "[[MOC - ADHD & AuDHD]]"
@@ -36,29 +36,34 @@ Zastřešující mapa obsahu pro psychologii — kognitivní procesy, sociální
 ## Core Subtopics
 
 ### 🏗️ **Foundational Concepts**
-- [[]] - Kognitivní zkreslení (cognitive biases)
-- [[]] - Motivace a teorie motivace (SDT, Maslow)
-- [[]] - Emoční regulace a zpracování emocí
+- [[Kognitivní zkreslení — přehled]] - Systematické odchylky v myšlení (Kahneman)
+- [[Self-Determination Theory (SDT)]] - Autonomie, kompetence, sounáležitost (Deci & Ryan)
+- [[Maslowova pyramida potřeb]] - Hierarchie lidských potřeb
+- [[Konfirmační zkreslení]] - Hledáme to, co potvrzuje naše přesvědčení
+- [[Dunning-Kruger efekt]] - Nekompetentní přeceňují, experti podceňují
 
 ### 🔧 **Practical Applications**
-- [[]] - Behaviorální vzorce a jejich změna
-- [[]] - Decision-making a heuristiky
-- [[]] - Flow state a optimální výkon
+- [[Flow state]] - Optimální výkon a ponoření do činnosti
+- [[Intrinsická vs extrinsická motivace]] - Jak funguje motivace a odměny
+- [[Dopaminový loop a návykový design]] - Neurochemie návyků a engagementu
+- [[Kognitivní zkreslení a ADHD — kde se zesilují]] - Bridge: psychology × ADHD
 
 ### 🌍 **Contexts & Use Cases**
 - [[MOC - Komunikace]] - Sociální psychologie v komunikaci
 - [[MOC - Gamifikace]] - Motivační design a dopamin
 - [[MOC - ADHD & AuDHD]] - Neurodivergence a exekutivní funkce
+- [[Cialdiniho principy persuaze]] - 7 principů ovlivňování
 
 ### ⚠️ **Limitations & Anti-patterns**
-- [[]] - Pop-psychologie vs vědecké důkazy
-- [[]] - Replikační krize v psychologii
+- Pop-psychologie vs vědecké důkazy — ověřovat zdroje
+- Replikační krize v psychologii — awareness
+- [[Kognitivní zkreslení — přehled]] - Znalost ≠ imunita
 
 ## Anchors (Start Here)
 *Nejlepší vstupní body:*
-- [[]] - Kognitivní zkreslení — přehled
-- [[]] - Self-Determination Theory (SDT)
-- [[]] - Flow state
+- [[Kognitivní zkreslení — přehled]] - 🌲 Evergreen — kompletní přehled top 10
+- [[Self-Determination Theory (SDT)]] - Základ motivační teorie
+- [[Flow state]] - Optimální výkon a ponoření
 
 ## Active Queries
 ### Recent Activity
@@ -66,27 +71,34 @@ Zastřešující mapa obsahu pro psychologii — kognitivní procesy, sociální
 ## Development Pipeline
 
 ### 🌱 **Growing** (Need Development)
-*Seed notes k rozvoji:*
-- Dunning-Kruger efekt
-- Konfirmační zkreslení
-- Maslowova pyramida potřeb
+- [[Dunning-Kruger efekt]] — rozšířit příklady
+- [[Konfirmační zkreslení]] — přidat protistrategie
+- [[Maslowova pyramida potřeb]] — porovnat s SDT
+- [[Intrinsická vs extrinsická motivace]] — přidat Deci experiment
 
 ### 🌿 **Maturing** (In Progress)
--
+- [[ADHD — exekutivní funkce (přehled)]] — 🌱seedling, EF tabulka hotová
+- [[Octalysis framework — 8 core drives]] — 🌱seedling, Origin audit hotový
+- [[Nenásilná komunikace (NVC)]] — 🌱seedling, příklady + AuDHD sekce
+- [[7 základních mikroexpresí (Ekman)]] — 🌱seedling, emotion detail table
 
 ### 🌲 **Evergreen** (Well-Developed)
--
+- [[Kognitivní zkreslení — přehled]] — Top 10 tabulka, cross-domain, zdroje
 
 ## My Notes
 ### Atomic Notes
--
+- 6× Psychologie, 6× Komunikace, 5× Řeč těla, 6× Gamifikace, 8× ADHD
+- 5× Bridge notes, 3× Playbooks = **39 atomic notes celkem**
 
 ### Active Projects
--
+- [[Effort – Prozkoumej AuDHD]] — 15%, Phase 2 — Deep Dive
 
 ### Key Sources
-- *Thinking, Fast and Slow* — Daniel Kahneman
-- *Influence* — Robert Cialdini
+- [[Thinking, Fast and Slow — Daniel Kahneman]] — kognitivní zkreslení, System 1/2
+- [[Influence — Robert Cialdini]] — principy persuaze
+- [[Nonviolent Communication — Marshall Rosenberg]] — NVC framework
+- [[Driven to Distraction — Hallowell & Ratey]] — ADHD
+- [[Actionable Gamification — Yu-kai Chou]] — Octalysis
 
 ## Learning Path
 **Beginner**: Kognitivní zkreslení → základní motivační teorie
@@ -94,10 +106,13 @@ Zastřešující mapa obsahu pro psychologii — kognitivní procesy, sociální
 **Advanced**: Behaviorální ekonomie → neuropsychologie → replikační krize
 
 ## Review Notes
-**Last review**: 2026-03-20
-**Coverage**: partial
-**Gaps identified**: Většina subtopics je zatím prázdná — vytvořit seed notes
-**Next review**:
+**Last review**: 2026-03-21
+**Coverage**: 70% — core subtopics pokryty, chybí emoční regulace, behaviorální ekonomie
+**Gaps identified**:
+- Emoční regulace — zatím jen skrz RSD, chybí obecná note
+- Behaviorální ekonomie — propojit Kahneman s Thaler/Ariely
+- Replikační krize — vytvořit awareness note
+**Next review**: 2026-04-21
 
 ## Related Maps
 - [[MOC - Komunikace]]
@@ -107,4 +122,4 @@ Zastřešující mapa obsahu pro psychologii — kognitivní procesy, sociální
 - [[MOC - Areas]]
 
 ---
-*Last updated: 2026-03-20*
+*Last updated: 2026-03-21*

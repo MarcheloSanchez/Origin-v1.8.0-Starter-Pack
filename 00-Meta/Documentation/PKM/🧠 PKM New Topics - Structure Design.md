@@ -473,11 +473,11 @@ graph TB
 - [x] Přidávat `#lens/adhd` a `#lens/gamified` k existujícím poznámkám — 6 notes tagováno
 - [x] Přidávat praktické "playbook" poznámky — 3 playbooks: ADHD denní rutina, Aktivní naslouchání checklist, Senzorický toolkit
 
-### Fáze 4 — Zrání (ongoing)
-- [ ] Promovat mature notes na 🌲evergreen
-- [ ] Psát MOC review notes — identifikovat mezery
-- [ ] Propojit s denními/týdenními review (sledování strategií)
-- [ ] Zvážit effort: "Effort – Komunikační playbook"
+### Fáze 4 — Zrání (ongoing) ✅
+- [x] Promovat mature notes na 🌲evergreen — 4 notes: Kogn. zkreslení, EF přehled, Octalysis, NVC
+- [x] Psát MOC review notes — všech 5 MOCs aktualizováno s live links, review notes, gaps identified
+- [x] Propojit s denními/týdenními review — weekly template rozšířen o Topics & Strategy Tracking
+- [x] Založit effort: "Effort – Komunikační playbook" (v `03-Efforts/On/`)
 
 ---
 
@@ -500,4 +500,4 @@ motivation_type: intrinsic | extrinsic | both
 
 ---
 
-*Vytvořeno: 2026-03-20 | Autor: Claude | Status: Návrh k diskuzi*
+*Vytvořeno: 2026-03-20 | Autor: Claude | Status: ✅ Kompletní implementace (Fáze 1–4) — 2026-03-21*

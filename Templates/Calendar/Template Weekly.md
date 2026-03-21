@@ -54,6 +54,7 @@ SORT completion_percentage DESC
 | Area | Planned Focus | Actual Outcome |
 |------|--------------|----------------|
 | [[Area – Health]] | | |
+| [[Area – Neurodivergence]] | | |
 | [[Area – Work]] | | |
 | [[Area – Learning]] | | |
 
@@ -65,6 +66,25 @@ SORT completion_percentage DESC
 - [[05-Calendar/Daily/<% fri.format("YYYY-MM-DD") %>|<% fri.format("dddd") %>]]
 - [[05-Calendar/Daily/<% sat.format("YYYY-MM-DD") %>|<% sat.format("dddd") %>]]
 - [[05-Calendar/Daily/<% sun.format("YYYY-MM-DD") %>|<% sun.format("dddd") %>]]
+
+## 🧠 Topics & Strategy Tracking
+*Track progress on knowledge domains and personal strategies*
+
+### Neurodivergence Check-in
+- **Energy patterns this week**:
+- **Sensory wins/triggers**:
+- **Strategies tested**:
+- **RSD moments handled**:
+
+### Communication Experiment
+- **Technique practiced**:
+- **Context**:
+- **What worked / what didn't**:
+
+### Knowledge Growth
+- **Notes created/updated**:
+- **Cross-links discovered**:
+- **Seeds → seedling promoted**:
 
 ## 💡 Key Insights
 *What worked, what didn't, what to adjust*

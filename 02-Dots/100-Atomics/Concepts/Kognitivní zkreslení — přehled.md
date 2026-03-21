@@ -8,7 +8,7 @@ tags:
   - 💡atomic
   - domain/psychology
 status: 🔄active
-maturity: 🌱seedling
+maturity: 🌲evergreen
 processing_priority: normal
 created: 2026-03-20
 modified: 2026-03-21

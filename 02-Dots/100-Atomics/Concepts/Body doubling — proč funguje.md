@@ -8,6 +8,7 @@ tags:
   - 💡atomic
   - domain/psychology
   - domain/health
+  - lens/adhd
 status: 🔄active
 maturity: 📤seed
 processing_priority:

@@ -8,6 +8,8 @@ tags:
   - 💡atomic
   - domain/psychology
   - domain/gamification
+  - lens/adhd
+  - lens/gamified
 status: 🔄active
 maturity: 📤seed
 processing_priority:

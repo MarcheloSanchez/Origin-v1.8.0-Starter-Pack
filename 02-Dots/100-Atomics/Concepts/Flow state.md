@@ -7,6 +7,8 @@ fileClass: atomic
 tags:
   - 💡atomic
   - domain/psychology
+  - lens/adhd
+  - lens/gamified
 status: 🔄active
 maturity: 📤seed
 processing_priority:

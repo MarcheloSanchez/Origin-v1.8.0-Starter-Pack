@@ -468,11 +468,10 @@ graph TB
 - [x] Vytvářet cross-links mezi tématy — všech 31+ notes propojeno cross-domain
 - [x] Založit effort: "Effort – Prozkoumej AuDHD" (v `03-Efforts/On/`)
 
-### Fáze 3 — Propojování (měsíc 2–3)
-- [ ] Vytvářet "bridge notes" — koncepty na průsečíku 2 témat
-  - Např. "Gamifikace pro ADHD mozek", "Řeč těla u neurodivergentních"
-- [ ] Přidávat `#lens/adhd` a `#lens/gamified` k existujícím poznámkám
-- [ ] Přidávat praktické "playbook" poznámky (konkrétní techniky k použití)
+### Fáze 3 — Propojování (měsíc 2–3) ✅
+- [x] Vytvářet "bridge notes" — 5 bridge notes: Řeč těla u ND, Komunikace v páru s AuDHD, Kogn. zkreslení a ADHD, Persuaze a ND, PKM jako exekutivní protéza
+- [x] Přidávat `#lens/adhd` a `#lens/gamified` k existujícím poznámkám — 6 notes tagováno
+- [x] Přidávat praktické "playbook" poznámky — 3 playbooks: ADHD denní rutina, Aktivní naslouchání checklist, Senzorický toolkit
 
 ### Fáze 4 — Zrání (ongoing)
 - [ ] Promovat mature notes na 🌲evergreen

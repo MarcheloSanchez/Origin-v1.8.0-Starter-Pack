@@ -7,6 +7,7 @@ fileClass: atomic
 tags:
   - 💡atomic
   - domain/gamification
+  - lens/gamified
 status: 🔄active
 maturity: 📤seed
 processing_priority:

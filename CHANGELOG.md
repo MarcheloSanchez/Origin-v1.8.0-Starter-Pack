@@ -12,6 +12,14 @@ modified: 2026-03-03
 ---
 > Vault modifications and changes log.
 ---
+# 22/03/26
+## CSS Snippets — Bases & Properties
+
+- Added `bases-cards-grid.css` — grid layout for Bases card properties (label:value side-by-side)
+- Added `tag-pills.css` — tags render as rounded accent-colored pill badges (inline, properties, source mode)
+- Added `properties-compact.css` — properties panel shrunk to 10-11px font, zero row padding, Minimal theme `!important` overrides
+
+---
 # 17/03/26
 ## Vault Identity & Template Audit
 

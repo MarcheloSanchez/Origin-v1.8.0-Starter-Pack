@@ -24,7 +24,10 @@
     "headers-custom",
     "kanban_custom",
     "base-views",
-    "uc-dev"
+    "uc-dev",
+    "bases-cards-grid",
+    "tag-pills",
+    "properties-compact"
   ],
   "textFontFamily": "Helvetica",
   "monospaceFontFamily": "Cascadia Code",

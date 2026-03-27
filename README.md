@@ -1,3 +1,5 @@
+# TEST
+
 # Origin Vault 🧠 — Template Source
 
 > 📌 **This vault is the template source for derived vaults**: Ideaverse, Muza, Work, and LQ

@@ -1,31 +1,37 @@
-# ── Obsidian runtime state (personal, volatile) ──
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+# === Vault-Specific Content (Obsidian Sync) ===
+/01-MOCs/
+/02-Dots/
+/03-Efforts/
+/04-Sources/
+/05-Calendar/
+/07-Prompts/
+/+Inbox/
 
-# ── Plugin code (comes from community, don't version) ──
-.obsidian/plugins/*/main.js
-.obsidian/plugins/*/styles.css
+# === Non-Template System Folders ===
+/99-System/*
+!/99-System/Scripts/
+!/99-System/copilot-custom-prompts/
 
-# ── Plugin usage data (personal history) ──
-.obsidian/plugins/recent-files-obsidian/data.json
-.obsidian/plugins/various-complements/histories.json
-.obsidian/plugins/smart-connections/
+# === Obsidian App Config (Obsidian Sync) ===
+.obsidian/
+.quarto/
+.trash/
+.vscode/
 
-# ── Backup artifacts ──
-*.backup
-*.bak
-*.bak-*
-
-# ── Database state files ──
-*.base
-
-# ── Build outputs ──
-Origin-Starter-Pack-*/
-
-# ── OS / editor junk ──
+# === OS/Editor Files ===
 .DS_Store
 Thumbs.db
-NUL
+*.tmp
+*.swp
+*.swo
+*~
+.env
+.env.local
 
-# ── Claude Code temp files ──
-99-System/Scripts/tmpclaude-*
+# === Build/Cache ===
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/

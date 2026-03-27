@@ -1,4 +1,47 @@
-# Origin Vault 🧠
+# Origin Vault 🧠 — Template Source
+
+> 📌 **This vault is the template source for derived vaults**: Ideaverse, Muza, Work, and LQ
+>
+> 🔄 **Git tracks 4 folders**: `00-Meta/` | `99-System/Scripts/` | `99-System/copilot-custom-prompts/` | `Templates/`
+>
+> ☁️ **Everything else is synced via Obsidian Sync** (vault-specific notes, inbox, calendar, etc.)
+
+## 📖 Updating Your Vault from Origin
+
+```bash
+# Pull latest template updates
+git pull upstream main
+# (or: git pull origin main if using single remote)
+
+# If conflicts occur, resolve them:
+git status
+nano 99-System/Scripts/my-script.py  # edit conflicted file
+git add 99-System/Scripts/my-script.py
+git commit -m "merge: resolved conflict with origin template"
+```
+
+### 📱 Mobile Sync — No Git Needed
+1. Pull template updates on PC (`git pull upstream main`)
+2. Obsidian Sync pushes changes to your phone automatically within seconds
+3. Git only touches template folders — Obsidian Sync handles vault content
+
+### ❓ How Do I Customize Template Files Locally?
+
+Edit normally, commit to your branch, and Git will merge with Origin's updates when you pull:
+
+```bash
+# Customize a script for your vault
+nano 99-System/Scripts/my-script.py
+git add 99-System/Scripts/my-script.py
+git commit -m "customize: adjust script for my workflow"
+
+# Later, when Origin updates:
+git pull upstream main
+# Git will merge Origin's changes with your customizations
+```
+
+---
+
 *Centrální Meta Vault pro Personal Knowledge Management v Obsidianu*
 ![[Hero-journey-photo.png]]
 <div align="center">

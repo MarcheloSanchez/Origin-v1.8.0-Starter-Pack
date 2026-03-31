@@ -103,7 +103,11 @@ The place where you always come back, that's **home**. 🦔🍎
 - [[TODO|✅ Workflow & Tasks]]
 - [[🎮Gamification Dashboard|🎮 Progress Tracking]]
 - [[📈Vault Analytics|📈 Metrics & Insights]]
-> [!MAP]- 🧭 Quick Access 
+
+## Recent AI Sessions
+![[_Sessions_Data.base]]
+
+> [!MAP]- 🧭 Quick Access
 > #🧹tidy maybe outdated. Needs manual rewrite. Below Favorites seems better decision
 > - [[📈Performance Metrics]]
 > - [[Views]]

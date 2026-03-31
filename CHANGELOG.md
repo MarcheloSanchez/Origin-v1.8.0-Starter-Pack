@@ -12,6 +12,16 @@ modified: 2026-03-03
 ---
 > Vault modifications and changes log.
 ---
+# 31/03/26
+## AI Session Logging System
+
+- Created `05-Calendar/Sessions/` folder for session activity tracking
+- Added `Sessions.md` index note (type: session, fileClass: session, embeds base view)
+- Added `_Sessions_Data.base` with 3 views: Recent (20 items), By Project, By Scope
+- Added "Recent AI Sessions" section to `🏡Home.md` after Quick Access Dashboards
+- Extended `/session-close` skill with automatic session note generation + Obsidian deep link
+
+---
 # 22/03/26
 ## CSS Snippets — Bases & Properties
 

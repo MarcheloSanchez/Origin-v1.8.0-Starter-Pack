@@ -79,7 +79,7 @@ tags: [💡atomic, 🌱develop]
 [[Tutorial - Place - Kew Gardens]]
 ```yaml
 type: place
-tags: [📍place]
+tags: [🗺️place]
 ```
 
 ### 4. Daily Note
@@ -99,7 +99,7 @@ tags: [📅daily]
 | `#💡atomic` | Content type for standalone ideas |
 | `#📤seed` | Just captured, minimal content |
 | `#🌱develop` | Needs more work to grow |
-| `#📍place` | Kew Gardens is a location |
+| `#🗺️place` | Kew Gardens is a location |
 | `#📅daily` | Calendar note type |
 | `#🏠context/home` | Personal context |
 

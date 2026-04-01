@@ -9,9 +9,7 @@ location: "Conference Room A"
 meeting_type: "standup"
 project: "[[Project Alpha]]"
 tags:
-  - meetings
-  - team
-  - standup
+  - 🤝meeting
 attendees:
   - "[[John Smith]]"
   - "[[Sarah Johnson]]"

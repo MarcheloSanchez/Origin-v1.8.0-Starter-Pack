@@ -3,7 +3,6 @@ title: Idea Validator
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
   - validation
   - critical-thinking

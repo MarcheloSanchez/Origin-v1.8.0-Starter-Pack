@@ -8,7 +8,7 @@ year: <% tp.date.now("YYYY") %>
 tags:
   - 📊report
   - 📅monthly
-  - 🔍review
+  - 📋review
 period_start: <% tp.date.now("YYYY-MM-01") %>
 period_end: <% tp.date.now("YYYY-MM-DD") %>
 ---
@@ -158,7 +158,7 @@ TABLE
   created as "Created"
 FROM "02-Dots"
 WHERE created >= date(<% tp.date.now("YYYY-MM-01") %>)
-  AND (contains(tags, "#💡idea") OR type = "atomic")
+  AND (contains(tags, "#💡atomic") OR type = "atomic")
 SORT created DESC
 LIMIT 20
 ```
@@ -418,4 +418,4 @@ SORT created DESC
 
 *Monthly report generated <% tp.date.now("YYYY-MM-DD HH:mm") %>. All metrics calculated using Dataview queries.*
 
-#📊report #📅monthly #🔍review
+#📊report #📅monthly #📋review

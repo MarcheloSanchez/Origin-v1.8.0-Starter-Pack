@@ -99,7 +99,7 @@ A Markdown notes app where you link ideas with `[[anchors]]` 🔗, build simple 
 - `#TASK` — actionable checklist items in the **body** (never in YAML).
 - Project/initiative tags: `#proj/<slug>` (avoid bare project names).
 - Temporary focus tags allowed but expire during monthly review.
-- **Content type:** `#💡idea` / `#🚀project` / `#📚source` / `#🗺️moc`
+- **Content type:** `#💡atomic` / `#🚀effort` / `#📚source` / `#🗺️moc`
 - **Note development:** `#🌱develop`, `#❔question`, `#🧹tidy`, `#⚗️experiment`
 - **Priority/Energy:** `#priority/high`, `#priority/low`, `#energy/high`, `#energy/low`
 - **Context:** `#context/work`, `#context/home`

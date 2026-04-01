@@ -352,7 +352,7 @@ _Identifikuje poznámky připravené k automatickému přesunu_
 ```
 TABLE file.name as "Poznámka", tags as "Tagy", "→ Doporučená složka" as "Akce"
 FROM "+Inbox"
-WHERE contains(tags, "#💡idea") OR contains(tags, "#🚀project") OR contains(tags, "#📚source")
+WHERE contains(tags, "#💡atomic") OR contains(tags, "#🚀effort") OR contains(tags, "#📚source")
 ```
 
 ## Weekly Review dashboard

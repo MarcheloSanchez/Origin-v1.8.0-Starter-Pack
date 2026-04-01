@@ -3,7 +3,6 @@ title: Content Pipeline
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
   - content-creation
   - writing

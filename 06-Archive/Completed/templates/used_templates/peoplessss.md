@@ -3,9 +3,7 @@ title: "John Smith"
 type: "person"
 fileClass: person
 tags:
-  - people
-  - colleague
-  - engineering
+  - 👤person
 full_name: "John Smith"
 role: "Senior Software Engineer"
 company: "Tech Corp"

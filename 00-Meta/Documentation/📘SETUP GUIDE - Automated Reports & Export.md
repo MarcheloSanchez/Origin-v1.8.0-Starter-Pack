@@ -4,7 +4,7 @@ type: guide
 status: 🔄active
 created: 2025-12-31
 tags:
-  - 📊reports
+  - 📊report
   - 🔧setup
   - 📤export
   - 🎯practical

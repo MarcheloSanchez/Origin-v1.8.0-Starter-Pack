@@ -2,11 +2,7 @@
 title: "Introduction to Machine Learning"
 type: "course"
 tags:
-  - courses
-  - machine-learning
-  - ai
-  - education
-  - online-learning
+  - 🤖AI
 course_title: "Introduction to Machine Learning"
 instructor: "Dr. Andrew Ng"
 institution: "Stanford University"

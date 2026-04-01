@@ -87,9 +87,9 @@ Template Choice nabízí několik pokročilých možností, které rozšiřují 
 ---
 název: "{{VALUE:název myšlenky}}"
 vytvořeno: {{DATE:YYYY-MM-DD HH:mm}}
-status: 💡idea
+status: 💡atomic
 priorita: {{VALUE:priorita|vysoká,střední,nízká}}
-tags: [#💡idea, {{VALUE:další tagy}}]
+tags: [#💡atomic, {{VALUE:další tagy}}]
 ---
 
 # {{VALUE:název myšlenky}}

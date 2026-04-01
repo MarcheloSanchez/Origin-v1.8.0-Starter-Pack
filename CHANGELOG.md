@@ -12,6 +12,28 @@ modified: 2026-03-03
 ---
 > Vault modifications and changes log.
 ---
+# 01/04/26
+## Inbox Processing
+- Filed 6 inbox items: `3d-prints-metrics-framework.md` → `03-Efforts/On/`, `Choosing system.md` → `04-Sources/410-Knowledge/`, `Claude Skills for PKM.md` → `02-Dots/500-Tools/`, `Vault Consistency - Decisions Needed.md` → `03-Efforts/On/`
+- Moved both `Tutorial - Raw Capture` notes → `00-Meta/Tutorial/`
+- Deleted `Template Audit Report.md` and empty `Untitled.md` stub
+
+## Vault Consistency Cleanup
+- Retyped 5 `source`-typed docs in `00-Meta/` → `documentation` (PKM KANBAN Templates, Implementation Plan, QuickAdd Audit Results, PKM Metadata, Template Refactoring Plan)
+- Moved `Tutorial - Meeting - Coffee with Maya.md` → `00-Meta/Tutorial/`
+- Removed leftover `.bak` from `04-Sources/440-Meetings/`
+- Confirmed 13 "empty stub" notes from March 3 report are now filled — no action needed
+- Marked `Vault Consistency - Decisions Needed.md` as ✅completed
+
+## PKM Queries Library
+- Fixed numbering: Type Validation queries renumbered 31–35 → 23–27; Metrics 23–27 → 28–32; Context 28–30 → 33–35 (now fully sequential 1–35)
+- Fixed 20 lines of escaped tag syntax (`\#` → `#`, `\&\&` → `&&`) inside code blocks
+- Deleted AI-generated marketing tail (939–973)
+- Added `[!warning]` flag to `dataview-not-working` query 1
+- Fixed `rating` → `rating_type` and `relationship` → `org` to match actual templates
+
+---
+
 # 31/03/26
 ## AI Session Logging System
 
@@ -20,6 +42,30 @@ modified: 2026-03-03
 - Added `_Sessions_Data.base` with 3 views: Recent (20 items), By Project, By Scope
 - Added "Recent AI Sessions" section to `🏡Home.md` after Quick Access Dashboards
 - Extended `/session-close` skill with automatic session note generation + Obsidian deep link
+
+## Tag Consolidation
+
+### Consolidation Script & Execution
+- Created `~/.local/bin/origin_tag_consolidate.py` (dry-run/apply modes)
+- Applied 41 rename rules across 248 files (253 tag renames, 68 tag deletions)
+- Reduced unique tags from 195 to 143 — enforced emoji-first convention
+- Key renames: `🎯project` → `🚀effort`, `💡idea` → `💡atomic`, `quick` → `🧹tidy`
+- Deleted 48 orphan domain tags (single-use: jazz, movies, philosophy, etc.)
+
+### Template & Script Fixes
+- Updated `Templates/Meta/effort-meta.yaml.md` auto-tag: `🎯project` → `🚀effort`
+- Updated `Templates/Create/new-quick-prompt.md` tags: `🤖prompt` → `🤖AI/prompt`, `quick` → `🧹tidy`
+- Updated `99-System/Scripts/normalize_prompts.js` tag assignments (2 locations)
+- Updated `99-System/Scripts/smart-classifier.js` tag mapping: `💡idea` → `💡atomic`
+- Updated `99-System/copilot-custom-prompts/Process inbox note.md` taxonomy
+- Updated `Templates/Scripts/Templater, Quick Tagging in place.md` tag picker list
+
+### Documentation Updates
+- Created `00-Meta/Documentation/PKM/🏷️Tag Consolidation Log.md` — permanent changelog with all rename rules, deletions, and patterns
+- Replaced stale "Tags Showcase" section in `🏷️My PKM Tags.md` with callout linking to consolidation log
+- Updated `🏷️My PKM Tags.md` tag table: `📍place` → `🗺️place`
+- Updated CLAUDE.md line 112: replaced stale warning with consolidation summary
+- Fixed old tag refs in 13 documentation files (tutorials, README, START HERE, PKM docs, Dataview queries)
 
 ---
 # 22/03/26

@@ -5,7 +5,7 @@ title:
 type: place
 fileClass: place
 tags:
-  - 📍place
+  - 🗺️place
 status: 🔄active
 place_type:
 visit_status: wishlist

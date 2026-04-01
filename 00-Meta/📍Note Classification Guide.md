@@ -5,9 +5,8 @@ status: 🔄active
 created: 2026-01-16
 modified: 2026-01-16
 tags:
-  - meta
-  - workflow
-  - classification
+  - 📊metadata
+  - 🔄workflow
   - guide
 up: "[[🏡Home]]"
 ---

@@ -3,10 +3,8 @@ title: Decision Navigator
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
   - decision-making
-  - analysis
   - pkm
 status: 🔄active
 created: 2025-01-26

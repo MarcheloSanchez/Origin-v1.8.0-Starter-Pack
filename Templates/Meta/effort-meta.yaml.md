@@ -5,7 +5,7 @@ title:
 type: effort
 fileClass: effort
 tags:
-  - 🎯project
+  - 🚀effort
 status: 🔄active
 priority: medium
 created: <% tp.date.now("YYYY-MM-DD") %>

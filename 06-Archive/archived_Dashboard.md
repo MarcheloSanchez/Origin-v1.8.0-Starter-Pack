@@ -4,7 +4,7 @@ type: dashboard
 status: 📦archived
 tags:
   - 📊dashboard
-  - 🏠system
+  - ⚙️system
   - 📋review
 created: 2025-09-29
 modified: 2025-09-29

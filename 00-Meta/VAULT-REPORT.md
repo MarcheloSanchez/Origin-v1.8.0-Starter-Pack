@@ -8,7 +8,7 @@ tags:
   - 📊analysis
   - 🗂️vault-structure
   - ⚙️system
-  - 📈metrics
+  - 📊metrics
 ---
 
 # 📊 Origin Vault v1.8.0 - Comprehensive Report
@@ -217,8 +217,8 @@ Tags identify the nature and category of content:
 
 | Tag | Layer | Meaning |
 |-----|-------|---------|
-| `#💡idea` | 02-Dots | Conceptual knowledge |
-| `#🚀project` | 03-Efforts | Active initiatives |
+| `#💡atomic` | 02-Dots | Conceptual knowledge |
+| `#🚀effort` | 03-Efforts | Active initiatives |
 | `#📚source` | 04-Sources | Reference material |
 | `#📅daily` | 05-Calendar | Temporal entry |
 | `#🤝meeting` | Special | Discussion records |
@@ -688,7 +688,7 @@ Origin is designed to be a **digital extension of your thinking**. Key principle
 
 ```
 Status: #📥inbox #🔄active #⏳waiting #✅completed #📦archived
-Content: #💡idea #🚀project #📚source #🤝meeting #🗺️moc
+Content: #💡atomic #🚀effort #📚source #🤝meeting #🗺️moc
 Energy: #⚡high #📊medium #🐢low
 Maturity: #📤seed #🌱seedling #🪴sapling #🌲evergreen #🍓fruit
 ```

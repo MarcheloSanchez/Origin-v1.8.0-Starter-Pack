@@ -1,6 +1,6 @@
 ---
 title: PKM Metadata Standards
-type: source
+type: documentation
 fileClass: source
 tags:
   - ⚙️system
@@ -305,7 +305,7 @@ someday_maybe: false
 ```
 ***
 title: "Book/Article/Video Title"
-type: source
+type: documentation
 status: 🔄active
 tags: 
 - 📚source
@@ -455,7 +455,7 @@ fileClass: Tool
 title: "Place Name"
 type: place
 status: 🔄active
-tags: [\#📍place, \#location-type]
+tags: [\#🗺️place, \#location-type]
 created: 2025-09-30
 modified: 2025-09-30
 place_type: city|country|venue|landmark|restaurant
@@ -917,7 +917,7 @@ This creates the complete metadata backbone of your PKM system - comprehensive, 
 
 ```
 title: "Book/Article/Video Title"
-type: source
+type: documentation
 status: 🔄active
 fileClass: source
 tags:

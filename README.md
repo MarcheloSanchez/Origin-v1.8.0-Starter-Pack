@@ -133,8 +133,8 @@ Více se lze dočíst v 📖 **Detailní dokumentaci**: [[▶️ START HERE]]
 |--------|------|--------------|----------|
 | `00 Inbox` | Vstupní brána pro vše nové | `#📥inbox` | Capture → Process |
 | `01 MOCs` | Rozcestníky a navigace | `#🗺️moc` | Organize → Navigate |
-| `02 Dots` | Atomické znalosti | `#💡idea` | Develop → Connect |
-| `03 Efforts` | Projekty a aktivity | `#🚀project` | Execute → Track |
+| `02 Dots` | Atomické znalosti | `#💡atomic` | Develop → Connect |
+| `03 Efforts` | Projekty a aktivity | `#🚀effort` | Execute → Track |
 | `04 Sources` | Externí zdroje | `#📚source` | Reference → Cite |
 | `05 Journal` | Periodické záznamy | `#📅daily` | Reflect → Archive |
 | `06 Archive` | Dokončené/neaktivní | `#📦archived` | Store → Protect |
@@ -173,7 +173,7 @@ Více se lze dočíst v 📖 **Detailní dokumentaci**: [[My PKM Workflows - Glo
 - `⏳waiting` pro blocked úkoly
 
 ### Content type tagy
-- `#💡idea` (Dots) | `#🚀project` (Efforts) | `#📚source` (Sources)
+- `#💡atomic` (Dots) | `#🚀effort` (Efforts) | `#📚source` (Sources)
 - `#🤝meeting` | `#🗺️map` | `#👤contact`
 
 ### Metadata schema (YAML front matter)

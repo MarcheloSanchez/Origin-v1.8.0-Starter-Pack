@@ -125,7 +125,7 @@ Networks             Loops          Collaboration        Mapping
 | `#🗺️MOC` | Growth Patterns MOC | 6 |
 | `#🤝meeting` | Coffee with Maya | 3 |
 | `#👤person` | Dr. Maya Chen | 3 |
-| `#📍place` | Kew Gardens | 1 |
+| `#🗺️place` | Kew Gardens | 1 |
 | `#🛠️tool` | Excalidraw | 4 |
 | `#📅daily` | Daily notes | 1-7 |
 | `#📅weekly` | Weekly review | 5 |

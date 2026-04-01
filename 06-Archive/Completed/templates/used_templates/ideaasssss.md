@@ -2,11 +2,9 @@
 title: "AI-Powered PKM Assistant"
 type: "idea"
 tags:
-  - ideas
-  - ai
+  - 🤖AI
   - pkm
-  - automation
-  - innovation
+  - 📋automation
 category: "technology"
 status: "exploring"
 priority: "medium"

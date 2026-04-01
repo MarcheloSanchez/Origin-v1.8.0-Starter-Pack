@@ -3,10 +3,9 @@ title: "Personal Knowledge Management MOC"
 type: "moc"
 fileClass: moc
 tags:
-  - moc
+  - 🗺️MOC
   - pkm
-  - index
-  - navigation
+  - 🧭navigation
 category: "productivity"
 scope: "comprehensive"
 date_created: 2024-01-15

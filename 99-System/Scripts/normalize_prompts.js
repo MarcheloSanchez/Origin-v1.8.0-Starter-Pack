@@ -82,10 +82,10 @@ module.exports = async (rawArgs) => {
 
       // Add tags if missing
       if (!fm.tags) {
-        fm.tags = ["🤖prompt"];
+        fm.tags = ["🤖AI/prompt"];
         needsUpdate = true;
       } else if (Array.isArray(fm.tags) && !fm.tags.some(t => String(t).includes("🤖"))) {
-        fm.tags.push("🤖prompt");
+        fm.tags.push("🤖AI/prompt");
         needsUpdate = true;
       }
 
@@ -152,10 +152,10 @@ module.exports = async (rawArgs) => {
       if (!fm.difficulty) fm.difficulty = "beginner";
       if (!fm.created) fm.created = today;
       if (!fm.tags) {
-        fm.tags = ["🤖AI/prompt", "quick"];
+        fm.tags = ["🤖AI/prompt", "🧹tidy"];
       } else if (Array.isArray(fm.tags)) {
         if (!fm.tags.some(t => String(t).includes("🤖"))) fm.tags.push("🤖AI/prompt");
-        if (!fm.tags.includes("quick")) fm.tags.push("quick");
+        if (!fm.tags.includes("🧹tidy")) fm.tags.push("🧹tidy");
       }
 
       if (dryRun) { changed++; continue; }

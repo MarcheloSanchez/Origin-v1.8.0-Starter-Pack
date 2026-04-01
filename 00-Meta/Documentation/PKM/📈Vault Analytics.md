@@ -5,7 +5,7 @@ fileClass: moc
 status: 🔄active
 tags:
   - 📊dashboard
-  - 📈analytics
+  - 📊metrics
   - ⚙️system
 created: 2026-02-05
 modified: 2026-02-07

@@ -50,14 +50,17 @@ A --> G[📈 Performance Metrics]
 
 ### **1. Morning Dashboard** ☀️ Most Important
 
-```dataview-not-working
+> [!warning] Flagged for review — this query was marked as not-working
+> Verify syntax and test before using. Issues may be tag escaping or field names.
+
+```dataview
 TABLE WITHOUT ID
 file.link AS "Today's Focus",
 choice(
-contains(tags, "\#priority/high"), "🔴 Urgent"
+contains(tags, "#priority/high"), "🔴 Urgent"
 ) AS "Type"
 FROM ""
-WHERE (status = "📥inbox" AND contains(tags, "\#priority/high"))
+WHERE (status = "📥inbox" AND contains(tags, "#priority/high"))
 OR (status = "🔄active" AND energy = "high")
 SORT priority DESC
 LIMIT 5
@@ -78,11 +81,11 @@ TABLE WITHOUT ID
 file.link AS "📥 To Process",
 choice(created, date(created), date(file.ctime)) AS "Captured",
 choice(
-contains(tags, "\#priority/high"), "🔴",
+contains(tags, "#priority/high"), "🔴",
 "⚪"
 ) AS "Priority"
 FROM ""
-WHERE status = "📥inbox" OR contains(tags, "\#📥inbox")
+WHERE status = "📥inbox" OR contains(tags, "#📥inbox")
 SORT choice(created, created, file.ctime) ASC
 LIMIT 10
 
@@ -108,7 +111,7 @@ choice(status = "⏳waiting", "⏳", "📝")
 )
 ) AS "Status"
 FROM ""
-WHERE contains(tags, "\#priority/high") OR priority = "high"
+WHERE contains(tags, "#priority/high") OR priority = "high"
 SORT file.folder, file.name
 
 ```
@@ -142,7 +145,7 @@ limit 10
 
 LIST
 FROM ""
-WHERE contains(tags, "\#🧹tidy") OR contains(tags, "\#❔question")
+WHERE contains(tags, "#🧹tidy") OR contains(tags, "#❔question")
 SORT modified DESC
 LIMIT 10
 
@@ -161,11 +164,11 @@ LIMIT 10
 TABLE WITHOUT ID
 file.link AS "Completed Today",
 choice(
-contains(tags, "\#🚀effort"), "🚀 Project",
-choice(contains(tags, "\#💡atomic"), "💡 Idea", "📚 Other")
+contains(tags, "#🚀effort"), "🚀 Project",
+choice(contains(tags, "#💡atomic"), "💡 Idea", "📚 Other")
 ) AS "Type"
 FROM ""
-WHERE (status = "✅completed" OR contains(tags, "\#✅completed"))
+WHERE (status = "✅completed" OR contains(tags, "#✅completed"))
 AND choice(modified, modified, file.mtime) >= date(today)
 SORT choice(modified, modified, file.mtime) DESC
 
@@ -239,9 +242,9 @@ TABLE WITHOUT ID
 file.link as "Developing",
 tags as "Stage",
 modified as "Last Edit"
-WHERE contains(tags, "\#🌱develop")
-OR contains(tags, "\#❔question")
-OR contains(tags, "\#🧹tidy")
+WHERE contains(tags, "#🌱develop")
+OR contains(tags, "#❔question")
+OR contains(tags, "#🧹tidy")
 SORT modified ASC
 LIMIT 15
 
@@ -261,7 +264,7 @@ LIMIT 15
 
 TABLE date(file.mtime) AS Updated, maturity
 FROM "02-Dots"
-WHERE (type = "atomic" OR contains(tags, "\#💡atomic"))
+WHERE (type = "atomic" OR contains(tags, "#💡atomic"))
 SORT file.mtime DESC
 LIMIT 10
 
@@ -361,7 +364,7 @@ dv.paragraph(`**Topics:** ${random.tags?.join(", ") || "None"}`);
 
 LIST
 FROM "04-Sources"
-WHERE contains(tags, "\#status/unread")
+WHERE contains(tags, "#status/unread")
 SORT priority DESC, created ASC
 
 ```
@@ -402,7 +405,7 @@ read_status = "completed", "✅ Processed",
 choice(read_status = "reading", "📖 Reading", "📥 Queue")
 ) AS "Status"
 FROM "04-Sources"
-WHERE type = "source" OR contains(tags, "\#📚source")
+WHERE type = "source" OR contains(tags, "#📚source")
 SORT choice(created, created, file.ctime) DESC
 
 ```
@@ -502,7 +505,7 @@ LIMIT 10
 
 ---
 
-### **31. Effort Metadata Gaps** 🚀 Type Validation
+### **23. Effort Metadata Gaps** 🚀 Type Validation
 
 ```
 TABLE WITHOUT ID
@@ -523,7 +526,7 @@ SORT file.name ASC
 
 ---
 
-### **32. Atomic Metadata Gaps** 💡 Type Validation
+### **24. Atomic Metadata Gaps** 💡 Type Validation
 
 ```
 
@@ -545,7 +548,7 @@ SORT file.name ASC
 
 ---
 
-### **33. Source Metadata Gaps** 📚 Type Validation
+### **25. Source Metadata Gaps** 📚 Type Validation
 
 ```
 
@@ -553,7 +556,7 @@ TABLE WITHOUT ID
 file.link as "Source",
 default(source_type, "❌ missing") as "Source Type",
 default(read_status, "❌ missing") as "Read Status",
-default(rating, "—") as "Rating"
+default(rating_type, "—") as "Rating Type"
 FROM "04-Sources"
 WHERE type = "source"
 AND (!source_type OR !read_status)
@@ -567,7 +570,7 @@ SORT file.name ASC
 
 ---
 
-### **34. Meeting Metadata Gaps** 🤝 Type Validation
+### **26. Meeting Metadata Gaps** 🤝 Type Validation
 
 ```
 
@@ -589,17 +592,17 @@ SORT file.name ASC
 
 ---
 
-### **35. Person Metadata Gaps** 👤 Type Validation
+### **27. Person Metadata Gaps** 👤 Type Validation
 
 ```
 
 TABLE WITHOUT ID
 file.link as "Person",
-default(relationship, "❌ missing") as "Relationship",
+default(org, "❌ missing") as "Org",
 default(status, "❌ missing") as "Status"
 FROM "02-Dots/300-People"
 WHERE type = "person"
-AND (!relationship OR !status)
+AND (!org OR !status)
 SORT file.name ASC
 
 ```
@@ -612,7 +615,7 @@ SORT file.name ASC
 
 ## 📈 Performance Metrics Queries
 
-### **23. Vault Growth Rate** 📶 Capture Velocity
+### **28. Vault Growth Rate** 📶 Capture Velocity
 
 ```
 
@@ -634,7 +637,7 @@ dv.paragraph(
 
 ---
 
-### **24. Tag Coverage** 🏷️ Metadata Quality
+### **29. Tag Coverage** 🏷️ Metadata Quality
 
 ```
 
@@ -657,7 +660,7 @@ dv.table(
 
 ---
 
-### **25. Weekly Productivity Dashboard** 📊 GTD Metrics
+### **30. Weekly Productivity Dashboard** 📊 GTD Metrics
 
 ```
 
@@ -667,7 +670,7 @@ inbox: dv.pages('"+Inbox"')
 active: dv.pages('"03-Efforts"')
 .where(p => p.status === "🔄active").length,
 completed: dv.pages()
-.where(p => p.status === "✅completed" \&\&
+.where(p => p.status === "✅completed" &&
 p.modified >= dv.date("today - 7 days")).length
 };
 
@@ -687,7 +690,7 @@ dv.paragraph(`
 
 ---
 
-### **26. Task Completion Rate** ✅ Execution Tracking
+### **31. Task Completion Rate** ✅ Execution Tracking
 
 ```
 
@@ -722,7 +725,7 @@ GROUP BY true
 
 ---
 
-### **27. Project Task Breakdown** 📊 Effort Analytics
+### **32. Project Task Breakdown** 📊 Effort Analytics
 
 ```
 
@@ -746,13 +749,13 @@ SORT length(rows.file.tasks) DESC
 
 ## 🎯 Context-Based Queries
 
-### **28. High Energy Work** ⚡ Peak Performance
+### **33. High Energy Work** ⚡ Peak Performance
 
 ```
 
 TASK
-WHERE contains(tags, "\#context/computer")
-AND contains(tags, "\#energy/high")
+WHERE contains(tags, "#context/computer")
+AND contains(tags, "#energy/high")
 AND !completed
 SORT priority DESC
 
@@ -764,12 +767,12 @@ SORT priority DESC
 
 ---
 
-### **29. Quick Wins** ⚡ Low Energy Tasks
+### **34. Quick Wins** ⚡ Low Energy Tasks
 
 ```
 
 TASK
-WHERE contains(tags, "\#quick-win")
+WHERE contains(tags, "#quick-win")
 AND !completed
 SORT priority DESC
 LIMIT 10
@@ -782,12 +785,12 @@ LIMIT 10
 
 ---
 
-### **30. Errands Batch** 🚗 Location-Based
+### **35. Errands Batch** 🚗 Location-Based
 
 ```
 
 TASK
-WHERE contains(tags, "\#context/errands")
+WHERE contains(tags, "#context/errands")
 AND !completed
 SORT due
 
@@ -934,39 +937,5 @@ p.file.tags?.join(", ")
 
 ---
 
-*Last Updated: 2025-10-01 | Review: Quarterly | Total Queries: 30+*
+*Last Updated: 2025-10-01 | Review: Quarterly | Total Queries: 35*
 
-## **Key Features:**
-
-### **📊 Comprehensive Coverage**
-
-- **35+ essential queries** organized by use case
-- **7 major categories** (Daily/Weekly/Knowledge/Health/Type Validation/Metrics/Context)
-- **Copy-paste ready** - all queries tested and functional
-- **Purpose + Review frequency** for each query
-
-
-### **🎨 Visual Excellence**
-
-- **Mermaid category** diagram
-- **Structured sections** with clear headers
-- **Color-coded emojis** for quick scanning
-- **Inline examples** for immediate use
-
-
-### **🤖 Practical Application**
-
-- **Dashboard queries** for daily use
-- **Health monitoring** for system maintenance
-- **Performance metrics** for continuous improvement
-- **Context-based** queries for GTD workflows
-
-
-### **🔧 Advanced Features**
-
-- **DataviewJS examples** for complex logic
-- **Optimization tips** for large vaults
-- **Debugging examples** for troubleshooting
-- **Best practices** (Do's and Don'ts)
-
-This creates a complete query library that powers your entire PKM system - from daily workflows to system health monitoring! 🔍✨

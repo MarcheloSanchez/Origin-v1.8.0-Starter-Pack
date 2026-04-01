@@ -3,10 +3,6 @@ title: "The Matrix"
 type: "media"
 content_type: "movie"
 tags:
-  - movies
-  - sci-fi
-  - philosophy
-  - action
 director: "The Wachowskis"
 release_year: 1999
 runtime: 136

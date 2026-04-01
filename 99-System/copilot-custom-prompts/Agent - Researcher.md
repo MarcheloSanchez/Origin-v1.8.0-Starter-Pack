@@ -5,7 +5,7 @@ fileClass: Prompt
 tags:
   - multi-agent
   - micro-agent
-  - research
+  - 🔬research
   - pkm
 status: 🔄active
 created: 2025-01-27

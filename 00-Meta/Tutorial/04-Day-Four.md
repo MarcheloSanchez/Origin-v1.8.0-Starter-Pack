@@ -83,7 +83,7 @@ priority: high
 completion_percentage: 15
 due: 2026-03-31
 energy_required: high
-tags: [🚀effort, 🎯project, 🔥priority/high]
+tags: [🚀effort, 🔥priority/high]
 ```
 
 ### 2. Tool Note
@@ -101,7 +101,7 @@ related: [Master Origin Vault]
 | Tag | Why It's Used |
 |-----|---------------|
 | `#🚀effort` | Project/initiative note type |
-| `#🎯project` | Alternative project tag |
+| `#🚀effort` | Alternative project tag |
 | `#🔥priority/high` | Critical importance |
 | `#🔋energy/high` | Requires peak focus |
 | `#💻context/computer` | Needs computer access |

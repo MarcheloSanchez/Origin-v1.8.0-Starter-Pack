@@ -3,12 +3,9 @@ title: Meta-Skills Playbook
 type: prompt
 fileClass: Prompt
 tags:
-- meta-skill
-- playbook
-- reference
-- pkm
-- workflow
-- guide
+  - pkm
+  - 🔄workflow
+  - guide
 status: 🔄active
 created: 2025-01-26
 modified: 2025-01-26

@@ -4,7 +4,7 @@ type: documentation
 status: 🔄active
 tags:
   - 🎯gtd
-  - 📖documentation
+  - 📋documentation
   - ⚙️system
 created: 2026-01-01
 related:

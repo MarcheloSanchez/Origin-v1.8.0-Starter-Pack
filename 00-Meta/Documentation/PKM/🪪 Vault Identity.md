@@ -4,7 +4,8 @@ type: guide
 status: 🔄active
 created: 2026-03-17
 modified: 2026-03-17
-tags: [meta, identity, governance, architecture]
+tags:
+  - 📊metadata
 up: "[[🗺️My PKM MOC]]"
 ---
 

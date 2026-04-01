@@ -2,7 +2,8 @@
 title: 🏆 Achievement Tracker
 type: tracker
 status: 🔄active
-tags: [gamification, achievements, tracker]
+tags:
+  - gamification
 created: 2026-01-02
 modified: 2026-01-02
 ---

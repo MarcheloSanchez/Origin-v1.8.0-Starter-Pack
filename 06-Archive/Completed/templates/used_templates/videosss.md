@@ -3,11 +3,9 @@ title: "How to Build a Second Brain - Tiago Forte"
 type: "media"
 content_type: "video"
 tags:
-  - videos
-  - youtube
   - pkm
-  - productivity
-  - learning
+  - ⚡productivity
+  - 🎓learning
 creator: "Tiago Forte"
 channel: "Forte Labs"
 platform: "YouTube"

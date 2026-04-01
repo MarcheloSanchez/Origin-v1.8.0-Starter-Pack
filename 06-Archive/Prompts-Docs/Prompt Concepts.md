@@ -4,8 +4,7 @@ status: 📦archived
 up:
   - "[[AI MOC]]"
 tags:
-  - note/👀cheatsheet
-  - note/📝concept
+  - 💯cheatsheet
 created: 2025-01-22
 related:
   - "[[MOC - Prompts]]"

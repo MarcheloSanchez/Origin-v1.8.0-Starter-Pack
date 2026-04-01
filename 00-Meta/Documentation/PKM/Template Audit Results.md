@@ -4,7 +4,10 @@ type: guide
 status: 🔄active
 created: 2026-03-17
 modified: 2026-03-17
-tags: [audit, templates, maintenance, automation]
+tags:
+  - 📦templates
+  - 🔧maintenance
+  - 📋automation
 up: "[[📦Template System Guide]]"
 ---
 

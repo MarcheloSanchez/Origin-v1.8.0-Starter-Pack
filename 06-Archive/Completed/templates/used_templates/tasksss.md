@@ -2,10 +2,7 @@
 title: "Complete User Research Analysis"
 type: "task"
 tags:
-  - tasks
-  - research
-  - analysis
-  - high-priority
+  - 🔬research
 task_id: "T-2024-045"
 project: "[[Website Redesign Project]]"
 assigned_to: "[[John Smith]]"

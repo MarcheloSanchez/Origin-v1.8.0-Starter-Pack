@@ -4,7 +4,7 @@ type: dashboard
 status: 🔄active
 tags:
   - 📊dashboard
-  - 🏠system
+  - ⚙️system
   - 📋review
   - ✅tasks
   - 🎯gtd

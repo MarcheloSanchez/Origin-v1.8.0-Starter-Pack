@@ -211,7 +211,7 @@ function analyzeContent(content, frontmatter, filename) {
   const tagKeywords = {
     '📥inbox': ['inbox', 'new', 'unprocessed'],
     '🔄active': ['active', 'ongoing'],
-    '💡idea': ['idea', 'thought'],
+    '💡atomic': ['idea', 'thought'],
     '🎯priority-high': ['important', 'urgent', 'asap', 'priority'],
     '💼work': ['work', 'job', 'business'],
     '🏠home': ['home', 'personal'],

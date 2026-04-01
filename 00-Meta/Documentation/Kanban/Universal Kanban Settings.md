@@ -176,7 +176,7 @@ Copy this exact setup for consistent boards:
 
 .tag[href="#blocked"] { background: #747d8c; color: white; }
 .tag[href="#waiting"] { background: #ffd32a; color: black; }
-.tag[href="#quick"] { background: #2ed573; color: white; }
+/* #quick merged into #🧹tidy — remove or restyle if needed */
 
 /* Mobile Responsive */
 @media (max-width: 768px) {

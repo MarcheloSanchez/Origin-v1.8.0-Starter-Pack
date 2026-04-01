@@ -8,7 +8,7 @@ fileClass: moc
 tags:
   - 📊dashboard
   - 📶performance
-  - 🏠system
+  - ⚙️system
   - 📋review
   - 🗺️MOC
 status: 🔄active

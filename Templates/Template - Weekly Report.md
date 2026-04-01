@@ -8,7 +8,7 @@ year: <% tp.date.now("YYYY") %>
 tags:
   - 📊report
   - 📅weekly
-  - 🔍review
+  - 📋review
 period_start: <% tp.date.now("YYYY-MM-DD", -7) %>
 period_end: <% tp.date.now("YYYY-MM-DD") %>
 ---
@@ -93,7 +93,7 @@ SORT priority DESC, file.mtime DESC
 LIST
 FROM "02-Dots"
 WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
-  AND (contains(tags, "#💡idea") OR type = "atomic")
+  AND (contains(tags, "#💡atomic") OR type = "atomic")
 SORT created DESC
 LIMIT 20
 ```
@@ -226,4 +226,4 @@ LIMIT 10
 
 *Report generated using Dataview queries. Data accurate as of <% tp.date.now("YYYY-MM-DD HH:mm") %>.*
 
-#📊report #📅weekly #🔍review
+#📊report #📅weekly #📋review

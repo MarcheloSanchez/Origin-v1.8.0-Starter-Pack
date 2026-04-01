@@ -2,7 +2,9 @@
 title: 🎮 Gamification Dashboard
 type: dashboard
 status: 🔄active
-tags: [gamification, dashboard, stats, achievements]
+tags:
+  - gamification
+  - 📊dashboard
 created: 2026-01-02
 modified: 2026-01-16
 cssclasses: [dashboard, gamification]

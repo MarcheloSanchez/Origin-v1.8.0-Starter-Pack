@@ -1,6 +1,6 @@
 ---
 title: QuickAdd Audit Results
-type: source
+type: documentation
 fileClass: source
 status: 🔄active
 tags:

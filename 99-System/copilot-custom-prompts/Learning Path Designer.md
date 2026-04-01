@@ -3,10 +3,8 @@ title: Learning Path Designer
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
-  - learning
-  - education
+  - 🎓learning
   - pkm
 status: 🔄active
 created: 2025-01-26

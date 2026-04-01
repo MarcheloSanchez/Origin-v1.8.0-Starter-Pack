@@ -2,7 +2,9 @@
 type: template
 status: 🔄active
 created: 2026-01-16
-tags: [navigation, ux]
+tags:
+  - 🧭navigation
+  - ux
 ---
 
 # Unified Navigation Template

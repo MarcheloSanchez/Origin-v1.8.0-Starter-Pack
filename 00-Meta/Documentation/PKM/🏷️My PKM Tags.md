@@ -90,7 +90,7 @@ E --> F[💡 Insights]
 | `#📅weekly` | 📅 | `05-Calendar/Weekly` | Weekly reviews | ✅ Periodic Notes |
 | `#📅monthly` | 📅 | `05-Calendar/Monthly` | Monthly reflections | ✅ Periodic Notes |
 | `#👤person` | 👤 | `02-Dots/300-People` | Person profiles | ✅ Template |
-| `#📍place` | 📍 | `02-Dots/600-Places` | Location notes | ✅ Template |
+| `#🗺️place` | 🗺️ | `02-Dots/600-Places` | Location notes | ✅ Template |
 | `#🛠️tool` | 🛠️ | `02-Dots/500-Tools` | Tool documentation | ✅ Template |
 | `#🎯prompt` | 🎯 | `07-Prompts` | AI prompts and templates | ✅ Template |
 
@@ -559,31 +559,5 @@ AND type != "moc"
 
 ----
 
-#🧹tidy - hmmm - Use everytag here for consistency in using for notes 
-
-GO HERE: [[🏷️My PKM Tags#**Alt+T (Quick Tag) Favorites **]] #🌱develop 
-
-# 🏷️ Tags Showcase 🏷️ - NEEDS UPDATE (Status, Effort)
-
-#🔥on 
-#♻️ongoing 
-#🌊simmering 
-#💤sleeping 
-#👤people 
-#🤝meeting 
- #📦archived
-#💡idea 
-#🚀project 
-#📚source 
-#🗺️MOC 
- 
- #🔧tool
- 
-#🧹tidy
-#🚤boat
-#🌱develop
-#❔question 
-#⚗️experiment
-
-#💼work
-#🏠home
+> [!info] Tag Consolidation
+> Tags were consolidated on 2026-03-31. See [[🏷️Tag Consolidation Log]] for the full changelog, rename rules, and deleted orphan tags.

@@ -3,10 +3,6 @@ title: "Kind of Blue - Miles Davis"
 type: "media"
 content_type: "album"
 tags:
-  - music
-  - jazz
-  - classic
-  - vinyl
 artist: "Miles Davis"
 album: "Kind of Blue"
 release_year: 1959

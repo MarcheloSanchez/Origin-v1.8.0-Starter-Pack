@@ -3,9 +3,8 @@ title: Research Orchestrator
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
-  - research
+  - 🔬research
   - pkm
 status: 🔄active
 created: 2025-01-26

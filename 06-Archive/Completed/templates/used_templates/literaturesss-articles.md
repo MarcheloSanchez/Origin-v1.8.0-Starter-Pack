@@ -3,10 +3,9 @@ title: "The Rise of Personal Knowledge Management"
 type: "literature"
 content_type: "article"
 tags:
-  - articles
   - pkm
-  - productivity
-  - research
+  - ⚡productivity
+  - 🔬research
 author: "Dr. Jane Doe"
 publication: "Knowledge Management Review"
 publication_date: 2024-01-10

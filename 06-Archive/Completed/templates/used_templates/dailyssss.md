@@ -4,8 +4,7 @@ type: daily
 fileClass: daily
 date: 2024-01-15
 tags:
-  - daily
-  - journal
+  - 📅daily
 weather: 
 mood: 
 energy_level: 

@@ -6,7 +6,7 @@ aliases: []
 type: place
 fileClass: Place
 tags:
-  - 📍place
+  - 🗺️place
 place_status:
 priority:
 region:

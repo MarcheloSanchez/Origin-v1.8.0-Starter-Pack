@@ -14,7 +14,7 @@ VAULT CONTEXT:
 - Types: atomic (permanent notes), effort (projects), source (references), meeting, moc, prompt, tool, person, place
 - Status flow: 📥inbox → 🔄active → ⏳waiting → ✅completed → 📦archived
 - Maturity: 📤seed → 🌱seedling → 🪴sapling → 🌲evergreen → 🍓fruit
-- Tag taxonomy: #💡idea, #🚀project, #📚source, #🗺️moc, #🌱develop, #❔question, #🧹tidy
+- Tag taxonomy: #💡atomic, #🚀effort, #📚source, #🗺️MOC, #🌱develop, #❔question, #🧹tidy
 - Folders: +Inbox (capture), 02-Dots (knowledge), 03-Efforts (projects), 04-Sources (references)
 </system>
 

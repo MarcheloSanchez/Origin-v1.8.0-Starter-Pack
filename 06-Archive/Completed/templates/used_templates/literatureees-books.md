@@ -3,8 +3,7 @@ title: "Building a Second Brain"
 type: "literature"
 content_type: "book"
 tags:
-  - books
-  - productivity
+  - ⚡productivity
   - pkm
   - knowledge-management
 author: "Tiago Forte"

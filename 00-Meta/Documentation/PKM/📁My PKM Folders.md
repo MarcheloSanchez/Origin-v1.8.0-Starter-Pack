@@ -26,8 +26,8 @@ related:
 | `+Inbox`      | Capture anything quickly                 | `#📥inbox`     | Capture → Process      |
 | `00-META`     | Meta-management                          | `#⚙️system`    | Maintain → Optimize    |
 | `01-MOCs`     | Maps of Content for navigation           | `#🗺️MOC`      | Organize → Navigate    |
-| `02-Dots`     | Atomic knowledge & ideas                 | `#💡idea`      | Develop → Connect      |
-| `03-Efforts`  | Active projects & long-term initiatives  | `#🚀project`   | Execute → Track        |
+| `02-Dots`     | Atomic knowledge & ideas                 | `#💡atomic`      | Develop → Connect      |
+| `03-Efforts`  | Active projects & long-term initiatives  | `#🚀effort`   | Execute → Track        |
 | `04-Sources`  | Reference material & research            | `#📚source`    | Reference → Cite       |
 | `05-Calendar` | Daily/weekly/monthly notes & reflections | `#📅daily`     | Reflect → Archive      |
 | `06-Archive`  | Completed / inactive items               | `#📦archived`  | Store → Protect        |

@@ -3,7 +3,7 @@ title: "📘 Phase 2 Implementation Guide: AI-Augmented Intelligence"
 type: guide
 status: 🔄active
 tags:
-  - 🤖ai
+  - 🤖AI
   - 📋implementation
   - 🔧technical
   - 🎯roadmap

@@ -1,7 +1,9 @@
 ---
 title: 🎮 Gamification Quick Reference
 type: reference
-tags: [gamification, quick-reference, cheatsheet]
+tags:
+  - gamification
+  - 💯cheatsheet
 created: 2026-01-02
 modified: 2026-03-03
 ---

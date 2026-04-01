@@ -2,7 +2,11 @@
 title: 🎮 My PKM Gamification System
 type: documentation
 status: 🔄active
-tags: [documentation, gamification, guide, pkm]
+tags:
+  - 📋documentation
+  - gamification
+  - guide
+  - pkm
 created: 2026-01-02
 modified: 2026-01-02
 ---

@@ -4,7 +4,9 @@ type: guide
 status: 🔄active
 created: 2026-01-16
 modified: 2026-01-16
-tags: [workflow, reference, quickstart, automation]
+tags:
+  - 🔄workflow
+  - 📋automation
 up: "[[🏡Home]]"
 ---
 

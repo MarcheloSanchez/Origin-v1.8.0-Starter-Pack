@@ -8,7 +8,7 @@ type: moc
 fileClass: MOC
 tags:
   - 📊dashboard
-  - 🏠system
+  - ⚙️system
   - 🎯gtd
   - ⚡productivity
   - 🧭navigation

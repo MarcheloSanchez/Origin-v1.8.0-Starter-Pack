@@ -3,9 +3,6 @@ title: "Website Redesign Project"
 type: "project"
 tags:
   - projects
-  - web-development
-  - design
-  - active
 project_id: "WR-2024-001"
 status: "in-progress"
 priority: "high"

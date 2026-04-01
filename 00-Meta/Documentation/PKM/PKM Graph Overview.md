@@ -5,8 +5,8 @@ graph TD
 %% ===== NODES =====
 A[📥 00 Inbox<br/>#📥inbox<br/>Quick Capture]:::folder
 B[🗺️ 01 MOCs<br/>#🗺️moc<br/>Navigation Index]:::folder
-C[💡 02 Dots<br/>#💡idea<br/>Atomic Knowledge]:::folder
-D[🚀 03 Efforts<br/>#🚀project<br/>Projects & Initiatives]:::folder
+C[💡 02 Dots<br/>#💡atomic<br/>Atomic Knowledge]:::folder
+D[🚀 03 Efforts<br/>#🚀effort<br/>Projects & Initiatives]:::folder
 E[📚 04 Sources<br/>#📚source<br/>References]:::folder
 F[📅 05 Calendar<br/>#📅daily<br/>Journals & Reflections]:::folder
 G[📦 06 Archive<br/>#📦archived<br/>Inactive Items]:::folder

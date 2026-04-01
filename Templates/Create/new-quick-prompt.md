@@ -12,8 +12,8 @@ title: "${name}"
 type: prompt
 fileClass: prompt
 tags:
-  - 🤖prompt
-  - quick
+  - 🤖AI/prompt
+  - 🧹tidy
 status: 🔄active
 prompt_type: utility
 prompt_status: draft

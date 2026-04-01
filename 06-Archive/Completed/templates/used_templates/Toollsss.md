@@ -3,11 +3,9 @@ title: "Obsidian"
 type: "tool"
 fileClass: tool
 tags:
-  - tools
+  - 🛠️tool
   - pkm
-  - note-taking
-  - software
-  - productivity
+  - ⚡productivity
 tool_name: "Obsidian"
 category: "Note-taking"
 vendor: "Dynalist Inc."

@@ -3,7 +3,7 @@ title: GTD Weekly Review
 type: template
 status: 🔄active
 tags:
-  - 🔄review
+  - 📋review
   - 🎯gtd
   - 📅weekly
 created: 2026-01-01

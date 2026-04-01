@@ -109,7 +109,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 9. **Bilingual classifiers**: `batch-process-inbox.js`, `quick-process-atomic.js`, `quick-process-source.js` intentionally contain Czech keywords for classifying Czech-written notes — do NOT remove. `smart-classifier.js` is English-only.
 
-10. **Tags Showcase stale**: Bottom section of `00-Meta/Documentation/PKM/🏷️My PKM Tags.md` ("Tags Showcase") contains legacy tag names (e.g. `#💡idea`, `#🚀project`, `#💼work`) — do NOT use as reference. Canonical taxonomy is in the tables above it. Tag unification in vault notes is pending.
+10. **Tags consolidated (2026-03-31)**: Vault tags unified to emoji-first canonical forms. See `00-Meta/Documentation/PKM/🏷️Tag Consolidation Log.md` for full changelog. Key renames: `🎯project` → `🚀effort`, `💡idea` → `💡atomic`, `quick` → `🧹tidy`. Old "Tags Showcase" section replaced with link to consolidation log.
 
 ## Naming Conventions
 

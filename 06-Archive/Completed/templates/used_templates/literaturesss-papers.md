@@ -3,10 +3,8 @@ title: "Cognitive Load Theory in Digital Learning"
 type: "literature"
 content_type: "paper"
 tags:
-  - papers
-  - research
-  - cognitive-science
-  - learning
+  - 🔬research
+  - 🎓learning
 author: "Dr. Michael Chen"
 co_authors:
   - "Dr. Lisa Wang"

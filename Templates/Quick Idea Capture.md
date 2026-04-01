@@ -4,7 +4,7 @@ type:
   - atomic
 created: 
 tags:
-  - 💡idea
+  - 💡atomic
 ---
 
 # Title_note

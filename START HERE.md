@@ -140,7 +140,7 @@ git clone https://github.com/yourusername/origin-vault.git
 - ✅ Vytvořit novou poznámku pomocí Ctrl+Shift+I
 - ✅ Najít jakoukoliv poznámku pomocí Ctrl+O
 - ✅ Pochopit základní folder strukturu (00-06)
-- ✅ Použít základní tagy (#💡idea, #🚀project)
+- ✅ Použít základní tagy (#💡atomic, #🚀effort)
 - ✅ Navigovat pomocí [[My PKM MOC]]
 
 **🎉 Gratulace! Máš funkční PKM systém.**

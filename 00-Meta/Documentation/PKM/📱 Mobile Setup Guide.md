@@ -2,7 +2,7 @@
 title: "Mobile Setup Guide"
 type: documentation
 tags:
-  - 📁documentation
+  - 📋documentation
   - 📱mobile
 created: "2026-03-15"
 modified: "2026-03-15"

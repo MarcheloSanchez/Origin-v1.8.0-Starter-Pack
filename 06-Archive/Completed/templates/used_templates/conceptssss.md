@@ -2,10 +2,7 @@
 title: "Progressive Summarization"
 type: "concept"
 tags:
-  - concepts
-  - note-taking
-  - information-processing
-  - learning
+  - 🎓learning
 definition: "A technique for distilling information through multiple passes of highlighting and summarization"
 category: "productivity"
 complexity: "intermediate"

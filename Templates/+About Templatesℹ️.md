@@ -6,7 +6,7 @@ status: 🔄active
 tags:
   - 📝template
   - 📋about
-  - 🏠system
+  - ⚙️system
 created: 2025-09-30
 modified: 2025-09-30
 related:

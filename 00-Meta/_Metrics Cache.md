@@ -2,7 +2,9 @@
 title: Metrics Cache
 type: system
 status: 🔄active
-tags: [⚙️system, 📊metrics, cache]
+tags:
+  - ⚙️system
+  - 📊metrics
 created: 2026-02-07
 modified: 2026-03-22
 ---

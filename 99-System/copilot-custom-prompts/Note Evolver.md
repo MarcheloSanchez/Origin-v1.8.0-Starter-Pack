@@ -3,7 +3,6 @@ title: Note Evolver
 type: prompt
 fileClass: Prompt
 tags:
-  - meta-skill
   - orchestrator
   - note-maturity
   - pkm

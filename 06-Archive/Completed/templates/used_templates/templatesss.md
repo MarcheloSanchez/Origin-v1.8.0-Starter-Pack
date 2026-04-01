@@ -2,9 +2,9 @@
 title: "Meeting Notes Template"
 type: "template"
 tags:
-  - templates
-  - meetings
-  - workflow
+  - 📦templates
+  - 🤝meeting
+  - 🔄workflow
 template_category: "meeting"
 use_case: "Standard meeting documentation"
 frequency: "daily"

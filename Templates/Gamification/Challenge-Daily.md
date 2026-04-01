@@ -3,7 +3,10 @@ title: Daily Challenge - <% tp.date.now("YYYY-MM-DD") %>
 type: challenge
 challenge_type: daily
 status: 🔄active
-tags: [gamification, challenge, daily]
+tags:
+  - gamification
+  - challenge
+  - 📅daily
 created: <% tp.date.now("YYYY-MM-DD") %>
 difficulty: easy
 xp_reward: 50

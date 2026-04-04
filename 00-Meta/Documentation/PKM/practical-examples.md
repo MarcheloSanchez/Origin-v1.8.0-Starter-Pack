@@ -1,3 +1,6 @@
+---
+modified: 2026-04-05
+---
 # Practical Examples & Case Studies
 
 ## Example Templates in Action

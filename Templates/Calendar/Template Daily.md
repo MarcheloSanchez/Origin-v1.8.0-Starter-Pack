@@ -44,9 +44,9 @@ highlight:
 
 ## Today's Focus
 🎯**Top 3 priorities**:
-1.
-2.
-3.
+1. 
+2. 
+3. 
 
 🏠**Areas needing attention**:
 

@@ -1,11 +1,14 @@
 ---
-title: "BACKLOG"
+
+title: BACKLOG
 kanban-plugin: board
-modified: 2026-03-03
+modified: 2026-04-05
+
 ---
 
 ## 📥Inbox (5)
 
+- [ ] [TUTORIAL] files are needed for future proof and creating examples for Playbooks. BUT - Nelíbí se mi jak to přikrášluje a mění strukturu. Např [[Tutorial - Daily - 2026-01-27]] nebo [[Tutorial - Weekly - 2026-W05]] 🤢
 - [ ] Přidat quick zkratku na otevření dashboard - home (šlo by bez pluginu?)
 - [ ] action button section for each button create entities
 - [ ] compare hotkeys from LYT and add to Origin
@@ -34,7 +37,6 @@ modified: 2026-03-03
 - [x] Template refactoring - modular architecture ✅ 2026-01-21
 	- Reduced from 95+ to ~40 templates
 	- New Meta/, Body/, Create/, Actions/ structure
-
 
 
 

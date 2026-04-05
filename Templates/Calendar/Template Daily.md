@@ -22,9 +22,7 @@ highlight:
 
 ⬆️:: [[05-Calendar]]
 [[05-Calendar/Daily/<% prevStr %>|⏪ Včera]] · [[05-Calendar/Weekly/<% weekStr %>|📅 Tento týden]] · [[05-Calendar/Daily/<% nextStr %>|Zítra ⏩]]
-
 # <% fullTitle %>
-
 
 ## 🎮 Daily Quest
 
@@ -39,9 +37,7 @@ highlight:
 - [ ] Complete today's daily challenge (+50 XP)
 
 **XP Earned Today:** 5 / ______
-
 ---
-
 ## Today's Focus
 🎯**Top 3 priorities**:
 1. 
@@ -61,7 +57,6 @@ highlight:
 > *Connections between ideas, people, and concepts discovered today*
 
 
-
 ## 💭 Reflections and ideas
 ### 🌞 What am I grateful for?
 
@@ -75,4 +70,3 @@ highlight:
 ## ⚡ Settings for tomorrow
 - [ ]
 - [ ]
-

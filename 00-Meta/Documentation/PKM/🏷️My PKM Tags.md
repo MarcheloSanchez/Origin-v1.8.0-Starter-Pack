@@ -324,10 +324,6 @@ G --> K[Relevant Folder]
 
 Most-used tag combinations for rapid tagging:
 
-📥 Processing Tags:
-- #📥inbox → #🔄active
-- #🔄active → #✅completed
-- #✅completed → #📦archived
 🚀 Priority Boost:
 - #priority/high
 - #urgent

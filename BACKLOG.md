@@ -2,12 +2,17 @@
 
 title: BACKLOG
 kanban-plugin: board
-modified: 2026-04-05
+modified: 2026-04-06
 
 ---
 
 ## 📥Inbox (5)
 
+- [ ] Hotkeys could be refined [[MOC Hotkeys]] says its self by looking at it
+- [ ] [[07-Prompts]] - needs refractoring. What in which folder and what I am using. And of course it will no be included in the STARTER PACK.
+- [ ] Quickadd - Insert callout does not work
+- [ ] [[backup-recovery]]
+- [ ] Quickadd status of the menu is no good
 - [ ] [TUTORIAL] files are needed for future proof and creating examples for Playbooks. BUT - Nelíbí se mi jak to přikrášluje a mění strukturu. Např [[Tutorial - Daily - 2026-01-27]] nebo [[Tutorial - Weekly - 2026-W05]] 🤢
 - [ ] Přidat quick zkratku na otevření dashboard - home (šlo by bez pluginu?)
 - [ ] action button section for each button create entities

@@ -68,7 +68,7 @@ related:
 fileClass: base|atomic|effort|source|moc|meeting|prompt|archive
 ```
 
-## 🔢 Ordered Metadata  #🧹tidy - yaml_orchestrator will be
+## 🔢 Ordered Metadata
 > Using yaml_reorder metadata will be ordered. Use this command: 
 
 [[Guide — YAML Orchestrator|Read more]]
@@ -237,7 +237,7 @@ evidence_quality: strong|moderate|weak|anecdotal
 related:
 - "[[Related Concept 1]]"
 - "[[Related Concept 2]]"
-fileClass: Atomic
+fileClass: atomic
 ```
 
 **Maturity Progression**:
@@ -281,7 +281,7 @@ blockers:
 related:
 - "[[Related Effort]]"
 - "[[Supporting Area]]"
-fileClass: Effort
+fileClass: effort
 ```
 
 **GTD-Enhanced Fields**:
@@ -323,7 +323,7 @@ notes_extracted: 10
 related:
 - "[[Related Source]]"
 - "[[Topic MOC]]"
-fileClass: Source
+fileClass: source
 ***
 ```
 
@@ -369,7 +369,7 @@ decisions_made:
 related:
 - "[[Project]]"
 - "[[Previous Meeting]]"
-fileClass: Meeting
+fileClass: meeting
 ***
 ```
 
@@ -405,7 +405,7 @@ shared_interests:
 related:
 - "[[Meetings]]"
 - "[[Projects Together]]"
-fileClass: Person
+fileClass: person
 ***
 ```
 
@@ -438,7 +438,7 @@ roi_score: high|medium|low
 related:
 - "[[Related Tool]]"
 - "[[Area Using Tool]]"
-fileClass: Tool
+fileClass: tool
 ***
 ```
 
@@ -473,7 +473,7 @@ recommendations:
 related:
 - "[[Trip Notes]]"
 - "[[People Met Here]]"
-fileClass: Place
+fileClass: place
 ***
 ```
 
@@ -499,7 +499,7 @@ wins_today: 3
 related:
 - "[[2025-W40]]"
 - "[[2025-09]]"
-fileClass: Daily
+fileClass: daily
 ***
 ```
 
@@ -521,7 +521,7 @@ lessons_learned: 3
 related:
 - "[[2025-09]]"
 - "[[Days of Week]]"
-fileClass: Weekly
+fileClass: weekly
 ***
 ```
 
@@ -551,7 +551,7 @@ outcome_summary: "What was achieved"
 lessons_learned: "Key takeaways"
 related:
 - "[[Successor Note]]"
-fileClass: Archived
+fileClass: archived
 ***
 ```
 
@@ -1037,83 +1037,9 @@ or [[🔢My PKM Metadata#**Energy & Context System (GTD inspired)**]]
 
 ## 🎯 Specialized Metadata Categories
 
-### [[Maturity Evolve]] (Nick Ang inspired)
-
-# PKM 4-State Pipeline: Seed → Note → Evergreen → Output
-## 🔄 **State Definitions**
-## 📤 **SEED** (Raw Capture)
-**Purpose:** Immediate capture without friction  
-**Entry:** Any new idea, thought, or information  
-**Characteristics:** Unstructured, minimal metadata, inbox location  
-**Exit Criteria:**
-- Has clear title and type assigned
-- Basic metadata complete (created, status, tags)
-- Moved to appropriate folder (02-Dots, 03-Efforts, 04-Sources)
-- **WIP Limit:** 15 items max
-## 🌱 **NOTE** (Structured Knowledge)
-**Purpose:** Developed, linked, actionable knowledge  
-**Entry:** Seed with complete metadata and proper location  
-**Characteristics:** Structured content, 2+ internal links, clear context  
-**Exit Criteria:**
-- 5+ internal links (dense connection)
-- Referenced by 2+ other notes (proven value)
-- Content is stable (no major rewrites needed)
-- **WIP Limit:** 25 items max
-## 🌲 **EVERGREEN** (Stable Reference)
-**Purpose:** Foundational knowledge, frequently referenced  
-**Entry:** Note with proven stability and connection density  
-**Characteristics:** Comprehensive, authoritative, frequently linked  
-**Exit Criteria:**
-- Content published/shared externally
-- Actionable output created (article, presentation, tool)
-- Value demonstrated beyond personal use
-- **WIP Limit:** No limit (stable state)
-## 🍓 **OUTPUT** (External Value)
-**Purpose:** Knowledge transformed into external deliverable  
-**Entry:** Evergreen content ready for external consumption  
-**Characteristics:** Published, shared, monetized, or productized  
-**Exit Criteria:** Archive when no longer relevant/active  
-**WIP Limit:** No limit (achievement state)
-
----
-## ✅ **Note Promotion Checklist**
-## 📤 → 🌱 (Seed to Note)
--  Title is clear and descriptive
--  Type assigned (atomic/project/source/meeting)
--  Basic tags applied (#context, #priority)
--  Moved from +Inbox to proper folder
--  Content has structure (headers, paragraphs)
--  At least 1 internal link added
-## 🌱 → 🌲 (Note to Evergreen)
--  5+ internal links (outbound)
--  2+ backlinks (inbound references)
--  Content is comprehensive and complete
--  No major rewrites needed in 30+ days
--  Referenced in MOC or index note
--  Evidence quality is strong/moderate
-## 🌲 → 🍓 (Evergreen to Output)
--  Content adapted for external audience
--  Published on external platform
--  Generates external engagement/value
--  Creates actionable outcome
--  Demonstrates real-world application
--  Archive-ready when lifecycle complete
-
-**Workflow integration:**
-- Weekly Recall & Reflect aktualizuje maturity
-- Dataview sleduje distribution across maturity levels
-- Templates automaticky začínają jako 📤seed
-
-```
-maturity: 📤seed      \# Seedbox - items actively working on
-maturity: 🌱seedling  \# Grown from literature, needs incubation
-maturity: 🪴sapling   \# Ready for dense linking
-maturity: 🌲evergreen \# Stable, fundamental knowledge
-maturity: 🍓fruit     \# Original work, publishable
-```
+### ![[Maturity Evolve#PKM 4-State Pipeline Seed → Note → Evergreen → Output]] (Nick Ang inspired)
 
 ### **Energy & Context System (GTD inspired)**
-- [ ] #🌱develop not implemented
 **Workflow integration:**
 - Daily planning podle current energy level
 - Context-based task filtering
@@ -1155,42 +1081,6 @@ priority: low     \# Urgent, Not Important (Delegate)
 priority: someday \# Neither Urgent nor Important (Eliminate)
 
 ```
-
-## 🤖 Automation Integration
-#🌱develop 
-### Templater Auto-Fill Scripts - APPLIED 
-
-```
-// Auto-metadata pro nové poznámky
-title: "<% tp.file.title %>"
-created: "<% tp.date.now("YYYY-MM-DD") %>"
-modified: "<% tp.date.now("YYYY-MM-DD") %>"
-author: "Your Name"
-```
-
-// Context-based auto-tagging - NOT APPLIED 
-```
-<%
-const hour = moment().hour();
-let context = "work";
-if (hour < 9 || hour > 17) context = "home";
-%>
-
-context: <%= context %>
-```
-
-
-// Auto-maturity based on folder
-```
-<%
-const folder = tp.file.folder(true);
-let maturity = "📤seed";
-if (folder.includes("Sources")) maturity = "🌱seedling";
-%>
-maturity: <%= maturity %>
-```
-
-
 
 ## Vault-Specific Metadata
 

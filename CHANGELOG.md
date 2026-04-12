@@ -3,7 +3,7 @@ title: "CHANGELOG"
 Version: 1.9.1
 Last Backup: 2026-03-02
 template-status: origin_dev
-modified: 2026-04-05
+modified: 2026-04-06
 ---
 ⬆️:: [[🏡Home]]
 [[TODO]] - [[BACKLOG]] - [[RELEASE NOTES]]
@@ -12,9 +12,21 @@ modified: 2026-04-05
 ---
 > Vault modifications and changes log.
 ---
+# 12/04/26
+## Life HQ Dashboard
+
+- Created `🧪Life HQ - Experimental.md` — single-page life dashboard with 6 collapsed sections (Career, Health, Learning, Personal, Tools, Today)
+- Created `00-Meta/Life Dashboard Wireframe.canvas` — visual layout reference for dashboard design
+- Fixed broken periodic note links: replaced inline Dataview wiki links with `obsidian-advanced-uri` command URIs (`periodic-notes:open-daily-note`, `periodic-notes:open-weekly-note`)
+- Career section: title shows overdue effort count + sessions/wk; body adds effort table with completion %, due date, next actions
+- Health section: title counts energy/mood log entries from daily notes; body shows 7-day table with energy · mood · highlight
+- Learning section: added queued sources count to title
+- Personal section: added areas count to title
+- Tools section: added modified-today count + total notes + sources count to title and body
+---
 # 05/04/26
 - Added [[obsidian-ooda-agent.js]]
-
+- Updated [[🔢My PKM Metadata]], [[🏛️My PKM Governance]], [[]]
 ---
 # 01/04/26
 ## Inbox Processing

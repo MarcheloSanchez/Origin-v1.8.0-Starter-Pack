@@ -129,8 +129,9 @@ A Markdown notes app where you link ideas with `[[anchors]]` 🔗, build simple 
 | **Bases**             | All stages         | Dashboards (store filter YAML).                   |
 | **n8n**               | undefined          | GCal → daily/effort notes; append highlights.     |
 |                       |                    |                                                   |
-[[MOC - Automation Command Center|Read more...]]
-#🧹tidy  - create as embeded obsidian plugins note
+[[MOC - Automation Command Center|Read more about automation]]
+or [[MOC Hotkeys|Read more about hotkeys]]
+or [[Obsidian Plugins & Features|Read more about plugins]]
 
 ---
 ### **6️⃣ Contextual Dashboards** 
@@ -142,7 +143,7 @@ A Markdown notes app where you link ideas with `[[anchors]]` 🔗, build simple 
 - ✅ **Tasks due today**
 
 **[[🏡Home]]** 
-Human-curated quick links + “one-glance” counters. #🧹tidy  Implement dasboards
+Human-curated quick links + “one-glance” counters. 
 - **Dashboards:** Focused, filterable views (Bases) by type/lifecycle:
     - **Prompt Dashboard:** Favorites | Active | Draft | Archive
     - **Efforts Dashboard:** Active projects by priority/due

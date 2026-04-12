@@ -3,7 +3,7 @@ Test out in template mode
 
 ## Custom Callout System 
 
-#🧹tidy  - Not applied because right now are Nick_Custom_Callout doing something. Think about in future
+Not applied because right now are Nick_Custom_Callout doing something. Think about in future
 
 ### Core Callouts
 

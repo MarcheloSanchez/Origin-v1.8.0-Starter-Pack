@@ -1,7 +1,7 @@
 ---
 title: Origin Efficiency Sprint
 date: 2026-04-12
-status: active
+status: 🔄active
 type: plan
 ---
 

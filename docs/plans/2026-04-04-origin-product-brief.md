@@ -1,7 +1,7 @@
 ---
 title: Origin — Product Brief v1
 date: 2026-04-04
-status: active
+status: 🔄active
 type: product-brief
 ---
 

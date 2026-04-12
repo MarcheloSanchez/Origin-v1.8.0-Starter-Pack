@@ -173,7 +173,6 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 ## Quick Lookup
 
-- Full glossary: `memory/glossary.md`
 - System architecture: `99-System/` docs
 - Workflows: `00-Meta/Documentation/PKM/🔁My PKM Workflows.md`
 - Tag system: `00-Meta/Documentation/PKM/🏷️My PKM Tags.md`

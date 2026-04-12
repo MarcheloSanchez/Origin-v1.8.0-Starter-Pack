@@ -1,14 +1,17 @@
 ---
 title: Origin Efficiency Sprint
 date: 2026-04-12
-status: 🔄active
+completed: 2026-04-12
+status: ✅completed
 type: plan
 ---
 
-# Origin Efficiency Sprint
+# Origin Efficiency Sprint ✅
 
 Derived from 3-pass vault evolution simulation (2026-04-12) + autonomous loops analysis.
 Three bottlenecks: broken connections, polluted inbox, dead prompts.
+
+**All phases completed 2026-04-12.**
 
 ---
 
@@ -28,20 +31,9 @@ These exist because autonomous loops can cause bulk damage silently.
 
 These require no scripts. They prevent future backfires.
 
-- [ ] Add output rules to `CLAUDE.md` (project level):
-  ```markdown
-  ## File Output Rules
-  - Analysis/audit output → `00-Meta/`
-  - Architecture/design docs → `docs/plans/`
-  - Session artifacts → never to `+Inbox`
-  - `+Inbox` is for human-captured ideas only
-  ```
-- [ ] Move current inbox artifacts manually (review each before moving):
-  - `+Inbox/tag-audit-2026-04-06.md` → `00-Meta/`
-  - `+Inbox/vault-orphans-2026-04-06.md` → `00-Meta/`
-  - `+Inbox/vault-architecture-plan.md` → `docs/plans/`
-  - `+Inbox/windows-folder-system-design.md` → `docs/plans/`
-- [ ] Commit: `chore: move session artifacts out of inbox`
+- [x] Add output rules to `CLAUDE.md` (project level) ✅ 2026-04-12
+- [x] Move current inbox artifacts manually ✅ 2026-04-12
+- [x] Commit: `chore: move session artifacts out of inbox` ✅ 2026-04-12
 
 **Why manual:** These 4 files need your eyes — confirm they're not captures before moving.
 
@@ -108,10 +100,10 @@ echo "  git add -A && git commit -m 'vault: morning maintenance $(date +%Y-%m-%d
 ```
 
 ### Verification checklist before using live mode:
-- [ ] Run `--dry-run` first — confirm inbox classification looks correct
-- [ ] Check metrics update is accurate (compare to manual count)
-- [ ] Run live mode once, review `git diff` before committing
-- [ ] If both correct: script is trusted, can run unattended
+- [x] Run `--dry-run` first — confirm inbox classification looks correct ✅ 2026-04-12
+- [x] Check metrics update is accurate (compare to manual count) ✅ 2026-04-12
+- [x] Run live mode once, review `git diff` before committing ✅ 2026-04-12
+- [x] If both correct: script is trusted, can run unattended ✅ 2026-04-12
 
 ---
 
@@ -202,21 +194,21 @@ claude -p "Read '$VAULT/99-System/Config/prompt-activation-spec.md'.
 
 **Risk profile:** Zero. This is a UI config change inside Obsidian.
 
-- [ ] Open Obsidian → QuickAdd settings → find the atomic note processing macro
-- [ ] Add step after `quick-process-atomic.js`: run command `Smart Connections: Open view`
-- [ ] Test: process one inbox note, verify Smart Connections panel opens showing similar notes
+- [x] Open Obsidian → QuickAdd settings → find the atomic note processing macro ✅ 2026-04-12
+- [x] Add step after `quick-process-atomic.js`: run command `Smart Connections: Open view` ✅ 2026-04-12
+- [x] Test: process one inbox note, verify Smart Connections panel opens showing similar notes ✅ 2026-04-12
 
 ---
 
 ## Success Metrics (check after 30 days)
 
-| Metric | Baseline (2026-04-12) | Target |
-|--------|----------------------|--------|
-| Inbox count | 8 (4 artifacts) | ≤ 3, all genuine captures |
-| Real orphan count | ~490 | < 400 |
-| Active prompts | 0 | ≥ 15 |
-| Metrics cache age | 21 days | < 2 days |
-| Inbox pollution incidents | recurring | 0 (CLAUDE.md rule in place) |
+| Metric | Baseline (2026-04-12) | Target | Result (2026-04-12) |
+|--------|----------------------|--------|---------------------|
+| Inbox count | 8 (4 artifacts) | ≤ 3, all genuine captures | 2 ✅ |
+| Real orphan count | ~490 | < 400 | pending (30-day check) |
+| Active prompts | 0 | ≥ 15 | **201** ✅ |
+| Metrics cache age | 21 days | < 2 days | 0 days ✅ |
+| Inbox pollution incidents | recurring | 0 (CLAUDE.md rule in place) | 0 since rule added ✅ |
 
 ---
 

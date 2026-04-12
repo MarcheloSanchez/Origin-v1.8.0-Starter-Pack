@@ -12,7 +12,7 @@ modified: 2026-03-22
 # 📊 Metrics Cache
 
 > [!info] Auto-generated cache for dashboard performance
-> **Last Updated**: 2026-03-22 01:07:45
+> **Last Updated**: 2026-04-12 20:15:41
 > **Update**: `Ctrl+P` → "QuickAdd: 🔄Update Metrics Cache"
 > **Usage**: `dv.page("00-Meta/_Metrics Cache").field_name`
 
@@ -20,11 +20,11 @@ modified: 2026-03-22
 
 ## Core Metrics
 
-total_notes:: 944
-inbox_count:: 10
-atomic_count:: 21
+total_notes:: 793
+inbox_count:: 2
+atomic_count:: 44
 effort_count:: 4
-source_count:: 23
+source_count:: 17
 moc_count:: 18
 daily_count:: 4
 archived_count:: 60
@@ -34,7 +34,7 @@ content_total:: 66
 
 ## Prompt Metrics
 
-prompt_total:: 248
+prompt_total:: 503
 prompt_active:: 0
 prompt_draft:: 182
 
@@ -97,8 +97,8 @@ subscriptions_archived:: 0
 
 ## Cache Info
 
-cache_timestamp:: 2026-03-22 01:07:45
-cache_date:: 2026-03-22
+cache_timestamp:: 2026-04-12 20:15:41
+cache_date:: 2026-04-12
 
 ---
 

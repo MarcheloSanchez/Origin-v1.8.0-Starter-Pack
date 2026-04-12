@@ -80,6 +80,17 @@ Engine: `99-System/Scripts/Templater_script.js` — provides `inject_meta_if_mis
 | `status-picker.js` / `status-progression.js` | Status workflow UI & automation |
 | `process-note-safe.js` | Combo macro: Classify + Autofill Metadata + Normalize YAML |
 
+## Maintenance Scripts (`claude-scripts/`)
+
+Run from repo root via Git Bash:
+
+| Script | Usage | Purpose |
+|--------|-------|---------|
+| `vault-morning.sh` | `bash claude-scripts/vault-morning.sh [--dry-run]` | Daily: inbox triage + metrics cache refresh |
+| `vault-desloppify.sh` | `bash claude-scripts/vault-desloppify.sh [--dry-run\|--last-commit]` | Post-edit: YAML cleanup (maturity, status, deadline→due) |
+
+Always ends with manual `git diff` + commit prompt — never auto-commits.
+
 ## YAML Frontmatter Schema
 
 ```yaml

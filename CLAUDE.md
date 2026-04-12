@@ -9,6 +9,20 @@ Obsidian PKM vault (v1.9.1 → v2.0). PARA-inspired 8-layer architecture. Czech 
 | **Calendar Review Hub** | ✅ Complete — guide at `00-Meta/Documentation/PKM/📅 Calendar Review Hub Guide.md` |
 | **Bases Daily View** | Planning |
 
+## File Output Rules
+
+When Claude Code creates files during a session, place them here — never in `+Inbox`:
+
+| Output type | Target folder |
+|-------------|---------------|
+| Audit reports, orphan lists, tag audits | `00-Meta/` |
+| Architecture plans, design docs | `docs/plans/` |
+| Sprint plans, implementation plans | `docs/plans/` |
+| Windows/system design docs | `docs/plans/` |
+| Scripts, utilities | `99-System/Scripts/` or `claude-scripts/` |
+
+`+Inbox` is for human-captured ideas only. Session artifacts go elsewhere.
+
 ## Vault Architecture
 
 **8-layer folder structure** — Capture → Process → Organize → Connect → Review → Archive

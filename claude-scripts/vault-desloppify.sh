@@ -18,6 +18,13 @@ VAULT="C:/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_START
 MODE="${1:-}"
 TODAY=$(date +%Y-%m-%d)
 
+# Validate mode argument
+if [ -n "$MODE" ] && [ "$MODE" != "--dry-run" ] && [ "$MODE" != "--last-commit" ]; then
+  echo "Error: unknown mode '$MODE'"
+  echo "Usage: $0 [--dry-run|--last-commit]"
+  exit 1
+fi
+
 # Status emoji map
 declare -A STATUS_MAP=(
   ["inbox"]="📥inbox"

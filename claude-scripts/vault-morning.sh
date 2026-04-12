@@ -17,6 +17,13 @@ VAULT="C:/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_START
 DRY_RUN="${1:-}"
 TODAY=$(date +%Y-%m-%d)
 
+# Validate argument
+if [ -n "$DRY_RUN" ] && [ "$DRY_RUN" != "--dry-run" ]; then
+  echo "Error: unknown argument '$DRY_RUN'"
+  echo "Usage: $0 [--dry-run]"
+  exit 1
+fi
+
 echo ""
 echo "================================================"
 echo " Origin Vault Morning Maintenance — $TODAY"

@@ -12,7 +12,43 @@ modified: 2026-04-06
 ---
 > Vault modifications and changes log.
 ---
+# 16/04/26
+## Orbit Wayfinder & QuickAdd Reorganization
+
+### New Script
+- Created `99-System/Scripts/generate-orbit.js` — QuickAdd UserScript that generates/refreshes `[!orbit]` Wayfinder callouts on active notes; type-aware sibling heuristics, idempotent, archive/temporal guards
+
+### QuickAdd Registration
+- Registered `🧭 Generate Orbit Callout` in `.obsidian/plugins/quickadd/data.json` inside `MENU: 🔢YAML - Automation ⚡` (Macro-wrapped UserScript pattern)
+- Later moved to new `MENU: 🔧 Maintain Note` during menu reorganization
+
+### QuickAdd Menu Reorganization
+- Consolidated 13 loose root-level entries + `MENU: TEST - 🔁 WF` graveyard into 3 new menus
+- Added `MENU: 🔧 Maintain Note` — Orbit Callout, Maturity-Evolve, Quick Tag, Sel→Note
+- Added `MENU: 📦 Vault Ops` — Classify, AutoFill, Quick Process ×3, Batch, Metrics Cache, Archive Dailies, Changelog
+- Added `MENU: 🔗 Insert` — Insert Callout, Table of Contents, Link
+- Deleted: `MENU: TEST - 🔁 WF`, `TEST MACRO`, `MOVE HABIT TRACKER DASHBOARD`, duplicate `maturity-evolve`
+
+---
+
 # 12/04/26
+## Origin Efficiency Sprint
+
+### Maintenance Scripts
+- Fixed `claude-scripts/vault-desloppify.sh` — replaced `grep -qP` (PCRE) with `grep -qE` for Windows Git Bash compatibility; added input validation guard for unknown arguments
+- Fixed `claude-scripts/vault-morning.sh` — added input validation guard for unknown arguments
+- Both scripts: dry-run verified, live run verified, trusted for unattended use
+
+### Prompt Activation (07-Prompts)
+- Fixed malformed YAML frontmatter in 198/201 Reference prompts (`owner: "MM"---` closing delimiter glued to last field)
+- Added `prompt_status: active` to all 201 Reference prompts (0 → 201 active prompts)
+- Sprint success metric achieved: target ≥15 active prompts, result 201 ✅
+
+### Documentation
+- `CLAUDE.md` — added Maintenance Scripts section documenting `vault-morning.sh` and `vault-desloppify.sh` usage
+- `CLAUDE.md` — removed dead reference to non-existent `memory/glossary.md`
+- `docs/plans/2026-04-12-origin-efficiency-sprint.md` — marked all phases complete, updated success metrics table
+
 ## Life HQ Dashboard
 
 - Created `🧪Life HQ - Experimental.md` — single-page life dashboard with 6 collapsed sections (Career, Health, Learning, Personal, Tools, Today)

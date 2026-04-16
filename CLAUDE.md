@@ -108,6 +108,16 @@ related: []
 
 Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS/CIS_{FIELD_NAME}.md` (30+ files).
 
+## QuickAdd Integration
+
+- Scripts run as QuickAdd UserScripts: `module.exports = async (args) => { const { app, Notice } = window; ... }`
+- QuickAdd input prompt: `app.plugins.plugins.quickadd.api.inputPrompt(title, description, defaultValue)`
+- Macros registered in `.obsidian/plugins/quickadd/data.json` — must add entries there for buttons to work
+- **Registration pattern for UserScripts**: wrap in a `Macro` choice (`"type": "Macro"`) with a `commands[]` array containing `{"type": "UserScript", "path": "..."}` — raw UserScript entries inside Multi `choices[]` do NOT work
+- **Trailing spaces in data.json names**: QuickAdd entry names sometimes have trailing spaces — always `.strip()` both sides when looking up by name in Python scripts
+- **Bulk edits to data.json**: use `python - << 'PYEOF'` inline script; backup first with `shutil.copy`; validate after with `json.load()`
+- Button plugin syntax: `type command` + `action QuickAdd: MenuName: ChoiceName`
+
 ## Two-Tier Type System
 
 - **Full types (10)**: atomic, effort, source, moc, meeting, prompt, person, place, tool, area — have FileClass + full templates + metadata schemas

@@ -21,7 +21,7 @@ highlight:
 ---
 
 ⬆️:: [[05-Calendar]]
-[[05-Calendar/Daily/<% prevStr %>|⏪ Včera]] · [[05-Calendar/Weekly/<% weekStr %>|📅 Tento týden]] · [[05-Calendar/Daily/<% nextStr %>|Zítra ⏩]]
+[[05-Calendar/Daily/<% prevStr %>|⏪ Yesterday]] · [[05-Calendar/Weekly/<% weekStr %>|📅 This Week]] · [[05-Calendar/Daily/<% nextStr %>|Tommorow ⏩]]
 # <% fullTitle %>
 
 ## 🎮 Daily Quest

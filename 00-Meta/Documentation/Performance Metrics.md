@@ -26,13 +26,12 @@ cssclasses:
   - wide-page
 obsidianUIMode: preview
 ---
-
-> [!orbit]- Quick Navigation
+> [!orbit]- Wayfinder | [[🏡Home]] | [[+Inbox]] | [[🗺️My PKM MOC]] | [[📍Note Classification Guide]] | [[MOC - Prompts]]
 > **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics Dashboard|📈 Metrics]]
+> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] 
 >
 > **Analytics Focus:**
-> [[🧠GTD Weekly Review|📅 Review]] • [[🧹Cleaning Lady|🧹 Cleanup]] • [[Tags - Status Check|🏷️ Tags]] • [[📍Note Classification Guide|📍 Guide]]
+> [[🧭 Review HQ|📅 Review]] • [[🧹Cleaning Lady|🧹 Cleanup]] • [[Tags - Status Check|🏷️ Tags]] • [[📍Note Classification Guide|📍 Guide]]
 >
 > **Maintenance:** `Ctrl+P` → 🔄Update Metrics Cache • 📦Archive Old Dailies
 

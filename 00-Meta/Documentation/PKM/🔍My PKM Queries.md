@@ -14,12 +14,9 @@ related:
   - "[[✅My PKM Tasks]]"
   - "[[Views]]"
 ---
-> [!orbit] Wayfinder | [[🗺️My PKM MOC]] | [[🏛️My PKM Governance]] | [[🔢My PKM Metadata]] | 🔍My PKM Queries |  [[📁My PKM Folders]] |  [[🏷️My PKM Tags]] |  [[🔁My PKM Workflows]] | [[✅My PKM Tasks]] | [[ℹ️My PKM Naming Convention]]
-
+> [!orbit] Wayfinder | [[🗺️My PKM MOC]] | [[🏛️My PKM Governance]] | [[🔢My PKM Metadata]] | 🔍My PKM Queries |  [[📁My PKM Folders]] |  [[🏷️My PKM Tags]] |  [[🔁My PKM Workflows]] | [[✅My PKM Tasks]] | [[ℹ️My PKM Naming Convention]]  | [[🪪 Vault Identity]] |
 
 ⬆️:: [[🏡Home]]
-
-
 # 🔍 PKM Queries Library
 
 > [!info]+ **⚡ Queries Overview**
@@ -29,7 +26,6 @@ related:
 > **Maintenance**: Test and update queries quarterly
 
 ---
-
 ## 📊 Query Categories
 
 

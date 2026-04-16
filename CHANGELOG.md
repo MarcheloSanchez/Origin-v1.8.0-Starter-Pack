@@ -3,7 +3,7 @@ title: "CHANGELOG"
 Version: 1.9.1
 Last Backup: 2026-03-02
 template-status: origin_dev
-modified: 2026-04-06
+modified: 2026-04-16
 ---
 ⬆️:: [[🏡Home]]
 [[TODO]] - [[BACKLOG]] - [[RELEASE NOTES]]
@@ -15,6 +15,8 @@ modified: 2026-04-06
 # 16/04/26
 ## Orbit Wayfinder & QuickAdd Reorganization
 
+fixed daily - eng navigation 
+New hotkeys visualisation - [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf]]
 ### New Script
 - Created `99-System/Scripts/generate-orbit.js` — QuickAdd UserScript that generates/refreshes `[!orbit]` Wayfinder callouts on active notes; type-aware sibling heuristics, idempotent, archive/temporal guards
 

@@ -58,7 +58,7 @@ modified: 2026-03-03
 - Updated [[👁️Dashboard]] - also for future search for queries[[archived_Dashboard]]
 - Updated [[Performance Metrics]]
 - Added [[Universal Kanban Settings]]
-- Added [[practical-examples]] but dont know where and how to use 
+- Added [[practical-examples TBD to be Tutorial material]] but dont know where and how to use 
 ---
 # 01/10/25
 - Updated Archived folders for better searchability. Stays grey in search but at the bottom. Applied to [99-System] + [Templates]

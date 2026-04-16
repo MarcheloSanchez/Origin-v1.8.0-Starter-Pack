@@ -146,7 +146,7 @@ FASDF
 
 > [!infobox]+ Collapsible Infobox
 >  # Name 
->  ![[Image.png|cover hsmall]] 
+>  ![[IMG_hotkeys_cheatsheet_obsidian_from_pdf.png|cover hsmall]] 
 
 
 

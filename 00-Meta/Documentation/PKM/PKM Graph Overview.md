@@ -1,3 +1,12 @@
+---
+tags:
+  - 🌱develop
+  - ⏳waiting
+  - ✅tasks
+  - ❔question
+  - 🎨design
+up: "[[🗺️My PKM MOC]]"
+---
 
 ```mermaid
 graph TD

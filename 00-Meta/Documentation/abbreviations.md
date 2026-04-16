@@ -1,4 +1,14 @@
+---
+up:
+  - 🏡Home
+title: abbreviations
+type: undefined
+tags:
+created: 2026-03-03
+modified: 2026-04-16
+---
 ⬆️:: [[🏡Home]]
+
 # 📝 Core Workflow Abbreviations
 ## Status & Lifecycle
 - **WIP** - Work in Progress (alternative to `🔄active`)

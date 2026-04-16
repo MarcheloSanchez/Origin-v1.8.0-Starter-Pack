@@ -1,14 +1,15 @@
 ---
+up: "[[🏡Home]]"
 title: "⚡Workflow Quick Reference"
 type: guide
-status: 🔄active
-created: 2026-01-16
-modified: 2026-01-16
 tags:
   - 🔄workflow
   - 📋automation
-up: "[[🏡Home]]"
+status: 🔄active
+created: 2026-01-16
+modified: 2026-01-16
 ---
+> [!orbit] Wayfinder | [[🏡Home]] | [[Performance Metrics]] | [[+Inbox]]
 
 # ⚡ Workflow Quick Reference
 
@@ -448,30 +449,31 @@ up: "[[🏡Home]]"
 ### Browse by Topic
 
 **Use folder indexes:**
-- [[01-MOCs/_Index]] - Maps of Content
-- [[02-Dots/100-Atomics/_Index]] - Atomic ideas
-- [[03-Efforts/_Index]] - Projects & tasks
-- [[04-Sources/_Index]] - External content
+- [[01-MOCs]] - Maps of Content
+- [[100-Atomics]] - Atomic ideas
+- [[03-Efforts]] - Projects & tasks
+- [[04-Sources]] - External content
 
 **Or use dashboards:**
 - [[👁️Dashboard]] - Daily agenda view
 - [[TODO]] - Task-focused
-- [[📈Performance Metrics Dashboard]] - Analytics
+- [[Performance Metrics]] - Analytics
 
 ---
 
 ## ⌨️ Keyboard Shortcuts Reference
 
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+P` | Command Palette |
-| `Ctrl+Shift+F` | Global search |
-| `Ctrl+D` | Create daily note |
-| `Ctrl+Shift+D` | Create weekly note |
-| `Ctrl+N` | New note |
-| `Ctrl+O` | Quick switcher |
-| `Ctrl+E` | Toggle edit/preview |
-| `Ctrl+,` | Settings |
+| Shortcut       | Action              |
+| -------------- | ------------------- |
+| `Ctrl+P`       | Command Palette     |
+| `Ctrl+Shift+F` | Global search       |
+| `Ctrl+D`       | Create daily note   |
+| `Ctrl+Shift+D` | Create weekly note  |
+| `Ctrl+N`       | New note            |
+| `Ctrl+O`       | Quick switcher      |
+| `Ctrl+E`       | Toggle edit/preview |
+| `Ctrl+,`       | Settings            |
+more here [[Obsidian Hotkeys - Compact Cheatsheet]]
 
 ---
 
@@ -529,13 +531,13 @@ up: "[[🏡Home]]"
 
 ### Health Indicators
 
-| Metric | Target | Status |
-|--------|--------|--------|
-| Inbox count | <20 | [[+Inbox]] |
-| Connection density | >70% | [[📈Performance Metrics Dashboard\|Metrics]] |
-| Orphan notes | <10% | [[📈Performance Metrics Dashboard\|Metrics]] |
-| Processing rate | >80% | [[TODO\|GTD]] |
-| Weekly captures | 20-40 | [[📈Performance Metrics Dashboard\|Metrics]] |
+| Metric             | Target | Status                           |
+| ------------------ | ------ | -------------------------------- |
+| Inbox count        | <20    | [[+Inbox]]                       |
+| Connection density | >70%   | [[Performance Metrics\|Metrics]] |
+| Orphan notes       | <10%   | [[Performance Metrics\|Metrics]] |
+| Processing rate    | >80%   | [[TODO\|GTD]]                    |
+| Weekly captures    | 20-40  | [[Performance Metrics\|Metrics]] |
 
 ---
 
@@ -544,11 +546,11 @@ up: "[[🏡Home]]"
 - [[📍Note Classification Guide]] - Where does this note belong?
 - [[🏡Home]] - System overview
 - [[🗺️My PKM MOC]] - Complete map of vault
-- [[🧠GTD Weekly Review]] - Weekly processing routine
+- [[🧭 Review HQ|Review Hub]] - Weekly processing routine
 - [[Templates/Add-Sections/Navigation/Unified-Nav]] - Add navigation to notes
 
 ---
 
 *Quick Reference Version: 1.0*
-*Last Updated: 2026-01-16*
+*Last Updated: 2026-04-16*
 *Print this page for offline reference!*

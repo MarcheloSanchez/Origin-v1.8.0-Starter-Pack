@@ -10,6 +10,7 @@ tags:
   - guide
 up: "[[🏡Home]]"
 ---
+> [!orbit] Wayfinder | [[🏡Home]] | [[Performance Metrics]] | [[+Inbox]]
 
 # 📍 Where Does This Note Belong?
 

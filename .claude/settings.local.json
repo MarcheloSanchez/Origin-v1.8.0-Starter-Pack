@@ -3,7 +3,9 @@
     "allow": [
       "Bash(dir:*)",
       "Bash(findstr:*)",
-      "Bash(cmd /c:*)"
+      "Bash(cmd /c:*)",
+      "Read(//c/Users/MarcelMachanec/Projects/origin-minimal-mcp/**)",
+      "Read(//c/Users/MarcelMachanec/Projects/origin-minimal-mcp/docs//**)"
     ]
   }
 }

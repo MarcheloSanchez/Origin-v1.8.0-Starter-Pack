@@ -1,15 +1,17 @@
 ---
-title: "Obsidian Hotkeys - Compact Cheatsheet"
+up: "[[MOC - Automation Command Center]]"
 in:
   - "[[MOC Hotkeys]]"
+title: Obsidian Hotkeys - Compact Cheatsheet
 tags:
   - 💯cheatsheet
   - 🚤boat
 status: 🔄active
 modified: 2026-03-03
 ---
-⬆️:: [[🏡Home]]
-Exported here: [[Obsidian_Hotkeys_Cheatsheet_Landscape_Purple.pdf|👉Click for pdf here👈]]
+> [!orbit] Wayfinder | [[MOC - Automation Command Center]] | [[🏡Home]] | [[🗺️My PKM MOC]]
+
+Exported here: [[Obsidian_Hotkeys_Cheatsheet_Landscape_Purple.pdf|👉Click for pdf here👈]] and here refined [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf|👉Click for pdf v2 here👈]]
 # 🔑 Obsidian Hotkeys (Simplified)
 
 > Clean, minimal, grouped by purpose. Fold sections to keep the note compact.

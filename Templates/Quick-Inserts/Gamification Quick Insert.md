@@ -18,6 +18,6 @@
 - [ ] Daily challenge (+50 XP)
 
 **Quick Links:**
-- [[00-Meta/🎮Gamification Dashboard|Gamification Dashboard]]
+- [[🎮Gamification Dashboard|Gamification Dashboard]]
 - [[99-System/CIS/gamification-activities|Activity Points]]
 - [[99-System/CIS/gamification-achievements|Achievements]]

@@ -197,7 +197,7 @@ if (recentAchievements.length > 0) {
 
 ## Related
 
-- [[00-Meta/🎮Gamification Dashboard|Gamification Dashboard]]
+- [[🎮Gamification Dashboard|Gamification Dashboard]]
 - [[99-System/CIS/gamification-achievements|All Achievements Reference]]
 - [[99-System/CIS/gamification-levels|Level System]]
 

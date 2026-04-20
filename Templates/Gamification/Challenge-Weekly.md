@@ -215,7 +215,7 @@ const thisWeek = challenges[rotation];
 
 ## Related
 
-- [[00-Meta/🎮Gamification Dashboard|Gamification Dashboard]]
+- [[🎮Gamification Dashboard|Gamification Dashboard]]
 - [[05-Calendar/Weekly/<% tp.date.now("YYYY-[W]WW") %>|This Week's Note]]
 - [[99-System/CIS/gamification-activities|Activity Points]]
 - [[99-System/CIS/gamification-achievements|Achievements]]

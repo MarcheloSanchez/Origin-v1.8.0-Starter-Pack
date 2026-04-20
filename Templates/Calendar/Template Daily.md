@@ -27,7 +27,7 @@ highlight:
 ## 🎮 Daily Quest
 
 > [!tip] Today's Challenge: <% ds.format("dddd") %>
-> Check [[00-Meta/🎮Gamification Dashboard#Daily Challenges|today's challenge]] for bonus XP!
+> Check [[🎮Gamification Dashboard#Daily Challenges|today's challenge]] for bonus XP!
 
 **Quick XP Opportunities:**
 - [ ] Create daily note (+5 XP) ✅

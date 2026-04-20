@@ -1,5 +1,5 @@
 ---
-title: "00-Meta"
+title: 00-Meta
 up: "[[🏡Home]]"
 in:
   - "[[Views]]"

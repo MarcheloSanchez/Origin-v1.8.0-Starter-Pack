@@ -1,5 +1,5 @@
 ---
-title: "Dataview Practicesheet"
+title: Dataview Practicesheet
 up: "[[🏡Home]]"
 tags:
   - 💯cheatsheet

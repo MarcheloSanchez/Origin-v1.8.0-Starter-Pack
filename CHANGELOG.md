@@ -14,7 +14,7 @@ modified: 2026-04-16
 ---
 # 16/04/26
 ## Orbit Wayfinder & QuickAdd Reorganization
-
+upgraded [[🏡Home]] to another level and [[archived_🏡Home_20260416]]
 fixed daily - eng navigation 
 New hotkeys visualisation - [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf]]
 ### New Script

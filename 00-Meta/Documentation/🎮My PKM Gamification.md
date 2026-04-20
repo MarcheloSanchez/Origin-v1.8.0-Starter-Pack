@@ -703,7 +703,7 @@ A: Prestige system, achievement completion, habit maintenance, helping others.
 ## Resources
 
 ### Core Files
-- [[00-Meta/🎮Gamification Dashboard|Main Dashboard]]
+- [[🎮Gamification Dashboard|Main Dashboard]]
 - [[99-System/CIS/gamification-activities|Activity Points]]
 - [[99-System/CIS/gamification-levels|Level System]]
 - [[99-System/CIS/gamification-achievements|Achievements]]
@@ -750,4 +750,4 @@ A: Prestige system, achievement completion, habit maintenance, helping others.
 
 ---
 
-*Ready to play? Open the [[00-Meta/🎮Gamification Dashboard|Dashboard]] and start your journey!* 🚀
+*Ready to play? Open the [[🎮Gamification Dashboard|Dashboard]] and start your journey!* 🚀

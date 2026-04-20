@@ -1,5 +1,5 @@
 ---
-title: "Prompt Dashboard OLD"
+title: Prompt Dashboard OLD
 status: 📦archived
 up: "[[🏡Home]]"
 tags:

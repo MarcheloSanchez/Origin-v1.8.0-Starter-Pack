@@ -1,157 +1,113 @@
 ---
-title: 🏡Home
+title: 🧪 Life HQ — Experimental
 type: 🏡Home
 status: 🔄active
 tags:
   - ⚙️system
-created: 2025-09-29
-modified: 2025-09-29
+  - 📊dashboard
+created: 2026-04-12
+modified: 2026-04-16
 obsidianUIMode: preview
 cssclasses:
   - wide-page
 ---
+
 > [!orbit]- Quick Navigation
-> **Core Dashboards:**
-> [[🏡Home|🏡 Home]] • [[👁️Dashboard|📊 Dashboard]] • [[TODO|✅ TODO]] • [[🎮Gamification Dashboard|🎮 Game]] • [[Performance Metrics|📈Performance]]
->
-> **Quick Actions:**
-> [[+Inbox|📥 Inbox]] • [[🗺️My PKM MOC|🗺️ PKM]] • [[🎯GTD Weekly Review - Template|📅 Review]] • [[TODO|✅ TODO]] • [[📍Note Classification Guide|📍 Guide]]
->
-> **Automation:** `Ctrl+P` → ⚡Quick Process (Atomic/Source/Effort) • 🤖Smart Classify • 📦Batch Process • 📝Auto-Fill Metadata
->
-> **Specialized:** [[MOC - Automation Command Center|⚡ Automation]] • [[Obsidian Plugins & Features|🛠️ Plugins]] • [[MOC - Prompts|🤖 Prompts]]
+> **Hub:** [[🏡Home|🏡 Home]] • [[🧭 Review HQ|🧭 Review]] • [[+Inbox|📥 Inbox]] • [[TODO|✅ TODO]]
+> **Drill-downs:** [[👁️Dashboard|📊 Dashboard]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics|📈 Metrics]] • [[🔍My PKM Queries|🔍 Queries]]
+> **Automation:** [[⚡ Automation Menu|⚡ Menu]] • `Ctrl+P` → Quick Process • 🤖 Smart Classify
 
-The place where you always come back, that's **home**. 🦔🍎
+# 🏡 Life HQ
 
-> [!Map]- > # Atlas
-> > *Where would you like to go?*
-> 
-> > [!orbit] Atlas Wayfinder |  [[➕Add]] | [[Relate]] | [[Communicate publicly]] | [[Library]] | [[People Map]] |  [[Sources Map]] | [[Thinking Map]] | [[Concepts Map]] |  [[Life Map]] |  [[🗺️My PKM MOC]]  | [[Learn MOC]] | [[IT MOC]] | [[Finance MOC]] | [[Games MOC]] | [[Habits Map]] 
->
-> ![[IMG_Atlas.png]]
-
-> [!Calendar]- > # Calendar
-> > *What's on your mind?* 
-> 
-> 
-> > [!hint] >  To journal, focus your day, or to capture a spark,  
-> >  **Daily**  CTRL+D | **Weekly**  CTRL+SHIFT+D | **Monthly**  CTRL+SHIFT+M
-> >  To capture specific type of things, go to [[_Logs|Logs]].
-> >  Shortcut for [[TODO]] - ADD Shorcut for insert Daily  - Add to XP log, 
-> 
-> 
-> > [!COMPASS] > To broadly reflect
-> >   
-> > - Go to [[Plán a revize |Plan and Review]].
-> > - To learn more about time travel, go to [[05-Calendar]].
-> > ![[TheRing.jpg]]
-
-> [!Training]- > # Efforts
-> > *What can you work on?* 
-> 
-> For a concentrated view, go to [[03-Efforts]].
->
-> Use this to keep priorities in order and the quickly adjust your bandwidth as needed. 
-> 
-> > [!Multi-column] 
-> > 
-> > > [!Milestone]+ ## 🔥On
-> > > The heat is `ON`🟥 and going. link to definiton of done - [[GtD - Getting Things Done|GTD]].
-> > > 
-> > > ``` dataview
-> > >TABLE WITHOUT ID
-> > >file.link as "",
-> > > rank as "Rank"
-> > > FROM "03-Efforts/On"
-> > >SORT rank desc
-> > >LIMIT 5
-> > >```
-> > 
-> > > [!Recycle]+ ## ♻️ Ongoing
-> > > Efforts that are just there doing its stuff  `Develop`, `Maintain`,  `Reflect`, 
-> > > [[GtD - Getting Things Done|GTD]] LINK to notes principles and processes. 👉 [[🗺️My PKM MOC]]
-> > >``` dataview
-> > >TABLE WITHOUT ID
-> > >file.link as "",
-> > >rank as "Rank"
-> > >FROM "03-Efforts/Ongoing"
-> > >SORT rank desc
-> > >LIMIT 5
-> > >```
-> > 
-> > > [!Blocks]+ ### 〰️ Simmering
-> > >Efforts can easily move from `on` to `simmering` in the background.
-> > >
-> > >``` dataview
-> > >TABLE WITHOUT ID
-> > >file.link as "",
-> > >rank as "Rank"
-> > >FROM "03-Efforts/Simmering"
-> > >SORT rank desc
-> > >LIMIT 5
-> > >```
-> 
-> ![[POKEMON 1.jpg]]
-
-![[pale-blue-dot-banner.jpg]]
+> `$= "📅 " + moment().format("dddd D. MMMM YYYY")` · [Dnes →](obsidian://advanced-uri?commandid=periodic-notes%3Aopen-daily-note) · [Week →](obsidian://advanced-uri?commandid=periodic-notes%3Aopen-weekly-note) `$= "(" + moment().format("gggg-[W]ww") + ")"`
 
 ---
-## Rychlý přístup
 
-## 📊 Quick Access Dashboards
-- [[🧭 Review HQ|👁️ Review & Process Notes]]
-- [[TODO|✅ Workflow & Tasks]]
-- [[🎮Gamification Dashboard|🎮 Progress Tracking]]
-- [[📈Vault Analytics|📈 Metrics & Insights]]
+> [!Multi-column]
+>
+> > [!calendar]- 📅 Today
+> > **[Open Daily Note →](obsidian://advanced-uri?commandid=periodic-notes%3Aopen-daily-note)**
+> >
+> > ```tasks
+> > not done
+> > due today
+> > short mode
+> > ```
+>
+> > [!award]- 🎯 Focus · `$= dv.pages('"03-Efforts/On"').length` on · `$= dv.pages('"03-Efforts/Ongoing"').length` ongoing
+> >
+> > ```dataview
+> > TABLE WITHOUT ID file.link AS "", rank AS "↑"
+> > FROM "03-Efforts/On"
+> > SORT rank DESC
+> > LIMIT 4
+> > ```
+>
+> > [!hint]- ⚡ Quick Actions
+> > [[⚡ Automation Menu#Action MENU#Capture|→ Open Automation Menu]]
+> >
+> > | | Shortcut |
+> > |---|---|
+> > | 📥 Capture | `Ctrl+N` |
+> > | 📝 Daily | `Ctrl+Shift+D` |
+> > | 🚀 Project | `Ctrl+P` |
+> > | 💡 Atomic | `Ctrl+A` |
+> > | 📚 Source | `Ctrl+S` |
 
-## Recent AI Sessions
-![[_Sessions_Data.base]]
-
-> [!MAP]- 🧭 Quick Access
-> #🧹tidy maybe outdated. Needs manual rewrite. Below Favorites seems better decision
-> - [[📈Performance Metrics]]
-> - [[Views]]
-> - [[🌱Incubator]]
-> - [[🧹Cleaning Lady]]
-> - [[Visual hotkeys]]
-> - [[Icon Package]]
-> - 🚀[[Google search CHEATSHEET]]
-> - 📊[[📈Performance Metrics]]
-> - 📖[[List of Custom Callouts]]
-> - 📖[[Debug Guide]]
-> - [[Guide — YAML Orchestrator]]
-## Favorites ( ❤️ or ⭐)
-```dataview
-LIST
-FROM #⭐ or  #❤️
-SORT file.mtime DESC
-```
-## Recents
-
-### Last Opened
-```dataviewjs
-dv.list(app.workspace.recentFileTracker.lastOpenFiles.map(x=>dv.fileLink(x)).slice(0, 10))
-```
 ---
-### Last Modified
-```dataview
-LIST
-FROM ""
-SORT file.mtime DESC
-LIMIT 7
-```
-> [!MAP]- MOCs
-> - [[+Inbox]] - Incoming notes
-> - [[00-Meta]] - Meta files about vault 
-> - [[01-MOCs]] - Maps of Contents 
-> - [[02-Dots]] - Categorized notes
-> - [[03-Efforts]] - Overview of projects
-> - [[04-Sources]] - Overview of sources
-> - [[05-Calendar]] - Overview of daily notes and other journalling 
-> - [[06-Archive]] - Overview of archived notes
-> - [[99-System]]
-> - [[07-Prompts]]
-> - [[Templates]]
-Více zde: [[+Aboutℹ️]]
 
-![[pale-blue-dot-banner.jpg]]
+> [!Training]- 🚀 Career & Productivity · `$= dv.pages('"03-Efforts/On"').length` on · `$= dv.pages('"03-Efforts/Ongoing"').length` ongoing · `$= dv.pages('"03-Efforts/On"').where(p => p.due && dv.date(p.due) < dv.date("today")).length` overdue · `$= dv.pages('"05-Calendar/Sessions"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days")).length` sessions/wk
+>
+> ```dataview
+> TABLE WITHOUT ID file.link AS "Effort", completion_percentage + "%" AS "Done", due AS "Due", next_actions AS "Next"
+> FROM "03-Efforts/On"
+> SORT completion_percentage ASC
+> ```
+>
+> **All efforts →** ![[03-Efforts/_Efforts_Data.base]]
+>
+> **Sessions →** ![[05-Calendar/Sessions/_Sessions_Data.base]]
+
+> [!attention]- 💪 Health · `$= dv.pages('"05-Calendar/Daily"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days") && p.energy).length` energy logs/wk · `$= dv.pages('"05-Calendar/Daily"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days") && p.mood).length` mood logs/wk
+>
+> ```dataview
+> TABLE WITHOUT ID file.link AS "Day", energy AS "⚡ Energy", mood AS "😐 Mood", highlight AS "★ Highlight"
+> FROM "05-Calendar/Daily"
+> WHERE date >= date(today) - dur(7 days)
+> SORT file.name DESC
+> LIMIT 7
+> ```
+>
+> **Links:** [[210-Health]] · [[Habits Map]]
+
+> [!Map]- 📚 Learning · `$= dv.pages('"04-Sources"').where(p => p.status === "reading").length` reading · `$= dv.pages('"04-Sources"').where(p => p.status === "queue").length` queued · `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` seedlings
+>
+> ![[04-Sources/_Sources_Data.base]]
+>
+> **Recent ideas →** ![[02-Dots/100-Atomics/Ideas/_Ideas_Data.base]]
+
+> [!COMPASS]- 👤 Personal · `$= dv.pages('"02-Dots/300-People"').length` people · `$= dv.pages('"02-Dots/200-Areas"').length` areas · `$= dv.pages('"03-Efforts"').where(p => p.tags && p.tags.includes("personal")).length` goals
+>
+> ![[02-Dots/300-People/_People_Data.base]]
+>
+> **Areas →** ![[02-Dots/200-Areas/_Areas_Data.base]]
+>
+> **Links:** [[Life Map]] · [[Finance MOC]] · [[People Map]]
+
+> [!Blocks]- 🛠️ Tools & System · `$= dv.pages('"+Inbox"').length` inbox · `$= dv.pages().where(p => p.file.mtime >= dv.date("today")).length` modified today · `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` seedlings
+>
+> | Metric | |
+> |---|---|
+> | 📥 Inbox | `$= dv.pages('"+Inbox"').length` |
+> | 📝 Modified today | `$= dv.pages().where(p => p.file.mtime >= dv.date("today")).length` |
+> | 🌱 Seedlings | `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` |
+> | 📚 Total notes | `$= dv.pages().length` |
+> | 🗂️ Sources | `$= dv.pages('"04-Sources"').length` |
+>
+> **Tools →** ![[02-Dots/500-Tools/_Tools_Data.base]]
+>
+> **Drill-downs:** [[🧭 Review HQ|🧭 Review HQ]] · [[Performance Metrics|📈 Metrics]] · [[🎮Gamification Dashboard|🎮 Game]] · [[🔍My PKM Queries|🔍 Queries]]
+
+---
+
+*[[🧭 Review HQ|🧭 Full Review]] · [[+Inbox|📥 Inbox]] · [[01-MOCs/01-MOCs|🗺️ MOCs]] · [[06-Archive|📦 Archive]]*

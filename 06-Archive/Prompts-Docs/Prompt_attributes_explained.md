@@ -1,5 +1,5 @@
 ---
-title: "Prompt_attributes_explained"
+title: Prompt_attributes_explained
 status: 📦archived
 up: "[[🏡Home]]"
 tags:

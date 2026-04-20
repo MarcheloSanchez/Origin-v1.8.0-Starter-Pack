@@ -1,6 +1,6 @@
 ---
 up: "[[🏡Home]]"
-title: "⚡Workflow Quick Reference"
+title: ⚡Workflow Quick Reference
 type: guide
 tags:
   - 🔄workflow

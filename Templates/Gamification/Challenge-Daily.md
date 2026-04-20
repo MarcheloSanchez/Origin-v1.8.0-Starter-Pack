@@ -180,7 +180,7 @@ const today = challenges[dayOfWeek];
 
 ## Related
 
-- [[00-Meta/🎮Gamification Dashboard|Gamification Dashboard]]
+- [[🎮Gamification Dashboard|Gamification Dashboard]]
 - [[05-Calendar/Daily/<% tp.date.now("YYYY-MM-DD") %>|Today's Daily Note]]
 - [[99-System/CIS/gamification-activities|Activity Points]]
 

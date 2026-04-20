@@ -1,5 +1,5 @@
 ---
-title: "MODULAR dataview syntax"
+title: MODULAR dataview syntax
 up: "[[🏡Home]]"
 tags:
   - 🛜IT

@@ -6,7 +6,7 @@ tags:
   - ⚙️system
   - 📊dashboard
 created: 2026-04-12
-modified: 2026-04-16
+modified: 2026-04-21
 obsidianUIMode: preview
 cssclasses:
   - wide-page
@@ -16,12 +16,9 @@ cssclasses:
 > **Hub:** [[🏡Home|🏡 Home]] • [[🧭 Review HQ|🧭 Review]] • [[+Inbox|📥 Inbox]] • [[TODO|✅ TODO]]
 > **Drill-downs:** [[👁️Dashboard|📊 Dashboard]] • [[🎮Gamification Dashboard|🎮 Game]] • [[📈Performance Metrics|📈 Metrics]] • [[🔍My PKM Queries|🔍 Queries]]
 > **Automation:** [[⚡ Automation Menu|⚡ Menu]] • `Ctrl+P` → Quick Process • 🤖 Smart Classify
-
-# 🏡 Life HQ
+# 🏡 Home
 
 > `$= "📅 " + moment().format("dddd D. MMMM YYYY")` · [Dnes →](obsidian://advanced-uri?commandid=periodic-notes%3Aopen-daily-note) · [Week →](obsidian://advanced-uri?commandid=periodic-notes%3Aopen-weekly-note) `$= "(" + moment().format("gggg-[W]ww") + ")"`
-
----
 
 > [!Multi-column]
 >
@@ -53,8 +50,6 @@ cssclasses:
 > > | 🚀 Project | `Ctrl+P` |
 > > | 💡 Atomic | `Ctrl+A` |
 > > | 📚 Source | `Ctrl+S` |
-
----
 
 > [!Training]- 🚀 Career & Productivity · `$= dv.pages('"03-Efforts/On"').length` on · `$= dv.pages('"03-Efforts/Ongoing"').length` ongoing · `$= dv.pages('"03-Efforts/On"').where(p => p.due && dv.date(p.due) < dv.date("today")).length` overdue · `$= dv.pages('"05-Calendar/Sessions"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days")).length` sessions/wk
 >

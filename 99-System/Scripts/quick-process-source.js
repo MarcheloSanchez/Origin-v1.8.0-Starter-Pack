@@ -477,7 +477,8 @@ async function updateFrontmatter(file, content, metadata) {
           }
         }
       } else {
-        lines.push(`${key}: ${value}`);
+        const v = typeof value === 'string' && value.startsWith('[[') ? `"${value}"` : value;
+        lines.push(`${key}: ${v}`);
       }
     }
   }
@@ -493,7 +494,8 @@ async function updateFrontmatter(file, content, metadata) {
           }
         }
       } else if (typeof value !== 'object') {
-        lines.push(`${key}: ${value}`);
+        const v = typeof value === 'string' && value.startsWith('[[') ? `"${value}"` : value;
+        lines.push(`${key}: ${v}`);
       }
     }
   }

@@ -208,13 +208,15 @@ Add to existing **Home.md** (or 🏡Home if it exists):
 
 ---
 
-### TIER 2: Optional Enhancements (Future)
+### TIER 2: ❌ Won't Do — Not Justified (2026-04-26)
 
-- [ ] Create lightweight type templates (Dashboard, Guide, System, About)
-- [ ] Add lightweight type QuickAdd commands
-- [ ] Advanced workflows (Smart Linking, Effort Breakdown, etc.)
+- [x] ~~Create lightweight type templates (Dashboard, Guide, System, About)~~ — **Skipped**
+- [x] ~~Add lightweight type QuickAdd commands~~ — **Skipped**
+- [x] ~~Advanced workflows (Smart Linking, Effort Breakdown, etc.)~~ — **Skipped**
 
-**Effort**: 4-6 hours (lower priority)
+**Rationale**: Lightweight types (dashboard, guide, system, about, tutorial, challenge) are created too rarely to benefit from a QuickAdd template (typically 1–4 instances per type across vault lifetime). Challenge templates already exist as Static templates at `Templates/Gamification/`. Editing `data.json` adds maintenance + breakage risk for marginal gain. Manual creation with inline YAML is faster than maintaining 6 templates + a sub-menu.
+
+**Effort saved**: 4-6 hours
 
 ---
 
@@ -229,9 +231,7 @@ Add to existing **Home.md** (or 🏡Home if it exists):
    - Add dashboard links to Home
    - Reason: Quick win, improves UX
 
-3. **Later**: TIER 2 (if time permits)
-   - Lightweight types
-   - Advanced workflows
+3. ~~**Later**: TIER 2 (if time permits)~~ — **Closed 2026-04-26: Won't do, not justified.**
 
 ---
 
@@ -296,4 +296,5 @@ These are working but not referenced in menu (might be internal dependencies):
 
 *Audit completed: 2026-02-19*
 *Tier 0 & 1 implemented: 2026-02-21*
-*Status: Tier 0 & 1 complete — Tier 2 optional/future*
+*Tier 2 closed (won't do): 2026-04-26*
+*Status: ✅ Priority 5 closed — Tier 0 & 1 complete, Tier 2 declined*

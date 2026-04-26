@@ -12,6 +12,22 @@ modified: 2026-04-16
 ---
 > Vault modifications and changes log.
 ---
+# 26/04/26
+## Priority 5 Closure & YAML Wikilink Fix
+
+### CIS_TAG.md Created
+- Created `99-System/CIS/CIS_TAG.md` — canonical tag enum (78 tags grouped by content type, status, lifecycle, system, priority/, energy/, context/, source/, status/, review/, lang/) following bare-list CIS pattern
+
+### QuickAdd Audit Closed
+- Updated `00-Meta/Documentation/PKM/QuickAdd Audit Results.md` — marked TIER 2 as "Won't do — not justified" with rationale (lightweight type templates not worth maintenance overhead given their low creation frequency)
+- Audit footer updated to reflect Priority 5 closed (TIER 0 & 1 done, TIER 2 declined)
+
+### YAML Wikilink Serialization Bug Fixed
+- Fixed bug in 4 process scripts where `up: [[🏡Home]]` was emitted unquoted, causing downstream YAML re-parsing to convert it to broken list form (`up:\n  - [[🏡Home]]`)
+- Files patched: `99-System/Scripts/auto-metadata.js`, `quick-process-atomic.js`, `quick-process-effort.js`, `quick-process-source.js`
+- Fix: detect string values starting with `[[` and wrap in double quotes before serialization
+
+---
 # 16/04/26
 ## Orbit Wayfinder & QuickAdd Reorganization
 upgraded [[🏡Home]] to another level and [[archived_🏡Home_20260416]]

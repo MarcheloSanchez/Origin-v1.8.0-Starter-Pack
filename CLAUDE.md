@@ -187,3 +187,15 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 - Workflows: `00-Meta/Documentation/PKM/🔁My PKM Workflows.md`
 - Tag system: `00-Meta/Documentation/PKM/🏷️My PKM Tags.md`
 - Tag health monitoring: `00-Meta/Documentation/Tags - Status Check.md`
+
+## Wiki Knowledge Base (claude-obsidian)
+
+Path: `C:/Users/MarcelMachanec/Documents/Karpathy/claude-obsidian`
+
+When you need context not already in this vault (external concepts, research, ingested sources):
+1. Read `wiki/hot.md` first — recent context cache from last session
+2. If not enough, read `wiki/index.md` — master catalog of all wiki pages
+3. If you need domain details, read the relevant sub-index under `wiki/concepts/` or `wiki/entities/`
+4. Only then drill into specific wiki pages
+
+Do NOT read the wiki for Origin vault structure questions, PARA organization, or Dataview queries — use Origin's own docs for those.

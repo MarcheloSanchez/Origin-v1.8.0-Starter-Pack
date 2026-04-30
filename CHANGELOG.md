@@ -12,7 +12,26 @@ modified: 2026-04-16
 ---
 > Vault modifications and changes log.
 ---
+# 30/04/26
+## reform-note Skill & Missing Exemplars
+
+### Exemplar Notes Created
+- Created `Templates/_Examples/Person Filled Out.md` — filled-out exemplar for person type (all body chapters populated with realistic fictional content)
+- Created `Templates/_Examples/Place Filled Out.md` — filled-out exemplar for place type (coworking space example, key details table populated)
+- Created `Templates/_Examples/Tool Filled Out.md` — filled-out exemplar for tool type (Obsidian as example, cheatsheet and use-cases tables populated)
+
+---
 # 26/04/26
+## Vault Workflow Architecture & MCP Audit
+
+### Skills Use Cases Doc Rewritten
+- Rewrote `00-Meta/Documentation/PKM/Skills Use Cases - Vault Lifecycle.md` — corrected 6 errors (wrong skill names, missing tool layers, split memory types) and added full Tool Inventory, Decision Framework, Lifecycle Roadmap, and Quick Trigger Checklist sections
+
+### ADR System Initialized
+- Created `docs/adr/` directory with `README.md` index, `template.md`, and first record
+- Created `docs/adr/0001-vault-workflow-architecture.md` — ADR capturing 3-layer workflow decision (origin-minimal MCP → Bash fallback → Claude Code skills), prompted by finding only 2/8 MCP tools functional
+
+---
 ## Priority 5 Closure & YAML Wikilink Fix
 
 ### CIS_TAG.md Created

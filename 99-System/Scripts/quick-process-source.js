@@ -133,13 +133,13 @@ module.exports = async (args) => {
       } else {
         // Manual folder selection
         const folders = [
-          "04-Sources/410-Knowledge/Books",
-          "04-Sources/410-Knowledge/Articles",
-          "04-Sources/420-Media/Videos",
-          "04-Sources/420-Media/Podcasts",
-          "04-Sources/430-Guides",
-          "04-Sources/440-Meetings",
-          "04-Sources/450-Quotes",
+          "04-Sources/Books",
+          "04-Sources/Articles",
+          "04-Sources/Media",
+          "04-Sources/Media",
+          "04-Sources/Guides",
+          "04-Sources/Meetings",
+          "04-Sources/Articles",
           "04-Sources" // Root
         ];
 
@@ -206,15 +206,15 @@ module.exports = async (args) => {
  */
 function suggestSourceSubfolder(sourceType, content) {
   const typeMap = {
-    'Book': '04-Sources/410-Knowledge/Books',
-    'Article': '04-Sources/410-Knowledge/Articles',
-    'Video': '04-Sources/420-Media/Videos',
-    'Podcast': '04-Sources/420-Media/Podcasts',
-    'Guide/Tutorial': '04-Sources/430-Guides',
-    'Documentation': '04-Sources/430-Guides',
-    'Course': '04-Sources/410-Knowledge',
-    'Quote': '04-Sources/450-Quotes',
-    'Meeting': '04-Sources/440-Meetings'
+    'Book': '04-Sources/Books',
+    'Article': '04-Sources/Articles',
+    'Video': '04-Sources/Media',
+    'Podcast': '04-Sources/Media',
+    'Guide/Tutorial': '04-Sources/Guides',
+    'Documentation': '04-Sources/Guides',
+    'Course': '04-Sources/Articles',
+    'Quote': '04-Sources/Articles',
+    'Meeting': '04-Sources/Meetings'
   };
 
   // Try direct match
@@ -226,27 +226,27 @@ function suggestSourceSubfolder(sourceType, content) {
   const body = content.toLowerCase();
 
   if (body.includes('meeting') || body.includes('schůzka') || body.includes('participants')) {
-    return '04-Sources/440-Meetings';
+    return '04-Sources/Meetings';
   }
 
   if (body.includes('video') || body.includes('watch') || body.includes('youtube')) {
-    return '04-Sources/420-Media/Videos';
+    return '04-Sources/Media';
   }
 
   if (body.includes('podcast') || body.includes('listen') || body.includes('episode')) {
-    return '04-Sources/420-Media/Podcasts';
+    return '04-Sources/Media';
   }
 
   if (body.includes('book') || body.includes('kniha') || body.includes('chapter')) {
-    return '04-Sources/410-Knowledge/Books';
+    return '04-Sources/Books';
   }
 
   if (body.includes('article') || body.includes('článek') || body.includes('blog')) {
-    return '04-Sources/410-Knowledge/Articles';
+    return '04-Sources/Articles';
   }
 
   if (body.includes('guide') || body.includes('tutorial') || body.includes('how to')) {
-    return '04-Sources/430-Guides';
+    return '04-Sources/Guides';
   }
 
   // Default

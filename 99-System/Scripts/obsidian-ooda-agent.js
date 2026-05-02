@@ -102,7 +102,7 @@ const FOLDER_MAP = {
   person:  "02-Knowledge/People",
   place:   "02-Knowledge/Places",
   tool:    "02-Knowledge/Tools",
-  prompt:  "07-Prompts",
+  prompt:  "99-System/Prompts",
   system:  "99-System",
   daily:   "05-Calendar/Daily",
   weekly:  "05-Calendar/Weekly",

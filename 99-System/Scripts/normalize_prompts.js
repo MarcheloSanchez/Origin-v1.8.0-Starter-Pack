@@ -22,8 +22,8 @@ module.exports = async (rawArgs) => {
   const mode = (args.mode || "legacy").toLowerCase();
   const dryRun = !!args.dryRun;
 
-  const LEGACY_FOLDER = "07-Prompts/Prompts_org";
-  const COPILOT_FOLDER = "07-Prompts/Drafts/copilot-custom-prompts";
+  const LEGACY_FOLDER = "99-System/Prompts/Prompts_org";
+  const COPILOT_FOLDER = "99-System/Prompts/Drafts/copilot-custom-prompts";
 
   const listMarkdownFiles = async (dir) => {
     const out = [];

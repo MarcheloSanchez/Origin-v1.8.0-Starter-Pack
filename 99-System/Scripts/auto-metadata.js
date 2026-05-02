@@ -154,7 +154,7 @@ function detectTypeFromPath(path) {
   if (path.includes('05-Calendar/Monthly')) return 'monthly';
   if (path.includes('05-Calendar/Quarterly')) return 'quarterly';
   if (path.includes('05-Calendar/Yearly')) return 'yearly';
-  if (path.includes('07-Prompts')) return 'prompt';
+  if (path.includes('99-System/Prompts')) return 'prompt';
 
   return 'undefined';
 }
@@ -249,7 +249,7 @@ function suggestParentLink(path) {
   if (path.includes('04-Sources/440-Meetings')) parent = '[[440-Meetings]]';
   if (path.includes('04-Sources')) parent = '[[04-Sources]]';
   if (path.includes('05-Calendar')) parent = '[[05-Calendar]]';
-  if (path.includes('07-Prompts')) parent = '[[07-Prompts]]';
+  if (path.includes('99-System/Prompts')) parent = '[[99-System/Prompts]]';
 
   return parent;
 }

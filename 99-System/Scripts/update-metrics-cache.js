@@ -96,7 +96,7 @@ async function calculateMetrics() {
     }).length;
 
   // Prompt counts
-  const promptFiles = app.vault.getMarkdownFiles().filter(f => f.path.startsWith('07-Prompts'));
+  const promptFiles = app.vault.getMarkdownFiles().filter(f => f.path.startsWith('99-System/Prompts'));
   const promptTotal = promptFiles.filter(f => {
     const cache = app.metadataCache.getFileCache(f);
     return cache?.frontmatter?.type === 'prompt';

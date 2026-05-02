@@ -366,7 +366,7 @@ module.exports = () => {
   const getPromptCount = (dv) => {
     try {
       return safeLength(
-        dv.pages('"07-Prompts"').where(p => p.type === "prompt")
+        dv.pages('"99-System/Prompts"').where(p => p.type === "prompt")
       );
     } catch (e) {
       console.error('metrics-core: getPromptCount error:', e);
@@ -382,7 +382,7 @@ module.exports = () => {
   const getActivePromptCount = (dv) => {
     try {
       return safeLength(
-        dv.pages('"07-Prompts"').where(p =>
+        dv.pages('"99-System/Prompts"').where(p =>
           p.type === "prompt" &&
           (p.prompt_status === "active" || p.prompt_status === "winner")
         )
@@ -401,7 +401,7 @@ module.exports = () => {
   const getDraftPromptCount = (dv) => {
     try {
       return safeLength(
-        dv.pages('"07-Prompts"').where(p =>
+        dv.pages('"99-System/Prompts"').where(p =>
           p.type === "prompt" && p.prompt_status === "draft"
         )
       );

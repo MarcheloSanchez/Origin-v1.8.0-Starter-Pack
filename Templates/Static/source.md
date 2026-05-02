@@ -7,7 +7,7 @@ fileClass: source
 tags:
   - 📚source
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 source_type:
 source_author:
 source_date:

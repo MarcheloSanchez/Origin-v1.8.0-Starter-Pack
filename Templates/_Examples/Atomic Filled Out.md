@@ -5,7 +5,7 @@ fileClass: Atomic
 tags:
   - 🌱develop
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 processing_priority: normal
 created: 2025-08-24
 modified: 2025-08-24

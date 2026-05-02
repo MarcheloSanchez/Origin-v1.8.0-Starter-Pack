@@ -7,7 +7,7 @@ fileClass: atomic
 tags:
   - 💡atomic
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 processing_priority: normal
 created:
 modified:

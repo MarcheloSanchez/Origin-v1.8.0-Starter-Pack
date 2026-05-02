@@ -7,7 +7,7 @@ fileClass: moc
 tags:
   - 🗺️MOC
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 priority:
 completeness:
 coverage_areas:

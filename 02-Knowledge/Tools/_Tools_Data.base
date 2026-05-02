@@ -1,0 +1,99 @@
+filters:
+  and:
+    - file.folder.contains("500-Tools")
+    - '!file.name.startswith("+")'
+    - '!file.name.startswith("500")'
+    - '!file.name.contains("Template")'
+formulas:
+  Days Since Review: (today() - file.mtime).days.round()
+properties:
+  file.name:
+    displayName: "🛠️ Tool"
+  status:
+    displayName: "⚡ Status"
+  mastery_level:
+    displayName: "🎓 Mastery"
+  usage_frequency:
+    displayName: "📊 Usage"
+  cost:
+    displayName: "💰 Cost"
+  platform:
+    displayName: "💻 Platform"
+  rating:
+    displayName: "⭐ Rating"
+  roi_score:
+    displayName: "📈 ROI"
+  tags:
+    displayName: "🔖 Tags"
+  formula.Days Since Review:
+    displayName: "📅 Days Stale"
+views:
+  - type: table
+    name: "📋 All Tools"
+    order:
+      - file.name
+      - status
+      - mastery_level
+      - usage_frequency
+      - cost
+      - platform
+      - rating
+      - formula.Days Since Review
+      - tags
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 240
+      mastery_level: 110
+      usage_frequency: 100
+      cost: 80
+      platform: 120
+      rating: 80
+  - type: cards
+    name: "🃏 Tools Cards"
+    order:
+      - file.name
+      - mastery_level
+      - platform
+      - cost
+      - rating
+    limit: 100
+  - type: table
+    name: "⚠️ Needs Review"
+    filters:
+      and:
+        - status == "🔄active"
+        - (today() - file.mtime).days > 30
+    order:
+      - file.name
+      - mastery_level
+      - usage_frequency
+      - roi_score
+      - formula.Days Since Review
+      - tags
+    sort:
+      - property: formula.Days Since Review
+        direction: DESC
+    columnSize:
+      file.name: 260
+      formula.Days Since Review: 110
+  - type: table
+    name: "🎓 Mastery Pipeline"
+    order:
+      - file.name
+      - mastery_level
+      - usage_frequency
+      - rating
+      - roi_score
+      - formula.Days Since Review
+    sort:
+      - property: mastery_level
+        direction: ASC
+      - property: usage_frequency
+        direction: DESC
+    columnSize:
+      file.name: 260
+      mastery_level: 110
+      rating: 80
+      roi_score: 80

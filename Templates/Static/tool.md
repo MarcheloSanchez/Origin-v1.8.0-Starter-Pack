@@ -7,7 +7,7 @@ fileClass: tool
 tags:
   - 🧰tool
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 tool_category:
 mastery_level:
 created:

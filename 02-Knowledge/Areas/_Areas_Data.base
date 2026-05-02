@@ -1,0 +1,104 @@
+filters:
+  and:
+    - file.folder.contains("200-Areas")
+    - '!file.name.startswith("+")'
+    - '!file.name.startswith("200")'
+    - '!file.name.contains("Template")'
+formulas:
+  Days Since Review: (today() - file.mtime).days.round()
+properties:
+  file.name:
+    displayName: "📌 Area"
+  status:
+    displayName: "⚡ Status"
+  maturity:
+    displayName: "🌱 Maturity"
+  priority:
+    displayName: "🔺 Priority"
+  completeness:
+    displayName: "📊 Completeness"
+  coverage_areas:
+    displayName: "🗺️ Coverage"
+  review_frequency:
+    displayName: "🔄 Review Freq"
+  formula.Days Since Review:
+    displayName: "📅 Days Since Review"
+views:
+  - type: table
+    name: "📋 All Areas"
+    order:
+      - file.name
+      - status
+      - maturity
+      - priority
+      - completeness
+      - coverage_areas
+      - formula.Days Since Review
+      - review_frequency
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 260
+      status: 100
+      completeness: 130
+      coverage_areas: 200
+      formula.Days Since Review: 130
+  - type: cards
+    name: "🃏 Areas Cards"
+    order:
+      - file.name
+      - status
+      - maturity
+      - priority
+      - completeness
+    limit: 50
+  - type: table
+    name: "⚠️ Needs Review"
+    filters:
+      and:
+        - status == "🔄active"
+        - (today() - file.mtime).days > 30
+    order:
+      - file.name
+      - completeness
+      - priority
+      - formula.Days Since Review
+      - review_frequency
+    sort:
+      - property: formula.Days Since Review
+        direction: DESC
+    columnSize:
+      file.name: 280
+      formula.Days Since Review: 130
+  - type: table
+    name: "✅ Active Areas"
+    filters:
+      and:
+        - status == "🔄active"
+    order:
+      - file.name
+      - maturity
+      - priority
+      - completeness
+      - formula.Days Since Review
+    sort:
+      - property: priority
+        direction: DESC
+    columnSize:
+      file.name: 280
+  - type: table
+    name: "📊 By Completeness"
+    order:
+      - file.name
+      - completeness
+      - status
+      - coverage_areas
+      - formula.Days Since Review
+    sort:
+      - property: completeness
+        direction: ASC
+    columnSize:
+      file.name: 260
+      completeness: 140
+      coverage_areas: 220

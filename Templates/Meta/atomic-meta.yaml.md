@@ -7,7 +7,7 @@ fileClass: atomic
 tags:
   - 💡atomic
 status: 🔄active
-maturity: 🌱seed
+maturity: 📤seed
 processing_priority:
 created: <% tp.date.now("YYYY-MM-DD") %>
 modified: <% tp.date.now("YYYY-MM-DD") %>

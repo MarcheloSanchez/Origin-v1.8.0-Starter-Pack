@@ -32,7 +32,7 @@ module.exports = () => {
       arrayFields: ['tags', 'related', 'aliases']
     },
 
-    // Atomic notes (02-Dots)
+    // Atomic notes (02-Knowledge)
     atomic: {
       extends: 'base',
       required: ['title', 'type', 'status', 'created', 'tags'],

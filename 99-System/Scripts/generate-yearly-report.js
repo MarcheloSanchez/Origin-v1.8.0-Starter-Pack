@@ -195,7 +195,7 @@ module.exports = async (args) => {
     };
 
     const atomicsCreated = allFiles.filter(f =>
-      f.path.startsWith("02-Dots/") &&
+      f.path.startsWith("02-Knowledge/") &&
       !f.name.startsWith("+About") &&
       !f.name.match(/^\d{3}-/) && // exclude folder hub files like 200-Areas.md
       isThisYear(f.stat.ctime)
@@ -218,7 +218,7 @@ module.exports = async (args) => {
     // ============================================
 
     // Maturity pipeline
-    const atomics = allFiles.filter(f => f.path.startsWith("02-Dots/"));
+    const atomics = allFiles.filter(f => f.path.startsWith("02-Knowledge/"));
     const maturityCounts = { '📤seed': 0, '🌱seedling': 0, '🪴sapling': 0, '🌲evergreen': 0, '🍓fruit': 0 };
     atomics.forEach(f => {
       const m = getFM(f).maturity;
@@ -264,11 +264,11 @@ module.exports = async (args) => {
     // ============================================
 
     const areaDefinitions = [
-      { name: "Health", path: "02-Dots/200-Areas/210-Health/210-Health.md" },
-      { name: "Finance", path: "02-Dots/200-Areas/220-Finance/220-Finance.md" },
-      { name: "Career", path: "02-Dots/200-Areas/230-Career/230-Career.md" },
-      { name: "Relationships", path: "02-Dots/200-Areas/240-Relationships/240-Relationships.md" },
-      { name: "Personal", path: "02-Dots/200-Areas/250-Personal/250-Personal.md" }
+      { name: "Health", path: "02-Knowledge/Areas/210-Health/210-Health.md" },
+      { name: "Finance", path: "02-Knowledge/Areas/220-Finance/220-Finance.md" },
+      { name: "Career", path: "02-Knowledge/Areas/230-Career/230-Career.md" },
+      { name: "Relationships", path: "02-Knowledge/Areas/240-Relationships/240-Relationships.md" },
+      { name: "Personal", path: "02-Knowledge/Areas/250-Personal/250-Personal.md" }
     ];
 
     const areaOverview = [];

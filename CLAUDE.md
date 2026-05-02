@@ -32,8 +32,8 @@ When Claude Code creates files during a session, place them here — never in `+
 | `+Inbox` | Quick capture entry point |
 | `00-Meta` | System docs, checklists, guides, gamification |
 | `01-MOCs` | Maps of Content — navigation hubs |
-| `02-Dots` | Atomic knowledge (Ideas, Concepts, Statements, Things, People, Places) |
-| `03-Efforts` | Projects: `On/` (active), `Ongoing/`, `Simmering/` (background) |
+| `02-Knowledge` | Atomic knowledge (Ideas, Concepts, Statements, Things, People, Places) |
+| `03-Efforts` | Projects: `Active/`, `Paused/`, `Waiting/` |
 | `04-Sources` | External refs: Knowledge, Media, Guides, Meetings |
 | `05-Calendar` | Periodic notes: Daily, Weekly, Monthly, Quarterly, Yearly |
 | `06-Archive` | Completed/inactive content |

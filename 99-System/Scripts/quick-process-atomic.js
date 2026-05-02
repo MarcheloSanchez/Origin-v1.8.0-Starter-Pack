@@ -11,7 +11,7 @@
  * 1. Prompt for title refinement (optional)
  * 2. Auto-populate metadata (type: atomic, maturity: calculated)
  * 3. Suggest subfolder based on keywords
- * 4. Move to 02-Dots/100-Atomics/[subfolder]
+ * 4. Move to 02-Knowledge/Atomics/[subfolder]
  * 5. Open for editing
  *
  * Expected processing time: 10-15 seconds vs 2-3 minutes manual
@@ -81,7 +81,7 @@ module.exports = async (args) => {
 
     // Set up link
     if (!metadata.up) {
-      metadata.up = '[[02-Dots]]';
+      metadata.up = '[[02-Knowledge]]';
     }
 
     // Extract related links from content
@@ -104,24 +104,24 @@ module.exports = async (args) => {
       } else {
         // Manual folder selection
         const folders = [
-          "02-Dots/100-Atomics/Ideas",
-          "02-Dots/100-Atomics/Concepts",
-          "02-Dots/100-Atomics/Frameworks",
-          "02-Dots/100-Atomics/Principles",
-          "02-Dots/100-Atomics/Patterns",
-          "02-Dots/100-Atomics/Mental-Models",
-          "02-Dots/100-Atomics" // Root
+          "02-Knowledge/Atomics/Ideas",
+          "02-Knowledge/Atomics/Concepts",
+          "02-Knowledge/Atomics/Frameworks",
+          "02-Knowledge/Atomics/Principles",
+          "02-Knowledge/Atomics/Patterns",
+          "02-Knowledge/Atomics/Mental-Models",
+          "02-Knowledge/Atomics" // Root
         ];
 
         targetFolder = await QuickAdd.suggester(
-          folders.map(f => f.replace('02-Dots/100-Atomics/', '').replace('02-Dots/100-Atomics', 'Root')),
+          folders.map(f => f.replace('02-Knowledge/Atomics/', '').replace('02-Knowledge/Atomics', 'Root')),
           folders,
           false,
           "Select target folder:"
         );
       }
     } else {
-      targetFolder = "02-Dots/100-Atomics";
+      targetFolder = "02-Knowledge/Atomics";
     }
 
     // 4. Update frontmatter
@@ -230,13 +230,13 @@ function suggestAtomicSubfolder(content, title) {
 
   if (maxScore > 0) {
     return {
-      folder: `02-Dots/100-Atomics/${bestFolder}`,
+      folder: `02-Knowledge/Atomics/${bestFolder}`,
       confidence: Math.min(maxScore / 5, 1) // Normalize
     };
   }
 
   return {
-    folder: '02-Dots/100-Atomics',
+    folder: '02-Knowledge/Atomics',
     confidence: 0.3
   };
 }

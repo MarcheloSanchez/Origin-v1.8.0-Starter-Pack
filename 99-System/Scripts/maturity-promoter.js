@@ -153,7 +153,7 @@ module.exports = () => {
   const getSuggestions = (dv, options = {}) => {
     try {
       const today = dv.date('today');
-      const folder = options.folder || '"02-Dots"';
+      const folder = options.folder || '"02-Knowledge"';
       const limit = options.limit || 20;
 
       const pages = dv.pages(folder).where(p =>
@@ -233,7 +233,7 @@ module.exports = () => {
    */
   const getDistribution = (dv) => {
     try {
-      const pages = dv.pages('"02-Dots"').where(p => p.maturity);
+      const pages = dv.pages('"02-Knowledge"').where(p => p.maturity);
       const distribution = {};
 
       Object.values(STAGES).forEach(stage => {

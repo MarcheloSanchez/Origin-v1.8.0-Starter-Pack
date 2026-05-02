@@ -241,7 +241,7 @@ function analyzeContent(content, filename) {
 
   // Folder mapping
   const folderMap = {
-    atomic: '02-Dots/100-Atomics',
+    atomic: '02-Knowledge/Atomics',
     effort: '03-Efforts',
     source: '04-Sources',
     meeting: '04-Sources/Meetings',

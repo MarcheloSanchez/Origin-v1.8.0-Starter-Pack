@@ -257,7 +257,7 @@ module.exports = async (args) => {
     // MATURITY PIPELINE (current snapshot)
     // ============================================
 
-    const atomics = allFiles.filter(f => f.path.startsWith("02-Dots/"));
+    const atomics = allFiles.filter(f => f.path.startsWith("02-Knowledge/"));
     const maturityCounts = { '📤seed': 0, '🌱seedling': 0, '🪴sapling': 0, '🌲evergreen': 0, '🍓fruit': 0 };
     atomics.forEach(f => {
       const m = getFM(f).maturity;

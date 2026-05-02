@@ -140,12 +140,12 @@ async function processFile(file) {
 function detectTypeFromPath(path) {
   if (path.includes('+Inbox')) return 'undefined';
   if (path.includes('01-MOCs')) return 'moc';
-  if (path.includes('02-Dots/100-Atomics')) return 'atomic';
-  if (path.includes('02-Dots/200-Areas')) return 'area';
-  if (path.includes('02-Dots/300-People')) return 'person';
-  if (path.includes('02-Dots/400-Places')) return 'place';
-  if (path.includes('02-Dots/500-Tools')) return 'tool';
-  if (path.includes('02-Dots')) return 'atomic';
+  if (path.includes('02-Knowledge/Atomics')) return 'atomic';
+  if (path.includes('02-Knowledge/Areas')) return 'area';
+  if (path.includes('02-Knowledge/People')) return 'person';
+  if (path.includes('02-Knowledge/Places')) return 'place';
+  if (path.includes('02-Knowledge/Tools')) return 'tool';
+  if (path.includes('02-Knowledge')) return 'atomic';
   if (path.includes('03-Efforts')) return 'effort';
   if (path.includes('04-Sources/440-Meetings')) return 'meeting';
   if (path.includes('04-Sources')) return 'source';
@@ -239,12 +239,12 @@ function suggestParentLink(path) {
 
   // Folder-specific parents
   if (path.includes('01-MOCs')) parent = '[[01-MOCs]]';
-  if (path.includes('02-Dots/100-Atomics')) parent = '[[100-Atomics]]';
-  if (path.includes('02-Dots/200-Areas')) parent = '[[200-Areas]]';
-  if (path.includes('02-Dots/300-People')) parent = '[[300-People]]';
-  if (path.includes('02-Dots/400-Places')) parent = '[[400-Places]]';
-  if (path.includes('02-Dots/500-Tools')) parent = '[[500-Tools]]';
-  if (path.includes('02-Dots')) parent = '[[02-Dots]]';
+  if (path.includes('02-Knowledge/Atomics')) parent = '[[Atomics]]';
+  if (path.includes('02-Knowledge/Areas')) parent = '[[Areas]]';
+  if (path.includes('02-Knowledge/People')) parent = '[[People]]';
+  if (path.includes('02-Knowledge/Places')) parent = '[[Places]]';
+  if (path.includes('02-Knowledge/Tools')) parent = '[[Tools]]';
+  if (path.includes('02-Knowledge')) parent = '[[02-Knowledge]]';
   if (path.includes('03-Efforts')) parent = '[[03-Efforts]]';
   if (path.includes('04-Sources/440-Meetings')) parent = '[[440-Meetings]]';
   if (path.includes('04-Sources')) parent = '[[04-Sources]]';

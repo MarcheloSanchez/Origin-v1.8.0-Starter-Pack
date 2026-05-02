@@ -93,15 +93,15 @@ const MATURITY_STAGES = [
 
 // Folder canonical map — used for Orient stage
 const FOLDER_MAP = {
-  atomic:  "02-Dots/100-Atomics",
+  atomic:  "02-Knowledge/Atomics",
   effort:  "03-Efforts",
   source:  "04-Sources",
   meeting: "04-Sources/Meetings",
   moc:     "01-MOCs",
-  area:    "02-Dots/200-Areas",
-  person:  "02-Dots/300-People",
-  place:   "02-Dots/400-Places",
-  tool:    "02-Dots/500-Tools",
+  area:    "02-Knowledge/Areas",
+  person:  "02-Knowledge/People",
+  place:   "02-Knowledge/Places",
+  tool:    "02-Knowledge/Tools",
   prompt:  "07-Prompts",
   system:  "00-Meta",
   daily:   "05-Calendar/Daily",
@@ -780,7 +780,7 @@ OPTIONS
 
 EXAMPLES
   # Single file
-  node obsidian-ooda-agent.js "02-Dots/100-Atomics/My Idea.md" --stream
+  node obsidian-ooda-agent.js "02-Knowledge/Atomics/My Idea.md" --stream
 
   # Batch process inbox
   node obsidian-ooda-agent.js --batch "+Inbox/*.md" --vault "C:/vault"

@@ -8,7 +8,7 @@
 //
 // Data Flow: Aggregates weekly reports from 05-Calendar/Weekly/ for the target month.
 // Fallback: If <2 weekly reports exist, queries vault directly for basic metrics.
-// Always queries: Area health (02-Dots/200-Areas/) and effort portfolio (03-Efforts/).
+// Always queries: Area health (02-Knowledge/Areas/) and effort portfolio (03-Efforts/).
 //
 // Past-period support: On launch, prompts for YYYY-MM (e.g. "2025-06").
 //   Leave blank or cancel to generate for the current month.
@@ -236,11 +236,11 @@ module.exports = async (args) => {
     // ============================================
 
     const areaDefinitions = [
-      { name: "Health", path: "02-Dots/200-Areas/210-Health/210-Health.md", folder: "210-Health" },
-      { name: "Finance", path: "02-Dots/200-Areas/220-Finance/220-Finance.md", folder: "220-Finance" },
-      { name: "Career", path: "02-Dots/200-Areas/230-Career/230-Career.md", folder: "230-Career" },
-      { name: "Relationships", path: "02-Dots/200-Areas/240-Relationships/240-Relationships.md", folder: "240-Relationships" },
-      { name: "Personal", path: "02-Dots/200-Areas/250-Personal/250-Personal.md", folder: "250-Personal" }
+      { name: "Health", path: "02-Knowledge/Areas/210-Health/210-Health.md", folder: "210-Health" },
+      { name: "Finance", path: "02-Knowledge/Areas/220-Finance/220-Finance.md", folder: "220-Finance" },
+      { name: "Career", path: "02-Knowledge/Areas/230-Career/230-Career.md", folder: "230-Career" },
+      { name: "Relationships", path: "02-Knowledge/Areas/240-Relationships/240-Relationships.md", folder: "240-Relationships" },
+      { name: "Personal", path: "02-Knowledge/Areas/250-Personal/250-Personal.md", folder: "250-Personal" }
     ];
 
     const areaHealth = [];
@@ -308,7 +308,7 @@ module.exports = async (args) => {
     // MATURITY PIPELINE (current snapshot)
     // ============================================
 
-    const atomics = allFiles.filter(f => f.path.startsWith("02-Dots/"));
+    const atomics = allFiles.filter(f => f.path.startsWith("02-Knowledge/"));
     const maturityCounts = { '📤seed': 0, '🌱seedling': 0, '🪴sapling': 0, '🌲evergreen': 0, '🍓fruit': 0 };
     atomics.forEach(f => {
       const m = getFM(f).maturity;

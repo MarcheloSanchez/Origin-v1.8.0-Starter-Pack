@@ -185,15 +185,15 @@ function analyzeContent(content, frontmatter, filename) {
 
   // Suggest folder based on type (covers all 10 vault note types)
   const folderMap = {
-    atomic:  '02-Dots/100-Atomics',
+    atomic:  '02-Knowledge/Atomics',
     effort:  '03-Efforts',
     source:  '04-Sources',
     meeting: '04-Sources/Meetings',
     moc:     '01-MOCs',
-    area:    '02-Dots/200-Areas',
-    person:  '02-Dots/300-People',
-    place:   '02-Dots/400-Places',
-    tool:    '02-Dots/500-Tools',
+    area:    '02-Knowledge/Areas',
+    person:  '02-Knowledge/People',
+    place:   '02-Knowledge/Places',
+    tool:    '02-Knowledge/Tools',
     prompt:  '99-System/copilot-custom-prompts'
   };
   analysis.suggestedFolder = folderMap[analysis.suggestedType] || '+Inbox';
@@ -269,15 +269,15 @@ async function presentSuggestions(analysis, QuickAdd) {
 
   // Folder selection based on type (covers all 10 vault note types)
   const folderMap = {
-    atomic:  '02-Dots/100-Atomics',
+    atomic:  '02-Knowledge/Atomics',
     effort:  '03-Efforts',
     source:  '04-Sources',
     meeting: '04-Sources/Meetings',
     moc:     '01-MOCs',
-    area:    '02-Dots/200-Areas',
-    person:  '02-Dots/300-People',
-    place:   '02-Dots/400-Places',
-    tool:    '02-Dots/500-Tools',
+    area:    '02-Knowledge/Areas',
+    person:  '02-Knowledge/People',
+    place:   '02-Knowledge/Places',
+    tool:    '02-Knowledge/Tools',
     prompt:  '99-System/copilot-custom-prompts'
   };
 

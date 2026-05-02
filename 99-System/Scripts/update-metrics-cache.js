@@ -65,7 +65,7 @@ async function calculateMetrics() {
 
   // Basic counts
   const inbox = allPages.filter(f => f.path.startsWith('+Inbox')).length;
-  const atomics = allPages.filter(f => f.path.includes('02-Dots/100-Atomics')).length;
+  const atomics = allPages.filter(f => f.path.includes('02-Knowledge/Atomics')).length;
   const efforts = allPages.filter(f => f.path.includes('03-Efforts')).length;
   const sources = allPages.filter(f => f.path.includes('04-Sources')).length;
   const mocs = allPages.filter(f => f.path.includes('01-MOCs')).length;

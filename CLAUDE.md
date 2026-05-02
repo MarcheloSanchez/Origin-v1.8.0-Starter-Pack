@@ -55,6 +55,7 @@ Templates use separation of concerns — Meta (YAML) + Body (content) composed a
 - **Calendar**: `Templates/Calendar/Template {Period}.md`
 
 **Supported types**: atomic, effort, source, moc, meeting, area, person, place, tool, prompt
+**Exemplars**: `Templates/_Examples/{Type} Filled Out.md` — Title-case type, space before "Filled". All 10 full types have exemplars as of 2026-04-30.
 
 Engine: `99-System/Scripts/Templater_script.js` — provides `inject_meta_if_missing()`, `add_chapters()`, `combine()`, `reset_body()`, `reset_meta()`, `reset_all()`
 

@@ -26,9 +26,9 @@ VAULT = Path(
 
 # Scan these folders for keeper prompts
 SCAN_DIRS = [
-    VAULT / "07-Prompts" / "Active",
-    VAULT / "07-Prompts" / "Drafts",
-    VAULT / "07-Prompts" / "Prompts_org",
+    VAULT / "99-System" / "Prompts" / "Workbench",
+    VAULT / "99-System" / "Prompts" / "Reference",
+    VAULT / "99-System" / "Prompts" / "Inbox",
 ]
 
 TODAY = date.today().isoformat()
@@ -50,7 +50,7 @@ SAFE_DEFAULTS = {
     "source": "personal",
 }
 
-REQUIRED_TAG = "\U0001F916AI/prompt"
+REQUIRED_TAG = "\U0001f916AI/prompt"
 
 
 def parse_frontmatter_lines(text: str) -> tuple[list[str], str]:
@@ -66,7 +66,7 @@ def get_fm_value(lines: list[str], key: str) -> str | None:
     """Get a simple scalar value from frontmatter lines."""
     for line in lines:
         if line.startswith(f"{key}:"):
-            val = line[len(key) + 1:].strip().strip('"').strip("'")
+            val = line[len(key) + 1 :].strip().strip('"').strip("'")
             return val if val else None
     return None
 
@@ -77,9 +77,11 @@ def set_fm_value(lines: list[str], key: str, value: str) -> list[str]:
     result = []
     for line in lines:
         if line.startswith(f"{key}:"):
-            result.append(f'{key}: "{value}"' if " " in value or any(
-                c in value for c in "[]{},:!@#$%^&*()"
-            ) else f"{key}: {value}")
+            result.append(
+                f'{key}: "{value}"'
+                if " " in value or any(c in value for c in "[]{},:!@#$%^&*()")
+                else f"{key}: {value}"
+            )
             found = True
         else:
             result.append(line)
@@ -187,8 +189,8 @@ def process_file(filepath: Path, dry_run: bool) -> list[str]:
 
     # Set status if missing
     if not get_fm_value(fm_lines, "status"):
-        fm_lines = set_fm_value(fm_lines, "status", "\U0001F4E5inbox")
-        changes.append("  Set status: \U0001F4E5inbox")
+        fm_lines = set_fm_value(fm_lines, "status", "\U0001f4e5inbox")
+        changes.append("  Set status: \U0001f4e5inbox")
 
     # Update modified date
     current_modified = get_fm_value(fm_lines, "modified")
@@ -222,24 +224,32 @@ def generate_suggestion_batches(batch_size: int = 20):
 
             # Check which fields are missing
             missing = []
-            for field in ["prompt_category", "prompt_type", "intent",
-                          "difficulty", "audience", "summary"]:
+            for field in [
+                "prompt_category",
+                "prompt_type",
+                "intent",
+                "difficulty",
+                "audience",
+                "summary",
+            ]:
                 if not get_fm_value(fm_lines, field):
                     missing.append(field)
 
             if missing:
-                all_prompts.append({
-                    "path": str(f.relative_to(VAULT)),
-                    "filename": f.name,
-                    "missing": missing,
-                    "preview": body[:300].replace("\n", " ").strip(),
-                })
+                all_prompts.append(
+                    {
+                        "path": str(f.relative_to(VAULT)),
+                        "filename": f.name,
+                        "missing": missing,
+                        "preview": body[:300].replace("\n", " ").strip(),
+                    }
+                )
 
     # Output batches
-    output_dir = VAULT / "07-Prompts" / "01-Docs"
+    output_dir = VAULT / "99-System" / "Prompts" / "01-Docs"
     batch_num = 1
     for i in range(0, len(all_prompts), batch_size):
-        batch = all_prompts[i:i + batch_size]
+        batch = all_prompts[i : i + batch_size]
         lines = [
             f"# Metadata Suggestion Batch {batch_num}",
             "",
@@ -247,34 +257,36 @@ def generate_suggestion_batches(batch_size: int = 20):
             "",
             "For each prompt below, suggest values for the missing fields.",
             "Available prompt_category values:",
-            "- \U0001F4E5 Inbox / Unfiltered",
-            "- \U0001F9E0 Mastery Prompts",
-            "- \U0001F5E3 Voice & Roleplay",
-            "- \U0001F4DA Learning & Teaching",
-            "- \U0001F4A1 Personal Growth",
-            "- \U0001F4BC Career Building",
-            "- \U0001F4CA Strategy & Planning",
-            "- \U0001F4E3 Content & Marketing",
-            "- \U0001F9FE Comprehension & Summarization",
-            "- \U0001F9EA QA / Testing Prompts",
-            "- \U0001F5A8 3D Printing Prompts",
-            "- \u270D\uFE0F Copywriting",
-            "- \U0001F4C8 Business / Product Dev",
+            "- \U0001f4e5 Inbox / Unfiltered",
+            "- \U0001f9e0 Mastery Prompts",
+            "- \U0001f5e3 Voice & Roleplay",
+            "- \U0001f4da Learning & Teaching",
+            "- \U0001f4a1 Personal Growth",
+            "- \U0001f4bc Career Building",
+            "- \U0001f4ca Strategy & Planning",
+            "- \U0001f4e3 Content & Marketing",
+            "- \U0001f9fe Comprehension & Summarization",
+            "- \U0001f9ea QA / Testing Prompts",
+            "- \U0001f5a8 3D Printing Prompts",
+            "- \u270d\ufe0f Copywriting",
+            "- \U0001f4c8 Business / Product Dev",
             "",
             "---",
             "",
         ]
 
         for j, prompt in enumerate(batch, 1):
-            lines.extend([
-                f"## {j}. `{prompt['filename']}`",
-                f"**Path**: `{prompt['path']}`",
-                f"**Missing**: {', '.join(prompt['missing'])}",
-                f"**Preview**: {prompt['preview'][:200]}...",
-                "",
-                "**Suggestions**:",
-                "",
-            ])
+            lines.extend(
+                [
+                    f"## {j}. `{prompt['filename']}`",
+                    f"**Path**: `{prompt['path']}`",
+                    f"**Missing**: {', '.join(prompt['missing'])}",
+                    f"**Preview**: {prompt['preview'][:200]}...",
+                    "",
+                    "**Suggestions**:",
+                    "",
+                ]
+            )
             for field in prompt["missing"]:
                 lines.append(f"- {field}: ")
             lines.extend(["", "---", ""])
@@ -284,7 +296,9 @@ def generate_suggestion_batches(batch_size: int = 20):
         print(f"  Batch {batch_num}: {len(batch)} prompts -> {output_file.name}")
         batch_num += 1
 
-    print(f"\nTotal: {len(all_prompts)} prompts need metadata in {batch_num - 1} batches")
+    print(
+        f"\nTotal: {len(all_prompts)} prompts need metadata in {batch_num - 1} batches"
+    )
 
 
 def main():
@@ -322,7 +336,7 @@ def main():
                 for c in changes:
                     print(f"    {c}")
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"  Files scanned: {total_files}")
     print(f"  Files to update: {files_changed}")
     print(f"  Total changes: {total_changes}")

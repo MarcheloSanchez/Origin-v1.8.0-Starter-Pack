@@ -18,21 +18,39 @@ VAULT = Path(
 )
 
 SCAN_DIRS = [
-    VAULT / "07-Prompts" / "Reference",
-    VAULT / "07-Prompts" / "Inbox",
-    VAULT / "07-Prompts" / "Workbench",
-    VAULT / "07-Prompts" / "Fun",
+    VAULT / "99-System" / "Prompts" / "Reference",
+    VAULT / "99-System" / "Prompts" / "Inbox",
+    VAULT / "99-System" / "Prompts" / "Workbench",
+    VAULT / "99-System" / "Prompts" / "Fun",
 ]
 
 TODAY = date.today().isoformat()
 
 # Fields to remove
 KILLED_FIELDS = {
-    "intent", "audience", "role", "format", "format_pref", "tone",
-    "guardrails", "eval_score", "last_run", "context_packs",
-    "model_defaults", "id", "prompt_subcategory", "pattern",
-    "source", "length", "inputs_schema", "deliverable_schema",
-    "license", "tools", "prompt_status", "fileClass", "in",
+    "intent",
+    "audience",
+    "role",
+    "format",
+    "format_pref",
+    "tone",
+    "guardrails",
+    "eval_score",
+    "last_run",
+    "context_packs",
+    "model_defaults",
+    "id",
+    "prompt_subcategory",
+    "pattern",
+    "source",
+    "length",
+    "inputs_schema",
+    "deliverable_schema",
+    "license",
+    "tools",
+    "prompt_status",
+    "fileClass",
+    "in",
     "copilot-command-context-menu-enabled",
     "copilot-command-slash-enabled",
     "copilot-command-context-menu-order",
@@ -199,7 +217,9 @@ def main():
                     detail.append(f"-{','.join(sorted(removed))}")
                 if added:
                     detail.append(f"+{','.join(sorted(added))}")
-                print(f"  {'[DRY] ' if dry_run else ''}Modified: {f.name} ({'; '.join(detail)})")
+                print(
+                    f"  {'[DRY] ' if dry_run else ''}Modified: {f.name} ({'; '.join(detail)})"
+                )
 
         print()
 

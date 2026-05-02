@@ -20,15 +20,15 @@ VAULT = Path(
     r"\Origin_DEV_STARTER_PACK\Origin-v1.9.1-Starter-Pack"
 )
 
-REPORT = VAULT / "07-Prompts" / "01-Docs" / "_dedup-report.md"
-ARCHIVE_DIR = VAULT / "07-Prompts" / "Archive"
-DRAFTS_DIR = VAULT / "07-Prompts" / "Drafts"
-ACTIVE_DIR = VAULT / "07-Prompts" / "Active"
+REPORT = VAULT / "99-System" / "Prompts" / "01-Docs" / "_dedup-report.md"
+ARCHIVE_DIR = VAULT / "99-System" / "Prompts" / "Archive"
+DRAFTS_DIR = VAULT / "99-System" / "Prompts" / "Inbox"
+ACTIVE_DIR = VAULT / "99-System" / "Prompts" / "Workbench"
 
 FOLDERS = {
-    "A": VAULT / "07-Prompts" / "Drafts" / "copilot-custom-prompts",
-    "B": VAULT / "07-Prompts" / "Prompts_org",
-    "C": VAULT / "07-Prompts" / "Drafts" / "Keyword-Driven",
+    "A": VAULT / "99-System" / "copilot-custom-prompts",
+    "B": VAULT / "99-System" / "Prompts" / "Reference",
+    "C": VAULT / "99-System" / "Prompts" / "Workbench",
     "COPILOT": VAULT / "99-System" / "copilot-custom-prompts",
 }
 
@@ -112,7 +112,9 @@ def clean_filename(title: str) -> str:
 def strip_copilot_keys(fm_text: str) -> str:
     """Remove copilot-command-* lines from raw frontmatter."""
     lines = fm_text.split("\n")
-    filtered = [l for l in lines if not any(l.strip().startswith(k) for k in COPILOT_KEYS)]
+    filtered = [
+        l for l in lines if not any(l.strip().startswith(k) for k in COPILOT_KEYS)
+    ]
     return "\n".join(filtered)
 
 
@@ -131,26 +133,26 @@ def build_template_v2(title: str, body: str, source_fm: dict) -> str:
 
     fm = f"""---
 in:
-  - "[[07-Prompts]]"
+  - "[[99-System/Prompts]]"
 title: "{title}"
 type: prompt
 fileClass: prompt
 tags:
-  - "\U0001F916AI/prompt"
-status: "\U0001F4E5inbox"
+  - "\U0001f916AI/prompt"
+status: "\U0001f4e5inbox"
 created: "{created}"
 modified: "{TODAY}"
-audience: {f'"{audience}"' if audience else '[]'}
-difficulty: {difficulty if difficulty else ''}
-prompt_category: {f'"{prompt_category}"' if prompt_category else ''}
-prompt_type: {prompt_type if prompt_type else ''}
+audience: {f'"{audience}"' if audience else "[]"}
+difficulty: {difficulty if difficulty else ""}
+prompt_category: {f'"{prompt_category}"' if prompt_category else ""}
+prompt_type: {prompt_type if prompt_type else ""}
 prompt_status: draft
 related:
 role: []
 format:
 id: "{slug}"
 intent:
-language: {language if language else ''}
+language: {language if language else ""}
 length:
 owner: MM
 prompt_subcategory: []
@@ -169,20 +171,20 @@ version: 1.0.0
     else:
         # Raw prompt text — wrap it
         content = f"""
-## \U0001F4A1Prompt {title}
+## \U0001f4a1Prompt {title}
 
 {body}
 
-## \U0001F4DDDescription
+## \U0001f4ddDescription
 
-## \U0001F4CBInstructions
+## \U0001f4cbInstructions
 ```ENG
 {body}
 ```
 
 ## Example Usage
 
-## \U0001F4DDChangelog
+## \U0001f4ddChangelog
 - **1.0.0 ({TODAY})** — Migrated from prompt library consolidation.
 """
 
@@ -232,15 +234,17 @@ def parse_report_table(report_text: str) -> list[dict]:
                 return []
             return re.findall(r"`([^`]+\.md)`", cell)
 
-        entries.append({
-            "group": group_id,
-            "a_files": extract_filenames(format_a),
-            "b_files": extract_filenames(format_b),
-            "c_files": extract_filenames(format_c),
-            "copilot_files": extract_filenames(copilot),
-            "action": action,
-            "notes": notes,
-        })
+        entries.append(
+            {
+                "group": group_id,
+                "a_files": extract_filenames(format_a),
+                "b_files": extract_filenames(format_b),
+                "c_files": extract_filenames(format_c),
+                "copilot_files": extract_filenames(copilot),
+                "action": action,
+                "notes": notes,
+            }
+        )
 
     return entries
 
@@ -292,22 +296,24 @@ def execute_keep_b(entry: dict, dry_run: bool) -> list[str]:
                 fm_raw = strip_copilot_keys(fm_raw)
                 # Update title
                 fm_raw = re.sub(
-                    r'^title:.*$',
+                    r"^title:.*$",
                     f'title: "{clean_title}"',
                     fm_raw,
                     flags=re.MULTILINE,
                 )
                 # Update modified date
                 fm_raw = re.sub(
-                    r'^modified:.*$',
+                    r"^modified:.*$",
                     f'modified: "{TODAY}"',
                     fm_raw,
                     flags=re.MULTILINE,
                 )
                 # Ensure id field
                 slug = make_slug(clean_title)
-                if re.search(r'^id:\s*$', fm_raw, re.MULTILINE):
-                    fm_raw = re.sub(r'^id:\s*$', f'id: "{slug}"', fm_raw, flags=re.MULTILINE)
+                if re.search(r"^id:\s*$", fm_raw, re.MULTILINE):
+                    fm_raw = re.sub(
+                        r"^id:\s*$", f'id: "{slug}"', fm_raw, flags=re.MULTILINE
+                    )
                 elif "id:" not in fm_raw:
                     fm_raw += f'\nid: "{slug}"'
 
@@ -370,19 +376,19 @@ def execute_merge_a_to_b(entry: dict, dry_run: bool) -> list[str]:
                 flags=re.DOTALL,
             )
         else:
-            b_body += f"\n\n## \U0001F4CBInstructions\n```ENG\n{a_body}\n```\n"
+            b_body += f"\n\n## \U0001f4cbInstructions\n```ENG\n{a_body}\n```\n"
 
         # Clean frontmatter
         b_fm_raw = strip_copilot_keys(b_fm_raw)
         clean_title = normalize_title(b_name)
         b_fm_raw = re.sub(
-            r'^title:.*$',
+            r"^title:.*$",
             f'title: "{clean_title}"',
             b_fm_raw,
             flags=re.MULTILINE,
         )
         b_fm_raw = re.sub(
-            r'^modified:.*$',
+            r"^modified:.*$",
             f'modified: "{TODAY}"',
             b_fm_raw,
             flags=re.MULTILINE,
@@ -433,7 +439,9 @@ def execute_upgrade(entry: dict, format_key: str, dry_run: bool) -> list[str]:
             continue
 
         if dry_run:
-            actions.append(f"  [DRY] Upgrade {format_key}: {fname} -> Drafts/{new_name}")
+            actions.append(
+                f"  [DRY] Upgrade {format_key}: {fname} -> Drafts/{new_name}"
+            )
         else:
             DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
             dest.write_text(new_content, encoding="utf-8")

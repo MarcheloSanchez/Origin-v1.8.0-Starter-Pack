@@ -57,16 +57,17 @@ find "$OUTPUT_DIR/05-Calendar/Daily" -maxdepth 1 -name '*.md' \
 # --- Calendar: remove personal logs ---
 rm -rf "$OUTPUT_DIR/05-Calendar/_Logs" 2>/dev/null || true
 
-# --- Efforts: remove personal ongoing/simmering ---
-rm -rf "$OUTPUT_DIR/03-Efforts/Ongoing" 2>/dev/null || true
-rm -rf "$OUTPUT_DIR/03-Efforts/Simmering" 2>/dev/null || true
+# --- Efforts: remove personal active/paused/waiting ---
+rm -rf "$OUTPUT_DIR/03-Efforts/Active" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/03-Efforts/Paused" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/03-Efforts/Waiting" 2>/dev/null || true
 echo "   - Personal Efforts"
 
 # --- Sources: remove personal meeting notes (keep tutorials) ---
-find "$OUTPUT_DIR/04-Sources/440-Meetings" -maxdepth 1 -name '*.md' \
+find "$OUTPUT_DIR/04-Sources/Meetings" -maxdepth 1 -name '*.md' \
   ! -name 'Tutorial*' \
   ! -name '+*' \
-  ! -name '440-Meetings.md' \
+  ! -name 'Meetings.md' \
   -delete 2>/dev/null || true
 # Remove personal source notes
 for pattern in "Content -" "Research -"; do
@@ -81,25 +82,26 @@ rm -f "$OUTPUT_DIR/06-Archive/Archive filled out.md" 2>/dev/null || true
 rm -f "$OUTPUT_DIR/06-Archive/Archived_CHANGELOG.md" 2>/dev/null || true
 echo "   - Archive"
 
-# --- Prompts: keep docs, remove personal prompts ---
-rm -rf "$OUTPUT_DIR/07-Prompts/Active" 2>/dev/null || true
-rm -rf "$OUTPUT_DIR/07-Prompts/Archive" 2>/dev/null || true
-rm -rf "$OUTPUT_DIR/07-Prompts/Drafts" 2>/dev/null || true
-rm -rf "$OUTPUT_DIR/07-Prompts/Prompts_org" 2>/dev/null || true
+# --- Prompts: keep 01-Docs, remove personal prompt content ---
+rm -rf "$OUTPUT_DIR/99-System/Prompts/Reference" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/99-System/Prompts/Workbench" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/99-System/Prompts/Fun" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/99-System/Prompts/Archive" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/99-System/Prompts/Inbox" 2>/dev/null || true
 echo "   - Personal Prompts"
 
 # --- MOCs: remove personal MOC ---
 find "$OUTPUT_DIR/01-MOCs" -maxdepth 1 -name '*My PKM*' -delete 2>/dev/null || true
 echo "   - Personal MOCs"
 
-# --- Meta: remove personal dashboards/caches ---
-rm -f "$OUTPUT_DIR/00-Meta/VAULT-REPORT.md" 2>/dev/null || true
-rm -f "$OUTPUT_DIR/00-Meta/_Metrics Cache.md" 2>/dev/null || true
-rm -rf "$OUTPUT_DIR/00-Meta/Checklists" 2>/dev/null || true
-echo "   - Personal Meta"
+# --- System: remove personal caches/reports ---
+rm -f "$OUTPUT_DIR/99-System/Documentation/VAULT-REPORT.md" 2>/dev/null || true
+rm -f "$OUTPUT_DIR/99-System/_Metrics Cache.md" 2>/dev/null || true
+rm -rf "$OUTPUT_DIR/99-System/Documentation/Checklists" 2>/dev/null || true
+echo "   - Personal System/Meta"
 
 # --- Test/scratch files ---
-rm -f "$OUTPUT_DIR/02-Dots/100-Atomics/test atomic.md" 2>/dev/null || true
+rm -f "$OUTPUT_DIR/02-Knowledge/100-Atomics/test atomic.md" 2>/dev/null || true
 
 # --- Misc personal dirs ---
 rm -rf "$OUTPUT_DIR/QuickAdd Packages" 2>/dev/null || true

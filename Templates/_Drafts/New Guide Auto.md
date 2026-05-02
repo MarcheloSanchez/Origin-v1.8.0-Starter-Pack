@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[430-Guides]]"
+  - "[[Guides]]"
 title: "[Guide Name]"
 type: guide
 tags:

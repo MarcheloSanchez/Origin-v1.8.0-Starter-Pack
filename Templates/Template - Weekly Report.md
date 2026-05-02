@@ -91,7 +91,7 @@ SORT priority DESC, file.mtime DESC
 
 ```dataview
 LIST
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
   AND (contains(tags, "#💡atomic") OR type = "atomic")
 SORT created DESC

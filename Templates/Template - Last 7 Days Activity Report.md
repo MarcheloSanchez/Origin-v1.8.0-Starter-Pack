@@ -210,14 +210,14 @@ WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
 SORT created DESC
 ```
 
-### 00-Meta Activity
+### 99-System/Documentation Activity
 
 ```dataview
 TABLE
   type as "Type",
   status as "Status",
   created as "Created"
-FROM "00-Meta"
+FROM "99-System/Documentation"
 WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
 SORT created DESC
 ```
@@ -234,7 +234,7 @@ WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
 SORT created DESC
 ```
 
-### 02-Dots Activity
+### 02-Knowledge Activity
 
 ```dataview
 TABLE
@@ -242,7 +242,7 @@ TABLE
   maturity as "Maturity",
   status as "Status",
   created as "Created"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE created >= date(<% tp.date.now("YYYY-MM-DD", -7) %>)
 SORT created DESC
 ```

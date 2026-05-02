@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[440-Meetings]]"
+  - "[[Meetings]]"
 title:
 type: meeting
 fileClass: meeting

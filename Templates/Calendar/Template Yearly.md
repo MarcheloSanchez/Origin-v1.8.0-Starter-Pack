@@ -31,7 +31,7 @@ TABLE
 priority as "Priority",
 maturity as "Maturity",
 review_frequency as "Frequency"
-FROM "02-Dots/200-Areas"
+FROM "02-Knowledge/Areas"
 WHERE type = "area"
 SORT priority DESC
 ```

@@ -49,7 +49,7 @@ TABLE
 priority as "Priority",
 last_review as "Last Review",
 review_frequency as "Frequency"
-FROM "02-Dots/200-Areas"
+FROM "02-Knowledge/Areas"
 WHERE type = "area"
 SORT priority DESC
 ```
@@ -80,7 +80,7 @@ TABLE WITHOUT ID
   cost + " " + currency AS "Cost",
   renewal_date AS "Renewal",
   roi_rating AS "ROI ⭐"
-FROM "02-Dots/200-Areas/220-Finance/Subscriptions"
+FROM "02-Knowledge/Areas/220-Finance/Subscriptions"
 WHERE type = "subscription" AND status = "🔄active"
   AND renewal_date >= date("<% monthStr %>-01")
   AND renewal_date <= date("<% nextMonthStr %>-01")

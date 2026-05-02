@@ -31,7 +31,7 @@ Track knowledge development across maturity stages (Seed → Fruit pipeline).
 TABLE WITHOUT ID
   maturity as "Stage",
   length(rows) as "Count"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE type = "atomic" AND maturity != null
 GROUP BY maturity
 SORT maturity ASC
@@ -45,14 +45,14 @@ SORT maturity ASC
 /**
  * QUERY: Maturity Stage Distribution
  * PURPOSE: Visualize knowledge development pipeline
- * DEPENDS ON: 02-Dots, maturity field
+ * DEPENDS ON: 02-Knowledge, maturity field
  */
 try {
   const stages = ['📤seed', '🌱seedling', '🪴sapling', '🌲evergreen', '🍓fruit'];
   const counts = {};
 
   stages.forEach(s => {
-    counts[s] = dv.pages('"02-Dots"').where(p => p.maturity === s).length ?? 0;
+    counts[s] = dv.pages('"02-Knowledge"').where(p => p.maturity === s).length ?? 0;
   });
 
   const total = Object.values(counts).reduce((a, b) => a + b, 0);
@@ -77,7 +77,7 @@ try {
  * Notes ready for promotion based on link count
  */
 try {
-  const candidates = dv.pages('"02-Dots"')
+  const candidates = dv.pages('"02-Knowledge"')
     .where(p =>
       p.maturity === '🌱seedling' &&
       (p.file.outlinks?.length ?? 0) >= 5 &&
@@ -102,7 +102,7 @@ try {
 
 ```dataview
 LIST
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE maturity = "📤seed" AND file.mtime < date(today) - dur(30 days)
 SORT file.mtime ASC
 LIMIT 10

@@ -27,10 +27,10 @@ The template system provides **structured note creation** that integrates seamle
 ### **Content Templates** (What you create)
 | Template    | Purpose          | Location             | Integration              |
 | ----------- | ---------------- | -------------------- | ------------------------ |
-| **Atomic**  | Ideas & insights | `02-Dots/`           | MOCs, daily reflection   |
+| **Atomic**  | Ideas & insights | `02-Knowledge/`           | MOCs, daily reflection   |
 | **Source**  | External content | `04-Sources/`        | Knowledge extraction     |
 | **Effort**  | Projects & goals | `03-Efforts/`        | Areas, progress tracking |
-| **Area**    | Life domains     | `02-Dots/200-Areas/` | Monthly reviews, balance |
+| **Area**    | Life domains     | `02-Knowledge/Areas/` | Monthly reviews, balance |
 | **MOC**     | Knowledge maps   | `01-MOCs/`           | Navigation, overview     |
 | **Meeting** | Discussions      | `03-Efforts/`        | Action items, follow-up  |
 

@@ -32,7 +32,7 @@ ${instruction || "(The prompt text goes here)"}
 \`\`\`
 `;
 
-const folder = "07-Prompts/Drafts";
+const folder = "99-System/Prompts/Drafts";
 const filePath = `${folder}/${fileName}.md`;
 await app.vault.create(filePath, content);
 await app.workspace.openLinkText(filePath, "", true);

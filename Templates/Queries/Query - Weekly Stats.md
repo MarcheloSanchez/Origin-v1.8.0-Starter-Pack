@@ -93,7 +93,7 @@ try {
  * Requires: update-metrics-cache.js to run periodically
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/Documentation/_Metrics Cache");
   if (cache && cache.cache_date) {
     dv.paragraph(`
 ### Cached Weekly Stats (as of ${cache.cache_date})

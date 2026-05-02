@@ -32,7 +32,7 @@ TABLE
 priority as "Priority",
 maturity as "Maturity",
 last_review as "Last Review"
-FROM "02-Dots/200-Areas"
+FROM "02-Knowledge/Areas"
 WHERE type = "area"
 SORT priority DESC
 ```

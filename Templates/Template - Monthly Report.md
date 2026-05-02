@@ -156,7 +156,7 @@ SORT file.mtime ASC
 TABLE
   maturity as "Maturity",
   created as "Created"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE created >= date(<% tp.date.now("YYYY-MM-01") %>)
   AND (contains(tags, "#💡atomic") OR type = "atomic")
 SORT created DESC
@@ -170,7 +170,7 @@ TABLE
   maturity as "Current Maturity",
   created as "Created",
   file.mtime as "Last Updated"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE maturity = "🌲evergreen" OR maturity = "🍓fruit"
 SORT file.mtime DESC
 LIMIT 10

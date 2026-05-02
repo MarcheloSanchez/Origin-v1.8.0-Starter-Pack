@@ -90,7 +90,7 @@ module.exports = async (args) => {
       } else if (file.path.includes("Templates/")) {
         categories.templates.push(entry);
       } else if (
-        file.path.startsWith("00-Meta/") ||
+        file.path.startsWith("99-System/") ||
         file.path === "👁️Dashboard.md" ||
         file.path === "TODO.md" ||
         file.path === "🧭 Review HQ.md" ||

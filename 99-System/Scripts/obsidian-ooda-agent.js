@@ -103,7 +103,7 @@ const FOLDER_MAP = {
   place:   "02-Knowledge/Places",
   tool:    "02-Knowledge/Tools",
   prompt:  "07-Prompts",
-  system:  "00-Meta",
+  system:  "99-System",
   daily:   "05-Calendar/Daily",
   weekly:  "05-Calendar/Weekly",
   monthly: "05-Calendar/Monthly",

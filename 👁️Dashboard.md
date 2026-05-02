@@ -60,11 +60,11 @@ cssclasses:
 /**
  * QUERY: System Health Quick Overview (Cache-Optimized)
  * PURPOSE: Display key metrics at a glance for daily check-in
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), live queries (fallback)
  * UPDATED: 2026-02-07
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/_Metrics Cache");
   const today = dv.date('today');
 
   let inboxCount, activeEfforts, atomicNotes, sourcesThisWeek;
@@ -105,12 +105,12 @@ try {
 /**
  * QUERY: System Health Score (Cache-Optimized)
  * PURPOSE: Calculate overall vault health with weighted scoring (0-100)
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), live queries (fallback)
  * SCORING: inbox(25) + projects(25) + stale(25) + orphans(25) = 100
  * UPDATED: 2026-02-07
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/_Metrics Cache");
   let metrics;
 
   if (cache?.cache_date) {
@@ -288,11 +288,11 @@ LIMIT 5
 /**
  * QUERY: Weekly Progress Stats (Cache-Optimized)
  * PURPOSE: Track capture vs processing velocity for the current week
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), live queries (fallback)
  * UPDATED: 2026-02-07
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/_Metrics Cache");
   let weeklyCaptures, weeklyProcessed, processingRate;
 
   if (cache?.cache_date) {
@@ -327,11 +327,11 @@ try {
 /**
  * QUERY: Knowledge Graph Connection Analysis (Cache-Optimized)
  * PURPOSE: Measure how well-connected notes are
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), live queries (fallback)
  * UPDATED: 2026-02-07
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/_Metrics Cache");
   let totalPages, pagesWithLinks, connectionDensity;
 
   if (cache?.cache_date) {
@@ -402,11 +402,11 @@ ADD Butto deck most used
 /**
  * QUERY: Note Creation Metrics (Cache-Optimized)
  * PURPOSE: Track weekly and monthly note creation volume
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), file.ctime (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), file.ctime (fallback)
  * UPDATED: 2026-02-07
  */
 try {
-  const cache = dv.page("00-Meta/_Metrics Cache");
+  const cache = dv.page("99-System/_Metrics Cache");
   let weekCount, monthCount;
 
   if (cache?.cache_date) {

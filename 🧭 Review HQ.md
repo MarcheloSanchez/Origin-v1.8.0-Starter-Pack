@@ -68,11 +68,11 @@ related:
 /**
  * QUERY: System Health Indicators (Cache-Optimized)
  * PURPOSE: Comprehensive GTD health dashboard with 6 metrics
- * DEPENDS ON: 00-Meta/_Metrics Cache (primary), live queries (fallback)
+ * DEPENDS ON: 99-System/_Metrics Cache (primary), live queries (fallback)
  * UPDATED: 2026-02-07
  */
 try {
-const cache = dv.page("00-Meta/_Metrics Cache");
+const cache = dv.page("99-System/_Metrics Cache");
 const today = dv.date("today");
 const oneWeekAgo = dv.date("today").minus({days: 7});
 
@@ -564,7 +564,7 @@ WHERE !type
   AND file.folder != "Templates"
   AND !contains(file.path, "99-System")
   AND !contains(file.path, "template")
-  AND !contains(file.path, "00-Meta")
+  AND !contains(file.path, "99-System")
 SORT file.mtime DESC
 LIMIT 10
 ```
@@ -934,7 +934,7 @@ WHERE length(file.inlinks) = 0
   AND file.folder != "Templates"
   AND file.folder != "06-Archive"
   AND !contains(file.path, "99-System")
-  AND !contains(file.path, "00-Meta")
+  AND !contains(file.path, "99-System")
   AND status != "📦archived"
 SORT file.mtime DESC
 LIMIT 7

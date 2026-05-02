@@ -19,7 +19,7 @@
  * - Hub page identification
  * - Weekly/monthly growth trends
  *
- * Cache Location: 00-Meta/_Metrics Cache.md
+ * Cache Location: 99-System/_Metrics Cache.md
  * Update Frequency: Daily (recommended 6am)
  */
 
@@ -324,10 +324,10 @@ async function calculateProcessing(allPages) {
 
 /**
  * Write metrics to cache file using Dataview inline fields
- * Fields are queryable via: dv.page("00-Meta/_Metrics Cache").field_name
+ * Fields are queryable via: dv.page("99-System/_Metrics Cache").field_name
  */
 async function writeCacheFile(metrics) {
-  const cachePath = '00-Meta/_Metrics Cache.md';
+  const cachePath = '99-System/_Metrics Cache.md';
 
   const existingFile = app.vault.getAbstractFileByPath(cachePath);
 
@@ -361,7 +361,7 @@ modified: ${metrics.lastUpdated}
 > [!info] Auto-generated cache for dashboard performance
 > **Last Updated**: ${metrics.timestamp}
 > **Update**: \`Ctrl+P\` → "QuickAdd: 🔄Update Metrics Cache"
-> **Usage**: \`dv.page("00-Meta/_Metrics Cache").field_name\`
+> **Usage**: \`dv.page("99-System/_Metrics Cache").field_name\`
 
 ---
 

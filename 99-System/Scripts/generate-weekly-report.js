@@ -119,7 +119,7 @@ module.exports = async (args) => {
     });
 
     // Read cache for comparison (last week's values)
-    const cacheFile = app.vault.getAbstractFileByPath("00-Meta/_Metrics Cache.md");
+    const cacheFile = app.vault.getAbstractFileByPath("99-System/_Metrics Cache.md");
     let cacheData = {};
     if (cacheFile) {
       const cacheContent = await app.vault.read(cacheFile);

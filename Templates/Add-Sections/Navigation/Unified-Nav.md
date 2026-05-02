@@ -59,7 +59,7 @@ Copy the navigation callout below and paste into any note:
 **Atomic Notes:**
 ```markdown
 > [!orbit]- Quick Navigation
-> [[🏡Home|🏡]] • [[👁️Dashboard|📊]] • [[02-Dots/_Index|💡 Atomics Index]] • [[+Inbox|📥]]
+> [[🏡Home|🏡]] • [[👁️Dashboard|📊]] • [[02-Knowledge/_Index|💡 Atomics Index]] • [[+Inbox|📥]]
 >
 > **Quick Actions:** `Ctrl+P` → ⚡Quick Process - Atomic • 🤖Smart Classify
 ```

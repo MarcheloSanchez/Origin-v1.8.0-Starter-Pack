@@ -93,7 +93,7 @@ modified: 2026-03-03
 - **Comprehensive Gamification System**: XP tracking, challenges, achievement dashboard
 - **GTD System Enhancement**: Full Getting Things Done implementation
 - **Home Maintenance System**: Room-based organization with quick-start guide
-    - Each room tracked in [[400-Places]]
+    - Each room tracked in [[Places]]
     - Maintenance scheduling and project tracking
 - **Review HQ**: Comprehensive convergence point for all review workflows
     - Contextual action callouts throughout

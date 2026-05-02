@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[500-Tools]]"
+  - "[[Tools]]"
 title:
 type: tool
 fileClass: tool

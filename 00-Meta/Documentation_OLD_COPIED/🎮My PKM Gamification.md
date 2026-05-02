@@ -715,9 +715,9 @@ A: Prestige system, achievement completion, habit maintenance, helping others.
 
 ### Related Documentation
 - [[MOC - Visual Identity]] – Visual standards hub (achievement badges, level icons, rarity colors)
-- [[00-Meta/Documentation/🗺️My PKM MOC|PKM System Overview]]
+- [[99-System/Documentation/Documentation/🗺️My PKM MOC|PKM System Overview]]
 - [[TODO|GTD System]]
-- [[00-Meta/Documentation/🔢My PKM Metadata|Metadata Standards]]
+- [[99-System/Documentation/Documentation/🔢My PKM Metadata|Metadata Standards]]
 
 ---
 

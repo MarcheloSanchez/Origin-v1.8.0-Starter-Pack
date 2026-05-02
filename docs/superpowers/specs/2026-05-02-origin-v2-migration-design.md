@@ -282,7 +282,7 @@ Two domains:
 - Use Obsidian Bases `view.base` to filter notes with `up:` values pointing to old paths
 - Bulk-update via Bases interface
 
-**Body text links** (e.g., `[[02-Dots/...]]` in note content):
+**Body text links** (e.g., `[[02-Knowledge/...]]` in note content):
 - Use search-replace Python script targeting specific old path strings
 - Process per phase (each rename has a known old→new string)
 - Backup before running

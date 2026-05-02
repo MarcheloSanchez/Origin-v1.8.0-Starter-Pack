@@ -493,7 +493,7 @@ New hotkeys visualisation - [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf]]
 ---
 # 16/01/26
 - Added  [[🏠 Home Maintenance System]] 
-	- Each room is in [[400-Places]]
+	- Each room is in [[Places]]
 	- Not happy with the amount of tags here.
 - Added files from AI updated Origin_Starter PACK, like - [[🧭 Review HQ|Review Hub]], [[🎮Gamification Dashboard]], [[🎮Gamification Quick Reference]], [[🎮My PKM Gamification]], [[GTD Contexts Guide]], [[📍Note Classification Guide]] 
 - [[MOC - Life Dashboard]] ... hmm maybe I will transfer from Main the MOCs later on

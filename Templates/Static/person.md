@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[300-People]]"
+  - "[[People]]"
 title:
 type: person
 fileClass: person

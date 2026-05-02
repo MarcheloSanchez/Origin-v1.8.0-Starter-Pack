@@ -142,15 +142,15 @@ LIMIT 7
 ```
 > [!MAP]- MOCs
 > - [[+Inbox]] - Incoming notes
-> - [[00-Meta]] - Meta files about vault 
+> - [[99-System]] - Meta files about vault 
 > - [[01-MOCs]] - Maps of Contents 
-> - [[02-Dots]] - Categorized notes
+> - [[02-Knowledge]] - Categorized notes
 > - [[03-Efforts]] - Overview of projects
 > - [[04-Sources]] - Overview of sources
 > - [[05-Calendar]] - Overview of daily notes and other journalling 
 > - [[06-Archive]] - Overview of archived notes
 > - [[99-System]]
-> - [[07-Prompts]]
+> - [[99-System/Prompts]]
 > - [[Templates]]
 Více zde: [[+Aboutℹ️]]
 

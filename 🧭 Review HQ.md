@@ -312,7 +312,7 @@ LIMIT 7
 > ```
 > Is it actionable?
 > ├─ NO → Is it reference material?
-> │       ├─ YES → Move to [[04-Sources]] or [[02-Dots]]
+> │       ├─ YES → Move to [[04-Sources]] or [[02-Knowledge]]
 > │       └─ NO → 🗑️ Delete it
 > └─ YES → Can I do it in <2 min?
 >         ├─ YES → Do it now, then delete/archive
@@ -324,7 +324,7 @@ LIMIT 7
 > **Quick destination guide:**
 > | Content Type | Move To | Template |
 > |--------------|---------|----------|
-> | Idea/thought | [[100-Atomics]] | `Atomic-New` |
+> | Idea/thought | [[Atomics]] | `Atomic-New` |
 > | Task/project | [[03-Efforts]] | `Effort-New` |
 > | Reference | [[04-Sources]] | `Source-New` |
 > | Meeting note | [[Meetings]] | `Meeting-New` |
@@ -861,7 +861,7 @@ After triage, use this modified weekly review:
 
 ### Knowledge Locations
 - [[01-MOCs]] — Maps of Content
-- [[02-Dots]] — Atomic knowledge
+- [[02-Knowledge]] — Atomic knowledge
 - [[04-Sources]] — References & sources
 - [[MOC - Areas]] — Life areas
 

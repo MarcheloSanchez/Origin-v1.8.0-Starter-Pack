@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[100-Atomics]]"
+  - "[[Atomics]]"
 title:
 type: atomic
 fileClass: atomic

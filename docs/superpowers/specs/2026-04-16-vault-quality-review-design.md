@@ -185,7 +185,7 @@ modified: 2026-04-16
 related:
   - "[[Confirmation Bias]]"
 ---
-> [!orbit] Wayfinder | [[📚 Books MOC]] | [[03-Efforts/On/PKM Research]]
+> [!orbit] Wayfinder | [[📚 Books MOC]] | [[03-Efforts/Active/PKM Research]]
 
 # Thinking, Fast and Slow
 

@@ -71,7 +71,7 @@ modified: 2026-03-03
 ---
 # 30/09/25
 - Updated all abouts to visually appealing style with help from perplexity - Claude. 
-- Finished [[07-Prompts]]
+- Finished [[99-System/Prompts]]
 - Altered the Templates with better organization. 
 - Updated [[Maturity Evolve]]
 - Updated [[Guide — YAML Orchestrator#ai tested 🧹tidy]]

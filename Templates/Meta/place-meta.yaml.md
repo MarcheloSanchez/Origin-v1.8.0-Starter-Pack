@@ -1,6 +1,6 @@
 ---
-up: "[[400-Places]]"
-in: "[[400-Places]]"
+up: "[[Places]]"
+in: "[[Places]]"
 title:
 aliases: []
 type: place

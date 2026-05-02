@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[400-Places]]"
+  - "[[Places]]"
 title:
 type: place
 fileClass: place

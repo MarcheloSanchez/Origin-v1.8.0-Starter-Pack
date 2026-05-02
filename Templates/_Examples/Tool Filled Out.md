@@ -1,5 +1,5 @@
 ---
-in: "[[500-Tools]]"
+in: "[[Tools]]"
 title: Obsidian
 aliases: ["md vault", "obsidian.md"]
 type: tool

@@ -1,5 +1,5 @@
 ---
-up: "[[00-Meta]]"
+up: "[[99-System]]"
 in:
   - "[[QuickAdd Handbook]]"
 title: QuickAdd Template Coverage

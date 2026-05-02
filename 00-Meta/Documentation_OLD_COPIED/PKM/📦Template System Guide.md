@@ -62,7 +62,7 @@ YAML frontmatter templates defining the metadata schema for each note type.
 ```yaml
 ---
 in:
-  - "[[100-Atomics]]"
+  - "[[Atomics]]"
 title:
 type: atomic
 fileClass: atomic

@@ -9,7 +9,7 @@ modified: 2026-04-06
 ## 📥Inbox (5)
 
 - [ ] Hotkeys could be refined [[MOC Hotkeys]] says its self by looking at it
-- [ ] [[07-Prompts]] - needs refractoring. What in which folder and what I am using. And of course it will no be included in the STARTER PACK.
+- [ ] [[99-System/Prompts]] - needs refractoring. What in which folder and what I am using. And of course it will no be included in the STARTER PACK.
 - [ ] Quickadd - Insert callout does not work
 - [ ] [[backup-recovery]]
 - [ ] Quickadd status of the menu is no good

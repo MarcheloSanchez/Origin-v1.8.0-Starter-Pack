@@ -79,13 +79,13 @@ cssclasses:
 >
 > ![[04-Sources/_Sources_Data.base]]
 >
-> **Recent ideas →** ![[02-Dots/100-Atomics/Ideas/_Ideas_Data.base]]
+> **Recent ideas →** ![[02-Knowledge/100-Atomics/Ideas/_Ideas_Data.base]]
 
 > [!COMPASS]- 👤 Personal · `$= dv.pages('"02-Dots/300-People"').length` people · `$= dv.pages('"02-Dots/200-Areas"').length` areas · `$= dv.pages('"03-Efforts"').where(p => p.tags && p.tags.includes("personal")).length` goals
 >
-> ![[02-Dots/300-People/_People_Data.base]]
+> ![[02-Knowledge/300-People/_People_Data.base]]
 >
-> **Areas →** ![[02-Dots/200-Areas/_Areas_Data.base]]
+> **Areas →** ![[02-Knowledge/200-Areas/_Areas_Data.base]]
 >
 > **Links:** [[Life Map]] · [[Finance MOC]] · [[People Map]]
 
@@ -99,7 +99,7 @@ cssclasses:
 > | 📚 Total notes | `$= dv.pages().length` |
 > | 🗂️ Sources | `$= dv.pages('"04-Sources"').length` |
 >
-> **Tools →** ![[02-Dots/500-Tools/_Tools_Data.base]]
+> **Tools →** ![[02-Knowledge/500-Tools/_Tools_Data.base]]
 >
 > **Drill-downs:** [[🧭 Review HQ|🧭 Review HQ]] · [[Performance Metrics|📈 Metrics]] · [[🎮Gamification Dashboard|🎮 Game]] · [[🔍My PKM Queries|🔍 Queries]]
 

@@ -1,6 +1,6 @@
 ---
 in:
-  - "[[07-Prompts]]"
+  - "[[99-System/Prompts]]"
 title:
 type: prompt
 fileClass: prompt

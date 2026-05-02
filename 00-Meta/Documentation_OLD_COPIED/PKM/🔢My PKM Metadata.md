@@ -214,7 +214,7 @@ fileClass: MOC
 
 ---
 
-### **💡 [[02-Dots]] — Atomic Metadata**
+### **💡 [[02-Knowledge]] — Atomic Metadata**
 
 > [!atom]+ **Purpose**
 > Track idea development from seed to evergreen  
@@ -375,7 +375,7 @@ fileClass: meeting
 
 ---
 
-### **👥 [[300-People]] — Person Metadata**
+### **👥 [[People]] — Person Metadata**
 
 > [!user]+ **Purpose**
 > Relationship intelligence and context  
@@ -411,7 +411,7 @@ fileClass: person
 
 ---
 
-### **🛠️ [[500-Tools]] — Tool Metadata**
+### **🛠️ [[Tools]] — Tool Metadata**
 
 > [!wrench]+ **Purpose**
 > Capability enhancement and tool mastery tracking  

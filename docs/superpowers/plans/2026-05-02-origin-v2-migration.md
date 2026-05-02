@@ -279,12 +279,12 @@ replacements = [
     ("02-Dots/400-Places",  "02-Knowledge/Places"),
     ("02-Dots/500-Tools",   "02-Knowledge/Tools"),
     ("02-Dots",             "02-Knowledge"),
-    ("[[100-Atomics]]",     "[[Atomics]]"),
-    ("[[200-Areas]]",       "[[Areas]]"),
-    ("[[300-People]]",      "[[People]]"),
-    ("[[400-Places]]",      "[[Places]]"),
-    ("[[500-Tools]]",       "[[Tools]]"),
-    ("[[02-Dots]]",         "[[02-Knowledge]]"),
+    ("[[Atomics]]",     "[[Atomics]]"),
+    ("[[Areas]]",       "[[Areas]]"),
+    ("[[People]]",      "[[People]]"),
+    ("[[Places]]",      "[[Places]]"),
+    ("[[Tools]]",       "[[Tools]]"),
+    ("[[02-Knowledge]]",         "[[02-Knowledge]]"),
 ]
 
 for old, new in replacements:
@@ -417,12 +417,12 @@ import sys, glob
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 replacements = {
-    '[[100-Atomics]]': '"[[Atomics]]"',
-    '[[200-Areas]]':   '"[[Areas]]"',
-    '[[300-People]]':  '"[[People]]"',
-    '[[400-Places]]':  '"[[Places]]"',
-    '[[500-Tools]]':   '"[[Tools]]"',
-    '[[02-Dots]]':     '"[[02-Knowledge]]"',
+    '[[Atomics]]': '"[[Atomics]]"',
+    '[[Areas]]':   '"[[Areas]]"',
+    '[[People]]':  '"[[People]]"',
+    '[[Places]]':  '"[[Places]]"',
+    '[[Tools]]':   '"[[Tools]]"',
+    '[[02-Knowledge]]':     '"[[02-Knowledge]]"',
     '02-Dots/':        '02-Knowledge/',
 }
 
@@ -669,7 +669,7 @@ for path in scripts:
         with open(path, encoding='utf-8') as f:
             content = f.read()
         new_content = content.replace('07-Prompts', '99-System/Prompts')
-        new_content = new_content.replace("[[07-Prompts]]", '"[[99-System/Prompts]]"')
+        new_content = new_content.replace("[[99-System/Prompts]]", '"[[99-System/Prompts]]"')
         if new_content != content:
             with open(path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
@@ -1220,29 +1220,29 @@ excludes = ['99-System/Scripts/', '.obsidian/', 'docs/superpowers/']
 # All old→new path strings that appear in body text wikilinks
 replacements = [
     # Efforts
-    ('[[03-Efforts/On/',        '[[03-Efforts/Active/'),
-    ('[[03-Efforts/Ongoing/',   '[[03-Efforts/Active/'),
-    ('[[03-Efforts/Simmering/', '[[03-Efforts/Paused/'),
-    ('[[03-Efforts/Sleeping/',  '[[03-Efforts/Waiting/'),
+    ('[[03-Efforts/Active/',        '[[03-Efforts/Active/'),
+    ('[[03-Efforts/Active/',   '[[03-Efforts/Active/'),
+    ('[[03-Efforts/Paused/', '[[03-Efforts/Paused/'),
+    ('[[03-Efforts/Waiting/',  '[[03-Efforts/Waiting/'),
     # Knowledge
-    ('[[02-Dots/',              '[[02-Knowledge/'),
-    ('[[02-Dots]]',             '[[02-Knowledge]]'),
-    ('[[100-Atomics]]',         '[[Atomics]]'),
-    ('[[200-Areas]]',           '[[Areas]]'),
-    ('[[300-People]]',          '[[People]]'),
-    ('[[400-Places]]',          '[[Places]]'),
-    ('[[500-Tools]]',           '[[Tools]]'),
+    ('[[02-Knowledge/',              '[[02-Knowledge/'),
+    ('[[02-Knowledge]]',             '[[02-Knowledge]]'),
+    ('[[Atomics]]',         '[[Atomics]]'),
+    ('[[Areas]]',           '[[Areas]]'),
+    ('[[People]]',          '[[People]]'),
+    ('[[Places]]',          '[[Places]]'),
+    ('[[Tools]]',           '[[Tools]]'),
     # Meta
-    ('[[00-Meta/',              '[[99-System/Documentation/'),
-    ('[[00-Meta]]',             '[[99-System]]'),
+    ('[[99-System/Documentation/',              '[[99-System/Documentation/'),
+    ('[[99-System]]',             '[[99-System]]'),
     # Prompts
-    ('[[07-Prompts/',           '[[99-System/Prompts/'),
-    ('[[07-Prompts]]',          '[[99-System/Prompts]]'),
+    ('[[99-System/Prompts/',           '[[99-System/Prompts/'),
+    ('[[99-System/Prompts]]',          '[[99-System/Prompts]]'),
     # Sources
-    ('[[04-Sources/410-Knowledge/', '[[04-Sources/'),
-    ('[[04-Sources/420-Media/',     '[[04-Sources/Media/'),
-    ('[[04-Sources/430-Guides/',    '[[04-Sources/Guides/'),
-    ('[[04-Sources/440-Meetings/',  '[[04-Sources/Meetings/'),
+    ('[[04-Sources/', '[[04-Sources/'),
+    ('[[04-Sources/Media/',     '[[04-Sources/Media/'),
+    ('[[04-Sources/Guides/',    '[[04-Sources/Guides/'),
+    ('[[04-Sources/Meetings/',  '[[04-Sources/Meetings/'),
 ]
 
 changed = 0

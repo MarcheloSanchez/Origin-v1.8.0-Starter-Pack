@@ -7,7 +7,7 @@ const fileName = name.replace(/[\\/:*?"<>|]/g, "-");
 
 const content = `---
 in:
-  - "[[07-Prompts]]"
+  - "[[99-System/Prompts]]"
 title: "${name}"
 type: prompt
 fileClass: prompt

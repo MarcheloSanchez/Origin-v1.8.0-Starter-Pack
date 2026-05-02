@@ -1,6 +1,6 @@
 ---
 up: "[[MOC - Areas]]"
-in: "[[200-Areas]]"
+in: "[[Areas]]"
 title: Area –
 aliases: []
 type: area

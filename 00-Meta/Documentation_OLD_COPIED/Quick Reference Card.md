@@ -1,5 +1,5 @@
 ---
-up: "[[00-Meta]]"
+up: "[[99-System]]"
 title: Quick Reference Card
 type: documentation
 created: 2026-02-27

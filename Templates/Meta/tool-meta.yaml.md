@@ -1,5 +1,5 @@
 ---
-in: "[[500-Tools]]"
+in: "[[Tools]]"
 title:
 aliases: []
 type: tool

@@ -1,6 +1,6 @@
 ---
-up: "[[300-People]]"
-in: "[[300-People]]"
+up: "[[People]]"
+in: "[[People]]"
 title: Adam Novák
 aliases: []
 type: person

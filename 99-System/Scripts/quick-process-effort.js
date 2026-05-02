@@ -116,7 +116,7 @@ module.exports = async (args) => {
 
       const selectedFolder = await QuickAdd.suggester(
         folderOptions,
-        ['On', 'Ongoing', 'Simmering', 'Inbox'],
+        ['Active', 'Paused', 'Waiting', 'Inbox'],
         false,
         `Select status folder:\n\n${statusDecision.reason}`
       );
@@ -128,9 +128,9 @@ module.exports = async (args) => {
       }
 
       // Update status metadata
-      if (selectedFolder === 'On') metadata.status = '🏃on';
-      else if (selectedFolder === 'Ongoing') metadata.status = '♻️ongoing';
-      else if (selectedFolder === 'Simmering') metadata.status = '🌊simmering';
+      if (selectedFolder === 'Active') metadata.status = '🏃on';
+      else if (selectedFolder === 'Active') metadata.status = '♻️ongoing';
+      else if (selectedFolder === 'Paused') metadata.status = '🌊simmering';
       else metadata.status = '📥inbox';
 
     } else {
@@ -191,7 +191,7 @@ module.exports = async (args) => {
 function determineEffortStatus(dueDate) {
   if (!dueDate || dueDate === '') {
     return {
-      folder: 'Ongoing',
+      folder: 'Active',
       status: '♻️ongoing',
       reason: 'No deadline set → Suggests Ongoing (recurring or continuous work)'
     };
@@ -202,7 +202,7 @@ function determineEffortStatus(dueDate) {
 
   if (!deadline.isValid()) {
     return {
-      folder: 'Ongoing',
+      folder: 'Active',
       status: '♻️ongoing',
       reason: 'Invalid deadline format → Suggests Ongoing'
     };
@@ -212,7 +212,7 @@ function determineEffortStatus(dueDate) {
 
   if (daysUntil < 0) {
     return {
-      folder: 'On',
+      folder: 'Active',
       status: '🏃on',
       reason: `Deadline has passed (${Math.abs(daysUntil)} days ago) → Suggests On (urgent action needed)`
     };
@@ -220,7 +220,7 @@ function determineEffortStatus(dueDate) {
 
   if (daysUntil <= 7) {
     return {
-      folder: 'On',
+      folder: 'Active',
       status: '🏃on',
       reason: `Deadline in ${daysUntil} days → Suggests On (immediate focus)`
     };
@@ -228,14 +228,14 @@ function determineEffortStatus(dueDate) {
 
   if (daysUntil <= 30) {
     return {
-      folder: 'Ongoing',
+      folder: 'Active',
       status: '♻️ongoing',
       reason: `Deadline in ${daysUntil} days → Suggests Ongoing (active but not urgent)`
     };
   }
 
   return {
-    folder: 'Simmering',
+    folder: 'Paused',
     status: '🌊simmering',
     reason: `Deadline in ${daysUntil} days → Suggests Simmering (future planning)`
   };

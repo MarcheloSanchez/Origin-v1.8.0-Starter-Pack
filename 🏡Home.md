@@ -31,11 +31,11 @@ cssclasses:
 > > short mode
 > > ```
 >
-> > [!award]- 🎯 Focus · `$= dv.pages('"03-Efforts/On"').length` on · `$= dv.pages('"03-Efforts/Ongoing"').length` ongoing
+> > [!award]- 🎯 Focus · `$= dv.pages('"03-Efforts/Active"').length` on · `$= dv.pages('"03-Efforts/Active"').length` ongoing
 > >
 > > ```dataview
 > > TABLE WITHOUT ID file.link AS "", rank AS "↑"
-> > FROM "03-Efforts/On"
+> > FROM "03-Efforts/Active"
 > > SORT rank DESC
 > > LIMIT 4
 > > ```
@@ -51,11 +51,11 @@ cssclasses:
 > > | 💡 Atomic | `Ctrl+A` |
 > > | 📚 Source | `Ctrl+S` |
 
-> [!Training]- 🚀 Career & Productivity · `$= dv.pages('"03-Efforts/On"').length` on · `$= dv.pages('"03-Efforts/Ongoing"').length` ongoing · `$= dv.pages('"03-Efforts/On"').where(p => p.due && dv.date(p.due) < dv.date("today")).length` overdue · `$= dv.pages('"05-Calendar/Sessions"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days")).length` sessions/wk
+> [!Training]- 🚀 Career & Productivity · `$= dv.pages('"03-Efforts/Active"').length` on · `$= dv.pages('"03-Efforts/Active"').length` ongoing · `$= dv.pages('"03-Efforts/Active"').where(p => p.due && dv.date(p.due) < dv.date("today")).length` overdue · `$= dv.pages('"05-Calendar/Sessions"').where(p => p.file.mtime >= dv.date("today") - dv.duration("7 days")).length` sessions/wk
 >
 > ```dataview
 > TABLE WITHOUT ID file.link AS "Effort", completion_percentage + "%" AS "Done", due AS "Due", next_actions AS "Next"
-> FROM "03-Efforts/On"
+> FROM "03-Efforts/Active"
 > SORT completion_percentage ASC
 > ```
 >
@@ -75,13 +75,13 @@ cssclasses:
 >
 > **Links:** [[210-Health]] · [[Habits Map]]
 
-> [!Map]- 📚 Learning · `$= dv.pages('"04-Sources"').where(p => p.status === "reading").length` reading · `$= dv.pages('"04-Sources"').where(p => p.status === "queue").length` queued · `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` seedlings
+> [!Map]- 📚 Learning · `$= dv.pages('"04-Sources"').where(p => p.status === "reading").length` reading · `$= dv.pages('"04-Sources"').where(p => p.status === "queue").length` queued · `$= dv.pages('"02-Knowledge"').where(p => p.maturity === "🌱seedling").length` seedlings
 >
 > ![[04-Sources/_Sources_Data.base]]
 >
 > **Recent ideas →** ![[02-Knowledge/100-Atomics/Ideas/_Ideas_Data.base]]
 
-> [!COMPASS]- 👤 Personal · `$= dv.pages('"02-Dots/300-People"').length` people · `$= dv.pages('"02-Dots/200-Areas"').length` areas · `$= dv.pages('"03-Efforts"').where(p => p.tags && p.tags.includes("personal")).length` goals
+> [!COMPASS]- 👤 Personal · `$= dv.pages('"02-Knowledge/People"').length` people · `$= dv.pages('"02-Knowledge/Areas"').length` areas · `$= dv.pages('"03-Efforts"').where(p => p.tags && p.tags.includes("personal")).length` goals
 >
 > ![[02-Knowledge/300-People/_People_Data.base]]
 >
@@ -89,13 +89,13 @@ cssclasses:
 >
 > **Links:** [[Life Map]] · [[Finance MOC]] · [[People Map]]
 
-> [!Blocks]- 🛠️ Tools & System · `$= dv.pages('"+Inbox"').length` inbox · `$= dv.pages().where(p => p.file.mtime >= dv.date("today")).length` modified today · `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` seedlings
+> [!Blocks]- 🛠️ Tools & System · `$= dv.pages('"+Inbox"').length` inbox · `$= dv.pages().where(p => p.file.mtime >= dv.date("today")).length` modified today · `$= dv.pages('"02-Knowledge"').where(p => p.maturity === "🌱seedling").length` seedlings
 >
 > | Metric | |
 > |---|---|
 > | 📥 Inbox | `$= dv.pages('"+Inbox"').length` |
 > | 📝 Modified today | `$= dv.pages().where(p => p.file.mtime >= dv.date("today")).length` |
-> | 🌱 Seedlings | `$= dv.pages('"02-Dots"').where(p => p.maturity === "🌱seedling").length` |
+> | 🌱 Seedlings | `$= dv.pages('"02-Knowledge"').where(p => p.maturity === "🌱seedling").length` |
 > | 📚 Total notes | `$= dv.pages().length` |
 > | 🗂️ Sources | `$= dv.pages('"04-Sources"').length` |
 >

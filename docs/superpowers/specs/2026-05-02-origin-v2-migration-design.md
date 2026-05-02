@@ -200,7 +200,7 @@ Steps:
 4. Delete empty `00-Meta/` folder
 5. Update `+About Metaℹ️.md` → move to `99-System/`, update content
 6. Update all script references to `00-Meta` paths: `update-metrics-cache.js`, `metrics-core.js`, `generate-weekly-report.js`, `generate-*.js`
-7. Update Dataview queries that reference `"00-Meta"` folder
+7. Update Dataview queries that reference `"99-System/Documentation"` folder
 8. Update `🏡Home.md`, `👁️Dashboard.md`, `🧭 Review HQ.md` dashboard links
 9. Update CLAUDE.md
 

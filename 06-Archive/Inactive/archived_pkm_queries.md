@@ -170,23 +170,23 @@ SORT modified ASC
 
 🟢Select a *Effort #🔥on* below to view
 ```dataview-OK
-List FROM "03-Efforts/On"
+List FROM "03-Efforts/Active"
 where file.name != this.file.name
 SORT file.mtime ASC
 ```
 🟠Select a *Effort #♻️ongoing* below to view
 ```dataview-OK
-List FROM "03-Efforts/Ongoing"
+List FROM "03-Efforts/Active"
 where file.name != this.file.name
 ```
 🔴Select a *Effort #🌊simmering* below to view
 ```dataview-OK
-List FROM "03-Efforts/Simmering"
+List FROM "03-Efforts/Paused"
 where file.name != this.file.name
 ```
 🔵Select a *Effort #💤sleeping* below to view
 ```dataview-OK
-List FROM "03-Efforts/Sleeping"
+List FROM "03-Efforts/Waiting"
 where file.name != this.file.name
 ```
 ## Active Efforts
@@ -229,7 +229,7 @@ SORT file.mtime DESC
 ### Recent Dots by Type
 ```
 TABLE type, created  
-FROM "02-Dots"  
+FROM "02-Knowledge"  
 WHERE created >= date(today) - dur(30 days)  
 GROUP BY type  
 SORT created DESC
@@ -240,7 +240,7 @@ TABLE WITHOUT ID
  file.link as "List from Dots",
  (date(today) - file.cday).day as "Days alive"
 
-FROM "02-Dots"
+FROM "02-Knowledge"
 where file.name != "02 Dots"
 SORT file.cday DESC
 
@@ -249,7 +249,7 @@ LIMIT 40
 ### By Type - Dots
 ```dataview-ye
 TABLE type, created  
-FROM "02-Dots"  
+FROM "02-Knowledge"  
 WHERE created >= date(today) - dur(30 days)  
 GROUP BY type  
 SORT created DESC
@@ -257,7 +257,7 @@ SORT created DESC
 ### 🏷️ Témata (top clustery)  - Dots
 ```
 TABLE WITHOUT ID topic AS "Téma", length(rows) AS "Počet", rows.file.link AS "Poznámky"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE topic
 GROUP BY topic
 SORT length(rows) DESC
@@ -266,7 +266,7 @@ LIMIT 20
 ## 🍃 Maturity (📤 seed → 🍓 fruit) - - Dots
 ```dataview-OK
 TABLE WITHOUT ID maturity AS "Zralost", length(rows) AS "Počet", rows.file.link AS "Link"
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE maturity
 GROUP BY maturity
 SORT length(rows) DESC

@@ -224,7 +224,7 @@ You can append these anywhere in your chain:
 - **Integration Script:**  
   - Each Stage = `.md` block that can be dynamically included via:
     ```templater
-    <% tp.file.include("07-Prompts/Playbooks/Stage-03-Synthesize") %>
+    <% tp.file.include("99-System/Prompts/Playbooks/Stage-03-Synthesize") %>
     ```
   - Full chain orchestrator reads Bloom level from YAML for intelligent routing.
 

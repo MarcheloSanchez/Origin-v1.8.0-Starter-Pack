@@ -62,7 +62,7 @@ The place where you always come back, that's **home**. 🦔🍎
 > > >TABLE WITHOUT ID
 > > >file.link as "",
 > > > rank as "Rank"
-> > > FROM "03-Efforts/On"
+> > > FROM "03-Efforts/Active"
 > > >SORT rank desc
 > > >LIMIT 5
 > > >```
@@ -74,7 +74,7 @@ The place where you always come back, that's **home**. 🦔🍎
 > > >TABLE WITHOUT ID
 > > >file.link as "",
 > > >rank as "Rank"
-> > >FROM "03-Efforts/Ongoing"
+> > >FROM "03-Efforts/Active"
 > > >SORT rank desc
 > > >LIMIT 5
 > > >```
@@ -86,7 +86,7 @@ The place where you always come back, that's **home**. 🦔🍎
 > > >TABLE WITHOUT ID
 > > >file.link as "",
 > > >rank as "Rank"
-> > >FROM "03-Efforts/Simmering"
+> > >FROM "03-Efforts/Paused"
 > > >SORT rank desc
 > > >LIMIT 5
 > > >```

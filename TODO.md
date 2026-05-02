@@ -198,7 +198,7 @@ LIMIT 20
 
 ```dataview
 LIST
-FROM "03-Efforts/Simmering" OR "+Inbox"
+FROM "03-Efforts/Paused" OR "+Inbox"
 WHERE contains(tags, "someday") OR contains(tags, "maybe")
 SORT file.mtime DESC
 LIMIT 10

@@ -79,7 +79,7 @@ try {
     // Live fallback
     inboxCount = dv.pages('"+Inbox"')?.length ?? 0;
     activeEfforts = dv.pages('"03-Efforts"').where(p => p.status === "🔄active").length ?? 0;
-    atomicNotes = dv.pages('"02-Dots/100-Atomics"')?.length ?? 0;
+    atomicNotes = dv.pages('"02-Knowledge/Atomics"')?.length ?? 0;
     sourcesThisWeek = dv.pages('"04-Sources"').where(p => p.file.ctime >= today.minus({days: 7})).length ?? 0;
   }
 
@@ -254,7 +254,7 @@ TABLE WITHOUT ID
   "💡 " + title as "Insight",
   maturity as "Stage",
   created as "Captured"
-FROM "02-Dots/100-Atomics"
+FROM "02-Knowledge/Atomics"
 WHERE status = "🔄active"
 SORT created DESC
 LIMIT 5

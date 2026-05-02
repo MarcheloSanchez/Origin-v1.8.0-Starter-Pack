@@ -584,7 +584,7 @@ TABLE WITHOUT ID
   choice(type = "meeting" AND !meeting_type, "meeting_type", "") +
   choice(type = "person" AND !relationship, "relationship", "") +
   choice(type = "atomic" AND (!tags OR length(file.tags) = 0), "tags", "") as "Missing Field"
-FROM "02-Dots" OR "03-Efforts" OR "04-Sources"
+FROM "02-Knowledge" OR "03-Efforts" OR "04-Sources"
 WHERE
   (type = "effort" AND !priority) OR
   (type = "source" AND (!source_type OR !read_status)) OR
@@ -904,7 +904,7 @@ After triage, use this modified weekly review:
 TABLE WITHOUT ID
   file.link as "Note",
   "Missing: " + choice(!title, "title ", "") + choice(!type, "type ", "") + choice(!status, "status", "") as "Fix Needed"
-FROM "03-Efforts" OR "02-Dots" OR "04-Sources"
+FROM "03-Efforts" OR "02-Knowledge" OR "04-Sources"
 WHERE (!title OR !type OR !status)
   AND (status = "🔄active" OR !status)
 LIMIT 5
@@ -956,7 +956,7 @@ LIMIT 7
 try {
   const today = dv.date('today');
 
-  const candidates = dv.pages('"02-Dots"')
+  const candidates = dv.pages('"02-Knowledge"')
     .where(p => p.maturity && p.type === 'atomic')
     .map(p => {
       const outlinks = p.file.outlinks?.length ?? 0;
@@ -1083,7 +1083,7 @@ try {
   const today = dv.date('today');
   const weekAgo = today.minus({days: 7});
 
-  const recentlyConnected = dv.pages('"02-Dots"')
+  const recentlyConnected = dv.pages('"02-Knowledge"')
     .where(p =>
       p.file.mtime >= weekAgo &&
       (p.file.outlinks?.length ?? 0) >= 5

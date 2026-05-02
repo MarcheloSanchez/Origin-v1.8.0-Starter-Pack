@@ -77,37 +77,37 @@ mkdir -p "03-Efforts/Waiting"
 - [ ] **Step 1.2: Move `On/` contents into `Active/`**
 
 ```bash
-if [ -d "03-Efforts/On" ] && [ "$(ls -A '03-Efforts/On')" ]; then
+if [ -d "03-Efforts/Active" ] && [ "$(ls -A '03-Efforts/On')" ]; then
   mv 03-Efforts/On/* "03-Efforts/Active/"
 fi
-rmdir "03-Efforts/On" 2>/dev/null || true
+rmdir "03-Efforts/Active" 2>/dev/null || true
 ```
 
 - [ ] **Step 1.3: Move `Ongoing/` contents into `Active/`**
 
 ```bash
-if [ -d "03-Efforts/Ongoing" ] && [ "$(ls -A '03-Efforts/Ongoing')" ]; then
+if [ -d "03-Efforts/Active" ] && [ "$(ls -A '03-Efforts/Ongoing')" ]; then
   mv 03-Efforts/Ongoing/* "03-Efforts/Active/"
 fi
-rmdir "03-Efforts/Ongoing" 2>/dev/null || true
+rmdir "03-Efforts/Active" 2>/dev/null || true
 ```
 
 - [ ] **Step 1.4: Move `Simmering/` → `Paused/`**
 
 ```bash
-if [ -d "03-Efforts/Simmering" ] && [ "$(ls -A '03-Efforts/Simmering')" ]; then
+if [ -d "03-Efforts/Paused" ] && [ "$(ls -A '03-Efforts/Simmering')" ]; then
   mv 03-Efforts/Simmering/* "03-Efforts/Paused/"
 fi
-rmdir "03-Efforts/Simmering" 2>/dev/null || true
+rmdir "03-Efforts/Paused" 2>/dev/null || true
 ```
 
 - [ ] **Step 1.5: Move `Sleeping/` → `Waiting/` (if it exists)**
 
 ```bash
-if [ -d "03-Efforts/Sleeping" ] && [ "$(ls -A '03-Efforts/Sleeping')" ]; then
+if [ -d "03-Efforts/Waiting" ] && [ "$(ls -A '03-Efforts/Sleeping')" ]; then
   mv 03-Efforts/Sleeping/* "03-Efforts/Waiting/"
 fi
-rmdir "03-Efforts/Sleeping" 2>/dev/null || true
+rmdir "03-Efforts/Waiting" 2>/dev/null || true
 ```
 
 - [ ] **Step 1.6: Update `quick-process-effort.js`**
@@ -240,7 +240,7 @@ git commit -m "migration: phase 1 — 03-Efforts subfolders renamed to Active/Pa
 - [ ] **Step 2.1: Rename top-level folder**
 
 ```bash
-mv "02-Dots" "02-Knowledge"
+mv "02-Knowledge" "02-Knowledge"
 ```
 
 - [ ] **Step 2.2: Rename numbered subfolders (drop numbers)**
@@ -273,12 +273,12 @@ with open(path, encoding='utf-8') as f:
     content = f.read()
 
 replacements = [
-    ("02-Dots/100-Atomics", "02-Knowledge/Atomics"),
-    ("02-Dots/200-Areas",   "02-Knowledge/Areas"),
-    ("02-Dots/300-People",  "02-Knowledge/People"),
-    ("02-Dots/400-Places",  "02-Knowledge/Places"),
-    ("02-Dots/500-Tools",   "02-Knowledge/Tools"),
-    ("02-Dots",             "02-Knowledge"),
+    ("02-Knowledge/Atomics", "02-Knowledge/Atomics"),
+    ("02-Knowledge/Areas",   "02-Knowledge/Areas"),
+    ("02-Knowledge/People",  "02-Knowledge/People"),
+    ("02-Knowledge/Places",  "02-Knowledge/Places"),
+    ("02-Knowledge/Tools",   "02-Knowledge/Tools"),
+    ("02-Knowledge",             "02-Knowledge"),
     ("[[Atomics]]",     "[[Atomics]]"),
     ("[[Areas]]",       "[[Areas]]"),
     ("[[People]]",      "[[People]]"),
@@ -309,12 +309,12 @@ with open(path, encoding='utf-8') as f:
     content = f.read()
 
 replacements = [
-    ("02-Dots/100-Atomics", "02-Knowledge/Atomics"),
-    ("02-Dots/200-Areas",   "02-Knowledge/Areas"),
-    ("02-Dots/300-People",  "02-Knowledge/People"),
-    ("02-Dots/400-Places",  "02-Knowledge/Places"),
-    ("02-Dots/500-Tools",   "02-Knowledge/Tools"),
-    ("02-Dots",             "02-Knowledge"),
+    ("02-Knowledge/Atomics", "02-Knowledge/Atomics"),
+    ("02-Knowledge/Areas",   "02-Knowledge/Areas"),
+    ("02-Knowledge/People",  "02-Knowledge/People"),
+    ("02-Knowledge/Places",  "02-Knowledge/Places"),
+    ("02-Knowledge/Tools",   "02-Knowledge/Tools"),
+    ("02-Knowledge",             "02-Knowledge"),
 ]
 
 for old, new in replacements:
@@ -340,12 +340,12 @@ scripts = [
 ]
 
 replacements = [
-    ("02-Dots/100-Atomics", "02-Knowledge/Atomics"),
-    ("02-Dots/200-Areas",   "02-Knowledge/Areas"),
-    ("02-Dots/300-People",  "02-Knowledge/People"),
-    ("02-Dots/400-Places",  "02-Knowledge/Places"),
-    ("02-Dots/500-Tools",   "02-Knowledge/Tools"),
-    ("02-Dots",             "02-Knowledge"),
+    ("02-Knowledge/Atomics", "02-Knowledge/Atomics"),
+    ("02-Knowledge/Areas",   "02-Knowledge/Areas"),
+    ("02-Knowledge/People",  "02-Knowledge/People"),
+    ("02-Knowledge/Places",  "02-Knowledge/Places"),
+    ("02-Knowledge/Tools",   "02-Knowledge/Tools"),
+    ("02-Knowledge",             "02-Knowledge"),
 ]
 
 for path in scripts:
@@ -383,15 +383,15 @@ scripts = [
 ]
 
 replacements = [
-    ("02-Dots/200-Areas/210-Health",        "02-Knowledge/Areas/210-Health"),
-    ("02-Dots/200-Areas/220-Finance",       "02-Knowledge/Areas/220-Finance"),
-    ("02-Dots/200-Areas/230-Career",        "02-Knowledge/Areas/230-Career"),
-    ("02-Dots/200-Areas/240-Relationships", "02-Knowledge/Areas/240-Relationships"),
-    ("02-Dots/200-Areas/250-Personal",      "02-Knowledge/Areas/250-Personal"),
-    ("02-Dots/200-Areas",                   "02-Knowledge/Areas"),
-    ('startsWith("02-Dots/")',              'startsWith("02-Knowledge/")'),
+    ("02-Knowledge/200-Areas/210-Health",        "02-Knowledge/Areas/210-Health"),
+    ("02-Knowledge/200-Areas/220-Finance",       "02-Knowledge/Areas/220-Finance"),
+    ("02-Knowledge/200-Areas/230-Career",        "02-Knowledge/Areas/230-Career"),
+    ("02-Knowledge/200-Areas/240-Relationships", "02-Knowledge/Areas/240-Relationships"),
+    ("02-Knowledge/200-Areas/250-Personal",      "02-Knowledge/Areas/250-Personal"),
+    ("02-Knowledge/Areas",                   "02-Knowledge/Areas"),
+    ('startsWith("02-Knowledge/")',              'startsWith("02-Knowledge/")'),
     ("startsWith('02-Dots/')",              "startsWith('02-Knowledge/')"),
-    ("02-Dots/",                            "02-Knowledge/"),
+    ("02-Knowledge/",                            "02-Knowledge/"),
 ]
 
 for path in scripts:
@@ -461,7 +461,7 @@ ls 02-Knowledge/
 Expected: `Atomics/`, `Areas/`, `People/`, `Places/`, `Tools/`, plus root files. No numbered subfolders.
 
 ```bash
-grep -rn "02-Dots" 99-System/Scripts/ --include="*.js" | grep -v ".pyc"
+grep -rn "02-Knowledge" 99-System/Scripts/ --include="*.js" | grep -v ".pyc"
 ```
 
 Expected: no output.
@@ -500,31 +500,31 @@ Note every file and line number. Any path not covered by later steps needs a man
 
 ```bash
 mkdir -p "99-System/Documentation"
-if [ -d "00-Meta/Documentation" ]; then
-  cp -r "00-Meta/Documentation/." "99-System/Documentation/"
-  rm -rf "00-Meta/Documentation"
+if [ -d "99-System/Documentation" ]; then
+  cp -r "99-System/Documentation/Documentation/." "99-System/Documentation/"
+  rm -rf "99-System/Documentation"
 fi
 ```
 
 - [ ] **Step 3.3: Move `_Metrics Cache.md`**
 
 ```bash
-mv "00-Meta/_Metrics Cache.md" "99-System/_Metrics Cache.md" 2>/dev/null || echo "Not found — may already exist elsewhere"
+mv "99-System/Documentation/_Metrics Cache.md" "99-System/_Metrics Cache.md" 2>/dev/null || echo "Not found — may already exist elsewhere"
 ```
 
 - [ ] **Step 3.4: Move remaining `00-Meta/` root files**
 
 ```bash
-ls "00-Meta/"
+ls "99-System/Documentation/"
 ```
 
 For each remaining file that is NOT already moved, move it to `99-System/Documentation/`:
 
 ```bash
-for f in "00-Meta/"*.md; do
+for f in "99-System/Documentation/"*.md; do
   [ -f "$f" ] && mv "$f" "99-System/Documentation/" && echo "Moved: $f"
 done
-rmdir "00-Meta" 2>/dev/null || echo "00-Meta not empty — check remaining files"
+rmdir "99-System/Documentation" 2>/dev/null || echo "00-Meta not empty — check remaining files"
 ```
 
 - [ ] **Step 3.5: Update `update-metrics-cache.js`**
@@ -544,14 +544,14 @@ content = content.replace(
     "const cachePath = '00-Meta/_Metrics Cache.md';",
     "const cachePath = '99-System/_Metrics Cache.md';"
 )
-content = content.replace('"00-Meta/_Metrics Cache.md"', '"99-System/_Metrics Cache.md"')
+content = content.replace('"99-System/Documentation/_Metrics Cache.md"', '"99-System/_Metrics Cache.md"')
 content = content.replace("'00-Meta/_Metrics Cache.md'", "'99-System/_Metrics Cache.md'")
-content = content.replace('"00-Meta/_Metrics Cache"', '"99-System/_Metrics Cache"')
+content = content.replace('"99-System/_Metrics Cache"', '"99-System/_Metrics Cache"')
 content = content.replace("'00-Meta/_Metrics Cache'", "'99-System/_Metrics Cache'")
 # Update comment
 content = content.replace('* Cache Location: 00-Meta/_Metrics Cache.md',
                            '* Cache Location: 99-System/_Metrics Cache.md')
-content = content.replace('* Fields are queryable via: dv.page("00-Meta/_Metrics Cache").field_name',
+content = content.replace('* Fields are queryable via: dv.page("99-System/_Metrics Cache").field_name',
                            '* Fields are queryable via: dv.page("99-System/_Metrics Cache").field_name')
 
 with open(path, 'w', encoding='utf-8') as f:
@@ -563,7 +563,7 @@ PYEOF
 
 - [ ] **Step 3.6: Update `generate-weekly-report.js`**
 
-Line 122: `app.vault.getAbstractFileByPath("00-Meta/_Metrics Cache.md")`
+Line 122: `app.vault.getAbstractFileByPath("99-System/Documentation/_Metrics Cache.md")`
 
 ```bash
 python - << 'PYEOF'
@@ -583,7 +583,7 @@ for path in scripts:
         with open(path, encoding='utf-8') as f:
             content = f.read()
         new_content = content.replace('00-Meta/_Metrics Cache', '99-System/_Metrics Cache')
-        new_content = new_content.replace('"00-Meta"', '"99-System"')
+        new_content = new_content.replace('"99-System/Documentation"', '"99-System"')
         if new_content != content:
             with open(path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
@@ -598,7 +598,7 @@ PYEOF
 - [ ] **Step 3.7: Update dashboards**
 
 ```bash
-grep -n "00-Meta" "🏡Home.md" "👁️Dashboard.md" "🧭 Review HQ.md" 2>/dev/null
+grep -n "99-System/Documentation" "🏡Home.md" "👁️Dashboard.md" "🧭 Review HQ.md" 2>/dev/null
 ```
 
 For each match, replace `00-Meta` with `99-System` in the relevant link or path.
@@ -613,7 +613,7 @@ ls 99-System/ | grep "_Metrics Cache"
 Expected: `_Metrics Cache.md` present. `Documentation/` folder exists with content.
 
 ```bash
-grep -rn "00-Meta/_Metrics" 99-System/Scripts/ --include="*.js"
+grep -rn "99-System/Documentation/_Metrics" 99-System/Scripts/ --include="*.js"
 ```
 
 Expected: no output.
@@ -643,9 +643,9 @@ git commit -m "migration: phase 3 — 00-Meta merged into 99-System/Documentatio
 
 ```bash
 mkdir -p "99-System/Prompts"
-if [ -d "07-Prompts" ]; then
-  cp -r "07-Prompts/." "99-System/Prompts/"
-  rm -rf "07-Prompts"
+if [ -d "99-System/Prompts" ]; then
+  cp -r "99-System/Prompts/." "99-System/Prompts/"
+  rm -rf "99-System/Prompts"
 fi
 ```
 
@@ -739,7 +739,7 @@ PYEOF
 Find and update the Active Projects section and any references to `07-Prompts`.
 
 ```bash
-grep -n "07-Prompts" CLAUDE.md
+grep -n "99-System/Prompts" CLAUDE.md
 ```
 
 Edit CLAUDE.md to replace `07-Prompts` → `99-System/Prompts`.
@@ -748,8 +748,8 @@ Edit CLAUDE.md to replace `07-Prompts` → `99-System/Prompts`.
 
 ```bash
 ls 99-System/Prompts/ | head -10
-[ -d "07-Prompts" ] && echo "07-Prompts still exists!" || echo "07-Prompts removed — OK"
-grep -rn "07-Prompts" 99-System/Scripts/ --include="*.js"
+[ -d "99-System/Prompts" ] && echo "07-Prompts still exists!" || echo "07-Prompts removed — OK"
+grep -rn "99-System/Prompts" 99-System/Scripts/ --include="*.js"
 ```
 
 Expected: `99-System/Prompts/` has content, `07-Prompts` is gone, no script references remain.
@@ -801,45 +801,45 @@ mkdir -p "04-Sources/Research"
 
 ```bash
 # 410-Knowledge/Books → Books
-if [ -d "04-Sources/410-Knowledge/Books" ]; then
-  mv "04-Sources/410-Knowledge/Books/"* "04-Sources/Books/" 2>/dev/null || true
+if [ -d "04-Sources/Books" ]; then
+  mv "04-Sources/Books/"* "04-Sources/Books/" 2>/dev/null || true
 fi
 
 # 410-Knowledge/Articles → Articles (if exists)
-if [ -d "04-Sources/410-Knowledge/Articles" ]; then
-  mv "04-Sources/410-Knowledge/Articles/"* "04-Sources/Articles/" 2>/dev/null || true
+if [ -d "04-Sources/Articles" ]; then
+  mv "04-Sources/Articles/"* "04-Sources/Articles/" 2>/dev/null || true
 fi
 
 # 420-Media → Media
-if [ -d "04-Sources/420-Media" ]; then
-  mv "04-Sources/420-Media/"* "04-Sources/Media/" 2>/dev/null || true
+if [ -d "04-Sources/Media" ]; then
+  mv "04-Sources/Media/"* "04-Sources/Media/" 2>/dev/null || true
 fi
 
 # 430-Guides → Guides
-if [ -d "04-Sources/430-Guides" ]; then
-  mv "04-Sources/430-Guides/"* "04-Sources/Guides/" 2>/dev/null || true
+if [ -d "04-Sources/Guides" ]; then
+  mv "04-Sources/Guides/"* "04-Sources/Guides/" 2>/dev/null || true
 fi
 
 # 440-Meetings → Meetings (consolidate with existing Meetings/ if present)
-if [ -d "04-Sources/440-Meetings" ]; then
-  mv "04-Sources/440-Meetings/"* "04-Sources/Meetings/" 2>/dev/null || true
+if [ -d "04-Sources/Meetings" ]; then
+  mv "04-Sources/Meetings/"* "04-Sources/Meetings/" 2>/dev/null || true
 fi
 
 # Move any root 410-Knowledge content not in a subfolder
-if [ -d "04-Sources/410-Knowledge" ]; then
-  mv "04-Sources/410-Knowledge/"*.md "04-Sources/" 2>/dev/null || true
+if [ -d "04-Sources" ]; then
+  mv "04-Sources/"*.md "04-Sources/" 2>/dev/null || true
 fi
 ```
 
 - [ ] **Step 5.4: Remove empty numbered folders**
 
 ```bash
-rmdir "04-Sources/410-Knowledge/Books" 2>/dev/null || true
-rmdir "04-Sources/410-Knowledge/Articles" 2>/dev/null || true
-rmdir "04-Sources/410-Knowledge" 2>/dev/null || echo "410-Knowledge not empty — check manually"
-rmdir "04-Sources/420-Media" 2>/dev/null || echo "420-Media not empty — check manually"
-rmdir "04-Sources/430-Guides" 2>/dev/null || echo "430-Guides not empty — check manually"
-rmdir "04-Sources/440-Meetings" 2>/dev/null || echo "440-Meetings not empty — check manually"
+rmdir "04-Sources/Books" 2>/dev/null || true
+rmdir "04-Sources/Articles" 2>/dev/null || true
+rmdir "04-Sources" 2>/dev/null || echo "410-Knowledge not empty — check manually"
+rmdir "04-Sources/Media" 2>/dev/null || echo "420-Media not empty — check manually"
+rmdir "04-Sources/Guides" 2>/dev/null || echo "430-Guides not empty — check manually"
+rmdir "04-Sources/Meetings" 2>/dev/null || echo "440-Meetings not empty — check manually"
 ```
 
 - [ ] **Step 5.5: Update `quick-process-source.js`**
@@ -856,12 +856,12 @@ with open(path, encoding='utf-8') as f:
     content = f.read()
 
 replacements = [
-    ("04-Sources/410-Knowledge/Books",    "04-Sources/Books"),
-    ("04-Sources/410-Knowledge/Articles", "04-Sources/Articles"),
-    ("04-Sources/420-Media/Videos",       "04-Sources/Media"),
-    ("04-Sources/420-Media/Podcasts",     "04-Sources/Media"),
-    ("04-Sources/430-Guides",             "04-Sources/Guides"),
-    ("04-Sources/440-Meetings",           "04-Sources/Meetings"),
+    ("04-Sources/Books",    "04-Sources/Books"),
+    ("04-Sources/Articles", "04-Sources/Articles"),
+    ("04-Sources/Media/Videos",       "04-Sources/Media"),
+    ("04-Sources/Media/Podcasts",     "04-Sources/Media"),
+    ("04-Sources/Guides",             "04-Sources/Guides"),
+    ("04-Sources/Meetings",           "04-Sources/Meetings"),
     ("04-Sources/450-Quotes",             "04-Sources/Articles"),
     ("'Book': '04-Sources/410-Knowledge/Books'", "'Book': '04-Sources/Books'"),
 ]
@@ -889,7 +889,7 @@ path = "99-System/Scripts/auto-metadata.js"
 with open(path, encoding='utf-8') as f:
     content = f.read()
 
-content = content.replace("04-Sources/440-Meetings", "04-Sources/Meetings")
+content = content.replace("04-Sources/Meetings", "04-Sources/Meetings")
 content = content.replace("[[440-Meetings]]", '"[[Meetings]]"')
 
 with open(path, 'w', encoding='utf-8') as f:
@@ -919,8 +919,8 @@ with open(path, encoding='utf-8') as f:
     content = f.read()
 
 for old, new in [
-    ("04-Sources/410-Knowledge", "04-Sources/Articles"),
-    ("04-Sources/440-Meetings",  "04-Sources/Meetings"),
+    ("04-Sources", "04-Sources/Articles"),
+    ("04-Sources/Meetings",  "04-Sources/Meetings"),
 ]:
     content = content.replace(old, new)
 

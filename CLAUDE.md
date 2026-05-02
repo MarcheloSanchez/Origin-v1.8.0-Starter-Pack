@@ -135,7 +135,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 4. **Field naming**: `due` (not `deadline`), `related` (not `relatedNotes`). YAML Orchestrator auto-renames.
 
-5. **Cache pattern**: `00-Meta/_Metrics Cache.md` uses inline fields (`field:: value`). Dashboard reads via `dv.page("00-Meta/_Metrics Cache").field_name` with live fallback. Update via QuickAdd "Update Metrics Cache".
+5. **Cache pattern**: `00-Meta/_Metrics Cache.md` uses inline fields (`field:: value`). Dashboard reads via `dv.page("99-System/_Metrics Cache").field_name` with live fallback. Update via QuickAdd "Update Metrics Cache".
 
 6. **`prompt_status` vs `status`**: `status` = vault lifecycle (filtering/queries), `prompt_status` = prompt quality stage (`draft`, `active`, `winner`, `archived`). Both coexist.
 
@@ -173,7 +173,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 - Use `LIMIT` on large queries
 - Combine `.where()` with `&&` (not chained)
 - Folder-specific: `dv.pages('"03-Efforts"')` not `dv.pages().where(...)`
-- Use cache: `dv.page("00-Meta/_Metrics Cache").field` with live fallback
+- Use cache: `dv.page("99-System/_Metrics Cache").field` with live fallback
 - Exclude: `99-System`, `Templates`, `_backups`
 
 ## Git Workflow

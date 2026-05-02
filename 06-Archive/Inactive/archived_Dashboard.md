@@ -46,7 +46,7 @@ const today = dv.date('today');
 // Calculate key metrics
 const inboxCount = dv.pages('"+Inbox"').length;
 const activeEfforts = dv.pages('"03-Efforts"').where(p => p.status === "active").length;
-const atomicNotes = dv.pages('"02-Dots/100-Atomics"').length;
+const atomicNotes = dv.pages('"02-Knowledge/Atomics"').length;
 const sourcesThisWeek = dv.pages('"04-Sources"').where(p => 
   p.file.ctime >= today.minus({days: 7})
 ).length;

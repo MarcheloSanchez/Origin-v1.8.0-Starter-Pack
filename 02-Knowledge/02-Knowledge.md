@@ -80,7 +80,7 @@ action QuickAdd: Tool
 ## 🆕 Recent Dots (30 days)
 ```dataview
 TABLE created, maturity
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE created >= date(today) - dur(30 days)
 SORT created DESC
 ```
@@ -88,7 +88,7 @@ SORT created DESC
 ## 🌱 Maturity distribution
 ```dataview
 TABLE length(rows) AS count
-FROM "02-Dots"
+FROM "02-Knowledge"
 WHERE type = "atomic"
 GROUP BY maturity
 SORT count DESC

@@ -1,7 +1,7 @@
 ---
 up: "[[🏡Home]]"
 in: "[[Views]]"
-title: 02-Dots
+title: 02-Knowledge
 type: moc
 fileClass: moc
 tags:
@@ -24,7 +24,7 @@ obsidianUIMode: preview
 #🎯priority-high 
 ⬆️:: [[🏡Home]]
 
-[[+ About Dotsℹ️]]
+[[+ About know]]
 
 ## Button Menu
 ```button

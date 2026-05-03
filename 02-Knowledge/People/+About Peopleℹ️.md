@@ -24,7 +24,7 @@ related:
 > **Why**: Build meaningful relationships, maintain context across time, and create mutual value  
 > **How**: Connect → Context → Cultivate → Collaborate → Contribute  
 > **When**: Ongoing interaction tracking, monthly relationship reviews  
-> **Where**: 02-Knowledge/300-People, integrated with Efforts and Calendar  
+> **Where**: 02-Knowledge/People, integrated with Efforts and Calendar  
 > **Success**: Meaningful connections, mutual value creation, relationship depth growth
 >
 > **👥 Next Action**: Document one important relationship using [[Person Template]]

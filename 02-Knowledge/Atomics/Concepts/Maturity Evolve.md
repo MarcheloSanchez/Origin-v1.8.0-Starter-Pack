@@ -47,7 +47,7 @@ Track the growth and development of your ideas, notes, or projects through these
 **Exit Criteria:**
 - Has clear title and type assigned
 - Basic metadata complete (created, status, tags)
-- Moved to appropriate folder (02-Dots, 03-Efforts, 04-Sources)
+- Moved to appropriate folder (02-Knowledge, 03-Efforts, 04-Sources)
 - **WIP Limit:** 15 items max
 ## 🌱 **NOTE** (Structured Knowledge)
 **Purpose:** Developed, linked, actionable knowledge  

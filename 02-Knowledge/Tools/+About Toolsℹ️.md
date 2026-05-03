@@ -21,7 +21,7 @@ related:
 > **Why**: Amplify your abilities, streamline workflows, and achieve better outcomes with less effort  
 > **How**: Discover → Test → Configure → Master → Teach → Evolve  
 > **When**: Continuous evaluation, quarterly reviews, mastery tracking  
-> **Where**: 02-Knowledge/500-Tools, integrated with Areas and Efforts  
+> **Where**: 02-Knowledge/Tools, integrated with Areas and Efforts  
 > **Success**: Daily utility, measurable improvement, knowledge sharing
 >
 > **🛠️ Next Action**: Catalog your most essential tool using [[Templates/New-Notes/Type/Tool/Tool-New]]

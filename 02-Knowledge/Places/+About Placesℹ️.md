@@ -24,7 +24,7 @@ related:
 > **Why**: Preserve memories, inform future decisions, and build location-based intelligence  
 > **How**: Visit → Document → Connect → Recommend → Plan  
 > **When**: Real-time capture during visits, post-trip reflection, future planning  
-> **Where**: 02-Knowledge/400-Places, integrated with travel efforts and personal experiences  
+> **Where**: 02-Knowledge/Places, integrated with travel efforts and personal experiences  
 > **Success**: Rich memory preservation, valuable recommendations, informed travel planning
 >
 > **🗺️ Next Action**: Document one meaningful place using [[Place Template]]

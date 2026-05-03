@@ -25,7 +25,7 @@ Are you looking for a quick look and don't look into precise fit optimalization 
 > **Why**: Balance life holistically, allocate attention strategically, and track long-term growth  
 > **How**: Define → Monitor → Develop → Balance → Evolve  
 > **When**: Monthly reviews, quarterly planning, daily attention allocation  
-> **Where**: 02-Knowledge/200-Areas, integrated with Efforts and Dashboard  
+> **Where**: 02-Knowledge/Areas, integrated with Efforts and Dashboard  
 > **Success**: Balanced attention across life domains, measurable progress, aligned effort allocation
 >
 > **🏠 Next Action**: Define or review one life Area using [[Area-New]]
@@ -360,7 +360,7 @@ Personal life domains that require ongoing attention and maintenance. Unlike pro
 - What projects should be created to advance key areas?
 - Are there missing life domains not covered?
 ## Next Actions
--  Create individual area notes in `02-Knowledge/200-Areas/`
+-  Create individual area notes in `02-Knowledge/Areas/`
 -  Link existing projects to relevant areas
 -  Set up monthly area review process
 

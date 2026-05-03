@@ -1,5 +1,5 @@
 ---
-title: "400-Places"
+title: "Places"
 up: ""[[02-Knowledge]]""
 in:
   - "[[Views]]"

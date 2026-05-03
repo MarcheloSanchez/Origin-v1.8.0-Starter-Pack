@@ -1,6 +1,6 @@
 ---
-title: "100-Atomics"
-up: ""[[02-Knowledge]]""
+title: "Atomics"
+up: "[[02-Knowledge]]"
 in:
   - "[[Views]]"
 created: 2025-10-13
@@ -8,7 +8,7 @@ related:
 cssclasses:
   - wide-page
 obsidianUIMode: preview
-modified: 2026-03-03
+modified: 2026-05-02
 ---
 ⬆️:: "[[02-Knowledge]]"
 

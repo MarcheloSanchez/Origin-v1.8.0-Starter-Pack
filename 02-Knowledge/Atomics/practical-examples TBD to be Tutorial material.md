@@ -7,8 +7,8 @@ created: 2026-03-03
 modified: 2026-04-26
 related:
   - Attention-Restoration-Theory
-  - 02-Knowledge/200-Areas/Academic-Career
-  - 02-Knowledge/200-Areas/Research-Skills
+  - 02-Knowledge/Areas/Academic-Career
+  - 02-Knowledge/Areas/Research-Skills
   - 04-Sources/Books/Remote-Team-Leadership-Handbook
   - 04-Sources/Papers/Psychological-Safety-Remote-Teams-2023
 ---
@@ -79,14 +79,14 @@ related: [Remote-Work-MOC, Team-Dynamics-Atomic, Creativity-Research-Source]
 **Connection made**: Links to [[Attention-Restoration-Theory]] - remote workers may benefit from nature breaks between creative sessions.
 
 ## Resources
-**Related areas**: [[02-Knowledge/200-Areas/Academic-Career]], [[02-Knowledge/200-Areas/Research-Skills]]
+**Related areas**: [[02-Knowledge/Areas/Academic-Career]], [[02-Knowledge/Areas/Research-Skills]]
 **Key sources**: 
 - [[04-Sources/Books/Remote-Team-Leadership-Handbook]]
 - [[04-Sources/Papers/Psychological-Safety-Remote-Teams-2023]]
 - [[04-Sources/Papers/Creativity-Physical-Space-Meta-Analysis]]
 
 **People involved**: 
-- Dr. Sarah Chen (advisor) - [[02-Knowledge/300-People/Dr-Sarah-Chen]]
+- Dr. Sarah Chen (advisor) - [[02-Knowledge/People/Dr-Sarah-Chen]]
 - Research participants (n=215)
 - Mark Thompson (statistician consultant)
 
@@ -155,8 +155,8 @@ Forte presents the CODE method (Capture, Organize, Distill, Express) for buildin
 
 ## Connections
 **Related to**: 
-- [[02-Knowledge/100-Atomics/Progressive-Summarization-Method]] - detailed breakdown of his highlighting technique
-- [[02-Knowledge/100-Atomics/Intermediate-Packets-Concept]] - reusable knowledge assets
+- [[02-Knowledge/Atomics/Progressive-Summarization-Method]] - detailed breakdown of his highlighting technique
+- [[02-Knowledge/Atomics/Intermediate-Packets-Concept]] - reusable knowledge assets
 - [[01-MOCs/PKM-Methods-MOC]] - comparison with other systems
 
 **Supports**: My intuition about output-focused knowledge work
@@ -181,7 +181,7 @@ Forte presents the CODE method (Capture, Organize, Distill, Express) for buildin
 - Academic literature on knowledge management
 
 **People to discuss with**: 
-- [[02-Knowledge/300-People/Dr-Sarah-Chen]] - advisor who uses similar methods
+- [[02-Knowledge/People/Dr-Sarah-Chen]] - advisor who uses similar methods
 - PKM community on Reddit for practical applications
 ```
 
@@ -222,7 +222,7 @@ related: [Research-Project-Example, Weekly-Review-2024-03-18]
 
 **2:45 PM** - Frustration with current template system - project updates feel repetitive. Maybe need simplified project template for quick updates vs. full template for creation? [[99-System/Templates/Project-Note]]
 
-**4:20 PM** - Meeting with Dr. Chen generated great insight about mixed-methods integration. She suggested using quotes to illustrate quantitative findings rather than separate sections. [[02-Knowledge/300-People/Dr-Sarah-Chen]]
+**4:20 PM** - Meeting with Dr. Chen generated great insight about mixed-methods integration. She suggested using quotes to illustrate quantitative findings rather than separate sections. [[02-Knowledge/People/Dr-Sarah-Chen]]
 
 **Evening** - Article idea: "The Hidden Rhythms of Remote Creativity" - could be good Medium post based on research findings. [[01-MOCs/Writing-Ideas-MOC]]
 
@@ -249,8 +249,8 @@ related: [Research-Project-Example, Weekly-Review-2024-03-18]
 **Tomorrow's focus**: Qualitative coding session (Saturday morning when fresh), then family time
 
 ## Links Created
-- [[Research-Project-Example]] ← → [[02-Knowledge/100-Atomics/Mixed-Methods-Integration]] (new atomic note from advisor meeting)
-- [[02-Knowledge/100-Atomics/Remote-Work-Creative-Rhythms]] (new insight from morning run)
+- [[Research-Project-Example]] ← → [[02-Knowledge/Atomics/Mixed-Methods-Integration]] (new atomic note from advisor meeting)
+- [[02-Knowledge/Atomics/Remote-Work-Creative-Rhythms]] (new insight from morning run)
 - [[99-System/Templates/Simple-Project-Update]] (template idea to develop)
 ```
 
@@ -328,7 +328,7 @@ Dr. Chen's advice about "changing the creativity-satisfaction equation" rather t
 
 Her suggestion to use quotes illustratively rather than separately is already changing how I think about academic writing. More engaging and integrated approach.
 
-**Connection made**: This meeting reinforced my atomic note about [[02-Knowledge/100-Atomics/Academic-Writing-Integration-Strategies]] - good writing weaves sources throughout rather than compartmentalizing.
+**Connection made**: This meeting reinforced my atomic note about [[02-Knowledge/Atomics/Academic-Writing-Integration-Strategies]] - good writing weaves sources throughout rather than compartmentalizing.
 
 **System insight**: These advisor meetings always generate multiple insights beyond the immediate project. Should create a template that captures both project progress AND broader learning/connections.
 ```
@@ -392,9 +392,9 @@ related: [Productivity-MOC, Deep-Work-Principles, Research-Efficiency]
 - **Hidden cost**: Creates illusion of productivity while actual priorities stagnate
 
 ## Connections
-**Supports**: [[02-Knowledge/100-Atomics/Deep-Work-Principles]] - aligns with Newport's focus hierarchy
+**Supports**: [[02-Knowledge/Atomics/Deep-Work-Principles]] - aligns with Newport's focus hierarchy
 **Contradicts**: Popular "productivity hacks" that focus on efficiency over effectiveness  
-**Builds on**: [[02-Knowledge/100-Atomics/Priority-Matrix-Eisenhower]] - urgent vs. important distinction
+**Builds on**: [[02-Knowledge/Atomics/Priority-Matrix-Eisenhower]] - urgent vs. important distinction
 
 ## Sources
 - [[04-Sources/Articles/Cal-Newport-Pseudo-Work-2024]]
@@ -468,7 +468,7 @@ Initial project creation. Triggered by frustration during video call where poor 
 ```markdown
 ## Notes & Updates
 ### 2024-03-08
-**Research completed**: Spent time reviewing office design articles and academic research on workspace productivity. Key insights captured in [[02-Knowledge/100-Atomics/Workspace-Design-Principles]].
+**Research completed**: Spent time reviewing office design articles and academic research on workspace productivity. Key insights captured in [[02-Knowledge/Atomics/Workspace-Design-Principles]].
 
 **Key findings**: 
 - Natural light significantly impacts mood and energy

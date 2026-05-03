@@ -312,7 +312,7 @@ New hotkeys visualisation - [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf]]
 - Modified [[Tutorial - Raw Capture (Mycelium)]]
 - Modified [[Tutorial - Raw Capture (Coffee Chat)]]
 - Modified [[Automations via fastkey]]
-- Modified [[+ About Inbox ℹ️]]
+- Modified [[+About Inbox ℹ️]]
 - Added [[_Daily_Data.base]] — `Quarter` formula; renamed `Notes Captured` → `Links Made`; added `highlight` column to Daily Log view; added `Highlights Stream` and `High Energy Days` views
 - Modified [[generate-weekly-report.js]] — added daily notes data block (highlights, energy/mood distribution); 3 new metric rows in Key Metrics table; new `## 📔 Daily Highlights` section
 - Modified [[Template Daily.md]] — added `date:`, `energy:`, `mood:`, `highlight:` frontmatter; converted `{{date:...}}` → Templater syntax (`tp.file.title`-derived); folder-prefixed nav links; removed inline fields and star-rating section

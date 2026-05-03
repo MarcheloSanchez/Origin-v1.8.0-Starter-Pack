@@ -1,12 +1,12 @@
 # Origin PKM Vault
 
-Obsidian PKM vault (v1.9.1 → v2.0). PARA-inspired 8-layer architecture. Czech content, English with Claude.
+Obsidian PKM vault (v2.0). PARA-inspired 8-layer architecture. Czech content, English with Claude.
 
 ## Current Projects
 | Project | Status |
 |---------|--------|
 | **Origin v2.0** | ✅ Complete (2026-02-07) |
-| **Calendar Review Hub** | ✅ Complete — guide at `00-Meta/Documentation/PKM/📅 Calendar Review Hub Guide.md` |
+| **Calendar Review Hub** | ✅ Complete — guide at `99-System/Documentation/PKM/📅 Calendar Review Hub Guide.md` |
 | **Bases Daily View** | Planning |
 
 ## File Output Rules
@@ -15,7 +15,7 @@ When Claude Code creates files during a session, place them here — never in `+
 
 | Output type | Target folder |
 |-------------|---------------|
-| Audit reports, orphan lists, tag audits | `00-Meta/` |
+| Audit reports, orphan lists, tag audits | `99-System/Documentation/` |
 | Architecture plans, design docs | `docs/plans/` |
 | Sprint plans, implementation plans | `docs/plans/` |
 | Windows/system design docs | `docs/plans/` |
@@ -30,7 +30,6 @@ When Claude Code creates files during a session, place them here — never in `+
 | Folder | Role |
 |--------|------|
 | `+Inbox` | Quick capture entry point |
-| `00-Meta` | System docs, checklists, guides, gamification |
 | `01-MOCs` | Maps of Content — navigation hubs |
 | `02-Knowledge` | Atomic knowledge (Ideas, Concepts, Statements, Things, People, Places) |
 | `03-Efforts` | Projects: `Active/`, `Paused/`, `Waiting/` |
@@ -135,7 +134,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 4. **Field naming**: `due` (not `deadline`), `related` (not `relatedNotes`). YAML Orchestrator auto-renames.
 
-5. **Cache pattern**: `00-Meta/_Metrics Cache.md` uses inline fields (`field:: value`). Dashboard reads via `dv.page("99-System/_Metrics Cache").field_name` with live fallback. Update via QuickAdd "Update Metrics Cache".
+5. **Cache pattern**: `99-System/_Metrics Cache.md` uses inline fields (`field:: value`). Dashboard reads via `dv.page("99-System/_Metrics Cache").field_name` with live fallback. Update via QuickAdd "Update Metrics Cache".
 
 6. **`prompt_status` vs `status`**: `status` = vault lifecycle (filtering/queries), `prompt_status` = prompt quality stage (`draft`, `active`, `winner`, `archived`). Both coexist.
 
@@ -145,7 +144,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 9. **Bilingual classifiers**: `batch-process-inbox.js`, `quick-process-atomic.js`, `quick-process-source.js` intentionally contain Czech keywords for classifying Czech-written notes — do NOT remove. `smart-classifier.js` is English-only.
 
-10. **Tags consolidated (2026-03-31)**: Vault tags unified to emoji-first canonical forms. See `00-Meta/Documentation/PKM/🏷️Tag Consolidation Log.md` for full changelog. Key renames: `🎯project` → `🚀effort`, `💡idea` → `💡atomic`, `quick` → `🧹tidy`. Old "Tags Showcase" section replaced with link to consolidation log.
+10. **Tags consolidated (2026-03-31)**: Vault tags unified to emoji-first canonical forms. See `99-System/Documentation/PKM/🏷️Tag Consolidation Log.md` for full changelog. Key renames: `🎯project` → `🚀effort`, `💡idea` → `💡atomic`, `quick` → `🧹tidy`. Old "Tags Showcase" section replaced with link to consolidation log.
 
 ## Naming Conventions
 
@@ -163,7 +162,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 - **Templater undefined**: Ensure function has `return`
 - **combine() disappears**: Use `tR +=` NOT `writeActive()`
 - **Module not found**: Check `99-System/Scripts/` path, restart Obsidian
-- **Stale dashboard**: Check cache timestamp in `00-Meta/_Metrics Cache.md`, run "Update Metrics Cache"
+- **Stale dashboard**: Check cache timestamp in `99-System/_Metrics Cache.md`, run "Update Metrics Cache"
 - **QuickAdd macro missing**: Restart Obsidian
 - **Broken wiki-link**: Check spelling/caps, don't include `.md` extension
 - **Glob misses files**: Use `ls` via Bash on Windows
@@ -185,9 +184,9 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 ## Quick Lookup
 
 - System architecture: `99-System/` docs
-- Workflows: `00-Meta/Documentation/PKM/🔁My PKM Workflows.md`
-- Tag system: `00-Meta/Documentation/PKM/🏷️My PKM Tags.md`
-- Tag health monitoring: `00-Meta/Documentation/Tags - Status Check.md`
+- Workflows: `99-System/Documentation/PKM/🔁My PKM Workflows.md`
+- Tag system: `99-System/Documentation/PKM/🏷️My PKM Tags.md`
+- Tag health monitoring: `99-System/Documentation/Tags - Status Check.md`
 
 ## Wiki Knowledge Base (claude-obsidian)
 

@@ -11,6 +11,7 @@
 /99-System/*
 !/99-System/Scripts/
 !/99-System/copilot-custom-prompts/
+!/99-System/Documentation/
 
 # === Obsidian App Config (Obsidian Sync) ===
 .obsidian/

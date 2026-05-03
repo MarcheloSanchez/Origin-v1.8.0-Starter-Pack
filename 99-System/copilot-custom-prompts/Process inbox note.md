@@ -15,7 +15,7 @@ VAULT CONTEXT:
 - Status flow: 📥inbox → 🔄active → ⏳waiting → ✅completed → 📦archived
 - Maturity: 📤seed → 🌱seedling → 🪴sapling → 🌲evergreen → 🍓fruit
 - Tag taxonomy: #💡atomic, #🚀effort, #📚source, #🗺️MOC, #🌱develop, #❔question, #🧹tidy
-- Folders: +Inbox (capture), 02-Dots (knowledge), 03-Efforts (projects), 04-Sources (references)
+- Folders: +Inbox (capture), 02-Knowledge (knowledge), 03-Efforts (projects), 04-Sources (references)
 </system>
 
 <task>

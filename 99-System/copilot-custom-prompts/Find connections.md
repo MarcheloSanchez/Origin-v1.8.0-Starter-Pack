@@ -21,9 +21,9 @@ CONNECTION TYPES IN THIS PKM:
 - **Similar to**: Analogous in different domain
 
 VAULT STRUCTURE:
-- 02-Dots/100-Atomics: Core knowledge concepts
-- 02-Dots/200-Areas: Life/work domains
-- 02-Dots/500-Tools: Methods and instruments
+- 02-Knowledge/Atomics: Core knowledge concepts
+- 02-Knowledge/Areas: Life/work domains
+- 02-Knowledge/Tools: Methods and instruments
 - 03-Efforts: Active projects
 - 04-Sources: External references
 - 01-MOCs: Topic clusters

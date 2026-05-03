@@ -6,7 +6,7 @@ icon: person
 tagNames:
   - 👤person
 filesPaths:
-  - 02-Dots/300-People
+  - 02-Knowledge/People
 bookmarksGroups:
 excludes:
 extends: Base

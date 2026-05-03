@@ -5,7 +5,11 @@
       "Bash(findstr:*)",
       "Bash(cmd /c:*)",
       "Read(//c/Users/MarcelMachanec/Projects/origin-minimal-mcp/**)",
-      "Read(//c/Users/MarcelMachanec/Projects/origin-minimal-mcp/docs//**)"
+      "Read(//c/Users/MarcelMachanec/Projects/origin-minimal-mcp/docs//**)",
+      "Bash(git worktree *)",
+      "Bash(git -C \"/c/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_STARTER_PACK/Origin-v2.0-migration\" ls-tree -r --name-only HEAD)",
+      "Bash(git -C \"/c/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_STARTER_PACK/Origin-v2.0-migration\" ls-tree --name-only HEAD)",
+      "Bash(python *)"
     ]
   }
 }

@@ -12,6 +12,17 @@ modified: 2026-04-16
 ---
 > Vault modifications and changes log.
 ---
+# 03/05/26
+## v2.0 Migration — PKM Docs Path Update
+
+### PKM Reference Docs Updated (11 files)
+- Updated all v1 folder references to v2.0 paths across `99-System/Documentation/PKM/` in the migration repo
+- Replaced `02-Dots` → `02-Knowledge`, `07-Prompts` → `99-System/Prompts`, `00-Meta` → `99-System/Documentation`, `440-Meetings` → `Meetings`, `On/Ongoing/Simmering` → `Active/Paused/Waiting` in all affected docs
+- Fixed duplicate variable bug in `📈Vault Analytics.md` — `onCount`/`ongoingCount` both pointed to `03-Efforts/Active`; replaced with `activeCount`, `pausedCount`, `waitingCount`
+- Added `!/99-System/Documentation/` exception to `.gitignore` so PKM docs are tracked in git
+- Committed as `28513a7` on branch `migration/v2.0`
+
+---
 # 30/04/26
 ## reform-note Skill & Missing Exemplars
 

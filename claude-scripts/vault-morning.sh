@@ -13,7 +13,7 @@
 
 set -e
 
-VAULT="C:/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_STARTER_PACK/Origin-v1.9.1-Starter-Pack"
+VAULT="C:/Users/MarcelMachanec/Documents/_Foundation for ORIGIN/Origin_DEV_STARTER_PACK/Origin-v2.0-migration"
 DRY_RUN="${1:-}"
 TODAY=$(date +%Y-%m-%d)
 
@@ -79,7 +79,7 @@ Do NOT move or modify any files. Report only."
 Rules:
 - CAPTURE (leave in place): genuine user-written idea, note, or thought
 - ARTIFACT — move to correct location:
-    Audit reports, orphan lists, tag audits → 00-Meta/
+    Audit reports, orphan lists, tag audits → 99-System/Documentation/
     Architecture plans, design docs, sprint plans → docs/plans/
 
 Files to triage:
@@ -102,11 +102,11 @@ echo ""
 
 # Count notes per folder using bash (faster, no claude needed for counting)
 INBOX_COUNT=$(find "+Inbox" -maxdepth 1 -name "*.md" ! -name "+Inbox.md" ! -name "+ About*" | wc -l | tr -d ' ')
-ATOMIC_COUNT=$(find "02-Dots" -name "*.md" ! -name "*.canvas" 2>/dev/null | wc -l | tr -d ' ')
+ATOMIC_COUNT=$(find "02-Knowledge" -name "*.md" ! -name "*.canvas" 2>/dev/null | wc -l | tr -d ' ')
 EFFORT_COUNT=$(find "03-Efforts" -name "*.md" 2>/dev/null | grep -v "About\|ℹ️" | wc -l | tr -d ' ')
 SOURCE_COUNT=$(find "04-Sources" -name "*.md" 2>/dev/null | grep -v "About\|ℹ️" | wc -l | tr -d ' ')
 ARCHIVE_COUNT=$(find "06-Archive" -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
-PROMPT_COUNT=$(find "07-Prompts" -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
+PROMPT_COUNT=$(find "99-System/Prompts" -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
 TOTAL=$(find . -name "*.md" \
   ! -path "./.git/*" \
   ! -path "./Templates/*" \
@@ -117,18 +117,18 @@ TOTAL=$(find . -name "*.md" \
 
 echo "Counts:"
 echo "   +Inbox:     $INBOX_COUNT"
-echo "   02-Dots:    $ATOMIC_COUNT"
-echo "   03-Efforts: $EFFORT_COUNT"
-echo "   04-Sources: $SOURCE_COUNT"
-echo "   06-Archive: $ARCHIVE_COUNT"
-echo "   07-Prompts: $PROMPT_COUNT"
-echo "   Total:      $TOTAL"
+echo "   02-Knowledge:      $ATOMIC_COUNT"
+echo "   03-Efforts:        $EFFORT_COUNT"
+echo "   04-Sources:        $SOURCE_COUNT"
+echo "   06-Archive:        $ARCHIVE_COUNT"
+echo "   99-System/Prompts: $PROMPT_COUNT"
+echo "   Total:             $TOTAL"
 echo ""
 
 if [ "$DRY_RUN" = "--dry-run" ]; then
   echo "[DRY RUN] Would update _Metrics Cache.md with above counts."
 else
-  CACHE="00-Meta/_Metrics Cache.md"
+  CACHE="99-System/_Metrics Cache.md"
   TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
   # Update inline fields using sed — anchored to start of line to avoid body matches

@@ -2,7 +2,7 @@
 
 > 📌 **This vault is the template source for derived vaults**: Ideaverse, Muza, Work, and LQ
 >
-> 🔄 **Git tracks 4 folders**: `00-Meta/` | `99-System/Scripts/` | `99-System/copilot-custom-prompts/` | `Templates/`
+> 🔄 **Git tracks folders**: `99-System/Scripts/` | `99-System/copilot-custom-prompts/` | `99-System/FileClass/` | `Templates/` | `claude-scripts/` | `docs/`
 >
 > ☁️ **Everything else is synced via Obsidian Sync** (vault-specific notes, inbox, calendar, etc.)
 

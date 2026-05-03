@@ -15,15 +15,15 @@
 ## Done
 
 ### Origin v2.0 - Phase 1: Workflows & Documentation ✅
-- `00-Meta/Documentation/PKM/🔁My PKM Workflows.md` — all workflows documented
-- `00-Meta/Documentation/PKM/📦Template System Guide.md` — 3-tier architecture, note type creation
-- `00-Meta/Documentation/PKM/🔧Scripts Reference.md` — script ecosystem docs
-- `00-Meta/Documentation/PKM/🚀Vault Migration Guide.md` — migration patterns and checklist
+- `99-System/Documentation/PKM/🔁My PKM Workflows.md` — all workflows documented
+- `99-System/Documentation/PKM/📦Template System Guide.md` — 3-tier architecture, note type creation
+- `99-System/Documentation/PKM/🔧Scripts Reference.md` — script ecosystem docs
+- `99-System/Documentation/PKM/🚀Vault Migration Guide.md` — migration patterns and checklist
 
 ### Calendar Review Hub - Phase 1 ✅
 - Full cascade: Daily → Weekly → Monthly → Quarterly → Yearly
 - `05-Calendar/📅 Calendar Review Hub.md` — hub with QuickAdd buttons, Dataview status tracker, data flow diagram
-- `00-Meta/Documentation/PKM/📅 Calendar Review Hub Guide.md` — step-by-step guide
+- `99-System/Documentation/PKM/📅 Calendar Review Hub Guide.md` — step-by-step guide
 - All 4 aggregation scripts in `99-System/Scripts/` (weekly, monthly, quarterly, yearly)
 
 ### Bases Daily View ✅

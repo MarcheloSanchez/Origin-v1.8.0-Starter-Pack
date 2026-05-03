@@ -317,7 +317,7 @@ LIMIT 7
 > └─ YES → Can I do it in <2 min?
 >         ├─ YES → Do it now, then delete/archive
 >         └─ NO → Is it a project?
->                 ├─ YES → Create in [[03-Efforts/Simmering]]
+>                 ├─ YES → Create in [[03-Efforts/Paused]]
 >                 └─ NO → Add task to relevant note
 > ```
 >
@@ -692,7 +692,7 @@ LIMIT 10
 #### Phase 3: GET CREATIVE (10 min)
 - [ ] Review [[🌱Incubator]] — any ideas ready to activate?
 - [ ] Look at [[#🛠️ Maintenance Queue]] — pick 2-3 for next week
-- [ ] Any new efforts to start? Create note in [[03-Efforts/Simmering]]
+- [ ] Any new efforts to start? Create note in [[03-Efforts/Paused]]
 - [ ] Connect dots: any notes that should be linked?
 
 #### Phase 4: COMMIT (5 min)
@@ -735,9 +735,9 @@ LIMIT 10
 - [ ] Check: Are efforts aligned with areas that matter?
 
 #### Part C: Effort Pipeline (20 min)
-- [ ] Review [[On]] — still the right active projects?
-- [ ] Review [[03-Efforts/Simmering]] — anything ready to activate?
-- [ ] Review [[03-Efforts/Ongoing]] — any maintenance work overdue?
+- [ ] Review [[03-Efforts/Active]] — still the right active projects?
+- [ ] Review [[03-Efforts/Paused]] — anything ready to activate?
+- [ ] Review [[03-Efforts/Active]] — any maintenance work overdue?
 - [ ] Kill or archive stalled efforts (>60 days no progress)
 
 #### Part D: System Health (20 min)
@@ -855,9 +855,9 @@ After triage, use this modified weekly review:
 ### Work Locations
 - [[+Inbox]] — Capture dropzone
 - [[03-Efforts]] — Active projects
-- [[On]] — Hot projects
-- [[03-Efforts/Simmering]] — Backburner
-- [[03-Efforts/Ongoing]] — Maintenance efforts
+- [[03-Efforts/Active]] — Hot projects
+- [[03-Efforts/Paused]] — Backburner
+- [[03-Efforts/Active]] — Maintenance efforts
 
 ### Knowledge Locations
 - [[01-MOCs]] — Maps of Content

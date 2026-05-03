@@ -197,7 +197,7 @@ module.exports = async (args) => {
     const atomicsCreated = allFiles.filter(f =>
       f.path.startsWith("02-Knowledge/") &&
       !f.name.startsWith("+About") &&
-      !f.name.match(/^\d{3}-/) && // exclude folder hub files like 200-Areas.md
+      !f.name.match(/^\d{3}-/) && // exclude legacy numbered folder hub files like 200-Areas.md
       isThisYear(f.stat.ctime)
     ).length;
 

@@ -92,7 +92,7 @@ module.exports = () => {
       arrayFields: ['participants', 'action_items']
     },
 
-    // Person notes (300-People)
+    // Person notes (People)
     person: {
       extends: 'base',
       required: ['title', 'type', 'status', 'created'],
@@ -102,7 +102,7 @@ module.exports = () => {
       }
     },
 
-    // Tool notes (500-Tools)
+    // Tool notes (Tools)
     tool: {
       extends: 'base',
       required: ['title', 'type', 'status', 'created'],

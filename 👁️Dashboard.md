@@ -260,7 +260,7 @@ SORT created DESC
 LIMIT 5
 ```
 
-*[[100-Atomics|View All Atomics]] | [[99-System/Templates/Atomic-Note|Create New Atomic]]*
+*[[Atomics|View All Atomics]] | [[99-System/Templates/Atomic-Note|Create New Atomic]]*
 
 ---
 

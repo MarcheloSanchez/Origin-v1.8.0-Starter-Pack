@@ -90,7 +90,7 @@ Here’s what the **Menu.md** gives you at a glance:
 - [MOC] Home (Start Here Navigation Hub)
 - [Folder] +Inbox (Quick Capture Dropzone)
 - [Folder] 01-MOCs (Maps And Dashboards)
-- [Folder] 02-Dots (Atomic Knowledge Notes)
+- [Folder] 02-Knowledge (Atomic Knowledge Notes)
 - [Folder] 03-Efforts (Projects And Initiatives)
 - [Folder] 04-Sources (References And Materials)
 - [Folder] 05-Calendar (Daily Weekly Monthly Logs)

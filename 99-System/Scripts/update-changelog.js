@@ -70,7 +70,7 @@ module.exports = async (args) => {
     const categories = {
       scripts: [],     // 99-System/Scripts/
       templates: [],   // Templates/
-      dashboards: [],  // Root dashboards + 00-Meta
+      dashboards: [],  // Root dashboards
       config: [],      // .obsidian/ or 99-System/Config/
       notes: []        // Everything else
     };

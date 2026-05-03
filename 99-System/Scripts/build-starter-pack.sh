@@ -101,7 +101,7 @@ rm -rf "$OUTPUT_DIR/99-System/Documentation/Checklists" 2>/dev/null || true
 echo "   - Personal System/Meta"
 
 # --- Test/scratch files ---
-rm -f "$OUTPUT_DIR/02-Knowledge/100-Atomics/test atomic.md" 2>/dev/null || true
+rm -f "$OUTPUT_DIR/02-Knowledge/Atomics/test atomic.md" 2>/dev/null || true
 
 # --- Misc personal dirs ---
 rm -rf "$OUTPUT_DIR/QuickAdd Packages" 2>/dev/null || true

@@ -50,9 +50,8 @@ related:
 > 
 > **Folder Structure**:
 > - `+Inbox` → Capture anything quickly
-> - `00-META` → System management & governance  
 > - `01-MOCs` → Navigation & knowledge maps
-> - `02-Dots` → Universal knowledge (5 sub-systems)
+> - `02-Knowledge` → Universal knowledge (Atomics, Areas, People, Places, Tools)
 > - `03-Efforts` → Active projects & initiatives
 > - `04-Sources` → External knowledge processing
 > - `05-Calendar` → Time-based reflection & planning

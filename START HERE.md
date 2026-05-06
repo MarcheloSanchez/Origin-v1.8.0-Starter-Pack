@@ -1,3 +1,6 @@
+---
+modified: 2026-05-03
+---
 # Origin Vault - Vzorová implementace "Quick Start" sekce
 
 > Toto je praktický příklad implementace nové instance
@@ -64,7 +67,7 @@ git clone https://github.com/yourusername/origin-vault.git
 🎯 Test workflow:
 1. Stiskni Ctrl+Shift+I (Quick Capture)
 2. Napiš: "Můj první Origin záznam"
-3. Poznámka se vytvoří v 00-Inbox s #📥inbox tagem
+3. Poznámka se vytvoří v +Inbox s #📥inbox tagem
 4. Gratulace! 🎉 Systém funguje
 ```
 
@@ -73,11 +76,11 @@ git clone https://github.com/yourusername/origin-vault.git
 ### 🧭 Orientace v systému (bonus +3 minuty)
 
 #### Klíčové soubory pro start
-| Soubor | Účel | Odkaz |
-|--------|------|-------|
-| `README.md` | Tento průvodce | [[README]] |
-| `My PKM MOC.md` | Kompletní mapa systému | [[My PKM MOC]] |
-| `Home.md` | Denní dashboard | [[🏡Home]] |
+| Soubor          | Účel                   | Odkaz             |
+| --------------- | ---------------------- | ----------------- |
+| `README.md`     | Tento průvodce         | [[README]]        |
+| `My PKM MOC.md` | Kompletní mapa systému | [[🗺️My PKM MOC]] |
+| `Home.md`       | Denní dashboard        | [[🏡Home]]        |
 
 #### Základní navigace
 - **`Ctrl+O`** - Quick Switcher (najdi jakoukoliv poznámku)
@@ -85,8 +88,8 @@ git clone https://github.com/yourusername/origin-vault.git
 - **`Ctrl+Shift+I`** - Quick Capture do Inboxu
 
 #### První úkoly
-- [ ] **Prozkoumej**: [[My PKM MOC]] pro kompletní přehled
-- [ ] **Nastav**: Projdi [[Hotkeys & Automation]] pro optimalizaci
+- [ ] **Prozkoumej**: [[🗺️My PKM MOC]] pro kompletní přehled
+- [ ] **Nastav**: Projdi [[Obsidian Hotkeys — Compact Cheatsheet v2.pdf||Hotkeys]] pro optimalizaci
 - [ ] **Experimentuj**: Vytvoř 5 poznámek do různých složek
 
 ---
@@ -106,9 +109,9 @@ git clone https://github.com/yourusername/origin-vault.git
 #### ❌ Problém: Hotkeys nefungují
 **Řešení**:
 1. Settings → Hotkeys → Import hotkeys z `.obsidian/hotkeys.json`
-2. Nebo manually: zkopíruj z [[Hotkeys & Automation]]
+2. Nebo manually: zkopíruj z [[MOC Hotkeys]]
 
-#### 💬 Další pomoc #🌱develop 
+#### 💬 Další pomoc #🌱develop @TODO-OBSIDAIN
 - **Discord**: [Origin PKM Community](#)
 - **Issues**: [GitHub Issues](#)
 - **Email**: your.email@domain.com
@@ -118,9 +121,9 @@ git clone https://github.com/yourusername/origin-vault.git
 ### ✨ Co dál?
 
 #### Pokud se ti líbí základy (5-10 min)
-1. **📚 Studium**: [[My PKM Workflows - Global Guidelines]]
-2. **🏷️ Tagy**: [[My PKM Tags]] - kompletní tagovací systém
-3. **📊 Metadata**: [[My PKM Metadata]] - organizace dat
+1. **📚 Studium**: [[🔁My PKM Workflows]]
+2. **🏷️ Tagy**: [[🏷️My PKM Tags]] - kompletní tagovací systém
+3. **📊 Metadata**: [[🔢My PKM Metadata]] - organizace dat
 
 #### Pro pokročilé (20-30 min)  
 1. **🔧 Customizace**: Přizpůsob složky podle svých potřeb
@@ -141,7 +144,7 @@ git clone https://github.com/yourusername/origin-vault.git
 - ✅ Najít jakoukoliv poznámku pomocí Ctrl+O
 - ✅ Pochopit základní folder strukturu (00-06)
 - ✅ Použít základní tagy (#💡atomic, #🚀effort)
-- ✅ Navigovat pomocí [[My PKM MOC]]
+- ✅ Navigovat pomocí [[🗺️My PKM MOC]]
 
 **🎉 Gratulace! Máš funkční PKM systém.**
 

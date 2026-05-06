@@ -1,9 +1,9 @@
 ---
-title: "CHANGELOG"
-Version: 1.9.1
-Last Backup: 2026-03-02
+title: CHANGELOG
+Version: 2.0.0
+Last Backup: 2026-05-03
 template-status: origin_dev
-modified: 2026-04-16
+modified: 2026-05-03
 ---
 ⬆️:: [[🏡Home]]
 [[TODO]] - [[BACKLOG]] - [[RELEASE NOTES]]

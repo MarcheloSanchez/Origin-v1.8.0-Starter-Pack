@@ -63,5 +63,25 @@ When ready to align:
 3. **MAIN alignment** — one-time reset with review step. Get MAIN to known state.
 
 ---
+
+## Pre-Promotion Checklist
+
+Gate: all items must be green before promoting DEV → MAIN.
+
+- [ ] Fix 1 (plugin configs) verified working in Obsidian (QuickAdd, Templater, Linter, Auto-mover)
+- [ ] Fix 2 (Migration Guide) architecture tree matches actual v2.0 folder structure
+- [ ] Smoke test: every QuickAdd menu, Templater folder template, Linter rule fires without path errors
+- [ ] Verification grep returns zero stale paths (`grep -rln "02-Dots\|07-Prompts\|00-Meta\|/Ongoing\|/Simmering" .obsidian/`)
+
+## Promotion Method
+
+Preserves MAIN's git history — do **not** clone DEV over MAIN.
+
+1. Identify the exact file delta DEV → MAIN (plugin configs, scripts, templates only — no personal notes)
+2. Copy each changed file individually from DEV to MAIN
+3. Commit in MAIN referencing the DEV commit hash: `promotion: sync v2.0 configs from DEV (ref: <hash>)`
+4. Personal notes and attachments in MAIN are never touched
+
+---
 *Created: 2026-04-05*
-*Status: Draft — in progress*
+*Status: Active — gated on v2.0 verification*

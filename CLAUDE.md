@@ -180,6 +180,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 - **Branch**: `main` + feature branches (`claude/*` for Claude Code sessions)
 - **Commits**: Conventional style — `fix:`, `feat:`, `refactor:`, `chore:`, `docs:`
 - **No force-push to main**
+- **99-System git tracking**: `.gitignore` uses `/99-System/*` (blanket ignore) — only these are tracked: `Scripts/`, `copilot-custom-prompts/`, `Documentation/`. Add a `!` exception for any other subfolder before staging.
 
 ## Quick Lookup
 

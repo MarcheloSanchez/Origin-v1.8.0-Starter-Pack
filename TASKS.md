@@ -2,7 +2,11 @@
 
 ## Active
 
-
+- [ ] Verify v2.0 plugin configs (Fix 1) end-to-end in Obsidian — QuickAdd, Templater, Linter, Auto-mover
+- [ ] Identify exact file delta DEV→MAIN (plugin configs, scripts, templates only)
+- [ ] Execute file-by-file promotion to MAIN, commit-by-commit, preserving MAIN history
+- [ ] Untrack gitignored 02-Knowledge/ files still showing as modified: `git rm --cached` on each
+- [ ] Move `docs/2026-05-03-template-audit.md` → `99-System/Documentation/` (per CLAUDE.md output rules)
 
 
 ## Someday

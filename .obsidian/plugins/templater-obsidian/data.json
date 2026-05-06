@@ -1,0 +1,85 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "Templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "99-System/Scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "+Inbox",
+      "template": "Templates/Quick Capture - Inbox.md"
+    },
+    {
+      "folder": "02-Knowledge/Atomics",
+      "template": "Templates/Create/new-atomic-auto.md"
+    },
+    {
+      "folder": "03-Efforts",
+      "template": "Templates/Create/new-effort-auto.md"
+    },
+    {
+      "folder": "04-Sources",
+      "template": "Templates/Create/new-source-auto.md"
+    },
+    {
+      "folder": "01-MOCs",
+      "template": "Templates/Create/new-moc-auto.md"
+    },
+    {
+      "folder": "05-Calendar/Daily",
+      "template": "Templates/Calendar/Template Daily.md"
+    },
+    {
+      "folder": "05-Calendar/Weekly",
+      "template": "Templates/Calendar/Template Weekly.md"
+    },
+    {
+      "folder": "05-Calendar/Monthly",
+      "template": "Templates/Calendar/Template Monthly.md"
+    },
+    {
+      "folder": "05-Calendar/Yearly",
+      "template": "Templates/Calendar/Template Yearly.md"
+    },
+    {
+      "folder": "05-Calendar/Quarterly",
+      "template": "Templates/Calendar/Template Quarterly.md"
+    },
+    {
+      "folder": "02-Knowledge/Areas",
+      "template": "Templates/Create/new-area-auto.md"
+    },
+    {
+      "folder": "02-Knowledge/People",
+      "template": "Templates/Create/new-person-auto.md"
+    },
+    {
+      "folder": "02-Knowledge/Places",
+      "template": "Templates/Create/new-place-auto.md"
+    },
+    {
+      "folder": "02-Knowledge/Tools",
+      "template": "Templates/Create/new-tool-auto.md"
+    },
+    {
+      "folder": "04-Sources/440-Meetings",
+      "template": "Templates/Create/new-meeting-auto.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [],
+  "intellisense_render": 1
+}

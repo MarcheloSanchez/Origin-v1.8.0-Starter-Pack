@@ -13,8 +13,33 @@
 !/99-System/copilot-custom-prompts/
 !/99-System/Documentation/
 
-# === Obsidian App Config (Obsidian Sync) ===
-.obsidian/
+# === Obsidian App Config — selective tracking ===
+# Ignore all of .obsidian, then carve out stable configs
+.obsidian/*
+!.obsidian/community-plugins.json
+!.obsidian/app.json
+!.obsidian/hotkeys.json
+!.obsidian/plugins/
+.obsidian/plugins/*
+!.obsidian/plugins/quickadd/
+.obsidian/plugins/quickadd/*
+!.obsidian/plugins/quickadd/data.json
+!.obsidian/plugins/templater-obsidian/
+.obsidian/plugins/templater-obsidian/*
+!.obsidian/plugins/templater-obsidian/data.json
+!.obsidian/plugins/obsidian-linter/
+.obsidian/plugins/obsidian-linter/*
+!.obsidian/plugins/obsidian-linter/data.json
+!.obsidian/plugins/auto-note-mover/
+.obsidian/plugins/auto-note-mover/*
+!.obsidian/plugins/auto-note-mover/data.json
+!.obsidian/plugins/homepage/
+.obsidian/plugins/homepage/*
+!.obsidian/plugins/homepage/data.json
+
+# Backup files — never track
+*.bak
+*.bak.*
 .quarto/
 .trash/
 .vscode/

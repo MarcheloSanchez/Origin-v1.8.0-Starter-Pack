@@ -1,0 +1,80 @@
+{
+  "trigger_auto_manual": "Manual",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "+Inbox",
+      "tag": "",
+      "pattern": ""
+    },
+    {
+      "folder": "02-Knowledge/Atomics/Ideas",
+      "tag": "#💡idea",
+      "pattern": ""
+    },
+    {
+      "folder": "03-Efforts",
+      "tag": "#🚀project",
+      "pattern": ""
+    },
+    {
+      "folder": "04-Sources",
+      "tag": "#📚source",
+      "pattern": ""
+    },
+    {
+      "folder": "02-Knowledge/Tools",
+      "tag": "#🔧tool",
+      "pattern": ""
+    },
+    {
+      "folder": "06-Archive",
+      "tag": "#📦archived",
+      "pattern": ""
+    },
+    {
+      "folder": "03-Efforts/On",
+      "tag": "#🔥on",
+      "pattern": ""
+    },
+    {
+      "folder": "03-Efforts/Active",
+      "tag": "#♻️ongoing",
+      "pattern": ""
+    },
+    {
+      "folder": "03-Efforts/Waiting",
+      "tag": "#🌊simmering",
+      "pattern": ""
+    },
+    {
+      "folder": "03-Efforts/Sleeping",
+      "tag": "#💤sleeping",
+      "pattern": ""
+    },
+    {
+      "folder": "04-Sources/440-Meetings",
+      "tag": "#🤝meeting",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": "06-Archive"
+    },
+    {
+      "folder": "05-Calendar"
+    },
+    {
+      "folder": "99-System"
+    },
+    {
+      "folder": "Templates"
+    },
+    {
+      "folder": "99-System/Documentation"
+    }
+  ]
+}

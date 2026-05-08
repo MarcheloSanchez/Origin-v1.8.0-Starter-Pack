@@ -10,8 +10,9 @@ related:
   - "[[Ideas]]"
   - "[[Concepts]]"
   - "[[+About Conceptsℹ️]]"
+  - "[[Quick Idea Capture]]"
 created: 2025-09-30
-modified: 2026-03-13
+modified: 2026-05-06
 ---
 ⬆️:: [[Ideas]]
 

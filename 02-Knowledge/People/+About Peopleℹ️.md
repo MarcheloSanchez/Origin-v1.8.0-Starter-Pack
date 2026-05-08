@@ -1,5 +1,5 @@
 ---
-up: ""[[People]]""
+up: "[[People]]"
 title: People-About
 type: about
 tags:
@@ -8,14 +8,13 @@ tags:
   - 🤝relationship
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
-  - "[[Templates/New-Notes/Type/People/people-new]]"
-  - "[[Templates/New-Notes/Type/People/👤 Person BIO Template]]"
-  - "[[Templates/New-Notes/Type/People/👤 Person Professional Template]]"
+  - "[[Templates/Static/person|person]]"
+  - "[[Person Filled Out]]"
 ---
 
-⬆️:: "[[People]]"
+⬆️:: [[People]]
 
 # About People
 

@@ -1,5 +1,5 @@
 ---
-up: ""[[Places]]""
+up: "[[Places]]"
 title: "Places-About"
 type: about
 tags: 
@@ -8,14 +8,15 @@ tags:
   - 🌍experience
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
-  - ""[[02-Knowledge]]""
-  - ""[[Areas]]""
-  - "[[Place Template]]"
+  - "[[02-Knowledge]]"
+  - "[[Areas]]"
+  - "[[place]]"
+  - "[[Place Filled Out]]"
 ---
 
-⬆️:: "[[Places]]"
+⬆️:: [[Places]]
 
 # About Places
 

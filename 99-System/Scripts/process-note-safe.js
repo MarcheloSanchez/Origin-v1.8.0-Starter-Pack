@@ -1,5 +1,5 @@
 // process-note-safe.js — One-click safe processing combo
-// Purpose: Run Classify + Autofill Metadata + Normalize YAML in sequence on current note
+// Purpose: Run Autofill Metadata + Normalize YAML in sequence on current note
 // Requires: QuickAdd
 // Run: Via QuickAdd macro (Process > Process Note (Safe))
 //
@@ -7,11 +7,11 @@
 
 /**
  * Process Note (Safe)
- * A combo macro that runs three safe operations in sequence:
- * 1. Classify — smart-classifier.js logic to suggest type/folder/tags
- * 2. Autofill Metadata — auto-metadata.js logic to fill missing YAML fields
- * 3. Normalize YAML — yaml_orchestrator.js in normalize mode
+ * A combo macro that runs two safe operations in sequence:
+ * 1/2. Autofill Metadata — auto-metadata.js logic to fill missing YAML fields
+ * 2/2. Normalize YAML — yaml_orchestrator.js in normalize mode
  *
+ * Note type routing is handled by Auto Note Mover (Templater templates set type on creation).
  * Gives beginners a single "do the right thing" button.
  */
 
@@ -28,18 +28,8 @@ module.exports = async (args) => {
     const fileName = activeFile.basename;
     new Notice(`🔄 Processing "${fileName}"...`);
 
-    // Step 1: Classify Note
-    new Notice("1/3 — Classifying note...");
-    try {
-      const classifier = await loadScript("99-System/Scripts/smart-classifier.js");
-      await classifier(args);
-    } catch (err) {
-      console.error("Process Note (Safe) — Classify failed:", err);
-      new Notice(`⚠️ Classify skipped: ${err.message}`);
-    }
-
-    // Step 2: Autofill Metadata
-    new Notice("2/3 — Autofilling metadata...");
+    // Step 1/2: Autofill Metadata
+    new Notice("1/2 — Autofilling metadata...");
     try {
       const autoMeta = await loadScript("99-System/Scripts/auto-metadata.js");
       await autoMeta(args);
@@ -48,8 +38,8 @@ module.exports = async (args) => {
       new Notice(`⚠️ Autofill skipped: ${err.message}`);
     }
 
-    // Step 3: Normalize YAML
-    new Notice("3/3 — Normalizing YAML...");
+    // Step 2/2: Normalize YAML
+    new Notice("2/2 — Normalizing YAML...");
     try {
       const orchestrator = await loadScript("99-System/Scripts/yaml_orchestrator.js");
       await orchestrator({ mode: "normalize", backup: false });

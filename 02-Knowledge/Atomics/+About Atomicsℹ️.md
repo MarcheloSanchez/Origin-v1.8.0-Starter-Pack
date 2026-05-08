@@ -1,5 +1,5 @@
 ---
-up: ""[[Atomics]]""
+up: "[[Atomics]]"
 title: About Atomics
 type: about
 tags:
@@ -8,12 +8,13 @@ tags:
   - 🧠knowledge
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
-  - ""[[02-Knowledge]]""
-  - "[[A-Full-Template]]"
+  - "[[02-Knowledge]]"
+  - "[[Templates/Static/atomic|atomic]]"
+  - "[[Atomic Filled Out]]"
 ---
-⬆️:: "[[Atomics]]"
+⬆️:: [[Atomics]]
 # About Atomics 💡
 
 > [!info]+ **👋 Personal Introduction**

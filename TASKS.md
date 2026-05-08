@@ -1,3 +1,6 @@
+---
+modified: 2026-05-06
+---
 # Tasks
 
 ## Active
@@ -6,8 +9,10 @@
 - [ ] Identify exact file delta DEV→MAIN (plugin configs, scripts, templates only)
 - [ ] Execute file-by-file promotion to MAIN, commit-by-commit, preserving MAIN history
 - [ ] Untrack gitignored 02-Knowledge/ files still showing as modified: `git rm --cached` on each
-- [ ] Move `docs/2026-05-03-template-audit.md` → `99-System/Documentation/` (per CLAUDE.md output rules)
+- [x] Move `docs/2026-05-03-template-audit.md` → `99-System/Documentation/` (per CLAUDE.md output rules) ✅ 2026-05-06
 
+
+- [ ] **Research: orchestrator lint vs Linter plugin** — Read `yaml_orchestrator.js` lint mode block; read `.obsidian/plugins/obsidian-linter/data.json` enabled rules; map overlaps and gaps; answer: (1) what does lint mode check? (2) what does Linter plugin do on save? (3) where do they overlap? (4) does orchestrator offer batch/folder mode the plugin doesn't? (5) verdict: keep both, remove one, or merge? — Document decision in TASKS.md.
 
 ## Someday
 

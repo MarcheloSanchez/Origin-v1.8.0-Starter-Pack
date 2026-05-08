@@ -159,6 +159,10 @@ module.exports = async (args) => {
     try {
       await app.fileManager.renameFile(activeFile, newPath);
       new Notice(`✅ Processed as Effort: ${fileName}\n📁 Moved to: ${targetFolder}\n📊 Status: ${metadata.status}`);
+      const changedFields = buildChangedSummary(frontmatter, metadata);
+      if (changedFields.length > 0) {
+        new Notice(`📋 Fields updated:\n${changedFields.join('\n')}`, 6000);
+      }
     } catch (error) {
       // If file already exists, suggest alternative name
       if (error.message.includes("already exists")) {
@@ -295,6 +299,28 @@ function generateEffortTemplate() {
 - [[Resource 1]]
 - [[Resource 2]]
 `;
+}
+
+/**
+ * Build a human-readable summary of which fields changed vs were kept
+ */
+function buildChangedSummary(original, updated) {
+  const internal = ['position', 'frontmatterLinks', 'headings'];
+  const changed = [];
+  for (const [key, val] of Object.entries(updated)) {
+    if (internal.includes(key)) continue;
+    const origVal = original[key];
+    if (JSON.stringify(val) !== JSON.stringify(origVal)) {
+      const fmtVal = Array.isArray(val) ? val.join(', ') : val;
+      if (origVal === undefined) {
+        changed.push(`+ ${key}: ${fmtVal}`);
+      } else {
+        const fmtOrig = Array.isArray(origVal) ? origVal.join(', ') : origVal;
+        changed.push(`~ ${key}: ${fmtOrig} → ${fmtVal}`);
+      }
+    }
+  }
+  return changed;
 }
 
 /**

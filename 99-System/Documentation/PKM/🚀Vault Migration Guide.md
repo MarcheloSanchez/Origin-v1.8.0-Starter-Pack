@@ -297,7 +297,7 @@ After completing setup, verify each system works:
 ### Scripts
 - [ ] Test `status-progression.js` — advance a note's status via hotkey
 - [ ] Test `status-picker.js` — pick a status via Commander button
-- [ ] Test `smart-classifier.js` on an inbox note — verify suggestions appear
+- [ ] Test `auto-metadata.js` on an inbox note — verify frontmatter is populated
 
 ### Template Composition
 - [ ] Verify `combine()` works: create note via `Templates/Create/new-atomic.md`

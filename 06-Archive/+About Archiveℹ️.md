@@ -320,7 +320,7 @@ related:
 **Knowledge Connections:**
 - [[+About Atomicsℹ️]] → Insights extracted from archived content before preservation
 - [[+About Areasℹ️]] → Historical context for life domain development and evolution
-- [[+ About MOCs ℹ️]] → Archive references in knowledge maps for comprehensive understanding
+- [[+About MOCs ℹ️]] → Archive references in knowledge maps for comprehensive understanding
 - Search → Archive-included search strategies for comprehensive knowledge retrieval
 
 **Intelligence Connections:**

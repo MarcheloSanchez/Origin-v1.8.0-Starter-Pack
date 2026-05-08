@@ -1,5 +1,5 @@
 ---
-up: ""[[Tools]]""
+up: "[[Tools]]"
 title: Tools-About
 type: about
 tags:
@@ -7,12 +7,13 @@ tags:
   - 📋about
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
-  - "[[Templates/New-Notes/Type/Tool/Tool-New]]"
+  - "[[tool]]"
+  - "[[Tool Filled Out]]"
 ---
 
-⬆️:: "[[Tools]]"
+⬆️:: [[Tools]]
 
 # About Tools
 

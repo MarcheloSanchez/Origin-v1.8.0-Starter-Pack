@@ -2,7 +2,7 @@ summaries:
   Filled: values.filter(!value.isType("null")).length
 filters:
   and:
-    - file.folder.contains("02-Dots")
+    - file.folder.contains("02-Knowledge")
     - '!file.name.contains(".base")'
     - '!file.name.startswith("+")'
     - '!file.name.startswith("02-")'
@@ -51,6 +51,7 @@ views:
     sort:
       - property: file.name
         direction: ASC
+    limit: 10
     columnSize:
       file.name: 280
       type: 100

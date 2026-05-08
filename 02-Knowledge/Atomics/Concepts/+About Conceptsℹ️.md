@@ -6,7 +6,7 @@ tags:
   - 📋about
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
   - "[[👁️Dashboard]]"
   - "[[conceptssss]]"

@@ -351,4 +351,4 @@ Move to `02-Dots/X/` → Review during [[🧠GTD Weekly Review]]
 
 *Guide Version: 1.0*
 *Last Updated: 2026-01-16*
-*Automation Scripts: smart-classifier.js, quick-process-*.js*
+*Automation Scripts: quick-process-*.js*

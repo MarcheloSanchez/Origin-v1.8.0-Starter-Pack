@@ -267,36 +267,6 @@ QuickAdd > Macros > 📊 Update Metrics Cache
 
 ## 3. Inbox Processing
 
-### `batch-process-inbox.js`
-
-> Processes multiple inbox notes at once — runs classification, auto-metadata, folder move, and status update.
-
-| Detail | Value |
-|--------|-------|
-| **Trigger** | QuickAdd macro; recommended weekly during GTD review or when inbox > 10 items |
-| **Inputs** | Optional `args`: `{ autoClassify, autoMove, requireConfirmation }` (all default `true`) |
-| **Outputs** | Processes notes, generates processing report |
-| **Dependencies** | QuickAdd API, `smart-classifier.js`, `auto-metadata.js` |
-
-**Workflow**: Filters notes from `+Inbox/` → sorts newest first → prompts for batch confirmation → runs classification → applies metadata → moves to target folders.
-
----
-
-### `smart-classifier.js`
-
-> Analyzes note content to suggest type, target folder, tags, related notes, and maturity level.
-
-| Detail | Value |
-|--------|-------|
-| **Trigger** | QuickAdd macro or Templater (`await tp.user.smart_classifier()`) |
-| **Inputs** | Optional `{ force: true }` to reclassify already-classified notes |
-| **Outputs** | Updates frontmatter with classification results |
-| **Dependencies** | QuickAdd API, MetadataCache |
-
-**Analysis**: Content heuristics determine note type (effort, atomic, source, etc.), suggest appropriate folder (`02-Knowledge/Atomics/`, `03-Efforts/`, etc.), recommend tags based on content keywords, and identify related existing notes.
-
----
-
 ### `quick-process-atomic.js`
 
 > Instantly processes an inbox note as an atomic knowledge note.
@@ -532,8 +502,6 @@ Supports dry-run mode for preview without writes.
 | `generate-quarterly-report.js` | Metrics | QuickAdd | Quarterly report creation |
 | `generate-yearly-report.js` | Metrics | QuickAdd | Yearly report creation |
 | `maturity-promoter.js` | Metrics | Templater | Promotion suggestions |
-| `batch-process-inbox.js` | Inbox | QuickAdd | Batch inbox triage |
-| `smart-classifier.js` | Inbox | QuickAdd/Templater | Content classification |
 | `quick-process-atomic.js` | Inbox | QuickAdd | Quick atomic processing |
 | `quick-process-effort.js` | Inbox | QuickAdd | Quick effort processing |
 | `quick-process-source.js` | Inbox | QuickAdd | Quick source processing |

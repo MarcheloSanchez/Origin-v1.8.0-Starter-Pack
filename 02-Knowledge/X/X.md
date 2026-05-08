@@ -1,6 +1,6 @@
 ---
 title: "X"
-up: ""[[02-Knowledge]]""
+up: "[[02-Knowledge]]"
 in:
   - "[[Views]]"
 created: 2025-10-13
@@ -8,9 +8,9 @@ related:
 cssclasses:
   - wide-page
 obsidianUIMode: preview
-modified: 2026-03-03
+modified: 2026-05-06
 ---
-⬆️:: "[[02-Knowledge]]"
+⬆️:: [[02-Knowledge]]
 
 [[+About Xℹ️]]
 

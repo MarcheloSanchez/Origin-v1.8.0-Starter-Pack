@@ -16,7 +16,7 @@ related:
 ---
 
 > [!orbit] **🧭 Command Center**
-> [[🏡 Home]] · [[🔁My PKM Workflows|🔁 Workflows]] · [[✅My PKM Tasks|✅ Tasks]] · [[🔍My PKM Queries|🔍 Queries]] · [[05-Calendar|📅 Calendar]] · #🧹tidy [[+About Areasℹ️|🏠 Areas]] · [[+ About MOCs ℹ️|🗺️ MOCs]] · [[📊 Performance]]
+> [[🏡 Home]] · [[🔁My PKM Workflows|🔁 Workflows]] · [[✅My PKM Tasks|✅ Tasks]] · [[🔍My PKM Queries|🔍 Queries]] · [[05-Calendar|📅 Calendar]] · #🧹tidy [[+About Areasℹ️|🏠 Areas]] · [[+About MOCs ℹ️|🗺️ MOCs]] · [[📊 Performance]]
 
 # 🏠 PKM Home Dashboard
 

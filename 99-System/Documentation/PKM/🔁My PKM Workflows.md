@@ -570,11 +570,9 @@ Expensive Dataview queries are cached for fast dashboard rendering.
 
 ### **Script-Powered Automation**
 
-The vault includes 22 scripts in `99-System/Scripts/`. See [[🔧Scripts Reference]] for complete documentation.
+The vault includes 20 scripts in `99-System/Scripts/`. See [[🔧Scripts Reference]] for complete documentation.
 
 **Inbox Processing Scripts**:
-- `batch-process-inbox.js` — Process multiple inbox notes at once (weekly GTD review)
-- `smart-classifier.js` — Analyze content and suggest type/folder/tags
 - `quick-process-atomic.js` / `quick-process-effort.js` / `quick-process-source.js` — Type-specific instant processing (10-20 seconds per note)
 
 **Status & Maturity Scripts**:
@@ -596,7 +594,6 @@ The vault includes 22 scripts in `99-System/Scripts/`. See [[🔧Scripts Referen
 
 **Weekly Automation**:
 - `generate-weekly-report.js` — Create structured weekly report (Sunday evening) → see [[📅 Calendar Review Hub Guide]]
-- `batch-process-inbox.js` — Batch triage if inbox > 10 items
 - `maturity-promoter.js` — Review maturity suggestions during weekly review
 
 **Monthly Automation**:

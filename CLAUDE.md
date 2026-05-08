@@ -65,9 +65,7 @@ Engine: `99-System/Scripts/Templater_script.js` — provides `inject_meta_if_mis
 | `Templater_script.js` | Core template composition engine |
 | `yaml_orchestrator.js` | YAML reorder/normalize/lint (config: `99-System/Config/yaml-meta-config.json`) |
 | `yaml_validator.js` | YAML field type & required field validation |
-| `smart-classifier.js` | Note type/folder/tag suggestion from content |
 | `auto-metadata.js` | Automatic frontmatter population |
-| `batch-process-inbox.js` | Bulk inbox processing |
 | `quick-process-atomic.js` | Atomic note quick processing |
 | `quick-process-effort.js` | Effort quick processing |
 | `quick-process-source.js` | Source quick processing |
@@ -78,7 +76,9 @@ Engine: `99-System/Scripts/Templater_script.js` — provides `inject_meta_if_mis
 | `generate-weekly-report.js` | Automated weekly report generator |
 | `archive_note.js` / `archive-old-dailies.js` | Archival automation |
 | `status-picker.js` / `status-progression.js` | Status workflow UI & automation |
-| `process-note-safe.js` | Combo macro: Classify + Autofill Metadata + Normalize YAML |
+| `process-note-safe.js` | Combo macro: Autofill Metadata + Normalize YAML |
+| `insert-callout.js` | Insert formatted callout block at cursor |
+| `insert-toc.js` | Insert Table of Contents callout at cursor |
 
 ## Maintenance Scripts (`claude-scripts/`)
 
@@ -110,12 +110,14 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 ## QuickAdd Integration
 
-- Scripts run as QuickAdd UserScripts: `module.exports = async (args) => { const { app, Notice } = window; ... }`
-- QuickAdd input prompt: `app.plugins.plugins.quickadd.api.inputPrompt(title, description, defaultValue)`
+- **Macro UserScript signature**: `module.exports = async (params) => { const { app, quickAddApi: qa } = params; const { Notice } = window; ... }`
+- **QuickAdd API via params**: `qa.inputPrompt(header, placeholder, default)`, `qa.suggester(labels, values)`, `qa.yesNoPrompt(header)`
+- **Do NOT use `window.QuickAddApi`**: unreliable in Macro UserScript context — always destructure from `params`
 - Macros registered in `.obsidian/plugins/quickadd/data.json` — must add entries there for buttons to work
 - **Registration pattern for UserScripts**: wrap in a `Macro` choice (`"type": "Macro"`) with a `commands[]` array containing `{"type": "UserScript", "path": "..."}` — raw UserScript entries inside Multi `choices[]` do NOT work
 - **Trailing spaces in data.json names**: QuickAdd entry names sometimes have trailing spaces — always `.strip()` both sides when looking up by name in Python scripts
 - **Bulk edits to data.json**: use `python - << 'PYEOF'` inline script; backup first with `shutil.copy`; validate after with `json.load()`
+- **Capture type + Templater WASM**: Capture choices with `<%* tp.* %>` format crash with "Invalid or unexpected token" or "run_file is not a function" even with `useTemplater: false`. Fix: convert to Macro type with UserScript — do not try to fix Capture format strings.
 - Button plugin syntax: `type command` + `action QuickAdd: MenuName: ChoiceName`
 
 ## Two-Tier Type System
@@ -142,14 +144,16 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 8. **Review HQ**: Uses mix of cached metrics + live queries for dynamic data (overdue tasks, waiting items can't be cached).
 
-9. **Bilingual classifiers**: `batch-process-inbox.js`, `quick-process-atomic.js`, `quick-process-source.js` intentionally contain Czech keywords for classifying Czech-written notes — do NOT remove. `smart-classifier.js` is English-only.
+9. **Bilingual quick-process scripts**: `quick-process-atomic.js`, `quick-process-source.js` intentionally contain Czech keywords for matching Czech-written notes — do NOT remove.
 
 10. **Tags consolidated (2026-03-31)**: Vault tags unified to emoji-first canonical forms. See `99-System/Documentation/PKM/🏷️Tag Consolidation Log.md` for full changelog. Key renames: `🎯project` → `🚀effort`, `💡idea` → `💡atomic`, `quick` → `🧹tidy`. Old "Tags Showcase" section replaced with link to consolidation log.
+
+11. **`window.QuickAddApi` is unreliable**: Not available in Macro UserScript context. Always use `const { app, quickAddApi: qa } = params` — destructured from the `params` argument. Scripts using `window.QuickAddApi` will silently fail with "QuickAdd API not found" when run as Macros.
 
 ## Naming Conventions
 
 - **Templates**: `{type}-meta.yaml.md`, `{type}-body.md`, `new-{type}.md`, `new-{type}-auto.md`
-- **Scripts**: kebab-case (`smart-classifier.js`, `yaml-orchestrator.js`)
+- **Scripts**: kebab-case (`auto-metadata.js`, `yaml-orchestrator.js`)
 - **CIS enums**: `CIS_{FIELD_NAME}.md` (SCREAMING_SNAKE_CASE)
 - **YAML keys**: snake_case (`processing_priority`, `completion_percentage`)
 - **Tags**: emoji + category (`💡atomic`, `🚀project`, `📚source`, `📥inbox`)
@@ -157,6 +161,7 @@ Scripts run within Obsidian via Templater or QuickAdd. CIS enums: `99-System/CIS
 
 ## Troubleshooting
 
+- **After deleting a script**: grep both the script filename and its QuickAdd command name across `99-System/Documentation/` + `CLAUDE.md` — archive/vault-report files can be intentionally left; active docs need updating
 - **Dataview undefined**: Use `p?.status === "🔄active"` and `?? 0` fallback
 - **Dataview no results**: Check folder path quotes (`"03-Efforts"`), verify canonical status
 - **Templater undefined**: Ensure function has `return`

@@ -135,13 +135,11 @@ Viz [[⚡Workflow Quick Reference#⌨️ Keyboard Shortcuts Reference]] pro komp
 
 ### Key Scripts (`99-System/Scripts/`)
 
-36 skriptů celkem. Klíčové:
+34 skriptů celkem. Klíčové:
 
 | Script | Účel |
 |--------|------|
-| `smart-classifier.js` | AI-powered note classification |
 | `auto-metadata.js` | Automatic frontmatter population |
-| `batch-process-inbox.js` | Bulk inbox processing |
 | `quick-process-atomic.js` | Fast atomic note filing |
 | `quick-process-source.js` | Fast source note filing |
 | `quick-process-effort.js` | Fast effort note filing |

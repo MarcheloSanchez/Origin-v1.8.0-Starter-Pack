@@ -98,11 +98,9 @@ Templates/
 ├── quick-process-atomic.js         ✅
 ├── quick-process-effort.js         ✅
 ├── quick-process-source.js         ✅
-├── smart-classifier.js             ✅
 ├── auto-metadata.js                ✅
 ├── status-picker.js                ✅
 ├── maturity-evolve.js              ✅
-├── batch-process-inbox.js          ✅
 └── archive_note.js                 ✅
 ```
 

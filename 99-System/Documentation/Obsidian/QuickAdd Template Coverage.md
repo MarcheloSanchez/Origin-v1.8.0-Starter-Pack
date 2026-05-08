@@ -54,7 +54,6 @@ related:
 
 🧩 Process
 ├── Process Note (Safe)         → 99-System/Scripts/process-note-safe.js
-├── Classify Note               → 99-System/Scripts/smart-classifier.js
 ├── Autofill Metadata           → 99-System/Scripts/auto-metadata.js
 ├── Normalize YAML              → yaml_orchestrator (inline)
 ├── Lint YAML                   → yaml_orchestrator (inline)
@@ -63,7 +62,6 @@ related:
 
 🧹 Maintain
 ├── Normalize YAML (Pick Folders) → yaml_orchestrator (inline)
-├── Batch Process Inbox         → 99-System/Scripts/batch-process-inbox.js
 ├── Archive Note                → 99-System/Scripts/archive_note.js
 └── Rebuild Metrics Cache       → 99-System/Scripts/update-metrics-cache.js
 

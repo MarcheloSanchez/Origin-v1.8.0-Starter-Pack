@@ -1,7 +1,7 @@
 filters:
   and:
     - and:
-        - file.folder.contains("02-Dots/100-Atomics")
+        - file.folder.contains("02-Knowledge/Atomics")
         - and:
             - '!file.name.contains("base")'
 formulas:

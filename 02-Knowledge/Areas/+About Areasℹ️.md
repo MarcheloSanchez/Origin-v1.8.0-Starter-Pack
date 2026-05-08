@@ -1,5 +1,5 @@
 ---
-up: ""[[Areas]]""
+up: "[[Areas]]"
 title: Areas-About
 type: about
 tags:
@@ -8,14 +8,15 @@ tags:
   - 🎯life-domain
 status: 🔄active
 created: 2025-09-30
-modified: 2025-09-30
+modified: 2026-05-06
 related:
-  - "[[+ About Dotsℹ️]]"
+  - "[[+ About Knowledgeℹ️]]"
   - "[[+About Effortsℹ️]]"
-  - "[[Area-New]]"
+  - "[[Area Filled Out]]"
+  - "[[new-area]]"
 ---
 
-⬆️:: "[[Areas]]"
+⬆️:: [[Areas]]
 
 Are you looking for a quick look and don't look into precise fit optimalization of life through Areas examples ? ... [[+About Areasℹ️#Short version|I got you read here]]
 # About Areas
@@ -28,7 +29,7 @@ Are you looking for a quick look and don't look into precise fit optimalization 
 > **Where**: 02-Knowledge/Areas, integrated with Efforts and Dashboard  
 > **Success**: Balanced attention across life domains, measurable progress, aligned effort allocation
 >
-> **🏠 Next Action**: Define or review one life Area using [[Area-New]]
+> **🏠 Next Action**: Define or review one life Area using [[new-area]]
 
 ---
 

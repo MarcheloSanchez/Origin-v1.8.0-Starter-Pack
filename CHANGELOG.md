@@ -12,6 +12,21 @@ modified: 2026-04-16
 ---
 > Vault modifications and changes log.
 ---
+# 09/05/26
+## QuickAdd Insert Menu — Callout & ToC Fix
+
+### Root Cause & Fix
+- Diagnosed "Invalid or unexpected token" / "run_file is not a function" errors on `💭Insert Callout` and `➕Insert Table of content` choices — caused by Templater WASM context incompatibility after plugin update
+- Converted both choices from `Capture` type to `Macro` type in `.obsidian/plugins/quickadd/data.json`
+- Rewrote `99-System/Scripts/insert-callout.js` and `insert-toc.js` to use `params.quickAddApi` instead of Templater API or `window.QuickAddApi`
+
+### CLAUDE.md Updated
+- Corrected QuickAdd Macro UserScript API pattern: `const { app, quickAddApi: qa } = params`
+- Added gotcha: `window.QuickAddApi` unreliable in Macro context — always destructure from `params`
+- Updated Capture+Templater WASM gotcha: correct fix is switching to Macro type
+- Added `insert-callout.js` and `insert-toc.js` to Key Scripts table
+
+---
 # 03/05/26
 ## v2.0 Migration — PKM Docs Path Update
 
